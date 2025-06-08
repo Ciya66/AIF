@@ -1,0 +1,909 @@
+,CAS,,Compound name,Compoundflags
+,CAS,,Compound name,Compound flags
+1.,826337-64-8,,2-methyl-3-methylidenecyclopentane-1-carbaldehyde,E S
+2.,67-64-1,,"acetone (=2-propanone, dimethyl ketone)",Q E S R O T
+3.,,,"2,2-dimethyl-1-[2-(2-methyl-2-propanyl)cyclopropyl]-1-propanone",P E S
+4.,116-09-6,,"1-hydroxy-2-propanone (=acetol, pyruvic alcohol)",Q E S R O T
+5.,5878-19-3,,1-methoxy-2-propanone,P E S
+6.,5774-26-5,,"1,1-diethoxy-2-propanone",Q E S
+7.,78-93-3,,2-butanone (=ethyl methyl ketone),Q E S R O T
+8.,109-49-9,,Hex-5-en-2-one,E S R
+9.,23696-85-7,,"1-(2,6,6-Trimethylcyclohexa-1,3-dienyl)-2-buten-1-one",Q E S R O
+10.,69050-59-5,,"4-(5-hydroxy-2,6,6-trimethyl-1-cyclohexen-1-yl)-3-buten-2-one",S R
+11.,78-94-4,,3-buten-2-one,Q E S R O T
+12.,563-80-4,,3-methyl-2-butanone,Q E S R O T
+13.,41702-60-7,,"2-methyl-6-methylene-1,7-octadien-3-one",S R
+14.,814-78-8,,3-methyl-3-buten-2-one,Q E S R T
+15.,75-97-8,,"2,2-dimethyl-3-butanone",P E S R T
+16.,5077-67-8,,1-hydroxy-2-butanone,Q E S
+17.,30557-76-7,,khusimone,P S R
+18.,513-86-0,,3-hydroxy-2-butanone (=acetoin),Q E S R O T
+19.,53584-56-8,,(R)-3-hydroxy-2-butanone,P E S
+20.,78183-56-9,,(S)-3-hydroxy-2-butanone,P S
+21.,590-90-9,,4-hydroxy-2-butanone,P E S R O
+22.,29994-40-9,,hydroxy-2-butanone (unkn.str.),Q R
+23.,1679-38-5,,3-ethoxy-2-butanone,Q S
+24.,60044-74-8,,4-ethoxy-2-butanone,Q S
+25.,115-22-0,,3-hydroxy-3-methyl-2-butanone,P S T
+26.,51933-13-2,,"3,3-diethoxy-2-butanone",Q E S
+27.,6672-30-6,,(R)-(+)-3-methylcyclopentanone,P S
+28.,20082-91-1,,"4,4-diethoxy-2-butanone",P S
+29.,431-03-8,,"2,3-butanedione (=diacetyl)",Q E S R O T
+30.,17429-35-5,,"4-ethyl-3,4-dimethyl-2,5-cyclohexadien-1-one",E S R
+31.,55162-56-6,,"4,4-dimethyl-3-phenyl-2,5-cyclohexadien-1-one",S
+32.,107-87-9,,2-pentanone,Q E S R O T
+33.,4359-77-7,,3-methylene-2-pentanone,E S R
+34.,3470-54-0,,5-aminoindan-1-one,E S
+35.,13909-73-4,,"1-(2,3,4-trimethoxyphenyl)-ethanone",E S R
+36.,,,2-(2-butoxyethoxy)ethanone,R
+37.,451-40-1,,"1,2-diphenylethanone",S
+38.,96-22-0,,3-pentanone,Q E S R O T
+39.,625-33-2,,3-penten-2-one,Q E S R O T
+40.,70987-82-5,,"1-(1,2-dimethyl-cyclopent-2-enyl)-ethanone",Q S
+41.,3102-33-8,,(E)-3-penten-2-one,Q E S R
+42.,3102-32-7,,(Z)-3-penten-2-one,Q E S
+43.,13891-87-7,,4-penten-2-one,Q E S
+44.,1629-58-9,,1-penten-3-one,Q E S R O T
+45.,1890-28-4,,"1,4-pentadien-3-one",E S
+46.,553-84-4,,perilla ketone,E S R
+47.,565-61-7,,3-methyl-2-pentanone,Q E S R T
+48.,53398-09-7,,3-oxo-α-damascone,E S
+49.,108-10-1,,4-methyl-2-pentanone,Q E S R O T
+50.,7779-30-8,,"1-(2,6,6-trimethyl-2-cyclohexen-1-yl)-1-Penten-3-one",E S T
+51.,565-69-5,,2-methyl-3-pentanone,Q E S R O T
+52.,25044-01-3,,2-methyl-1-penten-3-one,P E S
+53.,141-79-7,,4-methyl-3-penten-2-one (=mesityl oxide),Q E S R O T
+54.,61570-82-9,,5-hydroxy-p-menth-6-en-2-one,Q E S
+55.,3744-02-3,,4-methyl-4-penten-2-one,P E S
+56.,,,dimethyl-3-penten-2-one (unkn.str.),P
+57.,3142-66-3,,3-hydroxy-2-pentanone (=acetyl ethyl carbinol),Q E S R O T
+58.,113919-08-7,,(R)-3-hydroxy-2-pentanone,P S
+59.,132881-72-2,,(S)-3-hydroxy-2-pentanone,P S
+60.,4161-60-8,,4-hydroxy-2-pentanone,Q S R
+61.,5704-20-1,,2-hydroxy-3-pentanone,Q S R O T
+62.,113919-09-8,,(R)-2-hydroxy-3-pentanone,P S
+63.,125948-63-2,,(S)-2-hydroxy-3-pentanone,P S
+64.,,,hydroxypentanone (unkn.str.),Q
+65.,52704-36-6,,3-hydroxy-3-penten-2-one,P S
+66.,17429-04-8,,5-methoxy-2-pentanone,P S
+67.,65915-75-5,,3-ethoxy-2-pentanone,P S
+68.,33330-50-6,,4-ethoxy-2-pentanone,Q S R
+69.,79926-00-4,,4-(2-methylbutoxy)-2-pentanone,P S
+70.,79925-97-6,,4-(3-methylbutoxy)-2-pentanone,P S
+71.,565-80-0,,"2,4-dimethyl-3-pentanone",Q E S R T
+72.,564-04-5,,"2,2-dimethyl-3-pentanone",E S
+73.,123-42-2,,4-hydroxy-4-methyl-2-pentanone (=diacetone alcohol),Q E S R T
+74.,79925-99-8,,"2,2-diethoxy-3-pentanone",P E S
+75.,623-38-1,,"3-oxopentanal (=1,3-pentanedione)",P E S
+76.,600-14-6,,"2,3-pentanedione (=acetylpropionyl)",Q E S R O T
+77.,123-54-6,,"2,4-pentanedione (=acetylacetone)",Q E S R T
+78.,7493-58-5,,"4-methyl-2,3-pentanedione",P E S T
+79.,10225-31-7,,"3-isopentyl-2,4-pentanedione",P E S
+80.,591-78-6,,2-hexanone,Q E S R O T
+81.,5441-51-0,,4-ethylcyclohexanone,S
+82.,589-38-8,,3-hexanone,Q E S R O T
+83.,763-93-9,,3-hexen-2-one,P E S R
+84.,4376-23-2,,(E)-3-hexen-2-one,P E S
+85.,1629-60-3,,1-hexen-3-one,Q E S R O T
+86.,2497-21-4,,4-hexen-3-one,P E S
+87.,50396-87-7,,(E)-4-hexen-3-one,P E S
+88.,54686-84-9,,hexenone (unkn.str.),P
+89.,110-12-3,,5-methyl-2-hexanone,Q E S R T
+90.,623-56-3,,5-methyl-3-hexanone,P E S T
+91.,105-42-0,,4-methyl-2-hexanone,P E S T
+92.,91606-98-3,,methyl-2-hexanone (unkn.str.),P
+93.,7379-12-6,,2-methyl-3-hexanone,Q E S R T
+94.,5166-53-0,,5-methyl-3-hexen-2-one,P E S R
+95.,1669-43-8,,(3Z)-5-methyl-3-hexen-2-one,S R
+96.,1821-29-0,,(E)-5-methyl-3-hexen-2-one,E S R
+97.,32064-70-3,,3-butyl-3-hexen-2-one,P E S
+98.,13905-10-7,,5-methyl-4-hexen-3-one,P S
+99.,55532-07-5,,"2,2-dimethyl-5-hexen-3-one",P S
+100.,54123-75-0,,3-hydroxy-2-hexanone,S O T
+101.,163038-04-8,,3-Hydroxy-5-methyl-2-hexanone,P S O T
+102.,54073-43-7,,2-hydroxy-3-hexanone,S O T
+103.,4984-85-4,,4-hydroxy-3-hexanone (=propionoin),P E S R
+104.,246511-74-0,,2-hydroxy-5-methyl-3-hexanone,Q S R O T
+105.,134332-15-3,,4-hydroxy-3-propyl-2-hexanone,P S
+106.,3848-24-6,,"2,3-hexanedione",Q E S R T
+107.,110-13-4,,"2,5-hexanedione (=acetonylacetone)",Q E S R
+108.,4437-51-8,,"3,4-hexanedione",Q E S R O
+109.,82056-15-3,,hexanedione (unkn.str.),
+110.,13706-86-0,,"5-methyl-2,3-hexanedione",P E S
+111.,10153-61-4,,"3,4-dihydroxy-3-hexen-2,5-dione",Q E S R O T
+112.,4384-08-1,,"4-hydroxy-2,3,5-hexanetrione",E S T
+113.,110-43-0,,2-heptanone,Q E S R O T
+114.,106-35-4,,3-heptanone,Q E S R O T
+115.,123-19-3,,4-heptanone,Q E S R T
+116.,29299-43-2,,heptanone (unkn.str.),Q R
+117.,1119-44-4,,3-hepten-2-one,P E S R
+118.,5609-09-6,,(E)-3-hepten-2-one,Q S R T
+119.,24332-22-7,,4-hepten-2-one,P S
+120.,90605-45-1,,(Z)-4-hepten-2-one,Q S R O
+121.,36678-43-0,,(E)-4-hepten-2-one,Q S O
+122.,6714-00-7,,5-hepten-2-one,Q S
+123.,2918-13-0,,1-hepten-3-one,Q E S R O T
+124.,4643-25-8,,2-hepten-4-one,Q E S R
+125.,30640-40-5,,hepten-2-one (unkn.str.),P
+126.,3916-64-1,,"3,5-heptadien-2-one",P S
+127.,18402-90-9,,"(E,E)-3,5-heptadien-2-one",P S
+128.,2371-19-9,,3-methyl-2-heptanone,Q S
+129.,18217-12-4,,5-methyl-2-heptanone,P E S R
+130.,928-68-7,,6-methyl-2-heptanone,Q E S R O T
+131.,13019-20-0,,2-methyl-3-heptanone,P E S T
+132.,6137-11-7,,4-methyl-3-heptanone,Q E S R
+133.,541-85-5,,5-methyl-3-heptanone,Q E S R T
+134.,624-42-0,,6-methyl-3-heptanone,P E S T
+135.,626-33-5,,2-methyl-4-heptanone,P E S R T
+136.,15726-15-5,,3-methyl-4-heptanone,P E S R O T
+137.,1528-25-2,,3-ethyl-4-heptanone,P E S R
+138.,70713-26-7,,methyl-2-heptanone (unkn.str.),
+139.,29466-99-7,,methylheptanone (unkn.str.),Q
+140.,39899-08-6,,3-methyl-3-hepten-2-one,Q S
+141.,22319-25-1,,4-methyl-3-hepten-2-one,Q R
+142.,,,5-methyl-4-hepten-2-one,
+143.,110-93-0,,6-methyl-5-hepten-2-one,Q E S R O T
+144.,70003-34-8,,6-methylhepten-2-one (unkn.str.),P E
+145.,22319-31-9,,4-methyl-4-hepten-3-one,P S
+146.,86883-66-1,,6-methyl-5-hepten-3-one,P S R
+147.,22319-24-0,,2-methyl-2-hepten-4-one,Q S R
+148.,102322-83-8,,(E)-5-methyl-2-hepten-4-one (=filbertone),Q E S R O T
+149.,122440-59-9,,(S)-(E)-(+)-5-methyl-2-hepten-4-one (=(S)-(+)-filbertone),P E S
+150.,135910-94-0,,(R)-(E)-(-)-5-methyl-2-hepten-4-one (=(R)-(-)-filbertone),P E
+151.,103070-07-1,,(Z)-5-methyl-2-hepten-4-one,P S R O
+152.,81925-81-7,,5-methyl-2-hepten-4-one,E S
+153.,1447-26-3,,5-methylhepten-3-one (unkn.str.),
+154.,409-02-9,,methylheptenone (unkn.str.),Q R
+155.,131671-56-2,,4-ethyl-6-hepten-3-one,S R O
+156.,57283-79-1,,(E)-5-isopropyl-3-hepten-2-one,P E S R O
+157.,,,dimethyl-3-hepten-2-one (unkn.str.),P
+158.,1604-28-0,,"6-methyl-3,5-heptadien-2-one",Q E S R T
+159.,16647-04-4,,"(3E)-6-methyl-3,5-heptadien-2-one",Q E S R T
+160.,29178-96-9,,"(Z)-6-methyl-3,5-heptadien-2-one",Q S R
+161.,,,methylheptadienone (unkn.str.),P
+162.,21889-85-0,,5-isopropyl-2-heptanone,P
+163.,19549-83-8,,"2,6-dimethyl-3-heptanone",P E S
+164.,18641-71-9,,"2,4-dimethylheptan-3-one",P E S R
+165.,108-83-8,,"2,6-dimethyl-4-heptanone",P E S R T
+166.,19549-84-9,,"3,5-dimethyl-4-heptanone",E S R
+167.,17046-01-4,,1-hydroxy-2-heptanone,Q S R
+168.,68113-60-0,,3-hydroxy-2-heptanone,S O T
+169.,71467-29-3,,2-hydroxy-3-heptanone,S O T
+170.,309972-33-6,,3-hydroxy-4-methyl-2-heptanone,S O T
+171.,309972-34-7,,2-hydroxy-4-methyl-3-heptanone,S O T
+172.,315180-09-7,,(4E)-3-hydroxy-4-hepten-2-one,S O T
+173.,315180-08-6,,(4E)-2-hydroxy-4-hepten-3-one,S O T
+174.,546-49-6,,"3,3,6-trimethyl-1,5-heptadien-4-one (=artemisia ketone)",Q E S R O
+175.,81250-41-1,,"3,3,6-trimethyl-4,5-heptadien-2-one",P S
+176.,96-04-8,,"2,3-heptanedione",P E S
+177.,1703-51-1,,"2,5-heptanedione",P S
+178.,13706-89-3,,"3,4-heptanedione",P S
+179.,13678-56-3,,"5-methyl-3,4-heptanedione",P S
+180.,3131-90-6,,"6-methyl-3,4-heptanedione",P S
+181.,79925-98-7,,4-ethoxy-6-methyl-2-heptanone,P S
+182.,111-13-7,,2-octanone,Q E S R O T
+183.,106-68-3,,3-octanone,Q E S R O T
+184.,589-63-9,,4-octanone,Q E S T
+185.,27457-18-7,,octanone (unkn.str.),Q R O
+186.,1669-44-9,,3-octen-2-one,Q E S R O T
+187.,51193-77-2,,(Z)-3-octen-2-one,S R O
+188.,18402-82-9,,(E)-3-octen-2-one,Q S R O
+189.,36359-70-3,,5-octen-2-one,S
+190.,22610-86-2,,(Z)-5-octen-2-one,Q S R T
+191.,4312-99-6,,1-octen-3-one,Q E S R O T
+192.,14129-48-7,,4-octen-3-one,P E S R O T
+193.,69065-31-2,,(E)-4-octen-3-one,P S
+194.,,,octen-3-one (unkn.str.),P
+195.,4643-27-0,,2-octen-4-one,P E S T
+196.,3664-60-6,,7-octen-2-one,Q S
+197.,70772-23-5,,octenone (unkn.str.),P
+198.,38284-27-4,,"3,5-octadien-2-one",Q S R O
+199.,78468-46-9,,"(Z,E)-3,5-octadien-2-one",Q S R
+200.,4173-41-5,,"(E,Z)-3,5-octadien-2-one",Q S R O T
+201.,30086-02-3,,"(E,E)-3,5-octadien-2-one",Q E S R O T
+202.,65213-86-7,,"1,5-octadien-3-one",Q E S R O T
+203.,65767-22-8,,"(Z)-1,5-octadien-3-one",Q S R O T
+204.,359794-78-8,,"(E)-1,5-octadien-3-one",S R O T
+205.,1482-13-9,,7-methyl-2-octanone,Q S R
+206.,923-28-4,,2-methyl-3-octanone,Q E S
+207.,20809-46-5,,7-methyl-4-octanone,P E S
+208.,19781-14-7,,"3,5-dimethyl-2-octanone",P S R
+209.,103088-62-6,,4-isopropyl-2-methyl-3-octanone,Q E
+210.,37160-77-3,,3-hydroxy-2-octanone,Q E S O T
+211.,52279-26-2,,2-hydroxy-3-octanone,Q S R O T
+212.,496-77-5,,5-hydroxy-4-octanone,P E S R
+213.,33046-81-0,,7-methyl-3-octen-2-one,Q E S
+214.,2550-18-7,,"2,6-dimethyl-6-octen-3-one",Q E S
+215.,51117-36-3,,"2,6-dimethyl-7-octen-3-one",Q S
+216.,55874-04-9,,2-methyl-6-methylene-7-octen-3-one,Q S
+217.,1879-00-1,,dihydrotagetone,Q E S R
+218.,23007-34-3,,"6-hydroxy-2,6-dimethyl-7-octen-4-one (=tagetonol)",Q E S
+219.,89412-78-2,,"2,6-dihydroxy-2,6-dimethyl-7-octen-3-one",P S
+220.,539-70-8,,myrcenone,Q E S R
+221.,99541-37-4,,"3,7-dimethyl-1,6-octadien-4-one",P
+222.,,,"4,6-octadien-3-one",P S
+223.,91056-18-7,,"2,6-dimethyl-4,6-octadien-3-one",Q
+224.,,,"6-acetoxy-6-methyl-3,7-octadien-2-one",P
+225.,3588-18-9,,(Z)-tagetone,Q E S R
+226.,6752-80-3,,(E)-tagetone,Q E S R
+227.,64661-54-7,,"6-hydroxy-2,6-dimethyl-2,7-octadien-4-one",P E S
+228.,33746-71-3,,(Z)-ocimenone,Q E S R
+229.,33746-72-4,,(E)-ocimenone,Q E S R
+230.,,,"(Z,E)-3,5-octatrien-2-one (unkn.str.)",P
+231.,585-25-1,,"2,3-octanedione",Q E S R
+232.,2955-65-9,,"3,6-octanedione",P S R
+233.,5455-24-3,,"4,5-octanedione",P E S
+234.,315180-10-0,,(E)-2-hydroxy-4-octen-3-one,S O T
+235.,315180-11-1,,(E)-3-hydroxy-4-octen-2-one,S O T
+236.,821-55-6,,2-nonanone,Q E S R O T
+237.,925-78-0,,3-nonanone,Q E S R T
+238.,4485-09-0,,4-nonanone,Q E S T
+239.,502-56-7,,5-nonanone,Q S T
+240.,30642-09-2,,nonanone (unkn.str.),Q R
+241.,14309-57-0,,3-nonen-2-one,Q E S R O T
+242.,18402-83-0,,(E)-3-nonen-2-one,P S
+243.,82456-34-6,,3-nonen-5-one,Q S R
+244.,27039-84-5,,5-nonen-2-one,Q E S
+245.,82873-10-7,,6-nonen-2-one,P
+246.,56889-98-6,,(E)-6-nonen-2-one,P S
+247.,5009-32-5,,8-nonen-2-one,Q S R O
+248.,27936-13-6,,nonen-2-one (unkn.str.),Q
+249.,24415-26-7,,1-nonen-3-one,Q E S R O T
+250.,61168-10-3,,1-nonen-4-one,Q S T
+251.,32064-72-5,,2-nonen-4-one,Q E S T
+252.,27743-70-0,,(E)-2-nonen-4-one,Q E S T
+253.,,,3-methyl-6-nonen-2-one,P
+254.,41628-40-4,,"3,5-nonadien-2-one",Q S
+255.,,,"2,5-nonadien-4-one",S
+256.,61759-51-1,,"(E,E)-2,5-nonadien-4-one",P S T
+257.,64303-47-5,,8-methyl-2-nonanone,Q S R
+258.,2903-23-3,,2-methyl-2-nonen-4-one,P S R
+259.,84607-56-7,,3-methyl-2-nonen-4-one,P
+260.,68985-18-2,,(E)-3-methyl-2-nonen-4-one,P S O
+261.,6820-03-7,,"4,8-dimethyl-4,7-nonadien-2-one",P
+262.,113486-29-6,,"3-methyl-2,4-nonanedione",Q E S R O T
+263.,315180-07-5,,2-hydroxy-3-nonanone,S O T
+264.,73642-01-0,,3-hydroxy-2-nonanone,E S O T
+265.,693-54-9,,2-decanone,Q E S R O T
+266.,928-80-3,,3-decanone,Q E S R T
+267.,624-16-8,,4-decanone,P S R
+268.,29221-56-5,,decanone (unkn.str.),Q
+269.,10519-33-2,,3-decen-2-one,P E S
+270.,18402-84-1,,(E)-3-decen-2-one,S R
+271.,63024-86-2,,2-decen-4-one,P
+272.,65570-25-4,,2-decen-5-one,P
+273.,,,4-decen-3-one,P
+274.,32064-75-8,,2-methyl-3-decen-5-one,Q S
+275.,69024-85-7,,5-decen-4-one,P S
+276.,67881-17-8,,decen-2-one (unkn.str.),Q R
+277.,95416-58-3,,"3,5-decadien-2-one",Q S
+278.,68067-35-6,,9-methyl-2-decanone,Q S R
+279.,71467-28-2,,2-hydroxy-3-decanone,E S O T
+280.,68113-61-1,,3-hydroxy-2-decanone,S O T
+281.,112-12-9,,2-undecanone,Q E S R O T
+282.,927-49-1,,6-undecanone,P E S T
+283.,,,2-undecanone (branched),Q
+284.,2216-87-7,,3-undecanone,Q S T
+285.,14476-37-0,,4-undecanone,Q S R T
+286.,33083-83-9,,5-undecanone,P S T
+287.,53452-70-3,,undecanone (unkn.str.),Q R
+288.,10522-37-9,,3-undecen-2-one,P S
+289.,22616-88-2,,4-undecen-2-one,P
+290.,27936-14-7,,undecen-2-one (unkn.str.),Q R
+291.,38945-65-2,,1-undecen-5-one,P S R
+292.,68973-20-6,,"3,5-undecadien-2-one",P S T
+293.,,,undecadien-2-one (unkn.str.),Q R
+294.,67882-99-9,,10-methyl-2-undecanone,Q S R
+295.,1604-34-8,,"6,10-dimethyl-2-undecanone",Q E S R
+296.,,,"6,10-dimethylundecanone (unkn.str.)",Q R
+297.,689-67-8,,"6,10-dimethyl-5,9-undecadien-2-one",Q E S
+298.,3879-26-3,,"(Z)-6,10-dimethyl-5,9-undecadien-2-one (=nerylacetone)",P E S R
+299.,3796-70-1,,geranylacetone,Q E S R O T
+300.,141-10-6,,"6,10-dimethyl-3,5,9-undecatrien-2-one (=ψ-ionone, pseudoionone)",Q E S R T
+301.,98910-85-1,,3-keto-''-ionone,S R
+302.,3548-78-5,,"(E),(E)-6,10-dimethyl-3,5,9-undecatrien-2-one (=(E),(E)-pseudoionone)",P E S
+303.,13927-47-4,,"(E),(Z)-6,10-dimethyl-3,5,9-undecatrien-2-one (=(E),(Z)-pseudoionone)",P E S
+304.,6175-49-1,,2-dodecanone,Q E S R T
+305.,830-13-7,,cyclododecanone,P S R T
+306.,1534-27-6,,3-dodecanone,P S R T
+307.,,,2-dodecanone (branched),P
+308.,58879-39-3,,1-dodecen-3-one,P S T
+309.,65570-26-5,,2-dodecen-4-one,P S
+310.,65570-27-6,,2-dodecen-5-one,P
+311.,,,dodecen-2-one (unkn.str.),P
+312.,57782-13-5,,dodecenone (unkn.str.),P
+313.,,,10-methyl-2-dodecanone,P
+314.,67883-00-5,,11-methyl-2-dodecanone,Q R
+315.,593-08-8,,2-tridecanone,Q E S R O T
+316.,1534-26-5,,3-tridecanone,P E S
+317.,,,2-tridecanone (branched),Q
+318.,57702-05-3,,tridecanone (unkn.str.),Q R
+319.,67881-14-5,,tridecen-2-one (unkn.str.),Q R
+320.,2345-27-9,,2-tetradecanone,Q E S R
+321.,629-23-2,,3-tetradecanone,P S
+322.,,,2-tetradecanone (branched),P
+323.,67881-20-3,,methyl-2-tetradecanone (unkn.str.),Q R
+324.,,,9-tetradecen-2-one,P
+325.,68062-19-1,,tetradecen-2-one (unkn.str.),Q R
+326.,67881-15-6,,tetradecadien-2-one (unkn.str.),Q R
+327.,85416-33-7,,"(Z,Z,Z)-5,8,11-tetradecatrien-2-one",Q S R O
+328.,105657-92-9,,"(E,E,Z)-5,8,11-tetradecatrien-2-one",S R O
+329.,105657-91-8,,"(Z,E,E)-5,8,11-tetradecatrien-2-one",S R O
+330.,105657-90-7,,"(E,Z,E)-5,8,11-tetradecatrien-2-one",S R O
+331.,105657-89-4,,"(Z,Z,E)-5,8,11-tetradecatrien-2-one",S R O
+332.,101339-97-3,,"(Z,E,Z)-5,8,11-tetradecatrien-2-one",S R O
+333.,85421-52-9,,"(E,E,E)-5,8,11-tetradecatrien-2-one",S R O
+334.,117606-22-1,,"(E,Z,Z)-5,8,11-tetradecatrien-2-one",Q S R O
+335.,2345-28-0,,2-pentadecanone,Q E S R O
+336.,18787-66-1,,3-pentadecanone,P E S
+337.,76940-91-5,,pentadecanone (unkn.str.),P
+338.,26932-08-1,,6-pentadecen-2-one,P
+339.,,,12-pentadecen-2-one,P
+340.,68062-15-7,,pentadecen-2-one (unkn.str.),Q R
+341.,2516-30-5,,"6,9-pentadecadien-2-one",P S T
+342.,68062-16-8,,pentadecadien-2-one (unkn.str.),Q R
+343.,,,"6,9,13-pentadecatrien-2-one",P S
+344.,502-69-2,,"6,10,14-trimethyl-2-pentadecanone (=hexahydrofarnesylacetone)",Q E S R O
+345.,87531-87-1,,"2,6,10-trimethylpentadecanone (unkn.str.)",Q R
+346.,1117-52-8,,farnesylacetone,Q E S R O
+347.,18787-63-8,,2-hexadecanone,Q S R O
+348.,18787-64-9,,3-hexadecanone,Q S
+349.,2922-51-2,,2-heptadecanone,Q E S R
+350.,84534-29-2,,3-heptadecanone,Q E S
+351.,540-08-9,,9-heptadecanone,P E S
+352.,1357255-21-0,,"(Z)-9,16-heptadecadien-7-one",Q S R
+353.,7373-13-9,,2-octadecanone,Q S R
+354.,18261-92-2,,3-octadecanone,Q E S
+355.,629-66-3,,2-nonadecanone,Q S
+356.,27372-42-5,,3-nonadecanone,P S
+357.,29703-52-4,,2-eicosanone,P S
+358.,57755-77-8,,3-heneicosanone,P
+359.,504-56-3,,10-nonacosanone,Q E S
+360.,1191-95-3,,cyclobutanone,E S R T
+361.,1192-14-9,,"2,2-dimethylcyclobutanone",P S
+362.,120-92-3,,cyclopentanone,Q E S R T
+363.,930-30-3,,2-cyclopenten-1-one,Q R
+364.,28982-58-3,,cyclopentenone (unkn.str.),P
+365.,1120-72-5,,2-methylcyclopentanone,Q S R
+366.,1757-42-2,,3-methylcyclopentanone,P S
+367.,28631-88-1,,methylcyclopentanone (unkn.str.),
+368.,61215-75-6,,ethylcyclopentanone (unkn.str.),P
+369.,1670-46-8,,2-acetylcyclopentanon,P E S
+370.,14845-55-7,,2-isopropylcyclopentanone,P S
+371.,934-42-9,,2-butylcyclopentanone,P S R
+372.,2520-60-7,,2-prenylcyclopentanone,E S R
+373.,71535-28-9,,cis-tetrahydrojasmine,E S R
+374.,17373-89-6,,2-hexylidenecyclopentanone,E S
+375.,98314-98-8,,(E)-2-(2-octenyl)cyclopentanone,S R
+376.,1120-73-6,,2-methyl-2-cyclopenten-1-one,Q E S R O
+377.,2758-18-1,,3-methyl-2-cyclopenten-1-one,P E S
+378.,23033-96-7,,4-methyl-2-cyclopenten-1-one,P S
+379.,14963-40-7,,5-methyl-2-cyclopenten-1-one,P S
+380.,2931-10-4,,2-ethyl-2-cyclopenten-1-one,P S
+381.,5682-69-9,,3-ethyl-2-cyclopenten-1-one,P S
+382.,24105-07-5,,2-propyl-2-cyclopenten-1-one,P S R
+383.,5561-05-7,,2-butyl-2-cyclopenten-1-one,P S R
+384.,56044-98-5,,5-butyl-2-cyclopenten-1-one,S
+385.,25564-22-1,,2-pentyl-2-cyclopenten-1-one,E S R
+386.,80961-19-9,,ethyl-methylcyclopentanone (unkn.str.),P
+387.,1121-05-7,,"2,3-dimethyl-2-cyclopenten-1-one",Q S R
+388.,23048-13-7,,"2,4-dimethyl-2-cyclopenten-1-one",P S
+389.,4041-11-6,,"2,5-dimethyl-2-cyclopenten-1-one",P S
+390.,30434-64-1,,"3,4-dimethyl-2-cyclopenten-1-one",P S
+391.,931-22-6,,"3,5-dimethyl-2-cyclopenten-1-one",P S
+392.,72692-71-8,,dimethyl-2-cyclopenten-1-one (unkn.str.),
+393.,71535-29-0,,trans-tetrahydrojasmone,S R
+394.,1128-08-1,,3-methyl-2-(n-pentanyl)-2-cyclopenten-1-one (=dihydrojasmone),P E S R
+395.,68043-00-5,,jasmone,Q E S
+396.,488-10-8,,(Z)-jasmone,Q E S R T
+397.,6261-18-3,,(E)-jasmone,P E S R O
+398.,11050-62-7,,isojasmone,E S
+399.,28790-86-5,,"2,3,4-trimethyl-2-cyclopenten-1-one",P S
+400.,54562-24-2,,"2,3,5-trimethyl-2-cyclopenten-1-one",P S
+401.,24156-95-4,,"3,5,5-trimethyl-2-cyclopenten-1-one",P S
+402.,30434-65-2,,"3,4,4-trimethyl-2-cyclopenten-1-one",P S
+403.,82000-05-3,,trimethyl-2-cyclopenten-1-one (unkn.str.),P
+404.,86368-24-3,,trimethylcyclopentenone (unkn.str.),P
+405.,864685-64-3,,"5-methylene-2,3,4,4-tetramethyl-2-cyclopentenone",E S R
+406.,10493-98-8,,2-hydroxy-2-cyclopenten-1-one,E S R O
+407.,21835-00-7,,"2-hydroxy-3,4-dimethyl-2-cyclopenten-1-one",P S R O T
+408.,21834-98-0,,"2-hydroxy-3,5-dimethyl-2-cyclopenten-1-one",P E S R O T
+409.,80-71-7,,cyclotene (=see also [765-70-8]),Q E S R O
+410.,21835-01-8,,"3-ethyl-1,2-cyclopentanedione",Q E S R T
+411.,83-33-0,,1-indanone,P E S
+412.,59-48-3,,"1,3-dihydro-2H-indol-2-one",E S
+413.,91-56-5,,"1H-indole-2,3-dione",S
+414.,6072-57-7,,3-methyl-1-indanone,P E S
+415.,24644-78-8,,4-methyl-1-indanone,Q E S R O
+416.,,,methylindanone (unkn.str.),P
+417.,765-70-8,,"3-methyl-1,2-cyclopentanedione (=cyclotene) (=CAS no [80-71-7])",Q E S R O T
+418.,3250-08-6,,2-hydroxy-5-methyl-2-cyclopenten-1-one,P S
+419.,551-45-1,,2-allyl-4-hydroxy-3-methyl-2-cyclopenten-1-one (=allethrolone),Q E S
+420.,765-69-5,,"2-methyl-1,3-cyclopentanedione",P S
+421.,13494-08-1,,"3-ethyl-1,2-cyclopentanedione",Q E S R
+422.,25684-04-2,,"3-propyl-1,2-cyclopentanedione",Q E S R O
+423.,55277-47-9,,"3-isopropyl-1,2-cyclopentanedione",Q E S R O
+424.,29798-72-9,,3-butyl-2-hydroxy-2-cyclopenten-1-one,P S R
+425.,55007-08-4,,2-hydroxy-3-pentyl-2-cyclopenten-1-one,P S R
+426.,13494-06-9,,"3,4-dimethyl-1,2-cyclopentanedione",Q E S R O T
+427.,13494-07-0,,"3,5-dimethyl-1,2-cyclopentanedione",Q E S R O T
+428.,4800-04-8,,"4-hydroxy-2-methyl-1,3-cyclopentanedione",P S
+429.,42348-12-9,,3-ethyl-2-hydroxy-4-methyl-2-cyclopenten-1-one,Q E S R
+430.,58228-72-1,,3-ethyl-2-hydroxy-5-methyl-2-cyclopenten-1-one,Q S R O
+431.,71387-71-8,,4-ethyl-2-hydroxy-3-methyl-2-cyclopenten-1-one,Q S R O
+432.,53263-58-4,,5-ethyl-2-hydroxy-3-methyl-2-cyclopenten-1-one,Q E S R O T
+433.,86702-81-0,,"2-hydroxy-3,4,4-trimethyl-2-cyclopenten-1-one",Q E S R O
+434.,125476-24-6,,"cis-2-hydroxy-3,4,5-trimethyl-2-cyclopenten-1-one",Q S R O T
+435.,125476-23-5,,"trans-2-hydroxy-3,4,5-trimethyl-2-cyclopenten-1-one",Q S R O T
+436.,53263-56-2,,"2-hydroxy-3,5,5-trimethyl-2-cyclopenten-1-one",Q S R O
+437.,25522-96-7,,isohumulone,P E T
+438.,930-60-9,,"2-cyclopentene-1,4-dione",Q E S
+439.,18515-43-0,,"4,5-dimethyl-4-cyclopentene-1,3-dione",P S
+440.,73011-52-6,,1-acetyl-4-isopropylcyclopentene,Q E S
+441.,36628-80-5,,"1,6-methano[10]annulen-11-one",S R
+442.,2704-76-9,,1-acetyl-4-isopropenylcyclopentene,P E S
+443.,4056-69-3,,"2-acetyl-4-methyl-1,3-cyclopentanedione",P S
+444.,108-94-1,,cyclohexanone,Q E S R O T
+445.,930-68-7,,2-cyclohexen-1-one,Q E S R O
+446.,583-60-8,,2-methylcyclohexanone,P E S T
+447.,591-24-2,,3-methylcyclohexanone,Q E S R T
+448.,589-92-4,,4-methylcyclohexanone,P E S T
+449.,823-19-8,,3-hydroxycyclohexanone,P S
+450.,1121-18-2,,2-methyl-2-cyclohexen-1-one,P S
+451.,1193-18-6,,3-methyl-2-cyclohexen-1-one,P E S R
+452.,5515-76-4,,4-methyl-2-cyclohexen-1-one,P S
+453.,7214-50-8,,5-methyl-2-cyclohexen-1-one,P S
+454.,5259-65-4,,4-methyl-3-cyclohexenone,Q E S
+455.,93842-53-6,,methylcyclohexenone (unkn.str.),P
+456.,500-02-7,,4-isopropyl-2-cyclohexen-1-one (=cryptone),Q E S R
+457.,5432-85-9,,4-isopropylcyclohexanone,Q S
+458.,22460-53-3,,4-isopropenylcyclohexanone,P S
+459.,64317-84-6,,4-isopropylidene-2-cyclohexen-1-one,P E S
+460.,92414-85-2,,6-butyl-2-cyclohexen-1-one,S
+461.,13395-76-1,,"2,3-dimethylcyclohexanone",P S
+462.,2979-19-3,,"3,3-dimethylcyclohexanone",P S
+463.,499-70-7,,carvomenthone (=trans-carvomenthone),P E S R
+464.,3901-91-5,,cis-p-menthan-2-one,E S R
+465.,40790-56-5,,"2,6-dimethyl-2-cyclohexen-1-one",P S
+466.,127798-16-7,,dimethyl-2-cyclohexenone (unkn.str.),P
+467.,72441-70-4,,"(6S,1R)-6-(1,5-dimethyl-4-hexenyl)-3-methyl-2-cyclohexen-1-one (= (S,R)-6,7-bisabolone )",Q E S R
+468.,61432-71-1,,"(6R,1S)-6-(1,5-dimethyl-4-hexen-1-yl)-3-methyl-2-cyclohexen-1-one (=α-bisabol-1-one)",Q E S R
+469.,70150-56-0,,4-hydroxy-4-methyl-2-cyclohexen-1-one,Q S
+470.,35413-38-8,,"2,2,4-trimethylcyclohexanone",P E S
+471.,2408-37-9,,"2,2,6-trimethylcyclohexanone",Q E S R O T
+472.,21698-44-2,,shyobunone,Q E S
+473.,39020-72-9,,6-epishyobunone (=epishyobunone),Q E S
+474.,,,"2,6-diepishyobunone",Q
+475.,21698-46-4,,isoshyobunone,Q E S
+476.,20013-73-4,,"2,6,6-trimethyl-2-cyclohexen-1-one",Q E S R T
+477.,873-94-9,,"3,3,5-trimethylcyclohexanone",P E S
+478.,78-59-1,,"3,5,5-trimethyl-2-cyclohexen-1-one (=isophorone)",Q E S R O T
+479.,504-20-1,,"2,6-dimethyl-2,5-heptadien-4-one",E S R
+480.,,,trimethyl-2-cyclohexen-1-one (unkn.str.),
+481.,141978-04-3,,4-hydroxy-6-isopropyl-3-methyl-2-cyclohexen-1-one,Q E S
+482.,471-01-2,,"3,5,5-trimethyl-3-cyclohexen-1-one",Q E S
+483.,14376-79-5,,"3,3,4,5-tetramethylcyclohexanone",P S
+484.,5957-62-0,,calacone,P E S
+485.,20548-00-9,,"3,5,5-trimethyl-4-methylene-2-cyclohexen-1-one",P E S R
+486.,122221-94-7,,angustifolenone,E S R
+487.,67401-26-7,,"(E)-5,8-megastigmadien-4-one",P E S
+488.,67401-25-6,,"(Z)-5,8-megastigmadien-4-one",P E S
+489.,67401-27-8,,"5,8-megastigmadien-4-one",P E S
+490.,125541-27-7,,"(E,E)-6,8-megastigmadien-4-one",P E
+491.,13215-88-8,,"4,6,8-megastigmatrien-3-one",Q E S
+492.,5164-79-4,,"(Z,Z)-4-(2-butenylidene)-3,5,5-trimethyl-2-cyclohexen-1-one",P E S
+493.,5492-79-5,,"(Z,E)-4-(2-butenylidene)-3,5,5-trimethyl-2-cyclohexen-1-one",P E S R
+494.,5298-13-5,,"(E,Z)-4-(2-butenylidene)-3,5,5-trimethyl-2-cyclohexen-1-one",P E S
+495.,5164-78-3,,"(E,E)-4-(2-butenylidene)-3,5,5-trimethyl-2-cyclohexen-1-one",P E S
+496.,,,"2,5,8-megastigmatriene-4,7-dione",P
+497.,765-87-7,,"1,2-cyclohexanedione",Q E S T
+498.,7500-42-7,,"2-hydroxy-2,6,6-trimethylcyclohexanone",Q E S R O
+499.,20548-02-1,,"4-hydroxy-2,2,6-trimethylcyclohexanone",P S
+500.,4883-60-7,,"2-hydroxy-3,5,5-trimethyl-2-cyclohexen-1-one",Q E S R
+501.,14203-59-9,,"4-hydroxy-3,5,5-trimethyl-2-cyclohexen-1-one",P S
+502.,19620-37-2,,"4-hydroxy-2,6,6-trimethyl-2-cyclohexen-1-one",P S
+503.,34318-21-3,,3-oxo-α-ionol,Q E S R O
+504.,,,3-oxo-retro-α-ionol,Q E S R
+505.,,,"3-oxo-retro-7,8-dehydro-α-ionol (unkn.str.)",Q
+506.,,,"3-oxo-7,8-dihydro-α-ionol",Q E S
+507.,29790-30-5,,4-oxo-β-ionol,P E R
+508.,,,"4-(3-hydroxy-1-butenylidene)-3,5,5-trimethyl-2-cyclohexen-1-one",P S
+509.,127619-37-8,,"3,5,5-trimethyl-4-(3-oxo-1-butenylidene)-2-cyclohexen-1-one (isomer)",Q S
+510.,120853-11-4,,"3,5,5-trimethyl-4-(3-oxo-1-butenylidene)-2-cyclohexen-1-one",Q R
+511.,120853-10-3,,"3,5,5-trimethyl-4-(3-oxo-1-butynyl)-2-cyclohexen-1-one",Q S
+512.,23526-45-6,,vomifoliol,Q E S R
+513.,24427-77-8,,"4-hydroxy-4-(3xi-hydroxy-1-butenyl)-3,5,5-trimethyl-2-cyclohexen-1-one",Q E S
+514.,,,"4-hydroxy-4-(3xi-hydroxy-1-butenyl)-3,5,5-trimethyl-2-cyclohexen-1-one (isomer)",Q
+515.,7070-24-8,,dehydrovomifoliol,Q E S R
+516.,39763-33-2,,dehydrovomifoliol (trans),P E S
+517.,120925-93-1,,dehydrovomifoliol (cis),Q E S
+518.,120853-12-5,,"4-hydroxy-3,5,5-trimethyl-4-(3-oxo-1-butynyl)-2-cyclohexen-1-one",Q S
+519.,14398-38-0,,dehydrovomifoliol (isomer),Q E
+520.,20194-68-7,,"3,5,5-trimethyl-4-(3-oxo-1-butenyl)-2-cyclohexen-1-one",S R
+521.,19377-95-8,,"1,5-di-tert-butyl-3,3-dimethylbicyclo-[3.1.0]hexen-2-one",S R
+522.,36151-01-6,,"7,8-dihydrovomifoliol",Q S
+523.,77846-84-5,,"4-hydroxy-3,5,6-trimethyl-4-(3-oxo-1-butenyl)-2-cyclohexen-1-one",P S R
+524.,,,"2,3-epoxy-4-(hydroxymethylene)-3,5,5-trimethylcyclohexanone",P
+525.,3008-43-3,,"3-methylcyclohexane-1,2-dione",P E S R
+526.,1193-55-1,,"2-methylcyclohexane-1,3-dione",P S
+527.,45731-99-5,,"5,5-dimethyl-2-cyclohexene-1,4-dione",P S
+528.,1125-21-9,,4-oxoisophorone,Q E S R O T
+529.,,,"3,5,5-trimethyl-3-cyclohexene-1,2-dione",Q
+530.,20547-99-3,,"2,2,6-trimethyl-1,4-cyclohexanedione (=3,5,5-trimethyl-1,4-cyclohexanedione)",Q E S R
+531.,641-11-2,,angustione,E S R
+532.,4717-67-3,,dehydroangustione,E S R
+533.,35692-98-9,,"2-hydroxy-3,5,5-trimethyl-2-cyclohexene-1,4-dione",Q E S
+534.,41654-27-7,,"2-methoxy-3,5,5-trimethyl-2-cyclohexene-1,4-dione",Q S
+535.,28750-52-9,,"2-hydroxy-4,4,6-trimethyl-2,5-cyclohexadien-1-one",P S
+536.,33399-09-6,,"2,6,6-trimethyl-3-oxo-1,4-cyclohexadienecarbaldehyde",P E
+537.,35692-95-6,,"4-hydroxy-2,6,6-trimethyl-3-oxo-1,4-cyclohexadienecarbaldehyde",P E S
+538.,,,"4-hydroxy-2,6,6-trimethyl-3-oxo-1-cyclohexenecarbaldehyde",P E
+539.,33399-08-5,,"3-hydroxy-2,6,6-trimethyl-4-oxo-2-cyclohexenecarbaldehyde",P E S
+540.,52904-95-7,,benzoquinone (unkn.str.),P
+541.,719-22-2,,"2,6-di-tert-butyl-p-benzoquinone",S
+542.,106-51-4,,"1,4-benzoquinone",Q E S T
+543.,95268-45-4,,"2,5(or 2,6)-dimethyl-1,4-benzoquinone (incompletely defined substance)",P E S
+544.,3602-55-9,,"2-tert-butyl-1,4-benzoquinone",P E S
+545.,55299-14-4,,"di-tert-butyl-1,4-benzoquinone (unkn.str.)",P
+546.,490-91-5,,thymoquinone,Q E S R
+547.,935-92-2,,"trimethyl-1,4-benzoquinone",P E S
+548.,823-76-7,,acetylcyclohexane,P E S
+549.,917750-72-2,,1-(2-hydroxy-4-methylcyclohexyl)ethanone,E S
+550.,6090-09-1,,4-acetyl-1-methylcyclohexene,Q E S R O
+551.,43219-68-7,,"4-acetyl-1,4-dimethylcyclohexene",P E S R
+552.,41723-54-0,,"4-acetyl-1,2-dimethylcyclohexene",E S
+553.,54200-63-4,,"2-acetyl-3,3-dimethylcyclohexanone",P S
+554.,290305-38-3,,cis-β-elemenone,E S R
+555.,30824-86-3,,trans-β-elemenone,Q E S R
+556.,502-49-8,,cyclooctanone,P S T
+557.,13657-68-6,,curdione,Q E S
+558.,108944-67-8,,neocurdione,P E S
+559.,25645-19-6,,preisocalamendiol,Q E S
+560.,50281-45-3,,acoragermacrone,Q E S
+561.,6902-91-6,,germacrone,Q E S R
+562.,98-86-2,,acetophenone (=1-phenylethanone),Q E S R O T
+563.,13210-29-2,,1-(3-hydroxypyridin-2-yl)ethanone,S O
+564.,,,1-(3-hydroxy-6-methylpyridin-2-yl)ethanone,S O
+565.,,,1-(3-hydroxy-5-methylpyridin-2-yl)ethanone,S O
+566.,,,1-(6-ethyl-3-hydroxypyridine-2-yl)ethanone,S O
+567.,,,"1-(3-hydroxy-5,6-dimethylpyridine-2-yl)ethanone",S O
+568.,577-16-2,,2-methylacetophenone,Q E S
+569.,585-74-0,,3-methylacetophenone,Q E S R
+570.,122-00-9,,4-methylacetophenone,Q E S R O T
+571.,26444-19-9,,methylacetophenone (unkn.str.),Q
+572.,22699-70-3,,3-ethylacetophenone,P E S R
+573.,937-30-4,,4-ethylacetophenone,P E S R
+574.,25496-14-4,,ethylacetophenone (unkn.str.),P
+575.,645-13-6,,4-isopropylacetophenone (=p-acetylcumene),Q E S
+576.,118-93-4,,2'-hydroxyacetophenone,Q E S R O
+577.,121-71-1,,3'-hydroxyacetophenone,Q E S
+578.,99-93-4,,4'-hydroxyacetophenone,Q E S T
+579.,582-24-1,,α-hydroxyacetophenone,E S
+580.,579-74-8,,2-methoxyacetophenone,Q E S R
+581.,586-37-8,,3-methoxyacetophenone,P E S R
+582.,100-06-1,,4-methoxyacetophenone (=acetanisole),Q E S R O
+583.,41903-50-8,,hydroxyacetophenone (unkn.str.),P
+584.,551-93-9,,2'-aminoacetophenone,Q E S R O T
+585.,99-03-6,,3-aminoacetophenone,Q E S R
+586.,99-92-3,,4-aminoacetophenone,P E S T
+587.,27941-88-4,,aminoacetophenone (unkn.str.),Q E R
+588.,89-74-7,,"2,4-dimethylacetophenone",Q E S R
+589.,3637-01-2,,"3,4-dimethylacetophenone",Q E S R
+590.,1202-08-0,,5-isopropyl-2-methyl-acetophenone (=2-acetyl-p-cymene),P E S
+591.,6921-64-8,,2-hydroxy-4-methylacetophenone,P E S R
+592.,1450-72-2,,2-hydroxy-5-methylacetophenone,Q E S
+593.,13494-10-5,,"2,3-dihydroxyacetophenone",P S
+594.,89-84-9,,"2,4-dihydroxyacetophenone",P S
+595.,1197-09-7,,"3,4-dihydroxyacetophenone",Q S
+596.,498-02-2,,acetovanillone (= 4-hydroxy-3-methoxyacetophenone ),Q E S R O T
+597.,552-41-0,,2-hydroxy-4-methoxyacetophenone,Q E S
+598.,1131-62-0,,"3,4-dimethoxyacetophenone",P S
+599.,1467-36-3,,"2,3,4-trimethylacetophenone",Q E S
+600.,2478-38-8,,acetosyringone,Q E S R T
+601.,6781-42-6,,"1,3-diacetylbenzene",P E S
+602.,1009-61-6,,"1,4-diacetylbenzene",P E S R
+603.,41766-72-7,,cis-nerone,Q E S R
+604.,93-55-0,,1-phenyl-1-propanone (=propiophenone),Q E S R
+605.,103-79-7,,1-phenyl-2-propanone,Q E S R
+606.,874-68-0,,1-cyclohexylidene-2-propanone,P S
+607.,2040-14-4,,1-(2-methylphenyl)-1-propanone,P E S
+608.,5337-93-9,,1-(4-methylphenyl)-1-propanone,P E S
+609.,121-97-1,,1-(4-methoxyphenyl)-1-propanone,P E S
+610.,621-87-4,,1-phenoxy-2-propanone,Q E S R
+611.,122-84-9,,1-(4-methoxyphenyl)-2-propanone (=anisketone),Q E S R O T
+612.,27465-51-6,,1-(4-ethylphenyl)-1-propanone,P E S
+613.,35031-52-8,,"1-(2,4-dimethylphenyl)-1-propanone",P E S
+614.,50297-39-7,,"1-(2,4-dihydroxyphenyl)-3-(3-hydroxy-4-methoxyphenyl)propan-1-one",S
+615.,3904-18-5,,"1-(2,4,5-trimethoxyphenyl)-1-propanone",Q E S
+616.,2020-90-8,,"1-(2,4,5-trimethoxyphenyl)-2-propanone (=acoramone)",Q E S
+617.,1835-14-9,,propiovanillone,Q E S
+618.,5650-43-1,,propiosyringone,Q E S R
+619.,579-07-7,,"1-phenylpropane-1,2-dione",P E S
+620.,69271-91-6,,butyrosyringone,P E S
+621.,51004-21-8,,4-cyclopentylidene-2-butanone,P S R O
+622.,6138-85-8,,"4-(2,6,6-trimethylcyclohexyl)-2-butanone (=tetrahydroionone)",P E S
+623.,17283-81-7,,"dihydro-β-ionone (=4-(2,6,6-trimethyl-1-cyclohexenyl)-2-butanone)",Q E S R T
+624.,31499-72-6,,"dihydro-α-ionone (=4-(2,6,6-trimethyl-2-cyclohexenyl)-2-butanone)",Q E S R
+625.,,,dihydroionone (unkn.str.),P
+626.,112379-21-2,,"7,8-dihydro-4-hydroxy-β-ionone (=4-(3-hydroxy-2,6,6-trimethyl-1-cyclohexenyl)-2-butanone)",Q E S R O
+627.,38274-01-0,,"3-hydroxy-5,6-epoxy-β-ionone",S
+628.,20483-36-7,,"dihydrodehydro-β-ionone (=4-(2,6,6-trimethylcyclohexa-1,3-dienyl)-2-butanone)",Q E S R O
+629.,23726-91-2,,"(E)-β-damascone (=(E)-1-(2,6,6-trimethyl-1-cyclohexenyl)-2-buten-1-one)",Q E S R O T
+630.,23726-92-3,,"(Z)-β-damascone (=(Z)-β-1-(2,6,6-trimethyl-1-cyclohexen-1-yl)-2-buten-1-one)",E S R
+631.,35044-68-9,,"β-damascone (=1-(2,6,6-trimethyl-1-cyclohexen-1-yl)-2-buten-1-one)",Q E S R
+632.,56915-02-7,,3-hydroxy-β-damascone,P E S R
+633.,43052-87-5,,"α-damascone (=1-(2,6,6-trimethyl-2-cyclohexenyl)-2-buten-1-one)",P E S R O
+634.,28102-28-5,,"(R)-(E)-(+)-α-damascone (=(E)-(R)-(+)-1-(2,6,6-trimethyl-2-cyclohexen-1-yl)-2-buten-1-one)",P E S T
+635.,116497-11-1,,"(-)-(E)-α-damascone (=[S-(E)]-1-(2,6,6-trimethyl-2-cyclohexen-1-yl)-2-buten-1-one)",P E S T
+636.,23726-94-5,,"(Z)-α-damascone (=(Z)-1-(2,6,6-trimethyl-2-cyclohexen-1-yl)-2-buten-1-one)",E S R
+637.,24720-09-0,,"(E)-α-damascone (=(E)-1-(2,6,6-trimethyl-2-cyclohexen-1-yl)-2-buten-1-one)",E S R
+638.,57378-68-4,,"δ-damascone (=1-(2,6,6-trimethyl-3-cyclohexen-1-yl)-2-buten-1-one)",P E S R
+639.,23726-93-4,,β-damascenone,Q E S R O T
+640.,,,"3,4-dihydro-3-oxoedulan (unkn.str.)",
+641.,,,(Z)-3-oxo-retro-α-ionol,S
+642.,,,(E)-3-oxo-retro-α-ionol,S
+643.,67234-03-1,,"3-ethoxy-1-(2,6,6-trimethyl-1,3-cyclohexadienyl)-1-butanone",P E S
+644.,59739-63-8,,(Z)-β-damascenone,P E S R O
+645.,80445-59-6,,"(E)-1-(2,6-dimethylphenyl)-2-buten-1-one",P S
+646.,,,"(2,3,6-trimethylphenyl)-2-butanone (unkn.str.)",P
+647.,56681-01-7,,"1-(2,3,6-trimethylphenyl)-2-buten-1-one",P S
+648.,54345-38-9,,"(E)-1-(2,3,6-trimethylphenyl)-2-buten-1-one",P S
+649.,36208-32-9,,"4-(2,2,6-trimethyl-1-cyclohexyl)-3-buten-2-one",P E S
+650.,14901-07-6,,"4-(2,6,6-trimethyl-1-cyclohexen-1-yl)-3-buten-2-one",E S R O T
+651.,127-41-3,,α-ionone,Q E S R O T
+652.,24190-29-2,,(R)-(E)-(+)-α-ionone,P E S T
+653.,14398-36-8,,(S)-(E)-(-)-α-ionone,P E S T
+654.,79-77-6,,(E)-β-ionone,Q E S R O T
+655.,79-76-5,,γ-ionone,Q E S R
+656.,8013-90-9,,ionone (unkn.str.),P
+657.,116296-75-4,,3-hydroxy-β-ionone,P E S
+658.,14398-34-6,,4-hydroxy-β-ionone,P E S
+659.,28494-34-0,,"5,6-dihydroxy-β-ionone",P E S
+660.,,,"(E)-4-(1,2,4-trihydroxy-2,6,6-trimethylcyclohexyl)-3-buten-2-one",P S
+661.,79734-43-3,,3-oxo-α-ionone,Q E S R
+662.,29790-29-2,,3-oxo-β-ionone,P E S R O
+663.,74233-41-3,,"3-oxo-7,8-dihydro-α-ionone",E S
+664.,23267-57-4,,"5,6-epoxy-β-ionone",Q E S R O T
+665.,36340-49-5,,(E)-epoxy-β-ionone,Q E S R
+666.,1621579-40-5,,"(Z)-5,6-epoxy-β-ionone",Q E S R
+667.,1203-08-3,,"3,4-dehydro-β-ionone",P E S R
+668.,14398-35-7,,"(E)-3,4-dehydro-β-ionone",P E S
+669.,41704-09-0,,"(Z)-3,4-dehydro-β-ionone",P E
+670.,79934-55-7,,didehydro-γ-ionone,Q E S
+671.,,,"(Z)-4-(6,6-dimethyl-2-methylene-3-cyclohexenyl)-3-buten-2-one",P
+672.,67233-98-1,,"(E)-4-(6,6-dimethyl-2-methylene-3-cyclohexenyl)-3-buten-2-one",P
+673.,79-69-6,,α-irone,E S R T
+674.,495-40-9,,1-phenyl-1-butanone (=butyrophenone),P E S R
+675.,1007-32-5,,1-phenyl-2-butanone,P E S
+676.,2550-26-7,,4-phenyl-2-butanone (=benzylacetone),P E S T
+677.,122-57-6,,4-phenyl-3-buten-2-one,Q E S R O T
+678.,62763-33-1,,3-hydroxy-1-phenyl-2-butanone,Q E S R
+679.,5355-63-5,,3-hydroxy-4-phenyl-2-butanone,Q E S R O T
+680.,5471-51-2,,"4-(4-hydroxyphenyl)-2-butanone (=raspberry ketone, frambinone)",Q E S R O T
+681.,939-49-1,,1-(4-hydroxyphenyl)-2-buten-1-one,P S
+682.,83810-64-4,,3-(2-hydroxy-4-methylphenyl)-2-butanone,Q E S R
+683.,66422-88-6,,4-(4-hydroxyphenyl)-3-methyl-2-butanone,Q
+684.,122-48-5,,gingerone,Q E S R T
+685.,54789-45-6,,"1-(2,3,6-trimethylphenyl)-3-buten-2-one",P S R
+686.,56681-06-2,,"4-(2,3,6-trimethylphenyl)-3-buten-2-one",P E S
+687.,57461-21-9,,"(3E)-4-(2,3,6-trimethylphenyl)-3-buten-2-one",P E S R O
+688.,81018-77-1,,"(3Z)-4-(2,3,6-trimethylphenyl)-3-buten-2-one",S R O
+689.,93-91-4,,"1-phenylbutane-1,3-dione",Q E S
+690.,1009-14-9,,1-phenyl-1-pentanone (=valerophenone),Q E S
+691.,6683-92-7,,1-phenyl-2-pentanone (=benzyl propyl ketone),P E S
+692.,2235-83-8,,5-phenyl-2-pentanone,Q S
+693.,7403-42-1,,4-methyl-4-phenyl-2-pentanone,P S
+694.,86843-15-4,,2-(2-hydroxy-4-methylphenyl)-3-pentanone,Q E S R
+695.,25870-62-6,,1-phenyl-2-hexanone,P S
+696.,14128-61-1,,5-methyl-5-phenyl-2-hexanone,S
+697.,495-74-9,,capillin,E S R
+698.,26294-59-7,,α-atlantone,Q E S R
+699.,56192-70-2,,(Z)-α-atlantone,Q E S R
+700.,103088-61-5,,5-propyl-4-nonanone,Q
+701.,1671-75-6,,1-phenylheptanone (unkn.str.),P
+702.,39027-62-8,,2-methyl-6-(4-methylphenyl)-3-heptanone,P S
+703.,86981-84-2,,2-methyl-6-(4-methylphenyl)-1-hepten-3-one,P E S
+704.,13901-85-4,,"6-methyl-2,5-heptanedione",P S
+705.,58865-88-6,,9-oxonerolidol,Q E S
+706.,36219-73-5,,10-undecen-2-one,P S
+707.,4669-04-9,,1-phenyl-1-pentadecanone (=pentadecaphenone),P E S
+708.,941-98-0,,α-methyl naphtyl ketone,E S
+709.,93-08-3,,2-acetylnaphthalene,P E S R
+710.,79067-90-6,,gingerdione,P S
+711.,119-61-9,,benzophenone,Q E S R
+712.,43205-82-9,,p-menth-6-en-2-one,P E S R
+713.,89-80-5,,dl-menthone,Q E S R O
+714.,3391-87-5,,"(2R,5S)-(+)-menthone",P S T
+715.,14073-97-3,,"(2S,5R)-(-)-menthone",P E S R T
+716.,491-07-6,,isomenthone,Q E S R
+717.,1196-31-2,,(+)-isomenthone,E S T
+718.,18309-28-9,,(-)-isomenthone,E S T
+719.,10458-14-7,,menthone,Q E S R O T
+720.,169209-96-5,,2-ethylmenthone,S R
+721.,,,2-ethylisomenthone,S R
+722.,128946-15-6,,2-hydroxymenthone,E S
+723.,74242-46-9,,trans-2-hydroxymenthone,P S
+724.,7599-80-6,,4-hydroxymenthone,P E S
+725.,3304-24-3,,8-hydroxymenthone,P E S
+726.,62392-79-4,,2-hydroxyisomenthone,
+727.,57129-11-0,,cis-2-hydroxyisomenthone,P
+728.,74219-28-6,,4-hydroxyisomenthone,P E S
+729.,7599-80-6,,"(+)-(1R,4S)-4-hydroxyisomenthone",Q E S
+730.,,,2-(3-oxobutyl)-isomenthone,R
+731.,89-81-6,,piperitone,Q E S R O T
+732.,6091-50-5,,(4S)-(+)-piperitone,P E S
+733.,4573-50-6,,(4R)-(-)-piperitone,P E S
+734.,58615-39-7,,isopiperitone,P S R O
+735.,54783-36-7,,pseudodiosphenol,P E S
+736.,89-82-7,,pulegone (=(R)-Pulegone),Q E S R T
+737.,3391-90-0,,(S)-Pulegone,P E S
+738.,529-00-0,,isopulegone,Q E S R T
+739.,52152-10-0,,cis-isopulegone,P E S
+740.,29606-79-9,,trans-isopulegone,Q E S R
+741.,,,isoisopulegone,Q
+742.,18194-21-3,,4-(iso)hydroxyisopulegone,P E S
+743.,491-09-8,,piperitenone,Q E S R O
+744.,490-03-9,,2-hydroxypiperitone (=diosphenol),Q E S
+745.,71843-50-0,,"2,4-dihydroxypiperitone (=4-hydroxydiosphenol)",P E S
+746.,57074-38-1,,2-methoxypiperitone (=diosphenol methyl ether),P E S
+747.,41853-05-8,,4-hydroxypiperitone,Q E S
+748.,57125-34-5,,"1,3-dihydroxy-p-3-menthen-2-one (=1-hydroxy-ψ-diosphenol)",P E
+749.,83212-19-5,,8-hydroxy-4-p-menthen-3-one,Q E S
+750.,35736-66-4,,(-)-1R-8-hydroxy-4-p-menthen-3-one,P E S
+751.,7712-46-1,,carvonehydrate,E S R
+752.,,,"4,8-dihydroxycarvotanacetone",Q E S
+753.,57074-39-2,,3-methoxy-p-3-menthen-2-one (=ψ-diosphenol methyl ether),P E
+754.,7764-50-3,,dihydrocarvone (=p-8-menthen-2-one),Q E S R T
+755.,5948-04-9,,trans-dihydrocarvone,Q E S R O
+756.,3792-53-8,,cis-dihydrocarvone,Q S R O
+757.,12705-70-3,,isodihydrocarvone,P E S
+758.,53892-46-9,,"p-5,8-menthadien-2-one",P
+759.,99-49-0,,carvone,Q E S R O T
+760.,6485-40-1,,(4R)-(-)-carvone,Q E S R O T
+761.,2244-16-8,,(4S)-(+)-carvone,Q E S R O T
+762.,529-01-1,,isopiperitenone,Q E S R
+763.,499-74-1,,carvenone (=p-3-menthen-2-one),Q E S R
+764.,56423-48-4,,5-hydroxycarvone,P E S
+765.,499-71-8,,carvotanacetone (=p-1-menthen-6-one),Q E S R O
+766.,131486-99-2,,6-hydroxycarvotanacetone,Q E S R
+767.,79862-14-9,,5-isopropyl-2-propyl-2-cyclohexen-1-one,P S
+768.,,,2-isobutyl-5-isopropyl-2-cyclohexen-1-one,P
+769.,13854-90-5,,"2-hydroxy-p-1,4(8)-menthadien-3-one (=diosphenolene)",P E
+770.,57074-40-5,,"2-methoxy-p-1,4(8)-menthadien-3-one (=diospholene methyl ether)",P E
+771.,56485-42-8,,turmerone,Q E S
+772.,4179-20-8,,dihydro-ar-turmerone,Q E S R
+773.,532-65-0,,ar-turmerone,Q E S R
+774.,11053-08-0,,spicatine,P E S
+775.,471-05-6,,zerumbone,Q S R
+776.,19888-05-2,,humulenone II,P E S
+777.,24405-90-1,,humuladienone,Q E S T
+778.,76-22-2,,dl-camphor,Q E S R
+779.,464-49-3,,d-camphor,Q E S R O T
+780.,,,endo-isocamphanone,P
+781.,18530-02-4,,campherenone,Q S
+782.,4176-04-9,,trans-4-caranone,E S R
+783.,4176-01-6,,cis-4-caranone,E S R
+784.,547-60-4,,pinocamphone,Q E S R
+785.,15358-88-0,,isopinocamphone,Q E S R
+786.,24903-95-5,,nopinone,Q E S R
+787.,38651-65-9,,(+)-nopinone,E S
+788.,40550-41-2,,α-fenchocamphorone,E S R
+789.,1195-79-5,,fenchone,Q E S R O T
+790.,7787-20-4,,L-fenchone,E S T
+791.,4695-62-9,,(+)-fenchone,Q E S T
+792.,36262-12-1,,dehydrosabinaketone,E S R
+793.,513-20-2,,sabina ketone,Q E S R
+794.,546-80-5,,thujone (=α-thujone),Q E S R T
+795.,471-15-8,,isothujone (=β-thujone),Q E S R O
+796.,53585-45-8,,car-3-en-2-one,P S R
+797.,24545-81-1,,umbellulone,Q E S R O T
+798.,502-42-1,,cycloheptanone,S T
+799.,30460-92-5,,pinocarvone,Q E S R
+800.,515-90-2,,verbanone (=4-pinanone),P E S R
+801.,,,pinanone (unkn.str.),Q
+802.,19822-67-4,,karahanaenone,P E S R
+803.,80-57-9,,verbenone (=2-pinen-4-one),Q E S R
+804.,1196-01-6,,Levoverbenone,Q
+805.,100347-96-4,,curcumenone,Q S
+806.,473-06-3,,chrysanthenone,Q E S R
+807.,70497-06-2,,"cis-4,7-dimethylbicyclo[3.2.1]oct-3-en-6-one",Q S
+808.,64701-23-1,,"trans-4,7-dimethylbicyclo[3.2.1]oct-3-en-6-one",P S
+809.,5956-05-8,,acorenone,Q E S R
+810.,10121-28-5,,acorone,Q S R
+811.,6168-64-5,,isoacorone,Q S R
+812.,,,neoacorone,P
+813.,4674-50-4,,nootkatone,Q E S R O T
+814.,91967-81-6,,"3,4,4a,5,8,8a-hexahydro-4a-methyl-2(1H)-naphthalenone",S R
+815.,38427-78-0,,(-)-nootkatone,S R O T
+816.,27621-99-4,,4-epinootkatone,E T
+817.,5090-63-1,,"8,9-didehydronootkatone",Q E S
+818.,20489-53-6,,"1,10-dihydronootkatone",Q E S R O T
+819.,5195-69-7,,"8-isopropyl-5,6-dimethylbicyclo[4.4.0]-1-decen-3-one",E T
+820.,38427-80-4,,(±)-tetrahydronootkatone,E S T
+821.,,,9-oxonootkatone,Q
+822.,27033-52-9,,"1,10-dihydro-9-oxo-nootkatone",Q
+823.,15764-04-2,,α-vetivone,Q E S R O T
+824.,,,"8,9-didehydro-α-vetivone",Q S
+825.,34175-41-2,,"1,10-dihydro-α-vetivone",Q
+826.,562-23-2,,eremophilone,E S R T
+827.,5090-90-4,,8-hydroxyeremophilone,E S R
+828.,132858-00-5,,8-hydroxy-dihydro-eremophilone,E R
+829.,473-08-5,,α-cyperone,Q S
+830.,547-26-2,,7-epi-α-cyperone,P E S
+831.,2303-31-3,,10-epi-α-cyperone,Q E S
+832.,2767-18-2,,"3,6,6-trimethyl-2,4-cycloheptadienone",P E
+833.,,,"1,4,4-trimethylcycloheptadienone (unkn.str.)",P R
+834.,499-44-5,,"2-hydroxy-4-isopropyl-2,4,6-cycloheptatrienone",P E S R
+835.,,,"1,3,3-trimethyl-7-oxabicyclo[4.1.0]heptane-2,5-dione",Q
+836.,,,"2,2,6-trimethyl-7-oxabicyclo[4.3.0]non-1(9)-en-4-one",P
+837.,31089-96-0,,"3a,4,5,6,7,7a-hexahydro-3,3a,7,7-tetramethyl-1H-inden-1-one",P E S
+838.,,,"3,3a,6,7-tetrahydro-3,3a,7,7-tetramethylinden-2-one",P E
+839.,28305-60-4,,β-oplopenone,P E S R
+840.,,,"(4S)-3,4-dihydro-4-hydroxy-1(2H)-naphthalenone (=(4S)-4-hydroxy-α-tetralone)",P E S
+841.,,,"(4R)-3,4-dihydro-4-hydroxy-1(2H)-naphthalenone (=(4R)-4-hydroxy-α-tetralone)",P E S
+842.,54712-38-8,,"(4S)-3,4-dihydro-4,8-dihydroxy-1(2H)-naphthalenone (=regiolone, isosclerone)",Q E S
+843.,137494-04-3,,"(4R)-3,4-dihydro-4,8-dihydroxy-1(2H)-naphthalenone",P E S
+844.,862672-31-9,,"(4S)-3,4-dihydro-5-hydroxy-4-methoxy-1(2H)-naphthalenone",P E
+845.,869083-26-1,,"(4R)-3,4-dihydro-5-hydroxy-4-methoxy-1(2H)-naphthalenone",P E
+846.,,,"(4S)-3,4-dihydro-5,8-dihydroxy-4-methoxy-1(2H)-naphthalenone",P E
+847.,,,"(4R)-3,4-dihydro-5,8-dihydroxy-4-methoxy-1(2H)-naphthalenone",P E
+848.,868834-50-8,,"(4S)-3,4-dihydro-4,8-dihydroxy-5-methoxy-1(2H)-naphthalenone",P E
+849.,28449-86-7,,"3,4-dihydro-4,7-dimethyl-1(2H)-naphthalenone",Q E S R
+850.,,,14-oxocalamenene,Q E S R
+851.,57494-10-7,,10-norcalamenen-10-one,Q E S R
+852.,93427-92-0,,"octahydro-4a,7,7-trimethyl-2(1H)-naphthalenone",P E S
+853.,7056-56-6,,"cis-octahydro-4a,7,7-trimethyl-2(1H)-naphthalenone",P E S
+854.,55528-90-0,,valeranone,P E S R
+855.,39012-14-1,,acolamone,P E S
+856.,39012-15-2,,isoacolamone,P E S
+857.,,,"3,4,7,8-tetrahydro-5,7,7-trimethyl-2(6H)-naphthalenone",P
+858.,5835-19-8,,"4,4a,5,6-tetrahydro-4,4,7-trimethyl-2(3H)-naphthalenone",P E
+859.,83406-42-2,,"trans-9-methyldecalin-1,8-dione",Q E S R
+860.,130-15-4,,"1,4-naphthalenedione (=1,4-naphthoquinone)",P E S
+861.,481-39-0,,"5-hydroxy-1,4-naphthalenedione (=juglone, regianin)",Q E S
+862.,61836-43-9,,"3,3'-bisjuglone",E S
+863.,6312-53-4,,"2,3-dihydro-5-hydroxy-1,4-naphthalenedione",P E S
+864.,,,"2,3-dihydro-5-hydroxy-2-methyl-1,4-naphthalenedione",P E
+865.,35387-23-6,,7-epi-α-selinen-2-one,Q E S
+866.,86917-81-9,,"5α,7α,10β-selina-3,11-dien-2-one",P E S
+867.,86917-80-8,,"5α,7α,10α-selina-3,11-dien-2-one",P E S
+868.,,,"5β,7α,10α-selina-3,11-dien-2-one",P E
+869.,,,"selina-3,5,11-trien-2-one",P
+870.,185148-39-4,,"4,7-dimethylbicyclo[3.2.1]oct-3-en-2-one",P E S
+871.,4844-11-5,,bicyclo[3.3.1]non-2-en-9-one,P S
+872.,,,caryophyllene ketone,P
+873.,,,"4,11,11-trimethyl-8-methylenebicyclo[7.2.0]undecan-5-one",P S
+874.,,,trans-12-norcaryophyll-5-en-2-one,P
+875.,,,cis-spiro[4.5]decenone (unkn.str.),P
+876.,19377-59-4,,theaspirone,Q E S R
+877.,23024-52-4,,cis-theaspirone,P E S
+878.,50763-74-1,,"(2R,5S)-theaspirone B (=(2R-cis)-theaspirone)",P E S
+879.,153925-96-3,,"(2S,5R)-theaspirone B (=(2S-cis)-theaspirone)",P E S
+880.,24399-19-7,,"(2S,5S)-theaspirone A (=(2S-trans)-theaspirone)",P E S
+881.,153153-55-0,,"(2R,5R)-theaspirone A (=(2R-trans)-theaspirone)",P E S
+882.,85248-56-2,,"8,9-dehydrotheaspirone",P E S
+883.,1333-52-4,,acetylnaphthalene (unkn.str.),P
+884.,4832-17-1,,β-decalone,P E S
+885.,943-95-3,,9β-methyl-2-decalone,P E S
+886.,71305-96-9,,calamusenone,Q E S
+887.,71305-87-8,,isocalamusenone,P E S
+888.,18374-76-0,,rotundone,Q E S R O T
+889.,,,4-maalien-3-one,Q
+890.,11023-22-6,,2-clovanone,Q
+891.,539-80-0,,tropone,P E S
+892.,503-93-5,,eucarvone,Q E S R
+893.,33983-45-8,,acoronene,P S
+894.,497-38-1,,2-norbornanone,P E S T
+895.,53803-33-1,,6-camphenone,E S R
+896.,13211-15-9,,camphenilone,E S R
+897.,58560-59-1,,longicamphenilone,E S R
+898.,38230-32-9,,dehydrocurdione,Q S
+899.,73809-82-2,,4(14)-salvialen-1-one,Q E S R
+900.,20529-87-7,,santenone,Q E S
+901.,59300-51-5,,santalone,E S R
+902.,137894-69-0,,santalenone,E S R
+903.,784-04-3,,9-acetylanthracene,Q S
+904.,1322-60-7,,"dihydroxy-9,10-anthracenedione (unkn.str.)",P E
+905.,1058-61-3,,β-sitostenone,Q E S R
+906.,18339-16-7,,5α-androst-16-en-3-one,Q S O T
+907.,4075-07-4,,"4,16-androstadien-3-one",S T

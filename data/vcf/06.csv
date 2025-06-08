@@ -1,0 +1,1849 @@
+,CAS,,Compound name,Compoundflags
+,CAS,,Compound name,Compound flags
+1.,6983-79-5,,bixin,P E S
+2.,616-38-6,,dimethyl carbonate,P S
+3.,2499-59-4,,octyl prop-2-enoate,P E S R
+4.,105-58-8,,diethyl carbonate,Q E S R
+5.,623-53-0,,ethenyl icosyl carbonate,Q E S
+6.,77-90-7,,tributyl acetylcitrate,Q E S
+7.,31773-95-2,,oleuropein aglycone,P S
+8.,174511-64-9,,ligustroside aglycone,P S
+9.,108-32-7,,propylene carbonate,P E S
+10.,,,bis(methylbutyl) carbonate (unkn.str.),P
+11.,67633-96-9,,(Z)-3-Hexenyl methyl carbonate,S R
+12.,67879-62-3,,diphenethyl carbonate,P E
+13.,107-31-3,,methyl formate,Q S O T
+14.,1200-67-5,,Isobornyl formate,P E S
+15.,109-94-4,,ethyl formate,Q E S R O T
+16.,122-68-9,,3-Phenylpropyl cinnamate,P E S O
+17.,103-59-3,,Cinnamyl isobutyrate,Q E S R
+18.,,,"2,2-dimethyl-1-(2-hydroxy-1-methylethyl)propyl 2-methylpropanoate",P S R
+19.,140-27-2,,Cinnamyl isovalerate,Q E S R
+20.,479-61-8,,chlorophyll a,P S
+21.,519-62-0,,chlorophyll b,P S
+22.,63791-85-5,,ethyl 2-ethyl-3-methylbutanoate,S
+23.,122-51-0,,triethyl orthoformate,Q E S
+24.,110-74-7,,propyl formate,P E S T
+25.,625-55-8,,isopropyl formate,P E S T
+26.,5129-66-8,,methyl 12-methyltetradecanoate,Q S
+27.,625-58-1,,"nitric acid, ethyl ester",P S
+28.,1838-59-1,,allyl formate (=2-propenyl formate),P E S R
+29.,592-84-7,,butyl formate,Q E S R T
+30.,5655-61-8,,l-Bornyl acetate,Q E S
+31.,40266-29-3,,"(Z,E)-2,6-farnesyl acetate",P E S R
+32.,24163-97-1,,"(2Z,6Z)-farnesyl acetate",P S
+33.,126182-13-6,,farnesyl valerate,P E S
+34.,,,11-tetradeceniol acetate (unkn.str.),
+35.,24163-98-2,,"(2E,6Z)-farnesyl acetate",P S
+36.,85611-33-2,,(E)-nerolidyl acetate,P S R
+37.,58130-58-8,,"(E)-2,3-dihydrofarnesyl acetate",P S
+38.,91050-14-5,,(Z)-nerolidyl acetate,P S R
+39.,1912-33-0,,methyl indole-3-acetate,E S
+40.,487-89-8,,1H-indole-3-carboxaldehyde,E S
+41.,104857-55-8,,"(E,E)-farnesyl propanoate",P E S
+42.,24567-27-9,,2-hydroxyethyl propionate,S
+43.,542-55-2,,isobutyl formate,Q E S R T
+44.,589-40-2,,sec-butyl formate,Q E S
+45.,58368-66-4,,2-pentyl formate,P E S
+46.,35073-27-9,,2-methylbutyl formate,P S T
+47.,,,methylbutyl formate (unkn.str.),P
+48.,68480-28-4,,3-methyl-2-butenyl formate (=prenyl formate),Q E S R
+49.,638-49-3,,pentyl formate,P E S R
+50.,110-45-2,,isopentyl formate,Q E S R O T
+51.,629-33-4,,hexyl formate,Q E S
+52.,,,2-hexenyl formate,
+53.,53398-78-0,,(E)-2-hexenyl formate,Q E S R
+54.,2315-09-5,,3-hexenyl formate,P S
+55.,33467-73-1,,(Z)-3-hexenyl formate,Q E S R
+56.,56922-80-6,,trans-3-hexenyl formate,P E
+57.,28261-05-4,,hexenyl formate (unkn.str.),
+58.,112-23-2,,heptyl formate,Q E S R
+59.,112-32-3,,octyl formate,Q E S R
+60.,84434-65-1,,1-ethylhexyl formate,E S
+61.,,,1-octen-3-yl formate,P E
+62.,105-85-1,,citronellyl formate,Q E S R
+63.,105-86-2,,geranyl formate,Q E S R T
+64.,2142-94-1,,neryl formate,Q E S R
+65.,115-99-1,,linalyl formate,Q E S R O
+66.,63321-70-0,,"octanoic acid, 2-ethylhexyl ester",P E S
+67.,2153-26-6,,α-terpinyl formate,Q E S R O
+68.,,,terpinyl formate (unkn.str.),P
+69.,58096-46-1,,caryophyllene formate,P S
+70.,104-57-4,,benzyl formate,Q E S R T
+71.,56847-05-3,,"9-octadecen-12-ynoic acid, methyl ester",Q S
+72.,30649-97-9,,methyl myrtenate,P S
+73.,104-62-1,,phenethyl formate,Q E S R T
+74.,104-65-4,,cinnamyl formate,E S
+75.,23510-72-7,,(E)-cinnamyl formate,P E S
+76.,29239-07-4,,carvyl formate,S
+77.,56423-41-7,,cis-carvyl formate,P
+78.,56423-42-8,,trans-carvyl formate,P S
+79.,2230-90-2,,menthyl formate,P E S
+80.,72928-52-0,,myrtenyl formate,P E S
+81.,122-91-8,,p-anisyl formate,Q E S R T
+82.,7492-41-3,,bornyl formate,Q E S R O
+83.,51-79-6,,ethyl carbamate (=urethane),Q E S T
+84.,687-48-9,,"ethyl N,N-dimethylcarbamate",Q E S T
+85.,2621-78-5,,N-benzyl O-ethyl carbamate,Q E S
+86.,79-20-9,,methyl acetate,Q E S R O T
+87.,1445-45-0,,trimethyl orthoacetate,P S
+88.,141-78-6,,ethyl acetate,Q E S R O T
+89.,459-73-4,,ethyl glycinate (=ethyl aminoacetate),Q E S
+90.,7148-06-3,,"methyl N,N-dimethylglycinate",P E S R
+91.,1906-82-7,,ethyl N-acetylglycinate (=ethyl acetamidoacetate),P E S
+92.,108-05-4,,vinyl acetate,P E S R O T
+93.,2146-71-6,,ethenyl dodecanoate,P S
+94.,86011-33-8,,hydroxymethyl acetate,E S
+95.,542-59-6,,"2-hydroxyethyl acetate (=2-acetoxyethanol, 1,2-ethanediol monoacetate)",P E S
+96.,111-55-7,,"1,2-ethanediol diacetate (=1,2-diacetoxyethane)",P E S T
+97.,98962-89-1,,"1,2-ethanediol acetate propanoate (=1-acetoxy-2-propanoyloxyethane)",P E S
+98.,110-49-6,,2-methoxyethyl acetate,Q E S T
+99.,1608-72-6,,1-ethoxyethyl acetate,E S
+100.,959269-58-0,,7-methyl-Z-tetradecen-1-ol acetate,Q E S
+101.,111-15-9,,2-ethoxyethyl acetate,Q E S R T
+102.,,,ethoxyethyl acetate (unkn.str.),P
+103.,112-15-2,,"2-(2-ethoxyethoxy)ethyl acetate (=diethyleneglycol monoethyl ether acetate, carbitol acetate)",Q E S T
+104.,6065-82-3,,diethoxyethyl acetate,Q E S
+105.,112-07-2,,2-butoxyethyl acetate,P E S R T
+106.,109-60-4,,propyl acetate,Q E S R O T
+107.,108-21-4,,isopropyl acetate,Q E S R O T
+108.,625-16-1,,"1,1-dimethylpropyl acetate",P E S T
+109.,591-87-7,,allyl acetate,Q E S
+110.,108-22-5,,isopropenyl acetate (=1-propen-2-ol acetate),P E S
+111.,20298-69-5,,cis-2-tert-butylcyclohexanol acetate,P S R
+112.,6203-88-9,,1-methyl-1-propenyl acetate (=2-acetoxy-2-butene),P E S
+113.,820-71-3,,2-methyl-2-propenyl acetate (=methallyl acetate),P E S R
+114.,22094-23-1,,2-hydroxypropanal acetate (=2-acetoxypropanal),P E S
+115.,592-20-1,,"2-oxopropyl acetate (=acetol acetate, 1-acetoxyacetone, acetonyl acetate)",Q E S R
+116.,118-60-5,,2-ethylhexyl salicylate,P S R
+117.,6214-01-3,,"1,2-propanediol 2-acetate",Q E S
+118.,623-84-7,,"1,2-propanediol diacetate",P E S R
+119.,36678-05-4,,"1,3-propanediol monoacetate (=3-acetoxy-1-propanol)",Q E S
+120.,628-66-0,,"1,3-propanediol diacetate",Q E S R
+121.,102-76-1,,"1,2,3-propanetriol triacetate (=triacetin)",P E S R
+122.,123-86-4,,butyl acetate,Q E S R O T
+123.,10415-88-0,,4-Phenyl-2-butyl acetate,Q E S R
+124.,110-19-0,,isobutyl acetate (=2-methylpropyl acetate),Q E S R O T
+125.,540-88-5,,"tert-butyl acetate (=1,1-dimethylethyl acetate)",Q E S T
+126.,105-46-4,,"sec-butyl acetate (=2-butyl acetate, 1-methylpropyl acetate)",Q E S R T
+127.,39310-78-6,,butenyl acetate (unkn.str.),
+128.,624-41-9,,2-methylbutyl acetate,Q E S R O T
+129.,,,methylbutyl acetate (unkn.str.),P
+130.,55670-09-2,,2-methylenebutyl acetate,P E S R
+131.,5343-96-4,,"1,2-dimethylpropyl acetate",Q E S T
+132.,926-41-0,,"2,2-dimethylpropyl acetate",E S T
+133.,33425-30-8,,2-methyl-2-butenyl acetate,Q S R
+134.,19248-94-3,,2-methyl-(E)-2-butenyl acetate (=tiglyl acetate),Q E S R
+135.,41414-68-0,,2-methyl-(Z)-2-butenyl acetate (=angelyl acetate),Q E S
+136.,24509-88-4,,2-methyl-3-buten-2-yl acetate,E S R
+137.,1191-16-8,,3-methyl-2-butenyl acetate (=2-isopentenyl acetate),Q E S R O
+138.,5205-07-2,,3-methyl-3-butenyl acetate,Q E S R
+139.,87853-92-7,,3-methylbutenyl acetate (unkn.str.),P
+140.,1575-57-1,,2-oxobutyl acetate (=1-acetoxybutan-2-one),Q E S R
+141.,10150-87-5,,3-oxobutyl acetate,Q S
+142.,7459-46-3,,"triethyl 1,1,2-ethanetricarboxylate",P S
+143.,4906-24-5,,"1-methyl-2-oxopropyl acetate (=acetoin acetate, 3-acetoxy-2-butanone)",Q E S R
+144.,35435-68-8,,"1,4-butanediol monoacetate (=4-acetoxy-1-butanol)",Q E S
+145.,56255-48-2,,"2,3-butanediol monoacetate (=3-acetoxy-2-butanol)",Q E S
+146.,,,"(E)-2,3-butanediol monoacetate (=(E)-3-acetoxy-2-butanol)",Q E R
+147.,,,butanediol monoacetate (unkn.str.),P
+148.,54927-98-9,,"erythro-2,3-butanediol monoacetate (=erythro-3-acetoxy-2-butanol)",P E S
+149.,59699-26-2,,"threo-2,3-butanediol monoacetate (=threo-3-acetoxy-2-butanol)",P E S
+150.,,,"2,3-butanediol mono-or diacetate (unkn.str.)",
+151.,628-67-1,,"1,4-butanediol diacetate",P E S R
+152.,1117-31-3,,"1,3-butanediol diacetate",P E S R
+153.,1114-92-7,,"2,3-butanediol diacetate",Q E S R
+154.,,,butanediol diacetate (unkn.str.),P
+155.,17998-02-6,,"erythro-2,3-butanediol diacetate",Q S R O
+156.,79297-93-1,,"threo-2,3-butanediol diacetate",Q S R
+157.,90612-80-9,,"2-methylene-1,4-butanediol diacetate",P E R
+158.,30264-54-1,,"2-methyl-2-butene-1,4-diol diacetate",E S
+159.,59055-00-4,,"(Z)-2-methyl-2-butene-1,4-diol diacetate",P E S R
+160.,59054-99-8,,"(E)-2-methyl-2-butene-1,4-diol diacetate",P E S R
+161.,628-63-7,,pentyl acetate (=amyl acetate),Q E S R O T
+162.,123-92-2,,"isopentyl acetate (=3-methylbutyl acetate, isoamyl acetate)",Q E S R O T
+163.,626-38-0,,1-methylbutyl acetate (=2-pentyl acetate),Q E S R O T
+164.,54638-10-7,,(R)-1-methylbutyl acetate,Q E
+165.,55621-90-4,,(S)-1-methylbutyl acetate (=(S)-2-pentyl acetate),P
+166.,620-11-1,,3-pentyl acetate,P E S T
+167.,6493-92-1,,(S)-2-methylbutyl acetate,P S
+168.,1576-85-8,,4-pentenyl acetate,P E S R
+169.,59472-39-8,,pentenyl acetate (unkn.str.),P
+170.,774-40-3,,ethyl mandelate,Q S
+171.,7789-99-3,,2-methylpentyl acetate,P S R
+172.,628-95-5,,4-methylpentyl acetate,P E S
+173.,108-84-9,,4-methyl-2-pentyl acetate,E S T
+174.,1603-79-8,,ethyl benzoylformate,P E S R
+175.,71487-16-6,,3-methyl-4-penten-1-yl acetate,Q S R
+176.,68113-53-1,,2-oxopentyl acetate,P
+177.,2983-05-3,,"3-oxopentyl-2 acetate (=2-hydroxy-3-pentanone, acetate)",P E
+178.,7371-86-0,,"2,4-pentanediol 2,4-diacetate",P E S R
+179.,142-92-7,,hexyl acetate,Q E S R O T
+180.,5953-49-1,,1-methylpentyl acetate (=2-hexyl acetate),P E S R O T
+181.,40780-64-1,,3-hexyl acetate,E S R
+182.,84813-55-8,,hexyl acetate (branched),P
+183.,28933-77-9,,1-hexenyl acetate,P
+184.,10094-40-3,,2-hexenyl acetate,P E S
+185.,2497-18-9,,(E)-2-hexenyl acetate,Q E S R
+186.,56922-75-9,,(Z)-2-hexenyl acetate,Q S R
+187.,1708-82-3,,3-hexenyl acetate,Q E S R O T
+188.,3681-71-8,,(Z)-3-hexenyl acetate,Q E S R O T
+189.,3681-82-1,,(E)-3-hexenyl acetate,Q E S R O T
+190.,42125-17-7,,(Z)-4-hexenyl acetate,Q E S R O
+191.,42125-34-8,,(E)-4-hexenyl acetate,Q S
+192.,5048-26-0,,5-hexenyl acetate,Q S R
+193.,35926-04-6,,1-hexen-3-yl acetate,E S
+194.,109-95-5,,ethyl nitrite,E S
+195.,543-67-9,,propyl nitrite,Q S R
+196.,,,hexenyl acetate (unkn.str.),Q
+197.,103002-37-5,,(Z)-hexenyl acetate (unkn.str.),Q
+198.,34650-24-3,,2-methylhexyl acetate,S
+199.,103-09-3,,2-ethylhexyl acetate,Q E S R T
+200.,1069-67-6,,1-isopropenyl-4-methylene-5-hexenyl acetate,Q E O
+201.,1516-17-2,,"2,4-Hexadienyl acetate",E S
+202.,79507-88-3,,santolinyl acetate,E S R
+203.,112-06-1,,heptyl acetate,Q E S R O T
+204.,5921-82-4,,1-methylhexyl acetate (=2-heptyl acetate),Q E S R T
+205.,54638-12-9,,(R)-1-methylhexyl acetate,Q E S
+206.,3540-06-5,,(S)-1-methylhexyl acetate (=(S)-2-heptyl acetate),P E S
+207.,35468-97-4,,1-heptenyl acetate,Q E S R O
+208.,1576-79-0,,2-heptenyl acetate,P
+209.,83540-70-9,,(Z)-2-heptenyl acetate,S R
+210.,16939-73-4,,(E)-2-heptenyl acetate,P E S R
+211.,1576-78-9,,(Z)-3-heptenyl acetate,Q S R
+212.,42125-15-5,,(Z)-4-heptenyl acetate,P E S R
+213.,150521-47-4,,(E)-4-hepten-2-yl acetate,P E R
+214.,94088-33-2,,(Z)-4-hepten-2-yl acetate,Q E S R
+215.,1541-02-2,,1-hepten-2-yl acetate,P E
+216.,35926-06-8,,1-hepten-3-yl acetate,E S
+217.,31565-19-2,,6-methylheptyl acetate,Q S
+218.,3465-88-1,,artemisyl acetate,E S R
+219.,112-14-1,,octyl acetate,Q E S R O T
+220.,2051-50-5,,1-methylheptyl acetate (=2-octyl acetate),P E S R O T
+221.,4864-61-3,,1-ethylhexyl acetate (=3-octyl acetate),Q E S R
+222.,,,sec-octyl acetate (unkn.str.),P
+223.,26806-12-2,,(Z)-2-octenyl acetate,E S R
+224.,3913-80-2,,trans-2-Octen-1-yl acetate,E S R
+225.,7380-48-5,,3-octenyl acetate,P R
+226.,69668-83-3,,(Z)-3-octenyl acetate,Q S R
+227.,35602-33-6,,(E)-3-octenyl acetate,Q S R
+228.,105450-79-1,,(Z)-4-octenyl acetate,Q S R O
+229.,150462-80-9,,(E)-4-octenyl acetate,P E S R
+230.,71978-00-2,,(Z)-5-octenyl acetate,Q E S R O
+231.,2442-10-6,,1-octen-3-yl acetate,Q E S R T
+232.,,,"1,3-octanediol monoacetate",P
+233.,39846-61-2,,"1,3-octanediol diacetate",P S
+234.,,,"6,7-epoxy-3,7-dimethyl-2-octen-1-ol, acetate",P E
+235.,37366-04-4,,octenyl acetate (unkn.str.),P
+236.,,,"6,7-epoxy-3,7-dimethyl-1-octen-3-ol, acetate",Q E
+237.,20780-49-8,,"3,7-dimethyloctyl acetate",Q E S R
+238.,108597-90-6,,dihydrolinalyl acetate,Q E S
+239.,,,"3,5-octadienyl acetate",
+240.,85722-82-3,,"(E,Z)-3,5-octadienyl acetate",P
+241.,85722-81-2,,"(E,E)-3,5-octadienyl acetate",P
+242.,20776-25-4,,7-methyl-3-methylene-6-octenyl acetate,Q E S
+243.,,,"2-methyl-6-methylene-2,7-octadienyl acetate",
+244.,39846-70-3,,3-hydroxyoctyl acetate,P
+245.,90755-82-1,,1-hydroxyoctyl-3 acetate,P E
+246.,,,3-hydroxy-5-octenyl acetate,
+247.,71677-26-4,,(Z)-3-hydroxy-5-octenyl acetate,P S
+248.,143-13-5,,nonyl acetate,Q E S R O T
+249.,14936-66-4,,1-methyloctyl acetate (=2-nonyl acetate),Q E S R T
+250.,117636-39-2,,(2R)-2-nonyl acetate,Q E S
+251.,117636-38-1,,(2S)-2-nonyl acetate,E S
+252.,112362-25-1,,"(Z)-3,7-dimethyl-2,7-octadiene-1,6-diol, 1-acetate",Q
+253.,33766-43-7,,"(E)-3,7-dimethyl-2,7-octadiene-1,6-diol, 1-acetate",Q S
+254.,,,"(E)-3,7-dimethyl-1,5-octadiene-3,7-diol, 3-acetate",P E
+255.,41610-78-0,,"2,6-dimethyl-1,7-octadiene-3,6-diol, 6-acetate",Q E
+256.,41610-77-9,,"2,6-dimethyl-3,7-octadiene-2,6-diol, 6-acetate",Q E
+257.,83221-21-0,,"(E)-2,6-dimethyl-3,7-octadiene-2,6-diol, 6-acetate",P
+258.,1067-86-3,,"2,6-dimethyl-1,7-octadiene-3,6-diol, 2,6-diacetate",P
+259.,30418-89-4,,(E)-2-nonenyl acetate,E S R
+260.,13049-88-2,,(Z)-3-nonenyl acetate,Q E S R
+261.,13049-89-3,,(E)-3-nonenyl acetate,E S T
+262.,76238-22-7,,(Z)-6-nonenyl acetate,Q E S R T
+263.,31795-37-6,,1-nonen-3-yl acetate,P E S
+264.,83108-06-9,,nonyn-3-yl acetate (unkn.str.),P E
+265.,83334-93-4,,"(Z,Z)-3,6-nonadienyl acetate",Q E S R
+266.,76649-26-8,,"Nona-3,6-dienyl acetate",E S
+267.,211323-05-6,,"(3E,6Z)-nonadienyl acetate",E S R T
+268.,22616-19-9,,3-methylnonyl acetate,E S
+269.,112-17-4,,decyl acetate,Q E S R O T
+270.,83320-91-6,,3-decenyl acetate,
+271.,81634-99-3,,(Z)-3-decenyl acetate,P S
+272.,81634-98-2,,(E)-3-decenyl acetate,P S R
+273.,67452-28-2,,4-decenyl acetate,Q
+274.,67452-27-1,,(Z)-4-decenyl acetate,P E S R O
+275.,38421-90-8,,5-decenyl acetate,Q S R
+276.,50816-18-7,,9-decenyl acetate,E S R
+277.,67412-66-2,,decenyl acetate (unkn.str.),Q R
+278.,118026-67-8,,"(E,E)-2,4-decadienyl acetate",E S
+279.,25523-95-9,,3-methyl-4-decenyl acetate,P
+280.,1731-81-3,,undecyl acetate,Q S R O T
+281.,112-19-6,,10-Undecen-1-yl acetate,E S R
+282.,3239-35-8,,"(E)-5-tangerinol (=(E)-6,10-dimethyl-5,9-undecadien-2-yl acetate)",P E S R
+283.,3239-37-0,,"(Z)-5-tangerinol (=(Z)-6,10-dimethyl-5,9-undecadien-2-yl acetate)",P E S R
+284.,112-66-3,,dodecyl acetate (=lauryl acetate),Q E S R T
+285.,16677-02-4,,5-dodecenyl acetate,P
+286.,16676-96-3,,cis-5-dodecenyl acetate,P E S
+287.,,,"3,6-dodecadienyl acetate",
+288.,57074-42-7,,"(Z,Z)-3,6-dodecadienyl acetate",P
+289.,193758-89-3,,(E)-2-tridecenyl acetate,S R
+290.,35153-13-0,,(Z)-5-tetradecenyl acetate,P S
+291.,638-59-5,,tetradecyl acetate,Q E S
+292.,16725-53-4,,(Z)-9-tetradecenyl acetate,P E S
+293.,629-58-3,,pentadecyl acetate,P E S
+294.,629-70-9,,hexadecyl acetate,Q E S R
+295.,822-20-8,,heptadecyl acetate,P E S
+296.,822-23-1,,octadecyl acetate,P E S R
+297.,64661-64-9,,octadecenyl acetate (unkn.str.),P
+298.,822-24-2,,eicosanyl acetate,P
+299.,150-84-5,,citronellyl acetate,Q E S R O T
+300.,105-87-3,,geranyl acetate,Q E S R O T
+301.,141-12-8,,neryl acetate,Q E S R O T
+302.,20780-48-7,,tetralinalyl acetate,E S R
+303.,115-95-7,,linalyl acetate,Q E S R O T
+304.,120585-29-7,,(R)-(-)-linalyl acetate,P S
+305.,70130-93-7,,"(R*,R*)-epoxylinalyl acetate",Q
+306.,70130-94-8,,"(R*,S*)-epoxylinalyl acetate",Q
+307.,40853-55-2,,tetrahydrolavandulyl acetate,E S R
+308.,25905-14-0,,lavandulyl acetate,Q E S R
+309.,69343-72-2,,hydroxydihydrolavandulyl acetate,E R
+310.,141992-14-5,,(Z)-sesquilavandulyl acetate,E R
+311.,121400-01-9,,(E)-sesquilavandulyl acetate,E S R
+312.,197098-61-6,,8-ocimenyl acetate,E S
+313.,223705-75-7,,"(3Z,6Z)-8-ocimenyl acetate",P E S R O T
+314.,223705-76-8,,"(3E,6Z)-8-ocimenyl acetate",P E S R O T
+315.,223705-77-9,,"(3Z,6E)-8-ocimenyl acetate",E S R
+316.,223705-78-0,,"(3E,6E)-8-ocimenyl acetate",E S R
+317.,53767-93-4,,dihydromyrcenyl acetate,E S R
+318.,1118-39-4,,myrcenyl acetate,P E S
+319.,38228-41-0,,(Z)-8-myrcenyl acetate,P E R O
+320.,29548-30-9,,farnesyl acetate,Q E S R O
+321.,4128-17-0,,"(E,E)-farnesyl acetate",Q E S R O
+322.,96-35-5,,methyl hydroxyacetate,P E S
+323.,3938-96-3,,ethyl methoxyacetate,P S
+324.,623-86-9,,ethyl acetoxyacetate,Q S
+325.,933-05-1,,cyclopentyl acetate,S T
+326.,156053-83-7,,trans-α-necrodyl acetate,E S R
+327.,709026-15-3,,cis-α-necrodyl acetate,E S R
+328.,1727-68-0,,α-campholenyl acetate,P E S
+329.,622-45-7,,cyclohexyl acetate,Q E S R O T
+330.,,,2-cyclohexyl acetate (unkn.str.),P
+331.,21722-83-8,,2-cyclohexylethyl acetate,Q E S R
+332.,122-79-2,,phenyl acetate,P E S T
+333.,3233-32-7,,hydroquinone monoacetate,P E S
+334.,122-46-3,,3-methylphenyl acetate,Q E S R
+335.,140-39-6,,4-methylphenyl acetate,Q E S R T
+336.,1333-46-6,,methylphenyl acetate (unkn.str.),P R O
+337.,3056-59-5,,2-ethylphenyl acetate,P S
+338.,3056-60-8,,3-ethylphenyl acetate,P E S
+339.,,,ethylphenyl acetate (unkn.str.),Q
+340.,61499-22-7,,4-allylphenyl acetate (=chavicol acetate),Q E S
+341.,613-70-7,,2-methoxyphenyl acetate,E S R
+342.,93-28-7,,eugenyl acetate (=acetyl eugenol),Q E S R T
+343.,140-11-4,,benzyl acetate,Q E S R O T
+344.,17373-93-2,,2-methylbenzyl acetate,P E S
+345.,30676-70-1,,methylbenzyl acetate (unkn.str.),
+346.,104-21-2,,p-anisyl acetate,Q E S R O T
+347.,10521-96-7,,styryl acetate,P E S R
+348.,93-92-5,,α-methylbenzyl acetate,Q E S R O T
+349.,103-45-7,,phenethyl acetate (=2-phenylethyl acetate),Q E S R O T
+350.,,,(ethylphenyl)ethyl acetate (unkn.str.),P E R
+351.,58556-55-1,,2-(4-hydroxyphenyl)ethyl acetate (=tyrosyl acetate),Q E S
+352.,10402-52-5,,2-phenylpropyl acetate (=β-phenylpropyl acetate),Q E S
+353.,122-72-5,,3-phenylpropyl acetate (=hydrocinnamyl acetate),Q E S R
+354.,75038-26-5,,phenylpropyl acetate (unkn.str.),Q
+355.,66779-68-8,,"3-(3,4,5-trimethoxyphenyl)propyl acetate",Q E S
+356.,97094-25-2,,"3-(3,4,5-trimethoxyphenyl)-prop-2-enyl acetate",Q E
+357.,87200-84-8,,"3-(3,4,5-trimethoxyphenyl)-(E)-prop-2-enyl acetate",P E S
+358.,80373-18-8,,3-(4-hydroxyphenyl)propyl acetate,P E S
+359.,,,"(Z)-4-(3,4-dimethoxyphenyl)-3-buten-1-yl acetate",P
+360.,69768-98-5,,"(E)-4-(3,4-dimethoxyphenyl)-3-buten-1-yl acetate",P S
+361.,103-54-8,,cinnamyl acetate,Q E S R O T
+362.,77134-01-1,,(Z)-cinnamyl acetate,S R
+363.,21040-45-9,,(E)-cinnamyl acetate,Q E S R
+364.,103-07-1,,"1,1-dimethyl-3-phenylpropyl acetate",E S
+365.,110823-66-0,,2-methoxycinnamyl acetate,P E S
+366.,38822-47-8,,(E)-2-methoxycinnamyl acetate,P E
+367.,881-68-5,,vanillyl acetate,Q E S R
+368.,326-61-4,,piperonyl acetate,P E S R
+369.,528-79-0,,thymyl acetate,Q E S R
+370.,89-48-5,,menthyl acetate,Q E S R
+371.,5157-89-1,,(+)-menthyl acetate,E S T
+372.,2623-23-6,,(-)-menthyl acetate,E S T
+373.,20777-45-1,,isomenthyl acetate,Q E S R
+374.,2230-87-7,,neomenthyl acetate,Q E S R
+375.,20777-36-0,,neoisomenthyl acetate,Q E S
+376.,5256-66-6,,carvomenthyl acetate,P E S
+377.,51407-21-7,,neoisocarvomenthyl acetate,E S R
+378.,28839-13-6,,p-1-menthen-9-yl acetate,Q E S R O
+379.,,,p-8-menthen-10-yl acetate,P E
+380.,29815-69-8,,"1,2-epoxymenthyl acetate",Q E
+381.,,,"1,8-epoxy-p-menthyl acetate",Q
+382.,51795-18-7,,"1,2-epoxyneomenthyl acetate",Q E S
+383.,80-25-1,,dihydro-α-terpinyl acetate,P E S
+384.,58985-18-5,,dihydroterpinyl acetate,Q E S R O
+385.,80-26-2,,α-terpinyl acetate,Q E S R O T
+386.,,,cis-6-hydroxy-α-terpinyl acetate,P E
+387.,,,trans-6-hydroxy-α-terpinyl acetate,P E
+388.,,,"cis-p-2-menthene-1,8-diol, 8-acetate",P
+389.,,,"trans-p-2-menthene-1,8-diol, 8-acetate",P
+390.,,,"cis-1,2-epoxy-α-terpinyl acetate",P E
+391.,,,"trans-1,2-epoxy-α-terpinyl acetate",P E
+392.,10198-23-9,,β-terpinyl acetate,Q E S O
+393.,93836-50-1,,δ-terpinyl acetate,E S R
+394.,8007-35-0,,terpinyl acetate (unkn.str.),Q E S R
+395.,4821-04-9,,4-terpinenyl acetate,Q E S R
+396.,85392-37-6,,carvenyl acetate,Q E S
+397.,20777-49-5,,dihydrocarvyl acetate,Q E S R O
+398.,75684-65-0,,(+)-dihydrocarvyl acetate,E S R T
+399.,56422-50-5,,neodihydrocarvyl acetate,Q E S R
+400.,75684-64-9,,(-)-neodihydrocarvyl acetate,E S R
+401.,68754-14-3,,"p-2,8-menthadien-1-yl acetic acid",Q E
+402.,24348-08-1,,"p-1,8-menthadien-2-yl acetate",P E
+403.,20777-52-0,,"trans-p-1(7),8-menthadien-2-yl acetate",P E S
+404.,71660-03-2,,"p-1(7),8-menthadien-2-yl acetate",Q E S R O
+405.,81893-41-6,,"p-1,8-menthadien-4-yl acetate",E
+406.,,,p-menthadien-10-yl acetate (unkn.str.),Q
+407.,89-49-6,,isopulegyl acetate,Q E S R O
+408.,109010-10-8,,(+/-)-isopulegyl acetate,E S R
+409.,109010-12-0,,(+/-)-neoisopulegyl acetate,E S R
+410.,109010-11-9,,(+/-)-isoisopulegyl acetate,E S R
+411.,97-42-7,,carvyl acetate,Q E S R O T
+412.,1134-95-8,,trans-carvyl acetate,Q E S R O
+413.,1205-42-1,,cis-carvyl acetate,Q E S R
+414.,160868-58-6,,isodihydrocarvyl acetate,S R
+415.,256332-36-2,,noeisodihydrocarvyl acetate,S R
+416.,,,"carveol, 6,7-epoxide, acetate",P E
+417.,,,"3,8,9-menthanetriol orthoacetate",P
+418.,56423-44-0,,carvon-10-acetate,P E
+419.,,,piperitenyl acetate,P E S
+420.,112028-22-5,,cis-piperitol acetate,S R
+421.,91159-15-8,,trans-piperitol acetate,S R
+422.,15111-96-3,,perillyl acetate,Q E S R
+423.,15111-97-4,,"p-1,8(10)-menthadien-9-yl acetate",Q E S O
+424.,58315-85-8,,1-acetoxymenthone,Q E S
+425.,,,2-acetoxymenthone,
+426.,,,trans-2-acetoxymenthone,P
+427.,83462-16-2,,2-acetoxyisomenthone,E
+428.,57074-32-5,,cis-2-acetoxyisomenthone,P E
+429.,57129-16-5,,trans-2-acetoxyisomenthone,P E
+430.,57426-90-1,,4-acetoxyisomenthone,P
+431.,,,8-acetoxyisomenthone,P
+432.,,,2-acetoxy-1-hydroxy-p-8-menthene,P
+433.,,,9-acetoxy-8-hydroxy-p-1-menthene,P
+434.,57709-95-2,,"2-Acetoxy-1,8-cineole",P E S R
+435.,87578-93-6,,6-oxo-α-terpinyl 8-acetate (=8-acetoxycarvotanacetone),P E S R
+436.,71963-12-7,,2-acetoxypulegone,E
+437.,31147-61-2,,cis-2-acetoxypulegone,P E S
+438.,57820-70-9,,trans-2-acetoxypulegone,P E
+439.,,,4-acetoxyisopulegone,P
+440.,1078-95-1,,pinocarvyl acetate,Q E S
+441.,73366-18-4,,cis-pinocarvyl acetate,E S R
+442.,1686-15-3,,trans-pinocarvyl acetate,Q S R
+443.,33522-69-9,,verbenyl acetate,Q E S
+444.,29135-27-1,,cis-verbenyl acetate,E S R
+445.,1203-21-0,,trans-verbenyl acetate (=trans-2-pinen-4-yl acetate),Q E S R
+446.,29021-36-1,,myrtanyl acetate,Q E S R
+447.,1079-01-2,,myrtenyl acetate,Q E S R
+448.,42836-43-1,,exo-5-norbornene-2-methyl acetate,E R
+449.,16053-06-8,,endo-5-norbornene-2-methyl acetate,E S R
+450.,34640-76-1,,norbornyl acetate,Q E S
+451.,36914-56-4,,exo-2-norbornyl acetate,E R
+452.,54656-95-0,,endo-2-norbornyl acetate,E S R
+453.,76-49-3,,bornyl acetate,Q E S R O T
+454.,125-12-2,,isobornyl acetate,Q E S R
+455.,73366-09-3,,verbanyl acetate,E S R
+456.,73366-10-6,,neoverbanyl acetate,Q E S R
+457.,73366-12-8,,neoisoverbanyl acetate,E S R
+458.,13851-11-1,,fenchyl acetate,Q E S R
+459.,4057-31-2,,α-fenchyl acetate,Q E S R
+460.,2890-95-1,,endo-5-norbornen-2-yl acetate,E R
+461.,5257-37-4,,exo-5-norbornen-2-yl acetate,E R
+462.,76109-40-5,,β-fenchyl acetate,Q E S R
+463.,72747-24-1,,3-thujyl acetate,Q E S R
+464.,62181-90-2,,neo-3-thujyl acetate,E S R
+465.,370557-87-2,,neo-3-thujyl acetate,E S R
+466.,62181-91-3,,neoiso-3-thujyl acetate,E S R
+467.,87553-42-2,,4-thujyl acetate,Q E S
+468.,77318-48-0,,cis-4-thujyl acetate,Q E S R
+469.,77318-47-9,,trans-4-thujyl acetate,Q E S R
+470.,3536-54-7,,sabinyl acetate,Q E S R
+471.,53833-85-5,,cis-sabinyl acetate,Q E S R
+472.,139757-62-3,,trans-sabinyl acetate,Q E S R
+473.,87978-33-4,,trans-α-bergamotol acetate,Q E S R
+474.,67996-62-7,,α-eudesmol acetate,E S R
+475.,55868-98-9,,β-eudesmol acetate,S R
+476.,67996-61-6,,γ-eudesmol acetate,S R
+477.,67987-89-7,,eudesm-7(11)-en-4-ol acetate,Q E S R
+478.,77-54-3,,cedryl acetate,Q E S R
+479.,80751-98-0,,ledyl acetate,
+480.,6380-28-5,,carvacryl acetate,Q E S R
+481.,54324-99-1,,chrysanthenyl acetate,Q E S
+482.,50764-55-1,,trans-chrysanthenyl acetate,Q E S R
+483.,67999-48-8,,cis-chrysanthenyl acetate,Q E S R
+484.,163254-77-1,,nuciferyl acetate,Q E S R
+485.,199273-99-9,,lanceol acetate,Q E S R
+486.,554-12-1,,methyl propanoate,Q E S R O T
+487.,105-37-3,,ethyl propanoate,Q E S R O T
+488.,105-38-4,,ethenyl propanoate,E S T
+489.,17344-99-9,,ethyl alaninate,Q E S
+490.,106-36-5,,propyl propanoate,Q E S R O T
+491.,637-78-5,,isopropyl propanoate,Q E S T
+492.,72845-79-5,,2-oxopropyl propanoate,P E S
+493.,590-01-2,,butyl propanoate,Q E S R O T
+494.,540-42-1,,isobutyl propanoate (=2-methylpropyl propanoate),Q E S R T
+495.,591-34-4,,sec-butyl propanoate,P S
+496.,20487-40-5,,tert-butyl propanoate,Q E S R T
+497.,22874-75-5,,2-butenyl propanoate,Q E S R
+498.,2438-20-2,,2-methylbutyl propanoate,Q E S R O T
+499.,,,methylbutyl propanoate (unkn.str.),P
+500.,624-54-4,,pentyl propanoate,Q E S R T
+501.,105-68-0,,isopentyl propanoate,Q E S R O T
+502.,40882-88-0,,3-methyl-3-butenyl propanoate,P E R
+503.,54004-43-2,,1-methylbutyl propanoate,P E S
+504.,,,pentyl propanoate (branched),Q
+505.,2445-76-3,,hexyl propanoate,Q E S R T
+506.,53398-80-4,,(E)-2-hexenyl propanoate,Q E S R
+507.,33467-74-2,,(Z)-3-hexenyl propanoate,Q E S R
+508.,53398-81-5,,(E)-3-hexenyl propanoate,P S
+509.,,,hexenyl propanoate (unkn.str.),P
+510.,16491-25-1,,"2,4-hexadienyl propanoate",E S
+511.,95994-92-6,,"(E,E)-2,4-hexadienyl propanoate",S R
+512.,2216-81-1,,heptyl propanoate,Q S T
+513.,142-60-9,,octyl propanoate,Q E S
+514.,94134-03-9,,cis-3-Octenyl propionate,E S R
+515.,196109-18-9,,(Z)-5-Octenyl propionate,E S R
+516.,63156-02-5,,1-octen-3-yl propanoate,Q E S O T
+517.,5454-19-3,,Decyl propionate,P E S R
+518.,6221-96-1,,hexadecyl propanoate,P S
+519.,141-14-0,,citronellyl propanoate,Q E S R
+520.,105-90-8,,geranyl propanoate,Q E S R T
+521.,105-91-9,,neryl propanoate,Q E S R
+522.,144-39-8,,linalyl propanoate,Q E S R O
+523.,80-27-3,,α-terpinyl propanoate,Q E S
+524.,158300-69-7,,p-1-menthen-9-yl propanoate,Q E
+525.,122-63-4,,benzyl propanoate,Q E S R
+526.,120-45-6,,α-methylbenzyl propanoate,E S R
+527.,101773-23-3,,4-methoxybenzyl propanoate (=anisyl propanoate),P E S
+528.,122-70-3,,phenethyl propanoate,Q E S R O T
+529.,122-74-7,,3-phenylpropyl propanoate,P E S
+530.,78761-38-3,,(E)-cinnamyl propanoate,P S
+531.,143390-85-6,,"3-(3,4,5-trimethoxyphenyl)propanyl propanoate",Q E
+532.,143390-84-5,,"3-(3',4',5'-trimethoxyphenyl)-2-propenyl propanoate",Q E
+533.,158300-70-0,,"p-1,8-menthadien-9-yl propanoate",Q E
+534.,145032-50-4,,cis-carvyl propanoate,Q E S R
+535.,97-45-0,,Carvyl propionate,E S
+536.,,,bornyl propanoate,P E
+537.,2756-56-1,,isobornyl propanoate,P E S R O
+538.,903569-03-9,,(Z)-nuciferyl propanoate,Q E S R
+539.,96-33-3,,methyl 2-propenoate (=methyl acrylate),P E S R T
+540.,140-88-5,,ethyl 2-propenoate,Q E S R O T
+541.,689-12-3,,isopropyl 2-propenoate,P E S
+542.,106-63-8,,isobutyl 2-propenoate,E S T
+543.,103-11-7,,2-ethylhexyl 2-propenoate,E S T
+544.,29590-42-9,,6-methylheptyl 2-propenoate (=isooctyl acrylate),Q E S R
+545.,547-63-7,,methyl 2-methylpropanoate (=methyl isobutyrate),Q E S R O T
+546.,97-62-1,,ethyl 2-methylpropanoate (=ethyl isobutyrate),Q E S R O T
+547.,644-49-5,,propyl 2-methylpropanoate (=propyl isobutyrate),Q E S R T
+548.,617-50-5,,isopropyl 2-methylpropanoate (=isopropyl isobutyrate),P E S R T
+549.,97-87-0,,butyl 2-methylpropanoate (=butyl isobutyrate),Q E S R T
+550.,97-85-8,,isobutyl 2-methylpropanoate (=isobutyl isobutyrate),Q E S R T
+551.,23412-21-7,,2-butyl 2-methylpropanoate,E S T
+552.,816-73-9,,2-methyl-2-propenyl 2-methylpropanoate (=2-methylallyl isobutanoate),Q E S
+553.,2445-69-4,,2-methylbutyl 2-methylpropanoate (=2-methylbutyl isobutyrate),Q E S R T
+554.,,,methylbutyl 2-methylpropanoate (unkn.str.),P
+555.,95654-17-4,,(E)-2-methyl-2-butenyl 2-methylpropanoate (=tiglyl isobutyrate),P S
+556.,506-32-1,,arachidonic acid,Q E S
+557.,2445-72-9,,pentyl 2-methylpropanoate (=amyl isobutyrate),Q E S R T
+558.,2050-01-3,,isopentyl 2-methylpropanoate (=isoamyl isobutyrate),Q E S R O T
+559.,,,pentenyl 2-methylpropanoate (unkn.str.),
+560.,84254-84-2,,3-methylpentyl 2-methylpropanoate,P S
+561.,35852-44-9,,4-methylpentyl 2-methylpropanoate,P S R
+562.,2349-07-7,,hexyl 2-methylpropanoate (=hexyl isobutyrate),Q E S R T
+563.,,,(E)-2-hexenyl 2-methylpropanoate,E S R
+564.,41519-23-7,,(Z)-3-hexenyl 2-methylpropanoate,Q E S R
+565.,73545-16-1,,"(2E,4E)-2,4-hexadienyl isobutyrate",E S R
+566.,2349-13-5,,heptyl 2-methylpropanoate (=heptyl isobutyrate),Q E S R T
+567.,109-15-9,,octyl 2-methylpropanoate (=octyl isobutyrate),Q E S R T
+568.,77-68-9,,"3-hydroxy-2,2,4-trimethylpentyl 2-methylpropanoate",P E S R
+569.,6846-50-0,,"2,2,4-trimethyl-1,3-pentanediol bis(2-methylpropanoate)",P S T
+570.,,,octenyl 2-methylpropanoate (unkn.str.),P
+571.,6624-71-1,,dodecyl 2-methylpropanoate (=dodecyl isobutyrate),P E S
+572.,2345-26-8,,geranyl 2-methylpropanoate (=geranyl isobutyrate),Q E S R T
+573.,2345-24-6,,neryl 2-methylpropanoate (=neryl isobutyrate),Q E S R
+574.,78-35-3,,linalyl 2-methylpropanoate (=linalyl isobutyrate),Q E S R
+575.,97-89-2,,Citronellyl isobutyrate,E S R O
+576.,7774-65-4,,α-terpinyl 2-methylpropanoate (=α-terpinyl isobutyrate),E S R
+577.,103-28-6,,benzyl 2-methylpropanoate (=benzyl isobutyrate),P E S R
+578.,103-48-0,,phenethyl 2-methylpropanoate (=phenethyl isobutyrate),Q E S R
+579.,75177-76-3,,(E)-cinnamyl 2-methylpropanoate,P E S
+580.,241123-33-1,,(E)-nuciferyl 2-methylpropanoate,Q E R
+581.,80-62-6,,methyl 2-methyl-2-propenoate (=methyl methacrylate),Q E S O T
+582.,97-63-2,,ethyl 2-methyl-2-propenoate (=ethyl methacrylate),Q E S R O T
+583.,816-74-0,,2-methyl-2-propenyl 2-methyl-2-propenoate,Q E S
+584.,97-88-1,,butyl 2-methyl-2-propenoate (=butyl methacrylate),Q E S T
+585.,97-86-9,,isobutyl 2-methyl-2-propenoate (=isobutyl methacrylate),Q E S
+586.,60608-94-8,,2-methylbutyl 2-methyl-2-propenoate,P E
+587.,7336-27-8,,isopentyl 2-methyl-2-propenoate,Q E S
+588.,88142-95-4,,(E)-2-methyl-2-butenyl 2-methyl-2-propenoate,P E S
+589.,113615-00-2,,3-methylpentyl 2-methyl-2-propenoate,P E S
+590.,3938-95-2,,"ethyl 2,2-dimethylpropanoate",E S T
+591.,547-64-8,,methyl 2-hydroxypropanoate (=methyl lactate),Q E S R T
+592.,97-64-3,,ethyl 2-hydroxypropanoate (=ethyl lactate),Q E S R O T
+593.,7699-00-5,,ethyl (R)-(+)-2-hydroxypropanoate,E S T
+594.,616-09-1,,propyl 2-hydroxypropanoate (=propyl lactate),Q E S R
+595.,138-22-7,,butyl 2-hydroxypropanoate (=butyl lactate),Q E S R T
+596.,585-24-0,,isobutyl 2-hydroxypropanoate (=isobutyl lactate),Q E S T
+597.,18449-60-0,,sec-butyl 2-hydroxypropanoate (=sec-butyl lactate),P E S
+598.,,,2-methylbutyl 2-hydroxypropanoate,P E S
+599.,,,methylbutyl 2-hydroxypropanoate (unkn.str.),P E
+600.,6382-06-5,,pentyl 2-hydroxypropanoate (=amyl lactate),Q E S
+601.,19329-89-6,,isopentyl 2-hydroxypropanoate (=isoamyl lactate),Q E S R
+602.,20279-51-0,,hexyl 2-hydroxypropanoate (=hexyl lactate),Q E S T
+603.,61931-81-5,,(Z)-3-hexenyl 2-hydroxypropanoate,P E S R
+604.,2051-96-9,,Benzyl lactate,P E S R
+605.,10138-63-3,,phenethyl 2-hydroxypropanoate (=phenethyl lactate),P E S
+606.,623-72-3,,ethyl 3-hydroxypropanoate,P S
+607.,,,ethyl serinate,Q E S
+608.,600-22-6,,methyl 2-oxopropanoate (=methyl pyruvate),Q E S
+609.,617-35-6,,ethyl 2-oxopropanoate,Q E S R O T
+610.,68133-76-6,,(Z)-3-hexenyl 2-oxopropanoate (=(Z)-3-hexenyl pyruvate),P E S R
+611.,763-69-9,,ethyl 3-ethoxypropanoate (=ethyl 4-oxahexanoate),Q E S R T
+612.,2985-28-6,,ethyl 2-acetoxypropanoate,Q E S
+613.,37101-80-7,,ethyl 2-(1-ethoxyethoxy)propanoate,Q S R
+614.,33942-58-4,,ethyl 2-(butanoyloxy)propanoate,P
+615.,5686-40-8,,"N-acetylalanine, ethyl ester",P S
+616.,598-98-1,,"methyl 2,2-dimethylpropanoate",E S T
+617.,,,ethyl lactyllactate,P
+618.,,,butyl lactyllactate,P
+619.,623-42-7,,methyl butanoate,Q E S R O T
+620.,105-54-4,,ethyl butanoate,Q E S R O T
+621.,5959-36-4,,ethyl 4-aminobutanoate,Q E S
+622.,123-20-6,,vinyl butanoate,P E S
+623.,105-66-8,,propyl butanoate,Q E S R O T
+624.,638-11-9,,isopropyl butanoate,Q E S R O T
+625.,2051-78-7,,Allyl butyrate,E S R
+626.,39556-37-1,,2-hydroxypropyl butanoate,P S
+627.,109-21-7,,butyl butanoate,Q E S R O T
+628.,539-90-2,,isobutyl butanoate,Q E S R T
+629.,819-97-6,,sec-butyl butanoate,Q E S R
+630.,59517-17-8,,"2,3-butanediol monobutanoate",Q S
+631.,84642-61-5,,1-methyl-2-oxopropyl butanoate (=acetoin butanoate),Q E S R
+632.,20279-26-9,,2-butenyl butanoate,P
+633.,51115-64-1,,2-methylbutyl butanoate,Q E S R O
+634.,,,methylbutyl butanoate (unkn.str.),P
+635.,540-18-1,,pentyl butanoate,Q E S R O T
+636.,106-27-4,,"isopentyl butanoate (=3-methylbutyl butanoate, isoamyl butyrate)",Q E S R O T
+637.,6290-13-7,,cyclopentyl butanoate,P S R
+638.,54702-13-5,,3-methyl-3-butenyl butanoate,P E S R
+639.,71820-56-9,,3-methyl-2-butenyl butanoate,E S
+640.,60415-61-4,,1-methylbutyl butanoate (=2-pentyl butanoate),Q E S R O T
+641.,117636-44-9,,(R)-1-methylbutyl butanoate,Q E
+642.,117636-40-5,,(S)-1-methylbutyl butanoate,Q E
+643.,,,2-pentenyl butanoate,S
+644.,42125-13-3,,(Z)-2-pentenyl butanoate,P S
+645.,42125-30-4,,(E)-2-pentenyl butanoate,P S
+646.,88296-24-6,,3-pentenyl butanoate,P S
+647.,,,pentenyl butanoate (unkn.str.),
+648.,2639-63-6,,hexyl butanoate,Q E S R O T
+649.,6963-52-6,,1-methylpentyl butanoate (=2-hexyl butanoate),Q E S R O
+650.,83471-19-6,,4-methylpentyl butanoate,P E S R
+651.,56922-77-1,,(Z)-2-hexenyl butanoate,P S
+652.,53398-83-7,,(E)-2-hexenyl butanoate,Q E S R
+653.,2142-93-0,,3-hexenyl butanoate,Q S R
+654.,16491-36-4,,(Z)-3-hexenyl butanoate,Q E S R O T
+655.,53398-84-8,,(E)-3-hexenyl butanoate,Q E S R
+656.,69727-41-9,,(Z)-4-hexenyl butanoate,Q E S R
+657.,809271-90-7,,(E)-4-hexenyl butanoate,P S
+658.,108058-75-9,,5-hexenyl butanoate,Q S
+659.,26912-31-2,,hexenyl butanoate (unkn.str.),P
+660.,95994-93-7,,"(E,E)-2,4-hexadienyl butanoate",S R
+661.,69925-34-4,,"(Z)-3,5-hexadienyl butanoate",P E S T
+662.,,,hexadienyl butanoate (unkn.str.),
+663.,139087-69-7,,2-methylhexyl butanoate,P E S R
+664.,5870-93-9,,heptyl butanoate,P E S R
+665.,94088-12-7,,(Z)-1-methyl-3-hexenyl butanoate,P E S R
+666.,150521-48-5,,(E)-1-methyl-3-hexenyl butanoate,P E S R
+667.,39026-94-3,,1-methylhexyl butanoate (=2-heptyl butanoate),Q E S R T
+668.,117636-45-0,,(R)-1-methylhexyl butanoate (=(R)-2-heptyl butanoate),Q E
+669.,117636-41-6,,(S)-1-methylhexyl butanoate (=(S)-2-heptyl butanoate),Q
+670.,110-39-4,,octyl butanoate,Q E S R T
+671.,,,3-octenyl butanoate,S
+672.,87619-91-8,,(Z)-3-octenyl butanoate,Q R
+673.,150462-81-0,,(Z)-4-octenyl butanoate,P E S R O
+674.,150462-82-1,,(E)-4-octenyl butanoate,P E S R
+675.,16491-54-6,,1-pentyl-2-propenyl butanoate,P E S R
+676.,2639-64-7,,nonyl butanoate,P S R
+677.,69727-42-0,,1-methyloctyl butanoate (=2-nonyl butanoate),Q E S R
+678.,117636-46-1,,(R)-2-nonyl butanoate,Q E
+679.,117636-43-8,,(S)-2-nonyl butanoate,Q E S
+680.,5454-09-1,,decyl butanoate,Q E S R
+681.,,,3-decenyl butanoate,
+682.,87619-94-1,,(Z)-3-decenyl butanoate,P S
+683.,150462-83-2,,(Z)-4-decenyl butanoate,P E R O
+684.,,,decenyl butanoate (unkn.str.),Q R
+685.,141-16-2,,citronellyl butanoate,Q E S R O
+686.,106-29-6,,geranyl butanoate,Q E S R O
+687.,999-40-6,,neryl butanoate,Q E S R
+688.,78-36-4,,linalyl butanoate,Q E S R O
+689.,17609-95-9,,lavandulyl butanoate,P S
+690.,51532-27-5,,"(E,E)-farnesyl butanoate",Q
+691.,1551-44-6,,cyclohexyl butanoate,Q E S R
+692.,4346-18-3,,phenyl butanoate,P E S
+693.,103-37-7,,benzyl butanoate,Q E S R O T
+694.,103-52-6,,phenethyl butanoate,Q E S R O T
+695.,10094-34-5,,"α,α-Dimethylphenethyl butyrate",P E S
+696.,7402-29-1,,3-phenylpropyl butanoate,P R
+697.,152336-39-5,,1-(4-methylphenyl)ethyl butanoate,E T
+698.,103-61-7,,cinnamyl butanoate,P E S T
+699.,2153-28-8,,α-terpinyl butanoate,Q E S
+700.,,,terpinyl butanoate (unkn.str.),P
+701.,849118-41-8,,(E)-nuciferyl butanoate,Q E S R
+702.,18707-60-3,,methyl 2-butenoate (=methyl crotonate),Q E S R
+703.,623-43-8,,methyl (E)-2-butenoate (=methyl (E)-crotonate),Q E S R
+704.,10544-63-5,,ethyl 2-butenoate (=ethyl crotonate),Q E S R O
+705.,6776-19-8,,ethyl (Z)-2-butenoate (=ethyl (Z)-crotonate),Q E S
+706.,623-70-1,,ethyl (E)-2-butenoate (=ethyl (E)-crotonate),Q E S R O
+707.,10352-87-1,,propyl 2-butenoate (=propyl crotonate),P E S
+708.,18060-77-0,,isopropyl 2-butenoate (=isopropyl crotonate),P E S
+709.,20474-93-5,,allyl 2-butenoate (=allyl crotonate),P E S
+710.,7299-91-4,,butyl 2-butenoate (=butyl crotonate),Q E S
+711.,591-63-9,,butyl (E)-2-butenoate (=butyl (E)-crotonate),Q E S R
+712.,589-66-2,,isobutyl 2-butenoate (=isobutyl crotonate),Q E S R
+713.,1370711-06-0,,(2E)-1-ethyl-2-methylpropyl 2-butenoate,E S
+714.,25415-77-4,,isopentyl 2-butenoate (=isoamyl crotonate),P E S
+715.,19089-92-0,,hexyl 2-butenoate (=hexyl crotonate),Q E S
+716.,1617-25-0,,hexyl (E)-2-butenoate (=hexyl (E)-crotonate),Q E S R
+717.,68938-58-9,,3-hexenyl 2-butenoate (=3-hexenyl crotonate),E
+718.,95405-61-1,,3-hexenyl (Z)-2-butenoate (=3-hexenyl (Z)-crotonate),Q E S
+719.,,,3-hexenyl (E)-2-butenoate (=3-hexenyl (E)-crotonate),P E
+720.,65405-80-3,,(Z)-3-hexenyl (E)-2-butenoate,Q E S R
+721.,65416-24-2,,benzyl (E)-2-butenoate (=benzyl crotonate),Q E S R
+722.,3724-55-8,,methyl 3-butenoate,Q S
+723.,1617-18-1,,ethyl 3-butenoate,P S
+724.,14036-56-7,,butyl 3-butenoate,P S
+725.,85481-49-8,,ethyl butenoate (unkn.str.),Q
+726.,14861-06-4,,vinyl butenoate (unkn.str.),Q
+727.,,,3-hexenyl butenoate (unkn.str.),
+728.,95342-57-7,,(Z)-3-hexenyl butenoate (unkn.str.),Q
+729.,85762-16-9,,phenethyl butenoate (unkn.str.),Q
+730.,868-57-5,,methyl 2-methylbutanoate,Q E S R O T
+731.,10307-60-5,,methyl (S)-2-methylbutanoate,Q S R O T
+732.,55449-44-0,,methyl (R)-2-methylbutanoate,P E S
+733.,7452-79-1,,ethyl 2-methylbutanoate,Q E S R O T
+734.,10307-61-6,,ethyl (S)-2-methylbutanoate,Q S R O T
+735.,40917-00-8,,ethyl (R)-2-methylbutanoate,Q S
+736.,37064-20-3,,propyl 2-methylbutanoate,Q E S R T
+737.,151409-47-1,,propyl (S)-2-methylbutanoate,P S R O
+738.,66576-71-4,,isopropyl 2-methylbutanoate,P E S R T
+739.,15706-73-7,,butyl 2-methylbutanoate,Q E S R O T
+740.,72447-48-4,,butyl (S)-2-methylbutanoate,P S
+741.,2445-67-2,,isobutyl 2-methylbutanoate (=2-methylpropyl 2-methylbutanoate),Q E S R T
+742.,869-08-9,,2-butyl 2-methylbutanoate,E S T
+743.,2445-78-5,,2-methylbutyl 2-methylbutanoate,Q E S R O T
+744.,,,methylbutyl 2-methylbutanoate (unkn.str.),P
+745.,84254-80-8,,3-methyl-2-butenyl 2-methylbutanoate,P S R
+746.,113627-29-5,,"1,1-dimethylpropyl 2-methylbutanoate",P E S
+747.,81115-67-5,,(S)-2-methylbutyl (S)-2-methylbutanoate,P E S
+748.,95654-18-5,,(E)-2-methyl-2-butenyl 2-methylbutanoate (=tiglyl 2-methylbutanoate),P E S R
+749.,68039-26-9,,pentyl 2-methylbutanoate,Q E S R O T
+750.,27625-35-0,,isopentyl 2-methylbutanoate (=3-methylbutyl 2-methylbutanoate),Q E S R T
+751.,83783-89-5,,3-methylpentyl 2-methylbutanoate,S R
+752.,35852-40-5,,4-methylpentyl 2-methylbutanoate,P S R
+753.,10032-15-2,,hexyl 2-methylbutanoate,Q E S R O T
+754.,144831-67-4,,hexyl (S)-2-methylbutanoate,P S
+755.,94089-01-7,,(E)-2-hexenyl 2-methylbutanoate,E S R
+756.,53398-85-9,,(Z)-3-hexenyl 2-methylbutanoate,Q E S R O
+757.,850309-46-5,,4-methylhexyl 2-methylbutanoate,E S R
+758.,17609-96-0,,lavandulyl 2-methylbutanoate,Q E S R
+759.,50862-12-9,,heptyl 2-methylbutanoate,Q E S R O
+760.,29811-50-5,,octyl 2-methylbutanoate,Q E S R
+761.,68705-63-5,,geranyl 2-methylbutanoate,Q E S R
+762.,51117-19-2,,neryl 2-methylbutanoate,Q E S R
+763.,56423-40-6,,benzyl 2-methylbutanoate,P E S
+764.,24817-51-4,,phenethyl 2-methylbutanoate,Q E S R
+765.,58989-20-1,,trans-pseudoisoeugenyl 2-methylbutanoate,Q E S R
+766.,104283-18-3,,trans-epoxypseudoisoeugenyl 2-methylbutanoate,Q E R
+767.,,,trans-verbenyl 2-methylbutanoate,Q
+768.,556-24-1,,methyl 3-methylbutanoate (=methyl isovalerate),Q E S R O T
+769.,108-64-5,,ethyl 3-methylbutanoate (=ethyl isovalerate),Q E S R O T
+770.,18869-42-6,,methyl valinate (=methyl α-aminoisovalerate),P E S
+771.,13893-45-3,,ethyl valinate (=ethyl α-aminoisovalerate),Q E S
+772.,557-00-6,,propyl 3-methylbutanoate (=propyl isovalerate),Q E S R O T
+773.,32665-23-9,,isopropyl 3-methylbutanoate (=isopropyl isovalerate),E S
+774.,2835-39-4,,allyl isovalerate,P E S R
+775.,109-19-3,,butyl 3-methylbutanoate (=butyl isovalerate),Q E S R O T
+776.,589-59-3,,isobutyl 3-methylbutanoate (=isobutyl isovalerate),Q E S R T
+777.,2445-77-4,,2-methylbutyl 3-methylbutanoate,Q E S R
+778.,89026-29-9,,3-methyl-2-butenyl 3-methylbutanoate,P E S R
+779.,54410-94-5,,3-methyl-3-butenyl 3-methylbutanoate,Q E S R
+780.,25415-62-7,,pentyl 3-methylbutanoate (=amyl isovalerate),Q E S R T
+781.,659-70-1,,"isopentyl 3-methylbutanoate (=3-methylbutyl 3-methylbutanoate, isoamyl isovalerate)",Q E S R O T
+782.,117421-34-8,,1-methylbutyl 3-methylbutanoate,P E S R O
+783.,117421-34-8,,2-pentenyl 3-methylbutanoate,E S
+784.,88296-25-7,,(Z)-2-pentenyl 3-methylbutanoate,P E
+785.,115532-17-7,,(E)-2-pentenyl 3-methylbutanoate,Q E S
+786.,150462-85-4,,1-methylpentyl 3-methylbutanoate,P E R O
+787.,35852-41-6,,3-methylpentyl 3-methylbutanoate,P E S
+788.,850309-45-4,,4-methylpentyl 3-methylbutanoate,P E S R O
+789.,10032-13-0,,hexyl 3-methylbutanoate (=hexyl isovalerate),Q E S R O
+790.,68698-59-9,,(E)-2-hexenyl 3-methylbutanoate,Q E S R
+791.,54675-77-3,,(Z)-2-hexenyl 3-methylbutanoate,E S R
+792.,35154-45-1,,(Z)-3-hexenyl 3-methylbutanoate,Q E S R
+793.,10032-11-8,,3-hexenyl 3-methylbutanoate,P E S
+794.,88296-26-8,,(E)-3-hexenyl 3-methylbutanoate,P E S
+795.,,,hexenyl 3-methylbutanoate (unkn.str.),P E
+796.,51117-21-6,,lavandulyl 3-methylbutanoate,Q E S R
+797.,56423-43-9,,heptyl 3-methylbutanoate,Q E S R
+798.,238757-71-6,,1-methylhexyl 3-methylbutanoate,P E S
+799.,253596-70-2,,2-heptenyl 3-methylbutanoate,P E S
+800.,150462-87-6,,(Z)-1-methyl-3-hexenyl 3-methylbutanoate,P E R
+801.,150462-86-5,,(E)-1-methyl-3-hexenyl 3-methylbutanoate,P E S R
+802.,7786-58-5,,octyl 3-methylbutanoate,Q E S R
+803.,300697-63-6,,(Z)-4-octenyl 3-methylbutanoate,P E S R O
+804.,,,(E)-4-octenyl 3-methylbutanoate,P E R
+805.,71978-01-3,,(Z)-5-octenyl 3-methylbutanoate,P E S R O
+806.,,,octenyl 3-methylbutanoate (unkn.str.),P E
+807.,72928-48-4,,decyl 3-methylbutanoate,P E S
+808.,959273-93-9,,(Z)-4-decenyl 3-methylbutanoate,P E R O
+809.,68922-10-1,,citronellyl 3-methylbutanoate (=citronellyl isovalerate),P E S
+810.,1118-27-0,,linalyl 3-methylbutanoate,Q E S R O
+811.,109-20-6,,geranyl 3-methylbutanoate (=geranyl isovalerate),Q E S R O
+812.,3915-83-1,,"cis-3,7-dimethyl-2,6-octadienyl 3-methylbutanoate (=neryl isovalerate)",Q E S R
+813.,103-38-8,,benzyl 3-methylbutanoate,Q E S R T
+814.,55066-56-3,,4-methylphenyl 3-methylbutanoate (=p-cresyl isovalerate),E S
+815.,140-26-1,,phenethyl 3-methylbutanoate (=phenethyl isovalerate),Q E S R O T
+816.,5452-07-3,,3-phenylpropyl 3-methylbutanoate,P E S R
+817.,16409-46-4,,menthyl 3-methylbutanoate,Q E S
+818.,57412-35-8,,trans-verbenyl 3-methylbutanoate,Q E S
+819.,76-50-6,,bornyl 3-methylbutanoate,Q E S R O
+820.,7779-73-9,,isobornyl 3-methylbutanoate,Q E S R
+821.,5281-02-7,,sabinyl 3-methylbutanoate,P E S
+822.,,,methyl methylbutanoate (unkn.str.),P
+823.,,,ethyl methylbutanoate (unkn.str.),P
+824.,,,isobutyl methylbutanoate (unkn.str.),P
+825.,6622-76-0,,methyl (E)-2-methyl-2-butenoate (=methyl tiglate),P E S R T
+826.,41725-90-0,,methyl 2-methyl-2-butenoate,Q E S R
+827.,55514-48-2,,ethyl 2-methyl-2-butenoate,Q S R
+828.,16509-44-7,,ethyl (Z)-2-methyl-2-butenoate (=ethyl angelate),P E S T
+829.,5837-78-5,,ethyl (E)-2-methyl-2-butenoate (=ethyl tiglate),Q E S R T
+830.,70475-38-6,,propyl 2-methyl-2-butenoate,P
+831.,53082-57-8,,propyl (Z)-2-methyl-2-butenoate (=propyl angelate),Q S T
+832.,61692-83-9,,propyl (E)-2-methyl-2-butenoate (=propyl tiglate),P E S R T
+833.,61692-76-0,,isopropyl (Z)-2-methyl-2-butenoate (=isopropyl angelate),P S
+834.,7493-71-2,,Allyl tiglate,E S R
+835.,61692-78-2,,2-methyl-2-propenyl (Z)-2-methyl-2-butenoate (=2-methyl-2-propenyl angelate),Q S
+836.,61692-82-8,,2-methyl-2-propenyl (E)-2-methyl-2-butenoate (=2-methyl-2-propenyl tiglate),Q E S
+837.,66917-60-0,,butyl 2-methyl-2-butenoate,Q
+838.,7785-64-0,,butyl (Z)-2-methyl-2-butenoate (=butyl angelate),Q E S R T
+839.,7785-66-2,,butyl (E)-2-methyl-2-butenoate (=butyl tiglate),Q E S R T
+840.,66917-61-1,,isobutyl 2-methyl-2-butenoate,P
+841.,7779-81-9,,isobutyl (Z)-2-methyl-2-butenoate (=isobutyl angelate),Q E S R
+842.,61692-84-0,,isobutyl (E)-2-methyl-2-butenoate (=isobutyl tiglate),Q E S R
+843.,93283-00-2,,sec-butyl (Z)-2-methyl-2-butenoate (=sec-butyl angelate),P S
+844.,28127-58-4,,sec-butyl (E)-2-methyl-2-butenoate (=sec-butyl tiglate),P E S
+845.,82105-54-2,,tert-butyl (Z)-2-methyl-2-butenoate (=tert-butyl angelate),Q S
+846.,61692-77-1,,2-methylbutyl (Z)-2-methyl-2-butenoate (=2-methylbutyl angelate),Q S
+847.,61692-80-6,,2-methylbutyl (E)-2-methyl-2-butenoate (=2-methylbutyl tiglate),Q E S
+848.,,,(Z)-2-methyl-2-butenyl (Z)-2-methyl-2-butenoate (=(Z)-2-methyl-2-butenyl angelate),
+849.,90358-41-1,,(E)-2-methyl-2-butenyl (Z)-2-methyl-2-butenoate,Q S
+850.,765300-33-2,,3-methyl-2-buten-1-yl 2-methyl-2-butenoate,P E R
+851.,83783-82-8,,3-methyl-2-butenyl (Z)-2-methyl-2-butenoate,E S R
+852.,7785-63-9,,pentyl (Z)-2-methyl-2-butenoate (=pentyl angelate),Q E S
+853.,7785-65-1,,pentyl (E)-2-methyl-2-butenoate (=pentyl tiglate),P E S
+854.,134423-57-7,,"1,3(or 1,4)-pentadienyl (E)-2-methyl-2-butenoate",P E
+855.,66917-62-2,,isopentyl 2-methyl-2-butenoate,P E S
+856.,10482-55-0,,isopentyl (Z)-2-methyl-2-butenoate (=isopentyl angelate),Q E S R
+857.,41519-18-0,,isopentyl (E)-2-methyl-2-butenoate (=isopentyl tiglate),Q E S R
+858.,,,isopentyl 2-methylbutenoate (unkn.str.),E
+859.,83783-81-7,,3-methylpentyl (Z)-2-methyl-2-butenoate (=3-methylpentyl angelate),Q S
+860.,65652-33-7,,hexyl (Z)-2-methyl-2-butenoate (=hexyl angelate),P S
+861.,16930-96-4,,hexyl tiglate,Q E S R
+862.,16931-10-5,,hexyl 2-methyl-2-butenoate,Q E S
+863.,,,(E)-2-hexenyl (E)-2-methyl-2-butenoate,E S R
+864.,67883-79-8,,(Z)-3-hexenyl 2-methyl-2-butenoate,Q E S R
+865.,84060-80-0,,(Z)-3-hexenyl (Z)-2-methyl-2-butenoate (=(Z)-3-hexenyl angelate),P S R
+866.,83783-78-2,,heptyl (Z)-2-methyl-2-butenoate (=heptyl angelate),P E S
+867.,83803-42-3,,octyl (Z)-2-methyl-2-butenoate (=octyl angelate),P S
+868.,83783-79-3,,nonyl (Z)-2-methyl-2-butenoate (=nonyl angelate),P S
+869.,67674-41-3,,benzyl 2-methyl-2-butenoate,E S
+870.,37526-87-7,,benzyl (Z)-2-methyl-2-butenoate (=benzyl angelate),P S
+871.,37526-88-8,,benzyl (E)-2-methyl-2-butenoate (=benzyl tiglate),Q E S R
+872.,61692-79-3,,phenethyl (Z)-2-methyl-2-butenoate (=phenethyl angelate),P S
+873.,55719-85-2,,phenethyl (E)-2-methyl-2-butenoate (=phenethyl tiglate),Q E S R
+874.,7785-33-3,,geranyl 2-methyl-2-butenoate (=geranyl tiglate),Q E S R
+875.,84254-88-6,,geranyl (Z)-2-methyl-2-butenoate (=geranyl angelate),P S
+876.,61792-12-9,,3-phenyl-2-propenyl (E)-2-methyl-2-butenoate (=cinnamyl tiglate),P E S R
+877.,72934-00-0,,(Z)-3-phenyl-2-propenyl (E)-2-methyl-2-butenoate (=(Z)-cinnamyl tiglate),P E
+878.,84254-87-5,,(E)-3-phenyl-2-propenyl (Z)-2-methyl-2-butenoate (=(E)-cinnamyl angelate),P E S
+879.,80758-67-4,,2-hydroxy-2-methyl-3-butenyl (Z)-2-methyl-2-butenoate (=2-hydroxy-2-methyl-3-butenyl angelate),Q S
+880.,80758-70-9,,3-hydroxy-2-methylidenebutyl (Z)-2-methyl-2-butenoate (=3-hydroxy-2-methylidenebutyl angelate),Q E
+881.,,,"2-methylene-1,3-propanediol (Z)-1-(2-methyl-2-butenoate) 3-(2-methylpropanoate)",P E
+882.,,,"2-methyl-1,3-propanediol (Z)-1-(2-methyl-2-butenoate) 3-(2-methylpropanoate)",P E
+883.,,,"1,3-butanediol (Z)-1-(2-methyl-2-butenoate) 3-(2-methylpropanoate)",P E
+884.,924-50-5,,methyl 3-methyl-2-butenoate (=methyl senecioate),P E S R
+885.,638-10-8,,ethyl 3-methyl-2-butenoate (=ethyl senecioate),P E S T
+886.,56922-71-5,,propyl 3-methyl-2-butenoate (=propyl senecioate),P E S
+887.,54056-51-8,,butyl 3-methyl-2-butenoate,P S R
+888.,959074-62-5,,1-methylbutyl 3-methyl-2-butenoate,P E R
+889.,97890-13-6,,2-Methylbutyl 3-methyl-2-butenoate,E S
+890.,56922-73-7,,3-methylbutyl 3-methyl-2-butenoate,P E S R
+891.,72779-06-7,,3-methyl-2-butenyl 3-methyl-2-butenoate (=3-methyl-2-butenyl senecioate),P E S R
+892.,72928-35-9,,3-methyl-3-butenyl 3-methyl-2-butenoate (=3-methyl-3-butenyl senecioate),P E S R
+893.,51747-33-2,,methyl 2-methyl-3-butenoate,P S R
+894.,2983-38-2,,ethyl 2-ethylbutanoate,Q E S T
+895.,5129-40-8,,"ethyl 2,2-dimethylbutanoate",E S R T
+896.,54004-42-1,,"ethyl 2,3-dimethylbutanoate",E S T
+897.,5340-78-3,,"ethyl 3,3-dimethylbutanoate",E S R T
+898.,29674-47-3,,methyl 2-hydroxybutanoate,Q E S R
+899.,52089-54-0,,ethyl 2-hydroxybutanoate,Q E S R T
+900.,1487-49-6,,methyl 3-hydroxybutanoate,Q E S R
+901.,5405-41-4,,ethyl 3-hydroxybutanoate,Q E S R O T
+902.,3182-94-3,,ethyl threoninate,Q E S
+903.,116310-04-4,,propyl 3-hydroxybutanoate,Q S R
+904.,53605-94-0,,butyl 3-hydroxybutanoate,Q E S R
+905.,85762-19-2,,isobutyl 3-hydroxybutanoate,Q S R
+906.,85762-20-5,,isopentyl 3-hydroxybutanoate,Q E
+907.,87128-51-6,,hexyl 3-hydroxybutanoate,Q E S R
+908.,85762-21-6,,(Z)-3-hexenyl 3-hydroxybutanoate,Q S R
+909.,925-57-5,,methyl 4-hydroxybutanoate,Q S
+910.,999-10-0,,ethyl 4-hydroxybutanoate,Q E S R O T
+911.,,,isobutyl 4-hydroxybutanoate,Q
+912.,149834-42-4,,isopentyl 4-hydroxybutanoate,Q E
+913.,4508-99-0,,methyl 4-hydroxy-2-butenoate,S
+914.,29576-13-4,,methyl (E)-4-hydroxy-2-butenoate,P S
+915.,65330-93-0,,ethyl 4-hydroxy-2-butenoate,
+916.,10080-68-9,,ethyl (E)-4-hydroxy-2-butenoate,P E S
+917.,3952-66-7,,methyl 2-oxobutanoate,Q E S
+918.,15933-07-0,,ethyl 2-oxobutanoate,Q S
+919.,16942-56-6,,butyl 2-oxobutanoate,P E
+920.,105-45-3,,methyl 3-oxobutanoate,P E S
+921.,141-97-9,,ethyl 3-oxobutanoate,Q E S R O T
+922.,5396-89-4,,benzyl 3-oxobutanoate,P E S R
+923.,10138-10-0,,ethyl 4-oxobutanoate,Q E S
+924.,89422-42-4,,methyl 3-acetoxybutanoate,Q E S R
+925.,27846-49-7,,ethyl 3-acetoxybutanoate,P E S R
+926.,25560-91-2,,ethyl 4-acetoxybutanoate,Q E S
+927.,74108-97-7,,isopentyl 4-acetoxybutanoate,P E
+928.,32793-34-3,,methyl 2-hydroxy-2-methylbutanoate,P S R
+929.,77-70-3,,ethyl 2-hydroxy-2-methylbutanoate,P E S
+930.,478555-48-5,,ethyl (2R)-2-hydroxy-2-methylbutanoate,P S R O
+931.,17417-00-4,,methyl 2-hydroxy-3-methylbutanoate,Q E S R
+932.,2441-06-7,,ethyl 2-hydroxy-3-methylbutanoate,Q E S R
+933.,34293-67-9,,methyl 3-hydroxy-2-methylbutanoate,P E S
+934.,27372-03-8,,ethyl 3-hydroxy-2-methylbutanoate,P E S
+935.,6149-45-7,,methyl 3-hydroxy-3-methylbutanoate,Q E S R
+936.,18267-36-2,,ethyl 3-hydroxy-3-methylbutanoate,Q S R
+937.,22141-40-8,,butyl 3-hydroxy-2-methylidenebutanoate,P S
+938.,80758-68-5,,isobutyl 3-hydroxy-2-methylidenebutanoate,Q E S
+939.,80758-72-1,,isoamyl 3-hydroxy-2-methylidenebutanoate,Q E S
+940.,,,ethyl hydroxy-3-methylbutanoate (unkn.str.),P
+941.,56430-36-5,,ethyl N-acetylvalinate,P S
+942.,20201-24-5,,ethyl 3-methyl-2-oxobutanoate,P E S
+943.,25409-27-2,,ethyl 2-acetoxy-3-methylbutanoate,Q
+944.,139564-42-4,,methyl 3-acetoxy-2-methylbutanoate,P E S R
+945.,139564-43-5,,ethyl 3-acetoxy-2-methylbutanoate,P E S
+946.,79925-87-4,,methyl 2-ethyl-3-hydroxy-3-methylbutanoate,P E
+947.,16508-89-7,,ethyl 2-hydroxy-2-methyl-3-oxobutanoate,P S
+948.,624-24-8,,methyl pentanoate,Q E S R T
+949.,539-82-2,,ethyl pentanoate,Q E S R O T
+950.,40348-72-9,,methyl 2-hydroxy-4-methylpentanoate,Q E S R
+951.,141-06-0,,propyl pentanoate,Q E S R T
+952.,18362-97-5,,isopropyl pentanoate,P E S
+953.,591-68-4,,butyl pentanoate,P E S R
+954.,,,butyl pentanoate (branched),P
+955.,10588-10-0,,isobutyl pentanoate,P E S
+956.,2173-56-0,,pentyl pentanoate,Q E S R T
+957.,2050-09-1,,isopentyl pentanoate (=3-methylbutyl pentanoate),Q E S R T
+958.,89155-38-4,,1-methylbutyl pentanoate,P E S O
+959.,55590-83-5,,2-methylbutyl pentanoate,P E S R
+960.,,,methylbutyl pentanoate (unkn.str.),P
+961.,80039-51-6,,3-methyl-3-butenyl pentanoate,Q E R
+962.,,,pentyl pentanoate (branched),P
+963.,7150-92-7,,1-methylpentyl pentanoate,P E S
+964.,113615-01-3,,3-methylpentyl pentanoate,P E S
+965.,35852-47-2,,4-methylpentyl pentanoate,P S R
+966.,1117-59-5,,hexyl pentanoate,Q E S R
+967.,56922-78-2,,(Z)-2-hexenyl pentanoate,E S R
+968.,56922-74-8,,trans-2-Hexenyl pentanoate,E S R
+969.,84808-28-6,,3-hexenyl pentanoate,P S
+970.,35852-46-1,,(Z)-3-hexenyl pentanoate,Q E S R
+971.,84818-96-2,,hexenyl pentanoate (unkn.str.),P
+972.,5451-80-9,,heptyl pentanoate,P S R
+973.,7155-20-6,,1-methylhexyl pentanoate,E S R
+974.,150462-92-3,,(Z)-1-methyl-3-hexenyl pentanoate,P E R
+975.,5451-85-4,,octyl pentanoate,P S R
+976.,10361-39-4,,benzyl pentanoate,Q E S R
+977.,7460-74-4,,phenethyl pentanoate,Q E S
+978.,10471-96-2,,linalyl pentanoate,Q E S R O
+979.,10402-47-8,,geranyl pentanoate,Q E S R O
+980.,20115-23-5,,phenyl pentanoate,P E S
+981.,89-47-4,,menthyl pentanoate,Q E S
+982.,818-59-7,,methyl 2-pentenoate,P S
+983.,16957-70-3,,methyl (E)-2-pentenoate,P E S R
+984.,24410-84-2,,ethyl (E)-2-pentenoate,P E S
+985.,2445-93-4,,ethyl 2-pentenoate,P E S
+986.,,,isobutyl pentenoate (unkn.str.),
+987.,,,3-hexenyl pentenoate (unkn.str.),
+988.,85762-18-1,,(Z)-3-hexenyl pentenoate (unkn.str.),Q
+989.,1515-75-9,,"methyl 2,4-pentadienoate",S
+990.,2177-77-7,,methyl 2-methylpentanoate,P E S R
+991.,39255-32-8,,ethyl 2-methylpentanoate,Q E S R O T
+992.,6297-41-2,,butyl 2-methylpentanoate,P E S
+993.,2177-78-8,,methyl 3-methylpentanoate,P E S
+994.,5870-68-8,,ethyl 3-methylpentanoate,Q E S R T
+995.,18869-44-8,,methyl isoleucinate (=methyl 2-amino-3-methylpentanoate),P E S
+996.,55056-62-7,,ethyl isoleucinate,Q E S
+997.,2412-80-8,,methyl 4-methylpentanoate,Q E S R
+998.,25415-67-2,,ethyl 4-methylpentanoate,Q E S R O T
+999.,3050-69-9,,vinyl hexanoate,P E S
+1000.,10331-78-9,,ethyl leucinate,Q E S
+1001.,25415-70-7,,2-methylpropyl 4-methylpentanoate,P E S R
+1002.,25415-72-9,,3-methylbutyl 4-methylpentanoate,P E S R
+1003.,25415-71-8,,pentyl 4-methylpentanoate,P E S R
+1004.,35852-42-7,,4-methylpentyl 4-methylpentanoate,P E S R O
+1005.,29289-90-5,,hexyl 4-methylpentanoate,P E S R
+1006.,35852-51-8,,5-methylhexyl 4-methylpentanoate,P S
+1007.,35852-52-9,,heptyl 4-methylpentanoate,P S
+1008.,1617-40-9,,ethyl 2-methyl-(E)-2-pentenoate,Q E S R T
+1009.,1617-39-6,,ethyl 2-methyl-(Z)-2-pentenoate,Q S R
+1010.,2351-97-5,,ethyl 4-methyl-2-pentenoate,P S
+1011.,1215128-10-1,,3-methylbutyl 4-methyl-2-pentenoate,P E R
+1012.,1215128-13-4,,4-methylpentyl 4-methyl-2-pentenoate,P E R
+1013.,1215128-14-5,,hexyl 4-methyl-2-pentenoate,P R
+1014.,1617-23-8,,Ethyl 2-methyl-3-pentenoate,E S R
+1015.,6849-18-9,,ethyl 4-methyl-3-pentenoate,P E S
+1016.,51122-89-5,,methyl 2-methylene-4-pentenoate,P S
+1017.,6938-26-7,,ethyl 2-hydroxypentanoate,P E S R
+1018.,56009-31-5,,methyl 3-hydroxypentanoate,P S
+1019.,54074-85-0,,ethyl 3-hydroxypentanoate,P S
+1020.,6149-46-8,,ethyl 4-hydroxypentanoate,P S
+1021.,79925-86-3,,ethyl 4-ethoxypentanoate,P S
+1022.,539-88-8,,"ethyl 4-oxopentanoate (=ethyl levulate, ethyl levulinate)",Q E S R T
+1023.,115764-31-3,,"allyl 4-oxopentanoate (=allyl levulate, allyl levulinate)",P E S
+1024.,27846-50-0,,ethyl 3-acetoxypentanoate,P S
+1025.,27846-52-2,,ethyl 4-acetoxypentanoate,P S
+1026.,1617-38-5,,ethyl 2-hydroxy-2-methylpentanoate,P S
+1027.,41654-19-7,,methyl 2-hydroxy-3-methylpentanoate,Q E S R
+1028.,56577-29-8,,"methyl (2R,3S)-2-hydroxy-3-methylpentanoate",Q S R O T
+1029.,56577-28-7,,"methyl (2S,3S)-2-hydroxy-3-methylpentanoate",Q S R O T
+1030.,60687-29-8,,"methyl (2R,3R)-2-hydroxy-3-methylpentanoate",R T
+1031.,,,"methyl (2S,3R)-2-hydroxy-3-methylpentanoate",T
+1032.,24323-38-4,,ethyl 2-hydroxy-3-methyl-pentanoate,Q E S O
+1033.,124600-88-0,,"ethyl (2S,3S)-2-hydroxy-3-methylpentanoate",Q E S R O
+1034.,10348-47-7,,ethyl 2-hydroxy-4-methylpentanoate,Q E S R O
+1035.,60856-83-9,,ethyl (R)-2-hydroxy-4-methylpentanoate,Q E S O
+1036.,60856-85-1,,ethyl (S)-2-hydroxy-4-methylpentanoate,Q E S O
+1037.,,,ethyl hydroxy-4-methylpentanoate (unkn.str.),Q
+1038.,31033-23-5,,ethyl 3-hydroxy-3-methylpentanoate,P S
+1039.,,,ethyl 4-methyl-oxopentanoate (unkn.str.),P
+1040.,2985-25-3,,ethyl 2-acetoxy-4-methylpentanoate,P S
+1041.,1114-55-2,,ethyl N-acetylleucinate,P S
+1042.,106-70-7,,methyl hexanoate (=methyl caproate),Q E S R O T
+1043.,123-66-0,,ethyl hexanoate (=ethyl caproate),Q E S R O T
+1044.,39978-33-1,,ethyl lysinate,Q E S
+1045.,626-77-7,,propyl hexanoate,Q E S R O T
+1046.,2311-46-8,,isopropyl hexanoate,Q E S R O
+1047.,123-68-2,,allyl hexanoate,Q E S R O T
+1048.,,,propynyl hexanoate (unkn.str.),P E
+1049.,626-82-4,,butyl hexanoate,Q E S R O T
+1050.,105-79-3,,isobutyl hexanoate,Q E S R O
+1051.,3115-28-4,,sec-butyl hexanoate,P E S
+1052.,95200-55-8,,"2,3-butanediol monohexanoate",Q
+1053.,134782-31-3,,1-methyl-2-oxopropyl hexanoate (=acetoin hexanoate),P E
+1054.,2601-13-0,,2-methylbutyl hexanoate,Q E S R O T
+1055.,,,methylbutyl hexanoate (unkn.str.),P E
+1056.,540-07-8,,pentyl hexanoate,Q E S R O
+1057.,2198-61-0,,isopentyl hexanoate (=3-methylbutyl hexanoate),Q E S R O T
+1058.,135432-80-3,,2-methyl-2-butenyl hexanoate,R
+1059.,76649-22-4,,3-methyl-2-butenyl hexanoate,Q E S R
+1060.,53655-22-4,,3-methyl-3-butenyl hexanoate,P E S R
+1061.,88164-61-8,,1-methylbutyl hexanoate,Q E S R T
+1062.,117636-54-1,,(R)-1-methylbutyl hexanoate,Q E
+1063.,117636-48-3,,(S)-1-methylbutyl hexanoate,Q E
+1064.,,,2-pentenyl hexanoate,E
+1065.,74298-89-8,,(Z)-2-pentenyl hexanoate,P E S
+1066.,88296-27-9,,(E)-2-pentenyl hexanoate,P E S
+1067.,,,pentenyl hexanoate (unkn.str.),P E
+1068.,35852-49-4,,4-methylpentyl hexanoate,P E S R
+1069.,6378-65-0,,hexyl hexanoate,Q E S R O T
+1070.,10448-24-5,,2-hexenyl hexanoate,P E S
+1071.,56922-79-3,,(Z)-2-hexenyl hexanoate,Q E S R T
+1072.,53398-86-0,,(E)-2-hexenyl hexanoate,Q E S R T
+1073.,84434-19-5,,3-hexenyl hexanoate,Q E S R
+1074.,56922-82-8,,(E)-3-hexenyl hexanoate,Q E S R
+1075.,31501-11-8,,(Z)-3-hexenyl hexanoate,Q E S R O
+1076.,88552-98-1,,(Z)-4-hexenyl hexanoate,Q E R
+1077.,,,(E)-4-hexenyl hexanoate,P E S
+1078.,108058-81-7,,5-hexenyl hexanoate,Q E S
+1079.,6976-72-3,,heptyl hexanoate,P E S R
+1080.,6624-58-4,,1-methylhexyl hexanoate,Q E S R
+1081.,117636-56-3,,(R)-1-methylhexyl hexanoate,Q E
+1082.,117636-50-7,,(S)-1-methylhexyl hexanoate,Q E S
+1083.,4887-30-3,,octyl hexanoate,Q E S R T
+1084.,29803-24-5,,1-methylheptyl hexanoate,P E S
+1085.,,,3-octenyl hexanoate,E S
+1086.,87619-92-9,,(Z)-3-octenyl hexanoate,Q E R
+1087.,97849-83-7,,(E)-3-octenyl hexanoate,Q E R
+1088.,55193-16-3,,1-methyloctyl hexanoate,Q E R
+1089.,117636-58-5,,(R)-2-nonyl hexanoate,Q E
+1090.,117636-52-9,,(S)-2-nonyl hexanoate,Q E S
+1091.,52363-43-6,,decyl hexanoate,P E S
+1092.,,,3-decenyl hexanoate,E
+1093.,87619-95-2,,(Z)-3-decenyl hexanoate,P E
+1094.,,,decenyl hexanoate (unkn.str.),Q E R
+1095.,10580-25-3,,citronellyl hexanoate,Q E S R
+1096.,10032-02-7,,geranyl hexanoate,Q E S R
+1097.,68310-59-8,,neryl hexanoate,P S R
+1098.,134782-34-6,,"(E,E)-farnesyl hexanoate",Q S
+1099.,6243-10-3,,cyclohexyl hexanoate,Q S R
+1100.,7780-16-7,,phenyl hexanoate,P E S
+1101.,6938-45-0,,benzyl hexanoate,P E S
+1102.,6290-37-5,,phenethyl hexanoate,Q E S R T
+1103.,6070-16-2,,menthyl hexanoate,P E S
+1104.,2396-77-2,,methyl 2-hexenoate,Q E S
+1105.,149183-75-5,,oleacein,P S
+1106.,289030-99-5,,oleocanthal,P S
+1107.,13894-64-9,,methyl (Z)-2-hexenoate,P S R
+1108.,13894-63-8,,methyl (E)-2-hexenoate,Q E S R
+1109.,1552-67-6,,ethyl 2-hexenoate,Q E S R
+1110.,27829-71-6,,ethyl (Z)-2-hexenoate,Q S
+1111.,27829-72-7,,ethyl (E)-2-hexenoate,Q E S R T
+1112.,13416-74-5,,butyl 2-hexenoate,E S
+1113.,54411-16-4,,butyl (E)-2-hexenoate,Q S
+1114.,72928-34-8,,3-methylbutyl (E)-2-hexenoate,P E S R
+1115.,33855-57-1,,hexyl (E)-2-hexenoate,Q E S
+1116.,53398-87-1,,(Z)-3-hexenyl (E)-2-hexenoate,Q E S R
+1117.,2396-78-3,,methyl 3-hexenoate,Q E S
+1118.,13894-62-7,,methyl (Z)-3-hexenoate,Q E S R
+1119.,13894-61-6,,methyl (E)-3-hexenoate,Q S R
+1120.,2396-83-0,,ethyl 3-hexenoate,Q E S R
+1121.,64187-83-3,,ethyl (Z)-3-hexenoate,Q E S R O T
+1122.,26553-46-8,,ethyl (E)-3-hexenoate,Q E S R O T
+1123.,41519-01-1,,butyl 3-hexenoate,Q S
+1124.,118869-62-8,,butyl (E)-3-hexenoate,Q E S
+1125.,203569-62-4,,2-pentyl (E)-3-hexenoate,P E S R
+1126.,41599-57-9,,hexyl 3-hexenoate,Q S
+1127.,89352-68-1,,hexyl (Z)-3-hexenoate,Q S
+1128.,,,3-hexenyl 4-hexenoate,
+1129.,,,3-hexenyl 3-hexenoate,
+1130.,53398-88-2,,(E)-3-hexenyl (Z)-3-hexenoate,P S R
+1131.,74638-19-0,,(Z)-3-hexenyl (E)-3-hexenoate,P S
+1132.,61444-37-9,,(E)-3-hexenyl (E)-3-hexenoate,P S
+1133.,61444-38-0,,(Z)-3-Hexenyl (Z)-3-hexenoate,Q E S R
+1134.,14017-81-3,,methyl (E)-4-hexenoate,P S R T
+1135.,34495-73-3,,ethyl (Z)-4-hexenoate,Q S
+1136.,74638-19-0,,(Z)-3-hexenyl (E)-4-hexenoate,S
+1137.,2396-80-7,,methyl 5-hexenoate,Q S R T
+1138.,54653-25-7,,ethyl 5-hexenoate,Q E S R
+1139.,108058-74-8,,isobutyl 5-hexenoate,Q S
+1140.,106917-23-1,,hexyl 5-hexenoate,Q S
+1141.,106917-24-2,,(Z)-3-hexenyl 5-hexenoate,Q
+1142.,77131-17-0,,5-hexenyl 5-hexenoate,Q S
+1143.,,,methyl hexenoate (unkn.str.),Q R
+1144.,34495-74-4,,ethyl hexenoate (unkn.str.),P
+1145.,,,pentyl hexenoate (unkn.str.),
+1146.,,,hexyl hexenoate (unkn.str.),
+1147.,,,(Z)-3-hexenyl hexenoate (unkn.str.),P
+1148.,1515-80-6,,"methyl 2,4-hexadienoate",Q S R
+1149.,689-89-4,,"methyl (E,E)-2,4-hexadienoate (=methyl sorbate)",P E S
+1150.,2396-84-1,,"ethyl (E,E)-2,4-hexadienoate (=ethyl sorbate)",Q E S R O T
+1151.,34495-67-5,,"ethyl (E,Z)-2,4-hexadienoate",E S R
+1152.,110318-09-7,,ethyl hexadienoate (unkn.str.),P
+1153.,2177-83-5,,methyl 5-methylhexanoate,Q E S
+1154.,10236-10-9,,ethyl 5-methylhexanoate,P S
+1155.,1215127-87-9,,3-methylbutyl 5-methylhexanoate,P E R
+1156.,1008763-07-2,,4-methylpentyl 5-methylhexanoate,P E S R
+1157.,1215127-88-0,,hexyl 5-methylhexanoate,P S R
+1158.,2177-82-4,,methyl 4-methylhexanoate,Q S R
+1159.,,,methyl 6-methylhexanoate (unkn.str.),
+1160.,,,ethyl methylhexanoate (unkn.str.),P
+1161.,2445-71-8,,methyl 4-methyl-2-hexenoate,Q S R T
+1162.,,,methyl 4-methylhexenoate (unkn.str.),Q
+1163.,816-19-3,,methyl 2-ethylhexanoate,Q S
+1164.,2983-37-1,,Ethyl 2-ethylhexanoate,E S T
+1165.,7434-89-1,,isobutyl 2-ethylhexanoate,Q S
+1166.,68756-64-9,,methyl 2-hydroxyhexanoate,P S R
+1167.,52089-55-1,,ethyl 2-hydroxyhexanoate,Q E S R O T
+1168.,21188-58-9,,methyl 3-hydroxyhexanoate,Q E S R O
+1169.,109053-86-3,,(R)-methyl 3-hydroxyhexanoate,S T
+1170.,66997-70-4,,(S)-methyl 3-hydroxyhexanoate,S T
+1171.,2305-25-1,,ethyl 3-hydroxyhexanoate,Q E S R O T
+1172.,84314-29-4,,ethyl (R)-3-hydroxyhexanoate,Q S T
+1173.,88496-71-3,,(S)-ethyl 3-hydroxyhexanoate,E S T
+1174.,179177-72-1,,butyl 3-hydroxyhexanoate,Q
+1175.,,,hexyl 3-hydroxyhexanoate,Q S R
+1176.,101853-52-5,,methyl 4-hydroxyhexanoate,P S
+1177.,101853-50-3,,ethyl 4-hydroxyhexanoate,P S
+1178.,62593-13-9,,methyl 5-hydroxyhexanoate,Q S R
+1179.,20266-62-0,,ethyl 5-hydroxyhexanoate,P S R
+1180.,5299-60-5,,ethyl 6-hydroxyhexanoate,Q S T
+1181.,19870-59-8,,methyl 5-hydroxy-(E)-2-hexenoate,P S
+1182.,6395-83-1,,methyl 2-oxohexanoate,Q E S R
+1183.,2955-62-6,,methyl 4-oxohexanoate,Q S R
+1184.,13984-50-4,,methyl 5-oxohexanoate,P E S
+1185.,77118-93-5,,methyl 3-acetoxyhexanoate,Q E S R T
+1186.,21188-61-4,,ethyl 3-acetoxyhexanoate,Q E S R
+1187.,112059-09-3,,methyl 4-acetoxyhexanoate,Q E S R
+1188.,121308-81-4,,ethyl 4-acetoxyhexanoate,Q S R
+1189.,35234-22-1,,methyl 5-acetoxyhexanoate,Q E S R
+1190.,35234-24-3,,ethyl 5-acetoxyhexanoate,Q E S R
+1191.,137768-72-0,,"methyl 2,5-dimethylhexanoate",P S
+1192.,105469-26-9,,ethyl 4-hydroxy-5-oxohexanoate,Q S
+1193.,106-73-0,,methyl heptanoate,Q E S R T
+1194.,106-30-9,,ethyl heptanoate,Q E S R O T
+1195.,7778-87-2,,propyl heptanoate,P E S
+1196.,142-19-8,,allyl heptanoate,P E S R O
+1197.,5454-28-4,,butyl heptanoate,Q E S R
+1198.,7779-80-8,,isobutyl heptanoate,Q E S
+1199.,55195-33-0,,2-methylbutyl heptanoate,P E S R
+1200.,109-25-1,,isopentyl heptanoate,Q E S
+1201.,1119-06-8,,hexyl heptanoate,Q E S R
+1202.,125680-98-0,,(E)-2-hexenyl heptanoate,P S
+1203.,61444-39-1,,(Z)-3-hexenyl heptanoate,Q E S R
+1204.,2351-88-4,,ethyl 2-heptenoate,S
+1205.,54340-72-6,,ethyl (E)-2-heptenoate,P E S
+1206.,21994-75-2,,ethyl 3-heptenoate,P
+1207.,6843-93-2,,methyl 4-heptenoate,R
+1208.,39924-30-6,,methyl (Z)-4-heptenoate,P S R
+1209.,,,ethyl 4-heptenoate,Q R
+1210.,39924-27-1,,ethyl (Z)-4-heptenoate,P E S
+1211.,54340-70-4,,ethyl (E)-4-heptenoate,P S
+1212.,1745-17-1,,methyl 6-heptenoate,P S
+1213.,42862-16-8,,ethyl heptenoate (unkn.str.),Q
+1214.,2519-37-1,,methyl 6-methylheptanoate,Q E S R
+1215.,15889-95-9,,methyl 3-hydroxyheptanoate,P S
+1216.,139564-44-6,,methyl 5-acetoxyheptanoate,P E S
+1217.,111-11-5,,methyl octanoate,Q E S R O T
+1218.,90453-99-9,,methyl octanoate (branched),Q E
+1219.,106-32-1,,ethyl octanoate,Q E S R O T
+1220.,624-13-5,,propyl octanoate,Q E S R
+1221.,5458-59-3,,isopropyl octanoate,P E S
+1222.,4230-97-1,,Allyl octanoate,E S R
+1223.,589-75-3,,butyl octanoate,Q E S R O
+1224.,5461-06-3,,isobutyl octanoate,Q E S R O
+1225.,5458-61-7,,sec-butyl octanoate,Q E S
+1226.,150034-00-7,,2-methyl-2-butenyl octanoate,S R
+1227.,121173-45-3,,3-methyl-3-butenyl octanoate,P E S R
+1228.,134782-32-4,,"2,3-butanediol monooctanoate",Q E
+1229.,92038-24-9,,1-methyl-2-oxopropyl octanoate (=acetoin octanoate),Q E
+1230.,67121-39-5,,2-methylbutyl octanoate,Q E S R
+1231.,,,methylbutyl octanoate (unkn.str.),P E
+1232.,638-25-5,,pentyl octanoate,Q E S R
+1233.,2035-99-6,,isopentyl octanoate,Q E S R O T
+1234.,55193-30-1,,1-methylbutyl octanoate,Q E S R
+1235.,117636-65-4,,(R)-1-methylbutyl octanoate,Q E
+1236.,117636-60-9,,(S)-1-methylbutyl octanoate,Q E
+1237.,1117-55-1,,hexyl octanoate,Q E S R O
+1238.,61444-41-5,,(Z)-3-hexenyl octanoate,Q E S R O
+1239.,87619-90-7,,(E)-3-hexenyl octanoate,Q E S R
+1240.,108058-85-1,,5-hexenyl octanoate,Q E S
+1241.,,,hexenyl octanoate (unkn.str.),P E
+1242.,55193-32-3,,1-methylhexyl octanoate,Q E S R
+1243.,117636-67-6,,(R)-1-methylhexyl octanoate,Q E
+1244.,117636-62-1,,(S)-1-methylhexyl octanoate,Q E S
+1245.,2306-88-9,,octyl octanoate,P E S
+1246.,,,3-octenyl octanoate,E
+1247.,87619-93-0,,(Z)-3-octenyl octanoate,Q E R
+1248.,7786-48-3,,nonyl octanoate,E S
+1249.,55193-34-5,,1-methyloctyl octanoate,Q E R
+1250.,134782-33-5,,geranyl octanoate,Q E S
+1251.,134782-35-7,,"(E,E)-farnesyl octanoate",Q E S
+1252.,5457-70-5,,phenethyl octanoate,Q E S R T
+1253.,2396-85-2,,methyl 2-octenoate,Q S R
+1254.,7367-81-9,,methyl (E)-2-octenoate,Q E S R
+1255.,7367-82-0,,ethyl (E)-2-octenoate,Q E S R O
+1256.,42778-93-8,,ethyl (Z)-2-octenoate,S R
+1257.,2351-90-8,,ethyl 2-octenoate,Q S O
+1258.,57403-32-4,,butyl 2-octenoate,P E S
+1259.,74023-04-4,,methyl 3-octenoate,Q
+1260.,69668-85-5,,methyl (Z)-3-octenoate,P S
+1261.,35234-16-3,,methyl (E)-3-octenoate,Q S R T
+1262.,1117-65-3,,ethyl 3-octenoate,P E S
+1263.,69668-87-7,,ethyl (Z)-3-octenoate,Q S
+1264.,26553-47-9,,ethyl (E)-3-octenoate,Q S R
+1265.,,,methyl 4-octenoate,S
+1266.,21063-71-8,,methyl (Z)-4-octenoate,Q E S R
+1267.,,,ethyl 4-octenoate,Q S
+1268.,34495-71-1,,ethyl (Z)-4-octenoate,Q E S R
+1269.,78989-37-4,,ethyl (E)-4-octenoate,Q S R T
+1270.,41654-15-3,,methyl (Z)-5-octenoate,P E S R
+1271.,108058-76-0,,ethyl 5-octenoate,Q
+1272.,72820-74-7,,ethyl (Z)-5-octenoate,P S R
+1273.,,,butyl 5-octenoate,Q
+1274.,108058-78-2,,isobutyl 5-octenoate,Q
+1275.,101773-18-6,,ethyl (Z)-6-octenoate,P S
+1276.,25143-92-4,,ethyl (E)-6-octenoate,P S
+1277.,35194-38-8,,ethyl 7-octenoate,Q S
+1278.,108058-77-1,,propyl 7-octenoate,Q S
+1279.,108058-80-6,,butyl 7-octenoate,Q S
+1280.,106917-25-3,,isobutyl 7-octenoate,Q S
+1281.,108058-84-0,,hexyl 7-octenoate,Q
+1282.,108058-86-2,,5-hexenyl 7-octenoate,Q
+1283.,111-12-6,,Methyl 2-octynoate,E S R T
+1284.,10519-20-7,,ethyl 2-octynoate,E S R
+1285.,72276-09-6,,"ethyl 4,7-octadienoate",Q S R
+1286.,69925-33-3,,"ethyl (Z)-4,7-octadienoate",E S R T
+1287.,31423-91-3,,methyl octenoate (unkn.str.),Q R
+1288.,82567-91-7,,ethyl octenoate (unkn.str.),P
+1289.,69620-78-6,,ethyl octadienoate (unkn.str.),P
+1290.,56196-53-3,,ethyl 4-methyloctanoate,P S
+1291.,5129-53-3,,methyl 7-methyloctanoate,Q S R
+1292.,92572-96-8,,methyl 2-hydroxyoctanoate,P S
+1293.,126784-42-7,,ethyl 2-hydroxyoctanoate,P
+1294.,7367-87-5,,methyl 3-hydroxyoctanoate,Q S
+1295.,7367-90-0,,ethyl 3-hydroxyoctanoate,Q E S R
+1296.,118918-31-3,,ethyl (R)-3-hydroxyoctanoate,P S
+1297.,,,butyl 3-hydroxyoctanoate,Q S
+1298.,,,hexyl 3-hydroxyoctanoate,Q
+1299.,101853-51-4,,methyl 4-hydroxyoctanoate,P S
+1300.,57753-66-9,,ethyl 4-hydroxyoctanoate,P S
+1301.,101853-49-0,,methyl 5-hydroxyoctanoate,P S
+1302.,75587-05-2,,ethyl 5-hydroxyoctanoate,Q S
+1303.,71677-20-8,,ethyl 5-(Z)-3-hydroxyoctenoate,Q
+1304.,182510-22-1,,ethyl (R)-5-(Z)-3-hydroxyoctenoate,P
+1305.,35234-21-0,,methyl 3-acetoxyoctanoate,Q E S R
+1306.,85554-66-1,,ethyl 3-acetoxyoctanoate,Q E S R
+1307.,60121-04-2,,methyl 4-acetoxyoctanoate,Q S R
+1308.,121312-01-4,,ethyl 4-acetoxyoctanoate,Q S R
+1309.,75640-24-3,,"ethyl 3,6-dimethyl-7-oxooctanoate",Q
+1310.,35234-23-2,,methyl 5-acetoxyoctanoate,Q S R
+1311.,35234-25-4,,ethyl 5-acetoxyoctanoate,P E S R
+1312.,1731-84-6,,methyl nonanoate,Q E S R O T
+1313.,123-29-5,,ethyl nonanoate,Q E S R O T
+1314.,6513-03-7,,propyl nonanoate,E S
+1315.,28267-32-5,,isopropyl nonanoate,P S
+1316.,50623-57-9,,butyl nonanoate,P S
+1317.,30982-03-7,,isobutyl nonanoate,P S
+1318.,69205-08-9,,2-methylbutyl nonanoate,S
+1319.,61531-45-1,,pentyl nonanoate,E S
+1320.,7779-70-6,,isopentyl nonanoate,P E S R T
+1321.,104186-32-5,,1-methylbutyl nonanoate,P E S
+1322.,,,(E)-2-hexenyl nonanoate,P S
+1323.,88191-46-2,,(Z)-3-hexenyl nonanoate,Q S R
+1324.,,,methyl nonanoate (branched),Q
+1325.,,,ethyl nonanoate (branched),P
+1326.,7493-72-3,,Allyl nonanoate,E S R
+1327.,111-79-5,,methyl 2-nonenoate,E S
+1328.,14952-06-8,,methyl (E)-2-nonenoate,S R
+1329.,13481-87-3,,methyl 3-nonenoate,P E S
+1330.,20731-19-5,,methyl 4-nonenoate,P S
+1331.,,,methyl 5-nonenoate,Q
+1332.,101773-19-7,,ethyl (Z)-6-nonenoate,P S
+1333.,75567-02-1,,ethyl (E)-6-nonenoate,P S
+1334.,37822-76-7,,methyl nonenoate (unkn.str.),Q R
+1335.,17463-01-3,,ethyl nonenoate (unkn.str.),Q
+1336.,115946-84-4,,"methyl 2,6-nonadienoate",P S
+1337.,56898-37-4,,methyl 2-methylnonanoate,S
+1338.,2458-99-3,,ethyl 2-methylnonanoate,P S
+1339.,5129-63-5,,methyl 7-methylnonanoate,Q S R
+1340.,5129-54-4,,methyl 8-methylnonanoate,Q S R
+1341.,80500-58-9,,methyl 8-methyl-6-nonenoate,P
+1342.,1215128-15-6,,2-methylpropyl 8-methyl-6-nonenoate,P E R
+1343.,1215128-18-9,,4-methylpentyl 8-methyl-6-nonenoate,P E S R
+1344.,3639-34-7,,ethyl 9-hydroxynonanoate,P E S
+1345.,33566-57-3,,methyl 4-oxononanoate,P S
+1346.,4144-59-6,,ethyl 6-oxononanoate,Q S R
+1347.,1931-63-1,,methyl 9-oxononanoate,P E S
+1348.,110-42-9,,methyl decanoate,Q E S R O T
+1349.,110-38-3,,ethyl decanoate (=ethyl caprate),Q E S R O T
+1350.,30673-60-0,,propyl decanoate,Q E S R
+1351.,57856-81-2,,2-propenyl decanoate,E S R
+1352.,2311-59-3,,isopropyl decanoate,P E S
+1353.,30673-36-0,,butyl decanoate,Q E S R O
+1354.,55195-24-9,,sec-butyl decanoate,P E S
+1355.,30673-38-2,,isobutyl decanoate,Q E S R O
+1356.,55195-23-8,,2-methylbutyl decanoate,Q E S R
+1357.,,,methylbutyl decanoate (unkn.str.),P E
+1358.,5933-87-9,,pentyl decanoate,Q E S
+1359.,2306-91-4,,isopentyl decanoate (=3-methylbutyl decanoate),Q E S R O T
+1360.,55195-26-1,,1-methylbutyl decanoate,P E S
+1361.,10448-26-7,,hexyl decanoate,Q E S R
+1362.,85554-69-4,,(Z)-3-hexenyl decanoate,P E S
+1363.,61810-55-7,,phenethyl decanoate,Q E S R
+1364.,,,methyl decanoate (branched),Q
+1365.,,,ethyl decanoate (branched),P
+1366.,,,propyl decanoate (branched),
+1367.,2482-39-5,,methyl 2-decenoate,E S
+1368.,7367-85-3,,methyl (E)-2-decenoate,Q S
+1369.,37486-72-9,,ethyl 2-decenoate,P S
+1370.,7367-88-6,,ethyl (E)-2-decenoate,Q E S R
+1371.,82561-68-0,,ethyl (Z)-3-decenoate,Q E
+1372.,82561-67-9,,ethyl (E)-3-decenoate,S R
+1373.,1191-02-2,,methyl 4-decenoate,Q S R T
+1374.,7367-83-1,,methyl (Z)-4-decenoate,Q S R T
+1375.,93979-14-7,,methyl (E)-4-decenoate,P S
+1376.,54750-32-2,,methyl decenoate (unkn.str.),Q R
+1377.,6142-44-5,,ethyl 4-decenoate,Q
+1378.,7367-84-2,,ethyl (Z)-4-decenoate,Q S R
+1379.,76649-16-6,,ethyl (E)-4-decenoate,P E S R
+1380.,,,butyl (E)-4-decenoate,P
+1381.,,,isobutyl (E)-4-decenoate,P
+1382.,68067-34-5,,isopentyl 4-decenoate,Q E
+1383.,,,isopentyl decenoate (unkn.str.),P E
+1384.,,,hexyl decenoate (unkn.str.),P
+1385.,67233-91-4,,ethyl 9-decenoate,Q E S R O
+1386.,108058-82-8,,sec-butyl 9-decenoate,Q
+1387.,,,isobutyl 9-decenoate,Q S
+1388.,,,methylbutyl 9-decenoate (unkn.str.),P
+1389.,80512-16-9,,ethyl decenoate (unkn.str.),P
+1390.,,,isobutyl decenoate (unkn.str.),P
+1391.,53172-59-1,,"methyl 2,4-decadienoate",Q S R
+1392.,108965-84-0,,"methyl (Z,E)-2,4-decadienoate",P S
+1393.,4493-42-9,,"methyl (E,Z)-2,4-decadienoate",Q E S
+1394.,7328-33-8,,"methyl (E,E)-2,4-decadienoate",Q S
+1395.,37549-74-9,,"ethyl 2,4-decadienoate",Q S R
+1396.,3025-30-7,,"ethyl (E,Z)-2,4-decadienoate",Q E S R O T
+1397.,7328-34-9,,"ethyl (E,E)-2,4-decadienoate",Q S R O T
+1398.,3025-31-8,,"ethyl (Z,E)-2,4-decadienoate",P S
+1399.,123474-79-3,,"ethyl (Z,Z)-2,4-decadienoate",P S
+1400.,64613-68-9,,ethyl decadienoate (unkn.str.),P
+1401.,84788-08-9,,"propyl 2,4-decadienoate",Q E S
+1402.,28316-62-3,,"propyl (E,Z)-2,4-decadienoate",P E S
+1403.,3025-32-9,,"propyl (E,E)-2,4-decadienoate",P S
+1404.,,,"butyl 2,4-decadienoate",S
+1405.,28369-24-6,,"butyl (E,Z)-2,4-decadienoate",Q E S
+1406.,,,"hexyl 2,4-decadienoate",S
+1407.,28380-11-2,,"hexyl (E,Z)-2,4-decadienoate",Q S
+1408.,,,"hexyl (E,E)-2,4-decadienoate",P S
+1409.,68039-70-3,,"ethyl 2,6-decadienoate",P
+1410.,,,"ethyl (E,Z)-2,6-decadienoate",P
+1411.,183554-58-7,,"ethyl (Z,Z)-3,6-decadienoate",P
+1412.,1191-03-3,,"methyl 4,8-decadienoate",Q E S R
+1413.,34217-82-8,,"(Z,Z)-methyl 4,8-decadienoate",T
+1414.,60388-64-9,,"ethyl 4,8-decadienoate",Q
+1415.,66573-83-9,,methyl decadienoate (unkn.str.),Q
+1416.,,,"methyl 2,4,7-decatrienoate",
+1417.,,,"methyl (E,Z,Z)-2,4,7-decatrienoate",P S
+1418.,150922-04-6,,"methyl (E,E,Z)-2,4,7-decatrienoate",P
+1419.,78417-28-4,,"ethyl 2,4,7-decatrienoate",Q E R
+1420.,142676-19-5,,"ethyl (E,Z,Z)-2,4,7-decatrienoate",P S
+1421.,28290-88-2,,"ethyl (E,E,Z)-2,4,7-decatrienoate",P S
+1422.,928-36-9,,"methyl ester (Z,Z)-2,8-decadienediynoic-4,6 acid (=matricaria ester)",E S
+1423.,5129-55-5,,methyl 9-methyldecanoate,P S
+1424.,6071-25-6,,ethyl 3-hydroxydecanoate,P E S R
+1425.,75587-06-3,,ethyl 5-hydroxydecanoate,Q E S
+1426.,1367348-37-5,,ethyl 5-formyloxydecanoate,S
+1427.,1731-86-8,,methyl undecanoate,Q S R
+1428.,627-90-7,,ethyl undecanoate,Q E S R O T
+1429.,,,2-methylbutyl undecanoate,
+1430.,,,isopentyl undecanoate,P E
+1431.,22104-71-8,,methyl 2-undecenoate,Q R
+1432.,692-86-4,,ethyl 10-undecenoate,P E S
+1433.,66573-84-0,,methyl undecenoate (unkn.str.),Q R
+1434.,,,methyl undecadienoate (unkn.str.),Q R
+1435.,,,methyl methylundecanoate (unkn.str.),Q R
+1436.,55955-74-3,,"methyl 2,8-dimethylundecanoate",P S
+1437.,55955-76-5,,"methyl 2,4,6-trimethylundecanoate",P S
+1438.,111-82-0,,methyl dodecanoate (=methyl laurate),Q E S R O T
+1439.,106-33-2,,ethyl dodecanoate (=ethyl laurate),Q E S R O T
+1440.,3681-78-5,,propyl dodecanoate (=propyl laurate),Q E S R
+1441.,10233-13-3,,isopropyl dodecanoate (=isopropyl laurate),Q E S R
+1442.,106-18-3,,butyl dodecanoate (=butyl laurate),Q E S R O
+1443.,37811-72-6,,isobutyl dodecanoate (=isobutyl laurate),Q E S R
+1444.,55195-19-2,,2-methylbutyl dodecanoate (=2-methylbutyl laurate),Q E S
+1445.,,,methylbutyl dodecanoate (unkn.str.),P E
+1446.,5350-03-8,,pentyl dodecanoate (=amyl laurate),E S
+1447.,6309-51-9,,"isopentyl dodecanoate (=3-methylbutyl dodecanoate, isoamyl laurate)",Q E S R T
+1448.,34316-64-8,,hexyl dodecanoate (=hexyl laurate),Q E S
+1449.,6309-54-2,,phenethyl dodecanoate (=phenethyl laurate),P E S
+1450.,183613-15-2,,ethyl 3-hydroxydodecanoate,Q S R
+1451.,,,methyl dodecanoate (branched),Q
+1452.,22104-72-9,,methyl 2-dodecenoate,S
+1453.,6208-91-9,,methyl (E)-2-dodecenoate,P E S
+1454.,78217-11-5,,ethyl 2-dodecenoate,P
+1455.,28290-90-6,,ethyl (E)-2-dodecenoate,P E S
+1456.,,,ethyl 6-dodecenoate,
+1457.,,,ethyl (Z)-6-dodecenoate,P
+1458.,101773-20-0,,ethyl (E)-7-dodecenoate,P S
+1459.,62472-92-8,,methyl 8-dodecenoate,P
+1460.,38098-09-8,,methyl dodecenoate (unkn.str.),Q R
+1461.,64613-69-0,,ethyl dodecenoate (unkn.str.),Q
+1462.,,,"methyl 2,6-dodecadienoate",
+1463.,28369-22-4,,"methyl (E,Z)-2,6-dodecadienoate",P S
+1464.,78417-29-5,,"ethyl 2,6-dodecadienoate",Q
+1465.,28380-08-7,,"ethyl (E,Z)-2,6-dodecadienoate",P S
+1466.,66573-85-1,,methyl dodecadienoate (unkn.str.),Q R
+1467.,27710-64-1,,ethyl dodecadienoate (unkn.str.),P
+1468.,,,"ethyl 2,6,9-dodecatrienoate",
+1469.,28369-23-5,,"ethyl (E,Z,Z)-2,6,9-dodecatrienoate",P
+1470.,3675-00-1,,"methyl (E,E)-farnesate",Q S R
+1471.,1731-88-0,,methyl tridecanoate,Q S R
+1472.,28267-29-0,,ethyl tridecanoate,Q S R T
+1473.,,,isobutyl tridecanoate,S
+1474.,,,isopentyl tridecanoate,E
+1475.,66607-94-1,,methyl tridecenoate (unkn.str.),Q
+1476.,55955-78-7,,methyl 2-methyltridecanoate,P
+1477.,124-10-7,,methyl tetradecanoate (=methyl myristate),Q E S R O
+1478.,124-06-1,,ethyl tetradecanoate (=ethyl myristate),Q E S R O T
+1479.,131156-33-7,,ethyl 2-methyltetradecanoate,Q S
+1480.,14303-70-9,,propyl tetradecanoate,Q E S R
+1481.,110-27-0,,isopropyl tetradecanoate,Q E S R
+1482.,110-36-1,,butyl tetradecanoate,Q E S R
+1483.,25263-97-2,,isobutyl tetradecanoate,Q E S
+1484.,93805-23-3,,2-methylbutyl tetradecanoate,P E S
+1485.,,,methylbutyl tetradecanoate (unkn.str.),P
+1486.,10484-35-2,,pentyl tetradecanoate,E S
+1487.,62488-24-8,,isopentyl tetradecanoate,Q E S R
+1488.,42231-99-2,,hexyl tetradecanoate,Q E S
+1489.,72934-11-3,,2-phenylethyl tetradecanoate,Q E S
+1490.,56009-40-6,,methyl 2-hydroxytetradecanoate,Q S
+1491.,,,methyl 5-tetradecenoate,
+1492.,28369-26-8,,methyl (Z)-5-tetradecenoate,P S
+1493.,,,ethyl 5-tetradecenoate,
+1494.,28380-10-1,,ethyl (Z)-5-tetradecenoate,Q S
+1495.,,,methyl 8-tetradecenoate,
+1496.,61012-45-1,,methyl (Z)-8-tetradecenoate,P
+1497.,,,ethyl 8-tetradecenoate,
+1498.,,,ethyl (Z)-8-tetradecenoate,P
+1499.,24880-50-0,,ethyl (Z)-9-tetradecenoate,P S
+1500.,68862-25-9,,ethyl (E)-9-tetradecenoate,P S
+1501.,71178-24-0,,ethyl tetradecenoate (unkn.str.),P
+1502.,,,"methyl 5,8-tetradecadienoate",S
+1503.,18829-89-5,,"methyl (Z,Z)-5,8-tetradecadienoate",P
+1504.,,,"ethyl 5,8-tetradecadienoate",
+1505.,28369-25-7,,"ethyl (Z,Z)-5,8-tetradecadienoate",Q S
+1506.,64613-70-3,,ethyl tetradecadienoate (unkn.str.),P
+1507.,,,"methyl 2,4,8-tetradecatrienoate",
+1508.,108351-47-9,,"methyl (E,E,Z)-2,4,8-tetradecatrienoate",P
+1509.,,,"ethyl 2,4,8-tetradecatrienoate",
+1510.,,,"ethyl (E,E,Z)-2,4,8-tetradecatrienoate",P S
+1511.,7132-64-1,,methyl pentadecanoate,Q S
+1512.,41114-00-5,,ethyl pentadecanoate,Q S R
+1513.,55195-09-0,,2-methylbutyl pentadecanoate,P
+1514.,,,isopentyl pentadecanoate,P E
+1515.,5487-50-3,,methyl 13-methylpentadecanoate,P S
+1516.,,,methyl 14-methylpentadecanoate,Q S R
+1517.,,,methyl isopentadecanoate (branched),Q
+1518.,112-39-0,,methyl hexadecanoate (=methyl palmitate),Q E S R T
+1519.,628-97-7,,ethyl hexadecanoate (=ethyl palmitate),Q E S R O T
+1520.,2239-78-3,,propyl hexadecanoate,Q E S R
+1521.,142-91-6,,isopropyl hexadecanoate,Q E S R O
+1522.,111-06-8,,butyl hexadecanoate,Q E S R
+1523.,110-34-9,,isobutyl hexadecanoate,Q E S R
+1524.,94022-82-9,,2-methylbutyl hexadecanoate,P E S
+1525.,,,methylbutyl hexadecanoate (unkn.str.),P E
+1526.,31148-31-9,,pentyl hexadecanoate (=amyl palmitate),E S
+1527.,81974-61-0,,isopentyl hexadecanoate (=isoamyl palmitate),Q E S R
+1528.,117210-57-8,,(Z)-3-hexenyl hexadecanoate,P E S
+1529.,72934-12-4,,2-phenylethyl hexadecanoate,Q E S
+1530.,,,"(E)-4-(3,4-dimethoxyphenyl)-3-butenyl hexadecanoate",P
+1531.,121230-26-0,,ethyl 7-hexadecenoate,Q
+1532.,3913-63-1,,methyl 9-hexadecenoate,Q S R
+1533.,1120-25-8,,methyl (Z)-9-hexadecenoate (=methyl palmitoleate),Q E S R
+1534.,428818-84-2,,ethyl (E)-11-hexadecenoate,S
+1535.,10030-74-7,,methyl (E)-9-hexadecenoate,Q S
+1536.,54546-22-4,,ethyl 9-hexadecenoate,Q R
+1537.,56219-10-4,,ethyl (Z)-9-hexadecenoate (=ethyl palmitoleate),Q E S R T
+1538.,,,butyl 9-hexadecenoate,S
+1539.,41240-59-9,,methyl 15-hexadecenoate,P
+1540.,29960-49-4,,methyl hexadecenoate (unkn.str.),P
+1541.,27710-66-3,,ethyl hexadecenoate (unkn.str.),P
+1542.,,,ethyl 7-hexadecynoate (=ethyl palmitolate),P E
+1543.,,,"methyl 2,4-hexadecadienoate",
+1544.,29961-54-4,,methyl hexadecadienoate (unkn.str.),Q O
+1545.,36117-20-1,,ethyl hexadecadienoate (unkn.str.),P
+1546.,2490-53-1,,methyl 2-methylhexadecanoate,Q S
+1547.,,,methyl isohexadecanoate (branched),Q
+1548.,1731-92-6,,methyl heptadecanoate,Q S
+1549.,14010-23-2,,ethyl heptadecanoate,Q S R
+1550.,2490-25-7,,methyl 10-methylheptadecanoate,P S
+1551.,27137-12-8,,methyl isoheptadecanoate (branched),Q
+1552.,112-61-8,,methyl octadecanoate (=methyl stearate),Q E S R O T
+1553.,2566-89-4,,Methyl arachidonate,P E S
+1554.,111-61-5,,ethyl octadecanoate (=ethyl stearate),Q E S R O T
+1555.,56554-62-2,,"10,13-octadecadienoic acid, methyl ester",Q S
+1556.,123-95-5,,butyl octadecanoate,Q E S R
+1557.,646-13-9,,isobutyl octadecanoate,E S
+1558.,628-60-4,,2-methylbutyl octadecanoate,P E S
+1559.,627-88-3,,isopentyl octadecanoate,P E S
+1560.,52355-31-4,,methyl 6-octadecenoate,P S
+1561.,13038-45-4,,methyl 10-octadecenoate,P E S
+1562.,2777-58-4,,"6-octadecenoic acid, methyl ester, (Z)-",P S
+1563.,1937-63-9,,methyl 11(Z)-octadecenoate,P E S
+1564.,2462-84-2,,methyl 9-octadecenoate,P S
+1565.,112-62-9,,methyl (Z)-9-octadecenoate (=methyl oleate),Q E S R O T
+1566.,1937-62-8,,methyl (E)-9-octadecenoate,Q E S
+1567.,6512-99-8,,ethyl 9-octadecenoate,Q S R
+1568.,111-62-6,,ethyl (Z)-9-octadecenoate (=ethyl oleate),Q E S R T
+1569.,6114-18-7,,ethyl (E)-9-octadecenoate (=ethyl elaidate),P E S R
+1570.,56554-48-4,,methyl 14-octadecenoate,P S
+1571.,27234-05-5,,methyl octadecenoate (unkn.str.),Q R
+1572.,,,ethyl octadecenoate (unkn.str.),Q
+1573.,2462-85-3,,"methyl 9,12-octadecadienoate",Q S
+1574.,112-63-0,,"methyl (Z,Z)-9,12-octadecadienoate (=methyl linoleate)",Q E S R T
+1575.,7619-08-1,,"ethyl 9,12-octadecadienoate",Q E S R
+1576.,544-35-4,,"ethyl (Z,Z)-9,12-octadecadienoate (=ethyl linoleate)",Q E S R T
+1577.,,,"methyl 14,17-octadecadienoate",P
+1578.,28061-47-4,,methyl octadecadienoate (unkn.str.),Q
+1579.,7361-80-0,,"methyl 9,12,15-octadecatrienoate",Q S R
+1580.,301-00-8,,"methyl (Z,Z,Z)-9,12,15-octadecatrienoate (=methyl linolenoate)",Q E S R
+1581.,31450-14-3,,"ethyl (Z,Z,Z)-6,9,12-octadecatrienoate",Q E S
+1582.,92177-52-1,,"ethyl 9,12,15-octadecatrienoate",Q S R
+1583.,1191-41-9,,"ethyl (Z,Z,Z)-9,12,15-octadecatrienoate (=ethyl linolenate)",Q E S R
+1584.,18281-04-4,,ethyl nonadecanoate,S
+1585.,,,methyl nonadecadienoate (unkn.str.),
+1586.,18281-05-5,,ethyl eicosanoate,S
+1587.,26718-88-7,,isobutyl eicosanoate,S
+1588.,28898-67-1,,ethyl heneicosanoate,S
+1589.,5908-87-2,,ethyl docosanoate,S
+1590.,18281-07-7,,ethyl tricosanoate,S
+1591.,24634-95-5,,ethyl tetracosanoate,S
+1592.,2270-60-2,,methyl citronellate,Q E S R
+1593.,2349-14-6,,methyl geranate,Q S R O
+1594.,1189-09-9,,methyl (E)-geranate,Q E S R O
+1595.,1862-61-9,,methyl nerolate,E S R
+1596.,13058-12-3,,ethyl geranate,Q E S
+1597.,32659-20-4,,ethyl nerolate,E S R
+1598.,104178-46-3,,"methyl 3,7-dimethyl-3,6-octadienoate",E R
+1599.,698368-88-6,,isoamyl nerolate,E S R
+1600.,553-90-2,,dimethyl oxalate,Q S T
+1601.,95-92-1,,diethyl oxalate,Q E S T
+1602.,108-59-8,,dimethyl malonate (=dimethyl propanedioate),Q E S R O T
+1603.,6186-89-6,,ethyl methyl malonate (=ethyl methyl propanedioate),P E S
+1604.,105-53-3,,diethyl malonate,Q E S R O T
+1605.,3878-55-5,,monomethyl succinate (=monomethyl butanedioate),Q E S
+1606.,106-65-0,,dimethyl succinate (=dimethyl butanedioate),Q E S R T
+1607.,1070-34-4,,monoethyl succinate (=monoethyl butanedioate),Q E S R O T
+1608.,627-73-6,,ethyl methyl succinate (=ethyl methyl butanedioate),Q E S R
+1609.,123-25-1,,diethyl succinate (=diethyl butanedioate),Q E S R O T
+1610.,6946-88-9,,monopropyl succinate,P E S
+1611.,52762-25-1,,ethyl propyl succinate (=ethyl propyl butanedioate),Q E S R
+1612.,75968-86-4,,ethyl isopropyl succinate,P E S
+1613.,5150-93-6,,monobutyl succinate,P E S
+1614.,20279-40-7,,monoisobutyl succinate,P E S
+1615.,67233-92-5,,butyl ethyl succinate,Q E S
+1616.,52762-24-0,,ethyl isobutyl succinate (=ethyl isobutyl butanedioate),Q E S R
+1617.,141-03-7,,dibutyl succinate,Q E S
+1618.,925-06-4,,diisobutyl succinate,Q E S
+1619.,,,butyl isobutyl succinate,P E S
+1620.,,,mono-2-methylbutyl succinate,P E
+1621.,,,ethyl 2-methylbutyl succinate,P E
+1622.,,,ethyl methylbutyl succinate (unkn.str.),P E
+1623.,,,butyl 2-methylbutyl succinate,P E
+1624.,623-89-2,,bis(2-methylbutyl) succinate,P E S
+1625.,20279-41-8,,monoisopentyl succinate,P E
+1626.,67233-93-6,,pentyl ethyl succinate,P E
+1627.,28024-16-0,,ethyl isopentyl succinate,Q E R
+1628.,,,butyl isopentyl succinate,P E
+1629.,,,isobutyl isopentyl succinate,P E
+1630.,67233-94-7,,ethyl hexyl succinate,P E
+1631.,645-69-2,,dipentyl succinate,P E S
+1632.,818-04-2,,diisopentyl succinate,Q E S
+1633.,77761-64-9,,ethyl phenethyl succinate,Q E S
+1634.,84262-70-4,,diethyl 2-acetoxysuccinate,P E
+1635.,623-91-6,,diethyl fumarate,P E S R
+1636.,141-05-9,,diethyl maleate,P E S
+1637.,4676-51-1,,diethyl 2-methylbutanedioate,Q S
+1638.,51503-30-1,,ethyl methyl pentanedioate,Q S
+1639.,1070-62-8,,monoethyl pentanedioate,Q E S
+1640.,1119-40-0,,dimethyl pentanedioate,Q E S R
+1641.,818-38-2,,diethyl pentanedioate (=diethyl glutarate),Q E S R T
+1642.,,,ethyl isopentyl pentanedioate,Q E
+1643.,5965-53-7,,diethyl 2-oxopentanedioate,Q E S
+1644.,627-93-0,,dimethyl hexanedioate (=dimethyl adipate),Q E S R
+1645.,69134-53-8,,diethyl 2-hydroxypentanedioate,Q E S R O
+1646.,4337-65-9,,mono-(2-ethylhexyl) hexanedioate,P E S
+1647.,141-28-6,,diethyl hexanedioate (=diethyl adipate),Q E S R
+1648.,105-99-7,,dibutyl hexanedioate (=dibutyl adipate),Q E S
+1649.,141-04-8,,diisobutyl hexanedioate (=(di-)isobutyl adipate),Q E S
+1650.,123-79-5,,dioctyl hexanedioate (=dioctyl adipate),Q E S R
+1651.,2050-20-6,,diethyl heptanedioate (=diethyl pimelate),Q E S T
+1652.,1732-09-8,,dimethyl octanedioate (=dimethyl suberate),P E S
+1653.,2050-23-9,,diethyl octanedioate,Q E S R T
+1654.,16090-77-0,,dibutyl octanedioate (=dibutyl suberate),P E S
+1655.,1593-55-1,,monoethyl nonanedioate,P E S
+1656.,624-17-9,,diethyl nonanedioate,Q E S T
+1657.,1587-15-1,,dimethyl malate,P E S
+1658.,28514-63-8,,monoethyl malate,Q E
+1659.,27178-06-9,,monobutyl malate,P E
+1660.,,,ethyl methyl malate,P E
+1661.,7554-12-3,,diethyl malate,Q E S R O T
+1662.,,,ethyl propyl malate,Q E
+1663.,,,butyl ethyl malate,P E
+1664.,,,butyl propyl malate (unkn.str.),P
+1665.,1587-18-4,,dibutyl malate,P E S
+1666.,,,ethyl isobutyl malate,Q E
+1667.,,,ethyl 2-methylbutyl malate,Q E
+1668.,,,ethyl methylbutyl malate,P E
+1669.,,,bis(2-methylbutyl) malate,P E
+1670.,,,ethyl isopentyl malate,Q E
+1671.,1587-19-5,,diisopentyl malate,P E
+1672.,102764-80-7,,ethyl pentyl malate,P E
+1673.,75369-71-0,,monoethyl 2-hydroxy-2-methylbutanedioate,P
+1674.,41096-35-9,,diethyl 2-hydroxy-2-methylbutanedioate,Q E S
+1675.,,,ethyl isopentyl 2-hydroxy-2-methylbutanedioate,P E
+1676.,,,diisopentyl 2-hydroxy-2-methylbutanedioate,P E
+1677.,,,monoethyl 2-hydroxy-2-isopropylbutanedioate,P
+1678.,608-89-9,,monoethyl tartrate,P S
+1679.,87-91-2,,diethyl tartrate,Q E S R O T
+1680.,30306-93-5,,monoethyl citrate,Q S
+1681.,101996-63-8,,symm. diethyl citrate,P
+1682.,32074-56-9,,asymm. diethyl citrate,P S
+1683.,77-93-0,,triethyl citrate,Q E S R T
+1684.,7568-58-3,,tributyl aconitate,P E S
+1685.,4606-07-9,,ethyl cyclopropanecarboxylate,E S R T
+1686.,14924-53-9,,ethyl cyclobutanecarboxylate,E S R T
+1687.,5453-85-0,,ethyl cyclopentanecarboxylate,S R T
+1688.,24851-98-7,,methyl dihydrojasmonate,P E S
+1689.,39647-11-5,,methyl cis-dihydrojasmonate,E S R O
+1690.,2630-39-9,,methyl trans-dihydrojasmonate,S R
+1691.,39924-52-2,,methyl jasmonate,Q E S R
+1692.,1211-29-6,,methyl (Z)-jasmonate,Q E S R T
+1693.,42536-97-0,,methyl (Z)-epijasmonate,Q E S R O
+1694.,52437-38-4,,methyl α-campholenate,E R
+1695.,4630-82-4,,methyl cyclohexanecarboxylate,P E S R O
+1696.,3289-28-9,,ethyl cyclohexanecarboxylate,Q E S R O T
+1697.,37619-24-2,,methyl 1-methylpyrrole-2-carboxylate,P S
+1698.,1617-22-7,,ethyl 1-cyclohexenecarboxylate,S R T
+1699.,15111-56-5,,ethyl 3-cyclohexenecarboxylate,S R T
+1700.,,,methyl 6-pentanoyl-1-cyclohexenecarboxylate (=methyl sedanonate),P E
+1701.,19908-46-4,,"methyl 4-(1,5-dimethyl-3-oxo-hexyl)-1-cyclohexenecarboxylate",P
+1702.,14352-61-5,,methyl cyclohexylacetate,P S
+1703.,5452-75-5,,ethyl cyclohexylacetate,E S R T
+1704.,93-58-3,,methyl benzoate,Q E S R O T
+1705.,93-89-0,,ethyl benzoate,Q E S R O T
+1706.,2315-68-6,,propyl benzoate,P E S
+1707.,939-48-0,,isopropyl benzoate,Q E S R O
+1708.,136-60-7,,butyl benzoate,Q E S R O
+1709.,3306-36-3,,sec-butyl benzoate,Q S
+1710.,120-50-3,,isobutyl benzoate,P E S R
+1711.,,,methylbutyl benzoate (unkn.str.),Q R
+1712.,2049-96-9,,pentyl benzoate,Q E S R O
+1713.,94-46-2,,isopentyl benzoate,Q E S R O T
+1714.,52513-03-8,,2-methylbutyl benzoate,Q S R
+1715.,,,pentenyl benzoate (unkn.str.),P
+1716.,6789-88-4,,hexyl benzoate,Q E S R O
+1717.,,,3-hexenyl benzoate,P S
+1718.,25152-85-6,,(Z)-3-hexenyl benzoate,Q E S R O
+1719.,76841-70-8,,(E)-2-hexenyl benzoate,P S R
+1720.,,,hexenyl benzoate (unkn.str.),P
+1721.,5444-75-7,,2-ethylhexyl benzoate,Q E S R O
+1722.,,,1-methylhexyl benzoate,Q E
+1723.,126-64-7,,linalyl benzoate,P E S
+1724.,26927-90-2,,bornyl benzoate,E R O
+1725.,120-51-4,,benzyl benzoate,Q E S R O T
+1726.,94-47-3,,phenethyl benzoate,Q E S R O
+1727.,119-36-8,,methyl salicylate,Q E S R O T
+1728.,118-61-6,,ethyl 2-hydroxybenzoate (=ethyl salicylate),Q E S R O T
+1729.,2052-14-4,,butyl 2-hydroxybenzoate (=butyl salicylate),Q E S R T
+1730.,87-20-7,,isopentyl 2-hydroxybenzoate (=isopentyl salicylate),Q E S R
+1731.,2050-08-0,,pentyl salicylate,E S R T
+1732.,6259-76-3,,hexyl 2-hydroxybenzoate (=hexyl salicylate),Q E S R
+1733.,65405-77-8,,(Z)-3-hexenyl 2-hydroxybenzoate (=Z-3-hexenyl salicylate),Q E S R O
+1734.,118-58-1,,benzyl 2-hydroxybenzoate (=benzyl salicylate),Q E S R O T
+1735.,33528-09-5,,methyl 6-methylsalicylate,P E S R
+1736.,89-71-4,,methyl 2-methylbenzoate,Q S
+1737.,87-24-1,,ethyl 2-methylbenzoate,Q S
+1738.,99-75-2,,methyl 4-methylbenzoate,P E S
+1739.,19438-10-9,,methyl 3-hydroxybenzoate,Q E S T
+1740.,99-76-3,,methyl 4-hydroxybenzoate,Q E S R T
+1741.,120-47-8,,ethyl 4-hydroxybenzoate,P S R T
+1742.,94-13-3,,propyl 4-hydroxybenzoate,E S T
+1743.,606-45-1,,methyl 2-methoxybenzoate,Q E S R
+1744.,121-98-2,,methyl 4-methoxybenzoate (=methyl anisate),Q E S R O T
+1745.,7335-26-4,,ethyl 2-methoxybenzoate,P S
+1746.,94-30-4,,ethyl 4-methoxybenzoate (=ethyl anisate),P E S O
+1747.,6946-35-6,,butyl 4-methoxybenzoate (=butyl anisate),P S
+1748.,23676-09-7,,ethyl 4-ethoxybenzoate,P S R
+1749.,580-02-9,,methyl 2-acetoxybenzoate,P S
+1750.,134-20-3,,methyl anthranilate,Q E S R O T
+1751.,87-25-2,,ethyl anthranilate,Q E S R O
+1752.,7493-63-2,,allyl anthranilate,E S R
+1753.,7756-96-9,,butyl anthranilate,E S R
+1754.,7779-77-3,,Isobutyl anthranilate,E S
+1755.,18189-07-6,,decyl anthranilate,E S R
+1756.,67874-69-5,,geranyl anthranilate,S R
+1757.,85-91-6,,methyl N-methylanthranilate,Q E R O T
+1758.,35472-56-1,,ethyl N-methylanthranilate,P E S
+1759.,90564-02-6,,methyl N-formylanthranilate,P E S
+1760.,2719-08-6,,methyl N-acetylanthranilate,P E S
+1761.,2150-43-8,,methyl protocatechuate,P E S
+1762.,6702-50-7,,methyl 3-hydroxy-4-methoxybenzoate,P S
+1763.,3943-74-6,,methyl 4-hydroxy-3-methoxybenzoate (=methyl vanillate),Q E S R O T
+1764.,148527-38-2,,ethyl 3-hydroxy-4-methoxybenzoate,P S
+1765.,617-05-0,,ethyl 4-hydroxy-3-methoxybenzoate (=ethyl vanillate),Q E S R O T
+1766.,2150-40-5,,"methyl 2,5-dimethoxybenzoate",S
+1767.,2150-37-0,,"methyl 3,5-dimethoxybenzoate",P S
+1768.,1916-07-0,,"methyl 3,4,5-trimethoxybenzoate",P E S R
+1769.,831-61-8,,ethyl gallate,P E S T
+1770.,,,epicatechin gallate (unkn.str.),
+1771.,326-56-7,,"methyl 1,3-benzodioxole-5-carboxylate",P S
+1772.,884-35-5,,"methyl 4-hydroxy-3,5-dimethoxybenzoate (=methyl syringate)",Q E S R
+1773.,3943-80-4,,"ethyl 4-hydroxy-3,5-dimethoxybenzoate (=ethyl syringate)",P E S T
+1774.,101-41-7,,methyl phenylacetate,Q E S R O T
+1775.,101-97-3,,ethyl phenylacetate,Q E S R O T
+1776.,1797-74-6,,allyl phenylacetate,P E S R
+1777.,122-43-0,,butyl phenylacetate,Q E S
+1778.,102-13-6,,isobutyl phenylacetate (=2-methylpropyl phenylacetate),Q E S R O
+1779.,102-19-2,,isopentyl phenylacetate,Q E S
+1780.,5421-17-0,,hexyl phenylacetate,Q E S R
+1781.,68133-78-8,,(E)-2-hexenyl phenylacetate,P E S R
+1782.,42436-07-7,,(Z)-3-hexenyl phenylacetate,P E S R
+1783.,,,cresyl phenylacetate (unkn.str.),
+1784.,1154-92-3,,menthyl phenylacetate,P S
+1785.,17138-28-2,,ethyl (4-hydroxyphenyl)acetate,P E S
+1786.,101135-02-8,,4-acetoxy-α-vinylbenzenemethanol (=1-hydroxychavicol acetate),P E S
+1787.,52946-22-2,,4-hydroxy-2-vinylbenzenemethanol di-acetate (=1-acetoxychavicol acetate),P E S
+1788.,53890-24-7,,4-hydroxy-3-methoxy-α-vinyl-benzenemethanol diacetate (=1-acetoxyeugenol acetate),P E S
+1789.,2510-99-8,,ethyl 2-phenylpropanoate,P E S
+1790.,103-25-3,,methyl 3-phenylpropanoate (=methyl hydrocinnamate),Q E S R O
+1791.,2021-28-5,,ethyl 3-phenylpropanoate (=ethyl hydrocinnamate),Q E S R O T
+1792.,,,ethyl phenylpropanoate (unkn.str.),P R
+1793.,20921-04-4,,ethyl 3-(2-hydroxyphenyl)propanoate,E S O
+1794.,23795-02-0,,ethyl 3-(4-hydroxyphenyl)propanoate,Q E S
+1795.,,,ethyl (4-hydroxyphenyl)propanoate (unkn.str.),Q
+1796.,1795-96-6,,ethyl 2-amino-3-phenylpropanoate (=ethyl phenylalaninate),Q E S
+1797.,34081-17-9,,ethyl tyrosinate,Q E S
+1798.,10138-32-6,,ethyl 5-Norbornene-2-carboxylate,E S
+1799.,103-26-4,,methyl cinnamate,Q E S R O T
+1800.,19713-73-6,,methyl (Z)-cinnamate,Q S R
+1801.,1754-62-7,,methyl (E)-cinnamate,Q S R O
+1802.,103-36-6,,ethyl cinnamate,Q E S R O T
+1803.,4610-69-9,,ethyl (Z)-cinnamate,Q E S R
+1804.,4192-77-2,,ethyl (E)-cinnamate,Q E S R O T
+1805.,122-67-8,,isobutyl cinnamate,P E S R O
+1806.,31416-74-7,,isobutyl (E)-cinnamate,P S
+1807.,4654-29-9,,2-methylbutyl cinnamate,P S
+1808.,74559-94-7,,2-methylbutyl (E)-cinnamate,P S
+1809.,7779-65-9,,isopentyl cinnamate,P E S
+1810.,85180-66-1,,isopentyl (E)-cinnamate,P E S R
+1811.,73285-58-2,,menthyl cinnamate,Q
+1812.,5764-85-2,,ethyl 2-hydroxy-3-phenylpropanoate,Q S
+1813.,2979-06-8,,ethyl 4-hydroxycinnamate,P E S T
+1814.,3901-07-3,,methyl (E)-4-methoxycinnamate,Q S
+1815.,1929-30-2,,ethyl 4-methoxycinnamate,S
+1816.,24393-56-4,,ethyl (E)-4-methoxycinnamate,Q S
+1817.,3843-74-1,,"methyl 3,4-dihydroxycinnamate",Q E S
+1818.,102-37-4,,"ethyl 3,4-dihydroxycinnamate",Q E S T
+1819.,4046-02-0,,ethyl 4-hydroxy-3-methoxycinnamate,P S T
+1820.,,,"prenyl (E)-3,4-dimethoxycinnamate",Q E
+1821.,620-80-4,,ethyl α-acetylcinnamate,P E S
+1822.,5629-57-2,,ethyl 4-phenyl-3-butenoate,P S
+1823.,131-11-3,,dimethyl phthalate,Q E S
+1824.,,,methyl phthalate (unkn.str.),Q
+1825.,2306-33-4,,monoethyl phthalate,P S
+1826.,84-66-2,,diethyl phthalate,Q E S R T
+1827.,,,ethyl phthalate (unkn.str.),P
+1828.,117-82-8,,bis(2-methoxyethyl) phthalate,P E S
+1829.,94491-96-0,,ethyl isobutyl phthalate,P E S
+1830.,131-16-8,,dipropyl phthalate,Q S
+1831.,,,isobutyl phthalate (unkn.str.),Q
+1832.,84-74-2,,dibutyl phthalate,Q E S R T
+1833.,84-69-5,,diisobutyl phthalate,Q S R
+1834.,17851-53-5,,butyl isobutyl phthalate,P S
+1835.,605-50-5,,diisopentyl phthalate,P E S
+1836.,,,isooctyl phthalate (unkn.str.),Q
+1837.,117-84-0,,dioctyl phthalate,P S
+1838.,27554-26-3,,diisooctyl phthalate,P S
+1839.,1528-64-9,,diisobutyl isophthalate,P S
+1840.,32777-26-7,,ethyl cycloheptanecarboxylate,S R T
+1841.,26600-34-0,,ethyl cyclooctanecarboxylate,R T
+1842.,27957-91-1,,methyl 1-methylprolinate,P S R
+1843.,1002-16-0,,pentyl nitrate,Q E S
+1844.,20633-11-8,,hexyl nitrate,Q S
+1845.,20633-12-9,,heptyl nitrate,Q S
+1846.,629-39-0,,octyl nitrate,Q S
+1847.,598-02-7,,diethyl phosphate,P S

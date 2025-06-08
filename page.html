@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIF</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./index.js"></script>
+    <style>
+        .Welcome{
+            color: #34833C;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class='logo-title'>
+                <img src='./Fig/Logo.jpg' alt="Logo" class="logo" height="80" width="100">
+                <h1>Database of poultry meat quality</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Browse</a>
+                        <ul>
+                            <li><a href="browse.html"  style="font-size: 10px;">Poultry Species</a></li>
+                            <li><a href="list.html"  style="font-size: 10px;">Volatile Flavor Compounds</a></li>
+                            <li><a href="dmdb_value.php?file=.%2Fdata%2Fmetabolites%2Fmetabolites-2025-04-19.csv&page=1"  style="font-size: 12px;">Metabolites</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="advanced_search.html">Advanced Search</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="upload.html">Submit</a></li>
+                    <li><a href="user_guide.html">User Guide</a></li>
+                    <li><a href="links.html">Link</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div  id="class-data"></div>
+    </main>
+
+    
+    <br><br><br><br>
+    
+    <footer>
+        <p>&copy; 2024 DPMQ webserver. All rights reserved</p>
+    </footer>
+
+    <!--js部分-->
+    <script>
+        // 从 localStorage 中获取搜索值和类型
+        var searchValue = localStorage.getItem('searchValue');
+        var searchType = localStorage.getItem('searchType');
+
+        // 移除存储的值
+        localStorage.removeItem('searchValue');
+        localStorage.removeItem('searchType');
+        
+        if (searchValue) {
+            if (searchType == "Poultry_Species") {
+                loadClassData(searchValue)
+            }
+        }
+    </script>
+
+</body>
+</html>
+

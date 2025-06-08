@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模块1详细内容</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- 引入 Chart.js 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .chart-container {
+            width: 20%;
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+        }
+        .chart-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .student-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>模块1：分数占比与pH值</h1>
+        <nav>
+            <ul>
+                <li><a href="/">主页</a></li>
+                <li><a href="/browse">浏览</a></li>
+                <li><a href="/advanced_search">高级检索</a></li>
+                <li><a href="/tools">工具</a></li>
+                <li><a href="/upload">上传</a></li>
+                <li><a href="/user_guide">用户指导</a></li>
+                <li><a href="/links">链接</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>每个同学得分与满分100分的比例</h2>
+
+        <div class="chart-wrapper">
+            <!-- 每个图表包含同学的得分图表和pH值的半圆图表 -->
+            <div class="chart-container">
+                <div class="student-name">同学1</div>
+                <canvas id="chart1"></canvas>
+                <canvas id="phChart1"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学2</div>
+                <canvas id="chart2"></canvas>
+                <canvas id="phChart2"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学3</div>
+                <canvas id="chart3"></canvas>
+                <canvas id="phChart3"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学4</div>
+                <canvas id="chart4"></canvas>
+                <canvas id="phChart4"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学5</div>
+                <canvas id="chart5"></canvas>
+                <canvas id="phChart5"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学6</div>
+                <canvas id="chart6"></canvas>
+                <canvas id="phChart6"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学7</div>
+                <canvas id="chart7"></canvas>
+                <canvas id="phChart7"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学8</div>
+                <canvas id="chart8"></canvas>
+                <canvas id="phChart8"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学9</div>
+                <canvas id="chart9"></canvas>
+                <canvas id="phChart9"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学10</div>
+                <canvas id="chart10"></canvas>
+                <canvas id="phChart10"></canvas>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 网站名称. 保留所有权利。</p>
+    </footer>
+
+    <script>
+        // 10个同学的分数
+        const scores = [80, 90, 70, 60, 85, 95, 75, 65, 88, 92];
+        const phValues = [4, 8, 5, 9, 3, 7, 6, 5.5, 10, 6.5]; // 假设每个同学的pH值
+
+        // 定义函数来创建每个同学的扇形图
+        function createPieChart(ctx, score) {
+            return new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['得分', '剩余分数'],
+                    datasets: [{
+                        data: [score, 100 - score],
+                        backgroundColor: ['#36A2EB', '#FFCE56'],
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(tooltipItem) {
+                                    if (tooltipItem.label === '得分') {
+                                        return `得分: ${score}分`;
+                                    } else {
+                                        return `剩余分数: ${100 - score}分`;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // 创建半圆形 pH 值图表
+        function createPhChart(ctx, phValue) {
+            let color;
+            if (phValue < 7) {
+                color = 'red'; // 酸性 pH 小于 7 显示为红色
+            } else if (phValue > 7) {
+                color = 'blue'; // 碱性 pH 大于 7 显示为蓝色
+            } else {
+                color = 'green'; // 中性 pH 等于 7 显示为绿色
+            }
+
+            return new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    datasets: [{
+                        data: [phValue, 14 - phValue],
+                        backgroundColor: [color, '#e0e0e0'], // pH 值颜色和背景颜色
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    rotation: Math.PI, // 从180度开始 (半圆)
+                    circumference: Math.PI, // 显示180度
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false // 不显示图例
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function() {
+                                    return `pH值: ${phValue}`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // 初始化10个扇形图和半圆形pH图
+        const ctx1 = document.getElementById('chart1').getContext('2d');
+        createPieChart(ctx1, scores[0]);
+        const phCtx1 = document.getElementById('phChart1').getContext('2d');
+        createPhChart(phCtx1, phValues[0]);
+
+        const ctx2 = document.getElementById('chart2').getContext('2d');
+        createPieChart(ctx2, scores[1]);
+        const phCtx2 = document.getElementById('phChart2').getContext('2d');
+        createPhChart(phCtx2, phValues[1]);
+
+        const ctx3 = document.getElementById('chart3').getContext('2d');
+        createPieChart(ctx3, scores[2]);
+        const phCtx3 = document.getElementById('phChart3').getContext('2d');
+        createPhChart(phCtx3, phValues[2]);
+
+        const ctx4 = document.getElementById('chart4').getContext('2d');
+        createPieChart(ctx4, scores[3]);
+        const phCtx4 = document.getElementById('phChart4').getContext('2d');
+        createPhChart(phCtx4, phValues[3]);
+
+        const ctx5 = document.getElementById('chart5').getContext('2d');
+        createPieChart(ctx5, scores[4]);
+        const phCtx5 = document.getElementById('phChart5').getContext('2d');
+        createPhChart(phCtx5, phValues[4]);
+
+        const ctx6 = document.getElementById('chart6').getContext('2d');
+        createPieChart(ctx6, scores[5]);
+        const phCtx6 = document.getElementById('phChart6').getContext('2d');
+        createPhChart(phCtx6, phValues[5]);
+
+        const ctx7 = document.getElementById('chart7').getContext('2d');
+        createPieChart(ctx7, scores[6]);
+        const phCtx7 = document.getElementById('phChart7').getContext('2d');
+        createPhChart(phCtx7, phValues[6]);
+
+        const ctx8 = document.getElementById('chart8').getContext('2d');
+        createPieChart(ctx8, scores[7]);
+        const phCtx8 = document.getElementById('phChart8').getContext('2d');
+        createPhChart(phCtx8, phValues[7]);
+
+        const ctx9 = document.getElementById('chart9').getContext('2d');
+        createPieChart(ctx9, scores[8]);
+        const phCtx9 = document.getElementById('phChart9').getContext('2d');
+        createPhChart(phCtx9, phValues[8]);
+
+        const ctx10 = document.getElementById('chart10').getContext('2d');
+        createPieChart(ctx10, scores[9]);
+        const phCtx10 = document.getElementById('phChart10').getContext('2d');
+        createPhChart(phCtx10, phValues[9]);
+    </script>
+</body>
+</html>

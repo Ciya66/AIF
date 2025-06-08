@@ -1,0 +1,47 @@
+,CAS,,Compound name,Compoundflags
+,CAS,,Compound name,Compound flags
+1.,2258-42-6,,acetic formic anhydride (=acetyl formate),P E
+2.,108-24-7,,acetic anhydride (=acetyl acetate),P E T
+3.,108-31-6,,"maleic anhydride (=2,5-furandione)",P E T
+4.,4100-80-5,,"methylsuccinic anhydride (=3-methyldihydro-2,5-furandione)",P E
+5.,2170-03-8,,"dihydro-3-methylene-2,5-furandione",P E S R
+6.,616-02-4,,"methylmaleic anhydride (=3-methyl-2,5-furandione)",P E
+7.,766-39-2,,dimethylmaleic anhydride,Q E
+8.,3552-33-8,,"2-ethyl-3-methylmaleic anhydride (=3-ethyl-4-methyl-2,5-furandione)",P E
+9.,75052-75-4,,"2-hexyl-3-methylmaleic anhydride (=3-hexyl-4-methyl-2,5-furandione)",P E
+10.,59025-03-5,,"3(S)-(acetyloxy)dihydro-2,5-furandione",P E
+11.,85-44-9,,"phthalic anhydride (=2-benzofuran-1,3-dione)",P E T
+12.,862119-20-8,,2-ethyl-3-methyl-2-pentenedioic anhydride,P E
+13.,85-42-7,,hexahydrophthalic anhydride,P E
+14.,87-41-2,,phthalide (=1(3H)-isobenzofuranone),Q E S
+15.,553-86-6,,isophthalide (= 2(3H)-benzofuranone),P E R
+16.,54120-64-8,,5-methylphthalide,P E
+17.,,,methylphthalide (unkn.str.),P R
+18.,,,"cis-3-(1-propylidene)-4,5-dihydrophthalide",P E
+19.,17369-59-4,,3-(1-propylidene)phthalide,E
+20.,94704-89-9,,(Z)-3-(1-propylidene)phthalide,P E
+21.,3553-34-2,,3-butylhexahydrophthalide,Q E R
+22.,,,butylhexahydrophthalide (unkn.str.),P
+23.,6415-59-4,,"3-butyl-3a,4,5,6-tetrahydrophthalide (=sedanolide)",Q E
+24.,2550-44-9,,"cis-3-butyl-3a,4,5,6-tetrahydrophthalide (=neocnidilide)",Q E R
+25.,3553-29-5,,"trans-3-butyl-3a,4,5,6-tetrahydrophthalide (=trans-sedanolide)",Q E R O T
+26.,3674-03-1,,cnidilide,P E
+27.,66983-89-9,,sedanonic anhydride,Q E
+28.,66983-88-8,,"3a,4-dihydro-3-isobutylidenephthalide",Q E T
+29.,128575-99-5,,"4,5-dihydro-3-pentylphthalide",P E
+30.,82427-00-7,,"4,5-dihydro-3-pentylidenephthalide",P E
+31.,116964-00-2,,"(Z)-4,5-dihydro-3-pentylidenephthalide (=Z-ternine)",Q E R
+32.,,,"(E)-4,5-dihydro-3-pentylidenephthalide (=(E)-ternine)",P E
+33.,99054-84-9,,"3a,4-dihydro-3-isopentylidenephthalide",Q E
+34.,63038-10-8,,"3-butyl-4,5-dihydrophthalide (=sedanenolide, senkyunolide)",Q E R T
+35.,141120-37-8,,"3-butyl-5,6-dihydro-4H-2-isobenzofuran-1-one",Q R O T
+36.,4431-01-0,,"3-butylidene-4,5-dihydrophthalide (=ligustilide)",Q E R
+37.,81944-09-4,,"(Z)-3-butylidene-4,5-dihydrophthalide (=Z-ligustilide)",Q E R O
+38.,81944-08-3,,"(E)-3-butylidene-4,5-dihydrophthalide (=E-ligustilide)",Q E R O
+39.,6066-49-5,,3-butylphthalide,Q E R O T
+40.,551-08-6,,3-butylidenephthalide,Q E
+41.,72917-31-8,,(Z)-3-butylidenephthalide,Q E R O
+42.,76681-73-7,,(E)-3-butylidenephthalide,Q E R O
+43.,88542-70-5,,3-isobutylidenephthalide,Q E T
+44.,91909-70-5,,3-isopentylidenephthalide,Q E T
+45.,19943-27-2,,proline anhydride,P E R

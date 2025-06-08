@@ -1,0 +1,553 @@
+,CAS,,Compound name,Compoundflags
+,CAS,,Compound name,Compound flags
+1.,10028-15-6,,ozone,S T
+2.,50-00-0,,formaldehyde (=methanal),Q E S O T
+3.,75-07-0,,acetaldehyde,Q E S R O T
+4.,141-46-8,,hydroxyacetaldehyde (=glycolaldehyde),E S
+5.,10312-83-1,,methoxyacetaldehyde,P E S R
+6.,107-22-2,,ethanedial (=glyoxal),Q E S T
+7.,123-38-6,,propanal (=propionaldehyde),Q E S R O T
+8.,80-54-6,,lilial,Q E S R T
+9.,107-02-8,,2-propenal (=acrolein),Q E S R O T
+10.,78-84-2,,"2-methylpropanal (=isobutanal, isobutyraldehyde)",Q E S R O T
+11.,78-85-3,,2-methyl-2-propenal (=methacrolein),P E S T
+12.,2134-29-4,,3-hydroxypropanal,P S
+13.,453-17-8,,"(R)-(+)-2,3-dihydroxypropanal",E S T
+14.,78-98-8,,"2-oxopropanal (=pyruvaldehyde, methyl glyoxal, acetylformaldehyde)",Q E S T
+15.,6142-38-7,,2-methoxypropanal,P S
+16.,5393-69-1,,2-ethoxypropanal,P S
+17.,2806-85-1,,3-ethoxypropanal,Q E S R
+18.,542-78-9,,propanedial (=malonaldehyde),P E S T
+19.,630-19-3,,"2,2-dimethylpropanal",E S T
+20.,123-72-8,,butanal (=butyraldehyde),Q E S R O T
+21.,4170-30-3,,2-butenal (=crotonaldehyde),Q E S R O
+22.,123-73-9,,(E)-2-butenal,Q E S R O T
+23.,15798-64-8,,(Z)-2-butenal,P E S
+24.,96-17-3,,2-methylbutanal (=α-methylbutanal),Q E S R O T
+25.,1730-97-8,,(S)-2-methylbutanal,Q S O T
+26.,33204-48-7,,(R)-2-methylbutanal,Q S T
+27.,590-86-3,,"3-methylbutanal (=isopentanal, isovaleraldehyde)",Q E S R O T
+28.,26140-47-6,,methylbutanal (unkn.str.),Q
+29.,26254-92-2,,2-ethyl-3-methylbutanal,P E S R
+30.,69009-29-6,,isopropylketene,P E S
+31.,1115-11-3,,2-methyl-2-butenal,Q S R O T
+32.,497-03-0,,(E)-2-methyl-2-butenal (=tiglicaldehyde),Q E S R O T
+33.,107-86-8,,3-methyl-2-butenal (=prenal),Q E S R O
+34.,67391-92-8,,methyl-2-butenal (unkn.str.),Q
+35.,100365-71-7,,2-methylbutenal (unkn.str.),P
+36.,97-96-1,,2-ethylbutanal,P E S T
+37.,19780-25-7,,2-ethyl-2-butenal,P E S R O
+38.,20521-42-0,,2-vinyl-2-butenal,P E S
+39.,40878-71-5,,2-isopropyl-2-butenal,P E S
+40.,107-89-1,,3-hydroxybutanal,P E S T
+41.,4417-81-6,,2-oxobutanal,P S
+42.,110-62-3,,pentanal (=valeraldehyde),Q E S R O T
+43.,764-39-6,,2-pentenal,Q E S R O T
+44.,1576-87-0,,(E)-2-pentenal,Q S R O T
+45.,1576-86-9,,(Z)-2-pentenal,Q S R O T
+46.,5604-55-7,,3-pentenal,P S
+47.,58838-14-5,,(E)-3-pentenal,S T
+48.,53448-06-9,,(Z)-3-pentenal,P S R T
+49.,2100-17-6,,4-pentenal,P E S T
+50.,31424-04-1,,pentenal (unkn.str.),Q
+51.,764-40-9,,"2,4-pentadienal",Q E S R
+52.,123-15-9,,2-methylpentanal,Q E S R T
+53.,15877-57-3,,3-methylpentanal,Q E S R T
+54.,1119-16-0,,4-methylpentanal,E S T
+55.,623-36-9,,2-methyl-2-pentenal,Q E S R T
+56.,16958-22-8,,(Z)-2-methyl-2-pentenal,S R
+57.,14250-96-5,,(E)-2-methyl-2-pentenal,P S R O T
+58.,5362-56-1,,4-methyl-2-pentenal,Q E S
+59.,5187-71-3,,2-methyl-4-pentenal,Q S
+60.,85527-93-1,,methylpentenal (unkn.str.),P
+61.,5204-80-8,,2-ethyl-4-pentenal,P S R
+62.,18295-59-5,,2-propylpentanal,P S T
+63.,4221-03-8,,5-hydroxypentanal,P S R
+64.,83440-17-9,,3-methyl-4-oxopentanal,S
+65.,14049-15-1,,5-aminopentanal,S
+66.,111-30-8,,"1,5-pentanedial (=glutaraldehyde)",P E S T
+67.,66-25-1,,hexanal,Q E S R O T
+68.,,,isohexanal (unkn.str.),
+69.,73513-30-1,,hexanal (branched),P
+70.,505-57-7,,2-hexenal,Q S R O T
+71.,6728-26-3,,(E)-2-hexenal (=leaf aldehyde),Q E S R O T
+72.,16635-54-4,,(Z)-2-hexenal,Q S R O T
+73.,4440-65-7,,3-hexenal,P S O
+74.,6789-80-6,,(Z)-3-hexenal,Q E S R O T
+75.,69112-21-6,,(E)-3-hexenal,Q S R O T
+76.,2100-19-8,,4-hexenal,S
+77.,764-59-0,,5-hexenal,S T
+78.,1335-39-3,,hexenal (unkn.str.),Q R
+79.,80466-34-8,,"2,4-hexadienal",Q E S R O
+80.,53398-76-8,,"(E,Z)-2,4-hexadienal",Q S R O
+81.,142-83-6,,"(E,E)-2,4-hexadienal",Q S R O T
+82.,73506-81-7,,hexadienal (unkn.str.),Q
+83.,925-54-2,,2-methylhexanal,P S
+84.,41065-97-8,,4-methylhexanal,P S
+85.,1860-39-5,,5-methylhexanal,S
+86.,28467-88-1,,2-methyl-2-hexenal,S
+87.,844467-54-5,,3-methyl-2-hexenal,P S
+88.,38260-16-1,,(E)-3-methyl-2-hexenal,S
+89.,38260-17-2,,(Z)-3-methyl-2-hexenal,S
+90.,70979-34-9,,4-methyl-2-hexenal,Q S
+91.,56423-39-3,,5-methyl-2-hexenal,P S
+92.,36747-83-8,,(E)-5-methyl-2-hexenal,Q S
+93.,123-05-7,,2-ethylhexanal,P E S T
+94.,645-62-5,,2-ethyl-2-hexenal,Q E S R T
+95.,88288-45-3,,(Z)-2-ethyl-2-hexenal,E S R O T
+96.,64344-45-2,,(E)-2-ethyl-2-hexenal,E S R
+97.,136051-46-2,,2-vinyl-2-hexenal,P E S
+98.,18459-51-3,,2-butylhexanal,P E S
+99.,96013-98-8,,3-hydroxyhexanal,P S
+100.,35158-25-9,,2-isopropyl-5-methyl-2-hexenal,P E S R
+101.,69104-96-7,,(E)-2-isopropyl-5-methyl-2-hexenal,E S R
+102.,69104-97-8,,(Z)-2-isopropyl-5-methyl-2-hexenal,Q E S R
+103.,56134-05-5,,"2,5-dimethyl-2-vinyl-4-hexenal",P E S
+104.,111-71-7,,heptanal,Q E S R O T
+105.,73181-02-9,,heptanal (branched),P
+106.,2463-63-0,,2-heptenal,Q E S R O T
+107.,18829-55-5,,(E)-2-heptenal,Q E S R O T
+108.,57266-86-1,,(Z)-2-heptenal,Q E S R O T
+109.,21662-18-0,,(Z)-3-heptenal,P S T
+110.,62238-34-0,,4-heptenal,Q S R O T
+111.,929-22-6,,(E)-4-heptenal,Q E S R T
+112.,6728-31-0,,(Z)-4-heptenal,Q E S R O T
+113.,21662-19-1,,(E)-5-heptenal,S T
+114.,21661-98-3,,(Z)-5-heptenal,S T
+115.,17206-61-0,,6-heptenal,S T
+116.,29381-66-6,,heptenal (unkn.str.),Q
+117.,5910-85-0,,"2,4-heptadienal",Q S R O T
+118.,59121-26-5,,"(Z,E)-2,4-heptadienal",P S
+119.,4313-02-4,,"(E,Z)-2,4-heptadienal",Q S R O T
+120.,4313-03-5,,"(E,E)-2,4-heptadienal",Q E S R O T
+121.,,,heptadienal (unkn.str.),P
+122.,63885-09-6,,6-methylheptanal,Q S R O
+123.,30567-26-1,,2-methyl-2-heptenal,P S
+124.,80780-70-7,,6-methyl-2-heptenal,P S
+125.,34880-43-8,,(Z)-2-propyl-2-heptenal,S R O T
+126.,64935-37-1,,(E)-2-propyl-2-heptenal,S R
+127.,1937209-25-0,,3-methyl-3-heptenal,P S R
+128.,68654-16-0,,6-methyl-5-heptenal,P S
+129.,62105-65-1,,"2,6-dimethyl-2-heptenal",P S
+130.,920-11-6,,"(E)-2,2-dimethyl-4-heptenal",S T
+131.,106-72-9,,"2,6-dimethyl-5-heptenal",Q E S R O T
+132.,99172-18-6,,"(2E,3Z)-2-ethylidene-6-methyl-3,5-heptadienal",P S
+133.,62439-41-2,,"6-methoxy-2,6-dimethylheptanal",E S O T
+134.,124-13-0,,octanal (=caprylaldehyde),Q E S R O T
+135.,,,octanal (unkn.str.),Q
+136.,26637-24-1,,octanal (branched),P
+137.,2363-89-5,,2-octenal,Q E S R O T
+138.,20664-46-4,,(Z)-2-octenal,Q S R O T
+139.,2548-87-0,,(E)-2-octenal,Q E S R O T
+140.,60671-71-8,,3-octenal,P S
+141.,76595-71-6,,(E)-3-octenal,S T
+142.,78693-34-2,,(Z)-3-octenal,P S T
+143.,78693-35-3,,(E)-4-octenal,S T
+144.,25447-69-2,,octenal (unkn.str.),Q
+145.,41547-22-2,,cis-5-Octenal,E S T
+146.,41547-29-9,,(E)-5-octenal,E S T
+147.,63826-25-5,,Oct-6-enal,S
+148.,63196-63-4,,trans-6-Octenal,E S T
+149.,63196-64-5,,(Z)-6-octenal,S T
+150.,21573-31-9,,7-octenal,S T
+151.,5577-44-6,,"2,4-octadienal",Q S R O
+152.,30361-28-5,,"(E,E)-2,4-octadienal",Q E S R O T
+153.,33819-10-2,,"(E,Z)-2,4-octadienal",P S R
+154.,,,"2,5-octadienal",P S
+155.,78693-38-6,,"(E,E)-2,5-octadienal",T
+156.,205380-41-2,,"(E,Z)-2,5-octadienal",T
+157.,118790-17-3,,"(Z,E)-2,5-octadienal",P
+158.,42448-75-9,,"2-methyl-6-methylene-2,7-octadienal",Q E S
+159.,38743-20-3,,octadienal (unkn.str.),P
+160.,7786-29-0,,2-Methyloctanal,E S
+161.,30689-75-9,,6-methyloctanal,Q S R T
+162.,49824-43-3,,7-methyloctanal,P E S R O
+163.,37596-38-6,,2-ethyloctanal,P S
+164.,2363-86-2,,2-oxooctanal,S
+165.,3613-30-7,,"7-methoxy-3,7-dimethyloctanal",Q S
+166.,73757-27-4,,2-methyl-2-octenal,P E S
+167.,13019-16-4,,2-butyl-2-octenal,Q E S R O
+168.,64935-38-2,,(E)-2-butyl-2-octenal,P S R
+169.,99915-14-7,,(Z)-2-butyl-2-octenal,P S R O T
+170.,22418-66-2,,"3,7-dimethyl-2-methylene-6-octenal",E S
+171.,120093-49-4,,"(R)-3,7-dimethyl-2-methylene-6-octenal",E S T
+172.,141608-97-1,,"(S)-3,7-dimethyl-2-methylene-6-octenal",E S T
+173.,124-19-6,,nonanal (=pelargonaldehyde),Q E S R O T
+174.,,,nonanal (unkn.str.),Q
+175.,35127-50-5,,nonanal (branched),P
+176.,2463-53-8,,2-nonenal,Q E S R O T
+177.,60784-31-8,,(Z)-2-nonenal,Q S R O T
+178.,18829-56-6,,(E)-2-nonenal,Q E S R O T
+179.,36121-12-7,,3-nonenal,S
+180.,109351-28-2,,(E)-3-nonenal,S R O T
+181.,31823-43-5,,(Z)-3-nonenal,P S R O T
+182.,2277-15-8,,(Z)-4-nonenal,P E S R O T
+183.,2277-16-9,,(E)-4-nonenal,E S T
+184.,90645-87-7,,5-nonenal,S
+185.,2277-17-0,,(Z)-5-nonenal,S T
+186.,2277-18-1,,(E)-5-nonenal,S T
+187.,6728-35-4,,6-nonenal,P S T
+188.,2277-19-2,,(Z)-6-nonenal,Q E S R O T
+189.,2277-20-5,,(E)-6-nonenal,P E S T
+190.,78693-36-4,,(E)-7-nonenal,S T
+191.,78693-37-5,,(Z)-7-nonenal,T
+192.,39770-04-2,,8-nonenal,S T
+193.,30551-15-6,,nonenal (unkn.str.),Q R O
+194.,6750-03-4,,"2,4-nonadienal",Q E S R O T
+195.,5910-87-2,,"(E,E)-2,4-nonadienal",Q E S R O T
+196.,21661-99-4,,"(E,Z)-2,4-nonadienal",Q S R O
+197.,26370-28-5,,"2,6-nonadienal",Q S R O
+198.,17587-33-6,,"(E,E)-2,6-nonadienal",Q E S O T
+199.,134998-58-6,,"(Z,Z)-2,6-nonadienal",S T
+200.,557-48-2,,"(E,Z)-2,6-nonadienal",Q E S R O T
+201.,23313-79-3,,"(Z,E)-2,6-nonadienal",P S O T
+202.,78263-66-8,,"3,6-nonadienal",S
+203.,147159-46-4,,"(E,E)-3,6-nonadienal",S T
+204.,57386-95-5,,"(E,Z)-3,6-nonadienal",S T
+205.,147159-47-5,,"(Z,E)-3,6-nonadienal",T
+206.,21944-83-2,,"(Z,Z)-3,6-nonadienal",Q S R O T
+207.,30551-17-8,,nonadienal (unkn.str.),Q
+208.,56269-22-8,,"2,4,6-nonatrienal",P S R O
+209.,869771-00-6,,"(E,Z,E)-2,4,6-nonatrienal",P S R O T
+210.,100113-51-7,,"(E,Z,Z)-2,4,6-nonatrienal",Q S R
+211.,100113-52-8,,"(E,E,Z)-2,4,6-nonatrienal",Q S R O T
+212.,57018-53-8,,"(E,E,E)-2,4,6-nonatrienal",Q E S R O T
+213.,24424-67-7,,2-methylnonanal,P S R
+214.,52432-75-4,,5-methylnonanal,P S
+215.,3085-26-5,,8-methylnonanal,Q E S T
+216.,128926-05-6,,8-methyl-2-nonenal,P
+217.,60671-74-1,,8-methyl-5-nonenal,P
+218.,3021-89-4,,2-pentyl-2-nonenal,S
+219.,88529-43-5,,(E)-2-pentyl-2-nonenal,S R
+220.,49562-91-6,,(Z)-2-pentyl-2-nonenal,S R O T
+221.,22418-62-8,,3-hydroxynonanal,P S
+222.,22054-15-5,,9-hydroxynonanal,S
+223.,74327-29-0,,4-oxononanal,P S T
+224.,112-31-2,,decanal (=capraldehyde),Q E S R O T
+225.,,,decanal (unkn.str.),Q
+226.,1321-89-7,,decanal (branched),
+227.,3913-71-1,,2-decenal,Q E S R O T
+228.,2497-25-8,,(Z)-2-decenal,Q S R O T
+229.,3913-81-3,,(E)-2-decenal,Q E S R O T
+230.,58474-80-9,,3-decenal,P S
+231.,68676-85-7,,(E)-3-decenal,S T
+232.,69891-94-7,,(Z)-3-decenal,P S T
+233.,30390-50-2,,4-decenal,P S
+234.,65405-70-1,,(E)-4-decenal,P S R
+235.,21662-09-9,,(Z)-4-decenal,Q E S R O T
+236.,60671-72-9,,5-decenal,Q S
+237.,21662-08-8,,(Z)-5-decenal,S T
+238.,21662-11-3,,(E)-5-decenal,S T
+239.,127818-71-7,,6-decenal,P S R
+240.,105683-99-6,,(Z)-6-decenal,Q S R O T
+241.,147159-48-6,,(E)-6-decenal,P E S R O T
+242.,21662-10-2,,(E)-7-decenal,S T
+243.,21661-97-2,,(Z)-7-decenal,S R T
+244.,39770-05-3,,9-decenal,P E S T
+245.,25447-70-5,,decenal (unkn.str.),P
+246.,2363-88-4,,"2,4-decadienal",Q E S R O T
+247.,25152-83-4,,"(E,Z)-2,4-decadienal",Q S R O T
+248.,25152-84-5,,"(E,E)-2,4-decadienal",Q E S R O T
+249.,5910-88-3,,"(Z,E)-2,4-decadienal",P S
+250.,65909-91-3,,"(Z,Z)-2,4-decadienal",Q S R O
+251.,,,"(E,Z)-2,6-decadienal",P S
+252.,78693-39-7,,"(E,E)-2,7-decadienal",T
+253.,52711-52-1,,"(E,Z)-2,7-decadienal",T
+254.,22644-09-3,,"(Z,Z)-4,7-decadienal",P S T
+255.,30551-18-9,,decadienal (unkn.str.),Q
+256.,25462-05-9,,"2,4,6-decatrienal",P S
+257.,51325-37-2,,"2,4,7-decatrienal",Q E S T
+258.,43108-49-2,,"(E,Z,Z)-2,4,7-decatrienal",P S T
+259.,66642-86-2,,"(E,E,Z)-2,4,7-decatrienal",P E S T
+260.,127793-88-8,,8-methyldecanal,Q S T
+261.,137352-60-4,,9-methyldecanal,Q S R
+262.,13893-39-5,,2-hexyl-2-decenal,P E S
+263.,64935-39-3,,(E)-2-hexyl-2-decenal,E S R
+264.,61960-01-8,,(Z)-2-hexyl-2-decenal,S R O T
+265.,24823-57-2,,2-heptyl-2-decenal,P E
+266.,24823-58-3,,2-octyl-2-decenal,P E S
+267.,58196-32-0,,9-methyl-2-decenal,P
+268.,43160-78-7,,4-oxodecanal,S R O T
+269.,112-44-7,,undecanal,Q E S R O T
+270.,2463-77-6,,2-undecenal,Q E S R O
+271.,71277-05-9,,(Z)-2-undecenal,Q S T
+272.,53448-07-0,,(E)-2-undecenal,Q E S R O T
+273.,77928-05-3,,(E)-3-undecenal,S T
+274.,147159-45-3,,(Z)-3-undecenal,S T
+275.,68820-32-6,,(Z)-4-undecenal,P S
+276.,68820-35-9,,(E)-4-undecenal,E S
+277.,68464-53-9,,(Z)-5-undecenal,P S
+278.,60671-73-0,,6-undecenal,P
+279.,147159-49-7,,(Z)-8-undecenal,S R T
+280.,143-14-6,,9- undecenal,E S R T
+281.,390745-03-6,,(Z)-9-undecenal,S R
+282.,112-45-8,,10-undecenal,P E S R T
+283.,,,undecenal (unkn.str.),P
+284.,13162-46-4,,"2,4-undecadienal",Q E S T
+285.,30361-29-6,,"(E,E)-2,4-undecadienal",Q E S R T
+286.,91254-00-1,,"2,5-undecadienal",S
+287.,13553-02-1,,"(E,Z)-2,5-undecadienal",P S
+288.,2105861-01-4,,"(Z,Z)-2,5-undecadienal",P R
+289.,60671-76-3,,"3,6-undecadienal",P
+290.,112805-89-7,,"(Z,Z)-4,7-undecadienal",P
+291.,110-41-8,,2-methylundecanal,P E S R
+292.,128926-06-7,,10-methyl-2-undecenal,P
+293.,24823-56-1,,2-hexyl-2-undecenal,P E
+294.,89523-72-8,,2-octyl-2-undecenal,P E
+295.,141-13-9,,"2,6,10-trimethyl-9-undecenal",E S R O
+296.,112-54-9,,dodecanal,Q E S R O T
+297.,4826-62-4,,2-dodecenal,Q E S
+298.,81149-96-4,,(Z)-2-dodecenal,P S T
+299.,20407-84-5,,(E)-2-dodecenal,Q E S R O T
+300.,76595-72-7,,(E)-3-dodecenal,S T
+301.,68141-15-1,,(Z)-3-dodecenal,S T
+302.,30390-51-3,,4-dodecenal,P S
+303.,21944-98-9,,(Z)-4-dodecenal,E S
+304.,68820-34-8,,(E)-5-dodecenal,Q E S
+305.,76261-02-4,,6-dodecenal,S
+306.,60671-75-2,,7-dodecenal,Q S
+307.,121052-28-6,,8-dodecenal,S
+308.,144298-64-6,,(E)-8-dodecenal,S T
+309.,82107-89-9,,dodecenal (unkn.str.),P
+310.,51148-68-6,,11-dodecenal,P S
+311.,13162-47-5,,"2,4-dodecadienal",Q
+312.,21662-16-8,,"(E,E)-2,4-dodecadienal",E S R
+313.,21662-15-7,,"(E,Z)-2,4-dodecadienal",P S
+314.,186450-94-2,,"2,6-dodecadienal",
+315.,21662-13-5,,"(E,Z)-2,6-dodecadienal",Q E S R
+316.,21662-14-6,,"(E,E)-2,6-dodecadienal",P S
+317.,13553-09-8,,"(Z,Z)-3,6-dodecadienal",S
+318.,24934-61-0,,2-hexyl-2-dodecenal,P E
+319.,104676-07-5,,2-heptyl-2-dodecenal,P E
+320.,25234-33-7,,2-octyl-2-dodecenal,S
+321.,,,"4-ethyl-7,11-dimethyl-2,6,10-dodecatrienal",
+322.,53398-82-6,,"(E,Z)-4-ethyl-7,11-dimethyl-2,6,10-dodecatrienal",P
+323.,53398-77-9,,"(E,E)-4-ethyl-7,11-dimethyl-2,6,10-dodecatrienal",P S
+324.,10486-19-8,,tridecanal,Q E S R O T
+325.,7774-82-5,,2-tridecenal,Q E S R
+326.,7069-41-2,,(E)-2-tridecenal,Q E S R O
+327.,60671-77-4,,8-tridecenal,P
+328.,,,tridecenal (unkn.str.),Q
+329.,60998-24-5,,"2,4-tridecadienal",S
+330.,53658-60-9,,"(E,Z)-2,4-tridecadienal",Q S
+331.,13552-95-9,,"(Z,Z)-4,7-tridecadienal",S
+332.,60671-79-6,,"5,8-tridecadienal",P
+333.,,,"2,4,7-tridecatrienal",
+334.,13552-96-0,,"(E,Z,Z)-2,4,7-tridecatrienal",P E S R O T
+335.,75853-49-5,,12-Methyltridecanal,Q S R O T
+336.,128926-07-8,,12-methyl-2-tridecenal,P
+337.,124-25-4,,tetradecanal,Q E S R O T
+338.,64461-99-0,,2-tetradecenal,Q S
+339.,51534-36-2,,(E)-2-tetradecenal,Q E S
+340.,60671-78-5,,9-tetradecenal,P S
+341.,85896-31-7,,13-tetradecenal,P S
+342.,,,tetradecenal (unkn.str.),Q
+343.,,,"2,4-tetradecadienal",S
+344.,54306-03-5,,"(E,Z)-2,4-tetradecadienal",P
+345.,2765-11-9,,pentadecanal,Q S R O T
+346.,64462-00-6,,2-pentadecenal,P S
+347.,96360-08-6,,(E)-2-pentadecenal,P S
+348.,,,8-pentadecenal,
+349.,76963-26-3,,(Z)-8-pentadecenal,P S
+350.,60671-80-9,,10-pentadecenal,P
+351.,,,pentadecenal (unkn.str.),P
+352.,629-80-1,,hexadecanal,Q S R O
+353.,3163-37-9,,2-hexadecenal,Q R
+354.,22644-96-8,,(E)-2-hexadecenal,Q S
+355.,56797-40-1,,(Z)-7-hexadecenal,P S
+356.,56829-23-3,,"(Z,Z)-7,10-hexadecadienal",P S
+357.,56797-43-4,,"(Z,Z,Z)-7,10,13-hexadecatrienal",Q S
+358.,629-90-3,,heptadecanal,Q S R O
+359.,93843-21-1,,heptadecanal (branched),Q
+360.,120681-49-4,,(E)-2-heptadecenal,Q S
+361.,56797-41-2,,(Z)-8-heptadecenal,Q S O
+362.,56797-42-3,,"(Z,Z)-8,11-heptadecadienal",Q S O
+363.,56797-44-5,,"(Z,Z,Z)-8,11,14-heptadecatrienal",Q S O
+364.,638-66-4,,octadecanal,Q S R O
+365.,5090-41-5,,9-octadecenal,Q E S
+366.,56554-94-0,,8-octadecenal,Q S
+367.,56554-88-2,,5-octadecenal,Q S
+368.,2423-10-1,,(Z)-9-octadecenal,Q S R O
+369.,71873-66-0,,octadecenal (unkn.str.),P R
+370.,85263-73-6,,"9,17-octadecadienal",P S
+371.,28982-40-3,,octadecadienal (unkn.str.),P
+372.,106-23-0,,"citronellal (=3,7-dimethyl-6-octenal)",Q E S R O T
+373.,2385-77-5,,R-(+)-citronellal,Q S R T
+374.,5949-05-3,,S-(-)-citronellal,Q S R T
+375.,107-75-5,,"hydroxycitronellal (=7-hydroxy-3,7-dimethyloctanal)",P E S R T
+376.,,,α-methylhydroxycitronellal (unkn.str.),P
+377.,,,"2,6-dimethyl-2,6-octadienal",Q S
+378.,5392-40-5,,"citral (=3,7-dimethyl-2,6-octadienal)",Q E S R O T
+379.,141-27-5,,geranial (=α-citral),Q E S R O T
+380.,72203-98-6,,isogeranial,P E S R O
+381.,106-26-3,,neral (=β-citral),Q E S R O T
+382.,72203-97-5,,isoneral,P E S R O
+383.,55050-40-3,,exo-isocitral,E S R
+384.,590-71-6,,"2,2-dimethyl-3,4-octadienal",Q S R
+385.,,,"(Z)-6-hydroxy-2,6-dimethyl-2,7-octadienal",Q
+386.,19317-11-4,,farnesal,Q E S
+387.,,,(E)-farnesal,P
+388.,502-67-0,,"(E,E)-farnesal",Q E S R
+389.,3790-67-8,,"(E,Z)-2,6-farnesal",P E S R
+390.,17909-77-2,,α-sinensal,Q E S R O T
+391.,3779-62-2,,trans-β-sinensal,E S T
+392.,60066-88-8,,β-sinensal,Q E S R O
+393.,36431-60-4,,5-ethyl-1-cyclopentene-1-carbaldehyde,Q E S R O
+394.,959311-75-2,,5-propyl-1-cyclopentene-1-carbaldehyde,P S R
+395.,163268-53-9,,5-butyl-1-cyclopentene-1-carbaldehyde,P S R
+396.,1187056-57-0,,5-pentyl-1-cyclopentene-1-carbaldehyde,P S R
+397.,1342307-12-3,,(2E)-3-(5-ethyl-1-cyclopenten-1-yl)-2-propenal,P E S R
+398.,54043-82-2,,5-isopropyl-2-methyl-1-cyclopentenecarbaldehyde,Q E S
+399.,1125-49-1,,photocitral A,P E S
+400.,84607-55-6,,trans-2-isopropylidene-5-methylcyclopentanecarbaldehyde,P S
+401.,4374-98-5,,camphoraldehyde,Q E S
+402.,18022-66-7,,"3,4-dimethyl-1,3-cyclohexenecarboxaldehyde",E S T
+403.,6784-13-0,,limonenealdehyde,E S R
+404.,,,4-isopropenylcyclohexenecarbaldehyde (unkn.str.),P
+405.,,,2-methylcyclohexenylpropanal (unkn.str.),P
+406.,29460-68-2,,"3-(2,6,6-trimethyl-2-cyclohexenyl)-2-propenal (=α-cyclocitrylidenacetaldehyde)",P E S
+407.,100-50-5,,3-cyclohexene-1-carboxaldehyde,E S T
+408.,100-52-7,,benzaldehyde,Q E S R O T
+409.,529-20-4,,2-methylbenzaldehyde (=o-tolualdehyde),Q E S R T
+410.,620-23-5,,3-methylbenzaldehyde (=m-tolualdehyde),P E S R O T
+411.,104-87-0,,4-methylbenzaldehyde (=p-tolualdehyde),Q E S R T
+412.,1334-78-7,,methylbenzaldehyde (unkn.str.) (=tolualdehyde (unkn.str.)),Q E S R
+413.,22927-13-5,,2-ethylbenzaldehyde,P S
+414.,34246-54-3,,3-ethylbenzaldehyde,S
+415.,4748-78-1,,4-ethylbenzaldehyde,Q E S R O T
+416.,53951-50-1,,ethylbenzaldehyde (unkn.str.),Q
+417.,,,propylbenzaldehyde (unkn.str.),
+418.,28785-06-0,,4-propylbenzaldehyde,S
+419.,122-03-2,,4-isopropylbenzaldehyde (=cuminaldehyde),Q E S R O T
+420.,55012-32-3,,isopropylbenzaldehyde (unkn.str.),P
+421.,10133-50-3,,4-isopropenylbenzaldehyde,P E S
+422.,90-02-8,,2-hydroxybenzaldehyde (=salicylaldehyde),Q E S R O T
+423.,100-83-4,,3-hydroxybenzaldehyde (=m-hydroxybenzaldehyde),Q E S
+424.,123-08-0,,4-hydroxybenzaldehyde (=4-formylphenol),Q E S R O T
+425.,28777-87-9,,hydroxybenzaldehyde (unkn.str.),Q
+426.,55479-94-2,,hydroxymethylbenzaldehyde (unkn.str.),
+427.,135-02-4,,2-methoxybenzaldehyde,Q E S R T
+428.,591-31-1,,3-methoxybenzaldehyde,Q E S R T
+429.,123-11-5,,4-methoxybenzaldehyde (=anisaldehyde),Q E S R O T
+430.,50984-52-6,,methoxybenzaldehyde (unkn.str.),Q
+431.,613-69-4,,2-ethoxybenzaldehyde,P E S
+432.,22924-15-8,,3-ethoxybenzaldehyde,P E S R
+433.,10031-82-0,,4-ethoxybenzaldehyde,Q E S R O
+434.,,,ethoxybenzaldehyde (unkn.str.),Q
+435.,15764-16-6,,"2,4-dimethylbenzaldehyde",Q E S R
+436.,5779-94-2,,"2,5-dimethylbenzaldehyde",P S R T
+437.,5973-71-7,,"3,4-dimethylbenzaldehyde",P S R
+438.,5779-95-3,,"3,5-dimethylbenzaldehyde",Q S
+439.,28351-09-9,,dimethylbenzaldehyde (unkn.str.),P O
+440.,698-27-1,,2-hydroxy-4-methylbenzaldehyde,Q E S R
+441.,24677-78-9,,"2,3-dihydroxybenzaldehyde",Q S
+442.,139-85-5,,"3,4-dihydroxybenzaldehyde",Q E S
+443.,,,dihydroxybenzaldehyde (unkn.str.),
+444.,18278-34-7,,4-hydroxy-2-methoxybenzaldehyde,Q E S
+445.,121-33-5,,vanillin (=4-hydroxy-3-methoxybenzaldehyde),Q E S R O T
+446.,148-53-8,,o-vanillin,P E S R
+447.,93-02-7,,"2,5-dimethoxybenzaldehyde",Q S
+448.,120-14-9,,"3,4-dimethoxybenzaldehyde (=veratraldehyde, methylvanillin)",Q E S R
+449.,7311-34-4,,"3,5-dimethoxybenzaldehyde",P S
+450.,121-32-4,,3-ethoxy-4-hydroxybenzaldehyde (=ethylvanillin),E S R T
+451.,5779-72-6,,"2,4,5-trimethylbenzaldehyde",Q S R
+452.,487-68-3,,"2,4,6-trimethylbenzaldehyde (=mesitylaldehyde)",Q E S R
+453.,70679-68-4,,trimethylbenzaldehyde (unkn.str.),P
+454.,86-81-7,,"3,4,5-trimethoxybenzaldehyde",Q S
+455.,54061-90-4,,trimethoxybenzaldehyde (unkn.str.),
+456.,134-96-3,,"syringaldehyde (=4-hydroxy-3,5-dimethoxybenzaldehyde)",Q E S R T
+457.,1620-98-0,,"3,5-ditert-butyl-4-hydroxybenzaldehyde",P S
+458.,34883-14-2,,"2,4-dihydroxy-3,6-dimethylbenzaldehyde",P S
+459.,2990-31-0,,"4,6-dihydroxy-2,3-dimethylbenzaldehyde",P E S
+460.,529-23-7,,2-aminobenzaldehyde,P E S T
+461.,623-27-8,,"1,4-benzenedicarbaldehyde (=terephthalaldehyde)",Q E S
+462.,122-78-1,,phenylacetaldehyde (=benzeneacetaldehyde),Q E S R O T
+463.,93-53-8,,2-phenylpropanal,Q E S R O T
+464.,104-53-0,,3-phenylpropanal (=dihydrocinnamaldehyde),Q E S R T
+465.,104-55-2,,cinnamaldehyde (=3-phenyl-2-propenal),Q E S R T
+466.,57194-69-1,,(Z)-cinnamaldehyde (=(Z)-3-phenyl-2-propenal),Q S R T
+467.,14371-10-9,,(E)-cinnamaldehyde (=(E)-3-phenyl-2-propenal),Q E S R O T
+468.,16251-77-7,,2-methyl-3-phenylpropanal,S
+469.,5406-12-2,,2-(4-methylphenyl)propanal,Q S
+470.,101-39-3,,α-methylcinnamaldehyde (=2-methyl-3-phenyl-2-propenal),Q E S R
+471.,86390-61-6,,methylcinnamaldehyde (unkn.str.),P
+472.,122-40-7,,α-pentylcinnamaldehyde (=2-benzylideneheptanal),P E S
+473.,101-86-0,,α-hexylcinnamaldehyde,P E S
+474.,1504-74-1,,2-methoxycinnamaldehyde,Q E S
+475.,60125-24-8,,(E)-2-methoxycinnamaldehyde,P S R
+476.,1963-36-6,,4-methoxycinnamaldehyde,Q E S
+477.,68149-78-0,,"3,4-dihydroxycinnamaldehyde",Q S
+478.,458-36-6,,coniferaldehyde (=4-hydroxy-3-methoxy-cinnamaldehyde),Q E S
+479.,127321-19-1,,4-hydroxy-2-methoxycinnamaldehyde,S
+480.,4497-40-9,,"3,4-dimethoxycinnamaldehyde",P S
+481.,94-65-5,,2-propylcyclohexanone,P E S
+482.,4206-58-0,,"sinapaldehyde (=4-hydroxy-3,5-dimethoxy-cinnamaldehyde)",Q E S T
+483.,80638-48-8,,3-(4-hydroxy-3-methoxyphenyl)propanal,Q E S
+484.,16251-78-8,,3-(4-methylphenyl)butanal,P S
+485.,18328-11-5,,4-phenylbutanal,E S
+486.,,,3-hydroxy-2-phenylbutanal,Q
+487.,4411-89-6,,2-phenyl-2-butenal,Q E S R O
+488.,13910-23-1,,4-phenyl-2-butenal,P S
+489.,4895-19-6,,4-(4-methylphenyl)pentanal,P S
+490.,3491-63-2,,2-phenyl-2-pentenal,P E S
+491.,26643-91-4,,4-methyl-2-phenyl-2-pentenal,Q E S R O
+492.,75935-84-1,,5-methyl-2-phenylhexanal,P R
+493.,94133-59-2,,2-phenyl-2-hexenal,P
+494.,,,4-methyl-2-phenyl-2-hexenal,Q S
+495.,99532-37-3,,2-methyl-5-phenyl-2-hexenal,Q S
+496.,21834-92-4,,5-methyl-2-phenyl-2-hexenal,Q E S R O
+497.,27841-22-1,,p-3-menthen-7-al,Q S
+498.,29548-14-9,,p-1-menthen-9-al,Q E S R
+499.,71855-42-0,,p-3-menthen-9-al,S
+500.,,,p-menthen-9-al (unkn.str.),Q R
+501.,1197-15-5,,"p-1,3-menthadien-7-al (=α-terpinen-7-al)",Q E S R O T
+502.,22580-90-1,,"p-1,4-menthadien-7-al",Q E S R
+503.,432-24-6,,α-cyclocitral,P E S R
+504.,432-25-7,,β-cyclocitral,Q E S R O T
+505.,120964-76-3,,γ-cyclocitral,Q E S
+506.,472-66-2,,"2,6,6-trimethyl-1-cyclohexene-1-acetaldehyde (= β-homocyclocitral )",Q E S R
+507.,52844-21-0,,cyclocitral (unkn.str.),P
+508.,65405-78-9,,cis-vertocitral C,E S R
+509.,65405-79-0,,trans-vertocitral C,E S R
+510.,83646-56-4,,"4-hydroxy-2,6,6-trimethyl-1-cyclohexene-1-acetaldehyde",P E S
+511.,21391-98-0,,phellandral,Q E S R
+512.,79925-82-9,,"p-mentha-1,5-dien-7-al",P E S
+513.,2111-75-3,,"p-1,8-menthadien-7-al",Q E S R O T
+514.,18031-40-8,,(4S)-(-)-perillaldehyde,P E S T
+515.,5503-12-8,,(4R)-(+)-perillaldehyde,Q E S T
+516.,57074-31-4,,"p-1,8-menthadien-10-al",Q
+517.,247911-68-8,,2-caren-10-al,Q S R
+518.,116-26-7,,"safranal (=2,6,6-trimethyl-1,3-cyclohexadienecarbaldehyde)",Q E S R O
+519.,162376-82-1,,"2,6,6-trimethyl-1,4-cyclohexadienecarbaldehyde",P E S
+520.,4501-58-0,,"(2,2,3-trimethyl-3-cyclopentenyl)acetaldehyde (=α-campholene aldehyde, α-campholenal)",Q E S R
+521.,3899-09-0,,γ-campholenal,Q E S R
+522.,,,campholenal (unkn.str.),P E
+523.,1321-16-0,,1-cyclohexenecarbaldehyde (=1-formylcyclohexene),P E S
+524.,931-96-4,,1-methyl-3-cyclohexenecarbaldehyde,P S
+525.,33399-07-4,,"6,6-dimethyl-2-methylene-3-cyclohexenecarbaldehyde",P S
+526.,57129-54-1,,thuj-3-en-10-al,E S R
+527.,35692-94-5,,"4-hydroxy-2,6,6-trimethyl-1-cyclohexenecarbaldehyde (=4-hydroxysafranal)",Q E S
+528.,103-95-7,,3-(4-isopropylphenyl)-2-methylpropanal (=cyclamen aldehyde),Q E S R T
+529.,50705-16-3,,"2,2-dimethylbicyclo[2.2.1]heptane-3-carbaldehyde",P E S
+530.,564-94-3,,myrtenal,Q E S R O
+531.,1140-71-2,,"4,10,10-trimethyl-7-methylenebicyclo[6.2.0]decane-4-carbaldehyde",P S
+532.,,,caryophyllen-5-al (unkn.str.),P
+533.,88395-49-7,,(2R)-trans-5-caryophyllen-12-al,Q R
+534.,88424-68-4,,(2S)-trans-5-caryophyllen-12-al,P
+535.,73256-82-3,,isobicyclogermacrenal,Q E S R
+536.,120-57-0,,"piperonal (=heliotropin, 1,3-benzodioxole-5-carbaldehyde )",Q E S R O T
+537.,119491-07-5,,"3-(1,3-benzodioxol-5-yl)-2-propenal",P E S R
+538.,4460-86-0,,asaronaldehyde,Q E S T
+539.,1203-68-5,,2-biphenylcarbaldehyde,Q E S
+540.,1204-60-0,,3-biphenylcarbaldehyde (=3-phenylbenzaldehyde),Q E S
+541.,3218-36-8,,4-biphenylcarbaldehyde (=4-phenylbenzaldehyde),Q E S
+542.,16568-02-8,,acetaldehyde N-formyl-N-methyl-hydrazone,P E S
+543.,6688-11-5,,cyclooctanecarboxaldehyde,E S T
+544.,,,propanal N-formyl-N-methyl-hydrazone,P
+545.,62080-57-3,,butanal N-formyl-N-methylhydrazone,P
+546.,61748-18-3,,3-methylbutanal N-formyl-N-methyl-hydrazone,P S
+547.,57590-20-2,,pentanal N-formyl-N-methyl-hydrazone,P E S
+548.,57590-22-4,,hexanal N-formyl-N-methylhydrazone,P E S
+549.,61748-13-8,,octanal N-formyl-N-methylhydrazone,P
+550.,62121-49-7,,(Z)-2-octenal N-formyl-N-methyl-hydrazone,P
+551.,62121-50-0,,(E)-2-octenal N-formyl-N-methyl-hydrazone,P

@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VCF - Volatile Compounds in Food</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/css/vcf.css" rel="stylesheet">
+<link href="/css/print.css" rel="stylesheet" media="print">
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+<meta name="format-detection" content="telephone=no"/>
+<!-- Sentry -->
+<script src="https://browser.sentry-cdn.com/5.2.1/bundle.min.js" crossorigin="anonymous"></script>
+<script>
+Sentry.init({ dsn: 'https://45e14bb33e854eea83d8f079840a908b@o57497.ingest.sentry.io/1457420' });
+</script>
+</head>
+<body>
+<script> 
+<!-- 
+//Configuration parameters for the pop-up window. 
+var config = 
+{x:50,y:100,height:400,width:450,modal:false,closable:true,modal:false,
+draggable:true,resizable:true,initshow:true,minheight:200,minwidth:200 
+} 
+--> 
+</script>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="header">
+<div class="span3" style="margin-bottom:8px">
+<a href="/index.cfm" class="brand"><img src="/graphics/logo_bewido.png" alt="VCF home" id="bewido_logo" width="220"></a><!-- VCF logo -->
+</div>
+<div class="span9">
+<div class="row-fluid">
+<div class="span6 loggedin pull-right" id="fltrt">
+<form action="/VcfCompounds.cfm?volatgrp=12" method="post" name="Guestloginform" class="pull-right">
+<div class="control-group">
+<div class="controls">OR
+<div class="input-append">
+<input name="j_username" type="hidden" value="GUEST" />
+<input name="j_password" type="hidden" value="guest" />
+<input name="logintype" type="hidden" value="guest" />
+<button type="submit" class="btn" value="Sign in as guest"> Sign in as guest </button>
+</div>
+</div>
+</div>
+</form>
+<form action="/VcfCompounds.cfm?volatgrp=12" method="post" name="loginform" class="form-inline pull-right">
+<input name="logintype" type="hidden" value="user" />
+<div class="control-group">
+<div class="controls">
+<div class="input-append">
+<input type="text" name="j_username" required="yes" message="A username is required" placeholder="username" class="input-small" >
+</div>
+<div class="input-append">
+<input type="password" name="j_password" required="yes" message="A password is required" placeholder="password" class="input-small">
+<input name="args.authtype" type="hidden" value="Vcfuser">
+<button type="submit" class="btn" value="Sign in"> Sign in </button>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="span3">
+<span class="welcome">
+<a href="index.cfm"><span class="websitename">VCF <span class="superonline">online</span></span></a>
+Volatile Compounds in Food 16.10
+<span class="demoversionstring">
+</span>
+</span>
+</div>
+</div>
+<div class="row-fluid">
+<div class="navbar span9 offset3">
+<!-- Navbar ================================================== -->
+<div class="navbar-inner">
+<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="nav-collapse collapse">
+<ul id="navMain" class="nav pull-right">
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Search</a>
+<ul class="dropdown-menu">
+<li><a>Search</a></li>
+<li><a href="/VcfProdSelection.cfm"><i class="icon-chevron-right icon-white"></i> Products</a></li>
+<li><a href="/VcfProdSetSelection.cfm"><i class="icon-chevron-right icon-white"></i> Product compare</a></li>
+<li><a href="/VcfCompoundSearch.cfm"><i class="icon-chevron-right icon-white"></i> Compounds</a></li>
+<li><a href="/VcfRetentionIndexSearch.cfm"><i class="icon-chevron-right icon-white"></i> Retention Index</a></li>
+<li><a href="/VcfLiteratureSearch.cfm"><i class="icon-chevron-right icon-white"></i> Literature</a></li>
+<li><a href="OFTVCompoundSearch.cfm"><i class="icon-chevron-right icon-white"></i> Odour/Flavour threshold</a></li>
+<li><a>History</a></li>
+<li><a href="/VcfSearchhistory.cfm"><i class="icon-chevron-right icon-white"></i> Search history</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Lists</a>
+<ul class="dropdown-menu">
+<li><a>Products</a></li>
+<li><a href="/VcfProducts.cfm"><i class="icon-chevron-right icon-white"></i> Product list</a></li>
+<li><a>Compounds</a></li>
+<li><a href="/VcfCompounds.cfm"><i class="icon-chevron-right icon-white"></i> VCF compounds</a></li>
+<li><a href="/VcfCompounds.cfm?FEMAGRAS"><i class="icon-chevron-right icon-white"></i> FEMA(GRAS 30)</a></li>
+<li><a href="/VcfCompounds.cfm?Flavis"><i class="icon-chevron-right icon-white"></i> Flavis(EU-Flavis database)</a></li>
+<li><a>Odour/flavour compounds</a></li>
+<li><a href="OFTVCompounds.cfm"><i class="icon-chevron-right icon-white"></i> Odour/flavour lists</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Usage guide</a>
+<ul class="dropdown-menu">
+<li><a>Search options</a></li>
+<li><a href="/VcfGuide.cfm?title=What information"><i class="icon-chevron-right icon-white"></i> What information can be found?</a></li>
+<li><a href="/VcfGuide.cfm?title=Guide to searches"><i class="icon-chevron-right icon-white"></i> Guide to searches</a></li>
+<li><a href="/VcfGuide.cfm?title=Search within"><i class="icon-chevron-right icon-white"></i> Search within results</a></li>
+<li><a href="/VcfGuide.cfm?title=Product compare"><i class="icon-chevron-right icon-white"></i> Product compare</a></li>
+<li><a>VCF version</a></li>
+<li><a href="/VcfGuide.cfm?title=What is new"><i class="icon-chevron-right icon-white"></i> What is new in VCF 16.10?</a></li>
+<li><a href="/VcfGuide.cfm?title=Overview of VCF"><i class="icon-chevron-right icon-white"></i> Overview VCF releases</a></li>
+<li><a href="/VcfGuide.cfm?title=Explanation of terms"><i class="icon-chevron-right icon-white"></i> Explanation of terms</a></li>
+<li><a href="/VcfExamples.cfm"><i class="icon-chevron-right icon-white"></i> Examples</a></li>
+<li><a>References</a></li>
+<li><a href="/VcfGuide.cfm?title=preface"><i class="icon-chevron-right icon-white"></i> Preface</a></li>
+<li><a href="/VcfGuide.cfm?title=Bibliographic"><i class="icon-chevron-right icon-white"></i> Bibliographic reference</a></li>
+<li><a href="/VcfGuide.cfm?title=Privacy policy"><i class="icon-chevron-right icon-white"></i> Privacy policy</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
+<ul class="dropdown-menu">
+<li><a href="/VcfSelectSubscription.cfm"><i class="icon-chevron-right icon-white"></i> Subscribe</a></li>
+<li><a href="/VcfAssist.cfm"><i class="icon-chevron-right icon-white"></i> Password assistance</a></li>
+<li><a href="/VcfMailform.cfm"><i class="icon-chevron-right icon-white"></i> Mail us</a></li>
+<li><a href="/VcfLinks.cfm"><i class="icon-chevron-right icon-white"></i> Links</a></li>
+<li><a href="/VcfPromo.cfm"><i class="icon-chevron-right icon-white"></i> Promo</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end .header -->
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<ul class="breadcrumb">
+<li><a href="/VcfHome.cfm">Home</a> <span class="divider">/</span></li>
+<li><a href="/VcfCompounds.cfm">Compound groups</a> <span class="divider">/</span></li>
+<li class="active">Compound group list</li>
+</ul>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span10 offset1">
+<div class="span8 offset0">
+<h4>VCF volatile compounds list</h4>
+<strong>List of volatile compounds in food in the VCF database</strong>
+<br />Login is needed for detail information. Partial information is available for guest logins.
+<p><strong>160 compounds
+in volatile group 'Halogens'.</strong><br />
+</p>
+</div>
+<div class="span3">
+<a href="/VcfCompounds.cfm?" class="btn"><i class="icon icon-step-backward"></i> Return to group lists </a>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<table class="table-striped table-condensed datatable">
+<tr>
+<th>&nbsp;</th>
+<th class="rechts nowrap">CAS</th>
+<th>&nbsp;</th>
+<th>Compound name</th>
+<th>
+<button name="SearchTips" type="button" value="Flags" class="btn"
+onClick="window.open('VcfGuideContent.cfm?title=Compound flags', 'VCFguide',
+'resizable=yes,scrollbars=yes,menubar=no,status=no,titlebar=no,toolbar=no,width=450,height=400');
+return false" >
+<i class="icon icon-flag"></i> Compound<br>flags </button>
+</th>
+</tr>
+<tr>
+<td class="rechts top">1.&nbsp;</td>
+<td class="rechts nowrap top">7782-50-5</td>
+<td>&nbsp;</td>
+<td>chlorine</td>
+<td>
+&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">2.&nbsp;</td>
+<td class="rechts nowrap top">7726-95-6</td>
+<td>&nbsp;</td>
+<td>bromine</td>
+<td>
+&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">3.&nbsp;</td>
+<td class="rechts nowrap top">74-87-3</td>
+<td>&nbsp;</td>
+<td>chloromethane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">4.&nbsp;</td>
+<td class="rechts nowrap top">75-09-2</td>
+<td>&nbsp;</td>
+<td>dichloromethane (=methylene chloride)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">5.&nbsp;</td>
+<td class="rechts nowrap top">74-97-5</td>
+<td>&nbsp;</td>
+<td>bromochloromethane</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">6.&nbsp;</td>
+<td class="rechts nowrap top">67-66-3</td>
+<td>&nbsp;</td>
+<td>trichloromethane (=chloroform)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">7.&nbsp;</td>
+<td class="rechts nowrap top">56-23-5</td>
+<td>&nbsp;</td>
+<td>tetrachloromethane (=carbon tetrachloride)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">8.&nbsp;</td>
+<td class="rechts nowrap top">75-00-3</td>
+<td>&nbsp;</td>
+<td>1-chloroethane (=ethyl chloride)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">9.&nbsp;</td>
+<td class="rechts nowrap top">107-06-2</td>
+<td>&nbsp;</td>
+<td>1,2-dichloroethane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">10.&nbsp;</td>
+<td class="rechts nowrap top">1300-21-6</td>
+<td>&nbsp;</td>
+<td>dichloroethane (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">11.&nbsp;</td>
+<td class="rechts nowrap top">75-35-4</td>
+<td>&nbsp;</td>
+<td>1,1-dichloroethene</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">12.&nbsp;</td>
+<td class="rechts nowrap top">156-59-2</td>
+<td>&nbsp;</td>
+<td>(Z)-1,2-dichloroethylene</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">13.&nbsp;</td>
+<td class="rechts nowrap top">71-55-6</td>
+<td>&nbsp;</td>
+<td>1,1,1-trichloroethane (=methylchloroform)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">14.&nbsp;</td>
+<td class="rechts nowrap top">79-00-5</td>
+<td>&nbsp;</td>
+<td>1,1,2-trichloroethane</td>
+<td>
+&nbsp;P&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">15.&nbsp;</td>
+<td class="rechts nowrap top">25323-89-1</td>
+<td>&nbsp;</td>
+<td>trichloroethane (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">16.&nbsp;</td>
+<td class="rechts nowrap top">79-01-6</td>
+<td>&nbsp;</td>
+<td>1,1,2-trichloroethene (=trichloroethylene)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">17.&nbsp;</td>
+<td class="rechts nowrap top">25322-20-7</td>
+<td>&nbsp;</td>
+<td>tetrachloroethane (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">18.&nbsp;</td>
+<td class="rechts nowrap top">127-18-4</td>
+<td>&nbsp;</td>
+<td>tetrachloroethene (=tetrachloroethylene)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">19.&nbsp;</td>
+<td class="rechts nowrap top">75-29-6</td>
+<td>&nbsp;</td>
+<td>2-chloropropane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">20.&nbsp;</td>
+<td class="rechts nowrap top">78-87-5</td>
+<td>&nbsp;</td>
+<td>1,2-dichloropropane</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">21.&nbsp;</td>
+<td class="rechts nowrap top">25735-29-9</td>
+<td>&nbsp;</td>
+<td>trichloropropane (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">22.&nbsp;</td>
+<td class="rechts nowrap top">109-69-3</td>
+<td>&nbsp;</td>
+<td>1-chlorobutane</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">23.&nbsp;</td>
+<td class="rechts nowrap top">616-13-7</td>
+<td>&nbsp;</td>
+<td>1-chloro-2-methylbutane</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">24.&nbsp;</td>
+<td class="rechts nowrap top">629-06-1</td>
+<td>&nbsp;</td>
+<td>1-chloroheptane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">25.&nbsp;</td>
+<td class="rechts nowrap top">821-25-0</td>
+<td>&nbsp;</td>
+<td>1,1-dichloroheptane</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">26.&nbsp;</td>
+<td class="rechts nowrap top">1002-69-3</td>
+<td>&nbsp;</td>
+<td>1-chlorodecane</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">27.&nbsp;</td>
+<td class="rechts nowrap top">3386-33-2</td>
+<td>&nbsp;</td>
+<td>1-chloro-octadecane</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">28.&nbsp;</td>
+<td class="rechts nowrap top">4860-03-1</td>
+<td>&nbsp;</td>
+<td>1-chlorohexadecane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">29.&nbsp;</td>
+<td class="rechts nowrap top">111-44-4</td>
+<td>&nbsp;</td>
+<td>1-chloro-2-(1-chloroethoxy)ethane</td>
+<td>
+&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">30.&nbsp;</td>
+<td class="rechts nowrap top">108-60-1</td>
+<td>&nbsp;</td>
+<td>dichloroisopropyl ether</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">31.&nbsp;</td>
+<td class="rechts nowrap top">108-90-7</td>
+<td>&nbsp;</td>
+<td>chlorobenzene</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">32.&nbsp;</td>
+<td class="rechts nowrap top">2051-60-7</td>
+<td>&nbsp;</td>
+<td>2-chlorobiphenyl</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">33.&nbsp;</td>
+<td class="rechts nowrap top">95-50-1</td>
+<td>&nbsp;</td>
+<td>1,2-dichlorobenzene</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">34.&nbsp;</td>
+<td class="rechts nowrap top">541-73-1</td>
+<td>&nbsp;</td>
+<td>1,3-dichlorobenzene</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">35.&nbsp;</td>
+<td class="rechts nowrap top">106-46-7</td>
+<td>&nbsp;</td>
+<td>1,4-dichlorobenzene</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">36.&nbsp;</td>
+<td class="rechts nowrap top">25321-22-6</td>
+<td>&nbsp;</td>
+<td>dichlorobenzene (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">37.&nbsp;</td>
+<td class="rechts nowrap top">120-82-1</td>
+<td>&nbsp;</td>
+<td>1,2,4-trichlorobenzene</td>
+<td>
+&nbsp;Q&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">38.&nbsp;</td>
+<td class="rechts nowrap top">12002-48-1</td>
+<td>&nbsp;</td>
+<td>trichlorobenzene (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">39.&nbsp;</td>
+<td class="rechts nowrap top">12408-10-5</td>
+<td>&nbsp;</td>
+<td>tetrachlorobenzene (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">40.&nbsp;</td>
+<td class="rechts nowrap top">100-44-7</td>
+<td>&nbsp;</td>
+<td>benzyl chloride (=(chloromethyl)benzene)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">41.&nbsp;</td>
+<td class="rechts nowrap top">95-49-8</td>
+<td>&nbsp;</td>
+<td>1-chloro-2-methylbenzene</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">42.&nbsp;</td>
+<td class="rechts nowrap top">25168-05-2</td>
+<td>&nbsp;</td>
+<td>chloro-methylbenzene (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">43.&nbsp;</td>
+<td class="rechts nowrap top">766-51-8</td>
+<td>&nbsp;</td>
+<td>2-chloroanisole</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">44.&nbsp;</td>
+<td class="rechts nowrap top">2845-89-8</td>
+<td>&nbsp;</td>
+<td>3-chloroanisole</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">45.&nbsp;</td>
+<td class="rechts nowrap top">623-12-1</td>
+<td>&nbsp;</td>
+<td>4-chloroanisole</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">46.&nbsp;</td>
+<td class="rechts nowrap top">13334-71-9</td>
+<td>&nbsp;</td>
+<td>4-chloro-3-methylanisole</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">47.&nbsp;</td>
+<td class="rechts nowrap top">6981-15-3</td>
+<td>&nbsp;</td>
+<td>4-chloro-3,5-dimethylanisole</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">48.&nbsp;</td>
+<td class="rechts nowrap top">1984-59-4</td>
+<td>&nbsp;</td>
+<td>2,3-dichloroanisole</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">49.&nbsp;</td>
+<td class="rechts nowrap top">553-82-2</td>
+<td>&nbsp;</td>
+<td>2,4-dichloroanisole</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">50.&nbsp;</td>
+<td class="rechts nowrap top">1984-58-3</td>
+<td>&nbsp;</td>
+<td>2,5-dichloroanisole</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">51.&nbsp;</td>
+<td class="rechts nowrap top">1984-65-2</td>
+<td>&nbsp;</td>
+<td>2,6-dichloroanisole</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">52.&nbsp;</td>
+<td class="rechts nowrap top">36404-30-5</td>
+<td>&nbsp;</td>
+<td>3,4-dichloroanisole</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">53.&nbsp;</td>
+<td class="rechts nowrap top">33719-74-3</td>
+<td>&nbsp;</td>
+<td>3,5-dichloroanisole</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">54.&nbsp;</td>
+<td class="rechts nowrap top">54135-80-7</td>
+<td>&nbsp;</td>
+<td>2,3,4-trichloroanisole</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">55.&nbsp;</td>
+<td class="rechts nowrap top">54135-81-8</td>
+<td>&nbsp;</td>
+<td>2,3,5-trichloroanisole</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">56.&nbsp;</td>
+<td class="rechts nowrap top">50375-10-5</td>
+<td>&nbsp;</td>
+<td>2,3,6-trichloroanisole</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">57.&nbsp;</td>
+<td class="rechts nowrap top">6130-75-2</td>
+<td>&nbsp;</td>
+<td>2,4,5-trichloroanisole</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">58.&nbsp;</td>
+<td class="rechts nowrap top">87-40-1</td>
+<td>&nbsp;</td>
+<td>2,4,6-trichloroanisole</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">59.&nbsp;</td>
+<td class="rechts nowrap top">54135-82-9</td>
+<td>&nbsp;</td>
+<td>3,4,5-trichloroanisole</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">60.&nbsp;</td>
+<td class="rechts nowrap top">938-86-3</td>
+<td>&nbsp;</td>
+<td>2,3,4,5-tetrachloroanisole</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">61.&nbsp;</td>
+<td class="rechts nowrap top">938-22-7</td>
+<td>&nbsp;</td>
+<td>2,3,4,6-tetrachloroanisole</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">62.&nbsp;</td>
+<td class="rechts nowrap top">6936-40-9</td>
+<td>&nbsp;</td>
+<td>2,3,5,6-tetrachloroanisole</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">63.&nbsp;</td>
+<td class="rechts nowrap top">1825-21-4</td>
+<td>&nbsp;</td>
+<td>pentachloroanisole</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">64.&nbsp;</td>
+<td class="rechts nowrap top">607-99-8</td>
+<td>&nbsp;</td>
+<td>2,4,6-tribromoanisole</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">65.&nbsp;</td>
+<td class="rechts nowrap top">944-78-5</td>
+<td>&nbsp;</td>
+<td>tetrachloro-1,4-dimethoxybenzene</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">66.&nbsp;</td>
+<td class="rechts nowrap top">91-58-7</td>
+<td>&nbsp;</td>
+<td>2-chloronaphthalene</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">67.&nbsp;</td>
+<td class="rechts nowrap top">464-41-5</td>
+<td>&nbsp;</td>
+<td>bornyl chloride</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">68.&nbsp;</td>
+<td class="rechts nowrap top">74-83-9</td>
+<td>&nbsp;</td>
+<td>bromomethane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">69.&nbsp;</td>
+<td class="rechts nowrap top">74-95-3</td>
+<td>&nbsp;</td>
+<td>dibromomethane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">70.&nbsp;</td>
+<td class="rechts nowrap top">75-25-2</td>
+<td>&nbsp;</td>
+<td>tribromomethane (=bromoform)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">71.&nbsp;</td>
+<td class="rechts nowrap top">558-13-4</td>
+<td>&nbsp;</td>
+<td>tetrabromomethane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">72.&nbsp;</td>
+<td class="rechts nowrap top">74-96-4</td>
+<td>&nbsp;</td>
+<td>1-bromoethane</td>
+<td>
+&nbsp;P&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">73.&nbsp;</td>
+<td class="rechts nowrap top">557-91-5</td>
+<td>&nbsp;</td>
+<td>1,1-dibromoethane</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">74.&nbsp;</td>
+<td class="rechts nowrap top">106-93-4</td>
+<td>&nbsp;</td>
+<td>1,2-dibromoethane</td>
+<td>
+&nbsp;P&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">75.&nbsp;</td>
+<td class="rechts nowrap top">79-27-6</td>
+<td>&nbsp;</td>
+<td>1,1,2,2-tetrabromoethane</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">76.&nbsp;</td>
+<td class="rechts nowrap top">106-94-5</td>
+<td>&nbsp;</td>
+<td>1-bromopropane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">77.&nbsp;</td>
+<td class="rechts nowrap top">56020-79-2</td>
+<td>&nbsp;</td>
+<td>1,1,3,3-tetrabromo-1-propene</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">78.&nbsp;</td>
+<td class="rechts nowrap top">55162-38-4</td>
+<td>&nbsp;</td>
+<td>2-bromo-5-ethylnonane</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">79.&nbsp;</td>
+<td class="rechts nowrap top">108-86-1</td>
+<td>&nbsp;</td>
+<td>bromobenzene</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">80.&nbsp;</td>
+<td class="rechts nowrap top">103-63-9</td>
+<td>&nbsp;</td>
+<td>1-bromo-2-phenylethane (=phenethyl bromide)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">81.&nbsp;</td>
+<td class="rechts nowrap top">27497-51-4</td>
+<td>&nbsp;</td>
+<td>bromonaphthalene (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">82.&nbsp;</td>
+<td class="rechts nowrap top">74-88-4</td>
+<td>&nbsp;</td>
+<td>iodomethane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">83.&nbsp;</td>
+<td class="rechts nowrap top">13353-01-0</td>
+<td>&nbsp;</td>
+<td>carbonyl diiodide</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">84.&nbsp;</td>
+<td class="rechts nowrap top">75-11-6</td>
+<td>&nbsp;</td>
+<td>diiodomethane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">85.&nbsp;</td>
+<td class="rechts nowrap top">75-47-8</td>
+<td>&nbsp;</td>
+<td>triiodomethane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">86.&nbsp;</td>
+<td class="rechts nowrap top">107-08-4</td>
+<td>&nbsp;</td>
+<td>1-iodopropane</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">87.&nbsp;</td>
+<td class="rechts nowrap top">75-30-9</td>
+<td>&nbsp;</td>
+<td>2-iodopropane</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">88.&nbsp;</td>
+<td class="rechts nowrap top">628-17-1</td>
+<td>&nbsp;</td>
+<td>1-iodopentane</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">89.&nbsp;</td>
+<td class="rechts nowrap top">629-27-6</td>
+<td>&nbsp;</td>
+<td>1-iodooctane</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">90.&nbsp;</td>
+<td class="rechts nowrap top">629-93-6</td>
+<td>&nbsp;</td>
+<td>1-iodooctadecane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">91.&nbsp;</td>
+<td class="rechts nowrap top">75-27-4</td>
+<td>&nbsp;</td>
+<td>bromo-dichloromethane</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">92.&nbsp;</td>
+<td class="rechts nowrap top">75-62-7</td>
+<td>&nbsp;</td>
+<td>bromo-trichloromethane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">93.&nbsp;</td>
+<td class="rechts nowrap top">557-68-6</td>
+<td>&nbsp;</td>
+<td>bromo-iodomethane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">94.&nbsp;</td>
+<td class="rechts nowrap top">124-48-1</td>
+<td>&nbsp;</td>
+<td>dibromo-chloromethane</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">95.&nbsp;</td>
+<td class="rechts nowrap top">593-94-2</td>
+<td>&nbsp;</td>
+<td>dibromo-iodomethane</td>
+<td>
+&nbsp;P&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">96.&nbsp;</td>
+<td class="rechts nowrap top">557-95-9</td>
+<td>&nbsp;</td>
+<td>bromo-diiodomethane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">97.&nbsp;</td>
+<td class="rechts nowrap top">34970-00-8</td>
+<td>&nbsp;</td>
+<td>bromo-chloro-iodomethane</td>
+<td>
+&nbsp;P&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">98.&nbsp;</td>
+<td class="rechts nowrap top">107-04-0</td>
+<td>&nbsp;</td>
+<td>1-bromo-2-chloroethane</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">99.&nbsp;</td>
+<td class="rechts nowrap top">56020-80-5</td>
+<td>&nbsp;</td>
+<td>1,1,3-tribromo-3-chloro-1-propene</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">100.&nbsp;</td>
+<td class="rechts nowrap top">56020-81-6</td>
+<td>&nbsp;</td>
+<td>1,1-dibromo-3,3-dichloro-1-propene</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">101.&nbsp;</td>
+<td class="rechts nowrap top">56020-82-7</td>
+<td>&nbsp;</td>
+<td>1,3,3-tribromo-1-iodo-1-propene</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">102.&nbsp;</td>
+<td class="rechts nowrap top">1899027-77-0</td>
+<td>&nbsp;</td>
+<td>2-bromo-4-chloropentane</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">103.&nbsp;</td>
+<td class="rechts nowrap top">10539-87-4</td>
+<td>&nbsp;</td>
+<td>laurinterol</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">104.&nbsp;</td>
+<td class="rechts nowrap top">33880-90-9</td>
+<td>&nbsp;</td>
+<td>pacifenol</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">105.&nbsp;</td>
+<td class="rechts nowrap top">18762-30-6</td>
+<td>&nbsp;</td>
+<td>laureatin</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">106.&nbsp;</td>
+<td class="rechts nowrap top">624-76-0</td>
+<td>&nbsp;</td>
+<td>2-iodoethanol</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">107.&nbsp;</td>
+<td class="rechts nowrap top">59228-00-1</td>
+<td>&nbsp;</td>
+<td>1,1,3-tribromo-2-propanol</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">108.&nbsp;</td>
+<td class="rechts nowrap top">63216-75-1</td>
+<td>&nbsp;</td>
+<td>2-chloro-1-hexanol</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">109.&nbsp;</td>
+<td class="rechts nowrap top">3039-13-2</td>
+<td>&nbsp;</td>
+<td>dibromoacetaldehyde</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">110.&nbsp;</td>
+<td class="rechts nowrap top">18328-08-0</td>
+<td>&nbsp;</td>
+<td>3,3-dibromo-2-propenal</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">111.&nbsp;</td>
+<td class="rechts nowrap top">35913-09-8</td>
+<td>&nbsp;</td>
+<td>chlorobenzaldehyde (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">112.&nbsp;</td>
+<td class="rechts nowrap top">598-31-2</td>
+<td>&nbsp;</td>
+<td>1-bromo-2-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">113.&nbsp;</td>
+<td class="rechts nowrap top">3019-04-3</td>
+<td>&nbsp;</td>
+<td>1-iodo-2-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">114.&nbsp;</td>
+<td class="rechts nowrap top">867-54-9</td>
+<td>&nbsp;</td>
+<td>1,1-dibromo-2-propanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">115.&nbsp;</td>
+<td class="rechts nowrap top">816-39-7</td>
+<td>&nbsp;</td>
+<td>1,3-dibromo-2-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">116.&nbsp;</td>
+<td class="rechts nowrap top">59227-98-4</td>
+<td>&nbsp;</td>
+<td>1-bromo-3-iodo-2-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">117.&nbsp;</td>
+<td class="rechts nowrap top">30957-55-2</td>
+<td>&nbsp;</td>
+<td>1,1-dibromo-1-chloro-2-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">118.&nbsp;</td>
+<td class="rechts nowrap top">3770-98-7</td>
+<td>&nbsp;</td>
+<td>1,1,1-tribromo-2-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">119.&nbsp;</td>
+<td class="rechts nowrap top">3475-39-6</td>
+<td>&nbsp;</td>
+<td>1,1,3-tribromo-2-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">120.&nbsp;</td>
+<td class="rechts nowrap top">59227-99-5</td>
+<td>&nbsp;</td>
+<td>1,1-dibromo-3-iodo-2-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">121.&nbsp;</td>
+<td class="rechts nowrap top">22612-89-1</td>
+<td>&nbsp;</td>
+<td>1,1,3,3-tetrabromo-2-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">122.&nbsp;</td>
+<td class="rechts nowrap top">116-16-5</td>
+<td>&nbsp;</td>
+<td>hexachloro-2-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">123.&nbsp;</td>
+<td class="rechts nowrap top">59228-04-5</td>
+<td>&nbsp;</td>
+<td>4,4-dibromo-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">124.&nbsp;</td>
+<td class="rechts nowrap top">59228-05-6</td>
+<td>&nbsp;</td>
+<td>1,4,4-tribromo-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">125.&nbsp;</td>
+<td class="rechts nowrap top">59228-06-7</td>
+<td>&nbsp;</td>
+<td>4,4-dibromo-1-iodo-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">126.&nbsp;</td>
+<td class="rechts nowrap top">59228-08-9</td>
+<td>&nbsp;</td>
+<td>1,4,4-tribromo-1-chloro-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">127.&nbsp;</td>
+<td class="rechts nowrap top">59228-09-0</td>
+<td>&nbsp;</td>
+<td>1,1,4-tribromo-4-chloro-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">128.&nbsp;</td>
+<td class="rechts nowrap top">59228-10-3</td>
+<td>&nbsp;</td>
+<td>1,1-dibromo-4,4-dichloro-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">129.&nbsp;</td>
+<td class="rechts nowrap top">59228-11-4</td>
+<td>&nbsp;</td>
+<td>1,4-dibromo-1,4-dichloro-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">130.&nbsp;</td>
+<td class="rechts nowrap top">59228-07-8</td>
+<td>&nbsp;</td>
+<td>1,1,4,4-tetrabromo-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">131.&nbsp;</td>
+<td class="rechts nowrap top">79-11-8</td>
+<td>&nbsp;</td>
+<td>chloroacetic acid</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">132.&nbsp;</td>
+<td class="rechts nowrap top">76-03-9</td>
+<td>&nbsp;</td>
+<td>trichloroacetic acid</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">133.&nbsp;</td>
+<td class="rechts nowrap top">59228-01-2</td>
+<td>&nbsp;</td>
+<td>2,2-dibromo-1-(bromomethyl)ethyl acetate</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">134.&nbsp;</td>
+<td class="rechts nowrap top">59228-02-3</td>
+<td>&nbsp;</td>
+<td>2,2-dibromo-1-(dibromomethyl)ethyl acetate</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">135.&nbsp;</td>
+<td class="rechts nowrap top">95-51-2</td>
+<td>&nbsp;</td>
+<td>o-chloroaniline</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">136.&nbsp;</td>
+<td class="rechts nowrap top">106-47-8</td>
+<td>&nbsp;</td>
+<td>p-chloroaniline</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">137.&nbsp;</td>
+<td class="rechts nowrap top">84455-05-0</td>
+<td>&nbsp;</td>
+<td>1-acetyl-2-chloropyrrole</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">138.&nbsp;</td>
+<td class="rechts nowrap top">80311-19-9</td>
+<td>&nbsp;</td>
+<td>2-acetyl-5-chloropyrrole</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">139.&nbsp;</td>
+<td class="rechts nowrap top">84455-06-1</td>
+<td>&nbsp;</td>
+<td>1-acetyl-2-bromopyrrole</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">140.&nbsp;</td>
+<td class="rechts nowrap top">82678-01-1</td>
+<td>&nbsp;</td>
+<td>2-acetyl-5-bromopyrrole</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">141.&nbsp;</td>
+<td class="rechts nowrap top">95-57-8</td>
+<td>&nbsp;</td>
+<td>2-chlorophenol</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">142.&nbsp;</td>
+<td class="rechts nowrap top">106-48-9</td>
+<td>&nbsp;</td>
+<td>4-chlorophenol</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">143.&nbsp;</td>
+<td class="rechts nowrap top">1570-64-5</td>
+<td>&nbsp;</td>
+<td>4-chloro-2-methylphenol</td>
+<td>
+&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">144.&nbsp;</td>
+<td class="rechts nowrap top">87-64-9</td>
+<td>&nbsp;</td>
+<td>6-chloro-2-methylphenol</td>
+<td>
+&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">145.&nbsp;</td>
+<td class="rechts nowrap top">59-50-7</td>
+<td>&nbsp;</td>
+<td>4-chloro-3-methylphenol</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">146.&nbsp;</td>
+<td class="rechts nowrap top">87-65-0</td>
+<td>&nbsp;</td>
+<td>2,6-dichlorophenol</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">147.&nbsp;</td>
+<td class="rechts nowrap top">120-83-2</td>
+<td>&nbsp;</td>
+<td>2,4-dichlorophenol</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">148.&nbsp;</td>
+<td class="rechts nowrap top">591-35-5</td>
+<td>&nbsp;</td>
+<td>3,5-dichlorophenol</td>
+<td>
+&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">149.&nbsp;</td>
+<td class="rechts nowrap top">88-06-2</td>
+<td>&nbsp;</td>
+<td>2,4,6-trichlorophenol</td>
+<td>
+&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">150.&nbsp;</td>
+<td class="rechts nowrap top">95-56-7</td>
+<td>&nbsp;</td>
+<td>2-bromophenol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">151.&nbsp;</td>
+<td class="rechts nowrap top">106-41-2</td>
+<td>&nbsp;</td>
+<td>4-bromophenol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">152.&nbsp;</td>
+<td class="rechts nowrap top">615-58-7</td>
+<td>&nbsp;</td>
+<td>2,4-dibromophenol</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">153.&nbsp;</td>
+<td class="rechts nowrap top">608-33-3</td>
+<td>&nbsp;</td>
+<td>2,6-dibromophenol</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">154.&nbsp;</td>
+<td class="rechts nowrap top">118-79-6</td>
+<td>&nbsp;</td>
+<td>2,4,6-tribromophenol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">155.&nbsp;</td>
+<td class="rechts nowrap top">533-58-4</td>
+<td>&nbsp;</td>
+<td>2-iodophenol</td>
+<td>
+&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">156.&nbsp;</td>
+<td class="rechts nowrap top">617-88-9</td>
+<td>&nbsp;</td>
+<td>2-(chloromethyl)furan</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">157.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>1,3,3-tribromo-1,2-epoxypropane</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">158.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(E)-1,3,3-tribromo-1,2-epoxypropane</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">159.&nbsp;</td>
+<td class="rechts nowrap top">75-69-4</td>
+<td>&nbsp;</td>
+<td>trichlorofluoromethane</td>
+<td>
+&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">160.&nbsp;</td>
+<td class="rechts nowrap top">50906-52-0</td>
+<td>&nbsp;</td>
+<td>oppositol</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span11 offset1">
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<hr />
+</div>
+<div class="span1">
+<a href="#top" class="btn btn-info to-page-top btn-small" title="top of page"><i class="icon-white icon-chevron-up"></i></a>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+See the list of all <a href="/VcfCompounds.cfm?FEMAGRAS">FEMA (GRAS 30)</a> volatile compounds<br />
+See the list of all <a href="/VcfCompounds.cfm?Flavis">Flavis (EU-Flavis database)</a> volatile compounds<br />
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<hr />
+</div>
+<div class="span1">
+<a href="#top" class="btn btn-info to-page-top btn-small" title="top of page"><i class="icon-white icon-chevron-up"></i></a>
+</div>
+</div>
+<!-- end .container -->
+</div>
+<!-- Footer
+================================================== -->
+<footer class="footer">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="footer-content">
+&copy; 1992&mdash;2025&nbsp;BeWiDo BV
+</div>
+</div>
+</div>
+</footer>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/js/vcf.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-39233400-1', 'auto');
+ga('send', 'pageview');
+</script> 
+</body>
+</html>

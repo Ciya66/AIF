@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class='logo-title'>
+                <img src='./Fig/Logo.jpg' alt="Logo" class="logo" height="80" width="100">
+                <h1>Database of poultry meat quality</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Browse</a>
+                        <ul>
+                            <li><a href="browse.html"  style="font-size: 10px;">Poultry Species</a></li>
+                            <li><a href="list.html"  style="font-size: 10px;">Volatile Flavor Compounds</a></li>
+                            <li><a href="dmdb_value.php?file=.%2Fdata%2Fmetabolites%2Fmetabolites-2025-04-19.csv&page=1"  style="font-size: 12px;">Metabolites</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="advanced_search.html">Advanced Search</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="upload.html">Submit</a></li>
+                    <li><a href="user_guide.html">User Guide</a></li>
+                    <li><a href="links.html">Link</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <br />
+        <div class="search">
+            <select id="searchCategory">
+                <option value="browse">Browse</option>
+                <option value="flj">FLJ</option>
+                <option value="wc">WC</option>
+                <option value="gxy">GXY</option>
+            </select>
+            <input type="text" placeholder="Search..." id="searchData">
+            <button class="btn" onclick="example()">Example</button>
+            <div id="example-popup" class="popup">
+                <span id="popup-message">
+                    flj, wc, gxy query input table header (table header separated by,), do not output default query all. ID,Hexanal,Heptanal
+                </span>
+                <button id="close-popup" onclick="closePopup()">confirm</button> <!-- 关闭按钮 -->
+            </div>
+            <button class="btn" onclick="clearForm()">Clear Form</button>
+            <button class="btn" onclick="searchInputData()">Submit</button>
+        </div>
+        <div  id="class-data"></div>
+
+        <br /><br /><br /><br />
+    </main>
+    <footer>
+        <p>&copy; 2024 DPMQ webserver. All rights reserved</p>
+    </footer>
+</body>
+</html>

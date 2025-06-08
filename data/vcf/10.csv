@@ -1,0 +1,137 @@
+,CAS,,Compound name,Compoundflags
+,CAS,,Compound name,Compound flags
+1.,109-87-5,,"1,1-dimethoxymethane",P E S
+2.,462-95-3,,"1,1-diethoxymethane",Q E S R
+3.,,,1-methoxy-1-propoxymethane,Q
+4.,2568-90-3,,"1,1-dibutoxymethane",E S
+5.,54815-12-2,,dihexoxymethane,P E S
+6.,534-15-6,,"1,1-dimethoxyethane (=acetaldehyde dimethyl acetal)",Q E S
+7.,10471-14-4,,1-ethoxy-1-methoxyethane,Q E S R
+8.,75677-94-0,,1-butoxy-1-methoxyethane,P S
+9.,,,1-methoxy-1-pentoxyethane,P S
+10.,105-57-7,,"1,1-diethoxyethane (=acetal, acetaldehyde diethyl acetal)",Q E S R O T
+11.,629-14-1,,"1,2-diethoxyethane",P E
+12.,,,"1,1,2-triethoxyethane",Q S
+13.,2032-35-1,,"2-bromo-1,1-diethoxyethane",P E S
+14.,20680-10-8,,1-ethoxy-1-propoxyethane,Q E S R
+15.,25334-93-4,,1-ethoxy-1-isopropoxyethane,P E S R
+16.,6986-51-2,,1-ethoxy-1-isobutoxyethane,Q E S
+17.,57006-87-8,,1-butoxy-1-ethoxyethane,Q E S
+18.,13602-09-0,,1-ethoxy-1-(2-methylbutoxy)ethane,Q E S
+19.,233665-90-2,,Acetaldehyde hexyl isoamyl acetal,E
+20.,233665-90-2,,Acetaldehyde hexyl isoamyl acetal,
+21.,233665-90-2,,Acetaldehyde hexyl isoamyl acetal,
+22.,13442-90-5,,1-ethoxy-1-(3-methylbutoxy)ethane,Q E S R
+23.,13442-89-2,,1-ethoxy-1-pentoxyethane,Q E S R
+24.,54484-73-0,,1-ethoxy-1-hexoxyethane,Q E S R
+25.,54484-66-1,,1-ethoxy-1-(2-hexenoxy)ethane,E S
+26.,88683-94-7,,1-ethoxy-1-(3-hexenoxy)ethane,P E S
+27.,28069-74-1,,(Z)-1-ethoxy-1-(3-hexenoxy)ethane,P E S R
+28.,54889-49-5,,1-ethoxy-1-octoxyethane,Q E S R
+29.,66222-24-0,,1-benzyloxy-1-ethoxyethane,P E S
+30.,2556-10-7,,1-ethoxy-1-phenethoxyethane,Q E S
+31.,105-82-8,,"1,1-dipropoxyethane",Q E S
+32.,54340-90-8,,1-hexoxy-1-methoxyethane,P E S
+33.,,,1-pentoxy-1-propoxyethane,P
+34.,238757-63-6,,1-(3-methylbutoxy)-1-propoxyethane,Q E S
+35.,75048-15-6,,1-isobutoxy-1-(3-methylbutoxy)ethane,Q E S
+36.,871-22-7,,"1,1-dibutoxyethane",Q S
+37.,5669-09-0,,"1,1-diisobutoxyethane",Q E S
+38.,77249-20-8,,1-butoxy-1-(2-methylbutoxy)ethane,Q E S
+39.,238757-27-2,,1-butoxy-1-(3-methylbutoxy)ethane,Q E S
+40.,,,1-butoxy-1-pentoxyethane,P
+41.,,,1-butoxy-1-hexoxyethane,Q
+42.,13535-43-8,,"1,1-bis(2-methylbutoxy)ethane",Q E S
+43.,13548-84-0,,1-(2-methylbutoxy)-1-(3-methylbutoxy)ethane,Q E
+44.,,,"1,1-bis(methylbutoxy)ethane (unkn.str.)",P
+45.,,,1-hexoxy-1-(2-methylbutoxy)ethane,Q
+46.,,,1-(2-methylbutoxy)-1-phenethoxyethane,P
+47.,13002-09-0,,"1,1-diisopentoxyethane",Q E S T
+48.,,,1-(3-methylbutoxy)-1-pentoxyethane,Q
+49.,,,1-hexoxy-1-(3-methylbutoxy)ethane,Q
+50.,,,1-(3-methylbutoxy)-1-phenethoxyethane,Q
+51.,,,"1,1-dipentoxyethane",P
+52.,,,1-hexoxy-1-pentoxyethane,
+53.,5405-58-3,,"1,1-dihexoxyethane",Q E S
+54.,,,"1,1-dihexenoxyethane (unkn.str.)",P
+55.,4744-08-5,,"1,1-diethoxypropane",Q E S R T
+56.,4850-74-2,,"1,1-diphenoxyethane",P E S
+57.,122-71-4,,"1,1-diphenethoxyethane",Q E S
+58.,7789-92-6,,"1,1,3-triethoxypropane",Q E S R O T
+59.,67234-04-2,,1-ethoxy-1-isobutoxypropane,Q E S
+60.,,,1-ethoxy-1-(3-methylbutoxy)propane,Q
+61.,67233-87-8,,"1,3-diethoxy-1-(3-methylbutoxy)propane",P E S
+62.,,,1-(3-methylbutoxy)-1-propoxypropane,Q
+63.,13002-11-4,,"1,1-diisobutoxypropane",Q E S
+64.,3054-95-3,,"3,3-diethoxy-1-propene",Q E S
+65.,1741-41-9,,"1,1-diethoxy-2-methylpropane",Q E S R T
+66.,,,1-ethoxy-2-methyl-1-propoxypropane,Q
+67.,,,1-ethoxy-1-isobutoxy-2-methylpropane,Q
+68.,,,1-ethoxy-2-methyl-1-(3-methylbutoxy)propane,Q
+69.,67233-88-9,,"1,1,3-triethoxy-2-methylpropane",P S
+70.,,,1-isobutoxy-2-methyl-1-propoxypropane,Q
+71.,,,2-methyl-1-(3-methylbutoxy)-1-propoxypropane,Q
+72.,13262-24-3,,"1,1-diisobutoxy-2-methylpropane",Q E S
+73.,,,1-isobutoxy-2-methyl-1-(3-methylbutoxy)propane,Q
+74.,,,"2-methyl-1,1-bis(3-methylbutoxy)propane",Q
+75.,34923-32-5,,"1,3-diethoxy-1-propanol",Q E R
+76.,16777-87-0,,"3,3-diethoxy-1-propanol",P E R
+77.,,,1-ethoxy-3-hydroxy-1-(3-methylbutoxy)propane,E
+78.,3658-95-5,,"1,1-diethoxybutane",Q E S R T
+79.,5870-82-6,,"1,1,3-triethoxybutane",P S
+80.,,,1-ethoxy-1-(3-methylbutoxy)butane,P
+81.,,,1-ethoxy-1-pentoxybutane,P
+82.,3658-94-4,,"1,1-diethoxy-2-methylbutane",Q E S R
+83.,54286-88-3,,"1,1-dimethoxy-2-methylbutane",P
+84.,3842-03-3,,"1,1-diethoxy-3-methylbutane",Q E S R T
+85.,57094-35-6,,"1,1-dimethoxy-3-methylbutane",P
+86.,,,1-ethoxy-1-isobutoxy-3-methylbutane,Q
+87.,,,1-ethoxy-3-methyl-1-(3-methylbutoxy)butane,Q E S
+88.,13112-68-0,,"1,1-dipropoxy-3-methylbutane",Q
+89.,,,1-isobutoxy-3-methyl-1-propoxybutane,Q
+90.,,,1-(3-methylbutoxy)-1-propoxy-3-methylbutane,Q
+91.,,,"1,1-diisobutoxy-3-methylbutane",Q
+92.,,,1-(isobutoxy)-1-(3-methylbutoxy)-3-methylbutane,Q
+93.,,,"3-methyl-1,1-bis(3-methylbutoxy)butane",Q
+94.,,,butanediol acetal (unkn.str.),P
+95.,73142-32-2,,1-(1-methoxyethoxy)-pentane,P E S R
+96.,3658-79-5,,"1,1-diethoxypentane",Q E S R O T
+97.,,,1-ethoxy-1-isobutoxypentane,Q
+98.,,,1-ethoxy-1-pentoxypentane,P
+99.,13262-27-6,,"1,1-diisobutoxypentane",Q E S
+100.,1599-47-9,,"1,1-dimethoxyhexane",P E S R
+101.,3658-93-3,,"1,1-diethoxyhexane",Q E S R T
+102.,,,1-ethoxy-1-propoxyhexane,
+103.,,,1-ethoxy-1-pentoxyhexane,
+104.,688-82-4,,"1,1-diethoxyheptane",Q E S R
+105.,54889-48-4,,"1,1-diethoxyoctane",P E S
+106.,141-92-4,,hydroxycitronellal dimethyl acetal,P E S
+107.,54815-13-3,,"1,1-diethoxynonane",P E S
+108.,34764-02-8,,"1,1-diethoxydecane",E S
+109.,53405-97-3,,"1,1-diethoxyundecane",Q E S
+110.,53405-98-4,,"1,1-diethoxydodecane",E S
+111.,117397-87-2,,"1,1-diethoxytetradecane",Q E R
+112.,52517-73-4,,"1,1-dimethoxypentadecane",P E
+113.,761-60-4,,"1,1-diethoxyhexadecane",Q E R
+114.,753457-25-9,,"1,1-diethoxyheptadecane",Q E R
+115.,10602-34-3,,"1,1-diethoxy-2-butene",E S
+116.,,,"(Z)-1,1-diethoxyhexene (unkn.str.)",Q
+117.,87383-46-8,,"(Z)-1,1-diethoxy-2-hexene",P E R
+118.,,,"(E)-1,1-diethoxyhexene (unkn.str.)",Q
+119.,67746-30-9,,"(E)-1,1-diethoxy-2-hexene (=(E)-2-hexenal diethyl acetal)",P E S R
+120.,54306-00-2,,"1,1-diethoxy-2-hexene",E S
+121.,73545-18-3,,"(Z)-1,1,-diethoxy-3-hexene",E S R
+122.,51795-75-6,,"(E)-1,1-diethoxy-3-hexene",R
+123.,,,"1,1-diethoxy-3-hexene",E S
+124.,18492-65-4,,4-heptenal diethyl acetal,E S R
+125.,18492-66-5,,(E)-4-heptenal diethyl acetal,R
+126.,5378-12-0,,(E)-4-decenal diethyl acetal,E R
+127.,73545-19-4,,(Z)-4-decenal diethyl acetal,E S R
+128.,71662-17-4,,"1,1-diethoxy-3,7-dimethyl-6-octene",E S
+129.,7492-66-2,,"1,1-diethoxy-3,7-dimethyl-2,6-octadiene",E S
+130.,774-48-1,,benzaldehyde diethyl acetal,P E S
+131.,4359-31-3,,"4-hydroxy-3-methoxybenzaldehyde 2,3-butanediyl acetal",P E
+132.,101-48-4,,phenylacetaldehyde dimethyl acetal,P E S T
+133.,6314-97-2,,"1,1-diethoxy-2-phenylethane",Q E S R
+134.,7476-20-2,,"ethyl 2,2-diethoxypropanoate",Q E S
+135.,129601-94-1,,"2,2,6,8-tetramethyl-7,11-dioxatricyclo[6.2.1.0(1,6)]undec-4-ene (=Riesling acetal)",P E R

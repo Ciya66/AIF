@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIF</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./index.js"></script>
+    <style>
+        .Welcome{
+            color: #34833C;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class='logo-title'>
+                <img src='./Fig/Logo.jpg' alt="Logo" class="logo" height="80" width="100">
+                <h1>Database of poultry meat quality</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Browse</a>
+                        <ul>
+                            <li><a href="browse.html"  style="font-size: 10px;">Poultry Species</a></li>
+                            <li><a href="list.html"  style="font-size: 10px;">Volatile Flavor Compounds</a></li>
+                            <li><a href="dmdb_value.php?file=.%2Fdata%2Fmetabolites%2Fmetabolites-2025-04-19.csv&page=1"  style="font-size: 12px;">Metabolites</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="advanced_search.html">Advanced Search</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="upload.html">Submit</a></li>
+                    <li><a href="user_guide.html">User Guide</a></li>
+                    <li><a href="links.html">Link</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="main-wrapper">
+            <!--左侧部分-->
+            <div class="backimg">
+                <div class="browse_search">
+                    <input type="text" placeholder="Search..." id="searchValue">
+                    <select id="searchType">
+                        <option value="Poultry_Species">Poultry Species</option>
+                        <option value="Volatile_Flavor_Compounds">Volatile Flavor Compounds</option>
+                        <option value="Metabolites">Metabolites</option>
+                    </select>
+                    <button class="example" onclick="example()">Example</button>
+                    <button class="submit" onclick="submitSearch()">Submit</button>
+                </div>
+                <div class="dpmq">
+                    <img src="./Fig/browse/dpmq.png" alt="" style="width:600px;"/>
+                    <div>
+                        <p style="background-color: gray; color: white; padding: 10px 20px; margin: 0 120px 60px 0; font-size: 30px;">Browse poultry</p>
+                        <p style="background-color: gray; color: white; padding: 10px 20px; margin: 0 120px 60px 0; font-size: 30px;">What ’ New</p>
+                    </div>    
+                </div>
+                <div>
+                    <p style="margin:120px 0 0 0; padding:0;">
+                        This DPMQ database contains data of interest to food scientists. The DPMQ is a public resource and has received data testimonies from academic, industry and government laboratories. Data entry DPMQs are located in relational databases and are designed to present data in the context of biology and food nutrition, and allow data integration for cross-research analysis, knowledge generation, and novel meta-analysis. For access assistance, please contact DPMQ Support.The database aims to contain or link three types of data: 1) poultry meat quality data, 2) nutritional health data and 3) metabolites. The database contains more than 20,000 data items, and the contents of the database can also be expanded for classification, carcass segmentation, genomics and other applications.
+                    </p>
+                </div>
+            </div>
+            
+            <!--右侧图片部分-->
+            <div class="right_img">
+                <div>
+                    <img src="./Fig/browse/sige.png" alt="" style="width:500px;"/>
+                </div>
+                <div>
+                    <img src="./Fig/browse/xiamian.png" />
+                </div>
+            </div>
+            
+        </div>
+        <!--<br><br><br><br>-->
+        
+        <!--<div  id="class-data"></div>-->
+        
+        <br><br><br><br>
+        
+        <div class="Welcome">
+            Welcome to DPMQ Version 1.0
+        </div>
+    </main>
+
+    <br><br><br><br>
+    
+    <footer>
+        <p>&copy; 2024 DPMQ webserver. All rights reserved</p>
+    </footer>
+
+
+    <!--js部分-->
+    <script>
+        function submitSearch() {
+            var searchValue = document.getElementById("searchValue").value;
+            
+            if (searchValue) {
+                var searchType = document.getElementById("searchType").value;
+                // var url = `page.html?type=${encodeURIComponent(searchType)}&search=${encodeURIComponent(searchValue)}`;
+                // 将值存储到 localStorage
+                localStorage.setItem('searchValue', searchValue);
+                localStorage.setItem('searchType', searchType);
+                window.location.href = "page.html";
+            }else {
+                alert("Input is null");
+            }
+            
+        }
+    </script>
+
+
+
+
+
+
+</body>
+</html>
+

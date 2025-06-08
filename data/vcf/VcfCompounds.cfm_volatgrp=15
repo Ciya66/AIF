@@ -1,0 +1,3423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VCF - Volatile Compounds in Food</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/css/vcf.css" rel="stylesheet">
+<link href="/css/print.css" rel="stylesheet" media="print">
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+<meta name="format-detection" content="telephone=no"/>
+<!-- Sentry -->
+<script src="https://browser.sentry-cdn.com/5.2.1/bundle.min.js" crossorigin="anonymous"></script>
+<script>
+Sentry.init({ dsn: 'https://45e14bb33e854eea83d8f079840a908b@o57497.ingest.sentry.io/1457420' });
+</script>
+</head>
+<body>
+<script> 
+<!-- 
+//Configuration parameters for the pop-up window. 
+var config = 
+{x:50,y:100,height:400,width:450,modal:false,closable:true,modal:false,
+draggable:true,resizable:true,initshow:true,minheight:200,minwidth:200 
+} 
+--> 
+</script>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="header">
+<div class="span3" style="margin-bottom:8px">
+<a href="/index.cfm" class="brand"><img src="/graphics/logo_bewido.png" alt="VCF home" id="bewido_logo" width="220"></a><!-- VCF logo -->
+</div>
+<div class="span9">
+<div class="row-fluid">
+<div class="span6 loggedin pull-right" id="fltrt">
+<form action="/VcfCompounds.cfm?volatgrp=15" method="post" name="Guestloginform" class="pull-right">
+<div class="control-group">
+<div class="controls">OR
+<div class="input-append">
+<input name="j_username" type="hidden" value="GUEST" />
+<input name="j_password" type="hidden" value="guest" />
+<input name="logintype" type="hidden" value="guest" />
+<button type="submit" class="btn" value="Sign in as guest"> Sign in as guest </button>
+</div>
+</div>
+</div>
+</form>
+<form action="/VcfCompounds.cfm?volatgrp=15" method="post" name="loginform" class="form-inline pull-right">
+<input name="logintype" type="hidden" value="user" />
+<div class="control-group">
+<div class="controls">
+<div class="input-append">
+<input type="text" name="j_username" required="yes" message="A username is required" placeholder="username" class="input-small" >
+</div>
+<div class="input-append">
+<input type="password" name="j_password" required="yes" message="A password is required" placeholder="password" class="input-small">
+<input name="args.authtype" type="hidden" value="Vcfuser">
+<button type="submit" class="btn" value="Sign in"> Sign in </button>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="span3">
+<span class="welcome">
+<a href="index.cfm"><span class="websitename">VCF <span class="superonline">online</span></span></a>
+Volatile Compounds in Food 16.10
+<span class="demoversionstring">
+</span>
+</span>
+</div>
+</div>
+<div class="row-fluid">
+<div class="navbar span9 offset3">
+<!-- Navbar ================================================== -->
+<div class="navbar-inner">
+<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="nav-collapse collapse">
+<ul id="navMain" class="nav pull-right">
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Search</a>
+<ul class="dropdown-menu">
+<li><a>Search</a></li>
+<li><a href="/VcfProdSelection.cfm"><i class="icon-chevron-right icon-white"></i> Products</a></li>
+<li><a href="/VcfProdSetSelection.cfm"><i class="icon-chevron-right icon-white"></i> Product compare</a></li>
+<li><a href="/VcfCompoundSearch.cfm"><i class="icon-chevron-right icon-white"></i> Compounds</a></li>
+<li><a href="/VcfRetentionIndexSearch.cfm"><i class="icon-chevron-right icon-white"></i> Retention Index</a></li>
+<li><a href="/VcfLiteratureSearch.cfm"><i class="icon-chevron-right icon-white"></i> Literature</a></li>
+<li><a href="OFTVCompoundSearch.cfm"><i class="icon-chevron-right icon-white"></i> Odour/Flavour threshold</a></li>
+<li><a>History</a></li>
+<li><a href="/VcfSearchhistory.cfm"><i class="icon-chevron-right icon-white"></i> Search history</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Lists</a>
+<ul class="dropdown-menu">
+<li><a>Products</a></li>
+<li><a href="/VcfProducts.cfm"><i class="icon-chevron-right icon-white"></i> Product list</a></li>
+<li><a>Compounds</a></li>
+<li><a href="/VcfCompounds.cfm"><i class="icon-chevron-right icon-white"></i> VCF compounds</a></li>
+<li><a href="/VcfCompounds.cfm?FEMAGRAS"><i class="icon-chevron-right icon-white"></i> FEMA(GRAS 30)</a></li>
+<li><a href="/VcfCompounds.cfm?Flavis"><i class="icon-chevron-right icon-white"></i> Flavis(EU-Flavis database)</a></li>
+<li><a>Odour/flavour compounds</a></li>
+<li><a href="OFTVCompounds.cfm"><i class="icon-chevron-right icon-white"></i> Odour/flavour lists</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Usage guide</a>
+<ul class="dropdown-menu">
+<li><a>Search options</a></li>
+<li><a href="/VcfGuide.cfm?title=What information"><i class="icon-chevron-right icon-white"></i> What information can be found?</a></li>
+<li><a href="/VcfGuide.cfm?title=Guide to searches"><i class="icon-chevron-right icon-white"></i> Guide to searches</a></li>
+<li><a href="/VcfGuide.cfm?title=Search within"><i class="icon-chevron-right icon-white"></i> Search within results</a></li>
+<li><a href="/VcfGuide.cfm?title=Product compare"><i class="icon-chevron-right icon-white"></i> Product compare</a></li>
+<li><a>VCF version</a></li>
+<li><a href="/VcfGuide.cfm?title=What is new"><i class="icon-chevron-right icon-white"></i> What is new in VCF 16.10?</a></li>
+<li><a href="/VcfGuide.cfm?title=Overview of VCF"><i class="icon-chevron-right icon-white"></i> Overview VCF releases</a></li>
+<li><a href="/VcfGuide.cfm?title=Explanation of terms"><i class="icon-chevron-right icon-white"></i> Explanation of terms</a></li>
+<li><a href="/VcfExamples.cfm"><i class="icon-chevron-right icon-white"></i> Examples</a></li>
+<li><a>References</a></li>
+<li><a href="/VcfGuide.cfm?title=preface"><i class="icon-chevron-right icon-white"></i> Preface</a></li>
+<li><a href="/VcfGuide.cfm?title=Bibliographic"><i class="icon-chevron-right icon-white"></i> Bibliographic reference</a></li>
+<li><a href="/VcfGuide.cfm?title=Privacy policy"><i class="icon-chevron-right icon-white"></i> Privacy policy</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
+<ul class="dropdown-menu">
+<li><a href="/VcfSelectSubscription.cfm"><i class="icon-chevron-right icon-white"></i> Subscribe</a></li>
+<li><a href="/VcfAssist.cfm"><i class="icon-chevron-right icon-white"></i> Password assistance</a></li>
+<li><a href="/VcfMailform.cfm"><i class="icon-chevron-right icon-white"></i> Mail us</a></li>
+<li><a href="/VcfLinks.cfm"><i class="icon-chevron-right icon-white"></i> Links</a></li>
+<li><a href="/VcfPromo.cfm"><i class="icon-chevron-right icon-white"></i> Promo</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end .header -->
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<ul class="breadcrumb">
+<li><a href="/VcfHome.cfm">Home</a> <span class="divider">/</span></li>
+<li><a href="/VcfCompounds.cfm">Compound groups</a> <span class="divider">/</span></li>
+<li class="active">Compound group list</li>
+</ul>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span10 offset1">
+<div class="span8 offset0">
+<h4>VCF volatile compounds list</h4>
+<strong>List of volatile compounds in food in the VCF database</strong>
+<br />Login is needed for detail information. Partial information is available for guest logins.
+<p><strong>397 compounds
+in volatile group 'Furans'.</strong><br />
+</p>
+</div>
+<div class="span3">
+<a href="/VcfCompounds.cfm?" class="btn"><i class="icon icon-step-backward"></i> Return to group lists </a>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<table class="table-striped table-condensed datatable">
+<tr>
+<th>&nbsp;</th>
+<th class="rechts nowrap">CAS</th>
+<th>&nbsp;</th>
+<th>Compound name</th>
+<th>
+<button name="SearchTips" type="button" value="Flags" class="btn"
+onClick="window.open('VcfGuideContent.cfm?title=Compound flags', 'VCFguide',
+'resizable=yes,scrollbars=yes,menubar=no,status=no,titlebar=no,toolbar=no,width=450,height=400');
+return false" >
+<i class="icon icon-flag"></i> Compound<br>flags </button>
+</th>
+</tr>
+<tr>
+<td class="rechts top">1.&nbsp;</td>
+<td class="rechts nowrap top">109-99-9</td>
+<td>&nbsp;</td>
+<td>tetrahydrofuran (=oxolane)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">2.&nbsp;</td>
+<td class="rechts nowrap top">96-47-9</td>
+<td>&nbsp;</td>
+<td>2-methyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">3.&nbsp;</td>
+<td class="rechts nowrap top">104188-15-0</td>
+<td>&nbsp;</td>
+<td>2,5-diethenyl-2-methyltetrahydrofuran</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">4.&nbsp;</td>
+<td class="rechts nowrap top">1004-29-1</td>
+<td>&nbsp;</td>
+<td>2-butyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">5.&nbsp;</td>
+<td class="rechts nowrap top">1003-38-9</td>
+<td>&nbsp;</td>
+<td>2,5-dimethyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">6.&nbsp;</td>
+<td class="rechts nowrap top">41239-48-9</td>
+<td>&nbsp;</td>
+<td>2,5-diethyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">7.&nbsp;</td>
+<td class="rechts nowrap top">5921-97-1</td>
+<td>&nbsp;</td>
+<td>cis-2,5-diethyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">8.&nbsp;</td>
+<td class="rechts nowrap top">32101-31-8</td>
+<td>&nbsp;</td>
+<td>trans-2,5-diethyltetrahydrofuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">9.&nbsp;</td>
+<td class="rechts nowrap top">89103-56-0</td>
+<td>&nbsp;</td>
+<td>cis-marmelo oxide</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">10.&nbsp;</td>
+<td class="rechts nowrap top">92343-93-6</td>
+<td>&nbsp;</td>
+<td>trans-marmelo oxide</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">11.&nbsp;</td>
+<td class="rechts nowrap top">79925-89-6</td>
+<td>&nbsp;</td>
+<td>2-[1(E),3(E)-hexadienyl]-5-methyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">12.&nbsp;</td>
+<td class="rechts nowrap top">29848-44-0</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-2-methyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">13.&nbsp;</td>
+<td class="rechts nowrap top">696-59-3</td>
+<td>&nbsp;</td>
+<td>2,5-dimethoxytetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">14.&nbsp;</td>
+<td class="rechts nowrap top">78053-99-3</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-5-pentyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">15.&nbsp;</td>
+<td class="rechts nowrap top">78054-00-9</td>
+<td>&nbsp;</td>
+<td>2-ethoxy-5-pentyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">16.&nbsp;</td>
+<td class="rechts nowrap top">78054-01-0</td>
+<td>&nbsp;</td>
+<td>2-pentoxy-5-pentyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">17.&nbsp;</td>
+<td class="rechts nowrap top">78054-02-1</td>
+<td>&nbsp;</td>
+<td>2-hexoxy-5-pentyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">18.&nbsp;</td>
+<td class="rechts nowrap top">78054-03-2</td>
+<td>&nbsp;</td>
+<td>2-octoxy-5-pentyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">19.&nbsp;</td>
+<td class="rechts nowrap top">78054-04-3</td>
+<td>&nbsp;</td>
+<td>2-nonoxy-5-pentyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">20.&nbsp;</td>
+<td class="rechts nowrap top">78054-10-1</td>
+<td>&nbsp;</td>
+<td>(Z)-2-(2-nonenoxy)-5-pentyl-tetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">21.&nbsp;</td>
+<td class="rechts nowrap top">78054-05-4</td>
+<td>&nbsp;</td>
+<td>(Z)-2-(3-nonenoxy)-5-pentyl-tetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">22.&nbsp;</td>
+<td class="rechts nowrap top">78054-11-2</td>
+<td>&nbsp;</td>
+<td>(Z,Z)-2-(3,6-nonadienoxy)-5-pentyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">23.&nbsp;</td>
+<td class="rechts nowrap top">78054-06-5</td>
+<td>&nbsp;</td>
+<td>2-benzyloxy-5-pentyl-tetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">24.&nbsp;</td>
+<td class="rechts nowrap top">78054-07-6</td>
+<td>&nbsp;</td>
+<td>2-pentyl-5-phenethoxytetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">25.&nbsp;</td>
+<td class="rechts nowrap top">7416-35-5</td>
+<td>&nbsp;</td>
+<td>2,2-dimethyl-5-(1-methyl-1-propenyl)tetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">26.&nbsp;</td>
+<td class="rechts nowrap top">71635-17-1</td>
+<td>&nbsp;</td>
+<td>5-isopropyl-2-methyl-2-vinyltetrahydrofuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">27.&nbsp;</td>
+<td class="rechts nowrap top">89412-77-1</td>
+<td>&nbsp;</td>
+<td>2-(1-hydroxy-1-methylethyl)-5-methyl-5-vinyl-tetrahydrofuran-2-ol</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">28.&nbsp;</td>
+<td class="rechts nowrap top">40478-73-7</td>
+<td>&nbsp;</td>
+<td>5-methyl-5-vinyl-tetrahydrofuran-2-ol (=lavender lactol)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">29.&nbsp;</td>
+<td class="rechts nowrap top">27725-58-2</td>
+<td>&nbsp;</td>
+<td>tetrahydro-3,4-furandiol</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">30.&nbsp;</td>
+<td class="rechts nowrap top">13679-86-2</td>
+<td>&nbsp;</td>
+<td>anhydrolinalool oxide (5)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">31.&nbsp;</td>
+<td class="rechts nowrap top">54750-70-8</td>
+<td>&nbsp;</td>
+<td>(E)-anhydrolinalool oxide (5)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">32.&nbsp;</td>
+<td class="rechts nowrap top">54750-69-5</td>
+<td>&nbsp;</td>
+<td>(Z)-anhydrolinalool oxide (5)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">33.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>dehydrofuranlinalool oxide (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">34.&nbsp;</td>
+<td class="rechts nowrap top">56058-63-0</td>
+<td>&nbsp;</td>
+<td>dihydrolinalool oxide (5)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">35.&nbsp;</td>
+<td class="rechts nowrap top">77939-96-9</td>
+<td>&nbsp;</td>
+<td>cis-dihydrolinalool oxide (5)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">36.&nbsp;</td>
+<td class="rechts nowrap top">77940-00-2</td>
+<td>&nbsp;</td>
+<td>trans-dihydrolinalool oxide (5)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">37.&nbsp;</td>
+<td class="rechts nowrap top">60047-17-8</td>
+<td>&nbsp;</td>
+<td>linalool oxide (5)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">38.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>trimethyl-vinyl-tetrahydrofurfuryl alcohol (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">39.&nbsp;</td>
+<td class="rechts nowrap top">5989-33-3</td>
+<td>&nbsp;</td>
+<td>cis-linalool oxide (5)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">40.&nbsp;</td>
+<td class="rechts nowrap top">23007-29-6</td>
+<td>&nbsp;</td>
+<td>cis-(2S,5R)-linalool oxide (5)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">41.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>cis-(2R,5S)-linalool oxide (5)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">42.&nbsp;</td>
+<td class="rechts nowrap top">34995-77-2</td>
+<td>&nbsp;</td>
+<td>trans-linalool oxide (5)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">43.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>trans-(2S,5S)-linalool oxide (5)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">44.&nbsp;</td>
+<td class="rechts nowrap top">41720-55-2</td>
+<td>&nbsp;</td>
+<td>trans-(2R,5R)-linalool oxide (5)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">45.&nbsp;</td>
+<td class="rechts nowrap top">79238-70-3</td>
+<td>&nbsp;</td>
+<td>(R*,2S,5R)-epoxylinalool oxide B</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">46.&nbsp;</td>
+<td class="rechts nowrap top">79355-26-3</td>
+<td>&nbsp;</td>
+<td>(S*,2S,5R)-epoxylinalool oxide B</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">47.&nbsp;</td>
+<td class="rechts nowrap top">105817-03-6</td>
+<td>&nbsp;</td>
+<td>(R*,2R,5R)-epoxylinalool oxide A</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">48.&nbsp;</td>
+<td class="rechts nowrap top">157008-60-1</td>
+<td>&nbsp;</td>
+<td>(S*,2R,5R)-epoxylinalool oxide A</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">49.&nbsp;</td>
+<td class="rechts nowrap top">56469-39-7</td>
+<td>&nbsp;</td>
+<td>cis-linalool oxide (5), acetate</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">50.&nbsp;</td>
+<td class="rechts nowrap top">56469-40-0</td>
+<td>&nbsp;</td>
+<td>trans-linalool oxide (5), acetate</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">51.&nbsp;</td>
+<td class="rechts nowrap top">79925-88-5</td>
+<td>&nbsp;</td>
+<td>2-cis-(1-(E)-hexenyl)-5-methyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">52.&nbsp;</td>
+<td class="rechts nowrap top">79981-21-8</td>
+<td>&nbsp;</td>
+<td>2-trans-[1-(E)-hexenyl]-5-methyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">53.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-propyldihydrofuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">54.&nbsp;</td>
+<td class="rechts nowrap top">4412-91-3</td>
+<td>&nbsp;</td>
+<td>3-furanmethanol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">55.&nbsp;</td>
+<td class="rechts nowrap top">1191-99-7</td>
+<td>&nbsp;</td>
+<td>2,3-dihydrofuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">56.&nbsp;</td>
+<td class="rechts nowrap top">36312-17-1</td>
+<td>&nbsp;</td>
+<td>dihydrofuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">57.&nbsp;</td>
+<td class="rechts nowrap top">1708-27-6</td>
+<td>&nbsp;</td>
+<td>3-methyl-2,3-dihydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">58.&nbsp;</td>
+<td class="rechts nowrap top">34314-83-5</td>
+<td>&nbsp;</td>
+<td>4-methyl-2,3-dihydrofuran</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">59.&nbsp;</td>
+<td class="rechts nowrap top">56805-32-4</td>
+<td>&nbsp;</td>
+<td>2,3-dihydro-3-(1-methylpropyl)furan</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">60.&nbsp;</td>
+<td class="rechts nowrap top">1708-31-2</td>
+<td>&nbsp;</td>
+<td>3-methyl-2,5-dihydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">61.&nbsp;</td>
+<td class="rechts nowrap top">17108-52-0</td>
+<td>&nbsp;</td>
+<td>2,5-dimethyl-2,3-dihydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">62.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2,3,4,5-tetramethyl-2,3-dihydrofuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">63.&nbsp;</td>
+<td class="rechts nowrap top">81624-01-3</td>
+<td>&nbsp;</td>
+<td>dimethoxydihydrofuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">64.&nbsp;</td>
+<td class="rechts nowrap top">13436-44-7</td>
+<td>&nbsp;</td>
+<td>2-ethoxy-2,5-dihydrofuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">65.&nbsp;</td>
+<td class="rechts nowrap top">871465-49-5</td>
+<td>&nbsp;</td>
+<td>cassyrane</td>
+<td>
+&nbsp;E&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">66.&nbsp;</td>
+<td class="rechts nowrap top">110-00-9</td>
+<td>&nbsp;</td>
+<td>furan</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">67.&nbsp;</td>
+<td class="rechts nowrap top">25414-22-6</td>
+<td>&nbsp;</td>
+<td>2-methoxy-furan</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">68.&nbsp;</td>
+<td class="rechts nowrap top">534-22-5</td>
+<td>&nbsp;</td>
+<td>2-methylfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">69.&nbsp;</td>
+<td class="rechts nowrap top">930-27-8</td>
+<td>&nbsp;</td>
+<td>3-methylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">70.&nbsp;</td>
+<td class="rechts nowrap top">27137-41-3</td>
+<td>&nbsp;</td>
+<td>methylfuran (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">71.&nbsp;</td>
+<td class="rechts nowrap top">3208-16-0</td>
+<td>&nbsp;</td>
+<td>2-ethylfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">72.&nbsp;</td>
+<td class="rechts nowrap top">67363-95-5</td>
+<td>&nbsp;</td>
+<td>3-ethylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">73.&nbsp;</td>
+<td class="rechts nowrap top">27252-25-1</td>
+<td>&nbsp;</td>
+<td>ethylfuran (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">74.&nbsp;</td>
+<td class="rechts nowrap top">1487-18-9</td>
+<td>&nbsp;</td>
+<td>2-vinylfuran</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">75.&nbsp;</td>
+<td class="rechts nowrap top">4229-91-8</td>
+<td>&nbsp;</td>
+<td>2-propylfuran</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">76.&nbsp;</td>
+<td class="rechts nowrap top">42908-61-2</td>
+<td>&nbsp;</td>
+<td>3-propylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">77.&nbsp;</td>
+<td class="rechts nowrap top">10599-59-4</td>
+<td>&nbsp;</td>
+<td>2-isopropylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">78.&nbsp;</td>
+<td class="rechts nowrap top">75135-41-0</td>
+<td>&nbsp;</td>
+<td>2-allylfuran</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">79.&nbsp;</td>
+<td class="rechts nowrap top">10599-55-0</td>
+<td>&nbsp;</td>
+<td>2-propenylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">80.&nbsp;</td>
+<td class="rechts nowrap top">4466-24-4</td>
+<td>&nbsp;</td>
+<td>2-butylfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">81.&nbsp;</td>
+<td class="rechts nowrap top">64079-00-1</td>
+<td>&nbsp;</td>
+<td>butylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">82.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-butenylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">83.&nbsp;</td>
+<td class="rechts nowrap top">55276-11-4</td>
+<td>&nbsp;</td>
+<td>2-isobutenylfuran (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">84.&nbsp;</td>
+<td class="rechts nowrap top">3777-69-3</td>
+<td>&nbsp;</td>
+<td>2-pentylfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">85.&nbsp;</td>
+<td class="rechts nowrap top">64079-01-2</td>
+<td>&nbsp;</td>
+<td>pentylfuran (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">86.&nbsp;</td>
+<td class="rechts nowrap top">15012-77-8</td>
+<td>&nbsp;</td>
+<td>2-isopentylfuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">87.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>isopentylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">88.&nbsp;</td>
+<td class="rechts nowrap top">20992-60-3</td>
+<td>&nbsp;</td>
+<td>(Z)-2-(1-pentenyl)furan</td>
+<td>
+&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">89.&nbsp;</td>
+<td class="rechts nowrap top">20992-69-2</td>
+<td>&nbsp;</td>
+<td>(E)-2-(1-pentenyl)furan</td>
+<td>
+&nbsp;P&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">90.&nbsp;</td>
+<td class="rechts nowrap top">82550-42-3</td>
+<td>&nbsp;</td>
+<td>2-(2-pentenyl)furan</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">91.&nbsp;</td>
+<td class="rechts nowrap top">70424-13-4</td>
+<td>&nbsp;</td>
+<td>(Z)-2-(2-pentenyl)furan</td>
+<td>
+&nbsp;P&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">92.&nbsp;</td>
+<td class="rechts nowrap top">70424-14-5</td>
+<td>&nbsp;</td>
+<td>(E)-2-(2-pentenyl)furan</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">93.&nbsp;</td>
+<td class="rechts nowrap top">3777-70-6</td>
+<td>&nbsp;</td>
+<td>2-hexylfuran</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">94.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>hexylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">95.&nbsp;</td>
+<td class="rechts nowrap top">68062-17-9</td>
+<td>&nbsp;</td>
+<td>2-hexenylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">96.&nbsp;</td>
+<td class="rechts nowrap top">96344-65-9</td>
+<td>&nbsp;</td>
+<td>hexenylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">97.&nbsp;</td>
+<td class="rechts nowrap top">539-52-6</td>
+<td>&nbsp;</td>
+<td>3-(4-methyl-3-pentenyl)furan (=perillene)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">98.&nbsp;</td>
+<td class="rechts nowrap top">3777-71-7</td>
+<td>&nbsp;</td>
+<td>2-heptylfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">99.&nbsp;</td>
+<td class="rechts nowrap top">4179-38-8</td>
+<td>&nbsp;</td>
+<td>2-octylfuran</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">100.&nbsp;</td>
+<td class="rechts nowrap top">83469-85-6</td>
+<td>&nbsp;</td>
+<td>2-decylfuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">101.&nbsp;</td>
+<td class="rechts nowrap top">23262-34-2</td>
+<td>&nbsp;</td>
+<td>dendrolasin</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">102.&nbsp;</td>
+<td class="rechts nowrap top">3710-43-8</td>
+<td>&nbsp;</td>
+<td>2,4-dimethylfuran</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">103.&nbsp;</td>
+<td class="rechts nowrap top">625-86-5</td>
+<td>&nbsp;</td>
+<td>2,5-dimethylfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">104.&nbsp;</td>
+<td class="rechts nowrap top">20843-07-6</td>
+<td>&nbsp;</td>
+<td>3,4-dimethylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">105.&nbsp;</td>
+<td class="rechts nowrap top">28802-49-5</td>
+<td>&nbsp;</td>
+<td>dimethylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">106.&nbsp;</td>
+<td class="rechts nowrap top">13679-46-4</td>
+<td>&nbsp;</td>
+<td>2-(methoxymethyl)furan (=furfuryl methyl ether)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">107.&nbsp;</td>
+<td class="rechts nowrap top">1703-52-2</td>
+<td>&nbsp;</td>
+<td>2-ethyl-5-methylfuran</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">108.&nbsp;</td>
+<td class="rechts nowrap top">10504-13-9</td>
+<td>&nbsp;</td>
+<td>2-methyl-5-vinylfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">109.&nbsp;</td>
+<td class="rechts nowrap top">52559-01-0</td>
+<td>&nbsp;</td>
+<td>3-methyl-2-vinylfuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">110.&nbsp;</td>
+<td class="rechts nowrap top">59417-61-7</td>
+<td>&nbsp;</td>
+<td>4-methyl-2-vinylfuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">111.&nbsp;</td>
+<td class="rechts nowrap top">35942-94-0</td>
+<td>&nbsp;</td>
+<td>2-(hydroxyethyl)-5-methylfuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">112.&nbsp;</td>
+<td class="rechts nowrap top">1456-16-2</td>
+<td>&nbsp;</td>
+<td>2-methyl-5-propylfuran</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">113.&nbsp;</td>
+<td class="rechts nowrap top">106100-52-1</td>
+<td>&nbsp;</td>
+<td>3(or 4)-methyl-2-propylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">114.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>methyl-2-propylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">115.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-methyl-propenylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">116.&nbsp;</td>
+<td class="rechts nowrap top">10504-05-9</td>
+<td>&nbsp;</td>
+<td>2-isopropyl-5-methylfuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">117.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>isopropylmethylfuran (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">118.&nbsp;</td>
+<td class="rechts nowrap top">5555-95-3</td>
+<td>&nbsp;</td>
+<td>2-methyl-5-(1-propenyl)furan</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">119.&nbsp;</td>
+<td class="rechts nowrap top">10504-12-8</td>
+<td>&nbsp;</td>
+<td>(Z)-2-methyl-5-(1-propenyl)furan</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">120.&nbsp;</td>
+<td class="rechts nowrap top">10504-10-6</td>
+<td>&nbsp;</td>
+<td>(E)-2-methyl-5-(1-propenyl)furan</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">121.&nbsp;</td>
+<td class="rechts nowrap top">10599-66-3</td>
+<td>&nbsp;</td>
+<td>2-isopropenyl-5-methylfuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">122.&nbsp;</td>
+<td class="rechts nowrap top">6141-68-0</td>
+<td>&nbsp;</td>
+<td>2-tert-butyl-4-methyl-furan</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">123.&nbsp;</td>
+<td class="rechts nowrap top">42908-62-3</td>
+<td>&nbsp;</td>
+<td>3-methyl-2-pentylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">124.&nbsp;</td>
+<td class="rechts nowrap top">15186-51-3</td>
+<td>&nbsp;</td>
+<td>rose furan</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">125.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-methyl-5-(pentenyl)furan (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">126.&nbsp;</td>
+<td class="rechts nowrap top">5312-82-3</td>
+<td>&nbsp;</td>
+<td>2-hexyl-5-methylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">127.&nbsp;</td>
+<td class="rechts nowrap top">10504-06-0</td>
+<td>&nbsp;</td>
+<td>2,5-diethylfuran</td>
+<td>
+&nbsp;P&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">128.&nbsp;</td>
+<td class="rechts nowrap top">126654-91-9</td>
+<td>&nbsp;</td>
+<td>2-ethyl-5-vinylfuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">129.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>davana furan</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">130.&nbsp;</td>
+<td class="rechts nowrap top">10599-57-2</td>
+<td>&nbsp;</td>
+<td>2,3,4-trimethylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">131.&nbsp;</td>
+<td class="rechts nowrap top">10504-04-8</td>
+<td>&nbsp;</td>
+<td>2,3,5-trimethylfuran</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">132.&nbsp;</td>
+<td class="rechts nowrap top">74430-19-6</td>
+<td>&nbsp;</td>
+<td>trimethylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">133.&nbsp;</td>
+<td class="rechts nowrap top">90024-12-7</td>
+<td>&nbsp;</td>
+<td>ethyl-dimethylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">134.&nbsp;</td>
+<td class="rechts nowrap top">59417-63-9</td>
+<td>&nbsp;</td>
+<td>2,3-dimethyl-5-vinylfuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">135.&nbsp;</td>
+<td class="rechts nowrap top">59417-62-8</td>
+<td>&nbsp;</td>
+<td>3,5-dimethyl-2-vinylfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">136.&nbsp;</td>
+<td class="rechts nowrap top">125972-38-5</td>
+<td>&nbsp;</td>
+<td>dimethyl-2-vinylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">137.&nbsp;</td>
+<td class="rechts nowrap top">13679-41-9</td>
+<td>&nbsp;</td>
+<td>3-phenylfuran</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">138.&nbsp;</td>
+<td class="rechts nowrap top">38890-45-8</td>
+<td>&nbsp;</td>
+<td>phenylfuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">139.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>3-methyl-2-[3-(4-methylphenyl)butyl]furan</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">140.&nbsp;</td>
+<td class="rechts nowrap top">5905-00-0</td>
+<td>&nbsp;</td>
+<td>2,2'-bifuran (=2-(2-furyl)furan, di-(2-furyl))</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">141.&nbsp;</td>
+<td class="rechts nowrap top">17490-66-3</td>
+<td>&nbsp;</td>
+<td>5,5'-dimethyl-2,2'-bifuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">142.&nbsp;</td>
+<td class="rechts nowrap top">27521-86-4</td>
+<td>&nbsp;</td>
+<td>2,3'-bifuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">143.&nbsp;</td>
+<td class="rechts nowrap top">13803-57-1</td>
+<td>&nbsp;</td>
+<td>3,3'-bifuran (=di-(3-furyl))</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">144.&nbsp;</td>
+<td class="rechts nowrap top">37294-47-6</td>
+<td>&nbsp;</td>
+<td>bifuran (unkn.str.) (=difuryl (unkn.str.))</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">145.&nbsp;</td>
+<td class="rechts nowrap top">1197-40-6</td>
+<td>&nbsp;</td>
+<td>2,2'-methylenebisfuran (=2,2-difurylmethane)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">146.&nbsp;</td>
+<td class="rechts nowrap top">107716-11-0</td>
+<td>&nbsp;</td>
+<td>2,3'-methylenebisfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">147.&nbsp;</td>
+<td class="rechts nowrap top">146699-68-5</td>
+<td>&nbsp;</td>
+<td>3,3'-methylenebisfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">148.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>difurylmethane (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">149.&nbsp;</td>
+<td class="rechts nowrap top">18266-93-8</td>
+<td>&nbsp;</td>
+<td>(Z)-2,2'-(vinylene)bisfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">150.&nbsp;</td>
+<td class="rechts nowrap top">1439-19-6</td>
+<td>&nbsp;</td>
+<td>(E)-2,2'-(vinylene)bisfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">151.&nbsp;</td>
+<td class="rechts nowrap top">13678-51-8</td>
+<td>&nbsp;</td>
+<td>5-methyl-2,2'-methylenebisfuran (=(2-furyl)-(5-methylfuryl-2)methane)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">152.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>5-methyl-3,3'-methylenebisfuran</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">153.&nbsp;</td>
+<td class="rechts nowrap top">13679-43-1</td>
+<td>&nbsp;</td>
+<td>5,5'-dimethyl-2,2'-methylenebisfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">154.&nbsp;</td>
+<td class="rechts nowrap top">64280-32-6</td>
+<td>&nbsp;</td>
+<td>2,4-difurfurylfuran</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">155.&nbsp;</td>
+<td class="rechts nowrap top">496-16-2</td>
+<td>&nbsp;</td>
+<td>2,3-dihydrobenzofuran (=coumaran)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">156.&nbsp;</td>
+<td class="rechts nowrap top">1746-11-8</td>
+<td>&nbsp;</td>
+<td>2,3-dihydro-2-methylbenzofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">157.&nbsp;</td>
+<td class="rechts nowrap top">70786-44-6</td>
+<td>&nbsp;</td>
+<td>3,9-epoxy-1-menthene (=2,3,3a,4,5,7a-hexahydro-3,6-dimethylbenzofuran, dill ether)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">158.&nbsp;</td>
+<td class="rechts nowrap top">74410-10-9</td>
+<td>&nbsp;</td>
+<td>(3S,3aS,7aR)-2,3,3a,4,5,7a-hexahydro-3,6-dimethylbenzofuran (=anethofuran, (3S,3aS,7aR)-dill ether)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">159.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(3R,3aR,7aS)-2,3,3a,4,5,7a-hexahydro-3,6-methylbenzofuran (=(3R,3aR,7aS)-dill ether)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">160.&nbsp;</td>
+<td class="rechts nowrap top">13955-48-1</td>
+<td>&nbsp;</td>
+<td>(3R,4S,8R)-3,9-epoxy-1-p-menthene</td>
+<td>
+&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">161.&nbsp;</td>
+<td class="rechts nowrap top">125811-37-2</td>
+<td>&nbsp;</td>
+<td>linden ether</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">162.&nbsp;</td>
+<td class="rechts nowrap top">959304-04-2</td>
+<td>&nbsp;</td>
+<td>octahydro-3,6-bis(methylene)benzofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">163.&nbsp;</td>
+<td class="rechts nowrap top">271-89-6</td>
+<td>&nbsp;</td>
+<td>benzofuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">164.&nbsp;</td>
+<td class="rechts nowrap top">4265-25-2</td>
+<td>&nbsp;</td>
+<td>2-methylbenzofuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">165.&nbsp;</td>
+<td class="rechts nowrap top">17059-52-8</td>
+<td>&nbsp;</td>
+<td>7-methylbenzofuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">166.&nbsp;</td>
+<td class="rechts nowrap top">25586-38-3</td>
+<td>&nbsp;</td>
+<td>methylbenzofuran (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">167.&nbsp;</td>
+<td class="rechts nowrap top">3131-63-3</td>
+<td>&nbsp;</td>
+<td>2-ethylbenzofuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">168.&nbsp;</td>
+<td class="rechts nowrap top">53715-85-8</td>
+<td>&nbsp;</td>
+<td>2,4-dimethylbenzofuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">169.&nbsp;</td>
+<td class="rechts nowrap top">24410-51-3</td>
+<td>&nbsp;</td>
+<td>2,6-dimethylbenzofuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">170.&nbsp;</td>
+<td class="rechts nowrap top">24410-50-2</td>
+<td>&nbsp;</td>
+<td>3,6-dimethylbenzofuran</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">171.&nbsp;</td>
+<td class="rechts nowrap top">28715-26-6</td>
+<td>&nbsp;</td>
+<td>4,7-dimethylbenzofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">172.&nbsp;</td>
+<td class="rechts nowrap top">25586-39-4</td>
+<td>&nbsp;</td>
+<td>dimethylbenzofuran (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">173.&nbsp;</td>
+<td class="rechts nowrap top">7168-85-6</td>
+<td>&nbsp;</td>
+<td>7-methoxybenzofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">174.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(R)-1-(1,3,4,5,6,7-hexahydro-7,7-dimethyl-1-isobenzofuranyl)-2-propanol</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">175.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(S)-1-(1,3,4,5,6,7-hexahydro-7,7-dimethyl-1-isobenzofuranyl)-2-propanol</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">176.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(Z)-3-(tetrahydro-5,5-dimethyl-2-furyl)-2-buten-1-ol</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">177.&nbsp;</td>
+<td class="rechts nowrap top">17092-94-3</td>
+<td>&nbsp;</td>
+<td>actinidol (=2,4,5,7a-tetrahydro-&alpha;,4,4,7a-tetramethyl-2-benzofuranmethanol)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">178.&nbsp;</td>
+<td class="rechts nowrap top">17910-09-7</td>
+<td>&nbsp;</td>
+<td>isofuranogermacrene (=curzerene)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">179.&nbsp;</td>
+<td class="rechts nowrap top">20013-75-6</td>
+<td>&nbsp;</td>
+<td>pyrocurzerenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">180.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>dillfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">181.&nbsp;</td>
+<td class="rechts nowrap top">494-90-6</td>
+<td>&nbsp;</td>
+<td>menthofuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">182.&nbsp;</td>
+<td class="rechts nowrap top">17957-94-7</td>
+<td>&nbsp;</td>
+<td>(R)-(+)-menthofuran</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">183.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>menthofuran oxide</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">184.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>dihydroxymenthofuran oxide (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">185.&nbsp;</td>
+<td class="rechts nowrap top">132-64-9</td>
+<td>&nbsp;</td>
+<td>dibenzofuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">186.&nbsp;</td>
+<td class="rechts nowrap top">98-01-1</td>
+<td>&nbsp;</td>
+<td>2-furfural</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">187.&nbsp;</td>
+<td class="rechts nowrap top">498-60-2</td>
+<td>&nbsp;</td>
+<td>3-furancarbaldehyde (=3-formylfuran, 3-furaldehyde)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">188.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>methylfurfural (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">189.&nbsp;</td>
+<td class="rechts nowrap top">33342-48-2</td>
+<td>&nbsp;</td>
+<td>3-methylfurfural</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">190.&nbsp;</td>
+<td class="rechts nowrap top">33342-49-3</td>
+<td>&nbsp;</td>
+<td>4-methylfurfural</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">191.&nbsp;</td>
+<td class="rechts nowrap top">620-02-0</td>
+<td>&nbsp;</td>
+<td>5-methylfurfural</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">192.&nbsp;</td>
+<td class="rechts nowrap top">23074-10-4</td>
+<td>&nbsp;</td>
+<td>5-ethylfurfural</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">193.&nbsp;</td>
+<td class="rechts nowrap top">68532-62-7</td>
+<td>&nbsp;</td>
+<td>5-pentylfurfural</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">194.&nbsp;</td>
+<td class="rechts nowrap top">21300-07-2</td>
+<td>&nbsp;</td>
+<td>5-methoxyfurfural</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">195.&nbsp;</td>
+<td class="rechts nowrap top">67-47-0</td>
+<td>&nbsp;</td>
+<td>5-(hydroxymethyl)furfural</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">196.&nbsp;</td>
+<td class="rechts nowrap top">79925-83-0</td>
+<td>&nbsp;</td>
+<td>3,5-dimethylfurfural</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">197.&nbsp;</td>
+<td class="rechts nowrap top">106100-49-6</td>
+<td>&nbsp;</td>
+<td>dimethylfurfural (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">198.&nbsp;</td>
+<td class="rechts nowrap top">116557-17-6</td>
+<td>&nbsp;</td>
+<td>3,4,5-trimethyl-2-furfural (=5-trimethylfurfural)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">199.&nbsp;</td>
+<td class="rechts nowrap top">1917-65-3</td>
+<td>&nbsp;</td>
+<td>5-(ethoxymethyl)furfural</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">200.&nbsp;</td>
+<td class="rechts nowrap top">10551-58-3</td>
+<td>&nbsp;</td>
+<td>5-(acetoxymethyl)-furfural</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">201.&nbsp;</td>
+<td class="rechts nowrap top">15022-16-9</td>
+<td>&nbsp;</td>
+<td>2-furanacetaldehyde</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">202.&nbsp;</td>
+<td class="rechts nowrap top">53447-48-6</td>
+<td>&nbsp;</td>
+<td>lilac aldehyde C</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">203.&nbsp;</td>
+<td class="rechts nowrap top">53447-47-5</td>
+<td>&nbsp;</td>
+<td>lilac aldehyde D</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">204.&nbsp;</td>
+<td class="rechts nowrap top">51685-39-3</td>
+<td>&nbsp;</td>
+<td>(+/-)-2-(5-methyl-5-vinyltetrahydrofuran-2-yl)propanal (=lilac aldehyde)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">205.&nbsp;</td>
+<td class="rechts nowrap top">4543-51-5</td>
+<td>&nbsp;</td>
+<td>2-furanpropanal</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">206.&nbsp;</td>
+<td class="rechts nowrap top">623-30-3</td>
+<td>&nbsp;</td>
+<td>3-(2-furyl)-2-propenal</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">207.&nbsp;</td>
+<td class="rechts nowrap top">39511-08-5</td>
+<td>&nbsp;</td>
+<td>(E)-3-(2-furyl)-2-propenal</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">208.&nbsp;</td>
+<td class="rechts nowrap top">874-66-8</td>
+<td>&nbsp;</td>
+<td>3-(2-furyl)-2-methyl-2-propenal</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">209.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(Z)-2-methyl-3-(2-furyl)acrolein</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">210.&nbsp;</td>
+<td class="rechts nowrap top">108576-21-2</td>
+<td>&nbsp;</td>
+<td>(E)-3-(2-furanyl)-2-methyl-2-propenal (= (E)-2-methyl-3-(2-furyl)acrolein )</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">211.&nbsp;</td>
+<td class="rechts nowrap top">5555-90-8</td>
+<td>&nbsp;</td>
+<td>3-(5-methyl-2-furyl)-2-propenal</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">212.&nbsp;</td>
+<td class="rechts nowrap top">79925-84-1</td>
+<td>&nbsp;</td>
+<td>2-(ethoxymethyl)-3-(2-furyl)-2-propenal</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">213.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(Z)-6-(2-furyl)-4-hexenal</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">214.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(E)-6-(2-furyl)-4-hexenal</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">215.&nbsp;</td>
+<td class="rechts nowrap top">823-82-5</td>
+<td>&nbsp;</td>
+<td>2,5-furandicarbaldehyde</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">216.&nbsp;</td>
+<td class="rechts nowrap top">3188-00-9</td>
+<td>&nbsp;</td>
+<td>2-methyldihydro-3(2H)-furanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">217.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>methyldihydro-3(2H)-furanone (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">218.&nbsp;</td>
+<td class="rechts nowrap top">156318-46-6</td>
+<td>&nbsp;</td>
+<td>5-(Z)-(1-octenyl)-2(3H)-dihydrofuranone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">219.&nbsp;</td>
+<td class="rechts nowrap top">5145-01-7</td>
+<td>&nbsp;</td>
+<td>3,5-dimethyldihydro-2(3H)-furanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">220.&nbsp;</td>
+<td class="rechts nowrap top">10230-62-3</td>
+<td>&nbsp;</td>
+<td>2,4-dihydroxy-2,5-dimethyl-3(2H)-furan-3-one</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">221.&nbsp;</td>
+<td class="rechts nowrap top">64026-45-5</td>
+<td>&nbsp;</td>
+<td>2,5-dimethyl-3(2H)-dihydrofuranone</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">222.&nbsp;</td>
+<td class="rechts nowrap top">15833-84-8</td>
+<td>&nbsp;</td>
+<td>4,4-dimethyl-3(2H)-dihydrofuranone</td>
+<td>
+&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">223.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>4,5-dimethyl-(2H,5H)-dihydrofuran-2,3-dione</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">224.&nbsp;</td>
+<td class="rechts nowrap top">25252-64-6</td>
+<td>&nbsp;</td>
+<td>2-acetyltetrahydrofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">225.&nbsp;</td>
+<td class="rechts nowrap top">56469-36-4</td>
+<td>&nbsp;</td>
+<td>trans-arbusculone</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">226.&nbsp;</td>
+<td class="rechts nowrap top">56469-37-5</td>
+<td>&nbsp;</td>
+<td>cis-arbusculone</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">227.&nbsp;</td>
+<td class="rechts nowrap top">497-23-4</td>
+<td>&nbsp;</td>
+<td>2(5H)-furanone (=crotonolactone, 2-buten-4-olide, 4-hydroxy-2-butenoic acid lactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">228.&nbsp;</td>
+<td class="rechts nowrap top">20825-71-2</td>
+<td>&nbsp;</td>
+<td>2(3H)-furanone (=4-hydroxy-3-butenoic acid lactone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">229.&nbsp;</td>
+<td class="rechts nowrap top">35214-62-1</td>
+<td>&nbsp;</td>
+<td>3-methoxy-2(5H)-furanone (=2-methoxy-2-buten-4-olide)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">230.&nbsp;</td>
+<td class="rechts nowrap top">22122-36-7</td>
+<td>&nbsp;</td>
+<td>3-methyl-2(5H)-furanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">231.&nbsp;</td>
+<td class="rechts nowrap top">6124-79-4</td>
+<td>&nbsp;</td>
+<td>4-methyl-2(5H)-furanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">232.&nbsp;</td>
+<td class="rechts nowrap top">591-11-7</td>
+<td>&nbsp;</td>
+<td>5-methyl-2(5H)-furanone (=&beta;-angelica lactone, 4-methyl-2-butenolide)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">233.&nbsp;</td>
+<td class="rechts nowrap top">25414-24-8</td>
+<td>&nbsp;</td>
+<td>3-methyl-2(3H)-furanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">234.&nbsp;</td>
+<td class="rechts nowrap top">591-12-8</td>
+<td>&nbsp;</td>
+<td>5-methyl-2(3H)-furanone (=4-hydroxy-3-pentenoic acid lactone, &alpha;-angelica lactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">235.&nbsp;</td>
+<td class="rechts nowrap top">108-28-1</td>
+<td>&nbsp;</td>
+<td>5-methylene-2(5H)-furanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">236.&nbsp;</td>
+<td class="rechts nowrap top">2313-01-1</td>
+<td>&nbsp;</td>
+<td>5-ethyl-2(3H)-furanone (=4-hydroxy-3-hexenoic acid lactone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">237.&nbsp;</td>
+<td class="rechts nowrap top">2407-43-4</td>
+<td>&nbsp;</td>
+<td>5-ethyl-2(5H)-furanone (=4-ethyl-2-butenolide, 2-hexen-4-olide)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">238.&nbsp;</td>
+<td class="rechts nowrap top">21963-26-8</td>
+<td>&nbsp;</td>
+<td>5-pentyl-2(5H)-furanone (=2-nonen-4-olide, 4-pentyl-2-butenolide)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">239.&nbsp;</td>
+<td class="rechts nowrap top">28664-35-9</td>
+<td>&nbsp;</td>
+<td>sotolone (=3-hydroxy-4,5-dimethyl-2(5H)-furanone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">240.&nbsp;</td>
+<td class="rechts nowrap top">698-10-2</td>
+<td>&nbsp;</td>
+<td>5-ethyl-3-hydroxy-4-methyl-2(5H)-furanone (=abhexone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">241.&nbsp;</td>
+<td class="rechts nowrap top">1575-46-8</td>
+<td>&nbsp;</td>
+<td>3,4-dimethyl-2(5H)-furanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">242.&nbsp;</td>
+<td class="rechts nowrap top">5584-69-0</td>
+<td>&nbsp;</td>
+<td>3,5-dimethyl-2(5H)-furanone</td>
+<td>
+&nbsp;P&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">243.&nbsp;</td>
+<td class="rechts nowrap top">10547-85-0</td>
+<td>&nbsp;</td>
+<td>4,5-dimethyl-2(5H)-furanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">244.&nbsp;</td>
+<td class="rechts nowrap top">20019-64-1</td>
+<td>&nbsp;</td>
+<td>5,5-dimethyl-2(5H)-furanone (=4,4-dimethyl-2-buten-1,4-olide)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">245.&nbsp;</td>
+<td class="rechts nowrap top">95326-09-3</td>
+<td>&nbsp;</td>
+<td>3,4,5-trimethyl-2(3H)-furanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">246.&nbsp;</td>
+<td class="rechts nowrap top">33488-51-6</td>
+<td>&nbsp;</td>
+<td>3,4,5-trimethyl-2(5H)-furanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">247.&nbsp;</td>
+<td class="rechts nowrap top">50598-50-0</td>
+<td>&nbsp;</td>
+<td>3,5,5-trimethyl-2(5H)-furanone</td>
+<td>
+&nbsp;P&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">248.&nbsp;</td>
+<td class="rechts nowrap top">79379-60-5</td>
+<td>&nbsp;</td>
+<td>5-ethyl-3,4-dimethyl-2(5H)-furanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">249.&nbsp;</td>
+<td class="rechts nowrap top">87259-01-6</td>
+<td>&nbsp;</td>
+<td>3,4-dimethyl-5-propyl-2(5H)-furanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">250.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>5-methyl-[2-(furanyl)methyl]- 2(5H)-furanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">251.&nbsp;</td>
+<td class="rechts nowrap top">41763-99-9</td>
+<td>&nbsp;</td>
+<td>2-methyl-3(2H)-furanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">252.&nbsp;</td>
+<td class="rechts nowrap top">3511-32-8</td>
+<td>&nbsp;</td>
+<td>5-methyl-3(2H)-furanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">253.&nbsp;</td>
+<td class="rechts nowrap top">27538-10-9</td>
+<td>&nbsp;</td>
+<td>2-ethyl-4-hydroxy-5-methyl-3(2H)-furanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">254.&nbsp;</td>
+<td class="rechts nowrap top">27538-09-6</td>
+<td>&nbsp;</td>
+<td>5-ethyl-4-hydroxy-2-methyl-3(2H)-furanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">255.&nbsp;</td>
+<td class="rechts nowrap top">37713-48-7</td>
+<td>&nbsp;</td>
+<td>2,4-dimethyl-3(2H)-furanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">256.&nbsp;</td>
+<td class="rechts nowrap top">14400-67-0</td>
+<td>&nbsp;</td>
+<td>2,5-dimethyl-3(2H)-furanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">257.&nbsp;</td>
+<td class="rechts nowrap top">33922-66-6</td>
+<td>&nbsp;</td>
+<td>2-hexyl-5-methyl-3(2H)-furanone</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">258.&nbsp;</td>
+<td class="rechts nowrap top">57877-72-2</td>
+<td>&nbsp;</td>
+<td>5-methyl-2-octyl-3(2H)-furanone</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">259.&nbsp;</td>
+<td class="rechts nowrap top">19322-27-1</td>
+<td>&nbsp;</td>
+<td>norfuraneol (= 4-hydroxy-5-methyl-3(2H)-furanone )</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">260.&nbsp;</td>
+<td class="rechts nowrap top">64880-73-5</td>
+<td>&nbsp;</td>
+<td>2,4,5-trimethyl-3(2H)-furanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">261.&nbsp;</td>
+<td class="rechts nowrap top">3658-77-3</td>
+<td>&nbsp;</td>
+<td>furaneol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">262.&nbsp;</td>
+<td class="rechts nowrap top">131222-82-7</td>
+<td>&nbsp;</td>
+<td>(R)-4-hydroxy-2,5-dimethyl-3(2H)-furanone (=(R)-furaneol)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">263.&nbsp;</td>
+<td class="rechts nowrap top">131222-81-6</td>
+<td>&nbsp;</td>
+<td>(S)-4-hydroxy-2,5-dimethyl-3(2H)-furanone (=(S)-furaneol)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">264.&nbsp;</td>
+<td class="rechts nowrap top">4077-47-8</td>
+<td>&nbsp;</td>
+<td>4-methoxy-2,5-dimethyl-3(2H)-furanone (=mesifurane)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">265.&nbsp;</td>
+<td class="rechts nowrap top">131222-76-9</td>
+<td>&nbsp;</td>
+<td>(R)-4-methoxy-2,5-dimethyl-3(2H)-furanone (=(R)-mesifurane)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">266.&nbsp;</td>
+<td class="rechts nowrap top">131222-75-8</td>
+<td>&nbsp;</td>
+<td>(S)-4-methoxy-2,5-dimethyl-3(2H)-furanone (=(S)-mesifurane)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">267.&nbsp;</td>
+<td class="rechts nowrap top">65330-49-6</td>
+<td>&nbsp;</td>
+<td>4-ethoxy-2,5-dimethyl-3(2H)-furanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">268.&nbsp;</td>
+<td class="rechts nowrap top">17678-20-5</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-2-(hydroxymethyl)-5-methyl-3(2H)-furanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">269.&nbsp;</td>
+<td class="rechts nowrap top">4166-20-5</td>
+<td>&nbsp;</td>
+<td>4-acetoxy-2,5-dimethyl-3(2H)-furanone (=furaneol acetate)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">270.&nbsp;</td>
+<td class="rechts nowrap top">1192-62-7</td>
+<td>&nbsp;</td>
+<td>2-acetylfuran (=2-furyl methyl ketone, 1-(2-furyl)ethanone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">271.&nbsp;</td>
+<td class="rechts nowrap top">14313-09-8</td>
+<td>&nbsp;</td>
+<td>3-acetylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">272.&nbsp;</td>
+<td class="rechts nowrap top">25154-45-4</td>
+<td>&nbsp;</td>
+<td>acetylfuran (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">273.&nbsp;</td>
+<td class="rechts nowrap top">17678-19-2</td>
+<td>&nbsp;</td>
+<td>2-(hydroxyacetyl)furan (=2-furyl hydroxymethyl ketone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">274.&nbsp;</td>
+<td class="rechts nowrap top">33342-43-7</td>
+<td>&nbsp;</td>
+<td>2-acetyl-4-methylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">275.&nbsp;</td>
+<td class="rechts nowrap top">1193-79-9</td>
+<td>&nbsp;</td>
+<td>2-acetyl-5-methylfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">276.&nbsp;</td>
+<td class="rechts nowrap top">24119-98-0</td>
+<td>&nbsp;</td>
+<td>2-acetyl-5-ethylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">277.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-acetyl-5-propylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">278.&nbsp;</td>
+<td class="rechts nowrap top">22940-86-9</td>
+<td>&nbsp;</td>
+<td>2-acetyl-3,5-dimethylfuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">279.&nbsp;</td>
+<td class="rechts nowrap top">73761-44-1</td>
+<td>&nbsp;</td>
+<td>2-acetyl-4,5-dimethylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">280.&nbsp;</td>
+<td class="rechts nowrap top">3420-59-5</td>
+<td>&nbsp;</td>
+<td>2-acetyl-3-hydroxyfuran (=isomaltol)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">281.&nbsp;</td>
+<td class="rechts nowrap top">6975-60-6</td>
+<td>&nbsp;</td>
+<td>2-(2-oxopropyl)furan (=2-acetonylfuran)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">282.&nbsp;</td>
+<td class="rechts nowrap top">3194-15-8</td>
+<td>&nbsp;</td>
+<td>2-propanoylfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">283.&nbsp;</td>
+<td class="rechts nowrap top">25154-46-5</td>
+<td>&nbsp;</td>
+<td>propanoylfuran (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">284.&nbsp;</td>
+<td class="rechts nowrap top">4208-63-3</td>
+<td>&nbsp;</td>
+<td>2-(2-oxobutyl)furan</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">285.&nbsp;</td>
+<td class="rechts nowrap top">699-17-2</td>
+<td>&nbsp;</td>
+<td>2-(3-oxobutyl)furan</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">286.&nbsp;</td>
+<td class="rechts nowrap top">100113-53-9</td>
+<td>&nbsp;</td>
+<td>2-butanoylfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">287.&nbsp;</td>
+<td class="rechts nowrap top">90673-55-5</td>
+<td>&nbsp;</td>
+<td>2-butanoyl-5-methylfuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">288.&nbsp;</td>
+<td class="rechts nowrap top">20895-17-4</td>
+<td>&nbsp;</td>
+<td>2-(2-methylbutanoyl)furan</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">289.&nbsp;</td>
+<td class="rechts nowrap top">64677-61-8</td>
+<td>&nbsp;</td>
+<td>1-(2-furyl)-2-buten-1-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">290.&nbsp;</td>
+<td class="rechts nowrap top">623-15-4</td>
+<td>&nbsp;</td>
+<td>4-(2-furyl)-3-buten-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">291.&nbsp;</td>
+<td class="rechts nowrap top">41438-24-8</td>
+<td>&nbsp;</td>
+<td>(E)-4-(2-furyl)-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">292.&nbsp;</td>
+<td class="rechts nowrap top">23120-57-2</td>
+<td>&nbsp;</td>
+<td>4-(5-methyl-2-furyl)-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">293.&nbsp;</td>
+<td class="rechts nowrap top">13678-70-1</td>
+<td>&nbsp;</td>
+<td>1-(5-methyl-2-furyl)-2-butanone</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">294.&nbsp;</td>
+<td class="rechts nowrap top">13679-56-6</td>
+<td>&nbsp;</td>
+<td>4-(5-methyl-2-furyl)-2-butanone</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">295.&nbsp;</td>
+<td class="rechts nowrap top">488-05-1</td>
+<td>&nbsp;</td>
+<td>elsholtzia ketone</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">296.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>5-pentanoylfurfural</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">297.&nbsp;</td>
+<td class="rechts nowrap top">84099-60-5</td>
+<td>&nbsp;</td>
+<td>5-(2-furyl)-2-pentanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">298.&nbsp;</td>
+<td class="rechts nowrap top">69978-21-8</td>
+<td>&nbsp;</td>
+<td>1-(2-furyl)-3-pentanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">299.&nbsp;</td>
+<td class="rechts nowrap top">770-48-9</td>
+<td>&nbsp;</td>
+<td>1-(2-furyl)-1-penten-3-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">300.&nbsp;</td>
+<td class="rechts nowrap top">80445-58-5</td>
+<td>&nbsp;</td>
+<td>5-(3-furyl)-2-methyl-1-penten-3-one (=lepalone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">301.&nbsp;</td>
+<td class="rechts nowrap top">20894-91-1</td>
+<td>&nbsp;</td>
+<td>1-(2-furyl)-1,2-pentanedione</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">302.&nbsp;</td>
+<td class="rechts nowrap top">52786-29-5</td>
+<td>&nbsp;</td>
+<td>1-(2-furyl)-1,3-pentanedione</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">303.&nbsp;</td>
+<td class="rechts nowrap top">13678-74-5</td>
+<td>&nbsp;</td>
+<td>2-acetonyl-5-methylfuran (=1-(5-methyl-2-furyl)-2-propanone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">304.&nbsp;</td>
+<td class="rechts nowrap top">10599-69-6</td>
+<td>&nbsp;</td>
+<td>2-methyl-5-propanoylfuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">305.&nbsp;</td>
+<td class="rechts nowrap top">106060-94-0</td>
+<td>&nbsp;</td>
+<td>1-(5-methyl-2-furyl)-4-pentanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">306.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-acetyl-5-propanoylfuran</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">307.&nbsp;</td>
+<td class="rechts nowrap top">3194-17-0</td>
+<td>&nbsp;</td>
+<td>2-pentanoylfuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">308.&nbsp;</td>
+<td class="rechts nowrap top">2349-16-8</td>
+<td>&nbsp;</td>
+<td>2-methyl-5-pentanoylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">309.&nbsp;</td>
+<td class="rechts nowrap top">14360-50-0</td>
+<td>&nbsp;</td>
+<td>2-hexanoylfuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">310.&nbsp;</td>
+<td class="rechts nowrap top">55107-03-4</td>
+<td>&nbsp;</td>
+<td>1-(2-furyl)-2-heptanone (=furfuryl pentyl ketone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">311.&nbsp;</td>
+<td class="rechts nowrap top">77822-40-3</td>
+<td>&nbsp;</td>
+<td>(Z)-6-methyl-6-(5-methyl-2-furanyl)-3-hepten-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">312.&nbsp;</td>
+<td class="rechts nowrap top">87487-99-8</td>
+<td>&nbsp;</td>
+<td>1-(2-furyl)-2-octanone (=furfuryl hexyl ketone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">313.&nbsp;</td>
+<td class="rechts nowrap top">1438-92-2</td>
+<td>&nbsp;</td>
+<td>1-(2-furyl)-1,2-propanedione</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">314.&nbsp;</td>
+<td class="rechts nowrap top">1197-20-2</td>
+<td>&nbsp;</td>
+<td>1-(5-methyl-2-furyl)-1,2-propanedione</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">315.&nbsp;</td>
+<td class="rechts nowrap top">1438-90-0</td>
+<td>&nbsp;</td>
+<td>1-(2-furyl)-1,2-butanedione</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">316.&nbsp;</td>
+<td class="rechts nowrap top">97550-04-4</td>
+<td>&nbsp;</td>
+<td>curcumanolide A</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">317.&nbsp;</td>
+<td class="rechts nowrap top">97452-55-6</td>
+<td>&nbsp;</td>
+<td>curcumanolide B</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">318.&nbsp;</td>
+<td class="rechts nowrap top">13678-76-7</td>
+<td>&nbsp;</td>
+<td>1-(5-methyl-2-furyl)-1,2-butanedione</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">319.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>7-(2-furyl)-2,3-heptanedione</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">320.&nbsp;</td>
+<td class="rechts nowrap top">20493-56-5</td>
+<td>&nbsp;</td>
+<td>curzerenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">321.&nbsp;</td>
+<td class="rechts nowrap top">20085-85-2</td>
+<td>&nbsp;</td>
+<td>epicurzerenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">322.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>hydroxyisogermafurenolide</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">323.&nbsp;</td>
+<td class="rechts nowrap top">24268-41-5</td>
+<td>&nbsp;</td>
+<td>furanodienone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">324.&nbsp;</td>
+<td class="rechts nowrap top">24268-42-6</td>
+<td>&nbsp;</td>
+<td>isofuranodienone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">325.&nbsp;</td>
+<td class="rechts nowrap top">20053-66-1</td>
+<td>&nbsp;</td>
+<td>dihydro-&alpha;-agarofuran</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">326.&nbsp;</td>
+<td class="rechts nowrap top">5956-09-2</td>
+<td>&nbsp;</td>
+<td>&beta;-dihydroagarofuran</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">327.&nbsp;</td>
+<td class="rechts nowrap top">150652-94-1</td>
+<td>&nbsp;</td>
+<td>cis-dihydroagarofuran</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">328.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>&beta;-hydroxyatractylon</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">329.&nbsp;</td>
+<td class="rechts nowrap top">97-99-4</td>
+<td>&nbsp;</td>
+<td>tetrahydrofurfuryl alcohol</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">330.&nbsp;</td>
+<td class="rechts nowrap top">123931-60-2</td>
+<td>&nbsp;</td>
+<td>cis-5-methyltetrahydrofurfuryl alcohol</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">331.&nbsp;</td>
+<td class="rechts nowrap top">123931-61-3</td>
+<td>&nbsp;</td>
+<td>trans-5-methyltetrahydrofurfuryl alcohol</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">332.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>&alpha;,&alpha;,5-trimethyltetrahydrofurfuryl alcohol</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">333.&nbsp;</td>
+<td class="rechts nowrap top">98-00-0</td>
+<td>&nbsp;</td>
+<td>furfuryl alcohol (=(2-furyl)-methanol, 2-furanmethanol)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">334.&nbsp;</td>
+<td class="rechts nowrap top">3857-25-8</td>
+<td>&nbsp;</td>
+<td>5-methylfurfuryl alcohol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">335.&nbsp;</td>
+<td class="rechts nowrap top">106188-67-4</td>
+<td>&nbsp;</td>
+<td>4(or 3)-methylfurfuryl alcohol (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">336.&nbsp;</td>
+<td class="rechts nowrap top">30478-77-4</td>
+<td>&nbsp;</td>
+<td>&alpha;-butylfurfuryl alcohol</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">337.&nbsp;</td>
+<td class="rechts nowrap top">14294-62-3</td>
+<td>&nbsp;</td>
+<td>&alpha;-pentylfurfuryl alcohol</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">338.&nbsp;</td>
+<td class="rechts nowrap top">1883-75-6</td>
+<td>&nbsp;</td>
+<td>2,5-bis(hydroxymethyl)furan</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">339.&nbsp;</td>
+<td class="rechts nowrap top">35942-95-1</td>
+<td>&nbsp;</td>
+<td>2-furanethanol (=2-(2-furyl)ethanol)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">340.&nbsp;</td>
+<td class="rechts nowrap top">35997-39-8</td>
+<td>&nbsp;</td>
+<td>lilac alcohol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">341.&nbsp;</td>
+<td class="rechts nowrap top">4225-35-8</td>
+<td>&nbsp;</td>
+<td>4,6-dimethoxy-3(2H)-benzofuranone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">342.&nbsp;</td>
+<td class="rechts nowrap top">13714-86-8</td>
+<td>&nbsp;</td>
+<td>5-methyl-2-furancarbonitrile (=2-cyano-5-methylfuran)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">343.&nbsp;</td>
+<td class="rechts nowrap top">88-14-2</td>
+<td>&nbsp;</td>
+<td>2-furancarboxylic acid (=2-furoic acid)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">344.&nbsp;</td>
+<td class="rechts nowrap top">488-93-7</td>
+<td>&nbsp;</td>
+<td>3-furancarboxylic acid (=3-furoic acid)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">345.&nbsp;</td>
+<td class="rechts nowrap top">26447-28-9</td>
+<td>&nbsp;</td>
+<td>furancarboxylic acid (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">346.&nbsp;</td>
+<td class="rechts nowrap top">1917-15-3</td>
+<td>&nbsp;</td>
+<td>5-methyl-2-furancarboxylic acid</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">347.&nbsp;</td>
+<td class="rechts nowrap top">27609-57-0</td>
+<td>&nbsp;</td>
+<td>2-furanoctanoic acid</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">348.&nbsp;</td>
+<td class="rechts nowrap top">3387-26-6</td>
+<td>&nbsp;</td>
+<td>3,4-furandicarboxylic acid</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">349.&nbsp;</td>
+<td class="rechts nowrap top">611-13-2</td>
+<td>&nbsp;</td>
+<td>methyl 2-furancarboxylate</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">350.&nbsp;</td>
+<td class="rechts nowrap top">76448-73-2</td>
+<td>&nbsp;</td>
+<td>ethyl 5-(hydroxymethyl)furan-2-carboxylate</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">351.&nbsp;</td>
+<td class="rechts nowrap top">614-99-3</td>
+<td>&nbsp;</td>
+<td>ethyl 2-furancarboxylate (=ethyl 2-furoate)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">352.&nbsp;</td>
+<td class="rechts nowrap top">1334-76-5</td>
+<td>&nbsp;</td>
+<td>methyl furancarboxylate (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">353.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>ethyl furancarboxylate (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">354.&nbsp;</td>
+<td class="rechts nowrap top">4208-49-5</td>
+<td>&nbsp;</td>
+<td>allyl 2-furancarboxylate (=allyl pyromucatate)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">355.&nbsp;</td>
+<td class="rechts nowrap top">583-33-5</td>
+<td>&nbsp;</td>
+<td>butyl 2-furancarboxylate</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">356.&nbsp;</td>
+<td class="rechts nowrap top">20279-53-2</td>
+<td>&nbsp;</td>
+<td>isobutyl 2-furancarboxylate</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">357.&nbsp;</td>
+<td class="rechts nowrap top">615-12-3</td>
+<td>&nbsp;</td>
+<td>isopentyl 2-furancarboxylate</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">358.&nbsp;</td>
+<td class="rechts nowrap top">39251-86-0</td>
+<td>&nbsp;</td>
+<td>hexyl 2-furancarboxylate (=hexyl furoate)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">359.&nbsp;</td>
+<td class="rechts nowrap top">2527-96-0</td>
+<td>&nbsp;</td>
+<td>methyl 5-methyl-2-furancarboxylate</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">360.&nbsp;</td>
+<td class="rechts nowrap top">116181-55-6</td>
+<td>&nbsp;</td>
+<td>&alpha;,5-dimethyl-5-vinylfuranacetic acid (=davana acid)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">361.&nbsp;</td>
+<td class="rechts nowrap top">116627-43-1</td>
+<td>&nbsp;</td>
+<td>3,4-dimethyl-5-pentyl-2-furanpentanoic acid</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">362.&nbsp;</td>
+<td class="rechts nowrap top">92745-17-0</td>
+<td>&nbsp;</td>
+<td>3,4-dimethyl-5-pentyl-2-furanheptanoic acid</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">363.&nbsp;</td>
+<td class="rechts nowrap top">57818-39-0</td>
+<td>&nbsp;</td>
+<td>3-methyl-5-pentyl-2-furannonanoic acid</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">364.&nbsp;</td>
+<td class="rechts nowrap top">57818-40-3</td>
+<td>&nbsp;</td>
+<td>3,4-dimethyl-5-pentyl-2-furannonanoic acid</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">365.&nbsp;</td>
+<td class="rechts nowrap top">57818-37-8</td>
+<td>&nbsp;</td>
+<td>3-methyl-5-pentyl-2-furanundecanoic acid</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">366.&nbsp;</td>
+<td class="rechts nowrap top">57818-36-7</td>
+<td>&nbsp;</td>
+<td>3,4-dimethyl-5-pentyl-2-furanundecanoic acid</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">367.&nbsp;</td>
+<td class="rechts nowrap top">10031-90-0</td>
+<td>&nbsp;</td>
+<td>ethyl 2-furanpropanoate</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">368.&nbsp;</td>
+<td class="rechts nowrap top">623-20-1</td>
+<td>&nbsp;</td>
+<td>ethyl 3-(2-furyl)-2-propenoate</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">369.&nbsp;</td>
+<td class="rechts nowrap top">79925-85-2</td>
+<td>&nbsp;</td>
+<td>isopentyl 3-(2-furyl)-2-propenoate</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">370.&nbsp;</td>
+<td class="rechts nowrap top">13493-97-5</td>
+<td>&nbsp;</td>
+<td>furfuryl formate (=2-furfuryl formate)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">371.&nbsp;</td>
+<td class="rechts nowrap top">623-17-6</td>
+<td>&nbsp;</td>
+<td>furfuryl acetate (=2-furanmethanol acetate)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">372.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>tetrahydro-2-furanmethyl acetate</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">373.&nbsp;</td>
+<td class="rechts nowrap top">623-19-8</td>
+<td>&nbsp;</td>
+<td>furfuryl propanoate</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">374.&nbsp;</td>
+<td class="rechts nowrap top">6270-55-9</td>
+<td>&nbsp;</td>
+<td>furfuryl 2-methylpropanoate</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">375.&nbsp;</td>
+<td class="rechts nowrap top">623-21-2</td>
+<td>&nbsp;</td>
+<td>furfuryl butanoate</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">376.&nbsp;</td>
+<td class="rechts nowrap top">59020-84-7</td>
+<td>&nbsp;</td>
+<td>furfuryl 2-butenoate</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">377.&nbsp;</td>
+<td class="rechts nowrap top">13678-61-0</td>
+<td>&nbsp;</td>
+<td>furfuryl 2-methylbutanoate</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">378.&nbsp;</td>
+<td class="rechts nowrap top">13678-60-9</td>
+<td>&nbsp;</td>
+<td>furfuryl 3-methylbutanoate</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">379.&nbsp;</td>
+<td class="rechts nowrap top">83783-84-0</td>
+<td>&nbsp;</td>
+<td>furfuryl 3-methyl-2-butenoate</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">380.&nbsp;</td>
+<td class="rechts nowrap top">36701-01-6</td>
+<td>&nbsp;</td>
+<td>furfuryl pentanoate</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">381.&nbsp;</td>
+<td class="rechts nowrap top">39252-02-3</td>
+<td>&nbsp;</td>
+<td>furfuryl hexanoate</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">382.&nbsp;</td>
+<td class="rechts nowrap top">13529-27-6</td>
+<td>&nbsp;</td>
+<td>furfural diethyl acetal</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">383.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>furfural, ethyl propyl acetal</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">384.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>furfural, ethyl isobutyl acetal</td>
+<td>
+&nbsp;P&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">385.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>furfural, ethyl 2-methylbutyl acetal</td>
+<td>
+&nbsp;P&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">386.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>furfural, ethyl isopentyl acetal</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">387.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>furfural, isobutyl isopentyl acetal</td>
+<td>
+&nbsp;P&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">388.&nbsp;</td>
+<td class="rechts nowrap top">18091-14-0</td>
+<td>&nbsp;</td>
+<td>furfural, diisopentyl acetal</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">389.&nbsp;</td>
+<td class="rechts nowrap top">6270-56-0</td>
+<td>&nbsp;</td>
+<td>ethyl furfuryl ether (=2-(ethoxymethyl)furan)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">390.&nbsp;</td>
+<td class="rechts nowrap top">35901-19-0</td>
+<td>&nbsp;</td>
+<td>ethyl 5-methylfurfuryl ether</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">391.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-ethoxy-5-methylfuran</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">392.&nbsp;</td>
+<td class="rechts nowrap top">147380-69-6</td>
+<td>&nbsp;</td>
+<td>acetonyl furfuryl ether (=2-furfuryloxyacetone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">393.&nbsp;</td>
+<td class="rechts nowrap top">4437-22-3</td>
+<td>&nbsp;</td>
+<td>difurfuryl ether</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">394.&nbsp;</td>
+<td class="rechts nowrap top">13678-72-3</td>
+<td>&nbsp;</td>
+<td>furfuryl 5-methylfurfuryl ether</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">395.&nbsp;</td>
+<td class="rechts nowrap top">74638-12-3</td>
+<td>&nbsp;</td>
+<td>furosardonine A</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">396.&nbsp;</td>
+<td class="rechts nowrap top">6790-58-5</td>
+<td>&nbsp;</td>
+<td>ambroxide</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">397.&nbsp;</td>
+<td class="rechts nowrap top">3738-00-9</td>
+<td>&nbsp;</td>
+<td>1,5,5,9-Tetramethyl-13-oxatricyclo(8.3.0.0(4,9))tridecane</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span11 offset1">
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<hr />
+</div>
+<div class="span1">
+<a href="#top" class="btn btn-info to-page-top btn-small" title="top of page"><i class="icon-white icon-chevron-up"></i></a>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+See the list of all <a href="/VcfCompounds.cfm?FEMAGRAS">FEMA (GRAS 30)</a> volatile compounds<br />
+See the list of all <a href="/VcfCompounds.cfm?Flavis">Flavis (EU-Flavis database)</a> volatile compounds<br />
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<hr />
+</div>
+<div class="span1">
+<a href="#top" class="btn btn-info to-page-top btn-small" title="top of page"><i class="icon-white icon-chevron-up"></i></a>
+</div>
+</div>
+<!-- end .container -->
+</div>
+<!-- Footer
+================================================== -->
+<footer class="footer">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="footer-content">
+&copy; 1992&mdash;2025&nbsp;BeWiDo BV
+</div>
+</div>
+</div>
+</footer>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/js/vcf.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-39233400-1', 'auto');
+ga('send', 'pageview');
+</script> 
+</body>
+</html>

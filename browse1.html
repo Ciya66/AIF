@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>班级浏览</title>
+    <style>
+        /* 样式：班级标签，表格，分页 */
+        .class-label {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #36A2EB;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .class-label:hover {
+            transform: scale(1.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        .pagination {
+            margin-top: 20px;
+        }
+        .pagination a {
+            margin: 0 5px;
+            padding: 8px 16px;
+            background-color: #36A2EB;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .pagination a:hover {
+            background-color: #FFCE56;
+        }
+    </style>
+</head>
+<body>
+    <h1>班级浏览</h1>
+    <div id="classLabels">
+        <!-- 班级标签 -->
+    </div>
+
+<!--     <table id="scoreTable">
+        <thead>
+            <tr>
+                <th>学生姓名</th>
+                <th>科目</th>
+                <th>成绩</th>
+            </tr>
+        </thead>
+        <tbody> -->
+            <!-- 数据行 -->
+<!--         </tbody>
+    </table>
+ -->
+    <div class="pagination" id="pagination">
+        <!-- 分页按钮 -->
+    </div>
+
+    <script>
+        // 初始化班级标签
+        const classLabels = ['班级A', '班级B', '班级C', '班级D', '班级E', '班级F', '班级G', '班级H'];
+        const labelContainer = document.getElementById('classLabels');
+        classLabels.forEach(className => {
+            const label = document.createElement('div');
+            label.classList.add('class-label');
+            label.textContent = className;
+            label.onclick = () => loadClassData(className, 1);  // 点击加载数据
+            labelContainer.appendChild(label);
+        });
+
+        // 通过AJAX加载数据
+        function loadClassData(className, page) {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', `fetch_scores.php?class=${className}&page=${page}`, true);
+            xhr.onload = function() {
+                if (this.status === 200) {
+                    const data = JSON.parse(this.responseText);
+                    const tbody = document.querySelector('#scoreTable tbody');
+                    tbody.innerHTML = '';  // 清空表格
+
+                    data.scores.forEach(row => {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `<td>${row.student_name}</td><td>${row.subject}</td><td><a href="student_detail.php?id=${row.id}">${row.score}</a></td>`;
+                        tbody.appendChild(tr);
+                    });
+
+                    // 分页
+                    const pagination = document.getElementById('pagination');
+                    pagination.innerHTML = '';
+                    for (let i = 1; i <= data.total_pages; i++) {
+                        const pageLink = document.createElement('a');
+                        pageLink.textContent = i;
+                        pageLink.href = '#';
+                        pageLink.onclick = () => loadClassData(className, i);
+                        pagination.appendChild(pageLink);
+                    }
+                }
+            }
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

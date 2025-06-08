@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIF</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function getQueryParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        
+        function getalldata(){
+            const poultrySpecies = getQueryParameter('Poultry_Species');  // 获取 URL 中的参数
+            console.log(poultrySpecies);
+            fetch(`getalldata.php?Poultry_Species=${poultrySpecies}`)
+                // .then(response => response.text()) 
+                // .then(data => {
+                //     console.log(data);  // 在控制台查看输出
+                // })
+                // .catch(error => {
+                //     console.error('Error fetching data:', error);
+                // });
+                
+                
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    if (data.data.length > 0) {
+                        // 动态生成表头
+                        let table = '<table class="custom-table"><tr>';
+                        data.columns.forEach(col => {
+                            table += `<th>${col}</th>`;
+                        });
+                        table += '</tr>';
+        
+                        // 动态生成表格内容
+                        data.data.forEach(row => {
+                            table += '<tr>';
+                            data.columns.forEach(col => {
+                                table += `<td>${row[col]}</td>`;
+                            });
+                            table += '</tr>';
+                        });
+                        table += '</table>';
+                        document.getElementById('class-data').innerHTML = table;
+                    } else {
+                        document.getElementById('class-data').innerHTML = 'No data found for this category.';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                    document.getElementById('class-data').innerHTML = 'Error loading data.';
+                });
+        }
+        
+        window.onload = getalldata;
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class='logo-title'>
+                <img src='./Fig/Logo.jpg' alt="Logo" class="logo" height="80" width="100">
+                <h1>Database of poultry meat quality</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Browse</a>
+                        <ul>
+                            <li><a href="browse.html"  style="font-size: 10px;">Poultry Species</a></li>
+                            <li><a href="list.html"  style="font-size: 10px;">Volatile Flavor Compounds</a></li>
+                            <li><a href="dmdb_value.php?file=.%2Fdata%2Fmetabolites%2Fmetabolites-2025-04-19.csv&page=1"  style="font-size: 12px;">Metabolites</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="advanced_search.html">Advanced Search</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="upload.html">Submit</a></li>
+                    <li><a href="user_guide.html">User Guide</a></li>
+                    <li><a href="links.html">Link</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <div  id="class-data"></div>
+
+    </main>
+    
+    <br><br><br><br>
+    
+    <footer>
+        <p>&copy; 2024 DPMQ webserver. All rights reserved</p>
+    </footer>
+
+</body>
+</html>
+

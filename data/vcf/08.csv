@@ -1,0 +1,870 @@
+,CAS,,Compound name,Compoundflags
+,CAS,,Compound name,Compound flags
+1.,,,5-(p-Aminophenyl)-4-(o-tolyl)-2-thiazolamine,Q S
+2.,7664-41-7,,ammonia,Q E S O T
+3.,74-89-5,,methanamine (=methylamine),Q E S O T
+4.,51-61-6,,dopamine,S
+5.,75-04-7,,ethanamine (=ethylamine),Q E S T
+6.,557-66-4,,ethylamine hydrochloride,E S T
+7.,121-05-1,,"N,N-bis(1-methylethyl)-1,2-ethanediamine",P S R
+8.,3717-21-3,,4-methoxybenzaldehyde oxime,P S R
+9.,107-10-8,,1-propanamine (=propylamine),Q E S T
+10.,107-11-9,,allylamine,Q E S T
+11.,75-31-0,,2-propanamine (=isopropylamine),Q E S T
+12.,109-73-9,,1-butanamine (=butylamine),Q E S R T
+13.,67-03-8,,thiamine (HCl),Q E T
+14.,78-81-9,,2-methyl-1-propanamine (=isobutylamine),Q E S T
+15.,13952-84-6,,2-butanamine (=sec-butylamine),P E S T
+16.,75-64-9,,2-methyl-2-propanamine (=tert-butylamine ),P E S T
+17.,96-15-1,,2-methyl-1-butanamine (=(2-methylbutyl)amine),P E S T
+18.,110-58-7,,1-pentanamine (=pentylamine),Q E S T
+19.,107-85-7,,3-methyl-1-butanamine (=isopentylamine),Q E S T
+20.,63493-28-7,,2-pentanamine (= 2-pentylamine ),P E S T
+21.,111-26-2,,1-hexanamine (=hexylamine),P E S T
+22.,111-68-2,,1-heptanamine (=heptylamine),P E S T
+23.,111-86-4,,1-octanamine (=octylamine ),P E S T
+24.,112-20-9,,1-nonanamine (=nonylamine),P E S T
+25.,29812-79-1,,1-(aminooxy)decane (=O-decylhydroxylamine ),E S
+26.,124-40-3,,N-methylmethanamine (=dimethylamine),Q E S O T
+27.,506-59-2,,dimethylamine hydrochloride,E T
+28.,624-78-2,,N-methylethanamine (=N-ethylmethylamine),Q E S T
+29.,109-89-7,,N-ethylethanamine (=diethylamine),Q E S T
+30.,627-35-0,,N-methyl-1-propanamine (=N-methylpropylamine),P E S
+31.,20193-20-8,,N-ethyl-1-propanamine (=N-ethyl-1-propanamine),P E S T
+32.,142-84-7,,N-propyl-1-propanamine (=dipropylamine),Q E S T
+33.,108-18-9,,N-isopropyl-2-propanamine (=diisopropylamine),P E S T
+34.,5666-21-7,,N-prop-2-enylpropan-1-amine (=N-allylpropylamine),P E S
+35.,4747-21-1,,N-isopropylmethylamine,P E S
+36.,124-02-7,,diallylamine,P E S T
+37.,110-68-9,,N-butylmethylamine,P E S T
+38.,13360-63-9,,N-butylethylamine,P E S
+39.,20193-21-9,,N-butylpropylamine,P E S
+40.,84005-70-9,,heptylpyrazine,O T
+41.,39099-23-5,,N-butylisopropylamine,P E S
+42.,111-92-2,,dibutylamine,P E S T
+43.,20810-06-4,,N-butylisobutylamine,P E S
+44.,4444-67-1,,N-butyl-sec-butylamine,P E S
+45.,39190-66-4,,N-isobutylpropylamine,P E S
+46.,110-96-3,,diisobutylamine,P E S T
+47.,39190-88-0,,N-sec-butylisobutylamine,P E S
+48.,56951-66-7,,N-tert-butylisobutylamine,P E S
+49.,4432-77-3,,N-tert-butylethylamine,P E S
+50.,17839-26-8,,N-ethylpentylamine,P E S
+51.,39536-61-3,,N-butylpentylamine,P E S
+52.,78579-55-2,,N-isobutylpentylamine,P E S
+53.,81760-10-3,,N-isobutylisopentylamine,P E S
+54.,41781-25-3,,N-sec-butylpentylamine,P E
+55.,4266-04-0,,N-tert-butylpentylamine,P E S
+56.,544-00-3,,diisopentylamine,P E S
+57.,22431-10-3,,N-methyl-sec-pentylamine,P E S
+58.,924-16-3,,N-butyl-N-nitroso-1-butanamine,P S R
+59.,35161-70-7,,N-methylhexylamine,P E S
+60.,20193-23-1,,N-propylhexylamine,P E S
+61.,38202-69-6,,N-butylhexylamine,P E S
+62.,78579-56-3,,N-isobutylhexylamine,P E S
+63.,4307-08-8,,N-tert-butylhexylamine,P E S
+64.,78579-60-9,,N-isopentylhexylamine,P E S
+65.,36343-05-2,,N-methylheptylamine,P E S
+66.,66793-76-8,,N-ethylheptylamine,P E S
+67.,75898-39-4,,N-propylheptylamine,P E S
+68.,90105-56-9,,N-isopropylheptylamine,P E
+69.,90105-57-0,,N-isobutylheptylamine,P E
+70.,78579-52-9,,N-tert-butylheptylamine,P E S
+71.,540-43-2,,N-sec-methylheptylamine,P E S
+72.,83701-03-5,,N-ethyl-sec-heptylamine,P E S
+73.,25513-58-0,,N-isopropyloctylamine,P E S
+74.,81760-14-7,,N-sec-propyloctylamine,P E S
+75.,96892-38-5,,N-ethyl-sec-nonylamine,P E
+76.,75-50-3,,trimethylamine,Q E S R O T
+77.,1184-78-7,,trimethylamine oxide,Q E S
+78.,616-39-7,,"N,N-diethylmethylamine",P E S T
+79.,3405-42-3,,N-methyldipropylamine,P E S
+80.,3405-45-6,,"N,N-dibutylmethylamine",P E S
+81.,76257-73-3,,N-methyldipentylamine,P E S
+82.,598-56-1,,N-ethyldimethylamine,Q E S T
+83.,4458-33-7,,"N,N-dibutylethylamine",P E S
+84.,4458-31-5,,"N,N-diethylpropylamine",P E S
+85.,36874-77-8,,"N,N-dibutylpropylamine",P E S
+86.,996-35-0,,N-isopropyldimethylamine,P E S
+87.,927-62-8,,N-butyldimethylamine,P E S T
+88.,7239-24-9,,N-isobutyldimethylamine,P E S
+89.,4444-71-7,,N-butyldipropylamine,P E S
+90.,13422-60-1,,N-sec-butyldiethylamine,P E S
+91.,60021-88-7,,N-tert-butyldiethylamine,P E S
+92.,2162-91-6,,"N,N-diethylpentylamine",P E S
+93.,96624-60-1,,N-hexyldipropylamine,P E
+94.,5277-11-2,,N-heptyldimethylamine,P E S
+95.,7378-99-6,,"N,N-dimethyloctylamine",P E S
+96.,90105-55-8,,N-nonyldipropylamine,P E
+97.,38917-62-3,,"2(3),5-DIMETHYL-6,7-DIHYDRO-5H-CYCLOPENTAPYRAZINE",P S O
+98.,635-46-1,,"1,2,3,4-tetrahydroquinoline",P S
+99.,121-44-8,,triethylamine,Q E S T
+100.,4444-68-2,,N-butyldiethylamine,P E S
+101.,102-69-2,,tripropylamine,P E S T
+102.,6402-46-6,,N-pentyldipropylamine,P E
+103.,102-82-9,,tributylamine,P E S T
+104.,1116-40-1,,triisobutylamine,E S T
+105.,77144-87-7,,N-(2-methyl-1-propenyl)- (2-methylpropylidene)amine,P E
+106.,62-75-9,,N-nitrosodimethylamine,Q E S R T
+107.,107-15-3,,"1,2-ethanediamine",P E S T
+108.,78-90-0,,"1,2-diaminopropane",P E S T
+109.,109-76-2,,"1,3-propanediamine",P E S T
+110.,110-60-1,,"1,4-butanediamine (=putrescine)",Q E S T
+111.,75634-04-7,,2-chloro-4-(4-methoxyphenyl)pyrimidine,P S
+112.,3529-10-0,,"N,N-dimethyl-1,4-butanediamine",P E S
+113.,16011-97-5,,"N,N'-dimethyl-1,4-butanediamine",P S
+114.,67-48-1,,choline (CL),Q E T
+115.,62-49-7,,choline,
+116.,563-24-6,,glycerylphosphorylcholine,P E S
+117.,462-94-2,,"1,5-pentanediamine (=cadaverine)",Q E S T
+118.,124-09-4,,"1,6-diaminohexane (= 1,6-hexanediamine, hexamethylenediamine)",P E S T
+119.,124-20-9,,"N-(3-aminopropyl)-1,4-butanediamine (=spermidine)",Q E S T
+120.,71-44-3,,"N,N'-bis(3-aminopropyl)-1,4-butanediamine (=spermine)",Q E S T
+121.,1188-37-0,,N-acetylglutamatic acid,E S
+122.,765-30-0,,cyclopropylamine,E S T
+123.,2516-34-9,,cyclobutylamine,E S T
+124.,1003-03-8,,cyclopentylamine,E S T
+125.,108-91-8,,cyclohexylamine,P E S T
+126.,1195-42-2,,N-cyclohexylisopropylamine,P E S
+127.,98-94-2,,"N,N-cyclohexyldimethylamine",P E S
+128.,91-65-6,,"N,N-cyclohexyldiethylamine",P E S
+129.,5452-35-7,,cycloheptylamine,E S T
+130.,62-53-3,,aniline,Q E S R O T
+131.,100-61-8,,N-methylaniline,Q E S R T
+132.,103-69-5,,N-ethylaniline,P E S T
+133.,95-53-4,,2-methylaniline,P E S T
+134.,108-44-1,,3-methylaniline,E S T
+135.,106-49-0,,4-methylaniline,E S T
+136.,26915-12-8,,methylaniline (unkn.str.) (=toluidine (unkn.str.)),Q E
+137.,87-62-7,,"2,6-dimethylaniline",E S R
+138.,121-69-7,,"N,N-dimethylaniline",P E S R T
+139.,90-04-0,,2-methoxyaniline,E S
+140.,100-46-9,,benzylamine,Q E S T
+141.,103-67-3,,N-benzylmethylamine,Q E S
+142.,103-83-3,,N-benzyldimethylamine,P E S T
+143.,123-30-8,,4-aminophenol,P E S
+144.,696-60-6,,(4-hydroxybenzyl)amine,P E S
+145.,64-04-0,,phenethylamine,Q E S
+146.,589-08-2,,N-methylphenethylamine,Q E S
+147.,1126-71-2,,"N,N-dimethylphenethylamine",Q E S
+148.,51-67-2,,2-(4-hydroxyphenyl)ethylamine (=tyramine),Q E S T
+149.,104-14-3,,octopamine (=4-(2-amino-1-hydroxyethyl)phenol),P E S
+150.,329-65-7,,adrenaline,Q E S
+151.,92-67-1,,4-biphenylamine (=p-phenylaniline),P E S
+152.,122-39-4,,diphenylamine (=N-phenylaniline),Q E S R O T
+153.,5650-10-2,,4-isopropyl-N-phenylaniline,P E S
+154.,92195-46-5,,N-(3-methylbutylidene)phenethylamine,Q E S
+155.,3240-95-7,,N-benzylidenephenethylamine,Q E S
+156.,780-25-6,,N-(phenylmethylene)-N-benzylamine,Q E S
+157.,,,N-phenethyl[(2-pyrrolyl)methylene]amine,Q
+158.,,,N-[(5-methyl-2-pyrrolyl)methylene]phenethylamine,Q
+159.,,,N-(2-furfurylidene)phenethylamine,Q
+160.,,,N-(5-methyl-2-furfurylidene)phenethylamine,Q
+161.,555-96-4,,benzylhydrazine,P E S R O
+162.,624-84-0,,formic acid hydrazide,E S
+163.,530-50-7,,"1,1-diphenylhydrazine",P E S
+164.,60-34-4,,methylhydrazine,P S R T
+165.,540-73-8,,"1,2-dimethylhydrazine",Q S R
+166.,85236-72-2,,"4,5-dimethyl-1,3-dioxolane-2-propanamine",P
+167.,306-60-5,,(4-aminobutyl)guanidine (=agmatine),Q E S
+168.,10111-08-7,,2-imidazolecarbaldehyde (=2-formylimidazole),P E S R
+169.,930-52-9,,2-ethyl-2-imidazoline,P E S
+170.,534-26-9,,2-methyl-2-imidazoline,P E S
+171.,51-45-6,,histamine,Q E S T
+172.,5851-43-4,,2-isopropylbenzimidazole,P E S
+173.,503-29-7,,azetidine,E S T
+174.,123-75-1,,pyrrolidine,Q E S R O T
+175.,120-94-5,,1-methylpyrrolidine,P S R T
+176.,7335-06-0,,1-ethylpyrrolidine,P E S R
+177.,767-10-2,,1-butylpyrrolidine,P E S
+178.,58501-92-1,,"3-ethyl-4-methylpyrrolidine-2,5-dione",P E S R
+179.,145398-84-1,,"1-(2,4-decadienoyl)pyrrolidine",P E S R
+180.,117137-69-6,,"(E,E)-1-(2,4-dodecadienoyl)pyrrolidine",P E S R
+181.,145398-91-0,,"1-[5-(1,3-benzodioxol-5-yl)-2-pentenoyl]pyrrolidine",P E R
+182.,25924-78-1,,piperyline,P E S R
+183.,145427-76-5,,"1-[7-(1,3-benzodioxol-5-yl)-6-heptenoyl]pyrrolidine",P E R
+184.,,,"1-[7-(1,3-benzodioxol-5-yl)-heptadienoyl]pyrrolidine (unkn.str.)",P R
+185.,62510-52-5,,"1-[9-(1,3-benzodioxol-5-yl)-8-nonenoyl]pyrrolidine",P E R
+186.,616-45-5,,2-pyrrolidone (=γ-butyrolactam),Q E S R T
+187.,872-50-4,,1-methyl-2-pyrrolidone,Q E S T
+188.,2687-91-4,,1-ethyl-2-pyrrolidone,E S
+189.,3470-99-3,,1-propyl-2-pyrrolidone,P E S
+190.,4030-18-6,,1-acetylpyrrolidine,P E S R
+191.,105-60-2,,6-hexalactam,P E R T
+192.,1121-92-2,,azacyclooctane,E S T
+193.,1121-07-9,,N-methylsuccinimide,P E S R
+194.,2314-78-5,,N-ethylsuccinimide,P S
+195.,15542-96-8,,"N,2-dimethylsuccinimide",P E S
+196.,60169-67-7,,ethyl prolinate,Q E S
+197.,15454-75-8,,2-pyrrolidone-5-carboxylic acid (=pyroglutamic acid),Q E S O T
+198.,,,ethyl 2-pyrrolidone-5-carboxylate,Q S
+199.,5724-81-2,,1-pyrroline,Q E S R T
+200.,109-96-6,,3-pyrroline,E S T
+201.,28350-87-0,,pyrroline (unkn.str.),Q E
+202.,85213-22-5,,2-acetyl-1-pyrroline,Q E S R O T
+203.,133447-37-7,,2-propionylpyrroline,Q E S R O T
+204.,133447-38-8,,2-butanoyl-1-pyrroline,E S R T
+205.,133447-39-9,,2-hexanoyl-1-pyrroline,E S R T
+206.,17825-86-4,,"2,3-dimethylmaleimide",P E S
+207.,20189-42-8,,"2-ethyl-3-methylmaleimide (=3-ethyl-4-methyl-1H-pyrrole-2,5-dione)",Q E S R
+208.,109-97-7,,pyrrole,Q E S R O T
+209.,96-54-8,,1-methylpyrrole,Q E S R T
+210.,636-41-9,,2-methylpyrrole,Q E S R
+211.,27417-39-6,,methylpyrrole (unkn.str.),P
+212.,617-92-5,,1-ethylpyrrole,Q E S R O
+213.,1551-06-0,,2-ethylpyrrole,Q E S
+214.,92933-61-4,,ethylpyrrole (unkn.str.),P
+215.,7057-97-8,,1-propylpyrrole,Q E S
+216.,589-33-3,,1-butylpyrrole,P E S
+217.,1551-10-6,,2-butylpyrrole,P E S
+218.,20884-13-3,,1-isobutylpyrrole,Q E S
+219.,,,2-isobutylpyrrole,P
+220.,,,isobutylpyrrole (unkn.str.),P
+221.,13678-55-2,,1-(2-methylbutyl)pyrrole,Q S
+222.,699-22-9,,1-pentylpyrrole,P E S
+223.,1551-12-8,,2-pentylpyrrole,P E S R
+224.,13679-79-3,,1-isopentylpyrrole,Q E S
+225.,50691-29-7,,1-phenethylpyrrole,Q E
+226.,1438-94-4,,1-furfurylpyrrole,Q E S R O T
+227.,78368-72-6,,1-(3-methylfurfuryl)pyrrole,Q E
+228.,13678-52-9,,1-(5-methylfurfuryl)pyrrole,Q E S T
+229.,600-29-3,,"1,2-dimethylpyrrole",Q E S
+230.,10524-65-9,,"1,3-dimethylpyrrole",Q E S
+231.,600-28-2,,"2,3-dimethyl-1H-pyrrole",P E S
+232.,625-82-1,,"2,4-dimethylpyrrole",Q E S
+233.,625-84-3,,"2,5-dimethylpyrrole",P E S R
+234.,49813-61-8,,dimethylpyrrole (unkn.str.),P
+235.,19983-83-6,,1-ethyl-2-methylpyrrole,Q E S
+236.,616-43-3,,3-methyl-1H-pyrrole,Q S
+237.,13028-51-8,,1-ethyl-3-methylpyrrole,Q E S
+238.,24037-61-4,,2-ethyl-1-methylpyrrole,Q E S
+239.,488-92-6,,3-ethyl-4-methylpyrrole,P E S
+240.,39723-59-6,,ethyl-methylpyrrole (unkn.str.),Q
+241.,24517-26-8,,2-methyl-1-propylpyrrole,Q E S
+242.,71707-51-2,,2-butyl-1-methylpyrrole,P S
+243.,78368-63-5,,1-isobutyl-2-methylpyrrole,Q
+244.,78368-64-6,,1-isobutyl-3-methylpyrrole,Q
+245.,,,3-butenyl-2-methylpyrrole (unkn.str.),Q E O
+246.,78368-65-7,,2-methyl-1-(2-methylbutyl)-pyrrole,Q
+247.,78368-66-8,,3-methyl-1-(2-methylbutyl)-pyrrole,Q
+248.,78368-67-9,,1-isopentyl-2-methylpyrrole,Q E
+249.,78368-68-0,,1-isopentyl-3-methylpyrrole,Q E
+250.,1438-95-5,,1-furfuryl-2-methylpyrrole,Q
+251.,78368-71-5,,1-furfuryl-3-methylpyrrole,Q
+252.,78368-73-7,,2-methyl-1-(5-methylfurfuryl)-pyrrole,Q
+253.,3274-56-4,,"2,4-diphenylpyrrole",P
+254.,930-87-0,,"1,2,5-trimethylpyrrole",P S
+255.,71371-54-5,,trimethylpyrrole (unkn.str.),P
+256.,517-22-6,,"3-ethyl-2,4-dimethylpyrrole",P S
+257.,69687-78-1,,"3-ethyl-2,5-dimethyl-1H-pyrrole",P E S R
+258.,,,ethyldimethylpyrrole (unkn.str.),P
+259.,21407-84-1,,"1-isobutyl-2,5-dimethylpyrrole",Q S
+260.,78368-69-1,,"2,5-dimethyl-1-(2-methylbutyl)-pyrrole",Q
+261.,78368-70-4,,"1-isopentyl-2,5-dimethylpyrrole",Q E
+262.,78368-74-8,,"1-furfuryl-2,3-dimethylpyrrole",Q
+263.,5049-47-8,,"1-furfuryl-2,5-dimethylpyrrole",Q S
+264.,78368-75-9,,2-ethyl-1-furfuryl-5-methylpyrrole,Q
+265.,78368-76-0,,"1-furfuryl-2,3,5-trimethylpyrrole",Q
+266.,22186-60-3,,2-pyrroleethanol,P E S
+267.,24771-28-6,,1-pyrrolecarbaldehyde,E S
+268.,1003-29-8,,2-pyrrolecarbaldehyde (=2-formylpyrrole),Q E S R T
+269.,89145-04-0,,pyrrolecarbaldehyde (unkn.str.) (=formylpyrrole (unkn.str.)),P E
+270.,124647-59-2,,2-methyl-1-pyrrolecarbaldehyde (=1-formyl-2-methylpyrrole),E
+271.,1192-58-1,,1-methyl-2-pyrrolecarbaldehyde (=2-formyl-1-methylpyrrole),Q E S R T
+272.,1192-79-6,,5-methyl-2-pyrrolecarbaldehyde (=2-formyl-5-methylpyrrole),Q E S T
+273.,119738-91-9,,methylpyrrolecarbaldehyde (unkn.str.) (=formyl-methylpyrrole (unkn.str.)),P E
+274.,2167-14-8,,"1-ethyl-2-pyrrolecarbaldehyde (=1-ethyl-2-formylpyrrole, 1-ethylpyrrole-2-aldehyde)",Q E S R T
+275.,,,1-ethylpyrrolecarbaldehyde (unkn.str.) (=1-ethylformyl-pyrrole (unkn.str.)),P
+276.,,,5-vinyl-2-pyrrolecarbaldehyde (=2-formyl-5-vinylpyrrole),
+277.,13678-71-2,,1-(2-methylbutyl)-2-pyrrole-carbaldehyde (=2-formyl-1-(2-methylbutyl)pyrrole),P S
+278.,13678-79-0,,1-isopentyl-2-pyrrolecarbaldehyde (=2-formyl-1-isopentylpyrrole),P E
+279.,35250-62-5,,1-pentyl-2-pyrrolecarbaldehyde (=2-formyl-1-pentylpyrrole),P
+280.,,,1-heptyl-2-pyrrolecarbaldehyde (=2-formyl-1-heptylpyrrole),P
+281.,13788-32-4,,1-furfuryl-2-pyrrolecarbaldehyde (=2-formyl-1-furfurylpyrrole),Q E S R T
+282.,78368-77-1,,1-(5-methylfurfuryl)-2-pyrrolecarbaldehyde,Q
+283.,49795-42-8,,1-phenethyl-2-pyrrolecarbaldehyde (=2-formyl-1-phenethylpyrrole),P S
+284.,1193-59-5,,"1,5-dimethyl-2-pyrrolecarbaldehyde",P E S
+285.,39741-43-0,,1-ethyl-5-methyl-2-pyrrolecarbaldehyde,P
+286.,66054-34-0,,1-isobutyl-5-methyl-2-pyrrolecarbaldehyde,P
+287.,,,5-methyl-1-phenethyl-2-pyrrolecarbaldehyde,P
+288.,634-97-9,,2-pyrrolecarboxylic acid (=pyrrolic acid),P E S T
+289.,2199-43-1,,ethyl 2-pyrrolecarboxylate,S
+290.,609-41-6,,1-acetylpyrrole,Q S
+291.,1072-83-9,,2-acetylpyrrole (=methyl 2-pyrrolyl ketone),Q E S R O T
+292.,1072-82-8,,3-acetylpyrrole,P S
+293.,,,acetylpyrrole (unkn.str.),Q
+294.,38207-11-3,,1-acetyl-2-methylpyrrole,P S
+295.,932-16-1,,2-acetyl-1-methylpyrrole,Q E S R
+296.,6982-72-5,,2-acetyl-5-methylpyrrole,Q S
+297.,106100-50-9,,2-acetyl-4(or 3)-methylpyrrole,P
+298.,39741-41-8,,2-acetyl-1-ethylpyrrole,Q E S R
+299.,5044-31-5,,"1-acetyl-2,5-dimethylpyrrole",P S
+300.,,,2-acetyl-1-pentylpyrrole,P
+301.,13678-73-4,,2-acetyl-1-furfurylpyrrole,Q S
+302.,78369-55-8,,2-acetyl-1-(methylfurfuryl)-pyrrole (unkn.str.),Q
+303.,4805-24-7,,1-acetonylpyrrole,Q E S R T
+304.,59303-16-1,,1-propanoylpyrrole,P
+305.,1073-26-3,,2-propanoylpyrrole,P E S R O
+306.,17180-59-5,,1-methyl-2-propanoylpyrrole,Q S
+307.,98612-19-2,,1-(2-butanoyl)pyrrole,Q E
+308.,1193-62-0,,methyl 2-pyrrolecarboxylate,P S
+309.,13678-77-8,,"1-(1,2-dioxobutyl)pyrrole",P E
+310.,,,2-[5-(hydroxymethyl)-2-formyl-1-pyrrolyl]-3-methylbutanoic acid lactone,P
+311.,,,2-[5-(hydroxymethyl)-2-formyl-1-pyrrolyl]-3-methylpentanoic acid lactone,P
+312.,,,2-[5-(hydroxymethyl)-2-formyl-1-pyrrolyl]-4-methylpentanoic acid lactone,P
+313.,55041-87-7,,"2,3-dihydro-6-methyl-1H-pyrrolizine-5-carbaldehyde",Q S
+314.,55041-85-5,,"5-acetyl-2,3-dihydro-1H-pyrrolizine",Q S R O
+315.,55041-86-6,,"5-acetyl-2,3-dihydro-6-methyl-1H-pyrrolizine",P S
+316.,496-15-1,,indoline,Q E S
+317.,6872-06-6,,2-methylindoline,E S
+318.,120-72-9,,indole,Q E S R O T
+319.,95-20-5,,2-methylindole,P S
+320.,83-34-1,,3-methylindole (=skatole),Q E S R O T
+321.,614-96-0,,5-methylindole,P S
+322.,27323-28-0,,methylindole (unkn.str.),Q
+323.,97542-81-9,,ethylindole (unkn.str.),Q
+324.,1805-65-8,,2-tert-butylindole,Q E S R
+325.,67285-12-5,,3-oxoindole,P S
+326.,61-54-1,,tryptamine,Q E S T
+327.,50-67-9,,serotonine,P S T
+328.,526-55-6,,3-indoleethanol (=tryptophol),Q E S T
+329.,32536-43-9,,indoleacetic acid,P E
+330.,13137-14-9,,3-(2-hydroxyethyl)indole acetate,P E S
+331.,,,"2-acetyl-1,3-dimethylindole",P R
+332.,288-13-1,,pyrazole,P E S T
+333.,930-36-9,,1-methylpyrazole,P E S
+334.,25016-16-4,,4-acetylpyrazole,P E S
+335.,694-48-4,,"1,3-dimethylpyrazole",Q E S R
+336.,5519-42-6,,"3,4,5-trimethylpyrazole",P S
+337.,110-89-4,,piperidine,Q E S T
+338.,626-67-5,,1-methylpiperidine,P E S T
+339.,109-05-7,,2-methylpiperidine,P E S T
+340.,766-09-6,,1-ethylpiperidine,Q T
+341.,2591-86-8,,1-piperidinecarbaldehyde (=1-formylpiperidine),Q E S R O
+342.,618-42-8,,1-acetylpiperidine,Q E S R O
+343.,15932-66-8,,2-piperidineethanamine,P E S
+344.,,,(E)-1-(2-decenoyl)piperidine,P S R O
+345.,42997-42-2,,"(E,E)-1-(2,4-decadienoyl)piperidine",P S R O
+346.,22342-28-5,,1-dodecanoylpiperidine,P S R O
+347.,,,(E)-1-(2-dodecenoyl)piperidine,P R
+348.,147030-06-6,,"(E,E)-1-(2,4-dodecadienoyl)-piperidine",P E S R
+349.,147030-04-4,,(E)-1-(2-tetradecenoyl)piperidine,P S R
+350.,145398-92-1,,(E)-1-(2-hexadecenoyl)piperidine,P S R
+351.,,,1-octadecenoylpiperidine (unkn.str.),P R
+352.,27845-72-3,,(E)-1-cinnamoylpiperidine,P E S R O
+353.,,,(E)-1-[3-(3-methoxy-4-hydroxy-phenyl)-2-propenoyl]piperidine,P E
+354.,,,(E)-1-[3-(3-methoxy-4-hydroxy-phenyl)-2-pentenoyl]piperidine,P
+355.,,,"(E,E)-1-[3-(3-methoxy-4-hydroxy-phenyl)-2,4-pentadienoyl]piperidine",P
+356.,,,"1-[3-(1,3-benzodioxol-5-yl)-2-propenoyl]piperidine",P E R
+357.,23512-46-1,,piperanine (=dihydropiperine),P E S R
+358.,94-62-2,,piperine,Q E S R T
+359.,,,"1-[5-(1,3-benzodioxol-5-yl)-2,4-pentadienoyl]piperidine",
+360.,30511-76-3,,isopiperine,P S
+361.,30505-92-1,,piperoleine A,P E S R
+362.,495-91-0,,chavicine,P E S
+363.,30511-77-4,,isochavicine,P S
+364.,,,"1-[7-(1,3-benzodioxol-5-yl)-heptadienoyl]piperidine (unkn.str.)",P R
+365.,,,dihydropiperettine,P
+366.,583-34-6,,piperettine,Q E S R
+367.,30505-89-6,,piperoleine B,P E S R
+368.,53185-12-9,,"fagomine (=3,4-dihydroxy-2-piperidinemethanol)",P E S
+369.,505-18-0,,"2,3,4,5-tetrahydropyridine",E S T
+370.,694-05-3,,"1,2,3,6-tetrahydropyridine",E S T
+371.,25343-57-1,,"2-acetyl-1,4,5,6-tetrahydropyridine",Q E S R O T
+372.,27300-27-2,,"2-acetyl-3,4,5,6-tetrahydropyridine",Q E S R O T
+373.,,,2-acetyltetrahydropyridine (unkn.str.),Q R O T
+374.,7032-12-4,,3-acetyltetrahydropyridine (unkn.str.),
+375.,110-86-1,,pyridine,Q E S R O T
+376.,109-06-8,,2-methylpyridine (=α-picoline),Q E S R O T
+377.,76541-44-1,,3-(difluoromethyl)pyridine,Q S R
+378.,108-99-6,,3-methylpyridine (=β-picoline),Q E S R
+379.,108-89-4,,4-methylpyridine (=γ-picoline),Q E S
+380.,1333-41-1,,methylpyridine (unkn.str.) (=picoline (unkn.str.)),P E R
+381.,100-71-0,,2-ethylpyridine,Q S R O T
+382.,536-78-7,,3-ethylpyridine,Q E S R
+383.,536-75-4,,4-ethylpyridine,Q S R
+384.,28631-77-8,,ethylpyridine (unkn.str.),P
+385.,1121-55-7,,3-vinylpyridine,P S R
+386.,100-43-6,,4-vinylpyridine,P E S
+387.,1337-81-1,,vinylpyridine (unkn.str.),P
+388.,622-39-9,,2-propylpyridine,Q E S R T
+389.,4673-31-8,,3-propylpyridine,Q S R
+390.,1122-81-2,,4-propylpyridine,Q S R
+391.,65307-84-8,,propylpyridine (unkn.str.),P
+392.,644-98-4,,2-isopropylpyridine,P S
+393.,17755-30-5,,4-isopropenylpyridine,Q E S R O
+394.,5058-19-5,,2-butylpyridine,Q S R T
+395.,539-32-2,,3-butylpyridine,Q S R O
+396.,5335-75-1,,4-butylpyridine,Q S R
+397.,31388-09-7,,butylpyridine (unkn.str.),P
+398.,14159-61-6,,3-isobutylpyridine,P E S
+399.,142505-11-1,,3-(1E)-butenylpyridine,Q S R O
+400.,142505-10-0,,3-(1Z)-1-buten-1-yl-pyridine,Q S R O
+401.,2294-76-0,,2-pentylpyridine,Q E S R O T
+402.,1802-20-6,,3-pentylpyridine,P S R
+403.,65307-85-9,,pentylpyridine (unkn.str.),P
+404.,1129-69-7,,2-Hexylpyridine,P E S R T
+405.,6311-92-8,,3-hexylpyridine,P S R O T
+406.,103037-27-0,,3-heptylpyridine,P S R
+407.,20815-27-4,,2-heptylpyridine,P S R
+408.,58069-37-7,,3-octylpyridine,P S R
+409.,56057-93-3,,2-methyl-5-isopropenylpyridine,P E S R
+410.,710-40-7,,5-hexyl-2-methylpyridine,P S R O
+411.,142-08-5,,2-hydroxypyridine (=2-pyridinol),P E S
+412.,109-00-2,,3-hydroxypyridine,P E S R
+413.,586-98-1,,2-pyridinemethanol,P E S
+414.,7295-76-3,,3-methoxypyridine,Q S
+415.,1008-89-5,,2-phenylpyridine,P S R
+416.,1008-88-4,,3-phenylpyridine,Q S R O
+417.,939-23-1,,4-phenylpyridine,P S R
+418.,583-61-9,,"2,3-dimethylpyridine (=2,3-lutidine)",Q E S R
+419.,108-47-4,,"2,4-dimethylpyridine (=2,4-lutidine)",Q E S R
+420.,589-93-5,,"2,5-dimethylpyridine (=2,5-lutidine)",Q E S
+421.,108-48-5,,"2,6-dimethylpyridine (=2,6-lutidine)",Q E S R T
+422.,583-58-4,,"3,4-dimethylpyridine (=3,4-lutidine)",Q E S T
+423.,591-22-0,,"3,5-dimethylpyridine (=3,5-lutidine)",Q E S T
+424.,27175-64-0,,dimethylpyridine (unkn.str.) (=lutidine (unkn.str.)),P E R
+425.,99794-19-1,,"1,2-dimethyl-4-pyridone",Q E R
+426.,56986-88-0,,2-ethyl-3-methylpyridine,P S
+427.,18113-81-0,,2-ethyl-5-methylpyridine,Q S
+428.,1122-69-6,,2-ethyl-6-methylpyridine,P S
+429.,104-90-5,,5-ethyl-2-methylpyridine,Q E S T
+430.,27987-10-6,,ethyl-methylpyridine (unkn.str.),P
+431.,874-75-9,,2-methyl-5-propylpyridine,P S
+432.,13854-03-0,,4-isopropyl-2-methylpyridine,Q E S R O
+433.,13854-02-9,,4-isopropenyl-2-methylpyridine,Q E R O
+434.,4855-56-5,,2-isopropyl-4-methylpyridine,Q E S R O
+435.,142896-08-0,,2-ethyl-4-isopropenylpyridine,Q E S R O
+436.,5335-76-2,,2-butyl-6-methylpyridine,P S
+437.,702-16-9,,5-butyl-2-methylpyridine,P S
+438.,,,butyl-methylpyridine (unkn.str.),P
+439.,39161-35-8,,2-methyl-5-pentylpyridine,P S
+440.,84625-54-7,,4-methyl-2-pentylpyridine,P S R
+441.,5328-02-9,,2-ethyl-5-pentylpyridine,P S
+442.,142896-10-4,,"2,4-diisopropenylpyridine",Q E S R O
+443.,142505-13-3,,3-(1E)-butenyl-4-propylpyridine,Q R O
+444.,142505-12-2,,3-(1Z)-butenyl-4-propylpyridine,Q R O
+445.,142896-14-8,,(E)-5-(1-butenyl)-2-propylpyridine,Q R O
+446.,142896-13-7,,(Z)-5-(1-butenyl)-2-propylpyridine,Q R O
+447.,,,2-pentyl-6-propylpyridine,P
+448.,1121-78-4,,5-hydroxy-2-methylpyridine (=6-methyl-3-pyridinol),Q E S R
+449.,1121-25-1,,3-hydroxy-2-methylpyridine,Q E S R
+450.,3256-88-0,,2-methyl-5-phenylpyridine,P S R
+451.,,,methyl-3-phenylpyridine (unkn.str.),
+452.,620-95-1,,3-benzylpyridine,Q E S R
+453.,101-82-6,,2-benzylpyridine,Q S
+454.,53911-35-6,,3-phenyl-4-propylpyridine,Q S R O
+455.,81879-87-0,,5-phenyl-2-propylpyridine,Q S R O
+456.,85237-77-0,,2-phenyl-5-propylpyridine,Q S
+457.,108-75-8,,"2,4,6-trimethylpyridine (=s-collidine, γ-collidine)",Q E S R
+458.,29611-84-5,,trimethylpyridine (unkn.str.),Q
+459.,23580-52-1,,"3-ethyl-2,6-dimethylpyridine",P
+460.,,,"2-isobutyl-3,5-diisopropyl-pyridine",P
+461.,7033-69-4,,"3,5-dibutyl-2-pentylpyridine",P E
+462.,504-29-0,,2-aminopyridine,P E S T
+463.,694-85-9,,1-methyl-2-pyridinone,P
+464.,1003-56-1,,3-methyl-2-pyridone,P E
+465.,19006-81-6,,4-phenyl-2-pyridone,
+466.,,,"3-hydroxy-2,4-dimethoxypyridine",
+467.,1121-60-4,,2-pyridinecarbaldehyde,P
+468.,500-22-1,,nicotinaldehyde,P E S R
+469.,872-85-5,,isonicotinaldehyde,P E
+470.,,,3-hydroxy-2-methoxy-4-pyridinecarbaldehyde,
+471.,1122-62-9,,2-acetylpyridine,Q E S R O T
+472.,350-03-8,,3-acetylpyridine,P E S R T
+473.,1122-54-9,,4-acetylpyridine,P E S
+474.,142896-09-1,,2-acetyl-4-isopropylpyridine,Q E S R O
+475.,142896-11-5,,2-acetyl-4-isopropenyl pyridine,Q E S R O
+476.,142896-12-6,,4-acetyl-2-isopropenylpyridine,Q E S R O
+477.,,,"1,2-dihydro-4,4,5(or 6)-trimethyl-3(4H)-pyridinone",P
+478.,,,(1-oxo-2-propenyl)pyridine (unkn.str.),P
+479.,6940-57-4,,2-acetyl-6-methylpyridine,P E O
+480.,78249-87-3,,2-acetyl-methylpyridine (unkn.str.),P
+481.,,,2-acetyl-6-allylpyridine,
+482.,79926-01-5,,"2-acetyl-3,6-dimethylpyridine",P E S
+483.,253-72-5,,"1,6-naphtyridine",P
+484.,1570-48-5,,3-propanoylpyridine,P
+485.,3238-55-9,,2-propanoylpyridine,P E
+486.,59-67-6,,nicotinic acid (=3-pyridinecarboxylic acid),E S T
+487.,32075-31-3,,pyridinecarboxylic acid (unkn.str.),Q
+488.,93-60-7,,methyl nicotinate,Q E S R
+489.,614-18-6,,ethyl nicotinate,Q E S R O T
+490.,6938-06-3,,butyl nicotinate,Q
+491.,50917-69-6,,isopentyl nicotinate,P E
+492.,71653-43-5,,phenethyl nicotinate,P
+493.,553-53-7,,"3-pyridinecarboxylic acid, hydrazide",P E
+494.,54-11-5,,nicotine,Q E S R T
+495.,6302-03-0,,nicotinylacetone,P
+496.,4753-19-9,,4-pyridoxic acid lactone,P E S
+497.,111-49-9,,hexahydro-1H-azepine,P E T
+498.,91-22-5,,quinoline,Q E R T
+499.,119-65-3,,isoquinoline,P E S R
+500.,91-63-4,,2-methylquinoline,P E S
+501.,76180-96-6,,"2-Amino-3-methyl-3H-imidazo[4,5-f]quinoline",E
+502.,77094-11-2,,"2-amino-3,4-dimethylimidazo(4,5-f)quinoline",E
+503.,77500-04-0,,"2-Amino-3,8-dimethylimidazo[4,5-f]quinoxaline",E
+504.,67730-11-4,,"2-Amino-6-methyldipyrido[1,2-a:3',2'-d]imidazole",E
+505.,491-35-0,,4-methylquinoline,Q E S
+506.,91-62-3,,6-methylquinoline,P E S
+507.,611-32-5,,8-methylquinoline,S
+508.,148-24-3,,8-hydroxyquinoline,E S
+509.,612-60-2,,6(or 7)-methylquinoline,P
+510.,27601-00-9,,3(or 4)-methylquinoline,
+511.,64828-52-0,,3-propylquinoline,P
+512.,74808-78-9,,4-butylquinoline,P S
+513.,1198-37-4,,"2,4-dimethylquinoline",P
+514.,1721-89-7,,"2,3-dimethylquinoline",Q R
+515.,877-43-0,,"2,6-dimethylquinoline",P
+516.,13362-80-6,,"4,8-dimethylquinoline",P
+517.,2721-59-7,,2-hydroxy-3-methylquinoline,P
+518.,461-72-3,,"2,4-imidazolidinedione (=hydantoin)",E
+519.,24039-08-5,,"1,3-dimethyl-2,4-imidazolidinedione",P
+520.,71300-02-2,,"3-ethyl-1-methyl-2,4-imidazolidinedione",P
+521.,110-85-0,,piperazine,P E S T
+522.,109-01-3,,1-methylpiperazine,P
+523.,109-07-9,,2-methylpiperazine,P
+524.,25155-35-5,,dimethylpiperazine (unkn.str.),P
+525.,106-55-8,,"2,5-dimethylpiperazine",
+526.,2815-34-1,,"trans-2,5-dimethylpiperazine",P T
+527.,106-58-1,,"N,N-dimethylpiperazine",P S
+528.,290-37-9,,pyrazine,Q E S R O T
+529.,51677-41-9,,"2-azido-2,3,3-trimethylbutane",S R
+530.,109-08-0,,methylpyrazine,Q E S R O T
+531.,13925-00-3,,ethylpyrazine (=2-ethylpyrazine),Q E S R O T
+532.,4177-16-6,,vinylpyrazine,Q E R O T
+533.,18138-03-9,,propylpyrazine,Q E S R O T
+534.,29460-90-0,,isopropylpyrazine,P E S R T
+535.,34413-32-6,,(1-propenyl)pyrazine,P E
+536.,,,(E-1-propenyl)pyrazine,Q R O
+537.,43039-96-9,,allylpyrazine,E S
+538.,38713-41-6,,isopropenylpyrazine,Q E S R
+539.,29460-91-1,,butylpyrazine,P S R O T
+540.,29460-92-2,,2-(2-methylpropyl)pyrazine,E S R T
+541.,124070-52-6,,2-secbutylpyrazine,E S R
+542.,6303-75-9,,pentylpyrazine,Q R O T
+543.,40790-22-5,,isopentylpyrazine,P E S R
+544.,28217-91-6,,hexylpyrazine,S R O T
+545.,110823-72-8,,octylpyrazine,S R O T
+546.,113685-78-2,,decylpyrazine,S O T
+547.,32736-95-1,,(2-furyl)pyrazine,Q R
+548.,5910-89-4,,"2,3-dimethylpyrazine",Q E S R O T
+549.,123-32-0,,"2,5-dimethylpyrazine",Q E S R O T
+550.,108-50-9,,"2,6-dimethylpyrazine",Q E S R O T
+551.,36731-40-5,,"2,5(or 6)-dimethylpyrazine",Q
+552.,25704-73-8,,dimethylpyrazine (unkn.str.),Q
+553.,15707-23-0,,2-ethyl-3-methylpyrazine,Q E S R O T
+554.,13360-64-0,,2-ethyl-5-methylpyrazine,Q E S R O T
+555.,13925-03-6,,2-ethyl-6-methylpyrazine,Q E S R O T
+556.,36731-41-6,,2-ethyl-5(or 6)-methylpyrazine,Q R O
+557.,33504-66-4,,ethyl-methylpyrazine (unkn.str.),P R O
+558.,25058-19-9,,2-methyl-3-vinylpyrazine,P E S R O T
+559.,13925-08-1,,2-methyl-5-vinylpyrazine,Q E S R
+560.,13925-09-2,,2-methyl-6-vinylpyrazine,Q E R O
+561.,35239-43-1,,2-methyl-5(or 6)-vinylpyrazine,Q
+562.,15986-80-8,,2-methyl-3-propylpyrazine,P S R O T
+563.,29461-03-8,,2-methyl-5-propylpyrazine,P S T
+564.,29444-46-0,,2-methyl-6-propylpyrazine,P S R T
+565.,80840-35-3,,methyl-propylpyrazine (unkn.str.),
+566.,15986-81-9,,2-isopropyl-3-methylpyrazine,P E S R T
+567.,13925-05-8,,2-isopropyl-5-methylpyrazine,P E S R O
+568.,24541-74-0,,2-isopropyl-6-methylpyrazine,P E S
+569.,110516-62-6,,isopropyl-methylpyrazine (unkn.str.),P
+570.,18217-82-8,,2-methyl-5-(1-propenyl)pyrazine,P E
+571.,104638-11-1,,2-methyl-6-(1-propenyl)pyrazine,P E S
+572.,108338-91-6,,2-methyl-5(or 6)-(1-propenyl)pyrazine,P
+573.,,,methyl-propenylpyrazine (unkn.str.),P
+574.,80840-36-4,,isopropenyl-methylpyrazine (unkn.str.),P
+575.,15987-00-5,,2-butyl-3-methylpyrazine,Q E S R T
+576.,29461-04-9,,2-butyl-5-methylpyrazine,P E S R T
+577.,32184-46-6,,2-butyl-6-methylpyrazine,P E S R T
+578.,106100-48-5,,butyl-methylpyrazine (unkn.str.),Q
+579.,13925-06-9,,2-isobutyl-3-methylpyrazine,Q E S R T
+580.,29461-05-0,,2-isobutyl-5-methylpyrazine,P E S
+581.,32184-48-8,,2-isobutyl-6-methylpyrazine,P E S
+582.,,,2-isobutenyl-3-methylpyrazine,
+583.,,,2-methyl-3-(2-methylbutyl)pyrazine,P E S
+584.,159664-01-4,,2-methyl-6-(2-methylbutyl)pyrazine,P S
+585.,15987-02-7,,2-methyl-3-pentylpyrazine,P S R
+586.,32737-07-8,,2-methyl-5-pentylpyrazine,P S
+587.,97485-50-2,,pentyl-methylpyrazine (unkn.str.),P
+588.,32737-06-7,,2-isopentyl-3-methylpyrazine,P E S
+589.,144514-05-6,,2-isopentyl-5-methylpyrazine,E S
+590.,91010-41-2,,2-isopentyl-6-methylpyrazine,P E S
+591.,32737-01-2,,2-(2-furyl)-3-methylpyrazine,Q E S
+592.,27610-38-4,,2-(2-furyl)-5-methylpyrazine,Q E S
+593.,32737-03-4,,2-(2-furyl)-6-methylpyrazine,Q E S
+594.,66719-06-0,,2-(2-furyl)-5(or 6)-methylpyrazine,P
+595.,104593-66-0,,(2-furyl)-methylpyrazine (unkn.str.),Q
+596.,54300-16-2,,2-methyl-3-(4-methyl-2-furyl)pyrazine,P E S
+597.,54300-13-9,,2-methyl-3-(5-methyl-2-furyl)pyrazine,P E S
+598.,54300-17-3,,2-methyl-5-(4-methyl-2-furyl)pyrazine,P E S
+599.,54300-14-0,,2-methyl-5-(5-methyl-2-furyl)pyrazine,P E S
+600.,54300-18-4,,2-methyl-6-(4-methyl-2-furyl)pyrazine,P E S
+601.,54300-15-1,,2-methyl-6-(5-methyl-2-furyl)pyrazine,P E S
+602.,,,methyl-(5-methyl-2-furyl)-pyrazine (unkn.str.),
+603.,,,"2-(4,5-dimethyl-2-furyl)-5(or 6)-methylpyrazine (unkn.str.)",P
+604.,,,"2-[3(or 4),5-dimethyl-2-furyl]-5(or 6)-methylpyrazine (unkn.str.)",
+605.,15707-24-1,,"2,3-diethylpyrazine",Q E S R O T
+606.,13238-84-1,,"2,5-diethylpyrazine",Q S R O T
+607.,13067-27-1,,"2,6-diethylpyrazine",Q R O T
+608.,87250-91-7,,diethylpyrazine (unkn.str.),P
+609.,32736-90-6,,2-ethyl-6-vinylpyrazine,P E S
+610.,59094-70-1,,ethyl-vinylpyrazine (unkn.str.),P
+611.,32736-92-8,,2-ethyl-6-propylpyrazine,P S
+612.,38028-76-1,,2-ethyl-5-isopropylpyrazine,P E S
+613.,101510-82-1,,2-ethyl-3-isopropenylpyrazine,Q E S O
+614.,14667-55-1,,trimethylpyrazine,Q E S R O T
+615.,15707-34-3,,"5-ethyl-2,3-dimethylpyrazine",Q E S R O T
+616.,13360-65-1,,"3-ethyl-2,5-dimethylpyrazine",Q E S R O T
+617.,13925-07-0,,"2-ethyl-3,5-dimethylpyrazine",Q E S R O T
+618.,27043-05-6,,"3(or 2)-ethyl-2(or 3),5-dimethylpyrazine",Q E S R O
+619.,71607-73-3,,ethyldimethylpyrazine (unkn.str.),P O
+620.,32741-11-0,,"2-(1,1-dimethylethyl)pyrazine",E S R
+621.,80935-98-4,,"2,5-dimethyl-3-vinylpyrazine",Q E S R O T
+622.,160818-30-4,,"2,3-dimethyl-5-vinylpyrazine",P E S R T
+623.,157615-33-3,,"2-ethenyl-3,5-dimethylpyrazine",Q E S R O T
+624.,81352-79-6,,dimethyl-vinylpyrazine (unkn.str.),Q R
+625.,18433-97-1,,"2,5-dimethyl-3-propylpyrazine",Q E R T
+626.,32262-98-9,,"2,3-dimethyl-5-propylpyrazine",E S R T
+627.,32350-16-6,,"3,5-dimethyl-2-propylpyrazine",Q E R O T
+628.,97485-48-8,,dimethyl-propylpyrazine (unkn.str.),P
+629.,55138-72-2,,"2,3-dimethyl-5-(1Z)-1-propen-1-yl-pyrazine",E S R T
+630.,55138-76-6,,"2,3-dimethyl-5-(1E)-1-propen-1-yl-pyrazine",E S R T
+631.,55138-73-3,,"2,5-dimethyl-3-(1Z)-1-propen-1-yl-pyrazine",E S R T
+632.,55138-77-7,,"2,5-dimethyl-3-(1E)-1-propen-1-yl-pyrazine",E S R T
+633.,55138-74-4,,"3,5-dimethyl-2-(1Z)-1-propen-1-yl-pyrazine",E S R O T
+634.,55138-78-8,,"3,5-dimethyl-2-(1E)-1-propen-1-yl-pyrazine",E S R O T
+635.,55138-68-6,,"2,3-dimethyl-5-(2-propen-1-yl)-pyrazine",E S R T
+636.,55138-69-7,,"2,5-dimethyl-3-(2-propen-1-yl)-pyrazine",E S R T
+637.,55138-70-0,,"3,5-dimethyl-2-(2-propen-1-yl)-pyrazine",E S R O T
+638.,40790-20-3,,"3-isopropyl-2,5-dimethylpyrazine",P E S R T
+639.,40790-21-4,,"2,3-dimethyl-5-(1-methylethyl)-pyrazine",E S R O T
+640.,40790-19-0,,"2-isopropyl-3,5-dimethylpyrazine",P E R O T
+641.,,,isopropyl-dimethylpyrazine (unkn.str.),P
+642.,181589-32-2,,2-ethenyl-3-ethyl-5-methylpyrazine,Q E S R O T
+643.,181589-33-3,,3-ethenyl-2-ethyl-5-methylpyrazine,P E S R O T
+644.,106100-51-0,,ethyl-methyl-vinylpyrazine (unkn.str.),P
+645.,50888-63-6,,"2-butyl-3,5-dimethylpyrazine",Q E R O T
+646.,40790-29-2,,"3-butyl-2,5-dimethylpyrazine",P E R T
+647.,15834-78-3,,"5-butyl-2,3-dimethylpyrazine",P S R T
+648.,97485-49-9,,butyl-dimethylpyrazine (unkn.str.),P
+649.,32263-00-6,,"5-sec-butyl-2,3-dimethylpyrazine",P E S R O T
+650.,70303-41-2,,"3-sec-butyl-2,5-dimethylpyrazine",E S R T
+651.,70303-43-4,,"2-sec-butyl-3,5-dimethylpyrazine",E S R T
+652.,32736-94-0,,"3-isobutyl-2,5-dimethylpyrazine",P E S R T
+653.,70303-42-3,,"2-isobutyl-3,5-dimethylpyrazine",P E S R T
+654.,54410-83-2,,"5-isobutyl-2,3-dimethylpyrazine",P E S R O T
+655.,38888-81-2,,isobutyl-dimethylpyrazine (unkn.str.),Q E S R
+656.,,,isobutenyl-dimethylpyrazine (unkn.str.),
+657.,75492-01-2,,"2,3-dimethyl-5-(2-methylbutyl)pyrazine",P S R O T
+658.,72668-36-1,,"2,5-dimethyl-3-(2-methylbutyl)pyrazine",P S
+659.,56617-70-0,,"3,5-dimethyl-2-(2-methylbutyl)pyrazine",P E S
+660.,50888-62-5,,"3,5-dimethyl-2-pentylpyrazine",P E S R O T
+661.,56617-69-7,,"2,5-dimethyl-3-pentylpyrazine",P E S
+662.,18450-01-6,,"5-isopentyl-2,3-dimethylpyrazine",P E S T
+663.,18433-98-2,,"3-isopentyl-2,5-dimethylpyrazine",Q E S R O
+664.,111150-30-2,,"2-isopentyl-3,5-dimethylpyrazine",P E S
+665.,75492-04-5,,isopentyl-dimethylpyrazine (unkn.str.),P E
+666.,70303-40-1,,"2-hexyl-3,5-dimethylpyrazine",E S R T
+667.,36238-34-3,,"5-(2-furyl)-2,3-dimethylpyrazine",P E S
+668.,54300-12-8,,"3-(2-furyl)-2,5-dimethylpyrazine",P E S
+669.,54300-11-7,,"2-(2-furyl)-3,5-dimethylpyrazine",P E S
+670.,,,(2-furyl)-dimethylpyrazine (unkn.str.),P
+671.,107082-33-7,,2-(5-methyl-2-furfuryl)methylpyrazine,P E S
+672.,18138-04-0,,"2,3-diethyl-5-methylpyrazine",Q E S R O T
+673.,32736-91-7,,"2,5-diethyl-3-methylpyrazine",Q E S R
+674.,18138-05-1,,"3,5-diethyl-2-methylpyrazine",Q E S R O
+675.,39723-60-9,,"2(or 3),5-diethyl-3(or 2)-methylpyrazine",P
+676.,,,diethyl-methylpyrazine (unkn.str.),Q R O
+677.,232255-40-2,,5-ethen-3-yl-ethyl-2-methylpyrazine,E S T
+678.,232255-39-9,,5-ethenyl-2-ethyl-3-methylpyrazine,E S T
+679.,106100-47-4,,ethylmethylpropylpyrazine,P S
+680.,,,ethyl-isobutyl-methylpyrazine (unkn.str.),P
+681.,38028-82-9,,triethylpyrazine,P E S R O T
+682.,,,diethyl-propylpyrazine (unkn.str.),P
+683.,1124-11-4,,tetramethylpyrazine,Q E S R O T
+684.,17398-16-2,,ethyl-trimethylpyrazine,Q E S
+685.,92233-82-4,,trimethyl-propylpyrazine,P E S
+686.,104638-10-0,,isopropyl-trimethylpyrazine,P E S
+687.,10132-38-4,,butyl-trimethylpyrazine,P E S
+688.,46187-37-5,,isobutyl-trimethylpyrazine,P E S R
+689.,18482-80-9,,trimethyl-(2-methylbutyl)pyrazine,P E S R
+690.,10132-42-0,,trimethylpentylpyrazine,P E S
+691.,10132-43-1,,isopentyltrimethylpyrazine,P E S
+692.,106060-96-2,,"2,3-diethyl-5,6-dimethylpyrazine",P S
+693.,18903-30-5,,"2,5-diethyl-3,6-dimethylpyrazine",P S T
+694.,18940-74-4,,"2,6-diethyl-3,5-dimethylpyrazine",P S
+695.,,,diethyl-dimethylpyrazine (unkn.str.),P
+696.,106073-56-7,,triethylmethylpyrazine,P E S
+697.,,,ethyl-dimethyl-vinylpyrazine (unkn.str.),P
+698.,3149-28-8,,methoxypyrazine,Q E S R O T
+699.,85985-30-4,,(1-ethoxyethyl)pyrazine,P E S
+700.,2847-30-5,,2-methoxy-3-methylpyrazine,P E S R O T
+701.,2882-22-6,,2-methoxy-5-methylpyrazine,E S R T
+702.,2882-21-5,,2-methoxy-6-methylpyrazine,Q E S R O T
+703.,19846-22-1,,"3-methoxy-2,5-dimethylpyrazine",P E S R O
+704.,92508-08-2,,"2-methoxy-3,5-dimethylpyrazine",Q E S R O
+705.,1426954-44-0,,"5-methoxy-2,3-dimethylpyrazine",P E S R O
+706.,25680-58-4,,2-ethyl-3-methoxypyrazine,P E S R O T
+707.,25680-57-3,,2-methoxy-3-propylpyrazine,P S R O T
+708.,25773-40-4,,2-isopropyl-3-methoxypyrazine,Q E S R O T
+709.,56891-99-7,,2-isopropyl-5-methoxypyrazine,E T
+710.,32737-11-4,,2-butyl-3-methoxypyrazine,E S R O T
+711.,24683-00-9,,2-isobutyl-3-methoxypyrazine,Q E S R O T
+712.,36330-05-9,,2-isobutyl-5-methoxypyrazine,E S T
+713.,24168-70-5,,2-(sec-butyl)-3-methoxypyrazine,Q E S R O T
+714.,124151-14-0,,(R)-(-)-2-sec-butyl-3-methoxypyrazine,T
+715.,124150-13-9,,(S)-(+)-2-sec-butyl-3-methoxypyrazine,T
+716.,115652-10-3,,3-(2-methylbutyl)-2-methoxypyrazine,E S R O T
+717.,32737-13-6,,3-isopentyl-2-methoxypyrazine,E S R T
+718.,32737-12-5,,2-methoxy-3-pentylpyrazine,Q E S R O T
+719.,115652-13-6,,(E)-3-(3-pentenyl)-2-methoxypyrazine,R O T
+720.,115652-14-7,,(Z)-3-(3-pentenyl)-2-methoxypyrazine,S R O T
+721.,115652-12-5,,3-(4-pentenyl)-2-methoxypyrazine,E S R O T
+722.,25680-56-2,,3-hexyl-2-methoxypyrazine,E S R O T
+723.,115652-11-4,,3-(2-methylpentyl)-2-methoxypyrazine,E S R O T
+724.,68844-95-1,,3-isohexyl-2-methoxypyrazine,E S R O T
+725.,113685-79-3,,2-heptyl-3-methoxypyrazine,E R O T
+726.,113685-80-6,,2-octyl-3-methoxypyrazine,E R O T
+727.,113685-81-7,,2-decyl-3-methoxypyrazine,E R O T
+728.,,,benzyl-methoxypyrazine (unkn.str.),
+729.,57674-19-8,,3-benzyl-2-methoxypyrazine,E S T
+730.,38028-67-0,,ethoxypyrazine,S R O T
+731.,32737-14-7,,2-ethoxy-3-methylpyrazine,E S R O T
+732.,67845-34-5,,2-ethoxy-5-methylpyrazine,E S R T
+733.,53163-97-6,,2-ethoxy-6-methylpyrazine,E S R T
+734.,35243-43-7,,2-ethoxy-3-ethylpyrazine,E R O T
+735.,72797-16-1,,2-ethoxy-3-isopropylpyrazine,P E S R
+736.,113685-82-8,,2-ethoxy-3-pentylpyrazine,E S R O T
+737.,113685-83-9,,2-ethoxy-3-octylpyrazine,E R O T
+738.,113685-84-0,,2-ethoxy-3-decylpyrazine,E R O T
+739.,38346-76-8,,2-methoxy-3-methyl-5-(1-methylethyl)pyrazine,E O T
+740.,56343-37-4,,2-isopropyl-3-methoxy-5-methylpyrazine,E T
+741.,99784-13-1,,5-sec-butyl-2-methoxy-3-methylpyrazine,E S O T
+742.,78246-20-5,,5-isobutyl-2-methoxy-3-methylpyrazine,E S O T
+743.,78246-21-6,,2-methoxy-3-methyl-5-(2-methylbutyl)pyrazine,O T
+744.,78261-14-0,,2-methoxy-3-methyl-5-(2-methylpentyl)pyrazine,O T
+745.,99784-14-2,,2-ethoxy-3-methyl-5-(1-methylethyl)pyrazine,E S O T
+746.,99784-15-3,,5-sec-butyl-2-ethoxy-3-methylpyrazine,E S O T
+747.,78246-14-7,,2-ethoxy-3-methyl-5-(2-methylpropyl)pyrazine,E S O T
+748.,99784-16-4,,2-ethoxy-3-methyl-5-(2-methylbutyl)pyrazine,S O T
+749.,99784-17-5,,2-ethoxy-3-methyl-5-(2-methylpentyl)pyrazine,S O T
+750.,85985-31-5,,2-(1-ethoxyethyl)-5-methylpyrazine,P S
+751.,32021-41-3,,2-isopropyl-3-methoxy-6-methylpyrazine,P E S T
+752.,33870-83-6,,"2,5-dimethoxy-3,6-dimethylpyrazine",T
+753.,56343-38-5,,"2-isopropyl-3,6-dimethoxy-5-methylpyrazine",E T
+754.,32021-42-4,,"2-isopropyl-3,5-dimethoxy-6-methylpyrazine",E T
+755.,56343-39-6,,"2,5-diisopropyl-3,6-dimethoxypyrazine",E T
+756.,67845-28-7,,2-methyl-6-propoxypyrazine,E S R
+757.,94089-22-2,,2-isopropoxy-3-methylpyrazine,E S
+758.,70090-29-8,,2-(1-methylpropoxy)pyrazine,O T
+759.,127053-61-6,,(D)-(1-methylpropoxy)pyrazine,E T
+760.,127053-62-7,,(L)-(1-methylpropoxy)pyrazine,E T
+761.,127053-57-0,,2-(1-methylbutoxy)pyrazine,O T
+762.,127127-40-6,,(D)-(1-methylbutoxy)pyrazine,E T
+763.,127127-41-7,,(L)-(1-methylbutoxy)pyrazine,E T
+764.,127053-58-1,,2-(1-methylhexoxy)pyrazine,O T
+765.,127127-42-8,,(D)-(1-methylhexoxy)pyrazine,E T
+766.,127127-43-9,,(L)-(1-methylhexoxy)pyrazine,E T
+767.,127053-59-2,,2-(1-methylheptoxy)pyrazine,E O T
+768.,127127-44-0,,(D)-(1-methylheptoxy)pyrazine,E T
+769.,127127-45-1,,(L)-(1-methylheptoxy)pyrazine,E T
+770.,,,geranyloxymethylpyrazine,E T
+771.,56892-00-3,,3-geranyloxy-2-methylpyrazine,E T
+772.,56891-95-3,,5-geranyloxy-2-methylpyrazine,E T
+773.,107697-82-5,,phenoxypyrazine,S R O T
+774.,91137-78-9,,2-methyl-3-phenoxypyrazine,E S R O T
+775.,113685-85-1,,2-pentyl-3-phenoxypyrazine,E S R O T
+776.,113685-86-2,,2-decyl-3-phenoxypyrazine,E O T
+777.,99784-18-6,,3-methyl-5-(1-methylethyl)-2-phenoxypyrazine,E O T
+778.,99784-19-7,,5-sec-butyl-3-methyl-2-phenoxypyrazine,E S O T
+779.,78246-16-9,,5-isobutyl-3-methyl-2-phenoxypyrazine,E S O T
+780.,99784-20-0,,3-methyl-5-(2-methylbutyl)-2-phenoxypyrazine,O T
+781.,99784-21-1,,3-methyl-5-(2-methylpentyl)-2-phenoxypyrazine,O T
+782.,127053-60-5,,menthyloxypyrazine,E O T
+783.,127127-46-2,,D-menthyloxypyrazine,E T
+784.,127127-47-3,,L-menthyloxypyrazine,E T
+785.,56891-98-6,,2-camphoroxymethylpyrazine,E T
+786.,56891-96-4,,2-camphoroxy-3-methylpyrazine,E T
+787.,56891-97-5,,2-camphoroxy-5-methylpyrazine,E T
+788.,22047-25-2,,acetylpyrazine,Q E S R O T
+789.,23787-80-6,,2-acetyl-3-methylpyrazine,Q E S R O T
+790.,22047-27-4,,2-acetyl-5-methylpyrazine,Q E S R T
+791.,22047-26-3,,2-acetyl-6-methylpyrazine,Q E S R T
+792.,97485-52-4,,2-acetyl-5(or 6)-methylpyrazine,P
+793.,32974-92-8,,2-acetyl-3-ethylpyrazine,P E S R
+794.,43108-58-3,,2-acetyl-5-ethylpyrazine,P S
+795.,34413-34-8,,2-acetyl-6-ethylpyrazine,P S
+796.,38890-44-7,,acetyl-ethylpyrazine (unkn.str.),P
+797.,72186-62-0,,2-acetyl-5(or 6)-ethylpyrazine,P
+798.,,,2-acetyl-5-methoxypyrazine,
+799.,39248-49-2,,"2,5-diacetylpyrazine",
+800.,54300-08-2,,"2-acetyl-3,5-dimethylpyrazine",P E S R
+801.,54300-09-3,,"3-acetyl-2,5-dimethylpyrazine",P S
+802.,54300-10-6,,"5-acetyl-2,3-dimethylpyrazine",P S
+803.,6784-62-9,,acetonylpyrazine,P
+804.,5049-61-6,,2-pyrazinamine,E S R T
+805.,56343-47-6,,2-dimethylamino-3-methylpyrazine,E T
+806.,56343-48-7,,2-dimethylamino-6-methylpyrazine,E T
+807.,56343-35-2,,2-dimethylamino-3-isobutylpyrazine,E T
+808.,56343-36-3,,2-dimethylamino-6-isobutylpyrazine,E T
+809.,19847-12-2,,2-pyrazinecarbonitrile,E S R
+810.,98-96-4,,2-pyrazinecarboxamide,P E S R
+811.,65128-99-6,,5-methyl-5H-cyclopentapyrazine,Q E S R O T
+812.,23747-47-9,,"6,7-dihydro-5H-cyclopentapyrazine",Q O
+813.,23747-46-8,,"6,7-dihydro-2-methyl-5H-cyclopentapyrazine",Q
+814.,23747-48-0,,"6,7-dihydro-5-methyl-5H-cyclopentapyrazine",Q E S R O
+815.,38917-60-1,,"6,7-dihydro-2-ethyl-5H-cyclopentapyrazine",P
+816.,52517-53-0,,"5-ethyl-6,7-dihydro-5H-cyclopentapyrazine",P S
+817.,38917-63-4,,"6,7-dihydro-2,3-dimethyl-5H-cyclopentapyrazine",P E S
+818.,38917-61-2,,"6,7-dihydro-2,5-dimethyl-5H-cyclopentapyrazine",Q E S O
+819.,61928-63-0,,"6,7-dihydro-2,6-dimethyl-5H-cyclopentapyrazine",P
+820.,38917-62-3,,"6,7-dihydro-3,5-dimethyl-5H-cyclopentapyrazine",Q E S
+821.,41330-21-6,,"6,7-dihydro-5,7-dimethyl-5H-cyclopentapyrazine",P S
+822.,,,"6,7-dihydro-2(or 3),5-dimethyl-5H-cyclopentapyrazine (unkn.str.)",P
+823.,,,"6,7-dihydro-2(or 3),6-dimethyl-5H-cyclopentapyrazine (unkn.str.)",P
+824.,65128-97-4,,"2-ethyl-6,7-dihydro-5-methyl-5H-cyclopentapyrazine",P
+825.,41330-35-2,,"3-ethyl-6,7-dihydro-2-methyl-5H-cyclopentapyrazine",P
+826.,104638-09-7,,"5-ethyl-6,7-dihydro-2-methyl-5H-cyclopentapyrazine",P
+827.,41330-39-6,,"6,7-dihydro-2,3,5-trimethyl-5H-cyclopentapyrazine",P
+828.,,,"6,7-dihydro-2,5,7-trimethyl-5H-cyclopentapyrazine",P
+829.,,,"2-acetyl-6,7-dihydro-3-hydroxy-5-methyl-5H-cyclopentapyrazine",
+830.,,,"5-hydroxy-2,3,6-trimethyl-5H-cyclopentapyrazine",P
+831.,700-79-8,,2-methylquinazoline,P
+832.,703-63-9,,"2,4-dimethylquinazoline",Q
+833.,,,"1,2,3,4,7,8-hexahydro-5,7-dimethylquinoxaline",P
+834.,34413-35-9,,"5,6,7,8-tetrahydroquinoxaline",P E S R O
+835.,38917-65-6,,"5,6,7,8-tetrahydro-2-methylquinoxaline",P E S
+836.,52517-54-1,,"5,6,7,8-tetrahydro-5-methylquinoxaline",P E S
+837.,55968-42-8,,"5,6,7,8-tetrahydro-2-ethylquinoxaline",P
+838.,35149-10-1,,"5,6,7,8-tetrahydro-2,3-dimethylquinoxaline",P
+839.,52517-55-2,,"5,6,7,8-tetrahydro-5,7-dimethylquinoxaline",P
+840.,52517-56-3,,"5,6,7,8-tetrahydro-5,8-dimethylquinoxaline",P
+841.,91-19-0,,quinoxaline,Q E S R
+842.,7251-61-8,,2-methylquinoxaline,P S R O
+843.,13708-12-8,,5-methylquinoxaline,P E S R
+844.,6344-72-5,,6-methylquinoxaline,P R
+845.,,,5(or 6)-methylquinoxaline,P
+846.,2379-55-7,,"2,3-dimethylquinoxaline",P S
+847.,26941-20-8,,"2,5-dimethylquinoxaline",P
+848.,22868-76-4,,"2,5-dimethylpyrimidine",P R
+849.,1558-17-4,,"4,6-dimethylpyrimidine",P
+850.,67860-38-2,,4-acetyl-2-methylpyrimidine,P E
+851.,50892-83-6,,1-acetylcarboline,Q S
+852.,274-55-5,,"pyrrolo[1,2-a]pyrazine",P
+853.,64608-59-9,,"1-methylpyrrolo[1,2-a]pyrazine",P
+854.,64608-61-3,,"3-methylpyrrolo[1,2-a]pyrazine",P
+855.,64608-60-2,,"4-methylpyrrolo[1,2-a]pyrazine",P
+856.,64608-62-4,,"1,3-dimethylpyrrolo[1,2-a]pyrazine",P
+857.,64608-63-5,,"1,4-dimethylpyrrolo[1,2-a]pyrazine",P
+858.,64608-64-6,,"3,4-dimethylpyrrolo[1,2-a]pyrazine",P
+859.,25042-83-5,,5H-cyclopentapyrazine,P
+860.,68914-28-3,,2-(or 3)-methyl-5H-cyclopentapyrazine (unkn.str.),P
+861.,61929-04-2,,6-methyl-5H-cyclopentapyrazine,P
+862.,52958-28-8,,7-methyl-5H-cyclopentapyrazine,P
+863.,61891-57-4,,dimethyl-5H-cyclopentapyrazine (unkn.str.),P
+864.,,,"1,2,3,4-tetrahydro-9H-pyrido[3,4-b]indole-3-carboxylic acid",Q E
+865.,,,"1,2,3,4-tetrahydro-1-methyl-9H-pyrido[3,4-b]indole-3-carboxylic acid",Q
+866.,290-38-0,,"1,2,4-triazine",P
+867.,80933-73-9,,maltoxazine,Q E S R
+868.,593-88-4,,trimethylarsine,Q S T

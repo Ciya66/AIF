@@ -1,0 +1,120 @@
+,CAS,,Compound name,Compoundflags
+,CAS,,Compound name,Compound flags
+1.,67160-14-9,,methoxyphenyl oxime,E S
+2.,115-10-6,,dimethyl ether,P E S T
+3.,629-82-3,,octyl ether,E S
+4.,540-67-0,,ethyl methyl ether (=methoxyethane),P E S
+5.,107-25-5,,methyl vinyl ether,S
+6.,557-17-5,,methyl propyl ether,P S
+7.,7289-51-2,,methyl nonyl ether,P E S
+8.,60-29-7,,diethyl ether,Q S R T
+9.,109-92-2,,ethyl vinyl ether,P E S
+10.,628-32-0,,ethyl propyl ether (=1-ethoxypropane),P E S
+11.,625-54-7,,ethyl isopropyl ether,Q E S R
+12.,108-20-3,,2-isopropoxypropane,E T
+13.,557-31-3,,allyl ethyl ether (=3-ethoxy-1-propene),P E S
+14.,764-47-6,,propyl vinyl ether,P E S
+15.,926-65-8,,isopropyl vinyl ether,Q E S
+16.,625-44-5,,isobutyl methyl ether (=1-methoxy-2-methylpropane),Q E S
+17.,1634-04-4,,tert-butyl methyl ether (=2-methoxy-2-methylpropane),P E S T
+18.,628-81-9,,butyl ethyl ether,P E S
+19.,1860-27-1,,1-(1-methylethoxy)-butane,P E S
+20.,2679-87-0,,sec-butyl ethyl ether,P E S
+21.,637-92-3,,tert-butyl ethyl ether,P E S T
+22.,994-05-8,,2-methoxy-2-methylbutane,E T
+23.,17952-11-3,,ethyl pentyl ether,P E S
+24.,34061-76-2,,3-butenyl butyl ether,P E S R
+25.,142-96-1,,dibutyl ether,E S T
+26.,28509-25-3,,bis(2-methylbutyl) ether,E S
+27.,693-65-2,,dipentyl ether,P E S
+28.,544-01-4,,diisopentyl ether,P E S
+29.,112-58-3,,dihexyl ether,P E S
+30.,4747-07-3,,hexyl methyl ether,P E S
+31.,56752-54-6,,"2,4-hexadiene ethyl ether",E S R O T
+32.,56752-55-7,,"2-ethoxy-3,5-hexadiene",E S R O T
+33.,197235-62-4,,3-[(2E)-2-hexen-1-yloxy]- hexanal,P S O
+34.,326591-68-8,,3-[(3Z)-3-hexen-1-yloxy]- hexanal,P S O
+35.,68133-72-2,,(Z)-3-hexenyloxyacetaldehyde,S R
+36.,1346753-33-0,,(E)-3-hexenyloxyacetaldehyde,S R
+37.,55915-70-3,,citronellyl methyl ether,P E S
+38.,2565-83-5,,neryl methyl ether,P E S
+39.,69744-18-9,,carvyl methyl ether,E S T
+40.,6379-73-3,,4-isopropyl-2-methoxy-1-methylbenzene (=methylcarvacrol),Q E S R O
+41.,40267-72-9,,ethyl geranyl ether,Q E S R O
+42.,60763-44-2,,methyl linalyl ether,Q E S R
+43.,72845-33-1,,ethyl linalyl ether,Q E S R T
+44.,24202-00-4,,methyl myrcenyl ether,P E S T
+45.,1126-79-0,,butyl phenyl ether (=1-phenoxybutane),P E S
+46.,538-86-3,,benzyl methyl ether,P S R O
+47.,539-30-0,,benzyl ethyl ether,Q E S R
+48.,15895-87-1,,benzyl propenyl ether,P E S
+49.,588-67-0,,benzyl butyl ether,Q E S
+50.,122-73-6,,benzyl 3-methylbutyl ether,Q E S R
+51.,54852-64-1,,benzyl octyl ether,P S
+52.,5355-17-9,,4-hydroxybenzyl methyl ether,Q S T
+53.,57726-26-8,,ethyl 4-hydroxybenzyl ether (=4-(ethoxymethyl)phenol),P E S T
+54.,21998-86-7,,2-methoxybenzyl methyl ether,E S
+55.,1515-81-7,,4-methoxybenzyl methyl ether (=anisyl methyl ether),Q E S R
+56.,55249-73-5,,ethyl 4-methoxybenzyl ether (=anisyl ethyl ether),P E S
+57.,5076-72-2,,1-ethoxy-4-methoxybenzene,P E S
+58.,5533-03-9,,4-hydroxy-3-methoxybenzyl methyl ether (=methyl vanillyl ether),P E S T
+59.,25007-53-8,,ethyl 4-hydroxy-3-methoxybenzyl ether (=ethyl vanillyl ether),Q E S T
+60.,75921-68-5,,"3,4,5-trimethoxybenzyl methyl ether",Q E S
+61.,3558-60-9,,methyl phenethyl ether,P E S R
+62.,4013-37-0,,"1,2-dimethoxy-1-phenylethane",P E S
+63.,,,butenyl phenethyl ether (unkn.str.),P E
+64.,,,3-methyl-1-[4-(1-propenyl)phenoxy]-2-butene,
+65.,,,"3-ethoxy-1-(2,3,6-trimethyl-phenyl)-1-butene",P
+66.,,,"3-ethoxy-1-(trimethylphenyl)-1,3-butadiene",
+67.,55708-37-7,,p-cymen-8-ol methyl ether,P E S
+68.,68279-51-6,,p-cymen-8-yl ethyl ether (=8-ethoxy-p-cymene),Q E S T
+69.,84161-98-8,,methyl α-terpinyl ether,P E S T
+70.,27153-54-4,,ethyl α-terpinyl ether,Q E S T
+71.,26946-68-9,,methyl β-terpinyl ether,P E S
+72.,,,ethyl β-terpinyl ether,P E
+73.,54982-76-2,,ethyl 4-terpinenyl ether,P E S
+74.,69744-17-8,,carvyl ethyl ether,P E S O T
+75.,4747-15-3,,"1-methoxy-2-phenylethene (=β-methoxystyrene, methyl α-styryl ether)",P E S
+76.,10395-54-7,,bornyl methyl ether,P S R O T
+77.,19316-72-4,,bornyl ethyl ether,P E S
+78.,5331-32-8,,isobornyl methyl ether,P E S
+79.,1888-80-8,,ethyl isobornyl ether,P E S T
+80.,67800-86-6,,ethyl fenchyl ether,P E S T
+81.,,,ethyl sabinyl ether,P E
+82.,10300-03-5,,myrtenol methyl ether,Q E S
+83.,,,ethyl 4-thujanyl ether,P E
+84.,54982-73-9,,ethyl cis-4-thujanyl ether,P E S
+85.,54982-72-8,,trans-4-thujanol ethyl ether,P E S
+86.,26946-66-7,,"1,8-dimethoxy-p-menthane",P E S
+87.,54982-77-3,,cis-3-ethoxy-p-1-menthene,E S
+88.,54982-75-1,,trans-3-ethoxy-p-1-menthene,E S
+89.,54982-74-0,,1-ethoxy-p-2-menthene,P E S
+90.,,,cis-1-ethoxy-p-2-menthene,
+91.,,,trans-1-ethoxy-p-2-menthene,
+92.,,,ethyl p-1-menthen-3-yl ether,P E
+93.,80581-06-2,,"cis-4-ethoxy-α-pinene (=ethyl verbenyl ether, [1R-(1α,4α,5α)])",E S
+94.,80581-05-1,,"trans-4-ethoxy-α-pinene (=ethyl verbenyl ether, [1R-(1α,4β,5α)])",P E
+95.,5211-62-1,,2-methoxyphenylacetone,P E S
+96.,101-84-8,,diphenyl ether (=diphenyl oxide),Q E S R T
+97.,104-66-5,,"1,2-diphenoxyethane",E S
+98.,68900-67-4,,diphenethyl ether,E
+99.,470-67-7,,"1,4-cineole",Q E S R O
+100.,,,dihydrosesquicineol,
+101.,470-82-6,,"1,8-cineole (=eucalyptol)",Q E S R O T
+102.,18679-48-6,,2-hydroxycineole,Q E R
+103.,,,"(1S,4R,6S)-and,or (1R,4S,6R)-2-exo-hydroxy-1,8-cineole",Q
+104.,92760-25-3,,"2,3-dehydro-1,8-cineole",Q S R O
+105.,66113-06-2,,"dehydro-1,8-cineole",Q S R
+106.,,,"dehydro-1,8-cineole (unkn.str.)",Q
+107.,19901-95-2,,hop ether,Q E R T
+108.,19901-96-3,,"karahana ether (=8,8-dimethyl-2-methylene-6-oxabicyclo- [3.2.1]octane)",Q E R T
+109.,111-77-3,,diethylene glycol monomethyl ether (=methyl carbitol),Q E S
+110.,111-90-0,,diethylene glycol monoethyl ether (=carbitol),Q E R T
+111.,112-34-5,,diethylene glycol monobutyl ether (=2-(2-butoxyethoxy)ethanol),Q E R O T
+112.,104-68-7,,diethylene glycol monophenyl ether,P E S
+113.,98531-35-2,,diethylene glycol diethyl ether,P E S
+114.,4819-83-4,,ethyl tetrahydropyranyl ether (unkn.str.),P
+115.,16277-67-1,,3-Methoxy-1-propenyl benzene,P E S
+116.,57006-69-6,,"(E,E)-2,4-hexadien-1-yl acetate",E S R
+117.,111-46-6,,"2,2'-oxybisethanol (=diethylene glycol)",Q E S R O T
+118.,112-27-6,,"2,2'-(ethylenedioxy)bisethanol (=triethylene glycol)",P E S T

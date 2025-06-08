@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模块1详细内容</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- 引入 Chart.js 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .chart-container {
+            width: 20%; /* 调整图表容器宽度以缩小图表 */
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+        }
+        .chart-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .student-name {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>模块1：分数占比</h1>
+        <nav>
+            <ul>
+                <li><a href="/">主页</a></li>
+                <li><a href="/browse">浏览</a></li>
+                <li><a href="/advanced_search">高级检索</a></li>
+                <li><a href="/tools">工具</a></li>
+                <li><a href="/upload">上传</a></li>
+                <li><a href="/user_guide">用户指导</a></li>
+                <li><a href="/links">链接</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>每个同学得分与满分100分的比例</h2>
+
+        <div class="chart-wrapper">
+            <!-- 为每个同学创建一个带有名字的图表容器 -->
+            <div class="chart-container">
+                <div class="student-name">同学1</div>
+                <canvas id="chart1"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学2</div>
+                <canvas id="chart2"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学3</div>
+                <canvas id="chart3"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学4</div>
+                <canvas id="chart4"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学5</div>
+                <canvas id="chart5"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学6</div>
+                <canvas id="chart6"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学7</div>
+                <canvas id="chart7"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学8</div>
+                <canvas id="chart8"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学9</div>
+                <canvas id="chart9"></canvas>
+            </div>
+            <div class="chart-container">
+                <div class="student-name">同学10</div>
+                <canvas id="chart10"></canvas>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 网站名称. 保留所有权利。</p>
+    </footer>
+
+    <script>
+        // 10个同学的分数
+        const scores = [80, 90, 70, 60, 85, 95, 75, 65, 88, 92];
+
+        // 定义函数来创建每个同学的扇形图
+        function createPieChart(ctx, score) {
+            return new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['得分', '剩余分数'],
+                    datasets: [{
+                        data: [score, 100 - score],
+                        backgroundColor: ['#36A2EB', '#FFCE56'],
+                        hoverOffset: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(tooltipItem) {
+                                    if (tooltipItem.label === '得分') {
+                                        return `得分: ${score}分`;
+                                    } else {
+                                        return `剩余分数: ${100 - score}分`;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // 初始化10个扇形图
+        const ctx1 = document.getElementById('chart1').getContext('2d');
+        createPieChart(ctx1, scores[0]);
+
+        const ctx2 = document.getElementById('chart2').getContext('2d');
+        createPieChart(ctx2, scores[1]);
+
+        const ctx3 = document.getElementById('chart3').getContext('2d');
+        createPieChart(ctx3, scores[2]);
+
+        const ctx4 = document.getElementById('chart4').getContext('2d');
+        createPieChart(ctx4, scores[3]);
+
+        const ctx5 = document.getElementById('chart5').getContext('2d');
+        createPieChart(ctx5, scores[4]);
+
+        const ctx6 = document.getElementById('chart6').getContext('2d');
+        createPieChart(ctx6, scores[5]);
+
+        const ctx7 = document.getElementById('chart7').getContext('2d');
+        createPieChart(ctx7, scores[6]);
+
+        const ctx8 = document.getElementById('chart8').getContext('2d');
+        createPieChart(ctx8, scores[7]);
+
+        const ctx9 = document.getElementById('chart9').getContext('2d');
+        createPieChart(ctx9, scores[8]);
+
+        const ctx10 = document.getElementById('chart10').getContext('2d');
+        createPieChart(ctx10, scores[9]);
+    </script>
+</body>
+</html>

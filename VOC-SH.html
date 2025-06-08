@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIF</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        // 发送 GET 请求获取数据
+        fetch('read_excel.php')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data); // 输出返回的数据，确保数据正确
+                const tableBody = document.getElementById('table').getElementsByTagName('tbody')[0];
+        
+                if (data.error) {
+                    alert(data.error);
+                    return;
+                }
+        
+                // 遍历数据并插入到表格中
+                data.forEach(row => {
+                    const tr = document.createElement('tr');
+                    row.forEach(cell => {
+                        const td = document.createElement('td');
+                        td.textContent = cell; // 填充单元格
+                        tr.appendChild(td);
+                    });
+                    tableBody.appendChild(tr); // 将行添加到表格
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('加载数据时出错');
+            });
+
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class='logo-title'>
+                <img src='./Fig/Logo.jpg' alt="Logo" class="logo" height="80" width="100">
+                <h1>Database of poultry meat quality</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Browse</a>
+                        <ul>
+                            <li><a href="browse.html"  style="font-size: 10px;">Poultry Species</a></li>
+                            <li><a href="list.html"  style="font-size: 10px;">Volatile Flavor Compounds</a></li>
+                            <li><a href="dmdb_value.php?file=.%2Fdata%2Fmetabolites%2Fmetabolites-2025-04-19.csv&page=1"  style="font-size: 12px;">Metabolites</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="advanced_search.html">Advanced Search</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="upload.html">Submit</a></li>
+                    <li><a href="user_guide.html">User Guide</a></li>
+                    <li><a href="links.html">Link</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        
+        <!--<div  id="class-data"></div>-->
+
+    <table id="table" border="1">
+        <thead>
+            <tr>
+                <th>列1</th>
+                <th>列2</th>
+                <th>列3</th>
+                <!-- 根据你的数据列添加更多列 -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 数据行会在这里动态插入 -->
+        </tbody>
+    </table>
+
+    </main>
+    
+    <br><br><br><br>
+    
+    <footer>
+        <p>&copy; 2024 DPMQ webserver. All rights reserved</p>
+    </footer>
+
+</body>
+</html>
+

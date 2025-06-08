@@ -1,0 +1,1276 @@
+,CAS,,Compound name,Compoundflags
+,CAS,,Compound name,Compound flags
+1.,74-93-1,,methanethiol (=methyl mercaptan),Q E S R O T
+2.,75-08-1,,ethanethiol (=ethyl mercaptan),Q E S R O T
+3.,21414-41-5,,glucoraphanin,S
+4.,534-69-0,,sinigrin,E S
+5.,585-95-5,,progoitrin,E S
+6.,83327-20-2,,4-hydroxyglucobrassicin,E S
+7.,4356-52-9,,glucobrassicin,E S
+8.,499-30-9,,gluconasturtiin,E S
+9.,5187-84-8,,neoglucobrassicin,S
+10.,107-35-7,,Taurine,Q E S T
+11.,69404-94-0,,"vanillin, tert-butyldimethylsilyl ether",P S
+12.,31331-53-0,,1-(methylthio)ethanethiol,P E S R O T
+13.,31331-54-1,,1-(ethylthio)ethanethiol,P E R O
+14.,860210-40-8,,1-(propylthio)ethanethiol,P E R O
+15.,1407182-53-9,,1-[[1-(methylthio)ethyl]thio]ethanethiol isomer I,P R O
+16.,1407182-53-9,,1-[[1-(methylthio)ethyl]thio]ethanethiol isomer II,P R O
+17.,1407182-54-0,,1-[[1-(ethylthio)ethyl]thio]ethanethiol isomer I,P R O
+18.,1407182-54-0,,1-[[1-(ethylthio)ethyl]thio]ethanethiol isomer II,P R O
+19.,69382-62-3,,"1,1-ethanedithiol",P E R O
+20.,540-63-6,,"1,2-ethanedithiol",P E S T
+21.,107-03-9,,1-propanethiol (=propyl mercaptan),Q E S R O T
+22.,75-33-2,,2-propanethiol (=isopropyl mercaptan),Q E S T
+23.,513-44-0,,2-methyl-1-propanethiol (=isobutyl mercaptan),Q E S T
+24.,75-66-1,,"2-methyl-2-propanethiol (=tert-butyl mercaptan, tert-butylthiol)",P E S T
+25.,31331-55-2,,1-(methylthio)-1-propanethiol,P E R O
+26.,31331-56-3,,1-(ethylthio)-1-propanethiol,P E R O
+27.,122694-34-2,,propenethiol (unkn.str.),Q
+28.,925-89-3,,1-propene-1-thiol (=propenyl mercaptan),P E
+29.,870-23-5,,"2-propene-1-thiol (=allyl mercaptan, allylthiol)",Q E S T
+30.,5954-69-8,,2-methyl-1-propene-1-thiol,Q R O
+31.,5954-68-7,,2-methyl-2-propene-1-thiol,R O
+32.,1068-47-9,,2-hydroxy-1-propanethiol,E R O T
+33.,109-80-8,,"1,3-propanedithiol",P E S
+34.,109-79-5,,1-butanethiol (=butyl mercaptan),Q E S T
+35.,18438-38-5,,2-(methylthio)pyridine,Q S O
+36.,1878-18-8,,2-methyl-1-butanethiol,P E S R T
+37.,541-31-1,,3-methyl-1-butanethiol,Q E S T
+38.,513-53-1,,2-butanethiol (=sec-butyl mercaptan),Q E S T
+39.,1679-09-0,,2-methyl-2-butanethiol,P E S T
+40.,2084-18-6,,3-methyl-2-butanethiol,P E S T
+41.,878652-88-1,,(Z)-2-butene-1-thiol,P R O
+42.,58688-79-2,,(E)-2-butene-1-thiol,R O
+43.,5954-70-1,,3-butene-1-thiol,R O
+44.,5937-82-6,,3-butene-2-thiol,R O
+45.,1229617-39-3,,(E)-2-methyl-1-butene-1-thiol,Q R O
+46.,1229617-36-0,,(Z)-2-methyl-1-butene-1-thiol,Q R O
+47.,1229617-33-7,,(E)-3-methyl-1-butene-1-thiol,Q R O
+48.,1229617-30-4,,(Z)-3-methyl-1-butene-1-thiol,Q R O
+49.,5287-45-6,,3-methyl-2-butene-1-thiol,Q E S R O T
+50.,54812-83-8,,"2-methyl-1,3-butanedithiol",Q E R O
+51.,1191-08-8,,"1,4-butanedithiol",P E S
+52.,110-66-7,,1-pentanethiol (=pentyl mercaptan),Q E S T
+53.,2084-19-7,,2-pentanethiol,Q E S
+54.,29414-47-9,,(Methylthio)methanethiol,E S
+55.,1639-04-9,,2-methyl-3-pentanethiol,P E
+56.,928-98-3,,"1,5-pentanedithiol",P
+57.,111-31-9,,1-hexanethiol (=hexyl mercaptan),Q E S R O T
+58.,1679-06-7,,2-Hexanethiol,T
+59.,1633-90-5,,3-hexanethiol,
+60.,7341-17-5,,2-ethyl-1-hexanethiol,P E S
+61.,1191-43-1,,"1,6-hexanedithiol",P E S
+62.,1639-09-4,,1-heptanethiol (=heptyl mercaptan),P E S
+63.,628-00-2,,2-heptanethiol,P E R O
+64.,119785-55-6,,(R)-2-heptanethiol,O T
+65.,119785-37-4,,(S)-2-heptanethiol,O T
+66.,25360-13-8,,tert-heptanethiol (unkn.str.),P
+67.,111-88-6,,1-octanethiol (=octyl mercaptan),P E T
+68.,25265-79-6,,sec-octanethiol (unkn.str.),P
+69.,290-30-2,,"4H-1,2,3-trithiin",Q E R O T
+70.,1455-21-6,,1-nonanethiol (=nonyl mercaptan),P E
+71.,112-55-0,,dodecanethiol,E T
+72.,2917-26-2,,hexadecanethiol,P E O
+73.,89211-39-2,,"1,2-cyclopentanedithiol",P E R
+74.,27460-00-0,,naphthalenethiol (unkn.str.),P
+75.,108-98-5,,benzenethiol (=thiophenol),Q E S R O T
+76.,137-06-4,,2-methylbenzenethiol (=2-methylthiophenol),E S
+77.,26445-03-4,,methylbenzenethiol (unkn.str.) (=thiocresol (unkn.str.)),Q E
+78.,19728-41-7,,2-tert-butylbenzenethiol,E
+79.,118-72-9,,"2,6-dimethylbenzenethiol",P E S
+80.,100-53-8,,phenylmethanethiol (=benzyl mercaptan),Q E S R O T
+81.,6263-65-6,,(+/-)-1-phenylethyl mercaptan,P E R O
+82.,33877-16-6,,(1R)-1-phenylethyl mercaptan,P E O T
+83.,33877-11-1,,(1S)-1-phenylethyl mercaptan,P E O T
+84.,4410-99-5,,"2-phenylethanethiol (=phenethylthiol, phenethyl mercaptan)",Q E S R O T
+85.,57124-87-5,,2-Methyl-3-tetrahydrofuranthiol,E S
+86.,26548-78-7,,(E)-2-methyl-3-tetrahydrofuranthiol,E R O
+87.,26486-13-5,,"2-Methyl-4,5-dihydrofuran-3-thiol",E S R O
+88.,98-02-2,,2-furanmethanethiol,Q E S R O T
+89.,96631-04-8,,2-(1-mercaptoethyl)furan,E R T
+90.,59020-92-7,,2-furanethanethiol,E R O T
+91.,1250070-69-9,,1-(furan-2-yl)propane-1-thiol,E R O T
+92.,343268-62-2,,2-furanpropanethiol,E R O T
+93.,96631-05-9,,1-(furan-2-yl)butane-1-thiol,E R O T
+94.,1368917-51-4,,2-furanbutanethiol,E R O T
+95.,2227426-26-6,,1-(furan-2-yl)pentane-1-thiol,E R O T
+96.,2227431-12-9,,2-furanpentanethiol,E R O T
+97.,2227431-18-5,,1-(furan-2-yl)hexane-1-thiol,E R O T
+98.,2227433-30-7,,2-furanhexanethiol,E R O T
+99.,2228022-53-3,,1-(furan-2-yl)heptane-1-thiol,E R O T
+100.,2227430-43-3,,2-furanheptanethiol,E R O T
+101.,83540-01-6,,3-methyl-2-furfurylthiol,E R O T
+102.,59303-05-8,,5-methyl-2-furanmethanethiol,Q E S R O T
+103.,1822626-20-9,,5-ethyl-2-furfurylthiol,E R O T
+104.,2227433-39-6,,5-propyl-2-furfurylthiol,E R O T
+105.,108499-25-8,,3-furfurylthiol,E R O T
+106.,28588-74-1,,2-methyl-3-furanthiol,Q E S R O T
+107.,55764-23-3,,"2,5-dimethyl-3-furanthiol",E S R O T
+108.,7783-06-4,,hydrogen sulfide,Q E S R O T
+109.,58-85-5,,biotin,Q E
+110.,10544-50-0,,sulfur molecule S8,Q E R
+111.,7446-09-5,,sulfur dioxide,Q E R O T
+112.,463-58-1,,carbonyl sulfide,Q E O T
+113.,,,"sulfurous acid, cyclohexylmethyl hexyl ester",P S
+114.,420-12-2,,ethylene sulfide (=thiirane),Q E T
+115.,1072-43-1,,"1,2-propylene sulfide (=2-methylthiirane, 1,2-epithiopropane)",Q E R
+116.,51822-61-8,,isopropylthiirane,E T
+117.,75-18-3,,dimethyl sulfide,Q E S R O T
+118.,624-89-5,,ethyl methyl sulfide (=methylthioethane),Q E S R O T
+119.,7529-06-8,,bis(mercaptomethyl) sulfide,E
+120.,7379-30-8,,"1,1-bis(methylthio)ethane",P E R O
+121.,352-93-2,,diethyl sulfide (=ethylthioethane),Q E S R O T
+122.,14252-42-7,,"1,1-bis(ethylthio)ethane",Q E S R O
+123.,53897-59-9,,bis(1-mercaptoethyl) sulfide,E
+124.,3877-15-4,,methyl propyl sulfide (=1-(methylthio)propane),Q E S R
+125.,1551-21-9,,isopropyl methyl sulfide (=2-(methylthio)propane),P E R O
+126.,10152-77-9,,methyl 1-propenyl sulfide (=1-(methylthio)-1-propene),P E S
+127.,52195-40-1,,methyl (1Z)-propenyl sulfide,Q E R
+128.,10152-76-8,,allyl methyl sulfide (=1-(methylthio)-2-propene),Q E S R O T
+129.,4110-50-3,,ethyl propyl sulfide (=1-(ethylthio)propane),Q E S
+130.,5145-99-3,,ethyl isopropyl sulfide (=2-(ethylthio)propane),P E
+131.,111-47-7,,dipropyl sulfide (=1-(propylthio)propane),Q E T
+132.,5008-73-1,,isopropyl propyl sulfide (=2-(propylthio)propane),P E
+133.,625-80-9,,diisopropyl sulfide (=2-(isopropylthio)propane),P E T
+134.,33922-70-2,,1-propenyl propyl sulfide,P E
+135.,27817-67-0,,allyl propyl sulfide,P E S
+136.,33922-80-4,,bis(1-propenyl) sulfide,P E
+137.,592-88-1,,"diallyl sulfide (=thioallyl ether, 1-(allylthio)-2-propene)",Q E S R O T
+138.,1613-45-2,,ethyl isobutyl sulfide,E
+139.,13286-92-5,,"1,1-dimethylpropyl methyl sulfide (=3,3-dimethyl-2-thiapentane)",P E
+140.,628-29-5,,butyl methyl sulfide (=1-(methylthio)butane),Q E S T
+141.,638-46-0,,butyl ethyl sulfide (=1-(ethylthio)butane),P E S T
+142.,1613-46-3,,butyl propyl sulfide (=1-(propylthio)butane),P E
+143.,544-40-1,,dibutyl sulfide (=1-(butylthio)butane),Q E S T
+144.,32951-19-2,,1-buten-1-yl methyl sulfide (=2-thiahex-3-ene),P E S
+145.,13286-90-3,,isopentyl methyl sulfide (=5-methyl-2-thiahexane),P E
+146.,5897-45-0,,methyl 3-methyl-2-butenyl sulfide (=5-methyl-2-thiahex-4-ene),P E S O T
+147.,544-02-5,,diisopentyl sulfide,Q E T
+148.,1741-83-9,,methyl pentyl sulfide,P E
+149.,26158-99-6,,ethyl pentyl sulfide,P E
+150.,872-10-6,,dipentyl sulfide,P E S T
+151.,3698-95-1,,methyl octyl sulfide,P E
+152.,59973-07-8,,methyl nonyl sulfide,P E
+153.,7133-37-1,,cyclohexyl methyl sulfide (=methylthiocyclohexane),P E
+154.,100-68-5,,"methyl phenyl sulfide (=(methylthio)benzene, thioanisole)",P E S
+155.,1879-16-9,,4-methoxyphenyl methyl sulfide (=p-methoxythioanisole),P E
+156.,859785-93-6,,vanillylthiol,Q E R O T
+157.,1778-09-2,,4-(methylthio)acetophenone,P E
+158.,766-92-7,,benzyl methyl sulfide (=(methylthiomethyl)benzene),P E S T
+159.,1822-73-7,,phenyl vinyl sulfide (=vinylthiobenzene),P E
+160.,874-79-3,,phenyl propyl sulfide (=propylthiobenzene),P E
+161.,13129-38-9,,2-furyl methyl sulfide (=furylthiomethane),P E O
+162.,1438-91-1,,furfuryl methyl sulfide (=furfurylthiomethane),Q E S R O T
+163.,33500-20-8,,2[bis(methylthio)methyl]-furan,P E
+164.,2024-70-6,,ethyl furfuryl sulfide,Q E S
+165.,63012-97-5,,methyl 2-methyl-3-furyl sulfide,Q E S R O T
+166.,157529-95-8,,2-methyl-3-(ethylthio)furan,P E O T
+167.,13678-59-6,,methyl 5-methyl-2-furyl sulfide,P E S R O
+168.,13679-60-2,,methyl 5-methylfurfuryl sulfide,Q E S
+169.,,,5-ethylfurfuryl methyl sulfide,P E
+170.,13678-67-6,,difurfuryl sulfide,Q E S R
+171.,63359-63-7,,"2,5-dimethyl-3-furyl methyl sulfide",P E S T
+172.,124619-98-3,,1-[(2-methyl-3-furanyl)thio]- ethanethiol,P O T
+173.,13679-61-3,,furoyl methyl sulfide (=furoylthiomethane),P E S
+174.,75-15-0,,carbon disulfide,Q E R O T
+175.,287-53-6,,"1,3-dithiethane",P E R
+176.,624-92-0,,dimethyl disulfide (=methyldithiomethane),Q E S R O T
+177.,24298-48-4,,methyl vinyl disulfide (=vinyldithiomethane),E
+178.,20333-39-5,,ethyl methyl disulfide (=methyldithioethane),Q E R T
+179.,110-81-6,,"diethyl disulfide (=ethyldithioethane, 3,4-dithiahexane)",Q E S R O T
+180.,24298-49-5,,ethyl vinyl disulfide (=vinyldithioethane),P E
+181.,2179-60-4,,methyl propyl disulfide,Q E S R O
+182.,40136-65-0,,isopropyl methyl disulfide,P E R
+183.,5905-47-5,,methyl 1-propenyl disulfide,Q E S R T
+184.,23838-19-9,,methyl (E)-1-propenyl disulfide,Q E R O
+185.,23838-18-8,,methyl (Z)-1-propenyl disulfide,Q E R O
+186.,2179-58-0,,allyl methyl disulfide,Q E S R O
+187.,30453-31-7,,ethyl propyl disulfide,Q E R
+188.,53966-36-2,,ethyl isopropyl disulfide,P E R
+189.,629-19-6,,dipropyl disulfide,Q E S R O T
+190.,33672-51-4,,isopropyl propyl disulfide,P E
+191.,4253-89-8,,diisopropyl disulfide,Q E S R O T
+192.,5905-46-4,,1-propenyl propyl disulfide,Q E S T
+193.,23838-20-2,,(Z)-1-propenyl propyl disulfide,Q E R O
+194.,23838-21-3,,(E)-1-propenyl propyl disulfide,Q E R O
+195.,2179-59-1,,allyl propyl disulfide,Q E S R O
+196.,,,isopropyl 1-propenyl disulfide,P E
+197.,67421-85-6,,allyl isopropyl disulfide,P E
+198.,53925-82-9,,bis(1-propenyl) disulfide,Q E R
+199.,23838-23-5,,"(E,E)-bis(1-propenyl) disulfide",P
+200.,33368-82-0,,allyl 1-propenyl disulfide,Q E S
+201.,122156-03-0,,(Z)-allyl 1-propenyl disulfide,Q E R O T
+202.,122156-02-9,,(E)-allyl 1-propenyl disulfide,Q E R O T
+203.,2179-57-9,,diallyl disulfide,Q E S R O T
+204.,67421-83-4,,isobutyl methyl disulfide,P E
+205.,1518-72-5,,diisobutyl disulfide,P E
+206.,72437-49-1,,tert-butyl isobutyl disulfide,Q E
+207.,60779-24-0,,butyl methyl disulfide,Q E S R
+208.,63986-03-8,,butyl ethyl disulfide,P E
+209.,72437-64-0,,butyl propyl disulfide,P E R
+210.,72437-53-7,,butyl isopropyl disulfide,P E R
+211.,59849-54-6,,sec-butyl propyl disulfide,Q E R
+212.,24351-70-0,,sec-butyl (Z)-propenyl disulfide,Q E R
+213.,24351-71-1,,sec-butyl (E)-propenyl disulfide,Q E R
+214.,629-45-8,,dibutyl disulfide,Q E S
+215.,5943-30-6,,di-sec-butyl disulfide,Q E R
+216.,110-06-5,,di-tert-butyl disulfide,P E
+217.,163268-48-2,,methyl 2-methylbutyl disulfide,P E R O
+218.,72437-56-0,,isopentyl methyl disulfide,P E
+219.,72437-60-6,,ethyl isopentyl disulfide,P E
+220.,86849-52-7,,hydrogen pentyl disulfide (=1-pentanesulfenothioic acid),P E
+221.,72437-68-4,,methyl pentyl disulfide,Q E
+222.,72437-59-3,,ethyl pentyl disulfide,P E
+223.,112-51-6,,dipentyl disulfide,E
+224.,1838169-65-5,,3-(allyldithio)-2-butanone,E
+225.,1892-29-1,,bis(2-hydroxyethyl) disulfide,Q E
+226.,,,"bis(3-methoxy-1,1-dimethylpropyl)-disulfide",P E
+227.,14173-25-2,,methyl phenyl disulfide (=methyldithiobenzene),P E S
+228.,57500-00-2,,furfuryl methyl disulfide,Q E S R O T
+229.,159113-17-4,,3-[(2-furanylmethyl)dithio]-2-butanone,E S R T
+230.,159240-03-6,,2-furfuryl 2-oxo-3-pentyl disulfide,E R
+231.,65505-17-1,,methyl 2-methyl-3-furyl disulfide,Q E S R O T
+232.,61295-43-0,,2-methyl-3-furyl 2-oxo-3-butyl disulfide,E R T
+233.,156386-71-9,,2-methyl-3-furyl 2-oxo-3-pentyl disulfide,E R
+234.,78818-78-7,,5-methylfurfuryl methyl disulfide,Q E S
+235.,4437-20-1,,difurfuryl disulfide,Q E S R O T
+236.,,,bis(5-methylfurfuryl) disulfide,P E
+237.,109537-55-5,,2-furfuryl 2-methyl-3-furyl disulfide,P E S R T
+238.,28588-75-2,,bis(2-methyl-3-furyl) disulfide,Q E S R O T
+239.,188012-05-7,,(2-furfuryl)-(1-(2'-furyl)-1-ethyl) disulfide,E R
+240.,959072-96-9,,bis(1-(2'-furyl)-1-ethyl) disulfide,E R T
+241.,61197-06-6,,"2,5-dimethyl-3-furyl methyl disulfide",P E S T
+242.,3658-80-8,,dimethyl trisulfide,Q E S R O T
+243.,,,dimethyl trisulfide 2-oxide,P
+244.,31499-71-5,,ethyl methyl trisulfide (=methyltrithioethane),P E S
+245.,3600-24-6,,diethyl trisulfide (=ethyltrithioethane),Q E R O T
+246.,17619-36-2,,methyl propyl trisulfide,Q E S R
+247.,68844-99-5,,isopropyl methyl trisulfide,E
+248.,31499-70-4,,ethyl propyl trisulfide,Q E R O
+249.,72437-45-7,,ethyl isopropyl trisulfide,P E
+250.,6028-61-1,,dipropyl trisulfide,Q E S R O
+251.,,,isopropyl propyl trisulfide,P E
+252.,52868-85-6,,1-propenyl propyl trisulfide,Q E
+253.,23838-26-8,,(Z)-1-propenyl propyl trisulfide,P R O
+254.,23838-27-9,,(E)-1-propenyl propyl trisulfide,P R O
+255.,33922-73-5,,allyl propyl trisulfide,P E S R
+256.,33368-79-5,,propenyl propyl trisulfide (unkn.str.),P E
+257.,5943-34-0,,diisopropyl trisulfide,P E R O
+258.,33368-80-8,,methyl 1-propenyl trisulfide,P E S R
+259.,23838-24-6,,methyl (Z)-1-propenyl trisulfide,Q R
+260.,23838-25-7,,methyl (E)-1-propenyl trisulfide,Q R
+261.,34135-85-8,,allyl methyl trisulfide,Q E S R O
+262.,115868-72-9,,bis(1-propenyl) trisulfide,Q R
+263.,2050-87-5,,diallyl trisulfide,Q E S R O
+264.,382161-78-6,,allyl (E)-1-propenyl trisulfide,P E R
+265.,382161-75-3,,allyl (Z)-1-propenyl trisulfide,P E R
+266.,5943-31-7,,dibutyl trisulfide,Q E S
+267.,5943-32-8,,di-2-butyl trisulfide,Q E R
+268.,66169-00-4,,furfuryl methyl trisulfide,P E S
+269.,5756-24-1,,dimethyl tetrasulfide (=methyltetrathiomethane),Q E S R O T
+270.,13730-34-2,,diethyl tetrasulfide,P E
+271.,87148-08-1,,methyl propyl tetrasulfide (=methyltetrathiopropane),Q E S R
+272.,123136-50-5,,methyl 1-propenyl tetrasulfide,P R
+273.,90195-83-8,,Allyl methyl tetrasulfide,Q S R
+274.,52687-98-6,,dipropyl tetrasulfide,P R
+275.,115321-82-9,,(Z)-1-propenyl propyl tetrasulfide,P R
+276.,115321-83-0,,(E)-1-propenyl propyl tetrasulfide,P R
+277.,137363-90-7,,1-propenyl propyl tetrasulfide,P
+278.,115868-74-1,,bis(1-propenyl) tetrasulfide,P R
+279.,2444-49-7,,diallyl tetrasulfide,Q E S R O T
+280.,382161-81-1,,allyl (Z)-1-propenyl tetrasulfide,P E R
+281.,382161-84-4,,allyl (E)-1-propenyl tetrasulfide,P E R
+282.,7330-31-6,,dimethyl pentasulfide,P R
+283.,115868-75-2,,methyl propyl pentasulfide,P R
+284.,137887-23-1,,methyl 1-propenylpentasulfide,
+285.,137887-22-0,,methyl (Z)-1-propenyl pentasulfide,P
+286.,137909-33-2,,methyl (E)-1-propenyl pentasulfide,P
+287.,1618-26-4,,"2,4-dithiapentane",Q E S R O T
+288.,63882-89-3,,"3-isopropyl-2,4-dithiapentane (=1,1-bis(methylthio)-2-methylpropane)",P E R O
+289.,6628-18-8,,"2,5-Dithiahexane",E
+290.,76229-82-8,,"3-methyl-2,4-dithiahexane (=1-(ethylthio)-1-(methylthio)ethane)",Q E R O
+291.,183554-11-2,,"3-methyl-2,4-dithiaheptane (=1-(methylthio)-1-(propylthio)ethane)",P E
+292.,5418-86-0,,"3-(methylthio)-2,4-dithiapentane (=tris(methylthio)methane)",P E R
+293.,76229-75-9,,"2,5-dithiaheptane",P E
+294.,76229-76-0,,"2,5-dithiaoctane",P E
+295.,42474-44-2,,"2,3,5-trithiahexane (=(methyldithio) (methylthio) methane)",Q E S R O T
+296.,4413-29-0,,"4-methyl-2,3,5-trithiahexane (=methyl 1-(methylthio)ethyl disulfide)",Q E R
+297.,53897-66-8,,"4-ethyl-2,3,5-trithiahexane (=methyl 1-(methylthio)propyl disulfide)",P E R
+298.,69078-85-9,,"4-propyl-2,3,5-trithiahexane (=methyl 1-(methylthio)butyl disulfide)",P E
+299.,69078-81-5,,"3-isopropyl-2,4,5-trithiahexane (=methyl 2-methyl-1-(methylthio)propyl disulfide, 4-isopropyl-2,3,5-trithiahexane)",P E R
+300.,69078-82-6,,"4-isobutyl-2,3,5-trithiahexane (=methyl 3-methyl-1-(methylthio)butyl disulfide)",P E
+301.,69078-83-7,,"4-(sec-butyl)-2,3,5-trithiahexane (=methyl 2-methyl-1-(methylthio)butyl disulfide)",P E
+302.,69078-84-8,,"4,4-dimethyl-2,3,5-trithiahexane (=methyl 1-methyl-1-(methylthio)ethyl disulfide)",P E
+303.,,,"4-ethyl-4-methyl-2,3,5-trithiahexane",P E
+304.,69078-76-8,,"4-phenyl-2,3,5-trithiahexane",P E
+305.,183554-17-8,,"4-methyl-2,3,5-trithiaheptane",P E
+306.,110504-57-9,,"2,3,5-trithiaheptane",E
+307.,183554-12-3,,"2,4,5-trithiaheptane",P E
+308.,183554-13-4,,"5-methyl-3,4,6-trithiaheptane",P E
+309.,120462-76-2,,"2,3,7-trithiaoctane",E
+310.,911212-28-7,,"2,4,5-trithiaoctane",E
+311.,53897-67-9,,"3-ethyl-2,4,5-trithiaheptane",P E
+312.,183554-14-5,,"3-methyl-2,4,5-trithiaoctane",P E
+313.,126876-22-0,,"3-ethyl-2,4,5-trithiaoctane",P E R
+314.,126876-21-9,,"4-ethyl-2,3,5-trithiaoctane",P E R
+315.,183554-16-7,,"3,4,6-trithiaoctane",P E
+316.,94944-48-6,,"5-methyl-3,4,6-trithiaoctane",P E R O
+317.,183554-18-9,,"5-ethyl-3,4,6-trithiaoctane",P E
+318.,56019-35-3,,"trans-6-ethyl-4,5,7-trithiaoct-2-ene",Q
+319.,56019-32-0,,"cis-6-ethyl-4,5,7-trithiaoct-2-ene",Q E
+320.,183554-24-7,,"5-ethyl-3,4,6-trithianonane",P E
+321.,183554-20-3,,"4-methyl-3,5,6-trithianonane",P E
+322.,137887-24-2,,"4-ethyl-3,5,6-trithianonane",P E
+323.,126876-27-5,,"6-ethyl-4,5,7-trithiadecane",P E R
+324.,126876-23-1,,"4-ethyl-2,3,5-trithia-6-octene",Q E R
+325.,126876-29-7,,"6-ethyl-4,5,7-trithiadec-2-ene",P E R
+326.,56019-36-4,,"(E)-3-methyl-4,5,9-trithiadec-7-ene",Q E R
+327.,56019-34-2,,"(Z)-3-methyl-4,5,9-trithiadec-7-ene",E
+328.,125017-86-9,,"(E)-5-ethyl-4,6,7-trithia-2-decene 4-oxide",P E
+329.,126876-28-6,,"6-ethyl-4,5,7-trithia-2,8-decadiene",P E R
+330.,125224-25-1,,"(E,E)-6-ethyl-4,5,7-trithia-2,8-decadiene 7-oxide",P E
+331.,473451-34-2,,"(7E)-3-methyl-4,5,9-trithiadec-7-ene, 9-oxide",P E
+332.,92285-01-3,,ajoene,E
+333.,92285-00-2,,(Z)-ajoene,P
+334.,92284-99-6,,(E)-ajoene,P
+335.,125224-27-3,,"(E,Z)-1-propenyl 1-(1-propenyldithio)propyl sulfoxide",P E
+336.,126876-25-3,,"5-ethyl-2,3,4,6-tetrathiaheptane",P E R
+337.,126876-42-4,,"4-ethyl-2,3,5,6-tetrathiaheptane",P E R
+338.,85544-38-3,,"2,4,5,7-tetrathiaoctane",P E R O T
+339.,,,"4,6-dimethyl-2,3,5,7-tetrathiaoctane",P E
+340.,69078-77-9,,"3,6-dimethyl-2,4,5,7-tetrathiaoctane",Q E R
+341.,69078-78-0,,"3,6-diethyl-2,4,5,7-tetrathiaoctane",Q E R
+342.,126876-30-0,,"4-ethyl-2,3,5,6-tetrathianonane",P E R
+343.,126876-32-2,,"3-ethyl-2,4,5,6-tetrathianonane",P E R
+344.,126876-35-5,,"6-ethyl-4,5,7,8-tetrathiaundecane",P R
+345.,126876-31-1,,"4-ethyl-2,3,5,6-tetrathia-7-nonene",P E R
+346.,126876-36-6,,"(E)-6-ethyl-4,5,7,8-tetrathia-2-undecene",P E R
+347.,126876-37-7,,"(Z)-6-ethyl-4,5,7,8-tetrathia-2-undecene",P E R
+348.,473451-37-5,,"(E,E)-2,6,7,10-tetrathiaundecadiene-3,9",P E
+349.,126876-34-4,,"4-ethyl-2,3,5,6,7-pentathiaoctane",P E R
+350.,60-24-2,,2-mercaptoethanol (=2-hydroxy-ethanethiol),Q E R O T
+351.,5271-38-5,,2-(methylthio)ethanol,Q E R O T
+352.,110-77-0,,ETHYL 2-HYDROXYETHYL SULFIDE,E T
+353.,10340-64-4,,2-[(methylthio)methylthio]ethanol,P E
+354.,3001-64-7,,2-mercapto-1-propanol,E R
+355.,33179-05-4,,(2R)-2-mercapto-1-propanol,R O T
+356.,19721-22-3,,3-mercapto-1-propanol,Q E R O T
+357.,505-10-2,,3-(methylthio)-1-propanol (=methionol),Q E S R O T
+358.,56160-79-3,,3-mercapto-2-methyl-1-propanol,Q E R O T
+359.,76938-91-5,,(2R)-3-mercapto-2-methyl-1-propanol,Q E O T
+360.,283163-53-1,,(2S)-3-mercapto-2-methyl-1-propanol,E O T
+361.,15718-66-8,,"3-mercapto-2,2-dimethyl-1-propanol",E R O T
+362.,18721-61-4,,3-(ethylthio)-1-propanol (=ethionol),Q E S
+363.,14967-17-0,,1-mercapto-2-methyl-2-propanol,R O T
+364.,31030-39-4,,3-mercapto-1-butanol,Q E R O T
+365.,30098-74-9,,4-mercapto-2-butanol,E R O T
+366.,37887-04-0,,2-Mercapto-3-butanol,E S
+367.,144686-31-7,,2-(mercaptomethyl)-butanol,E R O T
+368.,227456-33-9,,3-mercapto-2-methyl-1-butanol,Q E R O T
+369.,116229-37-9,,2-mercapto-3-methyl-1-butanol,P E R O T
+370.,33959-27-2,,4-mercapto-3-methyl-2-butanol,E
+371.,20582-85-8,,4-(methylthio)-1-butanol,Q E S T
+372.,117013-33-9,,3-(ethylthio)-1-butanol,P E O
+373.,183554-26-9,,3-(propylthio)-1-butanol,P E O
+374.,183554-29-2,,3-(ethylthio)-2-methyl-1-butanol,P E O
+375.,183554-32-7,,2-ethyl-3-(ethylthio)-1-butanol,P E O
+376.,183554-35-0,,3-(methyldithio)-1-butanol,P E
+377.,183554-38-3,,3-(ethyldithio)-1-butanol,P E O
+378.,183554-44-1,,3-(ethyldithio)-2-methyl-1-butanol,P E
+379.,183554-42-9,,3-(propyldithio)-1-butanol,P E O
+380.,34300-94-2,,3-mercapto-3-methyl-1-butanol,Q E S R O T
+381.,57774-99-9,,5-(methylthio)-1-pentanol,P E
+382.,548740-99-4,,3-mercapto-1-pentanol,Q E R O T
+383.,33959-24-9,,4-mercapto-2-pentanol,E R O T
+384.,31528-03-7,,erythro-4-mercapto-2-pentanol,E R
+385.,31528-04-8,,threo-4-mercapto-2-pentanol,E R
+386.,84799-96-2,,"(2S,4S)-4-mercapto-2-pentanol",O T
+387.,84799-97-3,,"(2S,4R)-4-mercapto-2-pentanol",O T
+388.,1931995-76-4,,"(2R,4S)-4-mercapto-2-pentanol",O T
+389.,1932318-30-3,,"(2R,4R)-4-mercapto-2-pentanol",O T
+390.,463339-39-1,,1-mercapto-3-pentanol,Q E R O T
+391.,258823-39-1,,(+/-)2-mercapto-2-methyl-1-pentanol,E
+392.,227456-27-1,,3-mercapto-2-methyl-1-pentanol,Q E R O T
+393.,227456-29-3,,"(2R,3S)-3-mercapto-2-methyl-1-pentanol",P T
+394.,227456-31-7,,"(2R,3R)-3-mercapto-2-methyl-1-pentanol",P T
+395.,227456-30-6,,"(2S,3R)-3-mercapto-2-methyl-1-pentanol",P T
+396.,227456-32-8,,"(2S,3S)-3-mercapto-2-methyl-1-pentanol",P T
+397.,933455-14-2,,3-mercapto-4-methyl-1-pentanol,Q E R O T
+398.,1316844-15-1,,4-mercapto-4-methyl-1-pentanol,Q E R O
+399.,31539-84-1,,(+/-)-4-mercapto-4-methyl-2-pentanol,Q E R O T
+400.,72472-07-2,,4-mercapto-3-methyl-2-pentanol,E R O T
+401.,51755-66-9,,3-(methylthio)-1-hexanol,Q E S R O
+402.,90180-89-5,,(R)-3-(methylthio)-1-hexanol,P
+403.,90180-91-9,,(S)-3-(methylthio)-1-hexanol,P
+404.,51755-83-0,,3-mercapto-1-hexanol,Q E S R O T
+405.,90180-88-4,,(R)-3-mercapto-1-hexanol,P E R O T
+406.,90180-90-8,,(S)-3-mercapto-1-hexanol,P E R O T
+407.,1633-78-9,,6-mercapto-1-hexanol,Q E R O T
+408.,2101307-87-1,,4-mercapto-2-hexanol,T
+409.,2137045-12-4,,threo-4-mercapto-2-hexanol,E R
+410.,2137039-69-9,,erythro-4-mercapto-2-hexanol,E R
+411.,2140269-47-0,,"(2S,4S)-4-mercapto-2-hexanol",O T
+412.,2140269-50-5,,"(2S,4R)-4-mercapto-2-hexanol",O T
+413.,2140269-49-2,,"(2R,4S)-4-mercapto-2-hexanol",O T
+414.,2140269-48-1,,"(2R,4R)-4-mercapto-2-hexanol",O T
+415.,385766-55-2,,5-mercapto-3-hexanol,E R O
+416.,87897-58-3,,2-(mercaptomethyl)-1-hexanol,Q E R O T
+417.,385766-56-3,,4-mercapto-5-methyl-2-hexanol,E R O T
+418.,548741-00-0,,3-mercapto-1-heptanol,Q E R O T
+419.,131215-91-3,,7-mercapto-1-heptanol,E R O T
+420.,1006684-21-4,,4-mercapto-2-heptanol,
+421.,1423729-28-5,,erythro-4-mercapto-2-heptanol,E R
+422.,1423729-27-4,,threo-4-mercapto-2-heptanol,E R
+423.,688365-00-6,,"(2S,4S)-4-mercapto-2-heptanol",O T
+424.,1423729-36-5,,"(2S,4R)-4-mercapto-2-heptanol",O T
+425.,1423729-37-6,,"(2R,4S)-4-mercapto-2-heptanol",O T
+426.,1423729-35-4,,"(2R,4R)-4-mercapto-2-heptanol",O T
+427.,1006684-20-3,,2-mercapto-4-heptanol,E O
+428.,548741-01-1,,3-mercapto-1-octanol,Q E R O T
+429.,33065-54-2,,8-mercapto-1-octanol,E R O T
+430.,2101307-88-2,,4-mercapto-2-octanol,
+431.,,,erythro-4-mercapto-2-octanol,E R
+432.,2137044-14-3,,threo-4-mercapto-2-octanol,E R
+433.,2140269-51-6,,"(2S,4S)-4-mercapto-2-octanol",O T
+434.,2140269-54-9,,"(2S,4R)-4-mercapto-2-octanol",O T
+435.,2140269-53-8,,"(2R,4S)-4-mercapto-2-octanol",O T
+436.,2140269-52-7,,"(2R,4R)-4-mercapto-2-octanol",O T
+437.,548741-02-2,,3-mercapto-1-nonanol,E R T
+438.,548741-04-4,,4-mercapto-2-nonanol,T
+439.,2137047-17-5,,erythro-4-mercapto-2-nonanol,E R O
+440.,2137052-79-8,,threo-4-mercapto-2-nonanol,E R O
+441.,2140269-55-0,,"(2S,4S)-4-mercapto-2-nonanol",O T
+442.,2140269-58-3,,"(2S,4R)-4-mercapto-2-nonanol",O T
+443.,2140269-57-2,,"(2R,4S)-4-mercapto-2-nonanol",O T
+444.,2140269-56-1,,"(2R,4R)-4-mercapto-2-nonanol",O T
+445.,2101307-89-3,,4-mercapto-2-decanol,
+446.,,,erythro-4-mercapto-2-decanol,E R
+447.,2137039-73-5,,threo-4-mercapto-2-decanol,E R
+448.,2140269-59-4,,"(2S,4S)-4-mercapto-2-decanol",O T
+449.,2140269-62-9,,"(2S,4R)-4-mercapto-2-decanol",O T
+450.,2140269-61-8,,"(2R,4S)-4-mercapto-2-decanol",O T
+451.,2140269-60-7,,"(2R,4R)-4-mercapto-2-decanol",O T
+452.,16166-53-3,,2-mercaptocyclohexanol,E R O T
+453.,23328-62-3,,(methylthio)acetaldehyde,Q E S T
+454.,,,"1,2,4-trithiolane-1-oxide",P E
+455.,,,"1,2,4-trithiolane 4-oxide",P E
+456.,,,"1,2,4,5,7,8,10,11-octathiacyclododecane",P
+457.,16696-81-4,,propanethial (=thiopropanal),E
+458.,3268-49-3,,3-(methylthio)propanal (=methional),Q E S R O T
+459.,16042-21-0,,2-methyl-2-(methylthio)propanal,P E
+460.,32157-29-2,,propanethial S-oxide,P E
+461.,4124-63-4,,Mercaptoacetaldehyde,S R O T
+462.,20291-59-2,,3-mercaptopropanal,E R O T
+463.,54278-43-2,,3-mercapto-2-methylpropanal,E R O T
+464.,473438-34-5,,3-mercapto-2-methylbutanal,E R O T
+465.,13638-74-9,,3-mercaptobutanal,E R O T
+466.,16630-52-7,,3-(methylthio)butanal,Q E S T
+467.,473438-36-7,,2-(mercaptomethyl)butanal,Q E R O T
+468.,42919-64-2,,4-(methylthio)butanal,E S
+469.,308805-43-8,,3-mercapto-3-methylbutanal,P E R O T
+470.,40878-72-6,,2-(methylthiomethyl)-2-butenal,P E S O
+471.,473438-35-6,,3-mercaptopentanal,Q E R O T
+472.,227456-28-2,,3-mercapto-2-methylpentanal,P E R O T
+473.,51755-72-7,,3-mercaptohexanal,Q E R O T
+474.,40878-73-7,,4-methyl-2-(methylthiomethyl)-2-pentenal,P E
+475.,473438-38-9,,2-(mercaptomethyl)hexanal,Q E R O T
+476.,38433-74-8,,3-(methylthio)hexanal,P E R T
+477.,473438-37-8,,3-mercaptoheptanal,Q E R O T
+478.,51755-70-5,,3-(methylthio)heptanal,P E
+479.,473438-39-0,,3-mercaptooctanal,Q E R O T
+480.,61406-96-0,,3-mercaptononanal,E R O
+481.,1256932-15-6,,3-(methylthio)decanal,E
+482.,61837-77-2,,1-(methylthio)-3-octanone,P E R T
+483.,7401-37-8,,(methylthio)phenylacetaldehyde (unkn.str.),Q
+484.,932-94-5,,5-(methylthio)furfural,P E
+485.,24653-75-6,,1-mercapto-2-propanone (=acetylmethyl mercaptan),P E S R O T
+486.,14109-72-9,,1-Methylthio-2-propanone,Q E T
+487.,20996-62-7,,1-(ethylthio)propan-2-one,P
+488.,39861-37-5,,1-mercapto-2-butanone,E R O T
+489.,40789-98-8,,3-mercapto-2-butanone,Q E S R O T
+490.,34619-12-0,,4-mercapto-2-butanone,E S R O T
+491.,88977-75-7,,"1-mercapto-3,3-dimethyl-2-butanone",E R O T
+492.,13678-58-5,,1-(methylthio)-2-butanone,P E S
+493.,34047-39-7,,4-(methylthio)-2-butanone,Q E S R O
+494.,67633-97-0,,3-mercapto-2-pentanone,Q E S R O T
+495.,92585-08-5,,4-mercapto-2-pentanone,E R O T
+496.,98321-74-5,,5-mercapto-2-pentanone,E R O T
+497.,17042-24-9,,2-mercapto-3-pentanone,Q E R O T
+498.,75832-79-0,,3-mercapto-4-methyl-2-pentanone,E R O T
+499.,385766-53-0,,4-mercapto-3-methyl-2-pentanone,E R O T
+500.,19872-52-7,,4-mercapto-4-methyl-2-pentanone,Q E S R O T
+501.,123728-54-1,,1-mercapto-3-pentanone,Q E S R O T
+502.,66735-69-1,,1-(methylthio)-3-pentanone,Q E S R O T
+503.,309972-36-9,,2-hydroxy-5-(methylthio)-3-pentanone,E S O T
+504.,309972-35-8,,3-hydroxy-5-(methylthio)-2-pentanone,S O T
+505.,408340-08-9,,6-mercapto-2-hexanone,E S R O T
+506.,1229617-42-8,,4-mercapto-3-hexanone,Q S R O
+507.,385766-54-1,,5-mercapto-3-hexanone,E S R O T
+508.,181356-02-5,,4-mercapto-5-methyl-2-hexanone,P E S R O T
+509.,851768-51-9,,5-mercapto-5-methyl-3-hexanone,E S O
+510.,38634-59-2,,"3,5-dithiahexan-2-one",E S
+511.,548741-03-3,,4-mercapto-2-nonanone,S R O T
+512.,38462-22-5,,8-mercapto-p-menthan-3-one,P E S
+513.,33281-91-3,,trans-8-mercapto-p-menthan-3-one,P
+514.,33284-96-7,,cis-8-mercapto-p-menthan-3-one,P E R
+515.,32637-95-9,,trans-8-(methylthio)-p-menthan-3-one,P
+516.,32637-94-8,,cis-8-(methylthio)-p-menthan-3-one,P S
+517.,94293-57-9,,8-(acetylthio)-p-menthan-3-one,P E S
+518.,57074-34-7,,trans-8-(acetylthio)-p-menthan-3-one,P
+519.,57129-12-1,,cis-8-(acetylthio)-p-menthan-3-one,P
+520.,,,8-(acetylthio)piperitone,P
+521.,50746-10-6,,3-mercapto-3-methylbutyl formate,Q E S R O T
+522.,7337-23-7,,mercaptomethyl acetate,P E S
+523.,5862-40-8,,2-mercaptoethyl acetate,P E S R O T
+524.,26473-61-0,,3-mercaptopropyl acetate,Q E S R O T
+525.,548774-75-0,,3-mercapto-2-methylpropyl acetate,Q E S R O T
+526.,548774-77-2,,3-mercapto-2-ethylpropyl acetate,Q E S R O T
+527.,89534-38-3,,3-mercapto-1-butyl acetate,Q E S R O T
+528.,548774-68-1,,1-mercapto-3-butyl acetate,Q E S R O T
+529.,548774-83-0,,3-mercapto-2-methylbutyl acetate,Q E S R O T
+530.,50746-09-3,,3-mercapto-3-methylbutyl acetate,Q E S R O T
+531.,548774-76-1,,3-mercaptopentyl acetate,P E S R O T
+532.,548774-69-2,,4-mercapto-2-pentyl acetate,S R O T
+533.,933455-15-3,,3-mercapto-4-methylpentyl acetate,Q E S R O T
+534.,548774-81-8,,3-mercapto-2-methylpentyl acetate,E S R O T
+535.,548774-71-6,,4-mercapto-3-methyl-2-pentyl acetate,E S R O T
+536.,50746-11-7,,4-mercapto-4-methyl-2-pentyl acetate,Q E S R O T
+537.,548774-73-8,,1-mercapto-3-pentyl acetate,Q E S R O T
+538.,136954-20-6,,3-mercaptohexyl acetate,Q E S R O T
+539.,145937-71-9,,(R)-3-mercaptohexyl acetate,P E S R O T
+540.,145937-72-0,,(S)-3-mercaptohexyl acetate,P E S R O T
+541.,548774-70-5,,5-mercapto-3-hexyl acetate,E S R O T
+542.,548774-72-7,,4-mercapto-5-methyl-2-hexyl acetate,S T
+543.,548774-78-3,,2-(mercaptomethyl)hexyl acetate,E S R O T
+544.,548774-80-7,,3-mercaptoheptyl acetate,E S R O T
+545.,548774-79-4,,3-mercaptooctyl acetate,Q E R O T
+546.,548774-82-9,,3-mercaptononyl acetate,E S R O T
+547.,548774-74-9,,4-mercapto-2-nonyl acetate,S R O T
+548.,5862-47-5,,2-(methylthio)ethyl acetate,Q E S R O
+549.,16630-55-0,,3-(methylthio)propyl acetate (=methionyl acetate),Q E S R O T
+550.,656-53-1,,4-methyl-5-thiazoleethanol acetic acid,E S R
+551.,646-01-5,,3-(methylthio)propanoic acid,Q E S T
+552.,7634-96-0,,3-mercapto-2-(mercaptomethyl)propanoic acid (=dihydroasparagusic acid),P E S
+553.,,,3-(acetylthio)-2-(mercaptomethyl)propanoic acid,P E S
+554.,503-40-2,,methanedisulfonic acid (=methionic acid),E S
+555.,38103-95-6,,"O,S-dimethyl thiocarbonate",P E S R O
+556.,38103-96-7,,O-methyl S-ethyl thiocarbonate,E S R O
+557.,1132650-58-8,,O-methyl S-propyl thiocarbonate,E S R O
+558.,14919-12-1,,O-ethyl S-methyl thiocarbonate,E S R O
+559.,3554-12-9,,"O,S-diethyl thiocarbonate",Q E S R O T
+560.,53120-91-5,,O-ethyl S-propyl thiocarbonate,E S R O
+561.,135742-57-3,,O-propyl S-methyl thiocarbonate,E S R O
+562.,35363-44-1,,O-propyl S-ethyl thiocarbonate,E S R O
+563.,136558-84-4,,"O,S-dipropyl thiocarbonate",E S R O
+564.,376595-42-5,,O-ethyl S-(2-furylmethyl)thiocarbonate,E S
+565.,1241905-19-0,,O-ethyl S-(1-methoxyhexan-3-yl)thiocarbonate,E S O
+566.,27798-35-2,,S-methyl thioformate,P E S R
+567.,507-09-5,,acetothioic acid,E S
+568.,1534-08-3,,S-methyl acetothioate (=methanethiol acetate),Q E S R O T
+569.,625-60-5,,S-ethyl acetothioate,Q E S R O T
+570.,2307-10-0,,S-propyl acetothioate,Q E S R T
+571.,115051-66-6,,S-(3-hydroxypropyl) acetothioate,P E S R
+572.,22236-42-6,,3-(acetylthio)-2-methylpentanal,E S R T
+573.,713489-01-1,,3-(acetylthio)-2-ethylhexanal,E S R T
+574.,713489-02-2,,3-(acetylthio)-2-propylheptanal,E S R T
+575.,713489-03-3,,3-(acetylthio)-2-butyloctanal,E S R T
+576.,713489-04-4,,3-(acetylthio)-2-pentylnonanal,E S R T
+577.,13678-68-7,,S-furfuryl acetothioate,P E S R O
+578.,55764-25-5,,S-(2-methyl-3-furyl) ethanethioate,E S R O
+579.,55764-22-2,,"2,5-Dimethyl-3-furanthiol acetate",E S
+580.,59094-77-8,,ethyl acetothioate (=ethyl thioacetate),Q E R
+581.,2365-48-2,,methyl 2-mercaptoacetate,P E S R T
+582.,623-51-8,,ethyl 2-mercaptoacetate,Q E S R O T
+583.,2444-37-3,,(methylthio)acetic acid,Q E S
+584.,16630-66-3,,methyl (methylthio)acetate,Q E S R O
+585.,4455-13-4,,ethyl (methylthio)acetate,Q E S R O T
+586.,51755-85-2,,3-(methylthio)hexyl acetate,Q S R O
+587.,5925-75-7,,S-methyl propanethioate,Q E S R O T
+588.,52880-45-2,,methyl propanethioate,P S
+589.,2432-42-0,,S-ethyl propanethioate,P E S
+590.,2432-43-1,,S-propyl propanethioate,P S R
+591.,42075-42-3,,S-methyl 2-methylpropanethioate,Q E S R O
+592.,13532-18-8,,methyl 3-(methylthio)propanoate,Q E S R O T
+593.,13327-56-5,,ethyl 3-(methylthio)propanoate,Q E S R O T
+594.,690210-31-2,,propyl 3-(methylthio)propanoate,P E S R O
+595.,54732-83-1,,butyl 3-(methylthio)propanoate,P S R O T
+596.,,,isobutyl 3-(methylthio)propanoate,P E R O
+597.,,,sec-butyl 3-(methylthio)propanoate,P R O
+598.,93762-35-7,,pentyl 3-(methylthio)propanoate,P S R O
+599.,,,2-methylbutyl 3-(methylthio)propanoate,P R O
+600.,916791-81-6,,isopentyl 3-(methylthio)propanoate,P E S R O
+601.,,,hexyl 3-(methylthio)propanoate,P R O
+602.,,,(Z)-3-hexenyl 3-(methylthio)propanoate,P R O
+603.,79-42-5,,2-mercaptopropanoic acid,E S R
+604.,107-96-0,,3-mercaptopropanoic acid,E S R
+605.,26473-47-2,,3-mercapto-2-methylpropanoic acid,Q E S
+606.,62574-23-6,,2-methyl-3-(methylthio)propanoic acid,Q E
+607.,77974-85-7,,S-[(methylthio)methyl] 2-methylpropanethioate,P E S
+608.,33325-40-5,,3-(S-acetylthio)-2-methylpropanoic acid,Q E
+609.,19788-49-9,,ethyl 2-mercaptopropanoate,P E S R O T
+610.,5466-06-8,,ethyl 3-mercaptopropanoate,Q E S R O T
+611.,15904-85-5,,methyl 3-(methylthio)-(E)-2-propenoate,P R O T
+612.,15904-84-4,,methyl 3-(methylthio)-(Z)-2-propenoate,P R O T
+613.,136115-65-6,,ethyl 3-(methylthio)-(E)-2-propenoate,Q E S R O T
+614.,136115-66-7,,ethyl 3-(methylthio)-(Z)-2-propenoate,P E S R O
+615.,,,propyl 3-(methylthio)-(E)-2-propenoate,P R O
+616.,749269-42-9,,hexyl 3-(methylthio)-(E)-2-propenoate,P S R O
+617.,56140-22-8,,3-(S-acetylthio)-2-methylenepropanoic acid,Q
+618.,56750-67-5,,methyl 3-(S-acetylthio)-2-methylenepropanoate,Q
+619.,2432-51-1,,S-methyl butanethioate (=2-thiahexan-3-one),Q E S R O T
+620.,20807-99-2,,S-ethyl butanethioate,P E
+621.,2432-55-5,,S-decyl butanethioate,P E
+622.,51534-66-8,,methyl 2-(methylthio)-butanoate,S
+623.,207983-28-6,,Methyl 3-(methylthio)butanoate,E S
+624.,53053-51-3,,methyl 4-(methylthio)butanoate,P E S R T
+625.,16630-60-7,,3-(methylthio)propyl butanoate (=methionyl butanoate),P E R O T
+626.,136954-21-7,,3-mercaptohexyl butanoate,Q E S R O
+627.,136954-23-9,,3-(methylthio)hexyl butanoate,Q E S R O
+628.,40587-54-0,,4-hydroxy-3-(methylthio)butanoic acid lactone,P
+629.,583-91-5,,2-hydroxy-4-(methylthio)butanoic acid,Q
+630.,583-92-6,,4-(methylthio)-2-oxobutanoic acid,Q E S
+631.,452-95-9,,ethyl methioninate,Q E
+632.,42075-45-6,,S-methyl 2-methylbutanethioate,Q E S R O T
+633.,72611-98-4,,(+)-S-methyl 2-methylbutanethioate,S T
+634.,,,(-)-S-methyl 2-methylbutanethioate,T
+635.,20761-78-8,,S-ethyl 2-methylbutanethioate,P S
+636.,74416-64-1,,S-[(methylthio)methyl] 2-methylbutanethioate,P S O T
+637.,23747-45-7,,S-methyl 3-methylbutanethioate,Q E S R O T
+638.,77974-86-8,,S-[(methylthio)methyl] 3-methylbutanethioate,P E
+639.,33325-42-7,,diisobutanoic acid disulfide,Q
+640.,,,S-methyl butenethioate (unkn.str.),P
+641.,,,S-isopropyl 3-(methylthio)-2-butenethioate,P
+642.,42075-43-4,,S-methyl pentanethioate,Q E S R O T
+643.,61122-71-2,,S-methyl 4-methylpentanethioate,Q E S R T
+644.,77974-87-9,,S-[(methylthio)methyl] 4-methylpentanethioate,P E
+645.,959029-79-9,,3-mercaptohexyl pentanoate,P E S R O T
+646.,2432-77-1,,S-methyl hexanethioate,Q E S R O T
+647.,136954-22-8,,3-mercaptohexyl hexanoate,Q E S R O
+648.,906079-63-8,,3-(methylthio)propyl hexanoate,P E S R O T
+649.,136954-24-0,,3-(methylthio)hexyl hexanoate,Q S R O
+650.,77974-88-0,,S-[(methylthio)methyl] hexanethioate,P
+651.,2432-82-8,,S-methyl heptanethioate,Q E S T
+652.,,,methyl heptanethioate,Q
+653.,,,S-methyl 5-methylhexanethioate,Q E
+654.,,,methyl 5-methylhexanethioate,E
+655.,2432-83-9,,S-methyl octanethioate,Q E S R O T
+656.,86211-08-7,,S-methyl nonanethioate,Q
+657.,1680-29-1,,S-methyl decanethioate,Q T
+658.,153478-25-2,,S-methyl dodecanethioate,S T
+659.,174754-68-8,,S-methyl tetradecanethioate,S T
+660.,244050-82-6,,S-methyl hexadecanethioate,S T
+661.,1748-72-7,,S-methyl octadecanethioate,S T
+662.,98-91-9,,benzothioic acid,E S
+663.,5925-68-8,,methyl benzothioate,P E S
+664.,13402-51-2,,benzyl benzothioate,P
+665.,2168-84-5,,methyl acetodithioate (=methyl dithioacetate),P E
+666.,20266-80-2,,"S,S'-ethylidene dithioacetate",P E S
+667.,505-73-7,,dithioglycolic acid,E T
+668.,5415-95-2,,methyl propanedithioate,P E
+669.,,,propyl propanedithioate,P
+670.,65901-84-0,,1-propenyl propanedithioate,P
+671.,62574-24-7,,3-(methylthio)-2-(methyl-thiomethyl)propanoic acid,Q
+672.,62-56-6,,thiourea,P E S T
+673.,2782-91-4,,tetramethylthiourea,P S T
+674.,54824-91-8,,N-[3-(methylthio)propyl]acetamide,Q
+675.,23361-37-7,,N-methionylacetamide (unkn.str.),P
+676.,819-75-0,,ethyl methanesulfinate,P
+677.,473451-38-6,,"(3,4,5-trimethyl-2-thienyl)methyl methanesulfinate",P E S
+678.,473451-36-4,,(+)-(1E)-3-[(1-methylpropyl)dithio]-1-propen-1-yl methanesulfinate,P E S
+679.,473451-35-3,,(+)-(1Z)-3-[(1-methylpropyl)dithio]-1-propen-1-yl methanesulfinate,P E S
+680.,3736-99-0,,1-propenesulfenic acid,P
+681.,13882-12-7,,methyl methanesulfinothioate,P T
+682.,119151-97-2,,propyl methanesulfinothioate,P
+683.,119053-00-8,,(S)-(Z)-1-propenyl methanesulfinothioate,P
+684.,119052-99-2,,(S)-(E)-1-propenyl methanesulfinothioate,P
+685.,,,allyl methanesulfinothioate,
+686.,1948-52-3,,S-propyl propanesulfinothioate,P E
+687.,119052-97-0,,(S)-(Z)-1-propenyl propanesulfinothioate,P
+688.,119052-98-1,,(S)-(E)-1-propenyl propanesulfinothioate,P
+689.,,,propyl 2-propenesulfinothioate,
+690.,539-86-6,,allicin,P E
+691.,2949-92-0,,methyl methanesulfonothioate,P E S T
+692.,24387-69-7,,propyl methanesulfonothioate,P T
+693.,2144-05-0,,methyl ethanesulfonothioate,P
+694.,34139-14-5,,S-propyl 1-propene-1-sulfonothioate,P E S
+695.,1113-13-9,,propyl propanesulfonothioate,Q E S T
+696.,67-68-5,,dimethyl sulfoxide (=methylsulfinylmethane),Q E S R O
+697.,67-71-0,,dimethyl sulfone (=methylsulfonylmethane),Q E S R O
+698.,3680-02-2,,methyl vinyl sulfone (=1-(methanesulfonyl)ethylene),P E
+699.,14128-56-4,,"dimethyl disulfide 1,1,2-trioxide",P E
+700.,94087-83-9,,4-methoxy-2-methyl-2-butanethiol,Q E S R O T
+701.,449174-48-5,,1-methoxy-4-methyl-3-pentanethiol,E S R O T
+702.,94291-50-6,,1-methoxy-3-hexanethiol,P E S R O T
+703.,449174-42-9,,(3S)-1-methoxy-3-hexanethiol,S T
+704.,449174-61-2,,(3R)-1-methoxy-3-hexanethiol,S T
+705.,449174-46-3,,1-methoxy-3-heptanethiol,E S R O T
+706.,400052-49-5,,(S)-1-methoxy-3-heptanethiol,E S
+707.,1073-29-6,,2-(methylthio)phenol,P E S
+708.,2042-42-4,,methyl ethoxydithioformate,E T
+709.,151-01-9,,ethyl ethoxydithioformate,E T
+710.,35120-10-6,,2-(methylthio)ethanenitrile,P E
+711.,54974-63-9,,3-(methylthio)propanenitrile,P E
+712.,59121-24-3,,4-(methylthio)butanenitrile (=3-(methylthio)propyl cyanide),Q E S T
+713.,36756-71-5,,4-(methylthio)-3-butenenitrile,P
+714.,61121-65-1,,4-(methylsulfinyl)butanenitrile,P E
+715.,34502-60-8,,4-(methylsulfonyl)butanenitrile,P E
+716.,59121-25-4,,5-(methylthio)pentanenitrile,Q S R O
+717.,68547-66-0,,5-(methylthio)-4-pentenenitrile,P E
+718.,72931-29-4,,6-(methylthio)hexanenitrile (=5-methyl thiopentyl cyanide),Q E
+719.,75272-78-5,,7-(methylthio)heptanenitrile,P E
+720.,58214-93-0,,8-(methylthio)octanenitrile,P E
+721.,58214-94-1,,9-(methylthio)nonanenitrile,P E
+722.,61121-66-2,,5-(methylsulfinyl)pentanenitrile,Q E
+723.,54096-45-6,,"4,5-epithiopentanenitrile",Q E
+724.,30381-35-2,,"4,5-epithio-3-hydroxypentanenitrile",P E
+725.,58130-94-2,,"5,6-epithiohexanenitrile",Q E
+726.,463-56-9,,thiocyanic acid,P E R
+727.,556-64-9,,methyl thiocyanate,Q E S R O T
+728.,542-90-5,,ethyl thiocyanate,Q E S
+729.,764-49-8,,allyl thiocyanate,Q E S
+730.,591-84-4,,isobutyl thiocyanate,P E
+731.,20243-54-3,,4-pentenyl thiocyanate,P E
+732.,3012-37-1,,benzyl thiocyanate,E T
+733.,5654-72-8,,phenethyl thiocyanate,P E
+734.,86702-84-3,,methylthiopropyl thiocyanate (unkn.str.),P
+735.,556-61-6,,methyl isothiocyanate,Q E S R T
+736.,542-85-8,,ethyl isothiocyanate (=ethyl mustard oil),P E T
+737.,628-30-8,,propyl isothiocyanate,P E S R
+738.,625-59-2,,isopropyl isothiocyanate,Q E S R O T
+739.,57-06-7,,allyl isothiocyanate (=allyl mustard oil),Q E S R O T
+740.,592-82-5,,butyl isothiocyanate,Q E R O
+741.,591-82-2,,isobutyl isothiocyanate,Q E S R O T
+742.,4426-79-3,,sec-butyl isothiocyanate,Q E S R O T
+743.,,,4-(butylthio)butyl isothiocyanate,
+744.,2253-93-2,,2-butenyl isothiocyanate,Q E S T
+745.,3386-97-8,,3-butenyl isothiocyanate,Q E R T
+746.,,,butenyl isothiocyanate (unkn.str.),P
+747.,123954-93-8,,(Z)-4-(methylthio)-3-butenyl isothiocyanate,P E
+748.,13028-50-7,,(E)-4-(methylthio)-3-butenyl isothiocyanate,P E
+749.,,,4-(butylthio)-3-butenyl isothiocyanate,
+750.,32446-40-5,,pentyl isothiocyanate,P
+751.,628-03-5,,isopentyl isothiocyanate,Q E
+752.,18060-79-2,,4-pentenyl isothiocyanate,Q E S R O T
+753.,6803-40-3,,hexyl isothiocyanate,Q
+754.,123954-92-7,,3-methylpentyl isothiocyanate,P
+755.,17608-07-0,,4-methylpentyl isothiocyanate,P
+756.,49776-81-0,,5-hexenyl isothiocyanate,Q E S T
+757.,49776-82-1,,6-heptenyl isothiocyanate,Q S O T
+758.,1122-82-3,,cyclohexyl isothiocyanate,Q E R
+759.,622-78-6,,benzyl isothiocyanate,Q E S R O T
+760.,2086-86-4,,4-hydroxybenzyl isothiocyanate,
+761.,2257-09-2,,phenethyl isothiocyanate,Q E S O T
+762.,2627-27-2,,3-phenylpropyl isothiocyanate,P
+763.,13880-79-0,,methylthiomethyl isothiocyanate,
+764.,505-79-3,,3-(methylthio)propyl isothiocyanate,Q E S O T
+765.,,,methylthiopropyl isothiocyanate (unkn.str.),P
+766.,4430-36-8,,4-(methylthio)butyl isothiocyanate,Q E S R O T
+767.,51598-96-0,,4-(methylthio)-3-butenyl isothiocyanate,P
+768.,4430-42-6,,5-(methylthio)pentyl isothiocyanate,Q E S R O T
+769.,4430-39-1,,6-(methylthio)hexyl isothiocyanate,Q E S O T
+770.,505-44-2,,3-(methylsulfinyl)propyl isothiocyanate,Q S
+771.,4430-38-0,,7-(methylthio)heptyl isothiocyanate,Q E S O T
+772.,4430-41-5,,8-(methylthio)octyl isothiocyanate,P
+773.,4478-93-7,,4-(methylsulfinyl)butyl isothiocyanate,Q S
+774.,30221-52-4,,3-methyl-2-cyclopentene-1-thione,Q R
+775.,,,4-(methylsulfinyl)but-3-enyl isothiocyanate,P
+776.,,,4-(methylsulfonyl)but-3-enyl isothiocyanate,P
+777.,,,5-(methylsulfinyl)pentyl isothiocyanate,P
+778.,4430-35-7,,6-(methylsulfinyl)hexyl isothiocyanate,P
+779.,129244-98-0,,7-(methylsulfinyl)heptyl isothiocyanate,P
+780.,21456-46-2,,thiacyclopropanoic acid (unkn.str.),Q E
+781.,58130-93-1,,"thiiraneacetonitrile (=3,4-epithiobutanenitrile)",Q E S T
+782.,110-01-0,,tetrahydrothiophene (=thiolane),P E S R O T
+783.,825-55-8,,2-phenylthiophene,S
+784.,1795-09-1,,2-methyltetrahydrothiophene,P S T
+785.,41137-44-4,,2-acetyltetrahydrothiophene,P
+786.,4610-02-0,,"4,5-dihydro-2-methylthiophene",E S
+787.,,,2-methyldihydrothiophene (unkn.str.),
+788.,,,2-ethyldihydrothiophene (unkn.str.),P
+789.,1551-31-1,,"2,5-dimethyltetrahydrothiophene",Q E S R
+790.,50865-09-3,,2-ethyl-5-methyldihydrothiophene (unkn.str.),P
+791.,42862-17-9,,2-hexyl-5-methyldihydrothiophene (unkn.str.),P
+792.,50865-11-7,,2-methyl-5-octyldihydrothiophene (unkn.str.),P
+793.,110-02-1,,thiophene,Q S R O T
+794.,554-14-3,,2-methylthiophene,Q S R O T
+795.,616-44-4,,3-methylthiophene,Q E S R O T
+796.,25154-40-9,,methylthiophene (unkn.str.),P
+797.,872-55-9,,2-ethylthiophene,Q S R
+798.,1918-82-7,,2-vinylthiophene,Q E R
+799.,1795-01-3,,3-Ethylthiophene,P S
+800.,13679-64-6,,3-vinylthiophene,P
+801.,1551-27-5,,2-propylthiophene,Q R
+802.,1518-75-8,,3-Propylthiophene,P S O
+803.,4095-22-1,,2-isopropylthiophene,P
+804.,42908-63-4,,3-isopropenylthiophene,P
+805.,1455-20-5,,2-butylthiophene,P S R
+806.,34722-01-5,,3-Butylthiophene,P S O
+807.,103696-17-9,,butylthiophene (unkn.str.),P
+808.,1689-78-7,,2-tert-butylthiophene,P
+809.,1689-79-8,,3-tert-butylthiophene,P
+810.,,,tert-butylthiophene (unkn.str.),P
+811.,4861-58-9,,2-pentylthiophene,Q E S R O
+812.,102871-31-8,,3-Pentylthiophene,S
+813.,62429-57-6,,3-(4-methyl-3-pentenyl)thiophene,P
+814.,18794-77-9,,2-hexylthiophene,Q S
+815.,18794-78-0,,2-heptylthiophene,P S
+816.,65016-61-7,,3-Heptylthiophene,P S O
+817.,880-36-4,,2-octylthiophene,P S
+818.,95892-43-6,,octylthiophene (unkn.str.),P
+819.,,,(tetradecyl)thiophene (unkn.str.),P
+820.,632-16-6,,"2,3-dimethylthiophene",P S T
+821.,638-00-6,,"2,4-dimethylthiophene",Q S R T
+822.,638-02-8,,"2,5-dimethylthiophene",Q S R O T
+823.,632-15-5,,"3,4-dimethylthiophene",Q R O T
+824.,28632-15-7,,dimethylthiophene (unkn.str.),P R O
+825.,1795-04-6,,"2,3,4-trimethylthiophene",Q S
+826.,14503-51-6,,"2,3,4,5-tetramethylthiophene",P E S
+827.,66577-04-6,,4-ethyl-2-methylthiophene,P
+828.,40323-88-4,,2-ethyl-5-methylthiophene,Q S
+829.,5069-23-8,,"2,5-diethylthiophene",P
+830.,35686-14-7,,"3,4-Diethylthiophene",P S
+831.,54411-06-2,,2-butyl-5-ethylthiophene,P S
+832.,133082-49-2,,2-ethyl-5-pentylthiophene,P
+833.,42908-64-5,,2-ethyl-5-hexylthiophene,P
+834.,147871-89-4,,"2,5-diisopropylthiophene",P
+835.,,,2-isopentyl-5-propylthiophene,E
+836.,54845-35-1,,2-butyl-5-isobutylthiophene,P
+837.,,,"2,5-di-sec-butylthiophene",P
+838.,33369-81-2,,"2,4-di-tert-butylthiophene",P
+839.,54845-33-9,,"2,5-diisobutylthiophene",P
+840.,126876-40-2,,"5,7-diethyl-1,2,3,4,6-pentathiepane",P R
+841.,126876-41-3,,"7-ethyl-5-pentyl-1,2,3,4,6-pentathiepane",P E R
+842.,95-15-8,,"benzo[b]thiophene (=1-benzothiophene, thionaphthene)",Q E S R O T
+843.,270-82-6,,benzo[c]thiophene (=2-benzothiophene),P E S
+844.,11095-43-5,,benzothiophene,Q
+845.,31393-23-4,,methylbenzothiophene (unkn.str.),P
+846.,54385-63-6,,ethylbenzothiophene (unkn.str.),P
+847.,30027-44-2,,dimethylbenzothiophene (unkn.str.),P
+848.,250-84-0,,"thiopheno[2,3-b]thiophene",P
+849.,62614-75-9,,cis-2-methyltetrahydrothiophene-3-ol,Q E
+850.,62614-77-1,,trans-2-methyltetrahydro-thiophene-3-ol,P
+851.,,,"3,4-bis(ethoxymethyl)thiophene",P
+852.,6258-63-5,,2-thiophenemethanethiol,P E S R O T
+853.,28424-78-4,,2-thiopheneethanethiol,E R O T
+854.,94089-02-8,,1-(2-THIENYL)ETHANETHIOL,E S R O T
+855.,65062-25-1,,2-thiophenepropanethiol,E R O T
+856.,1250285-34-7,,1-(thiophene-2-yl)propane-1-thiol,E R O T
+857.,142067-78-5,,2-thiophenebutanethiol,E R O T
+858.,2227425-68-3,,1-(thiophene-2-yl)butane-1-thiol,E R O T
+859.,949886-71-9,,2-thiophenepentanethiol,E R O T
+860.,2228022-54-4,,1-(thiophene-2-yl)pentane-1-thiol,E R O T
+861.,2227431-05-0,,1-(thiophene-2-yl)hexane-1-thiol,E R O T
+862.,2227429-21-0,,1-(thiophene-2-yl)heptane-1-thiol,E R O T
+863.,7774-74-5,,2-thienyl mercaptan,P E S R O T
+864.,7774-73-4,,3-Mercaptothiophene,P E S R O T
+865.,2527-76-6,,2-methyl-3-mercaptothiophene,Q E S R O T
+866.,3970-28-3,,5-methyl-2-thiophenethiol,E S R T
+867.,2228318-63-4,,4-methyl-2-thenylthiol,E R O T
+868.,136358-89-9,,5-methyl-2-thenylthiol,E R O T
+869.,136358-94-6,,3-methyl-2-thenylthiol,E R O T
+870.,1016692-08-2,,5-ethyl-2-thenylthiol,E R O T
+871.,16406-94-3,,3-thenylthiol,E R O T
+872.,126876-24-2,,"2,4-dimethyl-3-(methyldithio)thiophene",P E S R T
+873.,126876-26-4,,"3,4-dimethyl-2-(methyldithio)thiophene",P E S R T
+874.,126876-33-3,,"3,4-dimethyl-2-(propyldithio)thiophene",P E S R T
+875.,1003-10-7,,2(3H)-dihydrothiophenone (=4-butanethioic acid lactone),P E S
+876.,1003-04-9,,3(2H)-dihydrothiophenone,Q E S
+877.,13679-85-1,,2-methyl-3(2H)-dihydrothiophenone,Q E S R O
+878.,72770-97-9,,"trans-3,5-dimethyl-1,2-dithiolan-4-one",E S
+879.,50565-24-7,,dihydro-5-methyl-3(2H)-thiophenone,P E
+880.,,,methyldihydrothiophenone (unkn.str.),P
+881.,26486-19-1,,"dihydro-2,5-dimethyl-3(2H)-thiophenone",P E S
+882.,,,"3,4-dimethyl-2(3H)-dihydrothiophenone",P
+883.,33922-75-7,,"3,4-dimethyl-2(5H)-thiophenone",P E S
+884.,10547-83-8,,"3,4-dimethyldihydrothiophene-2,5-dione",P E S T
+885.,26494-10-0,,"4-Hydroxy-2,5-dimethylthiophen-3(2H)-one",S R T
+886.,98-03-3,,2-thiophenecarbaldehyde (=2-formylthiophene),Q E S R O T
+887.,5834-16-2,,3-methyl-2-thiophenecarbaldehyde,Q E R O
+888.,6030-36-0,,4-methyl-2-thiophenecarbaldehyde,P E S R O
+889.,13679-70-4,,5-methyl-2-thiophenecarbaldehyde,Q E S R O T
+890.,80539-88-4,,methyl-2-thiophenecarbaldehyde (unkn.str.),Q
+891.,21426-07-3,,3-ethyl-2-thiophenecarbaldehyde,P E R O
+892.,21426-18-6,,4-ethyl-2-thiophenecarbaldehyde,P E S R O
+893.,36880-33-8,,5-ethyl-2-thiophenecarbaldehyde,E S
+894.,163460-98-8,,3-propyl-2-thiophenecarbaldehyde,E S R O
+895.,163461-00-5,,4-propyl-2-thiophenecarbaldehyde,E S R O
+896.,163460-99-9,,3-butyl-2-thiophenecarbaldehyde,P E S R O T
+897.,163461-01-6,,4-butyl-2-thiophenecarbaldehyde,P E S R O T
+898.,98954-25-7,,5-butyl-2-thiophenecarbaldehyde,P E S R O
+899.,1463763-91-8,,3-isobutyl-2-thiophenecarbaldehyde,E S R O
+900.,957206-05-2,,4-isobutyl-2-thiophenecarbaldehyde,E S R O
+901.,2119599-54-9,,3-(2-methylallyl)-2-thiophenecarbaldehyde,E S R O
+902.,124843-00-1,,3-pentyl-2-thiophenecarbaldehyde,P E R O T
+903.,2097508-25-1,,4-pentyl-2-thiophenecarbaldehyde,P E S R O T
+904.,100943-44-0,,5-pentyl-2-thiophenecarbaldehyde,P E S R O
+905.,1781898-12-1,,3-(3-methylbutyl)-2-thiophenecarbaldehyde,E S R O
+906.,,,3-(3-methyl-2-butenyl)-2-thiophenecarbaldehyde,E R O T
+907.,2119603-09-5,,4-(3-methyl-2-butenyl)-2-thiophenecarbaldehyde,E S R O
+908.,222554-28-1,,3-hexyl-2-thiophenecarbaldehyde,P E S R O
+909.,222554-30-5,,4-hexyl-2-thiophenecarbaldehyde,E S R O
+910.,100943-46-2,,5-hexyl-2-thiophenecarbaldehyde,E S R O
+911.,,,3-(4-methyl-3-pentenyl)-2-thiophenecarbaldehyde,E R O
+912.,,,4-(4-methyl-3-pentenyl)-2-thiophenecarbaldehyde,E R O
+913.,,,3-heptyl-2-thiophenecarbaldehyde,P E R O
+914.,,,3-octyl-2-thiophenecarbaldehyde,E R O
+915.,,,3-nonyl-2-thiophenecarbaldehyde,E R O
+916.,,,2-decyl-2-thiophenecarbaldehyde,E R O
+917.,,,3-cyclopropyl-2-thiophenecarbaldehyde,E R O
+918.,959236-99-8,,3-cyclopentyl-2-thiophenecarbaldehyde,E R O
+919.,,,3-cyclohexyl-2-thiophenecarbaldehyde,E R O
+920.,123698-37-3,,dimethyl-2-thiophenecarbaldehyde (unkn.str.),P
+921.,498-62-4,,3-thiophenecarbaldehyde,Q E R O
+922.,84815-20-3,,2-methyl-3-thiophenecarbaldehyde,P E S O
+923.,156386-50-4,,2-ethyl-3-thiophenecarbaldehyde,P E S O
+924.,156386-51-5,,2-propyl-3-thiophenecarbaldehyde,P E S R O
+925.,109578-87-2,,methylthiophenecarbaldehyde (unkn.str.),Q
+926.,26421-44-3,,"2,5-dimethyl-3-thiophenecarbaldehyde",Q E S R O
+927.,326591-75-7,,4-methyl-2-propyl-3-thiophenecarbaldehyde,P E S O
+928.,326591-77-9,,"4,5-dimethyl-2-propyl-3-thiophenecarbaldehyde",P E S O
+929.,932-95-6,,"2,5-thiophenedicarbaldehyde",P E S
+930.,,,thiophene dicarbaldehyde (unkn.str.),P E
+931.,15022-15-8,,2-thiopheneacetaldehyde,Q
+932.,14756-03-7,,3-(2-thienyl)-2-propenal,P E S
+933.,88-15-3,,2-acetylthiophene,Q E S R O T
+934.,1468-83-3,,3-acetylthiophene,P E S
+935.,13679-72-6,,2-acetyl-3-methylthiophene,P E S
+936.,13679-73-7,,2-acetyl-4-methylthiophene,P E
+937.,13679-74-8,,2-acetyl-5-methylthiophene,Q E S
+938.,69213-96-3,,3-acetyl-5-methylthiophene,P E S
+939.,832737-24-3,,2-acetyl-5-propylthiophene,P E S
+940.,2530-10-1,,"3-acetyl-2,5-dimethylthiophene",P E S R O
+941.,13679-75-9,,2-propanoylthiophene,Q E S
+942.,59303-13-8,,5-methyl-2-propanoylthiophene,P
+943.,108223-66-1,,5-ethyl-2-propanoylthiophene,P
+944.,5333-83-5,,2-butanoylthiophene,P E
+945.,53119-25-8,,2-pentanoylthiophene,P S
+946.,82274-21-3,,2-ethyl-5-pentanoylthiophene,P
+947.,30711-40-1,,2-heptanoylthiophene,P
+948.,30711-41-2,,2-octanoylthiophene,P
+949.,13678-69-8,,"1-(2-thienyl)-1,2-propanedione",P
+950.,,,"1-(3-thienyl)-1,2-propanedione",P
+951.,636-72-6,,2-thiophenemethanol (=thenyl alcohol),Q E S R O T
+952.,13679-76-0,,thenyl formate,P
+953.,13679-77-1,,thenyl acetate,Q
+954.,527-72-0,,2-thiophenecarboxylic acid,Q
+955.,5380-42-7,,methyl 2-thiophenecarboxylate,P
+956.,2810-04-0,,ethyl 2-thiophenecarboxylate,P
+957.,90953-80-3,,"3,4,5-trimethyl-2-thiophenecarboxylic acid",P E S
+958.,,,3-hydroxy-5-methyl-2-thiophenecarboxylic acid,P
+959.,132-65-0,,dibenzothiophene,P E S T
+960.,16587-52-3,,3-methyldibenzothiophene,P
+961.,7372-88-5,,4-methyldibenzothiophene,P
+962.,35162-55-1,,"5,7-dihydrothieno[3,4-b]pyrazine",
+963.,1613-51-0,,tetrahydrothiapyran (=thiacyclohexane),E S
+964.,,,2-ethyl-(2H)-thiapyran,S
+965.,,,2-butyl-2H-thiapyran,E S
+966.,,,2-pentyl-(2H)-thiapyran,E S
+967.,5258-50-4,,3-methyltetrahydrothiapyran,S
+968.,5161-17-1,,4-methyltetrahydrothiapyran,
+969.,26693-24-3,,"2,3-dihydro-6-methyl-thieno[2,3-c]furan (=kahweofuran)",Q E O T
+970.,100103-55-7,,"6-ethyl-2,3-dihydrothieno[2,3-c]furan",E O T
+971.,78798-06-8,,"2,3-dihydro-4,6-dimethyl-thieno[2,3-c]furan (=homokahweofuran)",Q E O T
+972.,71159-90-5,,p-1-menthene-8-thiol,Q E S R O T
+973.,83150-78-1,,(+)-(R)-menthene-8-thiol,E S T
+974.,83150-77-0,,(-)-(S)-1-p-menthene-8-thiol,E S T
+975.,68398-18-5,,"2,8-epithio-cis-p-menthane",Q E S T
+976.,286-28-2,,7-thiabicyclo[4.1.0]heptane,E S
+977.,65563-96-4,,"1,2-epithiohumulene",Q E O T
+978.,74841-84-2,,"4,5-epithiohumulene",Q E T
+979.,73188-25-7,,myrcene sulfide,P E
+980.,73188-23-5,,myrcene disulfide,Q E T
+981.,73188-26-8,,myrcene trisulfide,P E
+982.,,,(methylthio)humulene (unkn.str.),P
+983.,,,"8,9-epithiohumulene",P
+984.,65563-95-3,,"4,5-epithiocaryophyllene",Q E T
+985.,557-22-2,,"1,2-dithiolane",Q E R
+986.,4829-04-3,,"1,3-dithiolane",E S T
+987.,,,dithiolane (unkn. str.),P E R
+988.,5616-51-3,,"2-methyl-1,3-dithiolane",E S R O T
+989.,58384-57-9,,"3,3-dimethyl-1,2-dithiolane",Q S
+990.,62738-29-8,,"3,3-dimethyl-4-oxo-1,2-dithiolane",Q S
+991.,,,"5-methyl-4-oxo-1,3-dithiolane",E
+992.,,,"5-ethyl-4-oxo-1,3-dithiolane",E
+993.,125370-44-7,,"5,5-dimethyl-2-oxo-1,3-dithiolane",P E S
+994.,2224-02-4,,"1,2-dithiolane-4-carboxylic acid (=asparagusic acid)",Q E S
+995.,7389-17-5,,"methyl 1,2-dithiolane-4-carboxylate",Q S
+996.,62488-50-0,,"ethyl 1,2-dithiolane-4-carboxylate",Q
+997.,288-26-6,,"3H-1,2-dithiole (=1,2-dithia-3-cyclopentene)",Q E S
+998.,14091-99-7,,"1,2-dithiane-4-carboxylic acid",Q S
+999.,,,"5-methyl-1,2-dithiane-4-carboxylic acid",Q
+1000.,62488-53-3,,"3,4-dihydro-3-vinyl-1,2-dithiin",Q E S R O
+1001.,80028-57-5,,"2-vinyl-4H-1,3-dithiin",Q E S R
+1002.,62488-52-2,,"3,6-dihydro-3-vinyl-1,2-dithiin",Q E S R O
+1003.,290-79-9,,"1,4-dithiin",P S
+1004.,,,"2,6-dimethyl-1,3-dithiin",P
+1005.,,,"6-ethyl-2-methyl-1,3(4H)-dithiin",P
+1006.,51678-59-2,,"2,6-dimethyldithiin (unkn.str.)",P
+1007.,3354-39-0,,"4,5-dimethyl-3H-1,2-dithiol-3-thione",P S
+1008.,289-16-7,,"1,2,4-trithiolane",Q S R O T
+1009.,51647-38-2,,"3-Methyl-1,2,4-trithiolane",P E S O
+1010.,23654-92-4,,"3,5-dimethyl-1,2,4-trithiolane",P E S R O T
+1011.,38348-23-1,,"cis-3,5-dimethyl-1,2,4-trithiolane",Q S R O T
+1012.,38348-24-2,,"trans-3,5-dimethyl-1,2,4-trithiolane",Q S R O T
+1013.,54644-28-9,,"3,5-diethyl-1,2,4-trithiolane",Q E S R O
+1014.,38348-25-3,,"cis-3,5-diethyl-1,2,4-trithiolane",Q T
+1015.,38348-26-4,,"trans-3,5-diethyl-1,2,4-trithiolane",Q T
+1016.,,,dimethyltrithiolane (unkn.str.),P
+1017.,116505-59-0,,"3-ethyl-5-methyl-1,2,4-trithiolane",P E S O
+1018.,69098-45-9,,"cis-3-ethyl-5-methyl-1,2,4-trithiolane",Q R
+1019.,69098-44-8,,"trans-3-ethyl-5-methyl-1,2,4-trithiolane",Q R
+1020.,121098-28-0,,"3-isopropyl-5-methyl-1,2,4-trithiolane",P E S
+1021.,71300-00-0,,"cis-3-isopropyl-5-methyl-1,2,4-trithiolane",P
+1022.,71300-01-1,,"trans-3-isopropyl-5-methyl-1,2,4-trithiolane",P
+1023.,121098-29-1,,"3-ethyl-5-isopropyl-1,2,4-trithiolane",P
+1024.,121098-30-4,,"3-ethyl-5-propyl-1,2,4-trithiolane",P E S O
+1025.,54934-99-5,,"3,5-diisopropyl-1,2,4-trithiolane",P E S
+1026.,134281-06-4,,"3-methyl-5-isobutyl-1,2,4-trithiolane",P E S O
+1027.,,,"3-butyl-5-methyl-1,2,4-trithiolane",P
+1028.,101517-93-5,,"3-methyl-5-pentyl-1,2,4-trithiolane",P E S O
+1029.,163268-50-6,,"3,5-dibutyl-1,2,4-trithiolane",P S O
+1030.,92900-67-9,,"3,5-diisobutyl-1,2,4-trithiolane",P E S
+1031.,62574-21-4,,"1,2,3-trithiane-5-carboxylic acid",Q
+1032.,505-20-4,,"1,2-dithiane",Q E S R T
+1033.,90238-76-9,,3-methyldithian-4-one,P E S
+1034.,,,"6-methyl-1,2-dithian-4-one",S
+1035.,505-23-7,,"1,3-dithiane",Q S R T
+1036.,505-29-3,,"1,4-dithiane",E S R T
+1037.,51288-07-4,,"2,2,4-trimethyl-1,3-dithiane",P
+1038.,291-21-4,,"1,3,5-trithiane",P E S T
+1039.,,,trithiane (unkn. str.),P E R
+1040.,43040-01-3,,"3-methyl-1,2,4-trithiane",P E S
+1041.,2765-04-0,,"2,4,6-trimethyl-1,3,5-trithiane (=trithioacetaldehyde)",P E S R
+1042.,828-26-2,,"2,2,4,4,6,6-hexamethyl-1,3,5-trithiane (=trithioacetone)",Q E S R O
+1043.,19901-14-5,,"1,2,3,5-tetrathiane",P
+1044.,,,dimethyltetrathiane (unkn.str.),P
+1045.,96504-25-5,,"4,6-dimethyl-1,2,3,5-tetrathiane",
+1046.,126876-38-8,,"4-ethyl-6-pentyl-1,2,3,5-tetrathiane",P E R
+1047.,291-22-5,,"1,2,4,5-tetrathiane",P S
+1048.,67411-27-2,,"3,6-dimethyl-1,2,4,5-tetrathiane",P S
+1049.,292-45-5,,"1,2,4,6-tetrathiepane",P E S
+1050.,,,tetrathiepane (unkn. str.),P E R
+1051.,292-46-6,,"1,2,3,5,6-pentathiepane (=lenthionin, pentathiacycloheptane)",P E S T
+1052.,17233-71-5,,"1,2,3,4,5,6-hexathiepane",P
+1053.,67715-80-4,,"2-methyl-4-propyl-1,3-oxathiane",P E S
+1054.,59323-76-1,,"cis-2-methyl-4-propyl-1,3-oxathiane",P S R O
+1055.,90243-46-2,,"(2R,4S)-cis-2-methyl-4-propyl-1,3-oxathiane",P O
+1056.,59324-17-3,,"trans-2-methyl-4-propyl-1,3-oxathiane",P S R O
+1057.,288-47-1,,thiazole,Q S R O T
+1058.,3581-87-1,,2-methylthiazole,Q S R O
+1059.,693-95-8,,4-methylthiazole,Q E S R O T
+1060.,3581-89-3,,5-methylthiazole,P S R
+1061.,15679-09-1,,2-ethylthiazole,P E S O
+1062.,17626-72-1,,4-ethylthiazole,P E S
+1063.,17626-73-2,,5-ethylthiazole,P E S R
+1064.,17626-75-4,,2-propylthiazole,P E S R O
+1065.,41981-60-6,,4-propylthiazole,T
+1066.,53833-33-3,,4-butylthiazole,P E S
+1067.,52414-90-1,,5-butylthiazole,P
+1068.,18640-74-9,,2-isobutylthiazole,Q E S R O T
+1069.,18277-27-5,,2-sec-butylthiazole,P E S R
+1070.,37645-62-8,,2-pentylthiazole,P E S
+1071.,,,2-nonylthiazole,P
+1072.,541-58-2,,"2,4-dimethylthiazole",Q S R O T
+1073.,4175-66-0,,"2,5-dimethylthiazole",P E S
+1074.,3581-91-7,,"4,5-dimethylthiazole",Q E S R O T
+1075.,52006-65-2,,dimethylthiazole (unkn.str.),P
+1076.,15679-12-6,,2-ethyl-4-methylthiazole,Q E S R T
+1077.,19961-53-6,,2-ethyl-5-methylthiazole,P
+1078.,32272-48-3,,4-ethyl-2-methylthiazole,Q S
+1079.,52414-91-2,,4-ethyl-5-methylthiazole,Q S
+1080.,19961-52-5,,5-ethyl-2-methylthiazole,Q S R
+1081.,31883-01-9,,5-ethyl-4-methylthiazole,P O T
+1082.,1759-28-0,,4-methyl-5-vinylthiazole,Q E S R O T
+1083.,15679-13-7,,2-isopropyl-4-methylthiazole,P E S R O
+1084.,,,2-isopropyl-5-methylthiazole,P
+1085.,32272-49-4,,"2,4-diethylthiazole",P E S T
+1086.,15729-76-7,,"2,5-diethylthiazole",P E S T
+1087.,54300-07-1,,5-ethyl-2-propylthiazole,P
+1088.,,,dipropylthiazole (unkn.str.),P
+1089.,87116-69-6,,2-isopropyl-4-propylthiazole,P
+1090.,96693-89-9,,2-butyl-4-propylthiazole,P
+1091.,86290-21-3,,5-methyl-2-pentylthiazole,P S
+1092.,,,2-pentyl-5-propylthiazole,P
+1093.,13623-11-5,,"2,4,5-trimethylthiazole",Q E S R O T
+1094.,38205-61-7,,"5-ethyl-2,4-dimethylthiazole",P E S R O T
+1095.,32272-57-4,,"4-ethyl-2,5-dimethylthiazole",Q E S O
+1096.,873-64-3,,"2-ethyl-4,5-dimethylthiazole",Q E S O
+1097.,,,ethyl-dimethylthiazole (unkn.str.),P
+1098.,65505-18-2,,"2,4-dimethyl-5-vinylthiazole",P E S
+1099.,41981-72-0,,"4,5-dimethyl-2-propylthiazole",P S
+1100.,53498-30-9,,"2-isopropyl-4,5-dimethylthiazole",Q E S
+1101.,41981-77-5,,"4-butyl-2,5-dimethylthiazole",P
+1102.,76572-48-0,,"2-butyl-4,5-dimethylthiazole",P
+1103.,85425-42-9,,"5-butyl-2,4-dimethylthiazole",P
+1104.,53498-32-1,,"2-isobutyl-4,5-dimethylthiazole",P E S R T
+1105.,96693-91-3,,"2,4-dimethyl-5-pentylthiazole",P
+1106.,86290-22-4,,"4,5-dimethyl-2-pentylthiazole",P
+1107.,87262-49-5,,"2-hexyl-4,5-dimethylthiazole",P
+1108.,87262-50-8,,"2-heptyl-4,5-dimethylthiazole",P
+1109.,87262-52-0,,"4,5-dimethyl-2-octylthiazole",P
+1110.,41981-71-9,,"2,5-diethyl-4-methylthiazole",P S
+1111.,87116-70-9,,"2,4-diethyl-5-propylthiazole",P
+1112.,4276-68-0,,"2,5-diethyl-4-propylthiazole",P S
+1113.,77311-08-1,,"4,5-diethyl-2-propylthiazole",P
+1114.,87116-71-0,,"4-methyl-2,5-dipropylthiazole",P
+1115.,,,"4-ethyl-2,5-dipropylthiazole",P
+1116.,41981-75-3,,4-ethyl-2-methyl-5-propylthiazole,P
+1117.,86290-19-9,,4-ethyl-5-methyl-2-propylthiazole,P
+1118.,4276-67-9,,5-ethyl-2-methyl-4-propylthiazole,P
+1119.,87116-68-5,,4-ethyl-2-isopropyl-5-methylthiazole,P
+1120.,53498-31-0,,5-ethyl-2-isopropyl-4-methylthiazole,P
+1121.,86290-20-2,,2-butyl-5-ethyl-4-methylthiazole,P
+1122.,,,2-butyl-5-methyl-4-propylthiazole,P
+1123.,87262-51-9,,4-ethyl-2-heptyl-5-methylthiazole,P
+1124.,,,5-ethyl-2-hexyl-4-methylthiazole,P
+1125.,,,5-ethyl-4-methyl-2-octylthiazole,P
+1126.,,,"4,5-dibutyl-2-isopropylthiazole",P
+1127.,25115-63-3,,5-ethoxythiazole,P
+1128.,15679-19-3,,2-ethoxythiazole,P E S R O T
+1129.,272-16-2,,"1,2-benzothiazole",P E S R
+1130.,95-16-9,,"benzothiazole (=1,3-benzothiazole)",Q E S R O T
+1131.,120-75-2,,2-methylbenzothiazole,P E S T
+1132.,17229-76-4,,2-propylbenzothiazole,P E S
+1133.,54798-95-7,,2-butylbenzothiazole,Q E S O
+1134.,20614-71-5,,2-pentylbenzothiazole,P E S
+1135.,,,2-isopentylbenzothiazole,P E
+1136.,65718-88-9,,2-hexylbenzothiazole,P
+1137.,69938-51-8,,2-heptylbenzothiazole,P
+1138.,6634-55-5,,2-octylbenzothiazole,P E S
+1139.,6340-30-3,,2-nonylbenzothiazole,P E S
+1140.,615-22-5,,2-(methylthio)benzothiazole,P E T
+1141.,31621-01-9,,methylthiobenzothiazole (unkn.str.),P
+1142.,137-00-8,,5-(2-hydroxyethyl)-4-methylthiazole,Q E S R O T
+1143.,24295-03-2,,2-acetylthiazole,Q E S R O T
+1144.,38205-66-2,,4-acetylthiazole,E S T
+1145.,72186-67-5,,acetylthiazole (unkn.str.),Q R
+1146.,7533-07-5,,2-acetyl-4-methylthiazole,Q S T
+1147.,59303-17-2,,2-acetyl-5-methylthiazole,P S
+1148.,38205-60-6,,"2,4-dimethyl-5-acetylthiazole",E S R O
+1149.,233665-91-3,,2-acetyl-4-ethylthiazole,E S
+1150.,43039-98-1,,2-propionylthiazole,P E S R O
+1151.,13679-83-9,,4-methyl-2-propanoylthiazole,P E S
+1152.,2346-00-1,,2-methyl-2-thiazoline,P E S R
+1153.,111611-28-0,,4-methyl-2-thiazoline,E S T
+1154.,66867-06-9,,2-methyl-3-thiazoline,P E S
+1155.,52558-99-3,,4-methyl-3-thiazoline,P E S R O T
+1156.,4145-93-1,,"2,4,5-trimethyl-2-thiazoline",P S
+1157.,29926-41-8,,2-acetyl-2-thiazoline,Q E S R O T
+1158.,29926-42-9,,2-Propionyl-2-thiazoline,E S R T
+1159.,60755-05-7,,"2,4-dimethyl-3-thiazoline",P E S T
+1160.,,,thiazoline,S
+1161.,67936-13-4,,"2-Isopropyl-4-methyl-2,5-dihydro-1,3-thiazole",E S O
+1162.,60633-24-1,,"2,4,5-trimethyl-2,5-dihydro-1,3-thiazole (=2,4,5-trimethyl-3-thiazoline)",P E T
+1163.,693-92-5,,3-methylisothiazole,Q E S
+1164.,936-46-9,,4-phenylisothiazole,P E S
+1165.,504-78-9,,thiazolidine,P E S
+1166.,24050-16-6,,2-methylthiazolidine,P S
+1167.,24050-10-0,,2-propylthiazolidine,P S
+1168.,73870-33-4,,3-nitrosothiazolidine,P E S
+1169.,455-41-4,,cycloalliin,P E S T
+1170.,164524-93-0,,"5-Acetyl-2,3-dihydro-1,4-thiazine",E S R O T
+1171.,164524-94-1,,"5-propionyl-2,3-dihydro-1,4-thiazine",E S R O T
+1172.,164524-95-2,,"5-butanoyl-2,3-dihydro-1,4-thiazine",E S O T
+1173.,137867-52-8,,"4-ethyl-2,6-dimethyl-4H-1,3,5-dithiazine",P S
+1174.,137867-54-0,,"2-methyl-4,6-diethyldithiazine (unkn.str.)",P
+1175.,51647-36-0,,"dihydro-4,6-dimethyl-1,3,5(4H)-dithiazine",P S
+1176.,638-17-5,,"dihydro-2,4,6-trimethyl-1,3,5(4H)-dithiazine (=thialdine)",Q E S R T
+1177.,54717-13-4,,"4-ethyldihydro-2,6-dimethyl-1,3,5(4H)-dithiazine",Q E
+1178.,54717-14-5,,"2-ethyldihydro-4,6-dimethyl-1,3,5(4H)-dithiazine",Q E
+1179.,54717-16-7,,"2,4-diethyldihydro-6-methyl-1,3,5(4H)-dithiazine",P
+1180.,54717-17-8,,"dihydro-2,4,6-triethyl-1,3,5(4H)-dithiazine",P E S O
+1181.,104691-38-5,,"dihydro-4,6-dimethyl-2-propyl-1,3,5(4H)-dithiazine",P
+1182.,104691-39-6,,"dihydro-2,4-dimethyl-6-propyl-1,3,5(4H)-dithiazine",P
+1183.,104691-40-9,,"dihydro-2-isopropyl-4,6-dimethyl-1,3,5(4H)-dithiazine",P E S
+1184.,104691-41-0,,"dihydro-6-isopropyl-2,4-dimethyl-1,3,5(4H)-dithiazine",P E S
+1185.,121098-20-2,,"4-ethyldihydro-6-methyl-2-propyl-1,3,5(4H)-dithiazine",P
+1186.,101517-81-1,,"2-butyldihydro-4,6-dimethyl-1,3,5(4H)-dithiazine",P
+1187.,101517-79-7,,"4-butyldihydro-2,6-dimethyl-1,3,5(4H)-dithiazine",P
+1188.,101517-87-7,,"dihydro-2-isobutyl-4,6-dimethyl-1,3,5(4H)-dithiazine",E S
+1189.,121098-13-3,,"dihydro-2,4-diisopropyl-6-methyl-1,3,5(4H)-dithiazine",P
+1190.,74595-94-1,,"dihydro-2,4,6-tris(2-methylpropyl)-4H-1,3,5-Dithiazine",E S
+1191.,101517-91-3,,"dihydro-2,4-dimethyl-6-pentyl-1,3,5(4H)-dithiazine",P
+1192.,101517-90-2,,"dihydro-4,6-dimethyl-2-pentyl-1,3,5(4H)-dithiazine",P
+1193.,134281-19-9,,"4-butyldihydro-6-methyl-2-propyl-1,3,5(4H)-dithiazine",P
+1194.,101517-82-2,,"4,6-dibutyldihydro-2-methyl-1,3,5(4H)-dithiazine",P
+1195.,101517-78-6,,"2,4-dibutyldihydro-6-methyl-1,3,5(4H)-dithiazine",
+1196.,120882-14-6,,"4-butyldihydro-2-methyl-6-pentyl-1,3,5(4H)-dithiazine",P
+1197.,53897-63-5,,"tetrahydro-2,4,6-trimethyl-1,3,5(2H)-thiadiazine",P E S R O
+1198.,13190-34-6,,5-vinyloxazolidine-2-thione,P E S T
+1199.,2044-73-7,,2-pyridinemethanethiol,E S R
+1200.,35250-53-4,,pyrazine ethanethiol,E S R
+1201.,21948-70-9,,2-methylthiopyrazine,E S R O T
+1202.,2882-20-4,,2-methyl-3-(methylthio)pyrazine,E S R O T
+1203.,2884-14-2,,2-methyl-5-(methylthio)-pyrazine,E S R T
+1204.,2884-13-1,,2-methyl-6-(methylthio)-pyrazine,E S R T
+1205.,72987-62-3,,2-ethyl-3-(methylthio)pyrazine,P E S R O T
+1206.,68560-83-8,,3-propyl-2-(methylthio)pyrazine,E S R O T
+1207.,67952-59-4,,2-isopropyl-3-(methylthio)pyrazine,E S R T
+1208.,36330-08-2,,2-isobutyl-3-(methylthio)pyrazine,E T
+1209.,113685-87-3,,2-pentyl-3-(methylthio)pyrazine,E S R O T
+1210.,113685-88-4,,2-octyl-3-(methylthio)pyrazine,E R O T
+1211.,113685-89-5,,2-decyl-3-(methylthio)pyrazine,E R O T
+1212.,65032-06-6,,2-(ethylthio)pyrazine,E S R O T
+1213.,32740-98-0,,2-methyl-3-(ethylthio)pyrazine,E R O T
+1214.,113685-90-8,,2-ethyl-3-(ethylthio)pyrazine,E R O T
+1215.,113685-91-9,,2-butyl-3-(ethylthio)pyrazine,E R O T
+1216.,113685-92-0,,2-pentyl-3-(ethylthio)pyrazine,E R O T
+1217.,113685-93-1,,2-octyl-3-(ethylthio)-pyrazine,E R O T
+1218.,113685-94-2,,2-decyl-3-(ethylthio)-pyrazine,E R O T
+1219.,99784-22-2,,3-methyl-5-(1-methylethyl)-2-(methylthio)-pyrazine,E O T
+1220.,99784-25-5,,2-(ethylthio)-5-isopropyl-3-methylpyrazine,E S O T
+1221.,78246-17-0,,5-isobutyl-3-methyl-2-(methylthio)pyrazine,E S O T
+1222.,99784-23-3,,5-sec-butyl-3-methyl-2-(methylthio)pyrazine,E S O T
+1223.,99784-24-4,,3-methyl-5-(2-methylbutyl)-2-(methylthio)pyrazine,O T
+1224.,78246-18-1,,3-methyl-5-(2-methylpentyl)-2-(methylthio)pyrazine,O T
+1225.,99784-27-7,,2-(ethylthio)-3-methyl-5-(2-methylpropyl)pyrazine,E S O T
+1226.,99784-26-6,,5-sec-butyl-2-(ethylthio)-3-methylpyrazine,E S O T
+1227.,99784-28-8,,2-(ethylthio)-3-methyl-5-(2-methylbutyl)pyrazine,S O T
+1228.,99784-29-9,,2-(ethylthio)-3-methyl-5-(2-methylpentyl)pyrazine,S O T
+1229.,107697-83-6,,phenylthiopyrazine,E S R O T
+1230.,91091-02-0,,2-methyl-3-phenylthiopyrazine,E S R O T
+1231.,113685-95-3,,2-propyl-3-(phenylthio)-pyrazine,E R O T
+1232.,113685-96-4,,2-pentyl-3-(phenylthio)-pyrazine,E R O T
+1233.,113685-97-5,,2-octyl-3-(phenylthio)-pyrazine,E R O T
+1234.,113685-98-6,,2-decyl-3-(phenylthio)-pyrazine,E O T
+1235.,99784-30-2,,3-methyl-5-(1-methyethyl)-2-(phenylthio)-pyrazine,E S O T
+1236.,99784-31-3,,5-sec-butyl-3-methyl-2-(phenylthio)pyrazine,E S O T
+1237.,78246-19-2,,5-isobutyl-3-methyl-2-(phenylthio)pyrazine,E S O T
+1238.,99784-32-4,,3-methyl-5-(2-methylbutyl)-2-(phenylthio)pyrazine,S O T
+1239.,99784-33-5,,3-methyl-5-(2-methylpentyl)-2-(phenylthio)pyrazine,S O T
+1240.,126898-39-3,,"5,6-dimethyl-2,3,7-trithiabicyclo[2.2.1]heptane",P S R
+1241.,116505-60-3,,"Tetrahydro-2,4-dimethyl-4H-pyrrolo[2,1-d]-1,3,5-dithiazine",Q E S R O T
+1242.,163268-51-7,,"terahydro-4-methyl-2-ethyl-4H-pyrrolo[2,1-d]-1,3,5-dithiazine",P E S O
+1243.,163268-52-8,,"tetrahydro-4-methyl-2(1-methylethyl)-4H-Pyrrolo[2,1-d]-1,3,5-dithiazine",E S O
+1244.,132344-95-7,,"tetrahydro-4-methyl-2-propyl-4H-pyrrolo[2,1-d]-1,3,5-dithiazine",S
+1245.,132344-96-8,,"tetrahydro-4-methyl-2-isobutyl-4H-pyrrolo[2,1-d]-1,3,5-dithiazine",E S O
+1246.,132344-97-9,,"tetrahydro-4-methyl-2-butyl-4H-pyrrolo[2,1-d]-1,3,5-dithiazine",E S
+1247.,134281-35-9,,"tetrahydro-2,4-dimethyl-4H,6H-pyrido[2.1-d]-1,3,5-dithiazine",S O
+1248.,115421-50-6,,"dihydro-2,4,6-trimethyl-4H-1,3,5-oxathiazine",S O
+1249.,72445-42-2,,mintsulfide,Q E S R
+1250.,41596-55-8,,N-allyl O-methyl thiocarbamate,E S R O
+1251.,3735-92-0,,methyl-dimethyl dithiocarbamate,Q R
+1252.,65263-72-1,,N-benzyl O-methyl thiocarbamate,E S R O
+1253.,65351-53-3,,N-ethyl O-methyl thiocarbamate,E S R O
+1254.,930585-95-8,,N-3-(methylthio)propyl O-methyl thiocarbamate,E S R O
+1255.,930585-96-9,,N-phenethyl O-methyl thiocarbamate,E S R O
+1256.,817-97-0,,N-allyl O-ethyl thiocarbamate,E S R O
+1257.,55365-86-1,,N-benzyl O-ethyl thiocarbamate,Q E S R O
+1258.,998-98-1,,N-ethyl O-ethyl thiocarbamate,E S R O
+1259.,89855-25-4,,O-ethyl N-[3-(methylthio)propyl]thiocarbamate,E S R O
+1260.,55365-88-3,,N-phenethyl O-ethyl thiocarbamate,E S R O
+1261.,89895-26-1,,N-allyl O-propyl thiocarbamate,E S R O
+1262.,27931-68-6,,N-benzyl O-propyl thiocarbamate,E S R O
+1263.,930585-97-0,,N-ethyl O-propyl thiocarbamate,E S R O
+1264.,930585-98-1,,N-3-(methylthio)propyl O-propyl thiocarbamate,E S R O
+1265.,930585-99-2,,N-phenethyl O-propyl thiocarbamate,E S R O
+1266.,623-81-4,,"sulfurous acid, diethyl ester",Q E S
+1267.,344738-34-7,,3-(1-hydroxy-3-hexyldithio)hexanol,P E S
+1268.,959111-37-6,,3-(1-hydroxy-3-hexyldithio)hexyl acetate,P S
+1269.,,,3-(1-hydroxy-3-hexyldithio)hexyl butanoate,P
+1270.,1403569-39-0,,3-(1-acetoxy-3-hexyldithio)hexyl acetate,P S
+1271.,,,3-(1-acetoxy-3-hexyldithio)hexyl butanoate,P
+1272.,,,3-(1-acetoxy-3-hexyldithio)hexyl hexanoate,P
+1273.,,,3-(1-butyryloxy-3-hexyldithio)hexyl butanoate,P
+1274.,,,3-(1-butyryloxy-3-hexyldithio)hexyl hexanoate,P

@@ -1,0 +1,495 @@
+,CAS,,Compound name,Compoundflags
+,CAS,,Compound name,Compound flags
+1.,64-18-6,,formic acid,Q E S R O T
+2.,67879-58-7,,caftaric acid,S T
+3.,1111-78-0,,"carbamic acid, monoammonium salt",S
+4.,64-19-7,,acetic acid,Q E S R O T
+5.,,,glucaric acid (unkn.str.),E
+6.,,,gluconic acid (unkn.str.),
+7.,,,diferulic acid (isomer 5),
+8.,79-14-1,,hydroxyacetic acid (=glycolic acid),Q E S T
+9.,77-52-1,,ursolic acid,Q S
+10.,298-12-4,,oxoacetic acid (=glyoxylic acid),Q E S T
+11.,,,N-[4-[hydroxy(methyl)amino]butanoyl]glycine,P E
+12.,56-87-1,,L-Lysine,Q E S
+13.,56-87-1,,l-Lysine,E S T
+14.,79-09-4,,propanoic acid (=propionic acid),Q E S R O T
+15.,1477-50-5,,indole-2-carboxylic acid,P S
+16.,79-10-7,,2-propenoic acid (=acrylic acid),Q E S T
+17.,79-31-2,,2-methylpropanoic acid (=isobutyric acid),Q E S R O T
+18.,79-41-4,,2-methyl-2-propenoic acid (=methacrylic acid),P E S T
+19.,75-98-9,,"2,2-dimethylpropanoic acid (=trimethyl acetic acid, pivalic acid)",P E S T
+20.,598-82-3,,2-hydroxypropanoic acid (=lactic acid),Q E S T
+21.,503-66-2,,3-hydroxypropanoic acid,Q S
+22.,473-81-4,,"2,3-hydroxypropanoic acid (=glyceric acid)",Q E S
+23.,127-17-3,,"2-oxopropanoic acid (=pyruvic acid, acetylformic acid)",Q E S R T
+24.,4324-38-3,,3-ethoxypropanoic acid,Q S
+25.,1783-84-2,,dihomo-γ-linolenic acid,Q E S
+26.,97-69-8,,N-acetylalanine,P E S
+27.,594-61-6,,2-hydroxy-2-methylpropanoic acid,Q S T
+28.,1113-60-6,,3-hydroxy-2-oxopropanoic acid,Q E S
+29.,13794-15-5,,2-(4-methoxyphenoxy)propanoic acid,Q E S
+30.,4276-75-9,,(R)-2-(4-methoxyphenoxy)propanoic acid,Q E S
+31.,4276-74-8,,(S)-2-(4-methoxyphenoxy)propanoic acid,Q E S
+32.,2504-83-8,,3-(4-imidazolyl)-2-oxopropanoic acid,Q E S
+33.,107-92-6,,butanoic acid,Q E S R O T
+34.,3724-65-0,,2-butenoic acid (=crotonic acid),Q E S R
+35.,107-93-7,,(E)-2-butenoic acid,P E S
+36.,,,diferulic acid (isomer 1),
+37.,,,diferulic acid (isomer 2),
+38.,,,diferulic acid (isomer 3),
+39.,,,diferulic acid (isomer 4),
+40.,116-53-0,,2-methylbutanoic acid,Q E S R O T
+41.,1730-91-2,,(S)-2-methylbutanoic acid,Q S R O T
+42.,32231-50-8,,(R)-2-methylbutanoic acid,Q S T
+43.,503-74-2,,3-methylbutanoic acid (=isovaleric acid),Q E S R O T
+44.,35915-22-1,,methylbutanoic acid (unkn.str.),Q R
+45.,88-09-5,,2-ethylbutanoic acid,Q E S T
+46.,14287-61-7,,"2,3-dimethylbutanoic acid",E S T
+47.,13201-46-2,,2-methyl-2-butenoic acid,P E S
+48.,565-63-9,,(Z)-2-methyl-2-butenoic acid (=angelic acid),Q E S
+49.,80-59-1,,(E)-2-methyl-2-butenoic acid (=tiglic acid),Q E S R T
+50.,541-47-9,,3-methyl-2-butenoic acid (=senecioic acid),Q E S R T
+51.,1617-31-8,,3-methyl-3-butenoic acid,Q E S T
+52.,32444-32-9,,2-ethyl-3-methylbutanoic acid,Q E S
+53.,10276-09-2,,"2,2-dimethyl-3-butenoic acid",P S
+54.,565-70-8,,2-hydroxybutanoic acid,P E S T
+55.,300-85-6,,3-hydroxybutanoic acid,Q E S O T
+56.,591-81-1,,4-hydroxybutanoic acid,P E S T
+57.,3739-30-8,,2-hydroxy-2-methylbutanoic acid,P E S T
+58.,4026-18-0,,2-hydroxy-3-methylbutanoic acid,Q E S T
+59.,625-08-1,,3-hydroxy-3-methylbutanoic acid,Q E S
+60.,14868-24-7,,"2,3-dihydroxy-2-methylbutanoic acid",Q E S
+61.,1756-18-9,,"2,3-dihydroxy-3-methylbutanoic acid",Q E S
+62.,59-30-3,,folic acid,Q S
+63.,6217-54-5,,docosahexaenoic acid,Q E S
+64.,600-18-0,,2-oxobutanoic acid,Q E S T
+65.,541-50-4,,3-oxobutanoic acid,P E S
+66.,759-05-7,,3-methyl-2-oxobutanoic acid,Q E S T
+67.,1944-42-9,,3-hydroxy-2-oxobutanoic acid,Q S
+68.,22136-38-5,,hydroxy-2-oxobutanoic acid (unkn.str.),P
+69.,918-44-5,,2-hydroxy-2-methyl-3-oxobutanoic acid (=α-acetolactic acid),Q E S
+70.,3142-65-2,,2-ethyl-2-hydroxy-3-oxobutanoic acid,Q E S
+71.,109-52-4,,pentanoic acid (=valeric acid),Q E S R O T
+72.,626-98-2,,2-pentenoic acid,P S
+73.,27516-53-6,,pentenoic acid (unkn.str.),P R
+74.,97-61-0,,2-methylpentanoic acid,Q E S R T
+75.,105-43-1,,3-methylpentanoic acid,Q E S R O T
+76.,3302-12-3,,"2,2,4,4-tetramethylpentanoic acid",P S
+77.,646-07-1,,4-methylpentanoic acid (=isocaproic acid),Q E S R O T
+78.,20225-24-5,,2-ethylpentanoic acid,P E S T
+79.,3142-72-1,,2-methyl-2-pentenoic acid,P E S R
+80.,37674-63-8,,2-methyl-3-pentenoic acid,P E S
+81.,10321-71-8,,4-methyl-2-pentenoic acid,P E S
+82.,504-85-8,,4-methyl-3-pentenoic acid (=isohexenoic acid),Q E S R T
+83.,488-15-3,,2-hydroxy-3-methylpentanoic acid,Q S
+84.,498-36-2,,2-hydroxy-4-methylpentanoic acid,Q E S T
+85.,123-76-2,,4-oxopentanoic acid (=levulinic acid),Q E S T
+86.,39748-49-7,,3-methyl-2-oxopentanoic acid,Q E S
+87.,816-66-0,,4-methyl-2-oxopentanoic acid,Q E S T
+88.,5650-76-0,,4-methyl-3-oxopentanoic acid,P E S
+89.,3715-10-4,,5-guanidino-2-oxopentanoic acid,P E S
+90.,7773-56-0,,abscisic acid,Q E S
+91.,6755-41-5,,"(R,S)-(E,E)-(+,-)-abscisic acid",Q E S
+92.,21293-29-8,,"(S)-(E,Z)-(+)-abscisic acid",Q E S
+93.,142-62-1,,hexanoic acid (=caproic acid),Q E S R O T
+94.,79039-46-6,,(Z)-11-tetradecenoic acid,Q E S
+95.,1191-04-4,,2-hexenoic acid,Q S R
+96.,1577-28-2,,(Z)-2-hexenoic acid,P S
+97.,13419-69-7,,(E)-2-hexenoic acid,Q E S R O
+98.,4219-24-3,,3-hexenoic acid,Q E S R T
+99.,1775-43-5,,(Z)-3-hexenoic acid,Q E S R O
+100.,1577-18-0,,(E)-3-hexenoic acid,P E S R
+101.,35194-36-6,,4-hexenoic acid,P S
+102.,1577-22-6,,5-hexenoic acid,P S
+103.,1289-40-3,,hexenoic acid (unkn.str.),Q
+104.,110-44-1,,"(E,E)-2,4-hexadienoic acid (=sorbic acid)",Q E S T
+105.,103475-72-5,,"hexadienoic acid, isomer (unkn.str.)",P
+106.,4536-23-6,,2-methylhexanoic acid,Q E S R T
+107.,3780-58-3,,3-methylhexanoic acid,P S R
+108.,1561-11-1,,4-methylhexanoic acid,Q S T
+109.,628-46-6,,5-methylhexanoic acid,P E S R T
+110.,104490-70-2,,methylhexanoic acid (unkn.str.),Q R
+111.,149-57-5,,2-ethylhexanoic acid,Q S R T
+112.,6064-63-7,,2-hydroxyhexanoic acid,Q S T
+113.,10191-24-9,,3-hydroxyhexanoic acid,Q E S
+114.,2492-75-3,,2-oxohexanoic acid,P E S T
+115.,685-73-4,,galacturonic acid,Q E S
+116.,1117-74-4,,4-oxohexanoic acid,P E S
+117.,37549-83-0,,4-methyl-2-hexenoic acid,Q S R
+118.,41653-96-7,,5-methyl-2-hexenoic acid,P S
+119.,68062-14-6,,4-methylhexenoic acid (unkn.str.),P R
+120.,2543-54-6,,2-isopropyl-5-oxohexanoic acid,P S
+121.,19456-81-6,,5-amino-2-oxohexanoic acid,Q
+122.,585-05-7,,oxaluric acid,P S
+123.,10606-14-1,,6-amino-2-oxohexanoic acid,P S
+124.,111-14-8,,heptanoic acid (=enanthic acid),Q E S R O T
+125.,1330-19-4,,heptanoic acid (branched),P
+126.,18999-28-5,,2-heptenoic acid,Q E S
+127.,1577-31-7,,(Z)-2-heptenoic acid,P S
+128.,10352-88-2,,(E)-2-heptenoic acid,P E S
+129.,29901-85-7,,3-heptenoic acid,P S
+130.,68676-74-4,,(Z)-3-heptenoic acid,P S
+131.,28163-84-0,,(E)-3-heptenoic acid,P S R O
+132.,35194-37-7,,4-heptenoic acid,S
+133.,41653-95-6,,(Z)-4-heptenoic acid,P S
+134.,51193-78-3,,(E)-4-heptenoic acid,P S
+135.,1119-60-4,,6-heptenoic acid,P S
+136.,25377-46-2,,heptenoic acid (unkn.str.),Q
+137.,17175-86-9,,"2,4-heptadienoic acid",S
+138.,50915-66-7,,"(E,Z)-2,4-heptadienoic acid",P S
+139.,65518-46-9,,"(E,E)-2,4-heptadienoic acid",P S
+140.,1188-02-9,,2-methylheptanoic acid,P E S T
+141.,53663-30-2,,3-methylheptanoic acid,P S
+142.,929-10-2,,6-methylheptanoic acid,Q E S R T
+143.,91433-72-6,,methylheptanoic acid (unkn.str.),Q
+144.,3274-29-1,,2-ethylheptanoic acid,Q E S
+145.,132735-95-6,,4-ethylheptanoic acid,Q S
+146.,132642-86-5,,ethylheptanoic acid (unkn.str.),Q
+147.,,,propylheptanoic acid (unkn.str.),Q
+148.,636-69-1,,2-hydroxyheptanoic acid,Q S
+149.,17587-29-0,,3-hydroxyheptanoic acid,Q S
+150.,2624-25-1,,"2,4-dimethylheptanoic acid",Q S
+151.,97259-93-3,,dimethylheptanoic acid (unkn.str.),Q
+152.,74457-59-3,,"2,6-dimethyl-5-oxoheptanoic acid",P S
+153.,,,ethylheptenoic acid (unkn.str.),Q
+154.,91422-04-7,,oxoheptenoic acid (unkn.str.),P
+155.,124-07-2,,octanoic acid (=caprylic acid),Q E S R O T
+156.,1470-50-4,,2-octenoic acid,Q S
+157.,1577-96-4,,(Z)-2-octenoic acid,Q S
+158.,1871-67-6,,(E)-2-octenoic acid,Q E S
+159.,1577-19-1,,3-octenoic acid,E S
+160.,5169-51-7,,(Z)-3-octenoic acid,P S
+161.,5163-67-7,,(E)-3-octenoic acid,P S
+162.,,,4-octenoic acid,
+163.,18654-81-4,,(Z)-4-octenoic acid,Q S
+164.,18719-24-9,,7-octenoic acid,Q S
+165.,28962-27-8,,octenoic acid (unkn.str.),P
+166.,3004-93-1,,2-methyloctanoic acid,Q S
+167.,54947-74-9,,4-methyloctanoic acid (=hircinoic acid),Q E S T
+168.,504-99-4,,6-methyloctanoic acid,Q S T
+169.,693-19-6,,7-methyloctanoic acid,Q S R
+170.,26896-18-4,,methyloctanoic acid (unkn.str.),Q
+171.,25234-25-7,,2-ethyloctanoic acid,P S
+172.,16493-80-4,,4-ethyloctanoic acid,Q E S T
+173.,617-73-2,,2-hydroxyoctanoic acid,Q S T
+174.,14292-27-4,,3-hydroxyoctanoic acid,Q S
+175.,,,hydroxyoctanoic acid (unkn.str.),Q
+176.,4316-44-3,,4-oxooctanoic acid (unkn.str.),P
+177.,19343-70-5,,"4,6-dimethyloctanoic acid",P S
+178.,82430-11-3,,dimethyloctanoic acid (unkn.str.),Q
+179.,589-60-6,,"3,7-dimethyl-6-oxooctanoic acid (=β-methyl-δ-isobutyryl-valeric acid)",Q E S
+180.,15313-65-2,,"3,6-dimethyl-7-oxooctanoic acid",Q S
+181.,112-05-0,,nonanoic acid (=pelargonic acid),Q E S R O T
+182.,3760-11-0,,2-nonenoic acid,Q E S
+183.,41653-98-9,,(Z)-3-nonenoic acid,P S
+184.,14812-03-4,,(E)-2-nonenoic acid,Q S T
+185.,4124-88-3,,3-nonenoic acid,P E S
+186.,28163-88-4,,(E)-3-nonenoic acid,P S
+187.,35329-50-1,,(E)-4-nonenoic acid,P S
+188.,29830-11-3,,nonenoic acid (unkn.str.),Q R
+189.,24323-21-5,,2-methylnonanoic acid,P S
+190.,45019-28-1,,4-methylnonanoic acid,Q E S T
+191.,5963-14-4,,8-methylnonanoic acid,Q S T
+192.,26403-17-8,,methylnonanoic acid (unkn.str.),Q
+193.,40165-87-5,,3-hydroxynonanoic acid,Q S
+194.,2553-17-5,,9-oxononanoic acid,Q S
+195.,56078-94-5,,"4,6-dimethylnonanoic acid",P
+196.,136366-71-7,,dimethylnonanoic acid (unkn.str.),Q
+197.,334-48-5,,decanoic acid (=capric acid),Q E S R O T
+198.,3913-85-7,,2-decenoic acid,Q E S
+199.,334-49-6,,(E)-2-decenoic acid,P S
+200.,15469-77-9,,3-decenoic acid,E S
+201.,2430-93-5,,(Z)-3-decenoic acid,P S
+202.,26303-90-2,,4-decenoic acid,Q E S R
+203.,505-90-8,,(Z)-4-decenoic acid,P S
+204.,14436-32-9,,9-decenoic acid,Q E S R T
+205.,26446-27-5,,decenoic acid (unkn.str.),Q
+206.,87725-46-0,,"2,4-decadienoic acid",S
+207.,544-48-9,,"(E,Z)-2,4-decadienoic acid",P S
+208.,13159-49-4,,"4,8-decadienoic acid",Q R
+209.,63889-75-8,,decadienoic acid (unkn.str.),P
+210.,24323-23-7,,2-methyldecanoic acid,P E S
+211.,5601-60-5,,8-methyldecanoic acid,P E S
+212.,1119-63-7,,9-methyldecanoic acid,P E S
+213.,,,methyldecanoic acid (unkn.str.),Q
+214.,2874-76-2,,2-ethyldecanoic acid,Q E S T
+215.,5393-81-7,,2-hydroxydecanoic acid,P E S
+216.,14292-26-3,,3-hydroxydecanoic acid,Q E S
+217.,85791-94-2,,hydroxydecanoic acid (unkn.str.),Q
+218.,1422-26-0,,9-oxodecanoic acid,Q E S
+219.,5578-80-3,,10-oxodecanoic acid,Q E S
+220.,1422-28-2,,(E)-9-hydroxy-2-decenoic acid,Q S
+221.,87611-61-8,,(Z)-5-hydroxy-7-decenoic acid,Q
+222.,87086-58-6,,(E)-5-hydroxy-7-decenoic acid,Q
+223.,,,(E)-10-oxo-2-decenoic acid,Q
+224.,56078-96-7,,"4,6-dimethyldecanoic acid",P
+225.,,,dimethyldecanoic acid (unkn.str.),Q
+226.,,,(E)-3-methyl-4-decenoic acid,S
+227.,87106-36-3,,"4,8-dimethyldecanoic acid",P
+228.,56078-95-6,,"6,8-dimethyldecanoic acid",P
+229.,112-37-8,,undecanoic acid,Q E S R O T
+230.,57683-20-2,,undecanoic acid (branched),P
+231.,4189-01-9,,3-undecenoic acid,S
+232.,68676-75-5,,(Z)-3-undecenoic acid,P
+233.,56770-25-3,,(E)-3-undecenoic acid,P S
+234.,112-38-9,,10-undecenoic acid,Q E S T
+235.,1333-28-4,,undecenoic acid (unkn.str.),P R
+236.,17001-17-1,,9-methylundecanoic acid,P S
+237.,2724-56-3,,10-methylundecanoic acid,P E S
+238.,143-07-7,,dodecanoic acid (=lauric acid),Q E S R O T
+239.,1289-45-8,,dodecenoic acid (unkn.str.),Q
+240.,30025-92-4,,dodecadienoic acid (unkn.str.),Q R
+241.,5681-98-1,,11-methyldodecanoic acid,Q S
+242.,1883-13-2,,3-hydroxydodecanoic acid,Q S
+243.,,,hydroxydodecanoic acid (unkn.str.),Q
+244.,62488-21-5,,12-oxododecenoic acid (unkn.str.),P
+245.,7548-13-2,,farnesic acid,E S
+246.,638-53-9,,tridecanoic acid,Q E S R O T
+247.,25448-24-2,,tridecanoic acid (branched),P
+248.,6969-16-0,,2-tridecenoic acid,S
+249.,32466-55-0,,(E)-2-tridecenoic acid,P E S
+250.,28555-21-7,,tridecenoic acid (unkn.str.),P
+251.,29709-05-5,,11-methyltridecanoic acid,P S
+252.,2724-57-4,,12-methyltridecanoic acid,Q S
+253.,544-63-8,,tetradecanoic acid (=myristic acid),Q E S R O T
+254.,65437-21-0,,tetradecanoic acid (branched),P
+255.,39525-69-4,,2-tetradecenoic acid,S
+256.,14811-80-4,,(E)-2-tetradecenoic acid,P S
+257.,13147-06-3,,9-tetradecenoic acid,P S
+258.,544-64-9,,(Z)-9-tetradecenoic acid (=myristoleic acid),Q E S R
+259.,26444-03-1,,tetradecenoic acid (unkn.str.),Q
+260.,29826-00-4,,tetradecadienoic acid (unkn.str.),
+261.,5502-94-3,,12-methyltetradecanoic acid,P E S
+262.,2485-71-4,,13-methyltetradecanoic acid,Q S
+263.,,,methyltetradecanoic acid (unkn.str.),Q
+264.,1002-84-2,,pentadecanoic acid,Q E S R T
+265.,50973-09-6,,pentadecanoic acid (unkn.str.),P
+266.,92857-27-7,,2-pentadecenoic acid,
+267.,2825-76-5,,(E)-2-pentadecenoic acid,P S
+268.,26444-04-2,,pentadecenoic acid (unkn.str.),Q
+269.,20121-96-4,,13-methylpentadecanoic acid,P E S
+270.,4669-02-7,,14-methylpentadecanoic acid,Q S
+271.,57-10-3,,hexadecanoic acid (=palmitic acid),Q E S R O T
+272.,32844-67-0,,hexadecanoic acid (branched),P
+273.,2091-29-4,,9-hexadecenoic acid,Q S
+274.,373-49-9,,(Z)-9-hexadecenoic acid (=palmitoleic acid),Q E S R T
+275.,4675-57-4,,15-hexadecenoic acid,Q S
+276.,25447-95-4,,hexadecenoic acid (unkn.str.),Q
+277.,5918-29-6,,14-methylhexadecanoic acid,P S
+278.,1603-03-8,,15-methylhexadecanoic acid,Q S
+279.,764-67-0,,2-hydroxyhexadecanoic acid,S
+280.,,,hydroxyhexadecanoic acid (unkn.str.),Q
+281.,506-12-7,,heptadecanoic acid (=margaric acid),Q E S T
+282.,36787-43-6,,heptadecanoic acid (branched),P
+283.,26265-99-6,,heptadecenoic acid (unkn.str.),Q
+284.,29709-08-8,,15-methylheptadecanoic acid,P S
+285.,57-11-4,,octadecanoic acid (=stearic acid),Q E S R T
+286.,2027-47-6,,9-octadecenoic acid,Q S
+287.,506-17-2,,Vaccenic acid,Q E S
+288.,112-80-1,,(Z)-9-octadecenoic acid (=oleic acid),Q E S R O T
+289.,112-79-8,,(E)-9-octadecenoic acid,Q E S
+290.,26764-26-1,,octadecenoic acid (unkn.str.),Q
+291.,2197-37-7,,"9,12-octadecadienoic acid",Q S
+292.,60-33-3,,"(Z,Z)-9,12-octadecadienoic acid",Q E S R T
+293.,506-37-6,,nervonic acid,Q E S
+294.,26764-25-0,,octadecadienoic acid (unkn.str.),Q
+295.,1955-33-5,,"9,12,15-octadecatrienoic acid",Q S
+296.,463-40-1,,"(Z,Z,Z)-9,12,15-octadecatrienoic acid (=linolenic acid)",Q E S T
+297.,506-26-3,,γ-linolenic acid,Q E S
+298.,25448-03-7,,octadecatrienoic acid (unkn.str.),P
+299.,2091-28-3,,"6,9,12,15-octadecatetraenoic acid",Q S
+300.,7431-95-0,,12-hydroxyoctadec-9-enoic acid,P S
+301.,29907-57-1,,"9,10,13-trihydroxy-octadec-11-enoic acid",Q S
+302.,646-30-0,,nonadecanoic acid,P S T
+303.,6250-72-2,,18-methylnonadecanoic acid,Q E S
+304.,26444-05-3,,nonadecenoic acid (unkn.str.),P
+305.,506-30-9,,eicosanoic acid (=arachidic acid),Q E S R T
+306.,2363-71-5,,heneicosanoic acid,P S
+307.,2433-96-7,,tricosanoic acid,P S
+308.,26764-41-0,,eicosenoic acid (unkn.str.),P S
+309.,5561-99-9,,gondoic acid,Q E S
+310.,25448-01-5,,eicosadienoic acid,Q
+311.,7324-41-6,,"8,11,14-eicosatrienoic acid",Q S
+312.,27400-91-5,,eicosatetraenoic acid (unkn.str.),P
+313.,7771-44-0,,"5,8,11,14-eicosatetraenoic acid",Q S
+314.,10417-94-4,,"5,8,11,14,17-eicosapentaenoic acid",Q E
+315.,6704-01-4,,20-methylheneicosanoic acid,Q S
+316.,112-85-6,,docosanoic acid,Q E S
+317.,25378-26-1,,docosenoic acid (unkn.str.),Q E
+318.,112-86-7,,(Z)-13-docosenoic acid,Q E S
+319.,1946-20-9,,"10,13,16-docosatrienoic acid",Q S
+320.,26730-49-4,,"10,13,16,19-docosatetraenoic acid",Q S
+321.,2234-74-4,,"7,10,13,16,19-docosapentaenoic acid",Q S
+322.,24880-45-3,,"(Z,Z,Z,Z,Z)-7,10,13,16,19-docosapentaenoic acid",Q E S
+323.,2091-24-9,,"4,7,10,13,16,19-docosahexaenoic acid",Q S
+324.,25167-62-8,,docosahexaenoic acid (unkn.str.),P
+325.,557-59-5,,tetracosanoic acid (=lignoceric acid),Q E S
+326.,26444-06-4,,tetracosenoic acid (unkn.str.),P
+327.,506-46-7,,hexacosanoic acid,Q E S
+328.,506-48-9,,octacosanoic acid (=montanic acid),Q E S
+329.,502-47-6,,citronellic acid,Q E S R
+330.,459-80-3,,geranic acid,Q E S R
+331.,4613-38-1,,(Z)-geranic acid,P E S
+332.,4698-08-2,,(E)-geranic acid,Q S R
+333.,75979-26-9,,"(E)-6-hydroxy-2,6-dimethyl-2,7-octadienoic acid",Q S
+334.,144-62-7,,oxalic acid (=ethanedioic acid),Q E S T
+335.,141-82-2,,malonic acid (=propanedioic acid),Q E S T
+336.,110-15-6,,succinic acid (=butanedioic acid),Q E S R T
+337.,498-21-5,,2-methylsuccinic acid,Q E S T
+338.,636-48-6,,2-ethylsuccinic acid,P E S
+339.,110-16-7,,maleic acid (=(Z)-butenedioic acid),Q E S T
+340.,110-17-8,,fumaric acid (=(E)-butenedioic acid),Q E S T
+341.,328-42-7,,2-oxobutanedioic acid,Q E S T
+342.,2306-22-1,,2-hydroxy-2-methylbutanedioic acid (=2-methylmalic acid),Q E S
+343.,110-94-1,,pentanedioic acid (=glutaric acid),Q E S T
+344.,2889-31-8,,2-hydroxypentanedioic acid,Q S
+345.,328-50-7,,2-oxopentanedioic acid,Q E S R T
+346.,124-04-9,,hexanedioic acid (=adipic acid),Q E S R T
+347.,3058-01-3,,3-methylhexanedioic acid (=β-methyladipic acid),P E S
+348.,4440-68-0,,2-hexenedioic acid,P S
+349.,111-16-0,,heptanedioic acid (=pimelic acid),Q E S
+350.,505-48-6,,octanedioic acid (=suberic acid),Q E S T
+351.,,,(E)-2-octenedioic acid,Q S
+352.,123-99-9,,nonanedioic acid (=azelaic acid),Q E S T
+353.,111-20-6,,decanedioic acid (=sebacic acid),Q E S T
+354.,6048-93-7,,2-decenedioic acid,Q S
+355.,37443-67-7,,(E)-2-decenedioic acid,Q S
+356.,1852-04-6,,undecanedioic acid,Q S
+357.,693-23-2,,dodecanedioic acid,Q E S
+358.,6915-15-7,,malic acid (=hydroxybutanedioic acid),Q E S T
+359.,,,isopropylmalic acid (unkn.str.),
+360.,,,caffeoylmalic acid (unkn.str.),
+361.,39015-76-4,,feruloylmalic acid,S
+362.,,,feruloyltartaric acid (unkn.str.),
+363.,,,coumaroylmalic acid (unkn.str.),
+364.,,,coumaroyltartaric acid (unkn.str.),
+365.,97-67-6,,L-malic acid,E S T
+366.,526-83-0,,tartaric acid,Q E S T
+367.,77-92-9,,citric acid,Q E S T
+368.,147-73-9,,Tartaric acid (meso-),E S
+369.,147-71-7,,"(2S,3S)-(-)-2,3-Dihydroxybutanedioic acid",E S T
+370.,87-69-4,,"(2R,3R)-(+)-2,3-Dihydroxybutanedioic acid",E S T
+371.,28973-89-9,,α-campholenic acid,P E S
+372.,65-85-0,,benzoic acid,Q E S R O T
+373.,118-90-1,,2-methylbenzoic acid (=o-toluic acid),Q E S
+374.,99-04-7,,3-methylbenzoic acid (=m-toluic acid),P E S
+375.,99-94-5,,4-methylbenzoic acid (=p-toluic acid),P E S
+376.,25567-10-6,,methylbenzoic acid (unkn.str.) (=toluic acid),P E S
+377.,619-64-7,,4-ethylbenzoic acid,P E S
+378.,30551-66-7,,vinylbenzoic acid (unkn.str.),P
+379.,536-66-3,,4-isopropylbenzoic acid (=cumic acid),P E S
+380.,28134-32-9,,isopropylbenzoic acid (unkn.str.),P
+381.,69-72-7,,"2-hydroxybenzoic acid (=salicylic acid, o-hydroxybenzoic acid)",Q E S O T
+382.,99-06-9,,3-hydroxybenzoic acid (=m-hydroxybenzoic acid),Q E S T
+383.,99-96-7,,4-hydroxybenzoic acid (=p-hydroxybenzoic acid),Q E S T
+384.,579-75-9,,2-methoxybenzoic acid (=o-anisic acid),Q E S T
+385.,586-38-9,,3-methoxybenzoic acid (=m-anisic acid),Q E S T
+386.,100-09-4,,4-methoxybenzoic acid (=p-anisic acid),Q E S R
+387.,1335-08-6,,methoxybenzoic acid (unkn.str.),P
+388.,619-86-3,,4-ethoxybenzoic acid (=p-ethoxybenzoic acid),Q E S
+389.,118-92-3,,"2-aminobenzoic acid (=anthranilic acid, o-aminobenzoic acid)",P E S T
+390.,7408-81-3,,12-(methylamino)dodecanoic acid,P S
+391.,3342-77-6,,N-formylanthranilic acid,Q E S
+392.,303-38-8,,"2,3-dihydroxybenzoic acid (=o-pyrocatechuic acid)",P E S T
+393.,89-86-1,,"2,4-dihydroxybenzoic acid (=β-resorcylic acid)",P E S T
+394.,490-79-9,,"2,5-dihydroxybenzoic acid (=gentisic acid)",Q E S T
+395.,303-07-1,,"2,6-dihydroxybenzoic acid (=γ-resorcylic acid)",Q E S T
+396.,99-50-3,,"3,4-dihydroxybenzoic acid (=protocatechuic acid)",Q E S T
+397.,99-10-5,,"3,5-dihydroxybenzoic acid (=α-resorcylic acid)",P E S T
+398.,27138-57-4,,dihydroxybenzoic acid (unkn.str.),Q E
+399.,121-34-6,,4-hydroxy-3-methoxybenzoic acid (=vanillic acid),Q E S R O T
+400.,91-52-1,,"2,4-dimethoxybenzoic acid",P S T
+401.,1466-76-8,,"2,6-dimethoxybenzoic acid",P S
+402.,93-07-2,,"3,4-dimethoxybenzoic acid (=veratric acid)",Q E S
+403.,1132-21-4,,"3,5-dimethoxybenzoic acid",Q S
+404.,1076-88-6,,"3,4,5-trimethylbenzoic acid",Q S
+405.,149-91-7,,"3,4,5-trihydroxybenzoic acid (=gallic acid)",Q E S T
+406.,83-30-7,,"2,4,6-trihydroxybenzoic acid",P E S
+407.,118-41-2,,"3,4,5-trimethoxybenzoic acid",Q E S
+408.,5292-21-7,,Cyclohexylacetic acid,E S T
+409.,7694-45-3,,"p-1,8-menthadienoic acid (=perillic acid)",Q E S
+410.,138-59-0,,"3,4,5-trihydroxy-1-cyclohexene-carboxylic acid (=shikimic acid)",Q E S
+411.,77-95-2,,quinic acid,Q E S
+412.,530-57-4,,"4-hydroxy-3,5-dimethoxybenzoic acid (=syringic acid)",Q E S T
+413.,94-53-1,,"1,3-benzodioxole-5-carboxylic acid (=piperonylic acid)",P E S
+414.,526-34-1,,"7-methoxy-1,3-benzodioxole-5-carboxylic acid",P E S
+415.,103-82-2,,phenylacetic acid,Q E S R O T
+416.,90-64-2,,2-hydroxy-2-phenylacetic acid (=mandelic acid),Q E S O T
+417.,614-75-5,,(2-hydroxyphenyl)acetic acid,P S T
+418.,621-37-4,,(3-hydroxyphenyl)acetic acid,P S T
+419.,156-38-7,,(4-hydroxyphenyl)acetic acid,Q S T
+420.,93-25-4,,(2-methoxyphenyl)acetic acid,E S
+421.,104-01-8,,(4-methoxyphenyl)acetic acid,P E S
+422.,10502-44-0,,2-hydroxy-2-(4-methoxyphenyl)acetic acid,Q E S
+423.,13443-54-4,,"2-hydroxy-2-(3,4-dimethoxyphenyl)acetic acid",Q E
+424.,306-08-1,,2-(4-hydroxy-3-methoxyphenyl)acetic acid (=homovanillic acid),P E S
+425.,951-82-6,,"3,4,5-trimethoxyphenylacetic acid",Q E S
+426.,492-37-5,,2-phenylpropanoic acid,P E S
+427.,501-52-0,,3-phenylpropanoic acid (=hydrocinnamic acid),Q E S R O T
+428.,,,phenylpropanoic acid (unkn.str.),Q
+429.,156-06-9,,2-oxo-3-phenylpropanoic acid (=3-phenylpyruvic acid),Q E S T
+430.,306-23-0,,2-hydroxy-3-(4-hydroxyphenyl)propanoic acid,Q E S
+431.,28030-15-1,,2-hydroxy-3-(4-methoxyphenyl)propanoic acid,Q E S
+432.,51410-49-2,,3-hydroxy-3-(4-methoxyphenyl)propanoic acid,Q S
+433.,156-39-8,,3-(4-hydroxyphenyl)-2-oxopropanoic acid,Q S
+434.,2107-70-2,,"3-(3,4-dimethoxyphenyl)propanoic acid",P E S
+435.,621-82-9,,cinnamic acid,Q E S R O
+436.,102-94-3,,(Z)-cinnamic acid,Q E S
+437.,140-10-3,,(E)-cinnamic acid,Q E S R O T
+438.,156-05-8,,2-hydroxy-3-phenylpropanoic acid (=3-phenyllactic acid),Q E S
+439.,501-97-3,,3-(4-hydroxyphenyl)propanoic acid,Q E S
+440.,6342-77-4,,3-(2-methoxyphenyl)propanoic acid,P E S
+441.,583-17-5,,2-hydroxycinnamic acid (=o-coumaric acid),Q E S T
+442.,,,coumaric acid (unkn.str.),
+443.,614-60-8,,(E)-2-hydroxycinnamic acid (=o-trans-coumaric),E S T
+444.,588-30-7,,3-hydroxycinnamic acid (=m-coumaric acid),Q E S T
+445.,7400-08-0,,4-hydroxycinnamic acid (=p-coumaric acid),Q E S T
+446.,501-98-4,,(E)-4-hydroxycinnamic acid (=(E)-p-coumaric acid),Q E S R O
+447.,4501-31-9,,(Z)-4-hydroxycinnamic acid (=(Z)-p-coumaric acid),Q E S
+448.,27174-07-8,,(Z)-p-coutaric acid,Q S
+449.,67920-37-0,,(E)-p-coutaric acid,Q S
+450.,,,fertaric acid (unkn.str.),S
+451.,25429-38-3,,6-hydroxycinnamic acid (unkn.str.),P
+452.,6099-03-2,,2-methoxycinnamic acid,S
+453.,14737-91-8,,(Z)-2-methoxycinnamic acid,P S
+454.,1011-54-7,,(E)-2-methoxycinnamic acid,P E S
+455.,830-09-1,,4-methoxycinnamic acid,Q S
+456.,943-89-5,,(E)-4-methoxycinnamic acid,Q E S R
+457.,66169-96-8,,methoxycinnamic acid (unkn.str.),P E
+458.,331-39-5,,"3,4-dihydroxycinnamic acid (=caffeic acid)",Q E S T
+459.,501-16-6,,"(E)-3,4-dihydroxycinnamic acid (=(E)-caffeic acid)",Q E S O
+460.,1135-24-6,,4-hydroxy-3-methoxycinnamic acid (=ferulic acid),Q E S T
+461.,537-98-4,,(E)-4-hydroxy-3-methoxycinnamic acid (=(E)-ferulic acid),Q S O
+462.,1014-83-1,,(Z)-4-hydroxy-3-methoxycinnamic acid (=(Z)-ferulic acid),Q E S
+463.,537-73-5,,3-hydroxy-4-methoxycinnamic acid (=isoferulic acid),Q E S
+464.,7461-60-1,,"2,3-dimethoxycinnamic acid",P E S
+465.,2316-26-9,,"3,4-dimethoxycinnamic acid",Q E S
+466.,14737-88-3,,"(Z)-3,4-dimethoxycinnamic acid",Q E S
+467.,14737-89-4,,"(E)-3,4-dimethoxycinnamic acid",Q E S
+468.,530-59-6,,"4-hydroxy-3,5-dimethoxycinnamic acid (=sinapic acid)",Q E S T
+469.,90-50-6,,"3,4,5-trimethoxycinnamic acid",P S
+470.,90-27-7,,2-phenylbutanoic acid,P S
+471.,1821-12-1,,4-phenylbutanoic acid,P S
+472.,7021-11-6,,4-(4-hydroxyphenyl)butanoic acid,P S
+473.,4412-10-6,,2-phenyl-2-butenoic acid,P
+474.,88-99-3,,phthalic acid,Q E S R T
+475.,481-74-3,,chrysophanic acid,P E S
+476.,577-56-0,,2-acetylbenzoic acid,P E S R
+477.,496-41-3,,coumarilic acid,E S
+478.,55483-24-4,,"16,17-dihydroxy-9(11)-kauren-18-oic acid",P E S
+479.,74-90-8,,hydrocyanic acid,Q E S T
+480.,,,"3-isobutyl-2,2-dimethylcyclopropanecarboxylic acid",P
+481.,327-97-9,,chlorogenic acid,Q E S T
+482.,905-99-7,,4-O-caffeoylquinic acid,Q S
+483.,14534-61-3,,"3,4-dicaffeoylquinic acid",Q E S
+484.,1899-29-2,,5-O-feruloylquinic acid,E S
+485.,2613-86-7,,4-O-feruloylquinic acid,S
+486.,87099-71-6,,3-p-coumaroylquinic acid,S
+487.,1899-30-5,,5-p-coumaroylquinic acid,S
+488.,1108200-72-1,,4-p-coumaroylquinic acid,S
+489.,546-53-2,,thujopsenic acid,Q E S R
+490.,2761-77-5,,communic acid,E S R
+491.,476-66-4,,ellagic acid,Q E S T
+492.,50-81-7,,ascorbic acid,Q E S T
+493.,490-83-5,,dehydroascorbic acid,Q S

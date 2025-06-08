@@ -1,0 +1,7503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VCF - Volatile Compounds in Food</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/css/vcf.css" rel="stylesheet">
+<link href="/css/print.css" rel="stylesheet" media="print">
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+<meta name="format-detection" content="telephone=no"/>
+<!-- Sentry -->
+<script src="https://browser.sentry-cdn.com/5.2.1/bundle.min.js" crossorigin="anonymous"></script>
+<script>
+Sentry.init({ dsn: 'https://45e14bb33e854eea83d8f079840a908b@o57497.ingest.sentry.io/1457420' });
+</script>
+</head>
+<body>
+<script> 
+<!-- 
+//Configuration parameters for the pop-up window. 
+var config = 
+{x:50,y:100,height:400,width:450,modal:false,closable:true,modal:false,
+draggable:true,resizable:true,initshow:true,minheight:200,minwidth:200 
+} 
+--> 
+</script>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="header">
+<div class="span3" style="margin-bottom:8px">
+<a href="/index.cfm" class="brand"><img src="/graphics/logo_bewido.png" alt="VCF home" id="bewido_logo" width="220"></a><!-- VCF logo -->
+</div>
+<div class="span9">
+<div class="row-fluid">
+<div class="span6 loggedin pull-right" id="fltrt">
+<form action="/VcfCompounds.cfm?volatgrp=04" method="post" name="Guestloginform" class="pull-right">
+<div class="control-group">
+<div class="controls">OR
+<div class="input-append">
+<input name="j_username" type="hidden" value="GUEST" />
+<input name="j_password" type="hidden" value="guest" />
+<input name="logintype" type="hidden" value="guest" />
+<button type="submit" class="btn" value="Sign in as guest"> Sign in as guest </button>
+</div>
+</div>
+</div>
+</form>
+<form action="/VcfCompounds.cfm?volatgrp=04" method="post" name="loginform" class="form-inline pull-right">
+<input name="logintype" type="hidden" value="user" />
+<div class="control-group">
+<div class="controls">
+<div class="input-append">
+<input type="text" name="j_username" required="yes" message="A username is required" placeholder="username" class="input-small" >
+</div>
+<div class="input-append">
+<input type="password" name="j_password" required="yes" message="A password is required" placeholder="password" class="input-small">
+<input name="args.authtype" type="hidden" value="Vcfuser">
+<button type="submit" class="btn" value="Sign in"> Sign in </button>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="span3">
+<span class="welcome">
+<a href="index.cfm"><span class="websitename">VCF <span class="superonline">online</span></span></a>
+Volatile Compounds in Food 16.10
+<span class="demoversionstring">
+</span>
+</span>
+</div>
+</div>
+<div class="row-fluid">
+<div class="navbar span9 offset3">
+<!-- Navbar ================================================== -->
+<div class="navbar-inner">
+<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="nav-collapse collapse">
+<ul id="navMain" class="nav pull-right">
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Search</a>
+<ul class="dropdown-menu">
+<li><a>Search</a></li>
+<li><a href="/VcfProdSelection.cfm"><i class="icon-chevron-right icon-white"></i> Products</a></li>
+<li><a href="/VcfProdSetSelection.cfm"><i class="icon-chevron-right icon-white"></i> Product compare</a></li>
+<li><a href="/VcfCompoundSearch.cfm"><i class="icon-chevron-right icon-white"></i> Compounds</a></li>
+<li><a href="/VcfRetentionIndexSearch.cfm"><i class="icon-chevron-right icon-white"></i> Retention Index</a></li>
+<li><a href="/VcfLiteratureSearch.cfm"><i class="icon-chevron-right icon-white"></i> Literature</a></li>
+<li><a href="OFTVCompoundSearch.cfm"><i class="icon-chevron-right icon-white"></i> Odour/Flavour threshold</a></li>
+<li><a>History</a></li>
+<li><a href="/VcfSearchhistory.cfm"><i class="icon-chevron-right icon-white"></i> Search history</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Lists</a>
+<ul class="dropdown-menu">
+<li><a>Products</a></li>
+<li><a href="/VcfProducts.cfm"><i class="icon-chevron-right icon-white"></i> Product list</a></li>
+<li><a>Compounds</a></li>
+<li><a href="/VcfCompounds.cfm"><i class="icon-chevron-right icon-white"></i> VCF compounds</a></li>
+<li><a href="/VcfCompounds.cfm?FEMAGRAS"><i class="icon-chevron-right icon-white"></i> FEMA(GRAS 30)</a></li>
+<li><a href="/VcfCompounds.cfm?Flavis"><i class="icon-chevron-right icon-white"></i> Flavis(EU-Flavis database)</a></li>
+<li><a>Odour/flavour compounds</a></li>
+<li><a href="OFTVCompounds.cfm"><i class="icon-chevron-right icon-white"></i> Odour/flavour lists</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Usage guide</a>
+<ul class="dropdown-menu">
+<li><a>Search options</a></li>
+<li><a href="/VcfGuide.cfm?title=What information"><i class="icon-chevron-right icon-white"></i> What information can be found?</a></li>
+<li><a href="/VcfGuide.cfm?title=Guide to searches"><i class="icon-chevron-right icon-white"></i> Guide to searches</a></li>
+<li><a href="/VcfGuide.cfm?title=Search within"><i class="icon-chevron-right icon-white"></i> Search within results</a></li>
+<li><a href="/VcfGuide.cfm?title=Product compare"><i class="icon-chevron-right icon-white"></i> Product compare</a></li>
+<li><a>VCF version</a></li>
+<li><a href="/VcfGuide.cfm?title=What is new"><i class="icon-chevron-right icon-white"></i> What is new in VCF 16.10?</a></li>
+<li><a href="/VcfGuide.cfm?title=Overview of VCF"><i class="icon-chevron-right icon-white"></i> Overview VCF releases</a></li>
+<li><a href="/VcfGuide.cfm?title=Explanation of terms"><i class="icon-chevron-right icon-white"></i> Explanation of terms</a></li>
+<li><a href="/VcfExamples.cfm"><i class="icon-chevron-right icon-white"></i> Examples</a></li>
+<li><a>References</a></li>
+<li><a href="/VcfGuide.cfm?title=preface"><i class="icon-chevron-right icon-white"></i> Preface</a></li>
+<li><a href="/VcfGuide.cfm?title=Bibliographic"><i class="icon-chevron-right icon-white"></i> Bibliographic reference</a></li>
+<li><a href="/VcfGuide.cfm?title=Privacy policy"><i class="icon-chevron-right icon-white"></i> Privacy policy</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
+<ul class="dropdown-menu">
+<li><a href="/VcfSelectSubscription.cfm"><i class="icon-chevron-right icon-white"></i> Subscribe</a></li>
+<li><a href="/VcfAssist.cfm"><i class="icon-chevron-right icon-white"></i> Password assistance</a></li>
+<li><a href="/VcfMailform.cfm"><i class="icon-chevron-right icon-white"></i> Mail us</a></li>
+<li><a href="/VcfLinks.cfm"><i class="icon-chevron-right icon-white"></i> Links</a></li>
+<li><a href="/VcfPromo.cfm"><i class="icon-chevron-right icon-white"></i> Promo</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end .header -->
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<ul class="breadcrumb">
+<li><a href="/VcfHome.cfm">Home</a> <span class="divider">/</span></li>
+<li><a href="/VcfCompounds.cfm">Compound groups</a> <span class="divider">/</span></li>
+<li class="active">Compound group list</li>
+</ul>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span10 offset1">
+<div class="span8 offset0">
+<h4>VCF volatile compounds list</h4>
+<strong>List of volatile compounds in food in the VCF database</strong>
+<br />Login is needed for detail information. Partial information is available for guest logins.
+<p><strong>907 compounds
+in volatile group 'Carbonyls, ketones'.</strong><br />
+</p>
+</div>
+<div class="span3">
+<a href="/VcfCompounds.cfm?" class="btn"><i class="icon icon-step-backward"></i> Return to group lists </a>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<table class="table-striped table-condensed datatable">
+<tr>
+<th>&nbsp;</th>
+<th class="rechts nowrap">CAS</th>
+<th>&nbsp;</th>
+<th>Compound name</th>
+<th>
+<button name="SearchTips" type="button" value="Flags" class="btn"
+onClick="window.open('VcfGuideContent.cfm?title=Compound flags', 'VCFguide',
+'resizable=yes,scrollbars=yes,menubar=no,status=no,titlebar=no,toolbar=no,width=450,height=400');
+return false" >
+<i class="icon icon-flag"></i> Compound<br>flags </button>
+</th>
+</tr>
+<tr>
+<td class="rechts top">1.&nbsp;</td>
+<td class="rechts nowrap top">826337-64-8</td>
+<td>&nbsp;</td>
+<td>2-methyl-3-methylidenecyclopentane-1-carbaldehyde</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">2.&nbsp;</td>
+<td class="rechts nowrap top">67-64-1</td>
+<td>&nbsp;</td>
+<td>acetone (=2-propanone, dimethyl ketone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">3.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2,2-dimethyl-1-[2-(2-methyl-2-propanyl)cyclopropyl]-1-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">4.&nbsp;</td>
+<td class="rechts nowrap top">116-09-6</td>
+<td>&nbsp;</td>
+<td>1-hydroxy-2-propanone (=acetol, pyruvic alcohol)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">5.&nbsp;</td>
+<td class="rechts nowrap top">5878-19-3</td>
+<td>&nbsp;</td>
+<td>1-methoxy-2-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">6.&nbsp;</td>
+<td class="rechts nowrap top">5774-26-5</td>
+<td>&nbsp;</td>
+<td>1,1-diethoxy-2-propanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">7.&nbsp;</td>
+<td class="rechts nowrap top">78-93-3</td>
+<td>&nbsp;</td>
+<td>2-butanone (=ethyl methyl ketone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">8.&nbsp;</td>
+<td class="rechts nowrap top">109-49-9</td>
+<td>&nbsp;</td>
+<td>Hex-5-en-2-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">9.&nbsp;</td>
+<td class="rechts nowrap top">23696-85-7</td>
+<td>&nbsp;</td>
+<td>1-(2,6,6-Trimethylcyclohexa-1,3-dienyl)-2-buten-1-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">10.&nbsp;</td>
+<td class="rechts nowrap top">69050-59-5</td>
+<td>&nbsp;</td>
+<td>4-(5-hydroxy-2,6,6-trimethyl-1-cyclohexen-1-yl)-3-buten-2-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">11.&nbsp;</td>
+<td class="rechts nowrap top">78-94-4</td>
+<td>&nbsp;</td>
+<td>3-buten-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">12.&nbsp;</td>
+<td class="rechts nowrap top">563-80-4</td>
+<td>&nbsp;</td>
+<td>3-methyl-2-butanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">13.&nbsp;</td>
+<td class="rechts nowrap top">41702-60-7</td>
+<td>&nbsp;</td>
+<td>2-methyl-6-methylene-1,7-octadien-3-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">14.&nbsp;</td>
+<td class="rechts nowrap top">814-78-8</td>
+<td>&nbsp;</td>
+<td>3-methyl-3-buten-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">15.&nbsp;</td>
+<td class="rechts nowrap top">75-97-8</td>
+<td>&nbsp;</td>
+<td>2,2-dimethyl-3-butanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">16.&nbsp;</td>
+<td class="rechts nowrap top">5077-67-8</td>
+<td>&nbsp;</td>
+<td>1-hydroxy-2-butanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">17.&nbsp;</td>
+<td class="rechts nowrap top">30557-76-7</td>
+<td>&nbsp;</td>
+<td>khusimone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">18.&nbsp;</td>
+<td class="rechts nowrap top">513-86-0</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-2-butanone (=acetoin)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">19.&nbsp;</td>
+<td class="rechts nowrap top">53584-56-8</td>
+<td>&nbsp;</td>
+<td>(R)-3-hydroxy-2-butanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">20.&nbsp;</td>
+<td class="rechts nowrap top">78183-56-9</td>
+<td>&nbsp;</td>
+<td>(S)-3-hydroxy-2-butanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">21.&nbsp;</td>
+<td class="rechts nowrap top">590-90-9</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-2-butanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">22.&nbsp;</td>
+<td class="rechts nowrap top">29994-40-9</td>
+<td>&nbsp;</td>
+<td>hydroxy-2-butanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">23.&nbsp;</td>
+<td class="rechts nowrap top">1679-38-5</td>
+<td>&nbsp;</td>
+<td>3-ethoxy-2-butanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">24.&nbsp;</td>
+<td class="rechts nowrap top">60044-74-8</td>
+<td>&nbsp;</td>
+<td>4-ethoxy-2-butanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">25.&nbsp;</td>
+<td class="rechts nowrap top">115-22-0</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-3-methyl-2-butanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">26.&nbsp;</td>
+<td class="rechts nowrap top">51933-13-2</td>
+<td>&nbsp;</td>
+<td>3,3-diethoxy-2-butanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">27.&nbsp;</td>
+<td class="rechts nowrap top">6672-30-6</td>
+<td>&nbsp;</td>
+<td>(R)-(+)-3-methylcyclopentanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">28.&nbsp;</td>
+<td class="rechts nowrap top">20082-91-1</td>
+<td>&nbsp;</td>
+<td>4,4-diethoxy-2-butanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">29.&nbsp;</td>
+<td class="rechts nowrap top">431-03-8</td>
+<td>&nbsp;</td>
+<td>2,3-butanedione (=diacetyl)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">30.&nbsp;</td>
+<td class="rechts nowrap top">17429-35-5</td>
+<td>&nbsp;</td>
+<td>4-ethyl-3,4-dimethyl-2,5-cyclohexadien-1-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">31.&nbsp;</td>
+<td class="rechts nowrap top">55162-56-6</td>
+<td>&nbsp;</td>
+<td>4,4-dimethyl-3-phenyl-2,5-cyclohexadien-1-one</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">32.&nbsp;</td>
+<td class="rechts nowrap top">107-87-9</td>
+<td>&nbsp;</td>
+<td>2-pentanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">33.&nbsp;</td>
+<td class="rechts nowrap top">4359-77-7</td>
+<td>&nbsp;</td>
+<td>3-methylene-2-pentanone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">34.&nbsp;</td>
+<td class="rechts nowrap top">3470-54-0</td>
+<td>&nbsp;</td>
+<td>5-aminoindan-1-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">35.&nbsp;</td>
+<td class="rechts nowrap top">13909-73-4</td>
+<td>&nbsp;</td>
+<td>1-(2,3,4-trimethoxyphenyl)-ethanone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">36.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-(2-butoxyethoxy)ethanone</td>
+<td>
+&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">37.&nbsp;</td>
+<td class="rechts nowrap top">451-40-1</td>
+<td>&nbsp;</td>
+<td>1,2-diphenylethanone</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">38.&nbsp;</td>
+<td class="rechts nowrap top">96-22-0</td>
+<td>&nbsp;</td>
+<td>3-pentanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">39.&nbsp;</td>
+<td class="rechts nowrap top">625-33-2</td>
+<td>&nbsp;</td>
+<td>3-penten-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">40.&nbsp;</td>
+<td class="rechts nowrap top">70987-82-5</td>
+<td>&nbsp;</td>
+<td>1-(1,2-dimethyl-cyclopent-2-enyl)-ethanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">41.&nbsp;</td>
+<td class="rechts nowrap top">3102-33-8</td>
+<td>&nbsp;</td>
+<td>(E)-3-penten-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">42.&nbsp;</td>
+<td class="rechts nowrap top">3102-32-7</td>
+<td>&nbsp;</td>
+<td>(Z)-3-penten-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">43.&nbsp;</td>
+<td class="rechts nowrap top">13891-87-7</td>
+<td>&nbsp;</td>
+<td>4-penten-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">44.&nbsp;</td>
+<td class="rechts nowrap top">1629-58-9</td>
+<td>&nbsp;</td>
+<td>1-penten-3-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">45.&nbsp;</td>
+<td class="rechts nowrap top">1890-28-4</td>
+<td>&nbsp;</td>
+<td>1,4-pentadien-3-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">46.&nbsp;</td>
+<td class="rechts nowrap top">553-84-4</td>
+<td>&nbsp;</td>
+<td>perilla ketone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">47.&nbsp;</td>
+<td class="rechts nowrap top">565-61-7</td>
+<td>&nbsp;</td>
+<td>3-methyl-2-pentanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">48.&nbsp;</td>
+<td class="rechts nowrap top">53398-09-7</td>
+<td>&nbsp;</td>
+<td>3-oxo-&alpha;-damascone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">49.&nbsp;</td>
+<td class="rechts nowrap top">108-10-1</td>
+<td>&nbsp;</td>
+<td>4-methyl-2-pentanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">50.&nbsp;</td>
+<td class="rechts nowrap top">7779-30-8</td>
+<td>&nbsp;</td>
+<td>1-(2,6,6-trimethyl-2-cyclohexen-1-yl)-1-Penten-3-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">51.&nbsp;</td>
+<td class="rechts nowrap top">565-69-5</td>
+<td>&nbsp;</td>
+<td>2-methyl-3-pentanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">52.&nbsp;</td>
+<td class="rechts nowrap top">25044-01-3</td>
+<td>&nbsp;</td>
+<td>2-methyl-1-penten-3-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">53.&nbsp;</td>
+<td class="rechts nowrap top">141-79-7</td>
+<td>&nbsp;</td>
+<td>4-methyl-3-penten-2-one (=mesityl oxide)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">54.&nbsp;</td>
+<td class="rechts nowrap top">61570-82-9</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-p-menth-6-en-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">55.&nbsp;</td>
+<td class="rechts nowrap top">3744-02-3</td>
+<td>&nbsp;</td>
+<td>4-methyl-4-penten-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">56.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>dimethyl-3-penten-2-one (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">57.&nbsp;</td>
+<td class="rechts nowrap top">3142-66-3</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-2-pentanone (=acetyl ethyl carbinol)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">58.&nbsp;</td>
+<td class="rechts nowrap top">113919-08-7</td>
+<td>&nbsp;</td>
+<td>(R)-3-hydroxy-2-pentanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">59.&nbsp;</td>
+<td class="rechts nowrap top">132881-72-2</td>
+<td>&nbsp;</td>
+<td>(S)-3-hydroxy-2-pentanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">60.&nbsp;</td>
+<td class="rechts nowrap top">4161-60-8</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-2-pentanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">61.&nbsp;</td>
+<td class="rechts nowrap top">5704-20-1</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-3-pentanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">62.&nbsp;</td>
+<td class="rechts nowrap top">113919-09-8</td>
+<td>&nbsp;</td>
+<td>(R)-2-hydroxy-3-pentanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">63.&nbsp;</td>
+<td class="rechts nowrap top">125948-63-2</td>
+<td>&nbsp;</td>
+<td>(S)-2-hydroxy-3-pentanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">64.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>hydroxypentanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">65.&nbsp;</td>
+<td class="rechts nowrap top">52704-36-6</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-3-penten-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">66.&nbsp;</td>
+<td class="rechts nowrap top">17429-04-8</td>
+<td>&nbsp;</td>
+<td>5-methoxy-2-pentanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">67.&nbsp;</td>
+<td class="rechts nowrap top">65915-75-5</td>
+<td>&nbsp;</td>
+<td>3-ethoxy-2-pentanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">68.&nbsp;</td>
+<td class="rechts nowrap top">33330-50-6</td>
+<td>&nbsp;</td>
+<td>4-ethoxy-2-pentanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">69.&nbsp;</td>
+<td class="rechts nowrap top">79926-00-4</td>
+<td>&nbsp;</td>
+<td>4-(2-methylbutoxy)-2-pentanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">70.&nbsp;</td>
+<td class="rechts nowrap top">79925-97-6</td>
+<td>&nbsp;</td>
+<td>4-(3-methylbutoxy)-2-pentanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">71.&nbsp;</td>
+<td class="rechts nowrap top">565-80-0</td>
+<td>&nbsp;</td>
+<td>2,4-dimethyl-3-pentanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">72.&nbsp;</td>
+<td class="rechts nowrap top">564-04-5</td>
+<td>&nbsp;</td>
+<td>2,2-dimethyl-3-pentanone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">73.&nbsp;</td>
+<td class="rechts nowrap top">123-42-2</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-methyl-2-pentanone (=diacetone alcohol)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">74.&nbsp;</td>
+<td class="rechts nowrap top">79925-99-8</td>
+<td>&nbsp;</td>
+<td>2,2-diethoxy-3-pentanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">75.&nbsp;</td>
+<td class="rechts nowrap top">623-38-1</td>
+<td>&nbsp;</td>
+<td>3-oxopentanal (=1,3-pentanedione)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">76.&nbsp;</td>
+<td class="rechts nowrap top">600-14-6</td>
+<td>&nbsp;</td>
+<td>2,3-pentanedione (=acetylpropionyl)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">77.&nbsp;</td>
+<td class="rechts nowrap top">123-54-6</td>
+<td>&nbsp;</td>
+<td>2,4-pentanedione (=acetylacetone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">78.&nbsp;</td>
+<td class="rechts nowrap top">7493-58-5</td>
+<td>&nbsp;</td>
+<td>4-methyl-2,3-pentanedione</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">79.&nbsp;</td>
+<td class="rechts nowrap top">10225-31-7</td>
+<td>&nbsp;</td>
+<td>3-isopentyl-2,4-pentanedione</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">80.&nbsp;</td>
+<td class="rechts nowrap top">591-78-6</td>
+<td>&nbsp;</td>
+<td>2-hexanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">81.&nbsp;</td>
+<td class="rechts nowrap top">5441-51-0</td>
+<td>&nbsp;</td>
+<td>4-ethylcyclohexanone</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">82.&nbsp;</td>
+<td class="rechts nowrap top">589-38-8</td>
+<td>&nbsp;</td>
+<td>3-hexanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">83.&nbsp;</td>
+<td class="rechts nowrap top">763-93-9</td>
+<td>&nbsp;</td>
+<td>3-hexen-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">84.&nbsp;</td>
+<td class="rechts nowrap top">4376-23-2</td>
+<td>&nbsp;</td>
+<td>(E)-3-hexen-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">85.&nbsp;</td>
+<td class="rechts nowrap top">1629-60-3</td>
+<td>&nbsp;</td>
+<td>1-hexen-3-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">86.&nbsp;</td>
+<td class="rechts nowrap top">2497-21-4</td>
+<td>&nbsp;</td>
+<td>4-hexen-3-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">87.&nbsp;</td>
+<td class="rechts nowrap top">50396-87-7</td>
+<td>&nbsp;</td>
+<td>(E)-4-hexen-3-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">88.&nbsp;</td>
+<td class="rechts nowrap top">54686-84-9</td>
+<td>&nbsp;</td>
+<td>hexenone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">89.&nbsp;</td>
+<td class="rechts nowrap top">110-12-3</td>
+<td>&nbsp;</td>
+<td>5-methyl-2-hexanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">90.&nbsp;</td>
+<td class="rechts nowrap top">623-56-3</td>
+<td>&nbsp;</td>
+<td>5-methyl-3-hexanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">91.&nbsp;</td>
+<td class="rechts nowrap top">105-42-0</td>
+<td>&nbsp;</td>
+<td>4-methyl-2-hexanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">92.&nbsp;</td>
+<td class="rechts nowrap top">91606-98-3</td>
+<td>&nbsp;</td>
+<td>methyl-2-hexanone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">93.&nbsp;</td>
+<td class="rechts nowrap top">7379-12-6</td>
+<td>&nbsp;</td>
+<td>2-methyl-3-hexanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">94.&nbsp;</td>
+<td class="rechts nowrap top">5166-53-0</td>
+<td>&nbsp;</td>
+<td>5-methyl-3-hexen-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">95.&nbsp;</td>
+<td class="rechts nowrap top">1669-43-8</td>
+<td>&nbsp;</td>
+<td>(3Z)-5-methyl-3-hexen-2-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">96.&nbsp;</td>
+<td class="rechts nowrap top">1821-29-0</td>
+<td>&nbsp;</td>
+<td>(E)-5-methyl-3-hexen-2-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">97.&nbsp;</td>
+<td class="rechts nowrap top">32064-70-3</td>
+<td>&nbsp;</td>
+<td>3-butyl-3-hexen-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">98.&nbsp;</td>
+<td class="rechts nowrap top">13905-10-7</td>
+<td>&nbsp;</td>
+<td>5-methyl-4-hexen-3-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">99.&nbsp;</td>
+<td class="rechts nowrap top">55532-07-5</td>
+<td>&nbsp;</td>
+<td>2,2-dimethyl-5-hexen-3-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">100.&nbsp;</td>
+<td class="rechts nowrap top">54123-75-0</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-2-hexanone</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">101.&nbsp;</td>
+<td class="rechts nowrap top">163038-04-8</td>
+<td>&nbsp;</td>
+<td>3-Hydroxy-5-methyl-2-hexanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">102.&nbsp;</td>
+<td class="rechts nowrap top">54073-43-7</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-3-hexanone</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">103.&nbsp;</td>
+<td class="rechts nowrap top">4984-85-4</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-3-hexanone (=propionoin)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">104.&nbsp;</td>
+<td class="rechts nowrap top">246511-74-0</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-5-methyl-3-hexanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">105.&nbsp;</td>
+<td class="rechts nowrap top">134332-15-3</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-3-propyl-2-hexanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">106.&nbsp;</td>
+<td class="rechts nowrap top">3848-24-6</td>
+<td>&nbsp;</td>
+<td>2,3-hexanedione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">107.&nbsp;</td>
+<td class="rechts nowrap top">110-13-4</td>
+<td>&nbsp;</td>
+<td>2,5-hexanedione (=acetonylacetone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">108.&nbsp;</td>
+<td class="rechts nowrap top">4437-51-8</td>
+<td>&nbsp;</td>
+<td>3,4-hexanedione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">109.&nbsp;</td>
+<td class="rechts nowrap top">82056-15-3</td>
+<td>&nbsp;</td>
+<td>hexanedione (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">110.&nbsp;</td>
+<td class="rechts nowrap top">13706-86-0</td>
+<td>&nbsp;</td>
+<td>5-methyl-2,3-hexanedione</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">111.&nbsp;</td>
+<td class="rechts nowrap top">10153-61-4</td>
+<td>&nbsp;</td>
+<td>3,4-dihydroxy-3-hexen-2,5-dione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">112.&nbsp;</td>
+<td class="rechts nowrap top">4384-08-1</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-2,3,5-hexanetrione</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">113.&nbsp;</td>
+<td class="rechts nowrap top">110-43-0</td>
+<td>&nbsp;</td>
+<td>2-heptanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">114.&nbsp;</td>
+<td class="rechts nowrap top">106-35-4</td>
+<td>&nbsp;</td>
+<td>3-heptanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">115.&nbsp;</td>
+<td class="rechts nowrap top">123-19-3</td>
+<td>&nbsp;</td>
+<td>4-heptanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">116.&nbsp;</td>
+<td class="rechts nowrap top">29299-43-2</td>
+<td>&nbsp;</td>
+<td>heptanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">117.&nbsp;</td>
+<td class="rechts nowrap top">1119-44-4</td>
+<td>&nbsp;</td>
+<td>3-hepten-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">118.&nbsp;</td>
+<td class="rechts nowrap top">5609-09-6</td>
+<td>&nbsp;</td>
+<td>(E)-3-hepten-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">119.&nbsp;</td>
+<td class="rechts nowrap top">24332-22-7</td>
+<td>&nbsp;</td>
+<td>4-hepten-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">120.&nbsp;</td>
+<td class="rechts nowrap top">90605-45-1</td>
+<td>&nbsp;</td>
+<td>(Z)-4-hepten-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">121.&nbsp;</td>
+<td class="rechts nowrap top">36678-43-0</td>
+<td>&nbsp;</td>
+<td>(E)-4-hepten-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">122.&nbsp;</td>
+<td class="rechts nowrap top">6714-00-7</td>
+<td>&nbsp;</td>
+<td>5-hepten-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">123.&nbsp;</td>
+<td class="rechts nowrap top">2918-13-0</td>
+<td>&nbsp;</td>
+<td>1-hepten-3-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">124.&nbsp;</td>
+<td class="rechts nowrap top">4643-25-8</td>
+<td>&nbsp;</td>
+<td>2-hepten-4-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">125.&nbsp;</td>
+<td class="rechts nowrap top">30640-40-5</td>
+<td>&nbsp;</td>
+<td>hepten-2-one (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">126.&nbsp;</td>
+<td class="rechts nowrap top">3916-64-1</td>
+<td>&nbsp;</td>
+<td>3,5-heptadien-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">127.&nbsp;</td>
+<td class="rechts nowrap top">18402-90-9</td>
+<td>&nbsp;</td>
+<td>(E,E)-3,5-heptadien-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">128.&nbsp;</td>
+<td class="rechts nowrap top">2371-19-9</td>
+<td>&nbsp;</td>
+<td>3-methyl-2-heptanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">129.&nbsp;</td>
+<td class="rechts nowrap top">18217-12-4</td>
+<td>&nbsp;</td>
+<td>5-methyl-2-heptanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">130.&nbsp;</td>
+<td class="rechts nowrap top">928-68-7</td>
+<td>&nbsp;</td>
+<td>6-methyl-2-heptanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">131.&nbsp;</td>
+<td class="rechts nowrap top">13019-20-0</td>
+<td>&nbsp;</td>
+<td>2-methyl-3-heptanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">132.&nbsp;</td>
+<td class="rechts nowrap top">6137-11-7</td>
+<td>&nbsp;</td>
+<td>4-methyl-3-heptanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">133.&nbsp;</td>
+<td class="rechts nowrap top">541-85-5</td>
+<td>&nbsp;</td>
+<td>5-methyl-3-heptanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">134.&nbsp;</td>
+<td class="rechts nowrap top">624-42-0</td>
+<td>&nbsp;</td>
+<td>6-methyl-3-heptanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">135.&nbsp;</td>
+<td class="rechts nowrap top">626-33-5</td>
+<td>&nbsp;</td>
+<td>2-methyl-4-heptanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">136.&nbsp;</td>
+<td class="rechts nowrap top">15726-15-5</td>
+<td>&nbsp;</td>
+<td>3-methyl-4-heptanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">137.&nbsp;</td>
+<td class="rechts nowrap top">1528-25-2</td>
+<td>&nbsp;</td>
+<td>3-ethyl-4-heptanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">138.&nbsp;</td>
+<td class="rechts nowrap top">70713-26-7</td>
+<td>&nbsp;</td>
+<td>methyl-2-heptanone (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">139.&nbsp;</td>
+<td class="rechts nowrap top">29466-99-7</td>
+<td>&nbsp;</td>
+<td>methylheptanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">140.&nbsp;</td>
+<td class="rechts nowrap top">39899-08-6</td>
+<td>&nbsp;</td>
+<td>3-methyl-3-hepten-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">141.&nbsp;</td>
+<td class="rechts nowrap top">22319-25-1</td>
+<td>&nbsp;</td>
+<td>4-methyl-3-hepten-2-one</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">142.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>5-methyl-4-hepten-2-one</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">143.&nbsp;</td>
+<td class="rechts nowrap top">110-93-0</td>
+<td>&nbsp;</td>
+<td>6-methyl-5-hepten-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">144.&nbsp;</td>
+<td class="rechts nowrap top">70003-34-8</td>
+<td>&nbsp;</td>
+<td>6-methylhepten-2-one (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">145.&nbsp;</td>
+<td class="rechts nowrap top">22319-31-9</td>
+<td>&nbsp;</td>
+<td>4-methyl-4-hepten-3-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">146.&nbsp;</td>
+<td class="rechts nowrap top">86883-66-1</td>
+<td>&nbsp;</td>
+<td>6-methyl-5-hepten-3-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">147.&nbsp;</td>
+<td class="rechts nowrap top">22319-24-0</td>
+<td>&nbsp;</td>
+<td>2-methyl-2-hepten-4-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">148.&nbsp;</td>
+<td class="rechts nowrap top">102322-83-8</td>
+<td>&nbsp;</td>
+<td>(E)-5-methyl-2-hepten-4-one (=filbertone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">149.&nbsp;</td>
+<td class="rechts nowrap top">122440-59-9</td>
+<td>&nbsp;</td>
+<td>(S)-(E)-(+)-5-methyl-2-hepten-4-one (=(S)-(+)-filbertone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">150.&nbsp;</td>
+<td class="rechts nowrap top">135910-94-0</td>
+<td>&nbsp;</td>
+<td>(R)-(E)-(-)-5-methyl-2-hepten-4-one (=(R)-(-)-filbertone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">151.&nbsp;</td>
+<td class="rechts nowrap top">103070-07-1</td>
+<td>&nbsp;</td>
+<td>(Z)-5-methyl-2-hepten-4-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">152.&nbsp;</td>
+<td class="rechts nowrap top">81925-81-7</td>
+<td>&nbsp;</td>
+<td>5-methyl-2-hepten-4-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">153.&nbsp;</td>
+<td class="rechts nowrap top">1447-26-3</td>
+<td>&nbsp;</td>
+<td>5-methylhepten-3-one (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">154.&nbsp;</td>
+<td class="rechts nowrap top">409-02-9</td>
+<td>&nbsp;</td>
+<td>methylheptenone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">155.&nbsp;</td>
+<td class="rechts nowrap top">131671-56-2</td>
+<td>&nbsp;</td>
+<td>4-ethyl-6-hepten-3-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">156.&nbsp;</td>
+<td class="rechts nowrap top">57283-79-1</td>
+<td>&nbsp;</td>
+<td>(E)-5-isopropyl-3-hepten-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">157.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>dimethyl-3-hepten-2-one (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">158.&nbsp;</td>
+<td class="rechts nowrap top">1604-28-0</td>
+<td>&nbsp;</td>
+<td>6-methyl-3,5-heptadien-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">159.&nbsp;</td>
+<td class="rechts nowrap top">16647-04-4</td>
+<td>&nbsp;</td>
+<td>(3E)-6-methyl-3,5-heptadien-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">160.&nbsp;</td>
+<td class="rechts nowrap top">29178-96-9</td>
+<td>&nbsp;</td>
+<td>(Z)-6-methyl-3,5-heptadien-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">161.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>methylheptadienone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">162.&nbsp;</td>
+<td class="rechts nowrap top">21889-85-0</td>
+<td>&nbsp;</td>
+<td>5-isopropyl-2-heptanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">163.&nbsp;</td>
+<td class="rechts nowrap top">19549-83-8</td>
+<td>&nbsp;</td>
+<td>2,6-dimethyl-3-heptanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">164.&nbsp;</td>
+<td class="rechts nowrap top">18641-71-9</td>
+<td>&nbsp;</td>
+<td>2,4-dimethylheptan-3-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">165.&nbsp;</td>
+<td class="rechts nowrap top">108-83-8</td>
+<td>&nbsp;</td>
+<td>2,6-dimethyl-4-heptanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">166.&nbsp;</td>
+<td class="rechts nowrap top">19549-84-9</td>
+<td>&nbsp;</td>
+<td>3,5-dimethyl-4-heptanone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">167.&nbsp;</td>
+<td class="rechts nowrap top">17046-01-4</td>
+<td>&nbsp;</td>
+<td>1-hydroxy-2-heptanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">168.&nbsp;</td>
+<td class="rechts nowrap top">68113-60-0</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-2-heptanone</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">169.&nbsp;</td>
+<td class="rechts nowrap top">71467-29-3</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-3-heptanone</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">170.&nbsp;</td>
+<td class="rechts nowrap top">309972-33-6</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-4-methyl-2-heptanone</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">171.&nbsp;</td>
+<td class="rechts nowrap top">309972-34-7</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-4-methyl-3-heptanone</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">172.&nbsp;</td>
+<td class="rechts nowrap top">315180-09-7</td>
+<td>&nbsp;</td>
+<td>(4E)-3-hydroxy-4-hepten-2-one</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">173.&nbsp;</td>
+<td class="rechts nowrap top">315180-08-6</td>
+<td>&nbsp;</td>
+<td>(4E)-2-hydroxy-4-hepten-3-one</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">174.&nbsp;</td>
+<td class="rechts nowrap top">546-49-6</td>
+<td>&nbsp;</td>
+<td>3,3,6-trimethyl-1,5-heptadien-4-one (=artemisia ketone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">175.&nbsp;</td>
+<td class="rechts nowrap top">81250-41-1</td>
+<td>&nbsp;</td>
+<td>3,3,6-trimethyl-4,5-heptadien-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">176.&nbsp;</td>
+<td class="rechts nowrap top">96-04-8</td>
+<td>&nbsp;</td>
+<td>2,3-heptanedione</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">177.&nbsp;</td>
+<td class="rechts nowrap top">1703-51-1</td>
+<td>&nbsp;</td>
+<td>2,5-heptanedione</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">178.&nbsp;</td>
+<td class="rechts nowrap top">13706-89-3</td>
+<td>&nbsp;</td>
+<td>3,4-heptanedione</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">179.&nbsp;</td>
+<td class="rechts nowrap top">13678-56-3</td>
+<td>&nbsp;</td>
+<td>5-methyl-3,4-heptanedione</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">180.&nbsp;</td>
+<td class="rechts nowrap top">3131-90-6</td>
+<td>&nbsp;</td>
+<td>6-methyl-3,4-heptanedione</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">181.&nbsp;</td>
+<td class="rechts nowrap top">79925-98-7</td>
+<td>&nbsp;</td>
+<td>4-ethoxy-6-methyl-2-heptanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">182.&nbsp;</td>
+<td class="rechts nowrap top">111-13-7</td>
+<td>&nbsp;</td>
+<td>2-octanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">183.&nbsp;</td>
+<td class="rechts nowrap top">106-68-3</td>
+<td>&nbsp;</td>
+<td>3-octanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">184.&nbsp;</td>
+<td class="rechts nowrap top">589-63-9</td>
+<td>&nbsp;</td>
+<td>4-octanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">185.&nbsp;</td>
+<td class="rechts nowrap top">27457-18-7</td>
+<td>&nbsp;</td>
+<td>octanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">186.&nbsp;</td>
+<td class="rechts nowrap top">1669-44-9</td>
+<td>&nbsp;</td>
+<td>3-octen-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">187.&nbsp;</td>
+<td class="rechts nowrap top">51193-77-2</td>
+<td>&nbsp;</td>
+<td>(Z)-3-octen-2-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">188.&nbsp;</td>
+<td class="rechts nowrap top">18402-82-9</td>
+<td>&nbsp;</td>
+<td>(E)-3-octen-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">189.&nbsp;</td>
+<td class="rechts nowrap top">36359-70-3</td>
+<td>&nbsp;</td>
+<td>5-octen-2-one</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">190.&nbsp;</td>
+<td class="rechts nowrap top">22610-86-2</td>
+<td>&nbsp;</td>
+<td>(Z)-5-octen-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">191.&nbsp;</td>
+<td class="rechts nowrap top">4312-99-6</td>
+<td>&nbsp;</td>
+<td>1-octen-3-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">192.&nbsp;</td>
+<td class="rechts nowrap top">14129-48-7</td>
+<td>&nbsp;</td>
+<td>4-octen-3-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">193.&nbsp;</td>
+<td class="rechts nowrap top">69065-31-2</td>
+<td>&nbsp;</td>
+<td>(E)-4-octen-3-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">194.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>octen-3-one (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">195.&nbsp;</td>
+<td class="rechts nowrap top">4643-27-0</td>
+<td>&nbsp;</td>
+<td>2-octen-4-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">196.&nbsp;</td>
+<td class="rechts nowrap top">3664-60-6</td>
+<td>&nbsp;</td>
+<td>7-octen-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">197.&nbsp;</td>
+<td class="rechts nowrap top">70772-23-5</td>
+<td>&nbsp;</td>
+<td>octenone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">198.&nbsp;</td>
+<td class="rechts nowrap top">38284-27-4</td>
+<td>&nbsp;</td>
+<td>3,5-octadien-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">199.&nbsp;</td>
+<td class="rechts nowrap top">78468-46-9</td>
+<td>&nbsp;</td>
+<td>(Z,E)-3,5-octadien-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">200.&nbsp;</td>
+<td class="rechts nowrap top">4173-41-5</td>
+<td>&nbsp;</td>
+<td>(E,Z)-3,5-octadien-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">201.&nbsp;</td>
+<td class="rechts nowrap top">30086-02-3</td>
+<td>&nbsp;</td>
+<td>(E,E)-3,5-octadien-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">202.&nbsp;</td>
+<td class="rechts nowrap top">65213-86-7</td>
+<td>&nbsp;</td>
+<td>1,5-octadien-3-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">203.&nbsp;</td>
+<td class="rechts nowrap top">65767-22-8</td>
+<td>&nbsp;</td>
+<td>(Z)-1,5-octadien-3-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">204.&nbsp;</td>
+<td class="rechts nowrap top">359794-78-8</td>
+<td>&nbsp;</td>
+<td>(E)-1,5-octadien-3-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">205.&nbsp;</td>
+<td class="rechts nowrap top">1482-13-9</td>
+<td>&nbsp;</td>
+<td>7-methyl-2-octanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">206.&nbsp;</td>
+<td class="rechts nowrap top">923-28-4</td>
+<td>&nbsp;</td>
+<td>2-methyl-3-octanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">207.&nbsp;</td>
+<td class="rechts nowrap top">20809-46-5</td>
+<td>&nbsp;</td>
+<td>7-methyl-4-octanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">208.&nbsp;</td>
+<td class="rechts nowrap top">19781-14-7</td>
+<td>&nbsp;</td>
+<td>3,5-dimethyl-2-octanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">209.&nbsp;</td>
+<td class="rechts nowrap top">103088-62-6</td>
+<td>&nbsp;</td>
+<td>4-isopropyl-2-methyl-3-octanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">210.&nbsp;</td>
+<td class="rechts nowrap top">37160-77-3</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-2-octanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">211.&nbsp;</td>
+<td class="rechts nowrap top">52279-26-2</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-3-octanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">212.&nbsp;</td>
+<td class="rechts nowrap top">496-77-5</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-4-octanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">213.&nbsp;</td>
+<td class="rechts nowrap top">33046-81-0</td>
+<td>&nbsp;</td>
+<td>7-methyl-3-octen-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">214.&nbsp;</td>
+<td class="rechts nowrap top">2550-18-7</td>
+<td>&nbsp;</td>
+<td>2,6-dimethyl-6-octen-3-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">215.&nbsp;</td>
+<td class="rechts nowrap top">51117-36-3</td>
+<td>&nbsp;</td>
+<td>2,6-dimethyl-7-octen-3-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">216.&nbsp;</td>
+<td class="rechts nowrap top">55874-04-9</td>
+<td>&nbsp;</td>
+<td>2-methyl-6-methylene-7-octen-3-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">217.&nbsp;</td>
+<td class="rechts nowrap top">1879-00-1</td>
+<td>&nbsp;</td>
+<td>dihydrotagetone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">218.&nbsp;</td>
+<td class="rechts nowrap top">23007-34-3</td>
+<td>&nbsp;</td>
+<td>6-hydroxy-2,6-dimethyl-7-octen-4-one (=tagetonol)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">219.&nbsp;</td>
+<td class="rechts nowrap top">89412-78-2</td>
+<td>&nbsp;</td>
+<td>2,6-dihydroxy-2,6-dimethyl-7-octen-3-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">220.&nbsp;</td>
+<td class="rechts nowrap top">539-70-8</td>
+<td>&nbsp;</td>
+<td>myrcenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">221.&nbsp;</td>
+<td class="rechts nowrap top">99541-37-4</td>
+<td>&nbsp;</td>
+<td>3,7-dimethyl-1,6-octadien-4-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">222.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>4,6-octadien-3-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">223.&nbsp;</td>
+<td class="rechts nowrap top">91056-18-7</td>
+<td>&nbsp;</td>
+<td>2,6-dimethyl-4,6-octadien-3-one</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">224.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>6-acetoxy-6-methyl-3,7-octadien-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">225.&nbsp;</td>
+<td class="rechts nowrap top">3588-18-9</td>
+<td>&nbsp;</td>
+<td>(Z)-tagetone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">226.&nbsp;</td>
+<td class="rechts nowrap top">6752-80-3</td>
+<td>&nbsp;</td>
+<td>(E)-tagetone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">227.&nbsp;</td>
+<td class="rechts nowrap top">64661-54-7</td>
+<td>&nbsp;</td>
+<td>6-hydroxy-2,6-dimethyl-2,7-octadien-4-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">228.&nbsp;</td>
+<td class="rechts nowrap top">33746-71-3</td>
+<td>&nbsp;</td>
+<td>(Z)-ocimenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">229.&nbsp;</td>
+<td class="rechts nowrap top">33746-72-4</td>
+<td>&nbsp;</td>
+<td>(E)-ocimenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">230.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(Z,E)-3,5-octatrien-2-one (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">231.&nbsp;</td>
+<td class="rechts nowrap top">585-25-1</td>
+<td>&nbsp;</td>
+<td>2,3-octanedione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">232.&nbsp;</td>
+<td class="rechts nowrap top">2955-65-9</td>
+<td>&nbsp;</td>
+<td>3,6-octanedione</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">233.&nbsp;</td>
+<td class="rechts nowrap top">5455-24-3</td>
+<td>&nbsp;</td>
+<td>4,5-octanedione</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">234.&nbsp;</td>
+<td class="rechts nowrap top">315180-10-0</td>
+<td>&nbsp;</td>
+<td>(E)-2-hydroxy-4-octen-3-one</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">235.&nbsp;</td>
+<td class="rechts nowrap top">315180-11-1</td>
+<td>&nbsp;</td>
+<td>(E)-3-hydroxy-4-octen-2-one</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">236.&nbsp;</td>
+<td class="rechts nowrap top">821-55-6</td>
+<td>&nbsp;</td>
+<td>2-nonanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">237.&nbsp;</td>
+<td class="rechts nowrap top">925-78-0</td>
+<td>&nbsp;</td>
+<td>3-nonanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">238.&nbsp;</td>
+<td class="rechts nowrap top">4485-09-0</td>
+<td>&nbsp;</td>
+<td>4-nonanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">239.&nbsp;</td>
+<td class="rechts nowrap top">502-56-7</td>
+<td>&nbsp;</td>
+<td>5-nonanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">240.&nbsp;</td>
+<td class="rechts nowrap top">30642-09-2</td>
+<td>&nbsp;</td>
+<td>nonanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">241.&nbsp;</td>
+<td class="rechts nowrap top">14309-57-0</td>
+<td>&nbsp;</td>
+<td>3-nonen-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">242.&nbsp;</td>
+<td class="rechts nowrap top">18402-83-0</td>
+<td>&nbsp;</td>
+<td>(E)-3-nonen-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">243.&nbsp;</td>
+<td class="rechts nowrap top">82456-34-6</td>
+<td>&nbsp;</td>
+<td>3-nonen-5-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">244.&nbsp;</td>
+<td class="rechts nowrap top">27039-84-5</td>
+<td>&nbsp;</td>
+<td>5-nonen-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">245.&nbsp;</td>
+<td class="rechts nowrap top">82873-10-7</td>
+<td>&nbsp;</td>
+<td>6-nonen-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">246.&nbsp;</td>
+<td class="rechts nowrap top">56889-98-6</td>
+<td>&nbsp;</td>
+<td>(E)-6-nonen-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">247.&nbsp;</td>
+<td class="rechts nowrap top">5009-32-5</td>
+<td>&nbsp;</td>
+<td>8-nonen-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">248.&nbsp;</td>
+<td class="rechts nowrap top">27936-13-6</td>
+<td>&nbsp;</td>
+<td>nonen-2-one (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">249.&nbsp;</td>
+<td class="rechts nowrap top">24415-26-7</td>
+<td>&nbsp;</td>
+<td>1-nonen-3-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">250.&nbsp;</td>
+<td class="rechts nowrap top">61168-10-3</td>
+<td>&nbsp;</td>
+<td>1-nonen-4-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">251.&nbsp;</td>
+<td class="rechts nowrap top">32064-72-5</td>
+<td>&nbsp;</td>
+<td>2-nonen-4-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">252.&nbsp;</td>
+<td class="rechts nowrap top">27743-70-0</td>
+<td>&nbsp;</td>
+<td>(E)-2-nonen-4-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">253.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>3-methyl-6-nonen-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">254.&nbsp;</td>
+<td class="rechts nowrap top">41628-40-4</td>
+<td>&nbsp;</td>
+<td>3,5-nonadien-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">255.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2,5-nonadien-4-one</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">256.&nbsp;</td>
+<td class="rechts nowrap top">61759-51-1</td>
+<td>&nbsp;</td>
+<td>(E,E)-2,5-nonadien-4-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">257.&nbsp;</td>
+<td class="rechts nowrap top">64303-47-5</td>
+<td>&nbsp;</td>
+<td>8-methyl-2-nonanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">258.&nbsp;</td>
+<td class="rechts nowrap top">2903-23-3</td>
+<td>&nbsp;</td>
+<td>2-methyl-2-nonen-4-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">259.&nbsp;</td>
+<td class="rechts nowrap top">84607-56-7</td>
+<td>&nbsp;</td>
+<td>3-methyl-2-nonen-4-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">260.&nbsp;</td>
+<td class="rechts nowrap top">68985-18-2</td>
+<td>&nbsp;</td>
+<td>(E)-3-methyl-2-nonen-4-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">261.&nbsp;</td>
+<td class="rechts nowrap top">6820-03-7</td>
+<td>&nbsp;</td>
+<td>4,8-dimethyl-4,7-nonadien-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">262.&nbsp;</td>
+<td class="rechts nowrap top">113486-29-6</td>
+<td>&nbsp;</td>
+<td>3-methyl-2,4-nonanedione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">263.&nbsp;</td>
+<td class="rechts nowrap top">315180-07-5</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-3-nonanone</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">264.&nbsp;</td>
+<td class="rechts nowrap top">73642-01-0</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-2-nonanone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">265.&nbsp;</td>
+<td class="rechts nowrap top">693-54-9</td>
+<td>&nbsp;</td>
+<td>2-decanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">266.&nbsp;</td>
+<td class="rechts nowrap top">928-80-3</td>
+<td>&nbsp;</td>
+<td>3-decanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">267.&nbsp;</td>
+<td class="rechts nowrap top">624-16-8</td>
+<td>&nbsp;</td>
+<td>4-decanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">268.&nbsp;</td>
+<td class="rechts nowrap top">29221-56-5</td>
+<td>&nbsp;</td>
+<td>decanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">269.&nbsp;</td>
+<td class="rechts nowrap top">10519-33-2</td>
+<td>&nbsp;</td>
+<td>3-decen-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">270.&nbsp;</td>
+<td class="rechts nowrap top">18402-84-1</td>
+<td>&nbsp;</td>
+<td>(E)-3-decen-2-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">271.&nbsp;</td>
+<td class="rechts nowrap top">63024-86-2</td>
+<td>&nbsp;</td>
+<td>2-decen-4-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">272.&nbsp;</td>
+<td class="rechts nowrap top">65570-25-4</td>
+<td>&nbsp;</td>
+<td>2-decen-5-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">273.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>4-decen-3-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">274.&nbsp;</td>
+<td class="rechts nowrap top">32064-75-8</td>
+<td>&nbsp;</td>
+<td>2-methyl-3-decen-5-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">275.&nbsp;</td>
+<td class="rechts nowrap top">69024-85-7</td>
+<td>&nbsp;</td>
+<td>5-decen-4-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">276.&nbsp;</td>
+<td class="rechts nowrap top">67881-17-8</td>
+<td>&nbsp;</td>
+<td>decen-2-one (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">277.&nbsp;</td>
+<td class="rechts nowrap top">95416-58-3</td>
+<td>&nbsp;</td>
+<td>3,5-decadien-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">278.&nbsp;</td>
+<td class="rechts nowrap top">68067-35-6</td>
+<td>&nbsp;</td>
+<td>9-methyl-2-decanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">279.&nbsp;</td>
+<td class="rechts nowrap top">71467-28-2</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-3-decanone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">280.&nbsp;</td>
+<td class="rechts nowrap top">68113-61-1</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-2-decanone</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">281.&nbsp;</td>
+<td class="rechts nowrap top">112-12-9</td>
+<td>&nbsp;</td>
+<td>2-undecanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">282.&nbsp;</td>
+<td class="rechts nowrap top">927-49-1</td>
+<td>&nbsp;</td>
+<td>6-undecanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">283.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-undecanone (branched)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">284.&nbsp;</td>
+<td class="rechts nowrap top">2216-87-7</td>
+<td>&nbsp;</td>
+<td>3-undecanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">285.&nbsp;</td>
+<td class="rechts nowrap top">14476-37-0</td>
+<td>&nbsp;</td>
+<td>4-undecanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">286.&nbsp;</td>
+<td class="rechts nowrap top">33083-83-9</td>
+<td>&nbsp;</td>
+<td>5-undecanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">287.&nbsp;</td>
+<td class="rechts nowrap top">53452-70-3</td>
+<td>&nbsp;</td>
+<td>undecanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">288.&nbsp;</td>
+<td class="rechts nowrap top">10522-37-9</td>
+<td>&nbsp;</td>
+<td>3-undecen-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">289.&nbsp;</td>
+<td class="rechts nowrap top">22616-88-2</td>
+<td>&nbsp;</td>
+<td>4-undecen-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">290.&nbsp;</td>
+<td class="rechts nowrap top">27936-14-7</td>
+<td>&nbsp;</td>
+<td>undecen-2-one (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">291.&nbsp;</td>
+<td class="rechts nowrap top">38945-65-2</td>
+<td>&nbsp;</td>
+<td>1-undecen-5-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">292.&nbsp;</td>
+<td class="rechts nowrap top">68973-20-6</td>
+<td>&nbsp;</td>
+<td>3,5-undecadien-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">293.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>undecadien-2-one (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">294.&nbsp;</td>
+<td class="rechts nowrap top">67882-99-9</td>
+<td>&nbsp;</td>
+<td>10-methyl-2-undecanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">295.&nbsp;</td>
+<td class="rechts nowrap top">1604-34-8</td>
+<td>&nbsp;</td>
+<td>6,10-dimethyl-2-undecanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">296.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>6,10-dimethylundecanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">297.&nbsp;</td>
+<td class="rechts nowrap top">689-67-8</td>
+<td>&nbsp;</td>
+<td>6,10-dimethyl-5,9-undecadien-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">298.&nbsp;</td>
+<td class="rechts nowrap top">3879-26-3</td>
+<td>&nbsp;</td>
+<td>(Z)-6,10-dimethyl-5,9-undecadien-2-one (=nerylacetone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">299.&nbsp;</td>
+<td class="rechts nowrap top">3796-70-1</td>
+<td>&nbsp;</td>
+<td>geranylacetone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">300.&nbsp;</td>
+<td class="rechts nowrap top">141-10-6</td>
+<td>&nbsp;</td>
+<td>6,10-dimethyl-3,5,9-undecatrien-2-one (=&psi;-ionone, pseudoionone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">301.&nbsp;</td>
+<td class="rechts nowrap top">98910-85-1</td>
+<td>&nbsp;</td>
+<td>3-keto-''-ionone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">302.&nbsp;</td>
+<td class="rechts nowrap top">3548-78-5</td>
+<td>&nbsp;</td>
+<td>(E),(E)-6,10-dimethyl-3,5,9-undecatrien-2-one (=(E),(E)-pseudoionone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">303.&nbsp;</td>
+<td class="rechts nowrap top">13927-47-4</td>
+<td>&nbsp;</td>
+<td>(E),(Z)-6,10-dimethyl-3,5,9-undecatrien-2-one (=(E),(Z)-pseudoionone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">304.&nbsp;</td>
+<td class="rechts nowrap top">6175-49-1</td>
+<td>&nbsp;</td>
+<td>2-dodecanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">305.&nbsp;</td>
+<td class="rechts nowrap top">830-13-7</td>
+<td>&nbsp;</td>
+<td>cyclododecanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">306.&nbsp;</td>
+<td class="rechts nowrap top">1534-27-6</td>
+<td>&nbsp;</td>
+<td>3-dodecanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">307.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-dodecanone (branched)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">308.&nbsp;</td>
+<td class="rechts nowrap top">58879-39-3</td>
+<td>&nbsp;</td>
+<td>1-dodecen-3-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">309.&nbsp;</td>
+<td class="rechts nowrap top">65570-26-5</td>
+<td>&nbsp;</td>
+<td>2-dodecen-4-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">310.&nbsp;</td>
+<td class="rechts nowrap top">65570-27-6</td>
+<td>&nbsp;</td>
+<td>2-dodecen-5-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">311.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>dodecen-2-one (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">312.&nbsp;</td>
+<td class="rechts nowrap top">57782-13-5</td>
+<td>&nbsp;</td>
+<td>dodecenone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">313.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>10-methyl-2-dodecanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">314.&nbsp;</td>
+<td class="rechts nowrap top">67883-00-5</td>
+<td>&nbsp;</td>
+<td>11-methyl-2-dodecanone</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">315.&nbsp;</td>
+<td class="rechts nowrap top">593-08-8</td>
+<td>&nbsp;</td>
+<td>2-tridecanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">316.&nbsp;</td>
+<td class="rechts nowrap top">1534-26-5</td>
+<td>&nbsp;</td>
+<td>3-tridecanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">317.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-tridecanone (branched)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">318.&nbsp;</td>
+<td class="rechts nowrap top">57702-05-3</td>
+<td>&nbsp;</td>
+<td>tridecanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">319.&nbsp;</td>
+<td class="rechts nowrap top">67881-14-5</td>
+<td>&nbsp;</td>
+<td>tridecen-2-one (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">320.&nbsp;</td>
+<td class="rechts nowrap top">2345-27-9</td>
+<td>&nbsp;</td>
+<td>2-tetradecanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">321.&nbsp;</td>
+<td class="rechts nowrap top">629-23-2</td>
+<td>&nbsp;</td>
+<td>3-tetradecanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">322.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-tetradecanone (branched)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">323.&nbsp;</td>
+<td class="rechts nowrap top">67881-20-3</td>
+<td>&nbsp;</td>
+<td>methyl-2-tetradecanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">324.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>9-tetradecen-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">325.&nbsp;</td>
+<td class="rechts nowrap top">68062-19-1</td>
+<td>&nbsp;</td>
+<td>tetradecen-2-one (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">326.&nbsp;</td>
+<td class="rechts nowrap top">67881-15-6</td>
+<td>&nbsp;</td>
+<td>tetradecadien-2-one (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">327.&nbsp;</td>
+<td class="rechts nowrap top">85416-33-7</td>
+<td>&nbsp;</td>
+<td>(Z,Z,Z)-5,8,11-tetradecatrien-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">328.&nbsp;</td>
+<td class="rechts nowrap top">105657-92-9</td>
+<td>&nbsp;</td>
+<td>(E,E,Z)-5,8,11-tetradecatrien-2-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">329.&nbsp;</td>
+<td class="rechts nowrap top">105657-91-8</td>
+<td>&nbsp;</td>
+<td>(Z,E,E)-5,8,11-tetradecatrien-2-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">330.&nbsp;</td>
+<td class="rechts nowrap top">105657-90-7</td>
+<td>&nbsp;</td>
+<td>(E,Z,E)-5,8,11-tetradecatrien-2-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">331.&nbsp;</td>
+<td class="rechts nowrap top">105657-89-4</td>
+<td>&nbsp;</td>
+<td>(Z,Z,E)-5,8,11-tetradecatrien-2-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">332.&nbsp;</td>
+<td class="rechts nowrap top">101339-97-3</td>
+<td>&nbsp;</td>
+<td>(Z,E,Z)-5,8,11-tetradecatrien-2-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">333.&nbsp;</td>
+<td class="rechts nowrap top">85421-52-9</td>
+<td>&nbsp;</td>
+<td>(E,E,E)-5,8,11-tetradecatrien-2-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">334.&nbsp;</td>
+<td class="rechts nowrap top">117606-22-1</td>
+<td>&nbsp;</td>
+<td>(E,Z,Z)-5,8,11-tetradecatrien-2-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">335.&nbsp;</td>
+<td class="rechts nowrap top">2345-28-0</td>
+<td>&nbsp;</td>
+<td>2-pentadecanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">336.&nbsp;</td>
+<td class="rechts nowrap top">18787-66-1</td>
+<td>&nbsp;</td>
+<td>3-pentadecanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">337.&nbsp;</td>
+<td class="rechts nowrap top">76940-91-5</td>
+<td>&nbsp;</td>
+<td>pentadecanone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">338.&nbsp;</td>
+<td class="rechts nowrap top">26932-08-1</td>
+<td>&nbsp;</td>
+<td>6-pentadecen-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">339.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>12-pentadecen-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">340.&nbsp;</td>
+<td class="rechts nowrap top">68062-15-7</td>
+<td>&nbsp;</td>
+<td>pentadecen-2-one (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">341.&nbsp;</td>
+<td class="rechts nowrap top">2516-30-5</td>
+<td>&nbsp;</td>
+<td>6,9-pentadecadien-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">342.&nbsp;</td>
+<td class="rechts nowrap top">68062-16-8</td>
+<td>&nbsp;</td>
+<td>pentadecadien-2-one (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">343.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>6,9,13-pentadecatrien-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">344.&nbsp;</td>
+<td class="rechts nowrap top">502-69-2</td>
+<td>&nbsp;</td>
+<td>6,10,14-trimethyl-2-pentadecanone (=hexahydrofarnesylacetone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">345.&nbsp;</td>
+<td class="rechts nowrap top">87531-87-1</td>
+<td>&nbsp;</td>
+<td>2,6,10-trimethylpentadecanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">346.&nbsp;</td>
+<td class="rechts nowrap top">1117-52-8</td>
+<td>&nbsp;</td>
+<td>farnesylacetone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">347.&nbsp;</td>
+<td class="rechts nowrap top">18787-63-8</td>
+<td>&nbsp;</td>
+<td>2-hexadecanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">348.&nbsp;</td>
+<td class="rechts nowrap top">18787-64-9</td>
+<td>&nbsp;</td>
+<td>3-hexadecanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">349.&nbsp;</td>
+<td class="rechts nowrap top">2922-51-2</td>
+<td>&nbsp;</td>
+<td>2-heptadecanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">350.&nbsp;</td>
+<td class="rechts nowrap top">84534-29-2</td>
+<td>&nbsp;</td>
+<td>3-heptadecanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">351.&nbsp;</td>
+<td class="rechts nowrap top">540-08-9</td>
+<td>&nbsp;</td>
+<td>9-heptadecanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">352.&nbsp;</td>
+<td class="rechts nowrap top">1357255-21-0</td>
+<td>&nbsp;</td>
+<td>(Z)-9,16-heptadecadien-7-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">353.&nbsp;</td>
+<td class="rechts nowrap top">7373-13-9</td>
+<td>&nbsp;</td>
+<td>2-octadecanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">354.&nbsp;</td>
+<td class="rechts nowrap top">18261-92-2</td>
+<td>&nbsp;</td>
+<td>3-octadecanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">355.&nbsp;</td>
+<td class="rechts nowrap top">629-66-3</td>
+<td>&nbsp;</td>
+<td>2-nonadecanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">356.&nbsp;</td>
+<td class="rechts nowrap top">27372-42-5</td>
+<td>&nbsp;</td>
+<td>3-nonadecanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">357.&nbsp;</td>
+<td class="rechts nowrap top">29703-52-4</td>
+<td>&nbsp;</td>
+<td>2-eicosanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">358.&nbsp;</td>
+<td class="rechts nowrap top">57755-77-8</td>
+<td>&nbsp;</td>
+<td>3-heneicosanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">359.&nbsp;</td>
+<td class="rechts nowrap top">504-56-3</td>
+<td>&nbsp;</td>
+<td>10-nonacosanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">360.&nbsp;</td>
+<td class="rechts nowrap top">1191-95-3</td>
+<td>&nbsp;</td>
+<td>cyclobutanone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">361.&nbsp;</td>
+<td class="rechts nowrap top">1192-14-9</td>
+<td>&nbsp;</td>
+<td>2,2-dimethylcyclobutanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">362.&nbsp;</td>
+<td class="rechts nowrap top">120-92-3</td>
+<td>&nbsp;</td>
+<td>cyclopentanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">363.&nbsp;</td>
+<td class="rechts nowrap top">930-30-3</td>
+<td>&nbsp;</td>
+<td>2-cyclopenten-1-one</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">364.&nbsp;</td>
+<td class="rechts nowrap top">28982-58-3</td>
+<td>&nbsp;</td>
+<td>cyclopentenone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">365.&nbsp;</td>
+<td class="rechts nowrap top">1120-72-5</td>
+<td>&nbsp;</td>
+<td>2-methylcyclopentanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">366.&nbsp;</td>
+<td class="rechts nowrap top">1757-42-2</td>
+<td>&nbsp;</td>
+<td>3-methylcyclopentanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">367.&nbsp;</td>
+<td class="rechts nowrap top">28631-88-1</td>
+<td>&nbsp;</td>
+<td>methylcyclopentanone (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">368.&nbsp;</td>
+<td class="rechts nowrap top">61215-75-6</td>
+<td>&nbsp;</td>
+<td>ethylcyclopentanone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">369.&nbsp;</td>
+<td class="rechts nowrap top">1670-46-8</td>
+<td>&nbsp;</td>
+<td>2-acetylcyclopentanon</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">370.&nbsp;</td>
+<td class="rechts nowrap top">14845-55-7</td>
+<td>&nbsp;</td>
+<td>2-isopropylcyclopentanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">371.&nbsp;</td>
+<td class="rechts nowrap top">934-42-9</td>
+<td>&nbsp;</td>
+<td>2-butylcyclopentanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">372.&nbsp;</td>
+<td class="rechts nowrap top">2520-60-7</td>
+<td>&nbsp;</td>
+<td>2-prenylcyclopentanone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">373.&nbsp;</td>
+<td class="rechts nowrap top">71535-28-9</td>
+<td>&nbsp;</td>
+<td>cis-tetrahydrojasmine</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">374.&nbsp;</td>
+<td class="rechts nowrap top">17373-89-6</td>
+<td>&nbsp;</td>
+<td>2-hexylidenecyclopentanone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">375.&nbsp;</td>
+<td class="rechts nowrap top">98314-98-8</td>
+<td>&nbsp;</td>
+<td>(E)-2-(2-octenyl)cyclopentanone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">376.&nbsp;</td>
+<td class="rechts nowrap top">1120-73-6</td>
+<td>&nbsp;</td>
+<td>2-methyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">377.&nbsp;</td>
+<td class="rechts nowrap top">2758-18-1</td>
+<td>&nbsp;</td>
+<td>3-methyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">378.&nbsp;</td>
+<td class="rechts nowrap top">23033-96-7</td>
+<td>&nbsp;</td>
+<td>4-methyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">379.&nbsp;</td>
+<td class="rechts nowrap top">14963-40-7</td>
+<td>&nbsp;</td>
+<td>5-methyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">380.&nbsp;</td>
+<td class="rechts nowrap top">2931-10-4</td>
+<td>&nbsp;</td>
+<td>2-ethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">381.&nbsp;</td>
+<td class="rechts nowrap top">5682-69-9</td>
+<td>&nbsp;</td>
+<td>3-ethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">382.&nbsp;</td>
+<td class="rechts nowrap top">24105-07-5</td>
+<td>&nbsp;</td>
+<td>2-propyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">383.&nbsp;</td>
+<td class="rechts nowrap top">5561-05-7</td>
+<td>&nbsp;</td>
+<td>2-butyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">384.&nbsp;</td>
+<td class="rechts nowrap top">56044-98-5</td>
+<td>&nbsp;</td>
+<td>5-butyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">385.&nbsp;</td>
+<td class="rechts nowrap top">25564-22-1</td>
+<td>&nbsp;</td>
+<td>2-pentyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">386.&nbsp;</td>
+<td class="rechts nowrap top">80961-19-9</td>
+<td>&nbsp;</td>
+<td>ethyl-methylcyclopentanone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">387.&nbsp;</td>
+<td class="rechts nowrap top">1121-05-7</td>
+<td>&nbsp;</td>
+<td>2,3-dimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">388.&nbsp;</td>
+<td class="rechts nowrap top">23048-13-7</td>
+<td>&nbsp;</td>
+<td>2,4-dimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">389.&nbsp;</td>
+<td class="rechts nowrap top">4041-11-6</td>
+<td>&nbsp;</td>
+<td>2,5-dimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">390.&nbsp;</td>
+<td class="rechts nowrap top">30434-64-1</td>
+<td>&nbsp;</td>
+<td>3,4-dimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">391.&nbsp;</td>
+<td class="rechts nowrap top">931-22-6</td>
+<td>&nbsp;</td>
+<td>3,5-dimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">392.&nbsp;</td>
+<td class="rechts nowrap top">72692-71-8</td>
+<td>&nbsp;</td>
+<td>dimethyl-2-cyclopenten-1-one (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">393.&nbsp;</td>
+<td class="rechts nowrap top">71535-29-0</td>
+<td>&nbsp;</td>
+<td>trans-tetrahydrojasmone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">394.&nbsp;</td>
+<td class="rechts nowrap top">1128-08-1</td>
+<td>&nbsp;</td>
+<td>3-methyl-2-(n-pentanyl)-2-cyclopenten-1-one (=dihydrojasmone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">395.&nbsp;</td>
+<td class="rechts nowrap top">68043-00-5</td>
+<td>&nbsp;</td>
+<td>jasmone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">396.&nbsp;</td>
+<td class="rechts nowrap top">488-10-8</td>
+<td>&nbsp;</td>
+<td>(Z)-jasmone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">397.&nbsp;</td>
+<td class="rechts nowrap top">6261-18-3</td>
+<td>&nbsp;</td>
+<td>(E)-jasmone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">398.&nbsp;</td>
+<td class="rechts nowrap top">11050-62-7</td>
+<td>&nbsp;</td>
+<td>isojasmone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">399.&nbsp;</td>
+<td class="rechts nowrap top">28790-86-5</td>
+<td>&nbsp;</td>
+<td>2,3,4-trimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">400.&nbsp;</td>
+<td class="rechts nowrap top">54562-24-2</td>
+<td>&nbsp;</td>
+<td>2,3,5-trimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">401.&nbsp;</td>
+<td class="rechts nowrap top">24156-95-4</td>
+<td>&nbsp;</td>
+<td>3,5,5-trimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">402.&nbsp;</td>
+<td class="rechts nowrap top">30434-65-2</td>
+<td>&nbsp;</td>
+<td>3,4,4-trimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">403.&nbsp;</td>
+<td class="rechts nowrap top">82000-05-3</td>
+<td>&nbsp;</td>
+<td>trimethyl-2-cyclopenten-1-one (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">404.&nbsp;</td>
+<td class="rechts nowrap top">86368-24-3</td>
+<td>&nbsp;</td>
+<td>trimethylcyclopentenone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">405.&nbsp;</td>
+<td class="rechts nowrap top">864685-64-3</td>
+<td>&nbsp;</td>
+<td>5-methylene-2,3,4,4-tetramethyl-2-cyclopentenone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">406.&nbsp;</td>
+<td class="rechts nowrap top">10493-98-8</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-2-cyclopenten-1-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">407.&nbsp;</td>
+<td class="rechts nowrap top">21835-00-7</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-3,4-dimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">408.&nbsp;</td>
+<td class="rechts nowrap top">21834-98-0</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-3,5-dimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">409.&nbsp;</td>
+<td class="rechts nowrap top">80-71-7</td>
+<td>&nbsp;</td>
+<td>cyclotene (=see also [765-70-8])</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">410.&nbsp;</td>
+<td class="rechts nowrap top">21835-01-8</td>
+<td>&nbsp;</td>
+<td>3-ethyl-1,2-cyclopentanedione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">411.&nbsp;</td>
+<td class="rechts nowrap top">83-33-0</td>
+<td>&nbsp;</td>
+<td>1-indanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">412.&nbsp;</td>
+<td class="rechts nowrap top">59-48-3</td>
+<td>&nbsp;</td>
+<td>1,3-dihydro-2H-indol-2-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">413.&nbsp;</td>
+<td class="rechts nowrap top">91-56-5</td>
+<td>&nbsp;</td>
+<td>1H-indole-2,3-dione</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">414.&nbsp;</td>
+<td class="rechts nowrap top">6072-57-7</td>
+<td>&nbsp;</td>
+<td>3-methyl-1-indanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">415.&nbsp;</td>
+<td class="rechts nowrap top">24644-78-8</td>
+<td>&nbsp;</td>
+<td>4-methyl-1-indanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">416.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>methylindanone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">417.&nbsp;</td>
+<td class="rechts nowrap top">765-70-8</td>
+<td>&nbsp;</td>
+<td>3-methyl-1,2-cyclopentanedione (=cyclotene) (=CAS no [80-71-7])</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">418.&nbsp;</td>
+<td class="rechts nowrap top">3250-08-6</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-5-methyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">419.&nbsp;</td>
+<td class="rechts nowrap top">551-45-1</td>
+<td>&nbsp;</td>
+<td>2-allyl-4-hydroxy-3-methyl-2-cyclopenten-1-one (=allethrolone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">420.&nbsp;</td>
+<td class="rechts nowrap top">765-69-5</td>
+<td>&nbsp;</td>
+<td>2-methyl-1,3-cyclopentanedione</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">421.&nbsp;</td>
+<td class="rechts nowrap top">13494-08-1</td>
+<td>&nbsp;</td>
+<td>3-ethyl-1,2-cyclopentanedione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">422.&nbsp;</td>
+<td class="rechts nowrap top">25684-04-2</td>
+<td>&nbsp;</td>
+<td>3-propyl-1,2-cyclopentanedione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">423.&nbsp;</td>
+<td class="rechts nowrap top">55277-47-9</td>
+<td>&nbsp;</td>
+<td>3-isopropyl-1,2-cyclopentanedione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">424.&nbsp;</td>
+<td class="rechts nowrap top">29798-72-9</td>
+<td>&nbsp;</td>
+<td>3-butyl-2-hydroxy-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">425.&nbsp;</td>
+<td class="rechts nowrap top">55007-08-4</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-3-pentyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">426.&nbsp;</td>
+<td class="rechts nowrap top">13494-06-9</td>
+<td>&nbsp;</td>
+<td>3,4-dimethyl-1,2-cyclopentanedione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">427.&nbsp;</td>
+<td class="rechts nowrap top">13494-07-0</td>
+<td>&nbsp;</td>
+<td>3,5-dimethyl-1,2-cyclopentanedione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">428.&nbsp;</td>
+<td class="rechts nowrap top">4800-04-8</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-2-methyl-1,3-cyclopentanedione</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">429.&nbsp;</td>
+<td class="rechts nowrap top">42348-12-9</td>
+<td>&nbsp;</td>
+<td>3-ethyl-2-hydroxy-4-methyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">430.&nbsp;</td>
+<td class="rechts nowrap top">58228-72-1</td>
+<td>&nbsp;</td>
+<td>3-ethyl-2-hydroxy-5-methyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">431.&nbsp;</td>
+<td class="rechts nowrap top">71387-71-8</td>
+<td>&nbsp;</td>
+<td>4-ethyl-2-hydroxy-3-methyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">432.&nbsp;</td>
+<td class="rechts nowrap top">53263-58-4</td>
+<td>&nbsp;</td>
+<td>5-ethyl-2-hydroxy-3-methyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">433.&nbsp;</td>
+<td class="rechts nowrap top">86702-81-0</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-3,4,4-trimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">434.&nbsp;</td>
+<td class="rechts nowrap top">125476-24-6</td>
+<td>&nbsp;</td>
+<td>cis-2-hydroxy-3,4,5-trimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">435.&nbsp;</td>
+<td class="rechts nowrap top">125476-23-5</td>
+<td>&nbsp;</td>
+<td>trans-2-hydroxy-3,4,5-trimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">436.&nbsp;</td>
+<td class="rechts nowrap top">53263-56-2</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-3,5,5-trimethyl-2-cyclopenten-1-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">437.&nbsp;</td>
+<td class="rechts nowrap top">25522-96-7</td>
+<td>&nbsp;</td>
+<td>isohumulone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">438.&nbsp;</td>
+<td class="rechts nowrap top">930-60-9</td>
+<td>&nbsp;</td>
+<td>2-cyclopentene-1,4-dione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">439.&nbsp;</td>
+<td class="rechts nowrap top">18515-43-0</td>
+<td>&nbsp;</td>
+<td>4,5-dimethyl-4-cyclopentene-1,3-dione</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">440.&nbsp;</td>
+<td class="rechts nowrap top">73011-52-6</td>
+<td>&nbsp;</td>
+<td>1-acetyl-4-isopropylcyclopentene</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">441.&nbsp;</td>
+<td class="rechts nowrap top">36628-80-5</td>
+<td>&nbsp;</td>
+<td>1,6-methano[10]annulen-11-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">442.&nbsp;</td>
+<td class="rechts nowrap top">2704-76-9</td>
+<td>&nbsp;</td>
+<td>1-acetyl-4-isopropenylcyclopentene</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">443.&nbsp;</td>
+<td class="rechts nowrap top">4056-69-3</td>
+<td>&nbsp;</td>
+<td>2-acetyl-4-methyl-1,3-cyclopentanedione</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">444.&nbsp;</td>
+<td class="rechts nowrap top">108-94-1</td>
+<td>&nbsp;</td>
+<td>cyclohexanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">445.&nbsp;</td>
+<td class="rechts nowrap top">930-68-7</td>
+<td>&nbsp;</td>
+<td>2-cyclohexen-1-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">446.&nbsp;</td>
+<td class="rechts nowrap top">583-60-8</td>
+<td>&nbsp;</td>
+<td>2-methylcyclohexanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">447.&nbsp;</td>
+<td class="rechts nowrap top">591-24-2</td>
+<td>&nbsp;</td>
+<td>3-methylcyclohexanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">448.&nbsp;</td>
+<td class="rechts nowrap top">589-92-4</td>
+<td>&nbsp;</td>
+<td>4-methylcyclohexanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">449.&nbsp;</td>
+<td class="rechts nowrap top">823-19-8</td>
+<td>&nbsp;</td>
+<td>3-hydroxycyclohexanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">450.&nbsp;</td>
+<td class="rechts nowrap top">1121-18-2</td>
+<td>&nbsp;</td>
+<td>2-methyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">451.&nbsp;</td>
+<td class="rechts nowrap top">1193-18-6</td>
+<td>&nbsp;</td>
+<td>3-methyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">452.&nbsp;</td>
+<td class="rechts nowrap top">5515-76-4</td>
+<td>&nbsp;</td>
+<td>4-methyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">453.&nbsp;</td>
+<td class="rechts nowrap top">7214-50-8</td>
+<td>&nbsp;</td>
+<td>5-methyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">454.&nbsp;</td>
+<td class="rechts nowrap top">5259-65-4</td>
+<td>&nbsp;</td>
+<td>4-methyl-3-cyclohexenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">455.&nbsp;</td>
+<td class="rechts nowrap top">93842-53-6</td>
+<td>&nbsp;</td>
+<td>methylcyclohexenone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">456.&nbsp;</td>
+<td class="rechts nowrap top">500-02-7</td>
+<td>&nbsp;</td>
+<td>4-isopropyl-2-cyclohexen-1-one (=cryptone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">457.&nbsp;</td>
+<td class="rechts nowrap top">5432-85-9</td>
+<td>&nbsp;</td>
+<td>4-isopropylcyclohexanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">458.&nbsp;</td>
+<td class="rechts nowrap top">22460-53-3</td>
+<td>&nbsp;</td>
+<td>4-isopropenylcyclohexanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">459.&nbsp;</td>
+<td class="rechts nowrap top">64317-84-6</td>
+<td>&nbsp;</td>
+<td>4-isopropylidene-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">460.&nbsp;</td>
+<td class="rechts nowrap top">92414-85-2</td>
+<td>&nbsp;</td>
+<td>6-butyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">461.&nbsp;</td>
+<td class="rechts nowrap top">13395-76-1</td>
+<td>&nbsp;</td>
+<td>2,3-dimethylcyclohexanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">462.&nbsp;</td>
+<td class="rechts nowrap top">2979-19-3</td>
+<td>&nbsp;</td>
+<td>3,3-dimethylcyclohexanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">463.&nbsp;</td>
+<td class="rechts nowrap top">499-70-7</td>
+<td>&nbsp;</td>
+<td>carvomenthone (=trans-carvomenthone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">464.&nbsp;</td>
+<td class="rechts nowrap top">3901-91-5</td>
+<td>&nbsp;</td>
+<td>cis-p-menthan-2-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">465.&nbsp;</td>
+<td class="rechts nowrap top">40790-56-5</td>
+<td>&nbsp;</td>
+<td>2,6-dimethyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">466.&nbsp;</td>
+<td class="rechts nowrap top">127798-16-7</td>
+<td>&nbsp;</td>
+<td>dimethyl-2-cyclohexenone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">467.&nbsp;</td>
+<td class="rechts nowrap top">72441-70-4</td>
+<td>&nbsp;</td>
+<td>(6S,1R)-6-(1,5-dimethyl-4-hexenyl)-3-methyl-2-cyclohexen-1-one (= (S,R)-6,7-bisabolone )</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">468.&nbsp;</td>
+<td class="rechts nowrap top">61432-71-1</td>
+<td>&nbsp;</td>
+<td>(6R,1S)-6-(1,5-dimethyl-4-hexen-1-yl)-3-methyl-2-cyclohexen-1-one (=&alpha;-bisabol-1-one)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">469.&nbsp;</td>
+<td class="rechts nowrap top">70150-56-0</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-methyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">470.&nbsp;</td>
+<td class="rechts nowrap top">35413-38-8</td>
+<td>&nbsp;</td>
+<td>2,2,4-trimethylcyclohexanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">471.&nbsp;</td>
+<td class="rechts nowrap top">2408-37-9</td>
+<td>&nbsp;</td>
+<td>2,2,6-trimethylcyclohexanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">472.&nbsp;</td>
+<td class="rechts nowrap top">21698-44-2</td>
+<td>&nbsp;</td>
+<td>shyobunone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">473.&nbsp;</td>
+<td class="rechts nowrap top">39020-72-9</td>
+<td>&nbsp;</td>
+<td>6-epishyobunone (=epishyobunone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">474.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2,6-diepishyobunone</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">475.&nbsp;</td>
+<td class="rechts nowrap top">21698-46-4</td>
+<td>&nbsp;</td>
+<td>isoshyobunone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">476.&nbsp;</td>
+<td class="rechts nowrap top">20013-73-4</td>
+<td>&nbsp;</td>
+<td>2,6,6-trimethyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">477.&nbsp;</td>
+<td class="rechts nowrap top">873-94-9</td>
+<td>&nbsp;</td>
+<td>3,3,5-trimethylcyclohexanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">478.&nbsp;</td>
+<td class="rechts nowrap top">78-59-1</td>
+<td>&nbsp;</td>
+<td>3,5,5-trimethyl-2-cyclohexen-1-one (=isophorone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">479.&nbsp;</td>
+<td class="rechts nowrap top">504-20-1</td>
+<td>&nbsp;</td>
+<td>2,6-dimethyl-2,5-heptadien-4-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">480.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>trimethyl-2-cyclohexen-1-one (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">481.&nbsp;</td>
+<td class="rechts nowrap top">141978-04-3</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-6-isopropyl-3-methyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">482.&nbsp;</td>
+<td class="rechts nowrap top">471-01-2</td>
+<td>&nbsp;</td>
+<td>3,5,5-trimethyl-3-cyclohexen-1-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">483.&nbsp;</td>
+<td class="rechts nowrap top">14376-79-5</td>
+<td>&nbsp;</td>
+<td>3,3,4,5-tetramethylcyclohexanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">484.&nbsp;</td>
+<td class="rechts nowrap top">5957-62-0</td>
+<td>&nbsp;</td>
+<td>calacone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">485.&nbsp;</td>
+<td class="rechts nowrap top">20548-00-9</td>
+<td>&nbsp;</td>
+<td>3,5,5-trimethyl-4-methylene-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">486.&nbsp;</td>
+<td class="rechts nowrap top">122221-94-7</td>
+<td>&nbsp;</td>
+<td>angustifolenone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">487.&nbsp;</td>
+<td class="rechts nowrap top">67401-26-7</td>
+<td>&nbsp;</td>
+<td>(E)-5,8-megastigmadien-4-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">488.&nbsp;</td>
+<td class="rechts nowrap top">67401-25-6</td>
+<td>&nbsp;</td>
+<td>(Z)-5,8-megastigmadien-4-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">489.&nbsp;</td>
+<td class="rechts nowrap top">67401-27-8</td>
+<td>&nbsp;</td>
+<td>5,8-megastigmadien-4-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">490.&nbsp;</td>
+<td class="rechts nowrap top">125541-27-7</td>
+<td>&nbsp;</td>
+<td>(E,E)-6,8-megastigmadien-4-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">491.&nbsp;</td>
+<td class="rechts nowrap top">13215-88-8</td>
+<td>&nbsp;</td>
+<td>4,6,8-megastigmatrien-3-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">492.&nbsp;</td>
+<td class="rechts nowrap top">5164-79-4</td>
+<td>&nbsp;</td>
+<td>(Z,Z)-4-(2-butenylidene)-3,5,5-trimethyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">493.&nbsp;</td>
+<td class="rechts nowrap top">5492-79-5</td>
+<td>&nbsp;</td>
+<td>(Z,E)-4-(2-butenylidene)-3,5,5-trimethyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">494.&nbsp;</td>
+<td class="rechts nowrap top">5298-13-5</td>
+<td>&nbsp;</td>
+<td>(E,Z)-4-(2-butenylidene)-3,5,5-trimethyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">495.&nbsp;</td>
+<td class="rechts nowrap top">5164-78-3</td>
+<td>&nbsp;</td>
+<td>(E,E)-4-(2-butenylidene)-3,5,5-trimethyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">496.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2,5,8-megastigmatriene-4,7-dione</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">497.&nbsp;</td>
+<td class="rechts nowrap top">765-87-7</td>
+<td>&nbsp;</td>
+<td>1,2-cyclohexanedione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">498.&nbsp;</td>
+<td class="rechts nowrap top">7500-42-7</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-2,6,6-trimethylcyclohexanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">499.&nbsp;</td>
+<td class="rechts nowrap top">20548-02-1</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-2,2,6-trimethylcyclohexanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">500.&nbsp;</td>
+<td class="rechts nowrap top">4883-60-7</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-3,5,5-trimethyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">501.&nbsp;</td>
+<td class="rechts nowrap top">14203-59-9</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-3,5,5-trimethyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">502.&nbsp;</td>
+<td class="rechts nowrap top">19620-37-2</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-2,6,6-trimethyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">503.&nbsp;</td>
+<td class="rechts nowrap top">34318-21-3</td>
+<td>&nbsp;</td>
+<td>3-oxo-&alpha;-ionol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">504.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>3-oxo-retro-&alpha;-ionol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">505.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>3-oxo-retro-7,8-dehydro-&alpha;-ionol (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">506.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>3-oxo-7,8-dihydro-&alpha;-ionol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">507.&nbsp;</td>
+<td class="rechts nowrap top">29790-30-5</td>
+<td>&nbsp;</td>
+<td>4-oxo-&beta;-ionol</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">508.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>4-(3-hydroxy-1-butenylidene)-3,5,5-trimethyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">509.&nbsp;</td>
+<td class="rechts nowrap top">127619-37-8</td>
+<td>&nbsp;</td>
+<td>3,5,5-trimethyl-4-(3-oxo-1-butenylidene)-2-cyclohexen-1-one (isomer)</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">510.&nbsp;</td>
+<td class="rechts nowrap top">120853-11-4</td>
+<td>&nbsp;</td>
+<td>3,5,5-trimethyl-4-(3-oxo-1-butenylidene)-2-cyclohexen-1-one</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">511.&nbsp;</td>
+<td class="rechts nowrap top">120853-10-3</td>
+<td>&nbsp;</td>
+<td>3,5,5-trimethyl-4-(3-oxo-1-butynyl)-2-cyclohexen-1-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">512.&nbsp;</td>
+<td class="rechts nowrap top">23526-45-6</td>
+<td>&nbsp;</td>
+<td>vomifoliol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">513.&nbsp;</td>
+<td class="rechts nowrap top">24427-77-8</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-(3xi-hydroxy-1-butenyl)-3,5,5-trimethyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">514.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-(3xi-hydroxy-1-butenyl)-3,5,5-trimethyl-2-cyclohexen-1-one (isomer)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">515.&nbsp;</td>
+<td class="rechts nowrap top">7070-24-8</td>
+<td>&nbsp;</td>
+<td>dehydrovomifoliol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">516.&nbsp;</td>
+<td class="rechts nowrap top">39763-33-2</td>
+<td>&nbsp;</td>
+<td>dehydrovomifoliol (trans)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">517.&nbsp;</td>
+<td class="rechts nowrap top">120925-93-1</td>
+<td>&nbsp;</td>
+<td>dehydrovomifoliol (cis)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">518.&nbsp;</td>
+<td class="rechts nowrap top">120853-12-5</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-3,5,5-trimethyl-4-(3-oxo-1-butynyl)-2-cyclohexen-1-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">519.&nbsp;</td>
+<td class="rechts nowrap top">14398-38-0</td>
+<td>&nbsp;</td>
+<td>dehydrovomifoliol (isomer)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">520.&nbsp;</td>
+<td class="rechts nowrap top">20194-68-7</td>
+<td>&nbsp;</td>
+<td>3,5,5-trimethyl-4-(3-oxo-1-butenyl)-2-cyclohexen-1-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">521.&nbsp;</td>
+<td class="rechts nowrap top">19377-95-8</td>
+<td>&nbsp;</td>
+<td>1,5-di-tert-butyl-3,3-dimethylbicyclo-[3.1.0]hexen-2-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">522.&nbsp;</td>
+<td class="rechts nowrap top">36151-01-6</td>
+<td>&nbsp;</td>
+<td>7,8-dihydrovomifoliol</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">523.&nbsp;</td>
+<td class="rechts nowrap top">77846-84-5</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-3,5,6-trimethyl-4-(3-oxo-1-butenyl)-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">524.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2,3-epoxy-4-(hydroxymethylene)-3,5,5-trimethylcyclohexanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">525.&nbsp;</td>
+<td class="rechts nowrap top">3008-43-3</td>
+<td>&nbsp;</td>
+<td>3-methylcyclohexane-1,2-dione</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">526.&nbsp;</td>
+<td class="rechts nowrap top">1193-55-1</td>
+<td>&nbsp;</td>
+<td>2-methylcyclohexane-1,3-dione</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">527.&nbsp;</td>
+<td class="rechts nowrap top">45731-99-5</td>
+<td>&nbsp;</td>
+<td>5,5-dimethyl-2-cyclohexene-1,4-dione</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">528.&nbsp;</td>
+<td class="rechts nowrap top">1125-21-9</td>
+<td>&nbsp;</td>
+<td>4-oxoisophorone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">529.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>3,5,5-trimethyl-3-cyclohexene-1,2-dione</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">530.&nbsp;</td>
+<td class="rechts nowrap top">20547-99-3</td>
+<td>&nbsp;</td>
+<td>2,2,6-trimethyl-1,4-cyclohexanedione (=3,5,5-trimethyl-1,4-cyclohexanedione)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">531.&nbsp;</td>
+<td class="rechts nowrap top">641-11-2</td>
+<td>&nbsp;</td>
+<td>angustione</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">532.&nbsp;</td>
+<td class="rechts nowrap top">4717-67-3</td>
+<td>&nbsp;</td>
+<td>dehydroangustione</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">533.&nbsp;</td>
+<td class="rechts nowrap top">35692-98-9</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-3,5,5-trimethyl-2-cyclohexene-1,4-dione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">534.&nbsp;</td>
+<td class="rechts nowrap top">41654-27-7</td>
+<td>&nbsp;</td>
+<td>2-methoxy-3,5,5-trimethyl-2-cyclohexene-1,4-dione</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">535.&nbsp;</td>
+<td class="rechts nowrap top">28750-52-9</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-4,4,6-trimethyl-2,5-cyclohexadien-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">536.&nbsp;</td>
+<td class="rechts nowrap top">33399-09-6</td>
+<td>&nbsp;</td>
+<td>2,6,6-trimethyl-3-oxo-1,4-cyclohexadienecarbaldehyde</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">537.&nbsp;</td>
+<td class="rechts nowrap top">35692-95-6</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-2,6,6-trimethyl-3-oxo-1,4-cyclohexadienecarbaldehyde</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">538.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>4-hydroxy-2,6,6-trimethyl-3-oxo-1-cyclohexenecarbaldehyde</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">539.&nbsp;</td>
+<td class="rechts nowrap top">33399-08-5</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-2,6,6-trimethyl-4-oxo-2-cyclohexenecarbaldehyde</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">540.&nbsp;</td>
+<td class="rechts nowrap top">52904-95-7</td>
+<td>&nbsp;</td>
+<td>benzoquinone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">541.&nbsp;</td>
+<td class="rechts nowrap top">719-22-2</td>
+<td>&nbsp;</td>
+<td>2,6-di-tert-butyl-p-benzoquinone</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">542.&nbsp;</td>
+<td class="rechts nowrap top">106-51-4</td>
+<td>&nbsp;</td>
+<td>1,4-benzoquinone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">543.&nbsp;</td>
+<td class="rechts nowrap top">95268-45-4</td>
+<td>&nbsp;</td>
+<td>2,5(or 2,6)-dimethyl-1,4-benzoquinone (incompletely defined substance)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">544.&nbsp;</td>
+<td class="rechts nowrap top">3602-55-9</td>
+<td>&nbsp;</td>
+<td>2-tert-butyl-1,4-benzoquinone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">545.&nbsp;</td>
+<td class="rechts nowrap top">55299-14-4</td>
+<td>&nbsp;</td>
+<td>di-tert-butyl-1,4-benzoquinone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">546.&nbsp;</td>
+<td class="rechts nowrap top">490-91-5</td>
+<td>&nbsp;</td>
+<td>thymoquinone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">547.&nbsp;</td>
+<td class="rechts nowrap top">935-92-2</td>
+<td>&nbsp;</td>
+<td>trimethyl-1,4-benzoquinone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">548.&nbsp;</td>
+<td class="rechts nowrap top">823-76-7</td>
+<td>&nbsp;</td>
+<td>acetylcyclohexane</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">549.&nbsp;</td>
+<td class="rechts nowrap top">917750-72-2</td>
+<td>&nbsp;</td>
+<td>1-(2-hydroxy-4-methylcyclohexyl)ethanone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">550.&nbsp;</td>
+<td class="rechts nowrap top">6090-09-1</td>
+<td>&nbsp;</td>
+<td>4-acetyl-1-methylcyclohexene</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">551.&nbsp;</td>
+<td class="rechts nowrap top">43219-68-7</td>
+<td>&nbsp;</td>
+<td>4-acetyl-1,4-dimethylcyclohexene</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">552.&nbsp;</td>
+<td class="rechts nowrap top">41723-54-0</td>
+<td>&nbsp;</td>
+<td>4-acetyl-1,2-dimethylcyclohexene</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">553.&nbsp;</td>
+<td class="rechts nowrap top">54200-63-4</td>
+<td>&nbsp;</td>
+<td>2-acetyl-3,3-dimethylcyclohexanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">554.&nbsp;</td>
+<td class="rechts nowrap top">290305-38-3</td>
+<td>&nbsp;</td>
+<td>cis-&beta;-elemenone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">555.&nbsp;</td>
+<td class="rechts nowrap top">30824-86-3</td>
+<td>&nbsp;</td>
+<td>trans-&beta;-elemenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">556.&nbsp;</td>
+<td class="rechts nowrap top">502-49-8</td>
+<td>&nbsp;</td>
+<td>cyclooctanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">557.&nbsp;</td>
+<td class="rechts nowrap top">13657-68-6</td>
+<td>&nbsp;</td>
+<td>curdione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">558.&nbsp;</td>
+<td class="rechts nowrap top">108944-67-8</td>
+<td>&nbsp;</td>
+<td>neocurdione</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">559.&nbsp;</td>
+<td class="rechts nowrap top">25645-19-6</td>
+<td>&nbsp;</td>
+<td>preisocalamendiol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">560.&nbsp;</td>
+<td class="rechts nowrap top">50281-45-3</td>
+<td>&nbsp;</td>
+<td>acoragermacrone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">561.&nbsp;</td>
+<td class="rechts nowrap top">6902-91-6</td>
+<td>&nbsp;</td>
+<td>germacrone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">562.&nbsp;</td>
+<td class="rechts nowrap top">98-86-2</td>
+<td>&nbsp;</td>
+<td>acetophenone (=1-phenylethanone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">563.&nbsp;</td>
+<td class="rechts nowrap top">13210-29-2</td>
+<td>&nbsp;</td>
+<td>1-(3-hydroxypyridin-2-yl)ethanone</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">564.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>1-(3-hydroxy-6-methylpyridin-2-yl)ethanone</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">565.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>1-(3-hydroxy-5-methylpyridin-2-yl)ethanone</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">566.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>1-(6-ethyl-3-hydroxypyridine-2-yl)ethanone</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">567.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>1-(3-hydroxy-5,6-dimethylpyridine-2-yl)ethanone</td>
+<td>
+&nbsp;S&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">568.&nbsp;</td>
+<td class="rechts nowrap top">577-16-2</td>
+<td>&nbsp;</td>
+<td>2-methylacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">569.&nbsp;</td>
+<td class="rechts nowrap top">585-74-0</td>
+<td>&nbsp;</td>
+<td>3-methylacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">570.&nbsp;</td>
+<td class="rechts nowrap top">122-00-9</td>
+<td>&nbsp;</td>
+<td>4-methylacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">571.&nbsp;</td>
+<td class="rechts nowrap top">26444-19-9</td>
+<td>&nbsp;</td>
+<td>methylacetophenone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">572.&nbsp;</td>
+<td class="rechts nowrap top">22699-70-3</td>
+<td>&nbsp;</td>
+<td>3-ethylacetophenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">573.&nbsp;</td>
+<td class="rechts nowrap top">937-30-4</td>
+<td>&nbsp;</td>
+<td>4-ethylacetophenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">574.&nbsp;</td>
+<td class="rechts nowrap top">25496-14-4</td>
+<td>&nbsp;</td>
+<td>ethylacetophenone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">575.&nbsp;</td>
+<td class="rechts nowrap top">645-13-6</td>
+<td>&nbsp;</td>
+<td>4-isopropylacetophenone (=p-acetylcumene)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">576.&nbsp;</td>
+<td class="rechts nowrap top">118-93-4</td>
+<td>&nbsp;</td>
+<td>2'-hydroxyacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">577.&nbsp;</td>
+<td class="rechts nowrap top">121-71-1</td>
+<td>&nbsp;</td>
+<td>3'-hydroxyacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">578.&nbsp;</td>
+<td class="rechts nowrap top">99-93-4</td>
+<td>&nbsp;</td>
+<td>4'-hydroxyacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">579.&nbsp;</td>
+<td class="rechts nowrap top">582-24-1</td>
+<td>&nbsp;</td>
+<td>&alpha;-hydroxyacetophenone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">580.&nbsp;</td>
+<td class="rechts nowrap top">579-74-8</td>
+<td>&nbsp;</td>
+<td>2-methoxyacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">581.&nbsp;</td>
+<td class="rechts nowrap top">586-37-8</td>
+<td>&nbsp;</td>
+<td>3-methoxyacetophenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">582.&nbsp;</td>
+<td class="rechts nowrap top">100-06-1</td>
+<td>&nbsp;</td>
+<td>4-methoxyacetophenone (=acetanisole)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">583.&nbsp;</td>
+<td class="rechts nowrap top">41903-50-8</td>
+<td>&nbsp;</td>
+<td>hydroxyacetophenone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">584.&nbsp;</td>
+<td class="rechts nowrap top">551-93-9</td>
+<td>&nbsp;</td>
+<td>2'-aminoacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">585.&nbsp;</td>
+<td class="rechts nowrap top">99-03-6</td>
+<td>&nbsp;</td>
+<td>3-aminoacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">586.&nbsp;</td>
+<td class="rechts nowrap top">99-92-3</td>
+<td>&nbsp;</td>
+<td>4-aminoacetophenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">587.&nbsp;</td>
+<td class="rechts nowrap top">27941-88-4</td>
+<td>&nbsp;</td>
+<td>aminoacetophenone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">588.&nbsp;</td>
+<td class="rechts nowrap top">89-74-7</td>
+<td>&nbsp;</td>
+<td>2,4-dimethylacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">589.&nbsp;</td>
+<td class="rechts nowrap top">3637-01-2</td>
+<td>&nbsp;</td>
+<td>3,4-dimethylacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">590.&nbsp;</td>
+<td class="rechts nowrap top">1202-08-0</td>
+<td>&nbsp;</td>
+<td>5-isopropyl-2-methyl-acetophenone (=2-acetyl-p-cymene)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">591.&nbsp;</td>
+<td class="rechts nowrap top">6921-64-8</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-4-methylacetophenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">592.&nbsp;</td>
+<td class="rechts nowrap top">1450-72-2</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-5-methylacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">593.&nbsp;</td>
+<td class="rechts nowrap top">13494-10-5</td>
+<td>&nbsp;</td>
+<td>2,3-dihydroxyacetophenone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">594.&nbsp;</td>
+<td class="rechts nowrap top">89-84-9</td>
+<td>&nbsp;</td>
+<td>2,4-dihydroxyacetophenone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">595.&nbsp;</td>
+<td class="rechts nowrap top">1197-09-7</td>
+<td>&nbsp;</td>
+<td>3,4-dihydroxyacetophenone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">596.&nbsp;</td>
+<td class="rechts nowrap top">498-02-2</td>
+<td>&nbsp;</td>
+<td>acetovanillone (= 4-hydroxy-3-methoxyacetophenone )</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">597.&nbsp;</td>
+<td class="rechts nowrap top">552-41-0</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-4-methoxyacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">598.&nbsp;</td>
+<td class="rechts nowrap top">1131-62-0</td>
+<td>&nbsp;</td>
+<td>3,4-dimethoxyacetophenone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">599.&nbsp;</td>
+<td class="rechts nowrap top">1467-36-3</td>
+<td>&nbsp;</td>
+<td>2,3,4-trimethylacetophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">600.&nbsp;</td>
+<td class="rechts nowrap top">2478-38-8</td>
+<td>&nbsp;</td>
+<td>acetosyringone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">601.&nbsp;</td>
+<td class="rechts nowrap top">6781-42-6</td>
+<td>&nbsp;</td>
+<td>1,3-diacetylbenzene</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">602.&nbsp;</td>
+<td class="rechts nowrap top">1009-61-6</td>
+<td>&nbsp;</td>
+<td>1,4-diacetylbenzene</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">603.&nbsp;</td>
+<td class="rechts nowrap top">41766-72-7</td>
+<td>&nbsp;</td>
+<td>cis-nerone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">604.&nbsp;</td>
+<td class="rechts nowrap top">93-55-0</td>
+<td>&nbsp;</td>
+<td>1-phenyl-1-propanone (=propiophenone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">605.&nbsp;</td>
+<td class="rechts nowrap top">103-79-7</td>
+<td>&nbsp;</td>
+<td>1-phenyl-2-propanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">606.&nbsp;</td>
+<td class="rechts nowrap top">874-68-0</td>
+<td>&nbsp;</td>
+<td>1-cyclohexylidene-2-propanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">607.&nbsp;</td>
+<td class="rechts nowrap top">2040-14-4</td>
+<td>&nbsp;</td>
+<td>1-(2-methylphenyl)-1-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">608.&nbsp;</td>
+<td class="rechts nowrap top">5337-93-9</td>
+<td>&nbsp;</td>
+<td>1-(4-methylphenyl)-1-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">609.&nbsp;</td>
+<td class="rechts nowrap top">121-97-1</td>
+<td>&nbsp;</td>
+<td>1-(4-methoxyphenyl)-1-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">610.&nbsp;</td>
+<td class="rechts nowrap top">621-87-4</td>
+<td>&nbsp;</td>
+<td>1-phenoxy-2-propanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">611.&nbsp;</td>
+<td class="rechts nowrap top">122-84-9</td>
+<td>&nbsp;</td>
+<td>1-(4-methoxyphenyl)-2-propanone (=anisketone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">612.&nbsp;</td>
+<td class="rechts nowrap top">27465-51-6</td>
+<td>&nbsp;</td>
+<td>1-(4-ethylphenyl)-1-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">613.&nbsp;</td>
+<td class="rechts nowrap top">35031-52-8</td>
+<td>&nbsp;</td>
+<td>1-(2,4-dimethylphenyl)-1-propanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">614.&nbsp;</td>
+<td class="rechts nowrap top">50297-39-7</td>
+<td>&nbsp;</td>
+<td>1-(2,4-dihydroxyphenyl)-3-(3-hydroxy-4-methoxyphenyl)propan-1-one</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">615.&nbsp;</td>
+<td class="rechts nowrap top">3904-18-5</td>
+<td>&nbsp;</td>
+<td>1-(2,4,5-trimethoxyphenyl)-1-propanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">616.&nbsp;</td>
+<td class="rechts nowrap top">2020-90-8</td>
+<td>&nbsp;</td>
+<td>1-(2,4,5-trimethoxyphenyl)-2-propanone (=acoramone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">617.&nbsp;</td>
+<td class="rechts nowrap top">1835-14-9</td>
+<td>&nbsp;</td>
+<td>propiovanillone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">618.&nbsp;</td>
+<td class="rechts nowrap top">5650-43-1</td>
+<td>&nbsp;</td>
+<td>propiosyringone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">619.&nbsp;</td>
+<td class="rechts nowrap top">579-07-7</td>
+<td>&nbsp;</td>
+<td>1-phenylpropane-1,2-dione</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">620.&nbsp;</td>
+<td class="rechts nowrap top">69271-91-6</td>
+<td>&nbsp;</td>
+<td>butyrosyringone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">621.&nbsp;</td>
+<td class="rechts nowrap top">51004-21-8</td>
+<td>&nbsp;</td>
+<td>4-cyclopentylidene-2-butanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">622.&nbsp;</td>
+<td class="rechts nowrap top">6138-85-8</td>
+<td>&nbsp;</td>
+<td>4-(2,6,6-trimethylcyclohexyl)-2-butanone (=tetrahydroionone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">623.&nbsp;</td>
+<td class="rechts nowrap top">17283-81-7</td>
+<td>&nbsp;</td>
+<td>dihydro-&beta;-ionone (=4-(2,6,6-trimethyl-1-cyclohexenyl)-2-butanone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">624.&nbsp;</td>
+<td class="rechts nowrap top">31499-72-6</td>
+<td>&nbsp;</td>
+<td>dihydro-&alpha;-ionone (=4-(2,6,6-trimethyl-2-cyclohexenyl)-2-butanone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">625.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>dihydroionone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">626.&nbsp;</td>
+<td class="rechts nowrap top">112379-21-2</td>
+<td>&nbsp;</td>
+<td>7,8-dihydro-4-hydroxy-&beta;-ionone (=4-(3-hydroxy-2,6,6-trimethyl-1-cyclohexenyl)-2-butanone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">627.&nbsp;</td>
+<td class="rechts nowrap top">38274-01-0</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-5,6-epoxy-&beta;-ionone</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">628.&nbsp;</td>
+<td class="rechts nowrap top">20483-36-7</td>
+<td>&nbsp;</td>
+<td>dihydrodehydro-&beta;-ionone (=4-(2,6,6-trimethylcyclohexa-1,3-dienyl)-2-butanone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">629.&nbsp;</td>
+<td class="rechts nowrap top">23726-91-2</td>
+<td>&nbsp;</td>
+<td>(E)-&beta;-damascone (=(E)-1-(2,6,6-trimethyl-1-cyclohexenyl)-2-buten-1-one)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">630.&nbsp;</td>
+<td class="rechts nowrap top">23726-92-3</td>
+<td>&nbsp;</td>
+<td>(Z)-&beta;-damascone (=(Z)-&beta;-1-(2,6,6-trimethyl-1-cyclohexen-1-yl)-2-buten-1-one)</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">631.&nbsp;</td>
+<td class="rechts nowrap top">35044-68-9</td>
+<td>&nbsp;</td>
+<td>&beta;-damascone (=1-(2,6,6-trimethyl-1-cyclohexen-1-yl)-2-buten-1-one)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">632.&nbsp;</td>
+<td class="rechts nowrap top">56915-02-7</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-&beta;-damascone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">633.&nbsp;</td>
+<td class="rechts nowrap top">43052-87-5</td>
+<td>&nbsp;</td>
+<td>&alpha;-damascone (=1-(2,6,6-trimethyl-2-cyclohexenyl)-2-buten-1-one)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">634.&nbsp;</td>
+<td class="rechts nowrap top">28102-28-5</td>
+<td>&nbsp;</td>
+<td>(R)-(E)-(+)-&alpha;-damascone (=(E)-(R)-(+)-1-(2,6,6-trimethyl-2-cyclohexen-1-yl)-2-buten-1-one)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">635.&nbsp;</td>
+<td class="rechts nowrap top">116497-11-1</td>
+<td>&nbsp;</td>
+<td>(-)-(E)-&alpha;-damascone (=[S-(E)]-1-(2,6,6-trimethyl-2-cyclohexen-1-yl)-2-buten-1-one)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">636.&nbsp;</td>
+<td class="rechts nowrap top">23726-94-5</td>
+<td>&nbsp;</td>
+<td>(Z)-&alpha;-damascone (=(Z)-1-(2,6,6-trimethyl-2-cyclohexen-1-yl)-2-buten-1-one)</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">637.&nbsp;</td>
+<td class="rechts nowrap top">24720-09-0</td>
+<td>&nbsp;</td>
+<td>(E)-&alpha;-damascone (=(E)-1-(2,6,6-trimethyl-2-cyclohexen-1-yl)-2-buten-1-one)</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">638.&nbsp;</td>
+<td class="rechts nowrap top">57378-68-4</td>
+<td>&nbsp;</td>
+<td>&delta;-damascone (=1-(2,6,6-trimethyl-3-cyclohexen-1-yl)-2-buten-1-one)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">639.&nbsp;</td>
+<td class="rechts nowrap top">23726-93-4</td>
+<td>&nbsp;</td>
+<td>&beta;-damascenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">640.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>3,4-dihydro-3-oxoedulan (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">641.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(Z)-3-oxo-retro-&alpha;-ionol</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">642.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(E)-3-oxo-retro-&alpha;-ionol</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">643.&nbsp;</td>
+<td class="rechts nowrap top">67234-03-1</td>
+<td>&nbsp;</td>
+<td>3-ethoxy-1-(2,6,6-trimethyl-1,3-cyclohexadienyl)-1-butanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">644.&nbsp;</td>
+<td class="rechts nowrap top">59739-63-8</td>
+<td>&nbsp;</td>
+<td>(Z)-&beta;-damascenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">645.&nbsp;</td>
+<td class="rechts nowrap top">80445-59-6</td>
+<td>&nbsp;</td>
+<td>(E)-1-(2,6-dimethylphenyl)-2-buten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">646.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(2,3,6-trimethylphenyl)-2-butanone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">647.&nbsp;</td>
+<td class="rechts nowrap top">56681-01-7</td>
+<td>&nbsp;</td>
+<td>1-(2,3,6-trimethylphenyl)-2-buten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">648.&nbsp;</td>
+<td class="rechts nowrap top">54345-38-9</td>
+<td>&nbsp;</td>
+<td>(E)-1-(2,3,6-trimethylphenyl)-2-buten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">649.&nbsp;</td>
+<td class="rechts nowrap top">36208-32-9</td>
+<td>&nbsp;</td>
+<td>4-(2,2,6-trimethyl-1-cyclohexyl)-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">650.&nbsp;</td>
+<td class="rechts nowrap top">14901-07-6</td>
+<td>&nbsp;</td>
+<td>4-(2,6,6-trimethyl-1-cyclohexen-1-yl)-3-buten-2-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">651.&nbsp;</td>
+<td class="rechts nowrap top">127-41-3</td>
+<td>&nbsp;</td>
+<td>&alpha;-ionone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">652.&nbsp;</td>
+<td class="rechts nowrap top">24190-29-2</td>
+<td>&nbsp;</td>
+<td>(R)-(E)-(+)-&alpha;-ionone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">653.&nbsp;</td>
+<td class="rechts nowrap top">14398-36-8</td>
+<td>&nbsp;</td>
+<td>(S)-(E)-(-)-&alpha;-ionone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">654.&nbsp;</td>
+<td class="rechts nowrap top">79-77-6</td>
+<td>&nbsp;</td>
+<td>(E)-&beta;-ionone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">655.&nbsp;</td>
+<td class="rechts nowrap top">79-76-5</td>
+<td>&nbsp;</td>
+<td>&gamma;-ionone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">656.&nbsp;</td>
+<td class="rechts nowrap top">8013-90-9</td>
+<td>&nbsp;</td>
+<td>ionone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">657.&nbsp;</td>
+<td class="rechts nowrap top">116296-75-4</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-&beta;-ionone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">658.&nbsp;</td>
+<td class="rechts nowrap top">14398-34-6</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-&beta;-ionone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">659.&nbsp;</td>
+<td class="rechts nowrap top">28494-34-0</td>
+<td>&nbsp;</td>
+<td>5,6-dihydroxy-&beta;-ionone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">660.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(E)-4-(1,2,4-trihydroxy-2,6,6-trimethylcyclohexyl)-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">661.&nbsp;</td>
+<td class="rechts nowrap top">79734-43-3</td>
+<td>&nbsp;</td>
+<td>3-oxo-&alpha;-ionone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">662.&nbsp;</td>
+<td class="rechts nowrap top">29790-29-2</td>
+<td>&nbsp;</td>
+<td>3-oxo-&beta;-ionone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">663.&nbsp;</td>
+<td class="rechts nowrap top">74233-41-3</td>
+<td>&nbsp;</td>
+<td>3-oxo-7,8-dihydro-&alpha;-ionone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">664.&nbsp;</td>
+<td class="rechts nowrap top">23267-57-4</td>
+<td>&nbsp;</td>
+<td>5,6-epoxy-&beta;-ionone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">665.&nbsp;</td>
+<td class="rechts nowrap top">36340-49-5</td>
+<td>&nbsp;</td>
+<td>(E)-epoxy-&beta;-ionone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">666.&nbsp;</td>
+<td class="rechts nowrap top">1621579-40-5</td>
+<td>&nbsp;</td>
+<td>(Z)-5,6-epoxy-&beta;-ionone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">667.&nbsp;</td>
+<td class="rechts nowrap top">1203-08-3</td>
+<td>&nbsp;</td>
+<td>3,4-dehydro-&beta;-ionone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">668.&nbsp;</td>
+<td class="rechts nowrap top">14398-35-7</td>
+<td>&nbsp;</td>
+<td>(E)-3,4-dehydro-&beta;-ionone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">669.&nbsp;</td>
+<td class="rechts nowrap top">41704-09-0</td>
+<td>&nbsp;</td>
+<td>(Z)-3,4-dehydro-&beta;-ionone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">670.&nbsp;</td>
+<td class="rechts nowrap top">79934-55-7</td>
+<td>&nbsp;</td>
+<td>didehydro-&gamma;-ionone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">671.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(Z)-4-(6,6-dimethyl-2-methylene-3-cyclohexenyl)-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">672.&nbsp;</td>
+<td class="rechts nowrap top">67233-98-1</td>
+<td>&nbsp;</td>
+<td>(E)-4-(6,6-dimethyl-2-methylene-3-cyclohexenyl)-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">673.&nbsp;</td>
+<td class="rechts nowrap top">79-69-6</td>
+<td>&nbsp;</td>
+<td>&alpha;-irone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">674.&nbsp;</td>
+<td class="rechts nowrap top">495-40-9</td>
+<td>&nbsp;</td>
+<td>1-phenyl-1-butanone (=butyrophenone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">675.&nbsp;</td>
+<td class="rechts nowrap top">1007-32-5</td>
+<td>&nbsp;</td>
+<td>1-phenyl-2-butanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">676.&nbsp;</td>
+<td class="rechts nowrap top">2550-26-7</td>
+<td>&nbsp;</td>
+<td>4-phenyl-2-butanone (=benzylacetone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">677.&nbsp;</td>
+<td class="rechts nowrap top">122-57-6</td>
+<td>&nbsp;</td>
+<td>4-phenyl-3-buten-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">678.&nbsp;</td>
+<td class="rechts nowrap top">62763-33-1</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-1-phenyl-2-butanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">679.&nbsp;</td>
+<td class="rechts nowrap top">5355-63-5</td>
+<td>&nbsp;</td>
+<td>3-hydroxy-4-phenyl-2-butanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">680.&nbsp;</td>
+<td class="rechts nowrap top">5471-51-2</td>
+<td>&nbsp;</td>
+<td>4-(4-hydroxyphenyl)-2-butanone (=raspberry ketone, frambinone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">681.&nbsp;</td>
+<td class="rechts nowrap top">939-49-1</td>
+<td>&nbsp;</td>
+<td>1-(4-hydroxyphenyl)-2-buten-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">682.&nbsp;</td>
+<td class="rechts nowrap top">83810-64-4</td>
+<td>&nbsp;</td>
+<td>3-(2-hydroxy-4-methylphenyl)-2-butanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">683.&nbsp;</td>
+<td class="rechts nowrap top">66422-88-6</td>
+<td>&nbsp;</td>
+<td>4-(4-hydroxyphenyl)-3-methyl-2-butanone</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">684.&nbsp;</td>
+<td class="rechts nowrap top">122-48-5</td>
+<td>&nbsp;</td>
+<td>gingerone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">685.&nbsp;</td>
+<td class="rechts nowrap top">54789-45-6</td>
+<td>&nbsp;</td>
+<td>1-(2,3,6-trimethylphenyl)-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">686.&nbsp;</td>
+<td class="rechts nowrap top">56681-06-2</td>
+<td>&nbsp;</td>
+<td>4-(2,3,6-trimethylphenyl)-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">687.&nbsp;</td>
+<td class="rechts nowrap top">57461-21-9</td>
+<td>&nbsp;</td>
+<td>(3E)-4-(2,3,6-trimethylphenyl)-3-buten-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">688.&nbsp;</td>
+<td class="rechts nowrap top">81018-77-1</td>
+<td>&nbsp;</td>
+<td>(3Z)-4-(2,3,6-trimethylphenyl)-3-buten-2-one</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">689.&nbsp;</td>
+<td class="rechts nowrap top">93-91-4</td>
+<td>&nbsp;</td>
+<td>1-phenylbutane-1,3-dione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">690.&nbsp;</td>
+<td class="rechts nowrap top">1009-14-9</td>
+<td>&nbsp;</td>
+<td>1-phenyl-1-pentanone (=valerophenone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">691.&nbsp;</td>
+<td class="rechts nowrap top">6683-92-7</td>
+<td>&nbsp;</td>
+<td>1-phenyl-2-pentanone (=benzyl propyl ketone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">692.&nbsp;</td>
+<td class="rechts nowrap top">2235-83-8</td>
+<td>&nbsp;</td>
+<td>5-phenyl-2-pentanone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">693.&nbsp;</td>
+<td class="rechts nowrap top">7403-42-1</td>
+<td>&nbsp;</td>
+<td>4-methyl-4-phenyl-2-pentanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">694.&nbsp;</td>
+<td class="rechts nowrap top">86843-15-4</td>
+<td>&nbsp;</td>
+<td>2-(2-hydroxy-4-methylphenyl)-3-pentanone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">695.&nbsp;</td>
+<td class="rechts nowrap top">25870-62-6</td>
+<td>&nbsp;</td>
+<td>1-phenyl-2-hexanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">696.&nbsp;</td>
+<td class="rechts nowrap top">14128-61-1</td>
+<td>&nbsp;</td>
+<td>5-methyl-5-phenyl-2-hexanone</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">697.&nbsp;</td>
+<td class="rechts nowrap top">495-74-9</td>
+<td>&nbsp;</td>
+<td>capillin</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">698.&nbsp;</td>
+<td class="rechts nowrap top">26294-59-7</td>
+<td>&nbsp;</td>
+<td>&alpha;-atlantone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">699.&nbsp;</td>
+<td class="rechts nowrap top">56192-70-2</td>
+<td>&nbsp;</td>
+<td>(Z)-&alpha;-atlantone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">700.&nbsp;</td>
+<td class="rechts nowrap top">103088-61-5</td>
+<td>&nbsp;</td>
+<td>5-propyl-4-nonanone</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">701.&nbsp;</td>
+<td class="rechts nowrap top">1671-75-6</td>
+<td>&nbsp;</td>
+<td>1-phenylheptanone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">702.&nbsp;</td>
+<td class="rechts nowrap top">39027-62-8</td>
+<td>&nbsp;</td>
+<td>2-methyl-6-(4-methylphenyl)-3-heptanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">703.&nbsp;</td>
+<td class="rechts nowrap top">86981-84-2</td>
+<td>&nbsp;</td>
+<td>2-methyl-6-(4-methylphenyl)-1-hepten-3-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">704.&nbsp;</td>
+<td class="rechts nowrap top">13901-85-4</td>
+<td>&nbsp;</td>
+<td>6-methyl-2,5-heptanedione</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">705.&nbsp;</td>
+<td class="rechts nowrap top">58865-88-6</td>
+<td>&nbsp;</td>
+<td>9-oxonerolidol</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">706.&nbsp;</td>
+<td class="rechts nowrap top">36219-73-5</td>
+<td>&nbsp;</td>
+<td>10-undecen-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">707.&nbsp;</td>
+<td class="rechts nowrap top">4669-04-9</td>
+<td>&nbsp;</td>
+<td>1-phenyl-1-pentadecanone (=pentadecaphenone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">708.&nbsp;</td>
+<td class="rechts nowrap top">941-98-0</td>
+<td>&nbsp;</td>
+<td>&alpha;-methyl naphtyl ketone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">709.&nbsp;</td>
+<td class="rechts nowrap top">93-08-3</td>
+<td>&nbsp;</td>
+<td>2-acetylnaphthalene</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">710.&nbsp;</td>
+<td class="rechts nowrap top">79067-90-6</td>
+<td>&nbsp;</td>
+<td>gingerdione</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">711.&nbsp;</td>
+<td class="rechts nowrap top">119-61-9</td>
+<td>&nbsp;</td>
+<td>benzophenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">712.&nbsp;</td>
+<td class="rechts nowrap top">43205-82-9</td>
+<td>&nbsp;</td>
+<td>p-menth-6-en-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">713.&nbsp;</td>
+<td class="rechts nowrap top">89-80-5</td>
+<td>&nbsp;</td>
+<td>dl-menthone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">714.&nbsp;</td>
+<td class="rechts nowrap top">3391-87-5</td>
+<td>&nbsp;</td>
+<td>(2R,5S)-(+)-menthone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">715.&nbsp;</td>
+<td class="rechts nowrap top">14073-97-3</td>
+<td>&nbsp;</td>
+<td>(2S,5R)-(-)-menthone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">716.&nbsp;</td>
+<td class="rechts nowrap top">491-07-6</td>
+<td>&nbsp;</td>
+<td>isomenthone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">717.&nbsp;</td>
+<td class="rechts nowrap top">1196-31-2</td>
+<td>&nbsp;</td>
+<td>(+)-isomenthone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">718.&nbsp;</td>
+<td class="rechts nowrap top">18309-28-9</td>
+<td>&nbsp;</td>
+<td>(-)-isomenthone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">719.&nbsp;</td>
+<td class="rechts nowrap top">10458-14-7</td>
+<td>&nbsp;</td>
+<td>menthone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">720.&nbsp;</td>
+<td class="rechts nowrap top">169209-96-5</td>
+<td>&nbsp;</td>
+<td>2-ethylmenthone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">721.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-ethylisomenthone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">722.&nbsp;</td>
+<td class="rechts nowrap top">128946-15-6</td>
+<td>&nbsp;</td>
+<td>2-hydroxymenthone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">723.&nbsp;</td>
+<td class="rechts nowrap top">74242-46-9</td>
+<td>&nbsp;</td>
+<td>trans-2-hydroxymenthone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">724.&nbsp;</td>
+<td class="rechts nowrap top">7599-80-6</td>
+<td>&nbsp;</td>
+<td>4-hydroxymenthone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">725.&nbsp;</td>
+<td class="rechts nowrap top">3304-24-3</td>
+<td>&nbsp;</td>
+<td>8-hydroxymenthone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">726.&nbsp;</td>
+<td class="rechts nowrap top">62392-79-4</td>
+<td>&nbsp;</td>
+<td>2-hydroxyisomenthone</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">727.&nbsp;</td>
+<td class="rechts nowrap top">57129-11-0</td>
+<td>&nbsp;</td>
+<td>cis-2-hydroxyisomenthone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">728.&nbsp;</td>
+<td class="rechts nowrap top">74219-28-6</td>
+<td>&nbsp;</td>
+<td>4-hydroxyisomenthone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">729.&nbsp;</td>
+<td class="rechts nowrap top">7599-80-6</td>
+<td>&nbsp;</td>
+<td>(+)-(1R,4S)-4-hydroxyisomenthone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">730.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-(3-oxobutyl)-isomenthone</td>
+<td>
+&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">731.&nbsp;</td>
+<td class="rechts nowrap top">89-81-6</td>
+<td>&nbsp;</td>
+<td>piperitone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">732.&nbsp;</td>
+<td class="rechts nowrap top">6091-50-5</td>
+<td>&nbsp;</td>
+<td>(4S)-(+)-piperitone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">733.&nbsp;</td>
+<td class="rechts nowrap top">4573-50-6</td>
+<td>&nbsp;</td>
+<td>(4R)-(-)-piperitone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">734.&nbsp;</td>
+<td class="rechts nowrap top">58615-39-7</td>
+<td>&nbsp;</td>
+<td>isopiperitone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">735.&nbsp;</td>
+<td class="rechts nowrap top">54783-36-7</td>
+<td>&nbsp;</td>
+<td>pseudodiosphenol</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">736.&nbsp;</td>
+<td class="rechts nowrap top">89-82-7</td>
+<td>&nbsp;</td>
+<td>pulegone (=(R)-Pulegone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">737.&nbsp;</td>
+<td class="rechts nowrap top">3391-90-0</td>
+<td>&nbsp;</td>
+<td>(S)-Pulegone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">738.&nbsp;</td>
+<td class="rechts nowrap top">529-00-0</td>
+<td>&nbsp;</td>
+<td>isopulegone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">739.&nbsp;</td>
+<td class="rechts nowrap top">52152-10-0</td>
+<td>&nbsp;</td>
+<td>cis-isopulegone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">740.&nbsp;</td>
+<td class="rechts nowrap top">29606-79-9</td>
+<td>&nbsp;</td>
+<td>trans-isopulegone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">741.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>isoisopulegone</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">742.&nbsp;</td>
+<td class="rechts nowrap top">18194-21-3</td>
+<td>&nbsp;</td>
+<td>4-(iso)hydroxyisopulegone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">743.&nbsp;</td>
+<td class="rechts nowrap top">491-09-8</td>
+<td>&nbsp;</td>
+<td>piperitenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">744.&nbsp;</td>
+<td class="rechts nowrap top">490-03-9</td>
+<td>&nbsp;</td>
+<td>2-hydroxypiperitone (=diosphenol)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">745.&nbsp;</td>
+<td class="rechts nowrap top">71843-50-0</td>
+<td>&nbsp;</td>
+<td>2,4-dihydroxypiperitone (=4-hydroxydiosphenol)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">746.&nbsp;</td>
+<td class="rechts nowrap top">57074-38-1</td>
+<td>&nbsp;</td>
+<td>2-methoxypiperitone (=diosphenol methyl ether)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">747.&nbsp;</td>
+<td class="rechts nowrap top">41853-05-8</td>
+<td>&nbsp;</td>
+<td>4-hydroxypiperitone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">748.&nbsp;</td>
+<td class="rechts nowrap top">57125-34-5</td>
+<td>&nbsp;</td>
+<td>1,3-dihydroxy-p-3-menthen-2-one (=1-hydroxy-&psi;-diosphenol)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">749.&nbsp;</td>
+<td class="rechts nowrap top">83212-19-5</td>
+<td>&nbsp;</td>
+<td>8-hydroxy-4-p-menthen-3-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">750.&nbsp;</td>
+<td class="rechts nowrap top">35736-66-4</td>
+<td>&nbsp;</td>
+<td>(-)-1R-8-hydroxy-4-p-menthen-3-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">751.&nbsp;</td>
+<td class="rechts nowrap top">7712-46-1</td>
+<td>&nbsp;</td>
+<td>carvonehydrate</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">752.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>4,8-dihydroxycarvotanacetone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">753.&nbsp;</td>
+<td class="rechts nowrap top">57074-39-2</td>
+<td>&nbsp;</td>
+<td>3-methoxy-p-3-menthen-2-one (=&psi;-diosphenol methyl ether)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">754.&nbsp;</td>
+<td class="rechts nowrap top">7764-50-3</td>
+<td>&nbsp;</td>
+<td>dihydrocarvone (=p-8-menthen-2-one)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">755.&nbsp;</td>
+<td class="rechts nowrap top">5948-04-9</td>
+<td>&nbsp;</td>
+<td>trans-dihydrocarvone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">756.&nbsp;</td>
+<td class="rechts nowrap top">3792-53-8</td>
+<td>&nbsp;</td>
+<td>cis-dihydrocarvone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">757.&nbsp;</td>
+<td class="rechts nowrap top">12705-70-3</td>
+<td>&nbsp;</td>
+<td>isodihydrocarvone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">758.&nbsp;</td>
+<td class="rechts nowrap top">53892-46-9</td>
+<td>&nbsp;</td>
+<td>p-5,8-menthadien-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">759.&nbsp;</td>
+<td class="rechts nowrap top">99-49-0</td>
+<td>&nbsp;</td>
+<td>carvone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">760.&nbsp;</td>
+<td class="rechts nowrap top">6485-40-1</td>
+<td>&nbsp;</td>
+<td>(4R)-(-)-carvone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">761.&nbsp;</td>
+<td class="rechts nowrap top">2244-16-8</td>
+<td>&nbsp;</td>
+<td>(4S)-(+)-carvone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">762.&nbsp;</td>
+<td class="rechts nowrap top">529-01-1</td>
+<td>&nbsp;</td>
+<td>isopiperitenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">763.&nbsp;</td>
+<td class="rechts nowrap top">499-74-1</td>
+<td>&nbsp;</td>
+<td>carvenone (=p-3-menthen-2-one)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">764.&nbsp;</td>
+<td class="rechts nowrap top">56423-48-4</td>
+<td>&nbsp;</td>
+<td>5-hydroxycarvone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">765.&nbsp;</td>
+<td class="rechts nowrap top">499-71-8</td>
+<td>&nbsp;</td>
+<td>carvotanacetone (=p-1-menthen-6-one)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">766.&nbsp;</td>
+<td class="rechts nowrap top">131486-99-2</td>
+<td>&nbsp;</td>
+<td>6-hydroxycarvotanacetone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">767.&nbsp;</td>
+<td class="rechts nowrap top">79862-14-9</td>
+<td>&nbsp;</td>
+<td>5-isopropyl-2-propyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">768.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-isobutyl-5-isopropyl-2-cyclohexen-1-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">769.&nbsp;</td>
+<td class="rechts nowrap top">13854-90-5</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-p-1,4(8)-menthadien-3-one (=diosphenolene)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">770.&nbsp;</td>
+<td class="rechts nowrap top">57074-40-5</td>
+<td>&nbsp;</td>
+<td>2-methoxy-p-1,4(8)-menthadien-3-one (=diospholene methyl ether)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">771.&nbsp;</td>
+<td class="rechts nowrap top">56485-42-8</td>
+<td>&nbsp;</td>
+<td>turmerone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">772.&nbsp;</td>
+<td class="rechts nowrap top">4179-20-8</td>
+<td>&nbsp;</td>
+<td>dihydro-ar-turmerone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">773.&nbsp;</td>
+<td class="rechts nowrap top">532-65-0</td>
+<td>&nbsp;</td>
+<td>ar-turmerone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">774.&nbsp;</td>
+<td class="rechts nowrap top">11053-08-0</td>
+<td>&nbsp;</td>
+<td>spicatine</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">775.&nbsp;</td>
+<td class="rechts nowrap top">471-05-6</td>
+<td>&nbsp;</td>
+<td>zerumbone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">776.&nbsp;</td>
+<td class="rechts nowrap top">19888-05-2</td>
+<td>&nbsp;</td>
+<td>humulenone II</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">777.&nbsp;</td>
+<td class="rechts nowrap top">24405-90-1</td>
+<td>&nbsp;</td>
+<td>humuladienone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">778.&nbsp;</td>
+<td class="rechts nowrap top">76-22-2</td>
+<td>&nbsp;</td>
+<td>dl-camphor</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">779.&nbsp;</td>
+<td class="rechts nowrap top">464-49-3</td>
+<td>&nbsp;</td>
+<td>d-camphor</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">780.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>endo-isocamphanone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">781.&nbsp;</td>
+<td class="rechts nowrap top">18530-02-4</td>
+<td>&nbsp;</td>
+<td>campherenone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">782.&nbsp;</td>
+<td class="rechts nowrap top">4176-04-9</td>
+<td>&nbsp;</td>
+<td>trans-4-caranone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">783.&nbsp;</td>
+<td class="rechts nowrap top">4176-01-6</td>
+<td>&nbsp;</td>
+<td>cis-4-caranone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">784.&nbsp;</td>
+<td class="rechts nowrap top">547-60-4</td>
+<td>&nbsp;</td>
+<td>pinocamphone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">785.&nbsp;</td>
+<td class="rechts nowrap top">15358-88-0</td>
+<td>&nbsp;</td>
+<td>isopinocamphone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">786.&nbsp;</td>
+<td class="rechts nowrap top">24903-95-5</td>
+<td>&nbsp;</td>
+<td>nopinone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">787.&nbsp;</td>
+<td class="rechts nowrap top">38651-65-9</td>
+<td>&nbsp;</td>
+<td>(+)-nopinone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">788.&nbsp;</td>
+<td class="rechts nowrap top">40550-41-2</td>
+<td>&nbsp;</td>
+<td>&alpha;-fenchocamphorone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">789.&nbsp;</td>
+<td class="rechts nowrap top">1195-79-5</td>
+<td>&nbsp;</td>
+<td>fenchone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">790.&nbsp;</td>
+<td class="rechts nowrap top">7787-20-4</td>
+<td>&nbsp;</td>
+<td>L-fenchone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">791.&nbsp;</td>
+<td class="rechts nowrap top">4695-62-9</td>
+<td>&nbsp;</td>
+<td>(+)-fenchone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">792.&nbsp;</td>
+<td class="rechts nowrap top">36262-12-1</td>
+<td>&nbsp;</td>
+<td>dehydrosabinaketone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">793.&nbsp;</td>
+<td class="rechts nowrap top">513-20-2</td>
+<td>&nbsp;</td>
+<td>sabina ketone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">794.&nbsp;</td>
+<td class="rechts nowrap top">546-80-5</td>
+<td>&nbsp;</td>
+<td>thujone (=&alpha;-thujone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">795.&nbsp;</td>
+<td class="rechts nowrap top">471-15-8</td>
+<td>&nbsp;</td>
+<td>isothujone (=&beta;-thujone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">796.&nbsp;</td>
+<td class="rechts nowrap top">53585-45-8</td>
+<td>&nbsp;</td>
+<td>car-3-en-2-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">797.&nbsp;</td>
+<td class="rechts nowrap top">24545-81-1</td>
+<td>&nbsp;</td>
+<td>umbellulone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">798.&nbsp;</td>
+<td class="rechts nowrap top">502-42-1</td>
+<td>&nbsp;</td>
+<td>cycloheptanone</td>
+<td>
+&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">799.&nbsp;</td>
+<td class="rechts nowrap top">30460-92-5</td>
+<td>&nbsp;</td>
+<td>pinocarvone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">800.&nbsp;</td>
+<td class="rechts nowrap top">515-90-2</td>
+<td>&nbsp;</td>
+<td>verbanone (=4-pinanone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">801.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>pinanone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">802.&nbsp;</td>
+<td class="rechts nowrap top">19822-67-4</td>
+<td>&nbsp;</td>
+<td>karahanaenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">803.&nbsp;</td>
+<td class="rechts nowrap top">80-57-9</td>
+<td>&nbsp;</td>
+<td>verbenone (=2-pinen-4-one)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">804.&nbsp;</td>
+<td class="rechts nowrap top">1196-01-6</td>
+<td>&nbsp;</td>
+<td>Levoverbenone</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">805.&nbsp;</td>
+<td class="rechts nowrap top">100347-96-4</td>
+<td>&nbsp;</td>
+<td>curcumenone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">806.&nbsp;</td>
+<td class="rechts nowrap top">473-06-3</td>
+<td>&nbsp;</td>
+<td>chrysanthenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">807.&nbsp;</td>
+<td class="rechts nowrap top">70497-06-2</td>
+<td>&nbsp;</td>
+<td>cis-4,7-dimethylbicyclo[3.2.1]oct-3-en-6-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">808.&nbsp;</td>
+<td class="rechts nowrap top">64701-23-1</td>
+<td>&nbsp;</td>
+<td>trans-4,7-dimethylbicyclo[3.2.1]oct-3-en-6-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">809.&nbsp;</td>
+<td class="rechts nowrap top">5956-05-8</td>
+<td>&nbsp;</td>
+<td>acorenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">810.&nbsp;</td>
+<td class="rechts nowrap top">10121-28-5</td>
+<td>&nbsp;</td>
+<td>acorone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">811.&nbsp;</td>
+<td class="rechts nowrap top">6168-64-5</td>
+<td>&nbsp;</td>
+<td>isoacorone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">812.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>neoacorone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">813.&nbsp;</td>
+<td class="rechts nowrap top">4674-50-4</td>
+<td>&nbsp;</td>
+<td>nootkatone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">814.&nbsp;</td>
+<td class="rechts nowrap top">91967-81-6</td>
+<td>&nbsp;</td>
+<td>3,4,4a,5,8,8a-hexahydro-4a-methyl-2(1H)-naphthalenone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">815.&nbsp;</td>
+<td class="rechts nowrap top">38427-78-0</td>
+<td>&nbsp;</td>
+<td>(-)-nootkatone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">816.&nbsp;</td>
+<td class="rechts nowrap top">27621-99-4</td>
+<td>&nbsp;</td>
+<td>4-epinootkatone</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">817.&nbsp;</td>
+<td class="rechts nowrap top">5090-63-1</td>
+<td>&nbsp;</td>
+<td>8,9-didehydronootkatone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">818.&nbsp;</td>
+<td class="rechts nowrap top">20489-53-6</td>
+<td>&nbsp;</td>
+<td>1,10-dihydronootkatone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">819.&nbsp;</td>
+<td class="rechts nowrap top">5195-69-7</td>
+<td>&nbsp;</td>
+<td>8-isopropyl-5,6-dimethylbicyclo[4.4.0]-1-decen-3-one</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">820.&nbsp;</td>
+<td class="rechts nowrap top">38427-80-4</td>
+<td>&nbsp;</td>
+<td>(±)-tetrahydronootkatone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">821.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>9-oxonootkatone</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">822.&nbsp;</td>
+<td class="rechts nowrap top">27033-52-9</td>
+<td>&nbsp;</td>
+<td>1,10-dihydro-9-oxo-nootkatone</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">823.&nbsp;</td>
+<td class="rechts nowrap top">15764-04-2</td>
+<td>&nbsp;</td>
+<td>&alpha;-vetivone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">824.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>8,9-didehydro-&alpha;-vetivone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">825.&nbsp;</td>
+<td class="rechts nowrap top">34175-41-2</td>
+<td>&nbsp;</td>
+<td>1,10-dihydro-&alpha;-vetivone</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">826.&nbsp;</td>
+<td class="rechts nowrap top">562-23-2</td>
+<td>&nbsp;</td>
+<td>eremophilone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">827.&nbsp;</td>
+<td class="rechts nowrap top">5090-90-4</td>
+<td>&nbsp;</td>
+<td>8-hydroxyeremophilone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">828.&nbsp;</td>
+<td class="rechts nowrap top">132858-00-5</td>
+<td>&nbsp;</td>
+<td>8-hydroxy-dihydro-eremophilone</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">829.&nbsp;</td>
+<td class="rechts nowrap top">473-08-5</td>
+<td>&nbsp;</td>
+<td>&alpha;-cyperone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">830.&nbsp;</td>
+<td class="rechts nowrap top">547-26-2</td>
+<td>&nbsp;</td>
+<td>7-epi-&alpha;-cyperone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">831.&nbsp;</td>
+<td class="rechts nowrap top">2303-31-3</td>
+<td>&nbsp;</td>
+<td>10-epi-&alpha;-cyperone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">832.&nbsp;</td>
+<td class="rechts nowrap top">2767-18-2</td>
+<td>&nbsp;</td>
+<td>3,6,6-trimethyl-2,4-cycloheptadienone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">833.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>1,4,4-trimethylcycloheptadienone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">834.&nbsp;</td>
+<td class="rechts nowrap top">499-44-5</td>
+<td>&nbsp;</td>
+<td>2-hydroxy-4-isopropyl-2,4,6-cycloheptatrienone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">835.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>1,3,3-trimethyl-7-oxabicyclo[4.1.0]heptane-2,5-dione</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">836.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2,2,6-trimethyl-7-oxabicyclo[4.3.0]non-1(9)-en-4-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">837.&nbsp;</td>
+<td class="rechts nowrap top">31089-96-0</td>
+<td>&nbsp;</td>
+<td>3a,4,5,6,7,7a-hexahydro-3,3a,7,7-tetramethyl-1H-inden-1-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">838.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>3,3a,6,7-tetrahydro-3,3a,7,7-tetramethylinden-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">839.&nbsp;</td>
+<td class="rechts nowrap top">28305-60-4</td>
+<td>&nbsp;</td>
+<td>&beta;-oplopenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">840.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(4S)-3,4-dihydro-4-hydroxy-1(2H)-naphthalenone (=(4S)-4-hydroxy-&alpha;-tetralone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">841.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(4R)-3,4-dihydro-4-hydroxy-1(2H)-naphthalenone (=(4R)-4-hydroxy-&alpha;-tetralone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">842.&nbsp;</td>
+<td class="rechts nowrap top">54712-38-8</td>
+<td>&nbsp;</td>
+<td>(4S)-3,4-dihydro-4,8-dihydroxy-1(2H)-naphthalenone (=regiolone, isosclerone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">843.&nbsp;</td>
+<td class="rechts nowrap top">137494-04-3</td>
+<td>&nbsp;</td>
+<td>(4R)-3,4-dihydro-4,8-dihydroxy-1(2H)-naphthalenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">844.&nbsp;</td>
+<td class="rechts nowrap top">862672-31-9</td>
+<td>&nbsp;</td>
+<td>(4S)-3,4-dihydro-5-hydroxy-4-methoxy-1(2H)-naphthalenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">845.&nbsp;</td>
+<td class="rechts nowrap top">869083-26-1</td>
+<td>&nbsp;</td>
+<td>(4R)-3,4-dihydro-5-hydroxy-4-methoxy-1(2H)-naphthalenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">846.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(4S)-3,4-dihydro-5,8-dihydroxy-4-methoxy-1(2H)-naphthalenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">847.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(4R)-3,4-dihydro-5,8-dihydroxy-4-methoxy-1(2H)-naphthalenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">848.&nbsp;</td>
+<td class="rechts nowrap top">868834-50-8</td>
+<td>&nbsp;</td>
+<td>(4S)-3,4-dihydro-4,8-dihydroxy-5-methoxy-1(2H)-naphthalenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">849.&nbsp;</td>
+<td class="rechts nowrap top">28449-86-7</td>
+<td>&nbsp;</td>
+<td>3,4-dihydro-4,7-dimethyl-1(2H)-naphthalenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">850.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>14-oxocalamenene</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">851.&nbsp;</td>
+<td class="rechts nowrap top">57494-10-7</td>
+<td>&nbsp;</td>
+<td>10-norcalamenen-10-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">852.&nbsp;</td>
+<td class="rechts nowrap top">93427-92-0</td>
+<td>&nbsp;</td>
+<td>octahydro-4a,7,7-trimethyl-2(1H)-naphthalenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">853.&nbsp;</td>
+<td class="rechts nowrap top">7056-56-6</td>
+<td>&nbsp;</td>
+<td>cis-octahydro-4a,7,7-trimethyl-2(1H)-naphthalenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">854.&nbsp;</td>
+<td class="rechts nowrap top">55528-90-0</td>
+<td>&nbsp;</td>
+<td>valeranone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">855.&nbsp;</td>
+<td class="rechts nowrap top">39012-14-1</td>
+<td>&nbsp;</td>
+<td>acolamone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">856.&nbsp;</td>
+<td class="rechts nowrap top">39012-15-2</td>
+<td>&nbsp;</td>
+<td>isoacolamone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">857.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>3,4,7,8-tetrahydro-5,7,7-trimethyl-2(6H)-naphthalenone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">858.&nbsp;</td>
+<td class="rechts nowrap top">5835-19-8</td>
+<td>&nbsp;</td>
+<td>4,4a,5,6-tetrahydro-4,4,7-trimethyl-2(3H)-naphthalenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">859.&nbsp;</td>
+<td class="rechts nowrap top">83406-42-2</td>
+<td>&nbsp;</td>
+<td>trans-9-methyldecalin-1,8-dione</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">860.&nbsp;</td>
+<td class="rechts nowrap top">130-15-4</td>
+<td>&nbsp;</td>
+<td>1,4-naphthalenedione (=1,4-naphthoquinone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">861.&nbsp;</td>
+<td class="rechts nowrap top">481-39-0</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-1,4-naphthalenedione (=juglone, regianin)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">862.&nbsp;</td>
+<td class="rechts nowrap top">61836-43-9</td>
+<td>&nbsp;</td>
+<td>3,3'-bisjuglone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">863.&nbsp;</td>
+<td class="rechts nowrap top">6312-53-4</td>
+<td>&nbsp;</td>
+<td>2,3-dihydro-5-hydroxy-1,4-naphthalenedione</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">864.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2,3-dihydro-5-hydroxy-2-methyl-1,4-naphthalenedione</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">865.&nbsp;</td>
+<td class="rechts nowrap top">35387-23-6</td>
+<td>&nbsp;</td>
+<td>7-epi-&alpha;-selinen-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">866.&nbsp;</td>
+<td class="rechts nowrap top">86917-81-9</td>
+<td>&nbsp;</td>
+<td>5&alpha;,7&alpha;,10&beta;-selina-3,11-dien-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">867.&nbsp;</td>
+<td class="rechts nowrap top">86917-80-8</td>
+<td>&nbsp;</td>
+<td>5&alpha;,7&alpha;,10&alpha;-selina-3,11-dien-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">868.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>5&beta;,7&alpha;,10&alpha;-selina-3,11-dien-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">869.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>selina-3,5,11-trien-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">870.&nbsp;</td>
+<td class="rechts nowrap top">185148-39-4</td>
+<td>&nbsp;</td>
+<td>4,7-dimethylbicyclo[3.2.1]oct-3-en-2-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">871.&nbsp;</td>
+<td class="rechts nowrap top">4844-11-5</td>
+<td>&nbsp;</td>
+<td>bicyclo[3.3.1]non-2-en-9-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">872.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>caryophyllene ketone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">873.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>4,11,11-trimethyl-8-methylenebicyclo[7.2.0]undecan-5-one</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">874.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>trans-12-norcaryophyll-5-en-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">875.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>cis-spiro[4.5]decenone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">876.&nbsp;</td>
+<td class="rechts nowrap top">19377-59-4</td>
+<td>&nbsp;</td>
+<td>theaspirone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">877.&nbsp;</td>
+<td class="rechts nowrap top">23024-52-4</td>
+<td>&nbsp;</td>
+<td>cis-theaspirone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">878.&nbsp;</td>
+<td class="rechts nowrap top">50763-74-1</td>
+<td>&nbsp;</td>
+<td>(2R,5S)-theaspirone B (=(2R-cis)-theaspirone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">879.&nbsp;</td>
+<td class="rechts nowrap top">153925-96-3</td>
+<td>&nbsp;</td>
+<td>(2S,5R)-theaspirone B (=(2S-cis)-theaspirone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">880.&nbsp;</td>
+<td class="rechts nowrap top">24399-19-7</td>
+<td>&nbsp;</td>
+<td>(2S,5S)-theaspirone A (=(2S-trans)-theaspirone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">881.&nbsp;</td>
+<td class="rechts nowrap top">153153-55-0</td>
+<td>&nbsp;</td>
+<td>(2R,5R)-theaspirone A (=(2R-trans)-theaspirone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">882.&nbsp;</td>
+<td class="rechts nowrap top">85248-56-2</td>
+<td>&nbsp;</td>
+<td>8,9-dehydrotheaspirone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">883.&nbsp;</td>
+<td class="rechts nowrap top">1333-52-4</td>
+<td>&nbsp;</td>
+<td>acetylnaphthalene (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">884.&nbsp;</td>
+<td class="rechts nowrap top">4832-17-1</td>
+<td>&nbsp;</td>
+<td>&beta;-decalone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">885.&nbsp;</td>
+<td class="rechts nowrap top">943-95-3</td>
+<td>&nbsp;</td>
+<td>9&beta;-methyl-2-decalone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">886.&nbsp;</td>
+<td class="rechts nowrap top">71305-96-9</td>
+<td>&nbsp;</td>
+<td>calamusenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">887.&nbsp;</td>
+<td class="rechts nowrap top">71305-87-8</td>
+<td>&nbsp;</td>
+<td>isocalamusenone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">888.&nbsp;</td>
+<td class="rechts nowrap top">18374-76-0</td>
+<td>&nbsp;</td>
+<td>rotundone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">889.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>4-maalien-3-one</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">890.&nbsp;</td>
+<td class="rechts nowrap top">11023-22-6</td>
+<td>&nbsp;</td>
+<td>2-clovanone</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">891.&nbsp;</td>
+<td class="rechts nowrap top">539-80-0</td>
+<td>&nbsp;</td>
+<td>tropone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">892.&nbsp;</td>
+<td class="rechts nowrap top">503-93-5</td>
+<td>&nbsp;</td>
+<td>eucarvone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">893.&nbsp;</td>
+<td class="rechts nowrap top">33983-45-8</td>
+<td>&nbsp;</td>
+<td>acoronene</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">894.&nbsp;</td>
+<td class="rechts nowrap top">497-38-1</td>
+<td>&nbsp;</td>
+<td>2-norbornanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">895.&nbsp;</td>
+<td class="rechts nowrap top">53803-33-1</td>
+<td>&nbsp;</td>
+<td>6-camphenone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">896.&nbsp;</td>
+<td class="rechts nowrap top">13211-15-9</td>
+<td>&nbsp;</td>
+<td>camphenilone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">897.&nbsp;</td>
+<td class="rechts nowrap top">58560-59-1</td>
+<td>&nbsp;</td>
+<td>longicamphenilone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">898.&nbsp;</td>
+<td class="rechts nowrap top">38230-32-9</td>
+<td>&nbsp;</td>
+<td>dehydrocurdione</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">899.&nbsp;</td>
+<td class="rechts nowrap top">73809-82-2</td>
+<td>&nbsp;</td>
+<td>4(14)-salvialen-1-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">900.&nbsp;</td>
+<td class="rechts nowrap top">20529-87-7</td>
+<td>&nbsp;</td>
+<td>santenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">901.&nbsp;</td>
+<td class="rechts nowrap top">59300-51-5</td>
+<td>&nbsp;</td>
+<td>santalone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">902.&nbsp;</td>
+<td class="rechts nowrap top">137894-69-0</td>
+<td>&nbsp;</td>
+<td>santalenone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">903.&nbsp;</td>
+<td class="rechts nowrap top">784-04-3</td>
+<td>&nbsp;</td>
+<td>9-acetylanthracene</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">904.&nbsp;</td>
+<td class="rechts nowrap top">1322-60-7</td>
+<td>&nbsp;</td>
+<td>dihydroxy-9,10-anthracenedione (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">905.&nbsp;</td>
+<td class="rechts nowrap top">1058-61-3</td>
+<td>&nbsp;</td>
+<td>&beta;-sitostenone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">906.&nbsp;</td>
+<td class="rechts nowrap top">18339-16-7</td>
+<td>&nbsp;</td>
+<td>5&alpha;-androst-16-en-3-one</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">907.&nbsp;</td>
+<td class="rechts nowrap top">4075-07-4</td>
+<td>&nbsp;</td>
+<td>4,16-androstadien-3-one</td>
+<td>
+&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span11 offset1">
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<hr />
+</div>
+<div class="span1">
+<a href="#top" class="btn btn-info to-page-top btn-small" title="top of page"><i class="icon-white icon-chevron-up"></i></a>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+See the list of all <a href="/VcfCompounds.cfm?FEMAGRAS">FEMA (GRAS 30)</a> volatile compounds<br />
+See the list of all <a href="/VcfCompounds.cfm?Flavis">Flavis (EU-Flavis database)</a> volatile compounds<br />
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<hr />
+</div>
+<div class="span1">
+<a href="#top" class="btn btn-info to-page-top btn-small" title="top of page"><i class="icon-white icon-chevron-up"></i></a>
+</div>
+</div>
+<!-- end .container -->
+</div>
+<!-- Footer
+================================================== -->
+<footer class="footer">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="footer-content">
+&copy; 1992&mdash;2025&nbsp;BeWiDo BV
+</div>
+</div>
+</div>
+</footer>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/js/vcf.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-39233400-1', 'auto');
+ga('send', 'pageview');
+</script> 
+</body>
+</html>

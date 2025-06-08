@@ -1,0 +1,364 @@
+,CAS,,Compound name,Compoundflags
+,CAS,,Compound name,Compound flags
+1.,124-38-9,,carbondioxide,P T
+2.,75-21-8,,"1,2-epoxyethane (=ethylene oxide, oxirane)",P E T
+3.,96-09-3,,"1-phenyl-1,2-epoxyethane",E T
+4.,5076-19-7,,"2,3-epoxy-2-methylbutane (=trimethyloxirane)",P E
+5.,1436-34-6,,"1,2-epoxyhexane",P E
+6.,5063-65-0,,"1,2-epoxyheptane",Q E
+7.,102369-06-2,,"2,3-epoxydecanal",E T
+8.,,,ocimene oxide,Q E
+9.,28977-57-3,,(E)-epoxy-β-ocimene,Q E R
+10.,33281-83-3,,(Z)-epoxy-β-ocimene,Q E R
+11.,94607-48-4,,(Z)-ocimene oxide (unkn.str.),Q
+12.,94607-47-3,,(E)-ocimene oxide (unkn.str.),Q
+13.,85624-39-1,,ocimene epoxide (unkn.str.),Q E
+14.,29414-55-9,,myrcene epoxide,Q E R O
+15.,79468-29-4,,myrcene oxide,Q E R
+16.,78307-41-2,,3-(3-ethyl-2-oxiranyl)-2-propenal,Q E
+17.,69511-21-3,,"trans-4,5-epoxy- (E)-2-heptenal",E R T
+18.,51007-38-6,,"trans-2,3-epoxyoctanal",Q E R O T
+19.,134452-45-2,,"(E)-4,5-epoxy-(E)-2-octenal",R O T
+20.,128386-31-2,,"(E)-4,5-epoxy-(E)-2-nonenal",P R O T
+21.,134454-31-2,,"trans-(E)-4,5-epoxy-2-decenal",Q E S R O T
+22.,154002-67-2,,"cis-4,5-epoxy-(E)-2-decenal",P E R
+23.,188590-62-7,,"(E)-4,5-epoxy-2-decenal",Q E R O T
+24.,1239976-90-9,,"(2E,7Z)-trans-4,5-epoxy-2,7-decadienal",Q E R O
+25.,83637-40-5,,(E)-farnesene epoxide,P E R
+26.,134346-43-3,,"(E)-4,5-epoxy-(E)-2-undecenal",P R O T
+27.,19780-35-9,,"ethyl 2,3-epoxybutanoate",Q E R
+28.,17023-75-5,,"4,5-epoxy-p-1-menthene",Q E
+29.,2437-97-0,,"6,8-epoxy-p-1-menthene (=pinol)",Q E
+30.,289-66-7,,2H-pyran,Q S R
+31.,,,"6,9-epoxy-p-1-menthene",P
+32.,,,"1,2-epoxy-p-4-menthene",Q
+33.,120749-18-0,,"1,2:3,4-diepoxy-p-8-menthene",P E
+34.,512-85-6,,ascaridole,Q E R
+35.,287968-09-6,,trans-ascaridole,Q E R
+36.,6790-83-6,,ascaridole glycol,Q E R
+37.,120749-17-9,,"1,4-epidioxy-p-2,8-menthadiene",P E
+38.,3720-22-7,,"tetrahydro-3,6-dimethyl-2H-pyran-2-one",P E S R
+39.,4584-23-0,,"terpinolene 4,8-oxide",Q E
+40.,,,"trans-2,3-epoxy-p-8-menthen-1-ol",P E
+41.,,,terpinolene oxide (unkn.str.),P
+42.,60485-46-3,,artemiseole,E R
+43.,1195-92-2,,"limonene 1,2-oxide",Q E S R O T
+44.,31684-93-2,,"limonene 8,9-oxide",Q E R T
+45.,28098-68-2,,"(R)-limonene 8,9-endo-epoxide (=cis-limonene 8,9-oxide)",Q E T
+46.,28098-67-1,,"(R)-limonene 8,9-exo-epoxide (=trans-limonene 8,9-oxide)",Q E T
+47.,,,limonene oxide (unkn.str.),Q
+48.,13837-75-7,,"cis-limonene 1,2-oxide",Q E R O T
+49.,4680-24-4,,"(4R)-(+)-cis-limonene-1,2-epoxide",T
+50.,4959-35-7,,"trans-limonene 1,2-oxide",Q E R O T
+51.,6909-30-4,,"(4R)-(+)-trans-limonene-1,2-epoxide",T
+52.,96-08-2,,limonene diepoxide,Q E
+53.,19888-33-6,,humulene epoxide I,Q E S R O T
+54.,19888-34-7,,humulene epoxide II,Q E R O T
+55.,21624-36-2,,humulene epoxide III,Q E R O
+56.,,,humulene epoxide (unkn.str.),Q R
+57.,74282-07-8,,"humulene 8,9-epoxide",E
+58.,120668-49-7,,humulene diepoxide 1,Q
+59.,120668-50-0,,humulene diepoxide 2,Q
+60.,120668-51-1,,humulene diepoxide 3,P
+61.,120668-52-2,,humulene diepoxide 4,Q
+62.,,,humulene diepoxide II,P
+63.,40822-04-6,,humulene diepoxide,Q E
+64.,142792-93-6,,longipinene epoxide,Q E R
+65.,2225-98-1,,"carene 3,4-epoxide",P E R
+66.,62413-92-7,,2-carene epoxide,E R T
+67.,143785-42-6,,"calamenen-1,11-epoxide",Q E R
+68.,72881-14-2,,"menthol 1,2-oxide",E
+69.,103476-52-4,,"(+)-cis-menthol 1,2-oxide",Q E
+70.,,,"neomenthol 1,2-oxide",Q E
+71.,,,"cis-1,2-epoxy-4-terpineol",P E
+72.,94133-24-1,,cis-piperitol oxide,P E
+73.,94133-23-0,,trans-piperitol oxide,P E
+74.,294634-38-1,,isopulegol epoxide,P E
+75.,5286-38-4,,piperitone oxide,Q E R
+76.,57130-28-6,,cis-piperitone oxide,Q E R T
+77.,4713-37-5,,trans-piperitone oxide,Q E R
+78.,125185-60-6,,4-hydroxypiperitone oxide,P
+79.,35178-55-3,,piperitenone oxide,Q E R
+80.,,,piperitenone epoxide (unkn.str.),R
+81.,17677-87-1,,pulegone oxide,P
+82.,7599-91-9,,cis-pulegone oxide,P
+83.,7599-90-8,,trans-pulegone oxide,P
+84.,33204-74-9,,"carvone 1,2-oxide",Q E R
+85.,39903-97-4,,"cis-carvone 1,2-oxide",Q E R
+86.,18383-49-8,,"trans-carvone 1,2-oxide",P E R
+87.,56423-45-1,,"carvone 8,9-oxide",P E
+88.,36616-60-1,,carvone oxide (unkn.str.),Q E R
+89.,1686-14-2,,"α-pinene oxide (=1,2-epoxypinane)",Q E S R
+90.,6931-54-0,,β-pinene oxide,P E R
+91.,,,β-selinene epoxide I,Q
+92.,88395-50-0,,"(2R,5E)-2,12-epoxycaryophyll-5-ene",P E
+93.,1139-30-6,,β-caryophyllene oxide,Q E S R O T
+94.,60594-23-2,,cis-caryophyllene oxide,Q E R
+95.,103475-43-0,,isocaryophyllene oxide,Q E R
+96.,60479-10-9,,"caryophyllene 2,12:5,6-dioxide",P E
+97.,88395-47-5,,"4(14)-salvialene 1,5-oxide",Q E R
+98.,,,"endo-4(14)-salvialene 1,5-oxide",P
+99.,,,"exo-4(14)-salvialene 1,5-oxide",P
+100.,5153-92-4,,sclareol oxide,Q E
+101.,27564-14-3,,α-copaene oxide,P E
+102.,288393-04-4,,α-phellandrene epoxide,Q E R
+103.,,,"β-phellandrene-2,3-epoxide",Q
+104.,29597-36-2,,α-cedrene epoxide,Q E R
+105.,,,β-cedrene epoxide,E R
+106.,919286-24-1,,di-epi-α-cedrene epoxide,Q R
+107.,85710-39-0,,aromadendrene oxide,Q R
+108.,85760-81-2,,alloaromadendrene oxide,Q R
+109.,,,allo-aromadendrene epoxide,P
+110.,257293-86-0,,"1α,10α-epoxy-amorph-4-ene",P E R
+111.,64825-84-9,,himachalene epoxide,P E R
+112.,55298-11-8,,"1,10-epoxy-valencene",P E
+113.,16409-43-1,,rose oxide,Q E S R
+114.,876-17-5,,cis-rose oxide,Q E S R O T
+115.,876-18-6,,trans-rose oxide,Q E R O T
+116.,16665-10-4,,cis-dihydro-rose oxide,E R
+117.,140238-79-5,,trans-dihydro-rose oxide,E R
+118.,92356-06-4,,rosefuran epoxide,Q E R O
+119.,1786-08-9,,nerol oxide,Q E S R O T
+120.,25512-65-6,,dihydro-2H-pyran (unkn.str.),P
+121.,110-87-2,,"3,4-dihydro-2H-pyran",P E
+122.,142-68-7,,tetrahydropyran,E T
+123.,26093-63-0,,3-methyltetrahydropyran,Q
+124.,100-72-1,,tetrahydro-2H-pyran-2-methanol,P E
+125.,7392-19-0,,"anhydrolinalool oxide (6) (=2,2,6-trimethyl-6-vinyl-tetrahydropyran)",Q E S R
+126.,54928-00-6,,"4-hydroxy-2,2,6-trimethyl-6-vinyltetrahydropyran",Q
+127.,14049-11-7,,linalool oxide (6),Q E S R O
+128.,14009-71-3,,"linalool oxide D (cis, 6-ring)",Q E S R O T
+129.,,,"cis-(2S,5S)-linalool oxide (6)",Q
+130.,,,"cis-(2R,5R)-linalool oxide (6)",Q
+131.,39028-58-5,,"linalool oxide C (trans, 6-ring)",Q E R O T
+132.,,,"trans-(2S,5R)-linalool oxide (6)",Q
+133.,,,"trans-(2R,5S)-linalool oxide (6)",Q
+134.,54927-99-0,,"4-acetoxy-2,2,6-trimethyl-6-vinyltetrahydropyran",P
+135.,15249-35-1,,epoxydihydrolinalool,Q T
+136.,,,cis-epoxydihydrolinalool,P
+137.,,,trans-epoxydihydrolinalool,P
+138.,,,cis-anhydrolinalool oxide (unkn.str.),Q R
+139.,,,trans-anhydrolinalool oxide (unkn.str.),Q R
+140.,1365-19-1,,linalool oxide (unkn.str.),Q E R O
+141.,11063-77-7,,cis-linalool oxide (unkn.str.),Q R
+142.,11063-78-8,,trans-linalool oxide (unkn.str.),Q R
+143.,,,"(R*,R)-6,7-epoxylinalool",P
+144.,,,"(R*,S)-6,7-epoxylinalool",P
+145.,104069-31-0,,"(R*,3R,6R)-epoxylinalool oxide D",P E
+146.,104759-66-2,,"(S*,3R,6R)-epoxylinalool oxide D",P E
+147.,104017-68-7,,"(S*,3S,6R)-epoxylinalool oxide C",P E
+148.,104069-30-9,,"(R*,3S,6R)-epoxylinalool oxide C",P E
+149.,,,di(ep)oxylinalool (unkn.str.),P
+150.,56752-50-2,,"trans-linalool oxide (6), acetate",Q R
+151.,56779-64-7,,"cis-linalool oxide (6), acetate",Q
+152.,,,nerolidol oxide (unkn.str.),Q
+153.,,,α-bisabolol oxide (unkn.str.),Q R
+154.,22567-36-8,,α-bisabolol oxide A,Q E R
+155.,26184-88-3,,α-bisabolol oxide B,Q E R
+156.,,,bisabolol oxide (unkn.str.),Q R
+157.,33933-72-1,,"2,2,6-trimethyl-6-vinyl-tetrahydro-3-pyrone",Q E
+158.,,,"2,6,6-trimethyl-2-vinyl-tetrahydro-3-pyrone",Q R
+159.,100-73-2,,"3,4-dihydro-2H-pyran-2-carbaldehyde",P E
+160.,53897-26-0,,"5,6-dihydro-2H-pyran-2-carbaldehyde",P
+161.,504-31-4,,"2-pyrone (=α-pyrone, 2H-pyran-2-one)",P E
+162.,23079-71-2,,5-pentyl-2-pyrone,Q E
+163.,496-64-0,,3-hydroxy-2-pyrone,Q E R T
+164.,73692-69-0,,3-hydroxy-6-methyl-2H-pyran-2-one,P E R T
+165.,771-03-9,,3-acetyl-4-hydroxy-6-methyl-2-pyrone,P
+166.,58985-73-2,,α-bisabolone oxide A,P E R
+167.,,,α-bisabolone oxide (unkn.str.),Q
+168.,,,bisabolone oxide (unkn.str.),Q R
+169.,108-97-4,,4-pyrone (=γ-pyrone),Q E T
+170.,118-71-8,,maltol,Q E S R O T
+171.,4940-11-8,,2-ethyl-3-hydroxy-4-pyrone (=ethyl maltol),Q E S R O
+172.,4780-14-7,,3-methoxy-2-methyl-4-pyrone,P E
+173.,644-46-2,,5-hydroxy-2-methyl-4-pyrone,Q E R
+174.,38877-21-3,,dihydromaltol,Q E R T
+175.,1190108-03-2,,dihydroethylmaltol,E T
+176.,28564-83-2,,"2,3-dihydro-3,5-dihydroxy-6-methyl-4-pyrone (=5,6-dihydro-5-hydroxymaltol)",Q E R O T
+177.,1073-96-7,,"3,5-dihydroxy-2-methyl-4-pyrone (=5-hydroxymaltol)",Q E R O
+178.,,,dimethylpyrone (unkn.str.),
+179.,103-75-3,,"2-ethoxy-3,4-dihydro-1,2-pyran",E T
+180.,1920-21-4,,"3,4-dihydro-2,5-dimethyl-2H-pyran-2-carbaldehyde",E
+181.,500-05-0,,2-oxo-2H-pyran-5-carboxylic acid (=coumalic acid),P E
+182.,,,ethyl pyranoate (unkn.str.),P
+183.,24588-61-2,,"methyl 5,6-dihydro-3,4-dimethyl-2H-pyran-6-carboxylate",P E
+184.,130021-99-7,,"(E)-cis-4-methyl-2-(3-methyl-1,3-butadienyl)oxepane (=cis-quince oxepane)",P E
+185.,131320-18-8,,"(E)-trans-4-methyl-2-(3-methyl-1,3-butadienyl)oxepane (=trans-quince oxepane)",P E
+186.,130021-98-6,,"4-methyl-2-(3-methyl-1,3-butadienyl)-2,3,6,7-tetrahydrooxepin (=quince oxepin)",Q E
+187.,,,"germacrene D, epoxide (unkn.str.)",
+188.,119-84-6,,"3,4-dihydrocoumarin",P E R O
+189.,1200-93-7,,"3,4-dihydro-8-hydroxy-3-methylisocoumarin",Q E R
+190.,58116-28-2,,edulan I,Q E R O
+191.,58116-29-3,,edulan II,Q E R O
+192.,72468-40-7,,edulan III,Q E
+193.,72746-44-2,,dihydroedulan,Q E R O
+194.,63335-66-0,,dihydroedulan I,Q E R
+195.,41678-32-4,,dihydroedulan II,Q E R
+196.,,,"4,4a-epoxy-4,4a-dihydroedulan",P
+197.,,,3-hydroxyedulan,P
+198.,5552-30-7,,"6,7,8,8a-tetrahydro-2,5,5,8a-tetramethyl-5H-1-benzopyran",P E S R
+199.,59-02-9,,α-tocopherol,Q E
+200.,58864-81-6,,α-tocotrienol,Q E S
+201.,16698-35-4,,β-tocopherol,P E S
+202.,54-28-4,,γ-tocopherol,Q S
+203.,119-13-1,,δ-tocopherol,Q S
+204.,25612-59-3,,δ-tocotrienol,Q E S
+205.,14101-61-2,,γ-tocotrienol,Q E S
+206.,91-64-5,,coumarin (=2H-1-benzopyran-2-one),Q E S R O T
+207.,92-48-8,,6-methylcoumarin,P E R
+208.,1333-47-7,,methylcoumarin (unkn.str.),
+209.,93-35-6,,7-hydroxycoumarin (=umbelliferone),P E R O
+210.,531-59-9,,7-methoxycoumarin (=herniarin),Q E R O T
+211.,523-59-1,,seselin,P E R
+212.,14957-38-1,,"7-[(6,7-dihydroxy-3,7-dimethyl-2-octenyl)oxy]coumarin (=marmin)",P E
+213.,305-01-1,,"6,7-dihydroxycoumarin (=aesculetin)",Q E
+214.,486-35-1,,"7,8-dihydroxycoumarin",P E
+215.,92-61-5,,7-hydroxy-6-methoxycoumarin (=scopoletin),Q E
+216.,487-06-9,,"5,7-dimethoxycoumarin (=limettin, citropten)",Q E
+217.,120-08-1,,"6,7-dimethoxycoumarin",Q E
+218.,495-02-3,,7-geranoxycoumarin (=aurapten C19H22O3),Q E
+219.,21499-17-2,,epoxyaurapten,P E
+220.,2747-05-9,,7-acetoxy-4-methylcoumarin,P
+221.,5980-07-4,,8-(2-formyl-2-methylpropyl)-7-methoxycoumarin,P
+222.,581-31-7,,7-methoxy-6-(3-methyl-2-butenyl)coumarin (=suberosin),P E
+223.,484-12-8,,7-methoxy-8-(3-methyl-2-butenyl)coumarin (=osthol),Q E R O
+224.,17245-25-9,,5-methoxy-osthol,P E
+225.,484-14-0,,7-hydroxy-8-(3-methyl-2-butenyl)-coumarin (=osthenol),P E
+226.,1221-43-8,,8-(2-hydroxy-3-methyl-3-butenyl)-7-methoxycoumarin (=auraptenol),P E
+227.,143390-82-3,,"5-(2',3'-dihydroxy-3'-methylbutyloxy)-7-methoxycoumarin",P
+228.,143390-83-4,,"5-(2',3'-epoxy-3'-methylbutyloxy)-7-methoxycoumarin",P
+229.,35590-41-1,,5-isopentenoxy-7-methoxycoumarin,Q E
+230.,7380-39-4,,5-geranoxy-7-methoxycoumarin,Q E
+231.,55085-47-7,,"5,6,7-trimethoxycoumarin",Q E
+232.,72963-64-5,,7-hydroxy-8-methoxy-6-(3-methyl-2-butenyl)coumarin (=apigravin),P E
+233.,10387-50-5,,7-(3'-methylbut-2'-enyloxy)coumarin,P R
+234.,525-82-6,,flavone,Q E S
+235.,480-41-1,,(±)-Naringenin,Q E
+236.,117-39-5,,quercetin,Q
+237.,520-36-5,,apigenin,Q
+238.,520-18-3,,kaempferol,Q
+239.,491-70-3,,luteolin,Q
+240.,480-40-0,,chrysin,Q S
+241.,520-27-4,,diosmin,Q S
+242.,529-44-2,,myricetin,Q S
+243.,446-72-0,,genistein,Q S
+244.,480-19-3,,isorhamnetin,S
+245.,38183-03-8,,"7,8-Dihydroxyflavone",E
+246.,1168-42-9,,"4',5,6,7-tetramethoxyflavone",Q E T
+247.,481-53-8,,tangeretin,Q E T
+248.,23971-42-8,,meranzin,Q E
+249.,1088-17-1,,isomeranzin,P
+250.,5875-49-0,,meranzin hydrate,P E
+251.,478-01-3,,nobiletin,Q E T
+252.,1251-84-9,,"3,3',4',5,6,7-hexamethoxyflavone",Q
+253.,1178-24-1,,"3,3',4',5,6,7,8-heptamethoxyflavone",Q T
+254.,,,heptamethoxyflavone (unkn.str.),P
+255.,2306-27-6,,sinensetin,Q T
+256.,,,tetramethylscutellarein,P
+257.,66-97-7,,psoralen (=furocoumarin),Q E
+258.,486-60-2,,5-hydroxypsoralen (=bergaptol),P E
+259.,484-20-8,,5-methoxypsoralen (=bergapten),Q E R
+260.,482-48-4,,isobergapten,Q E R
+261.,298-81-7,,8-methoxypsoralen (=xanthotoxin),Q E
+262.,482-45-1,,5-isopentenoxypsoralen (=isoimperatorin),Q E
+263.,482-44-0,,8-isopentenoxypsoralen (=imperatorin),Q E
+264.,26091-73-6,,oxypeucedanin,Q E
+265.,2643-85-8,,"5-(2,3-dihydroxyisopentoxy)psoralen (=oxypeucedanin hydrate)",Q E
+266.,31575-93-6,,heraclenol,P E
+267.,2880-49-1,,heraclenin,P E
+268.,33889-70-2,,pabulenol,P E
+269.,7380-40-7,,5-geranoxypsoralen (=bergamottin),Q E
+270.,206978-14-5,,epoxybergamottin,P E
+271.,,,epoxybergamottin hydrate,P
+272.,7437-55-0,,8-geranoxypsoralen,Q E
+273.,143390-87-8,,"8-(7',8'-epoxygeranyloxy)psoralen",P E
+274.,,,"5-(6-formyl-3,6-dimethyl-2-heptenoxy)psoralen",P
+275.,,,8-hydroxy-5-methoxypsoralen,P
+276.,482-27-9,,"5,8-dimethoxypsoralen (=isopimpinellin)",Q E R
+277.,2543-94-4,,8-isopentenoxy-5-methoxypsoralen (=phellopterin),Q E
+278.,26091-79-2,,byakangelicol,Q E
+279.,35214-82-5,,neobyakangelicol,P E
+280.,482-25-7,,"8-(2,3-dihydroxyisopentoxy)-5-methoxypsoralen (=byak-angelicin)",Q E
+281.,117030-02-1,,"5-(isopent-2-enyloxy)-8-(2,3-epoxyisopentoxy)psoralen",Q E
+282.,14348-21-1,,cnidicin,Q E
+283.,143390-86-7,,"5-(3'-methylbut-2'-enyloxy)-8-(2',3'-dihydroxy-3'-methylbutyloxy)psoralen",P E
+284.,,,5-geranoxy-8-methoxypsoralen,
+285.,17182-52-4,,5-methoxy-8-geranyloxypsoralen,P E
+286.,70610-24-1,,"6,7-dihydro-8-hydroxy-7-isopropenylpsoralen (=apiumetin)",P E
+287.,13895-92-6,,"6,7-dihydro-8-hydroxy-7-(1-hydroxy-1-methylethyl)psoralen (=rutaretin)",P E
+288.,,,"5[(1,6-epoxy-3,7-dimethyl-oct-2-enyl)oxy]psoralen",P
+289.,16194-31-3,,"1,3,3-trimethyl-2,7-dioxa-bicyclo[2.2.1]heptane",P
+290.,286-20-4,,7-oxabicyclo[4.1.0]heptane,Q S
+291.,84024-93-1,,"1,5-dimethyl-6,8-dioxa-bicyclo[3.2.1]octane",P
+292.,90580-80-6,,"7,7-dimethyl-6,8-dioxabicyclo[3.2.1]octane",Q R
+293.,79925-90-9,,"exo-7-butyl-5-methyl-6,8-dioxabicyclo[3.2.1]octane",P
+294.,4575-53-5,,"(Z)-2-(2,4-hexadiynylidene)-1,6-dioxaspiro[4.4]non-3-ene (=en-yn-dicyclo ether)",Q E R
+295.,30483-86-4,,"2,7-dimethyl-1,6-dioxa-spiro[4.4]nonane",P
+296.,15031-05-7,,"2,2,7,7-tetramethyl-1,6-dioxa-spiro[4.4]non-3-ene (=dihydrospiroacetal)",Q E R
+297.,15129-55-2,,"2,2,7,7-tetramethyl-1,6-dioxa-spiro[4.4]nona-3,8-diene (=spiroacetal)",Q E R
+298.,177-10-6,,"1,4-dioxaspiro[4.5]decane",P E
+299.,,,"6,7-epoxytheaspirane",P E
+300.,53398-90-6,,dihydro-6-hydroxytheaspirane,P E
+301.,36431-72-8,,theaspirane,Q E S R O
+302.,43126-21-2,,theaspirane B (=cis-theaspirane),Q E S R
+303.,43126-22-3,,theaspirane A (=trans-theaspirane),Q E S R
+304.,66537-40-4,,"(2R,5S)-theaspirane B (=(2R-cis)-theaspirane)",P E
+305.,130404-02-3,,"(2S,5R)-theaspirane B (=(2S-cis)-theaspirane)",P E
+306.,66537-39-1,,"(2S,5S)-theaspirane A (=(2S-trans)-theaspirane)",P E
+307.,130404-01-2,,"(2R,5R)-theaspirane A (=(2R-trans)-theaspirane)",P E
+308.,65416-59-3,,vitispirane,Q E S R T
+309.,99881-85-3,,cis-vitispirane,Q E R
+310.,99944-79-3,,trans-vitispirane,Q E R
+311.,596-84-9,,manoyl oxide,Q E S R
+312.,1227-93-6,,13-epimanoyl oxide,P E S R
+313.,112418-55-0,,"3-α-14,15-dihydromanoyl oxide",E S R
+314.,1231-34-1,,2-keto-manoyl oxide,E S R
+315.,646-06-0,,"1,3-dioxolane",E T
+316.,497-26-7,,"2-methyl-1,3-dioxolane",P T
+317.,2568-96-9,,"2-ethyl-1,3-dioxolane",P
+318.,3390-13-4,,"2-propyl-1,3-dioxolane",P
+319.,3390-12-3,,"2,4-dimethyl-1,3-dioxolane",E
+320.,100760-25-6,,"cis-2,4-dimethyl-1,3-dioxolane",P S
+321.,100760-26-7,,"trans-2,4-dimethyl-1,3-dioxolane",P S
+322.,4359-46-0,,"2-ethyl-4-methyl-1,3-dioxolane",Q T
+323.,73506-89-5,,"ethylmethyl-1,3-dioxolane (unkn.str.)",
+324.,4352-99-2,,"4-methyl-2-propyl-1,3-dioxolane",Q
+325.,67879-60-1,,"2-isopropyl-4-methyl-1,3-dioxolane",P E S
+326.,24382-64-7,,"2-isopropyl-4,5-dimethyl-1,3-dioxolane",P E S
+327.,74094-60-3,,"2-butyl-4-methyl-1,3-dioxolane",Q E
+328.,122045-45-8,,"cis-2-isobutyl-4-methyl-1,3-dioxolane",P E S O
+329.,122045-43-6,,"trans-2-isobutyl-4-methyl-1,3-dioxolane",P E S
+330.,26563-75-7,,"trans-4-methyl-2-pentyl-1,3-dioxolane",P S
+331.,1193-11-9,,"2,2,4-trimethyl-1,3-dioxolane",Q E
+332.,18433-93-7,,"2-isobutyl-4-methyl-1,3-dioxolane",Q E
+333.,1599-49-1,,"4-methyl-2-pentyl-1,3-dioxolane",E
+334.,2568-25-4,,"4-methyl-2-phenyl-1,3-dioxolane",Q E S
+335.,3299-32-9,,"2,4,5-trimethyl-1,3-dioxolane",Q S T
+336.,29923-84-0,,"5-ethyl-2,4-dimethyl-1,3-dioxolane",Q
+337.,24382-63-6,,"2-ethyl-4,5-dimethyl-1,3-dioxolane",P
+338.,6414-34-2,,"4,5-dimethyl-2-propyl-1,3-dioxolane",Q
+339.,83584-14-9,,"2-isobutyl-4,5-dimethyl-1,3-dioxolane",Q
+340.,,,"cis-4-hydroxy-2-methyl-1,3-dioxolane",Q
+341.,,,"trans-4-hydroxy-2-methyl-1,3-dioxolane",Q
+342.,3773-93-1,,"4-(hydroxymethyl)-2-methyl-1,3-dioxolane",Q
+343.,3674-21-3,,"cis-4-(hydroxymethyl)-2-methyl-1,3-dioxolane",Q E S
+344.,3674-22-4,,"trans-4-(hydroxymethyl)-2-methyl-1,3-dioxolane",P
+345.,4744-00-7,,"2,5-dimethyl-1,3-dioxolan-4-one",Q
+346.,626-68-6,,"2-methyl-1,3-dioxane",Q E R
+347.,1120-97-4,,"4-methyl-1,3-dioxane",Q E R
+348.,766-20-1,,"2,4-dimethyl-1,3-dioxane",Q
+349.,,,"5-hydroxy-2-methyl-1,3-dioxane",P
+350.,3674-23-5,,"cis-5-hydroxy-2-methyl-1,3-dioxane",Q E
+351.,3674-24-6,,"trans-5-hydroxy-2-methyl-1,3-dioxane",Q E T
+352.,123-91-1,,"1,4-dioxane",Q T
+353.,,,dioxane (unkn.str.),Q
+354.,,,"ethyl methyl 1,4-dioxane (unkn.str.)",P
+355.,19693-75-5,,"2-methoxy-1,3-dioxolane",P
+356.,95-96-5,,dilactide,P E
+357.,53338-05-9,,ambersage,E S R
+358.,123-63-7,,"2,4,6-trimethyl-1,3,5-trioxane (=paraldehyde)",Q E S T
+359.,2781-01-3,,"2-methyl-1,3,6-trioxocane",P
+360.,,,naphthodioxane (unkn.str.),Q
+361.,16499-05-1,,"7,8-dihydro-8,8-dimethylbenzo-[1,2,b:5,4,b']dipyran-2,6-dione (=graveolone)",Q E
+362.,58917-35-4,,gomerol,P E

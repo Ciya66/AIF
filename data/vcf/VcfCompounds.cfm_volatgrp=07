@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VCF - Volatile Compounds in Food</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/css/vcf.css" rel="stylesheet">
+<link href="/css/print.css" rel="stylesheet" media="print">
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+<meta name="format-detection" content="telephone=no"/>
+<!-- Sentry -->
+<script src="https://browser.sentry-cdn.com/5.2.1/bundle.min.js" crossorigin="anonymous"></script>
+<script>
+Sentry.init({ dsn: 'https://45e14bb33e854eea83d8f079840a908b@o57497.ingest.sentry.io/1457420' });
+</script>
+</head>
+<body>
+<script> 
+<!-- 
+//Configuration parameters for the pop-up window. 
+var config = 
+{x:50,y:100,height:400,width:450,modal:false,closable:true,modal:false,
+draggable:true,resizable:true,initshow:true,minheight:200,minwidth:200 
+} 
+--> 
+</script>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="header">
+<div class="span3" style="margin-bottom:8px">
+<a href="/index.cfm" class="brand"><img src="/graphics/logo_bewido.png" alt="VCF home" id="bewido_logo" width="220"></a><!-- VCF logo -->
+</div>
+<div class="span9">
+<div class="row-fluid">
+<div class="span6 loggedin pull-right" id="fltrt">
+<form action="/VcfCompounds.cfm?volatgrp=07" method="post" name="Guestloginform" class="pull-right">
+<div class="control-group">
+<div class="controls">OR
+<div class="input-append">
+<input name="j_username" type="hidden" value="GUEST" />
+<input name="j_password" type="hidden" value="guest" />
+<input name="logintype" type="hidden" value="guest" />
+<button type="submit" class="btn" value="Sign in as guest"> Sign in as guest </button>
+</div>
+</div>
+</div>
+</form>
+<form action="/VcfCompounds.cfm?volatgrp=07" method="post" name="loginform" class="form-inline pull-right">
+<input name="logintype" type="hidden" value="user" />
+<div class="control-group">
+<div class="controls">
+<div class="input-append">
+<input type="text" name="j_username" required="yes" message="A username is required" placeholder="username" class="input-small" >
+</div>
+<div class="input-append">
+<input type="password" name="j_password" required="yes" message="A password is required" placeholder="password" class="input-small">
+<input name="args.authtype" type="hidden" value="Vcfuser">
+<button type="submit" class="btn" value="Sign in"> Sign in </button>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="span3">
+<span class="welcome">
+<a href="index.cfm"><span class="websitename">VCF <span class="superonline">online</span></span></a>
+Volatile Compounds in Food 16.10
+<span class="demoversionstring">
+</span>
+</span>
+</div>
+</div>
+<div class="row-fluid">
+<div class="navbar span9 offset3">
+<!-- Navbar ================================================== -->
+<div class="navbar-inner">
+<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="nav-collapse collapse">
+<ul id="navMain" class="nav pull-right">
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Search</a>
+<ul class="dropdown-menu">
+<li><a>Search</a></li>
+<li><a href="/VcfProdSelection.cfm"><i class="icon-chevron-right icon-white"></i> Products</a></li>
+<li><a href="/VcfProdSetSelection.cfm"><i class="icon-chevron-right icon-white"></i> Product compare</a></li>
+<li><a href="/VcfCompoundSearch.cfm"><i class="icon-chevron-right icon-white"></i> Compounds</a></li>
+<li><a href="/VcfRetentionIndexSearch.cfm"><i class="icon-chevron-right icon-white"></i> Retention Index</a></li>
+<li><a href="/VcfLiteratureSearch.cfm"><i class="icon-chevron-right icon-white"></i> Literature</a></li>
+<li><a href="OFTVCompoundSearch.cfm"><i class="icon-chevron-right icon-white"></i> Odour/Flavour threshold</a></li>
+<li><a>History</a></li>
+<li><a href="/VcfSearchhistory.cfm"><i class="icon-chevron-right icon-white"></i> Search history</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Lists</a>
+<ul class="dropdown-menu">
+<li><a>Products</a></li>
+<li><a href="/VcfProducts.cfm"><i class="icon-chevron-right icon-white"></i> Product list</a></li>
+<li><a>Compounds</a></li>
+<li><a href="/VcfCompounds.cfm"><i class="icon-chevron-right icon-white"></i> VCF compounds</a></li>
+<li><a href="/VcfCompounds.cfm?FEMAGRAS"><i class="icon-chevron-right icon-white"></i> FEMA(GRAS 30)</a></li>
+<li><a href="/VcfCompounds.cfm?Flavis"><i class="icon-chevron-right icon-white"></i> Flavis(EU-Flavis database)</a></li>
+<li><a>Odour/flavour compounds</a></li>
+<li><a href="OFTVCompounds.cfm"><i class="icon-chevron-right icon-white"></i> Odour/flavour lists</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Usage guide</a>
+<ul class="dropdown-menu">
+<li><a>Search options</a></li>
+<li><a href="/VcfGuide.cfm?title=What information"><i class="icon-chevron-right icon-white"></i> What information can be found?</a></li>
+<li><a href="/VcfGuide.cfm?title=Guide to searches"><i class="icon-chevron-right icon-white"></i> Guide to searches</a></li>
+<li><a href="/VcfGuide.cfm?title=Search within"><i class="icon-chevron-right icon-white"></i> Search within results</a></li>
+<li><a href="/VcfGuide.cfm?title=Product compare"><i class="icon-chevron-right icon-white"></i> Product compare</a></li>
+<li><a>VCF version</a></li>
+<li><a href="/VcfGuide.cfm?title=What is new"><i class="icon-chevron-right icon-white"></i> What is new in VCF 16.10?</a></li>
+<li><a href="/VcfGuide.cfm?title=Overview of VCF"><i class="icon-chevron-right icon-white"></i> Overview VCF releases</a></li>
+<li><a href="/VcfGuide.cfm?title=Explanation of terms"><i class="icon-chevron-right icon-white"></i> Explanation of terms</a></li>
+<li><a href="/VcfExamples.cfm"><i class="icon-chevron-right icon-white"></i> Examples</a></li>
+<li><a>References</a></li>
+<li><a href="/VcfGuide.cfm?title=preface"><i class="icon-chevron-right icon-white"></i> Preface</a></li>
+<li><a href="/VcfGuide.cfm?title=Bibliographic"><i class="icon-chevron-right icon-white"></i> Bibliographic reference</a></li>
+<li><a href="/VcfGuide.cfm?title=Privacy policy"><i class="icon-chevron-right icon-white"></i> Privacy policy</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
+<ul class="dropdown-menu">
+<li><a href="/VcfSelectSubscription.cfm"><i class="icon-chevron-right icon-white"></i> Subscribe</a></li>
+<li><a href="/VcfAssist.cfm"><i class="icon-chevron-right icon-white"></i> Password assistance</a></li>
+<li><a href="/VcfMailform.cfm"><i class="icon-chevron-right icon-white"></i> Mail us</a></li>
+<li><a href="/VcfLinks.cfm"><i class="icon-chevron-right icon-white"></i> Links</a></li>
+<li><a href="/VcfPromo.cfm"><i class="icon-chevron-right icon-white"></i> Promo</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end .header -->
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<ul class="breadcrumb">
+<li><a href="/VcfHome.cfm">Home</a> <span class="divider">/</span></li>
+<li><a href="/VcfCompounds.cfm">Compound groups</a> <span class="divider">/</span></li>
+<li class="active">Compound group list</li>
+</ul>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span10 offset1">
+<div class="span8 offset0">
+<h4>VCF volatile compounds list</h4>
+<strong>List of volatile compounds in food in the VCF database</strong>
+<br />Login is needed for detail information. Partial information is available for guest logins.
+<p><strong>220 compounds
+in volatile group 'Lactones'.</strong><br />
+</p>
+</div>
+<div class="span3">
+<a href="/VcfCompounds.cfm?" class="btn"><i class="icon icon-step-backward"></i> Return to group lists </a>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<table class="table-striped table-condensed datatable">
+<tr>
+<th>&nbsp;</th>
+<th class="rechts nowrap">CAS</th>
+<th>&nbsp;</th>
+<th>Compound name</th>
+<th>
+<button name="SearchTips" type="button" value="Flags" class="btn"
+onClick="window.open('VcfGuideContent.cfm?title=Compound flags', 'VCFguide',
+'resizable=yes,scrollbars=yes,menubar=no,status=no,titlebar=no,toolbar=no,width=450,height=400');
+return false" >
+<i class="icon icon-flag"></i> Compound<br>flags </button>
+</th>
+</tr>
+<tr>
+<td class="rechts top">1.&nbsp;</td>
+<td class="rechts nowrap top">66873-38-9</td>
+<td>&nbsp;</td>
+<td>dihydrocolumellarin</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">2.&nbsp;</td>
+<td class="rechts nowrap top">19444-84-9</td>
+<td>&nbsp;</td>
+<td>2-hydroxybutanoic acid lactone (=&alpha;-butyrolactone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">3.&nbsp;</td>
+<td class="rechts nowrap top">3068-88-0</td>
+<td>&nbsp;</td>
+<td>3-hydroxybutanoic acid lactone (=&beta;-butyrolactone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">4.&nbsp;</td>
+<td class="rechts nowrap top">34004-69-8</td>
+<td>&nbsp;</td>
+<td>3(2H)-Furanone, dihydro-5-isopropyl-</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">5.&nbsp;</td>
+<td class="rechts nowrap top">96-48-0</td>
+<td>&nbsp;</td>
+<td>4-hydroxybutanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">6.&nbsp;</td>
+<td class="rechts nowrap top">1679-47-6</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-2-methylbutanoic acid lactone (=3-methyltetrahydrofuran-2-one)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">7.&nbsp;</td>
+<td class="rechts nowrap top">1679-49-8</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-3-methylbutanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">8.&nbsp;</td>
+<td class="rechts nowrap top">79-50-5</td>
+<td>&nbsp;</td>
+<td>dihydro-3-hydroxy-4,4-dimethyl-2(3H)-furanone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">9.&nbsp;</td>
+<td class="rechts nowrap top">82000-10-0</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-methylbutanoic acid lactone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">10.&nbsp;</td>
+<td class="rechts nowrap top">932-85-4</td>
+<td>&nbsp;</td>
+<td>4-ethoxy-4-hydroxybutanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">11.&nbsp;</td>
+<td class="rechts nowrap top">26817-24-3</td>
+<td>&nbsp;</td>
+<td>4-(ethoxycarbonyl)-4-hydroxy-butanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">12.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>2-methyl-2-prenyl-4-butanolide</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">13.&nbsp;</td>
+<td class="rechts nowrap top">599-04-2</td>
+<td>&nbsp;</td>
+<td>2,4-dihydroxy-3,3-dimethylbutanoic acid lactone (=pantolactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">14.&nbsp;</td>
+<td class="rechts nowrap top">5469-16-9</td>
+<td>&nbsp;</td>
+<td>&beta;-hydroxybutyrolactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">15.&nbsp;</td>
+<td class="rechts nowrap top">108-29-2</td>
+<td>&nbsp;</td>
+<td>4-hydroxypentanoic acid lactone (=&gamma;-valerolactone, 4-pentanolide)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">16.&nbsp;</td>
+<td class="rechts nowrap top">542-28-9</td>
+<td>&nbsp;</td>
+<td>5-hydroxypentanoic acid lactone (=&delta;-pentalactone, tetrahydro-2-pyrone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">17.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>hydroxypentanoic acid lactone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">18.&nbsp;</td>
+<td class="rechts nowrap top">6971-63-7</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-3-methylpentanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">19.&nbsp;</td>
+<td class="rechts nowrap top">3123-97-5</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-methylpentanoic acid lactone (=4,4-dimethylbutanolide)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">20.&nbsp;</td>
+<td class="rechts nowrap top">2381-87-5</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-3-methyl-2-pentenoic acid lactone (=anhydromevalolactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">21.&nbsp;</td>
+<td class="rechts nowrap top">695-06-7</td>
+<td>&nbsp;</td>
+<td>4-hydroxyhexanoic acid lactone (=&gamma;-hexalactone, &gamma;-caprolactone, 4-hexanolide)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">22.&nbsp;</td>
+<td class="rechts nowrap top">63357-95-9</td>
+<td>&nbsp;</td>
+<td>(R)-4-hydroxyhexanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">23.&nbsp;</td>
+<td class="rechts nowrap top">41035-07-8</td>
+<td>&nbsp;</td>
+<td>(S)-4-hydroxyhexanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">24.&nbsp;</td>
+<td class="rechts nowrap top">823-22-3</td>
+<td>&nbsp;</td>
+<td>5-hydroxyhexanoic acid lactone (=&delta;-caprolactone, &delta;-hexalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">25.&nbsp;</td>
+<td class="rechts nowrap top">674-26-0</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-methyltetrahydro-2H-pyran-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">26.&nbsp;</td>
+<td class="rechts nowrap top">43112-32-9</td>
+<td>&nbsp;</td>
+<td>(R)-5-hydroxyhexanoic acid lactone (=(R)-&delta;-hexanolide)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">27.&nbsp;</td>
+<td class="rechts nowrap top">16320-13-1</td>
+<td>&nbsp;</td>
+<td>(S)-5-hydroxyhexanoic acid lactone (=(S)-&delta;-hexanolide)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">28.&nbsp;</td>
+<td class="rechts nowrap top">502-44-3</td>
+<td>&nbsp;</td>
+<td>6-hydroxyhexanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">29.&nbsp;</td>
+<td class="rechts nowrap top">21963-38-2</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-5-hexenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">30.&nbsp;</td>
+<td class="rechts nowrap top">2865-82-9</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-methylhexanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">31.&nbsp;</td>
+<td class="rechts nowrap top">80060-76-0</td>
+<td>&nbsp;</td>
+<td>(Z)-18-Octadec-9-enolide</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">32.&nbsp;</td>
+<td class="rechts nowrap top">3720-20-5</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-3-methylhexanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">33.&nbsp;</td>
+<td class="rechts nowrap top">10413-18-0</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-4-methylhexanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">34.&nbsp;</td>
+<td class="rechts nowrap top">2610-95-9</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-5-methylhexanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">35.&nbsp;</td>
+<td class="rechts nowrap top">24405-16-1</td>
+<td>&nbsp;</td>
+<td>trans-5-hydroxy-4-methylhexanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">36.&nbsp;</td>
+<td class="rechts nowrap top">1073-11-6</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-methyl-5-hexenoic acid lactone (=lavender lactone, 5-methyl-5-vinyldihydro-2(3H)-furanone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">37.&nbsp;</td>
+<td class="rechts nowrap top">105814-63-9</td>
+<td>&nbsp;</td>
+<td>4,5-dihydroxyhexanoic acid &gamma;-lactone (5-ring) (=sherry lactone, dihydrosolerone, solerole)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">38.&nbsp;</td>
+<td class="rechts nowrap top">56452-73-4</td>
+<td>&nbsp;</td>
+<td>4,5-dihydroxyhexanoic acid lactone (5-ring), (4S,5S)- (=(4S,5S)-solerol)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">39.&nbsp;</td>
+<td class="rechts nowrap top">89195-92-6</td>
+<td>&nbsp;</td>
+<td>4,5-dihydroxyhexanoic acid lactone (5-ring), (4S,5R)- (=(4S,5R)-solerol)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">40.&nbsp;</td>
+<td class="rechts nowrap top">114420-35-8</td>
+<td>&nbsp;</td>
+<td>4,5-dihydroxyhexanoic acid lactone (5-ring), (4R,5S)- (=(4R,5S)-solerol)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">41.&nbsp;</td>
+<td class="rechts nowrap top">114220-37-0</td>
+<td>&nbsp;</td>
+<td>4,5-dihydroxyhexanoic acid lactone (5-ring), (4R,5R)- (=(4R,5R)-solerol)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">42.&nbsp;</td>
+<td class="rechts nowrap top">58957-60-1</td>
+<td>&nbsp;</td>
+<td>4,5-dihydroxyhexanoic acid lactone (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">43.&nbsp;</td>
+<td class="rechts nowrap top">78344-33-9</td>
+<td>&nbsp;</td>
+<td>4,6-dihydroxyhexanoic acid lactone (5-ring)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">44.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>5,6-dihydroxyhexanoic acid lactone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">45.&nbsp;</td>
+<td class="rechts nowrap top">29393-32-6</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-5-oxohexanoic acid lactone (5-ring) (=solerone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">46.&nbsp;</td>
+<td class="rechts nowrap top">61262-92-8</td>
+<td>&nbsp;</td>
+<td>(4S)-4-hydroxy-5-oxohexanoic acid lactone (5-ring) (=(4S)-solerone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">47.&nbsp;</td>
+<td class="rechts nowrap top">81767-46-6</td>
+<td>&nbsp;</td>
+<td>(4R)-4-hydroxy-5-oxohexanoic acid lactone (5-ring) (=(4R)-solerone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">48.&nbsp;</td>
+<td class="rechts nowrap top">105-21-5</td>
+<td>&nbsp;</td>
+<td>4-hydroxyheptanoic acid lactone (=4-heptanolide, &gamma;-heptalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">49.&nbsp;</td>
+<td class="rechts nowrap top">31450-61-0</td>
+<td>&nbsp;</td>
+<td>5-butyl-2(3H)-furanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">50.&nbsp;</td>
+<td class="rechts nowrap top">88270-38-6</td>
+<td>&nbsp;</td>
+<td>(R)-4-hydroxyheptanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">51.&nbsp;</td>
+<td class="rechts nowrap top">31323-51-0</td>
+<td>&nbsp;</td>
+<td>(S)-4-hydroxyheptanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">52.&nbsp;</td>
+<td class="rechts nowrap top">3301-90-4</td>
+<td>&nbsp;</td>
+<td>5-hydroxyheptanoic acid lactone (=&delta;-heptalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">53.&nbsp;</td>
+<td class="rechts nowrap top">3284-93-3</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-methylheptanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">54.&nbsp;</td>
+<td class="rechts nowrap top">917596-08-8</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-ethylheptanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">55.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>4-hydroxy-methylheptanoic acid lactone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">56.&nbsp;</td>
+<td class="rechts nowrap top">2319-32-6</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-5-methylheptanoic acid lactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">57.&nbsp;</td>
+<td class="rechts nowrap top">61892-49-7</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-5-oxoheptanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">58.&nbsp;</td>
+<td class="rechts nowrap top">41980-00-1</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-6-heptenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">59.&nbsp;</td>
+<td class="rechts nowrap top">104-50-7</td>
+<td>&nbsp;</td>
+<td>4-hydroxyoctanoic acid lactone (=4-octanolide, &gamma;-octalactone, 5-butyldihydro-2(3H)-furanone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">60.&nbsp;</td>
+<td class="rechts nowrap top">107797-24-0</td>
+<td>&nbsp;</td>
+<td>(R)-4-hydroxyoctanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">61.&nbsp;</td>
+<td class="rechts nowrap top">107797-25-1</td>
+<td>&nbsp;</td>
+<td>(S)-4-hydroxyoctanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">62.&nbsp;</td>
+<td class="rechts nowrap top">698-76-0</td>
+<td>&nbsp;</td>
+<td>5-hydroxyoctanoic acid lactone (=5-octanolide, &delta;-octalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">63.&nbsp;</td>
+<td class="rechts nowrap top">108943-45-9</td>
+<td>&nbsp;</td>
+<td>(R)-(-)-5-hydroxyoctanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">64.&nbsp;</td>
+<td class="rechts nowrap top">108943-46-0</td>
+<td>&nbsp;</td>
+<td>(S)-(+)-5-hydroxyoctanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">65.&nbsp;</td>
+<td class="rechts nowrap top">39212-23-2</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-3-methyloctanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">66.&nbsp;</td>
+<td class="rechts nowrap top">55013-32-6</td>
+<td>&nbsp;</td>
+<td>cis-whiskey lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">67.&nbsp;</td>
+<td class="rechts nowrap top">39638-67-0</td>
+<td>&nbsp;</td>
+<td>trans-whiskey lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">68.&nbsp;</td>
+<td class="rechts nowrap top">3285-00-5</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-methyloctanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">69.&nbsp;</td>
+<td class="rechts nowrap top">68188-98-7</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-ethyloctanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">70.&nbsp;</td>
+<td class="rechts nowrap top">135137-73-4</td>
+<td>&nbsp;</td>
+<td>trans-5-hydroxy-4-methyloctanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">71.&nbsp;</td>
+<td class="rechts nowrap top">770729-51-6</td>
+<td>&nbsp;</td>
+<td>cis-5-hydroxy-4-methyloctanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">72.&nbsp;</td>
+<td class="rechts nowrap top">917596-15-7</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-5-methyloctanoic acid lactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">73.&nbsp;</td>
+<td class="rechts nowrap top">30336-14-2</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-2-octenoic acid lactone (=2-octen-4-olide, 5-butyl-2(5H)-furanone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">74.&nbsp;</td>
+<td class="rechts nowrap top">90292-25-4</td>
+<td>&nbsp;</td>
+<td>(Z)-4-hydroxy-5-octenoic acid lactone (=(Z)-5-octen-4-olide)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">75.&nbsp;</td>
+<td class="rechts nowrap top">147849-67-0</td>
+<td>&nbsp;</td>
+<td>(R)-&delta;-2-octenolactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">76.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>5-hydroxyoctenoic acid lactone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">77.&nbsp;</td>
+<td class="rechts nowrap top">78548-56-8</td>
+<td>&nbsp;</td>
+<td>marmelolactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">78.&nbsp;</td>
+<td class="rechts nowrap top">74183-60-1</td>
+<td>&nbsp;</td>
+<td>trans-marmelolactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">79.&nbsp;</td>
+<td class="rechts nowrap top">74133-35-0</td>
+<td>&nbsp;</td>
+<td>cis-marmelolactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">80.&nbsp;</td>
+<td class="rechts nowrap top">6008-27-1</td>
+<td>&nbsp;</td>
+<td>2-hydroxynonanoic acid lactone (=&alpha;-nonalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">81.&nbsp;</td>
+<td class="rechts nowrap top">104-61-0</td>
+<td>&nbsp;</td>
+<td>4-hydroxynonanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">82.&nbsp;</td>
+<td class="rechts nowrap top">61315-75-1</td>
+<td>&nbsp;</td>
+<td>4-(4-methyl-3-penten-1-yl)-2(5H)-furanone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">83.&nbsp;</td>
+<td class="rechts nowrap top">63357-96-0</td>
+<td>&nbsp;</td>
+<td>(R)-4-hydroxynonanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">84.&nbsp;</td>
+<td class="rechts nowrap top">63357-97-1</td>
+<td>&nbsp;</td>
+<td>(S)-4-hydroxynonanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">85.&nbsp;</td>
+<td class="rechts nowrap top">3301-94-8</td>
+<td>&nbsp;</td>
+<td>5-hydroxynonanoic acid lactone (=5-nonanolide, &delta;-nonalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">86.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>5-hydroxynonanoic acid lactone (branched)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">87.&nbsp;</td>
+<td class="rechts nowrap top">4054-95-9</td>
+<td>&nbsp;</td>
+<td>5-hydroxynon-4-enoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">88.&nbsp;</td>
+<td class="rechts nowrap top">33673-62-0</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-3-methylnonanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">89.&nbsp;</td>
+<td class="rechts nowrap top">52908-82-4</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-methylnonanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">90.&nbsp;</td>
+<td class="rechts nowrap top">214263-84-0</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-ethylnonanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">91.&nbsp;</td>
+<td class="rechts nowrap top">14734-40-8</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-5-methylnonanoic acid lactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">92.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>hydroxynonanoic acid lactone (unkn.str.)</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">93.&nbsp;</td>
+<td class="rechts nowrap top">10547-84-9</td>
+<td>&nbsp;</td>
+<td>3,4-dimethyl-5-pentyl-2(5H)-furanone (=dihydrobovolide)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">94.&nbsp;</td>
+<td class="rechts nowrap top">91401-70-6</td>
+<td>&nbsp;</td>
+<td>3,5-dimethyl-5-pentyl-2(5H)-furanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">95.&nbsp;</td>
+<td class="rechts nowrap top">134359-15-2</td>
+<td>&nbsp;</td>
+<td>ORIN LACTONE</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">96.&nbsp;</td>
+<td class="rechts nowrap top">474432-74-1</td>
+<td>&nbsp;</td>
+<td>(5R)-dihydro-5-methyl-5-(4-methyl-3-penten-1-yl)-2(3H)-furanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">97.&nbsp;</td>
+<td class="rechts nowrap top">474432-73-0</td>
+<td>&nbsp;</td>
+<td>(5S)-dihydro-5-methyl-5-(4-methyl-3-penten-1-yl)-2(3H)-furanone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">98.&nbsp;</td>
+<td class="rechts nowrap top">774-64-1</td>
+<td>&nbsp;</td>
+<td>3,4-dimethyl-5-pentylidene-2(5H)-furanone (=bovolide)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">99.&nbsp;</td>
+<td class="rechts nowrap top">75657-23-7</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-3,4-dimethyl-5-pentyl-2(5H)-furanone (=hydroxybovolide)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">100.&nbsp;</td>
+<td class="rechts nowrap top">706-14-9</td>
+<td>&nbsp;</td>
+<td>4-hydroxydecanoic acid lactone (=4-decanolide, &gamma;-decalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">101.&nbsp;</td>
+<td class="rechts nowrap top">107797-26-2</td>
+<td>&nbsp;</td>
+<td>(R)-4-hydroxydecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">102.&nbsp;</td>
+<td class="rechts nowrap top">107797-27-3</td>
+<td>&nbsp;</td>
+<td>(S)-4-hydroxydecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">103.&nbsp;</td>
+<td class="rechts nowrap top">77811-13-3</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-1-methyldecanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">104.&nbsp;</td>
+<td class="rechts nowrap top">7011-83-8</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-methyldecanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">105.&nbsp;</td>
+<td class="rechts nowrap top">14252-84-7</td>
+<td>&nbsp;</td>
+<td>(3E)-jasmone lactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">106.&nbsp;</td>
+<td class="rechts nowrap top">70851-61-5</td>
+<td>&nbsp;</td>
+<td>5-(cis-3-Hexenyl)dihydro-5-methyl-2(3H)furanone</td>
+<td>
+&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">107.&nbsp;</td>
+<td class="rechts nowrap top">52935-94-1</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-4-ethyldecanoic acid lactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">108.&nbsp;</td>
+<td class="rechts nowrap top">121644-12-0</td>
+<td>&nbsp;</td>
+<td>cis-4-hydroxy-3-methyldecanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">109.&nbsp;</td>
+<td class="rechts nowrap top">705-86-2</td>
+<td>&nbsp;</td>
+<td>5-hydroxydecanoic acid lactone (=5-decanolide, &delta;-decalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">110.&nbsp;</td>
+<td class="rechts nowrap top">2825-91-4</td>
+<td>&nbsp;</td>
+<td>(R)-(-)-5-hydroxydecanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">111.&nbsp;</td>
+<td class="rechts nowrap top">59285-67-5</td>
+<td>&nbsp;</td>
+<td>(S)-(+)-5-hydroxydecanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">112.&nbsp;</td>
+<td class="rechts nowrap top">145441-22-1</td>
+<td>&nbsp;</td>
+<td>cis-5-hydroxy-4-methyldecanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">113.&nbsp;</td>
+<td class="rechts nowrap top">145441-23-2</td>
+<td>&nbsp;</td>
+<td>trans-5-hydroxy-4-methyldecanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">114.&nbsp;</td>
+<td class="rechts nowrap top">133080-62-3</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-5-methyldecanoic acid lactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">115.&nbsp;</td>
+<td class="rechts nowrap top">15456-69-6</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-6-dodecenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">116.&nbsp;</td>
+<td class="rechts nowrap top">18679-18-0</td>
+<td>&nbsp;</td>
+<td>(Z)-4-hydroxy-6-dodecenoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">117.&nbsp;</td>
+<td class="rechts nowrap top">60551-23-7</td>
+<td>&nbsp;</td>
+<td>(E)-4-hydroxy-6-docenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">118.&nbsp;</td>
+<td class="rechts nowrap top">1286701-14-1</td>
+<td>&nbsp;</td>
+<td>(E)-4-hydroxy-7-dodecenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">119.&nbsp;</td>
+<td class="rechts nowrap top">1310721-20-0</td>
+<td>&nbsp;</td>
+<td>(Z)-4-hydroxy-7-dodecenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">120.&nbsp;</td>
+<td class="rechts nowrap top">1286701-15-2</td>
+<td>&nbsp;</td>
+<td>(Z)-4-hydroxy-9-dodecenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">121.&nbsp;</td>
+<td class="rechts nowrap top">1286701-16-3</td>
+<td>&nbsp;</td>
+<td>(E)-4-hydroxy-9-dodecenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">122.&nbsp;</td>
+<td class="rechts nowrap top">1286701-18-5</td>
+<td>&nbsp;</td>
+<td>(E)-4-hydroxy-10-dodecenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">123.&nbsp;</td>
+<td class="rechts nowrap top">67114-38-9</td>
+<td>&nbsp;</td>
+<td>4-hydroxy-7-decenoic acid lactone (=7-decen-4-olide, &gamma;-jasmolactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">124.&nbsp;</td>
+<td class="rechts nowrap top">63095-33-0</td>
+<td>&nbsp;</td>
+<td>(Z)-4-hydroxy-7-decenoic acid lactone (=(Z)-7-decen-4-olide, (Z)-&gamma;-jasmin lactone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">125.&nbsp;</td>
+<td class="rechts nowrap top">97416-87-0</td>
+<td>&nbsp;</td>
+<td>(E)-4-hydroxy-7-decenoic acid lactone (=(E)-7-decen-4-olide, (E)-&gamma;-jasmin lactone)</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">126.&nbsp;</td>
+<td class="rechts nowrap top">34686-71-0</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-7-decenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">127.&nbsp;</td>
+<td class="rechts nowrap top">25524-95-2</td>
+<td>&nbsp;</td>
+<td>(Z)-5-hydroxy-7-decenoic acid lactone (=&delta;-jasmolactone, (Z)-jasmin lactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">128.&nbsp;</td>
+<td class="rechts nowrap top">74585-00-5</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-9-decenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">129.&nbsp;</td>
+<td class="rechts nowrap top">136173-91-6</td>
+<td>&nbsp;</td>
+<td>(S)-(+)-&delta;-jasmin lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">130.&nbsp;</td>
+<td class="rechts nowrap top">136173-93-8</td>
+<td>&nbsp;</td>
+<td>(R)-(-)-&delta;-jasmin lactone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">131.&nbsp;</td>
+<td class="rechts nowrap top">54814-64-1</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-2-decenoic acid lactone (=massoilactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">132.&nbsp;</td>
+<td class="rechts nowrap top">61248-45-1</td>
+<td>&nbsp;</td>
+<td>(S)-5-hydroxy-2-decenoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">133.&nbsp;</td>
+<td class="rechts nowrap top">51154-96-2</td>
+<td>&nbsp;</td>
+<td>(R)-5-hydroxy-2-decenoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">134.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>5-hydroxydecenoic acid lactone (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">135.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>hydroxydecenoic acid lactone (unkn.str.)</td>
+<td>
+&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">136.&nbsp;</td>
+<td class="rechts nowrap top">75363-59-6</td>
+<td>&nbsp;</td>
+<td>(Z)-5-hydroxy-3,7-decadienoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">137.&nbsp;</td>
+<td class="rechts nowrap top">27593-23-3</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-2,4-decadienoic acid lactone (=6-methyl-&alpha;-pyrone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">138.&nbsp;</td>
+<td class="rechts nowrap top">104-67-6</td>
+<td>&nbsp;</td>
+<td>4-hydroxyundecanoic acid lactone (=4-undecanolide, &gamma;-undecalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">139.&nbsp;</td>
+<td class="rechts nowrap top">74568-06-2</td>
+<td>&nbsp;</td>
+<td>(R)-4-hydroxyundecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">140.&nbsp;</td>
+<td class="rechts nowrap top">74568-05-1</td>
+<td>&nbsp;</td>
+<td>(S)-4-hydroxyundecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">141.&nbsp;</td>
+<td class="rechts nowrap top">710-04-3</td>
+<td>&nbsp;</td>
+<td>5-hydroxyundecanoic acid lactone (=5-undecanolide, &delta;-undecalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">142.&nbsp;</td>
+<td class="rechts nowrap top">1310721-21-1</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-10-methylundecanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">143.&nbsp;</td>
+<td class="rechts nowrap top">2305-05-7</td>
+<td>&nbsp;</td>
+<td>4-hydroxydodecanoic acid lactone (=4-dodecanolide, &gamma;-dodecalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">144.&nbsp;</td>
+<td class="rechts nowrap top">69830-91-7</td>
+<td>&nbsp;</td>
+<td>(R)-4-hydroxydodecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">145.&nbsp;</td>
+<td class="rechts nowrap top">69830-92-8</td>
+<td>&nbsp;</td>
+<td>(S)-4-hydroxydodecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">146.&nbsp;</td>
+<td class="rechts nowrap top">713-95-1</td>
+<td>&nbsp;</td>
+<td>5-hydroxydodecanoic acid lactone (=5-dodecanolide, &delta;-dodecalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">147.&nbsp;</td>
+<td class="rechts nowrap top">29587-89-1</td>
+<td>&nbsp;</td>
+<td>(R)-(-)-5-hydroxydodecanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">148.&nbsp;</td>
+<td class="rechts nowrap top">108943-47-1</td>
+<td>&nbsp;</td>
+<td>(S)-(+)-5-hydroxydodecanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">149.&nbsp;</td>
+<td class="rechts nowrap top">17756-68-2</td>
+<td>&nbsp;</td>
+<td>4-hydroxydodec-2-enoic acid lactone (=&gamma;-2-dodecenolactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">150.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>5-hydroxydodec-9-enoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">151.&nbsp;</td>
+<td class="rechts nowrap top">1310721-19-7</td>
+<td>&nbsp;</td>
+<td>(E)-5-hydroxy-9-dodecenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">152.&nbsp;</td>
+<td class="rechts nowrap top">18679-14-6</td>
+<td>&nbsp;</td>
+<td>(Z)-5-hydroxy-9-dodecenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">153.&nbsp;</td>
+<td class="rechts nowrap top">1310721-22-2</td>
+<td>&nbsp;</td>
+<td>5-hydroxy-11-methyldodecanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">154.&nbsp;</td>
+<td class="rechts nowrap top">7370-36-7</td>
+<td>&nbsp;</td>
+<td>4-hydroxytridecanoic acid lactone (=4-tridecanolide, &gamma;-tridecalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">155.&nbsp;</td>
+<td class="rechts nowrap top">7370-92-5</td>
+<td>&nbsp;</td>
+<td>5-hydroxytridecanoic acid lactone (=5-tridecanolide, &delta;-tridecalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">156.&nbsp;</td>
+<td class="rechts nowrap top">1725-04-8</td>
+<td>&nbsp;</td>
+<td>13-hydroxytridecanoic acid lactone (=1,13-tridecanolide)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">157.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>tridecanolide (unkn.str.)</td>
+<td>
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">158.&nbsp;</td>
+<td class="rechts nowrap top">2721-23-5</td>
+<td>&nbsp;</td>
+<td>4-hydroxytetradecanoic acid lactone (=&gamma;-tetradecalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">159.&nbsp;</td>
+<td class="rechts nowrap top">2721-22-4</td>
+<td>&nbsp;</td>
+<td>5-hydroxytetradecanoic acid lactone (=&delta;-tetradecalactone)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">160.&nbsp;</td>
+<td class="rechts nowrap top">1342307-16-7</td>
+<td>&nbsp;</td>
+<td>(6E)-5-hydroxy-6-tetradecenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">161.&nbsp;</td>
+<td class="rechts nowrap top">1342307-14-5</td>
+<td>&nbsp;</td>
+<td>(8Z)-5-hydroxy-8-tetradecenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">162.&nbsp;</td>
+<td class="rechts nowrap top">1342307-15-6</td>
+<td>&nbsp;</td>
+<td>(8E)-5-hydroxy-8-tetradecenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">163.&nbsp;</td>
+<td class="rechts nowrap top">15456-70-9</td>
+<td>&nbsp;</td>
+<td>5-hydroxytetradec-9-enoic acid lactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">164.&nbsp;</td>
+<td class="rechts nowrap top">934298-76-7</td>
+<td>&nbsp;</td>
+<td>(Z)-5-hydroxy-9-decenoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">165.&nbsp;</td>
+<td class="rechts nowrap top">5579-78-2</td>
+<td>&nbsp;</td>
+<td>&epsilon;-decalactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">166.&nbsp;</td>
+<td class="rechts nowrap top">16429-21-3</td>
+<td>&nbsp;</td>
+<td>&epsilon;-dodecalactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">167.&nbsp;</td>
+<td class="rechts nowrap top">3041-18-7</td>
+<td>&nbsp;</td>
+<td>6-hydroxytetradecanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">168.&nbsp;</td>
+<td class="rechts nowrap top">499-54-7</td>
+<td>&nbsp;</td>
+<td>6-Hydroxy-3,7-dimethyloctanoic acid lactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">169.&nbsp;</td>
+<td class="rechts nowrap top">68330-68-7</td>
+<td>&nbsp;</td>
+<td>cis-mentholactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">170.&nbsp;</td>
+<td class="rechts nowrap top">133267-37-5</td>
+<td>&nbsp;</td>
+<td>trans-mentholactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">171.&nbsp;</td>
+<td class="rechts nowrap top">29619-77-0</td>
+<td>&nbsp;</td>
+<td>4-hydroxypentadecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">172.&nbsp;</td>
+<td class="rechts nowrap top">68922-03-2</td>
+<td>&nbsp;</td>
+<td>5-hydroxypentadecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">173.&nbsp;</td>
+<td class="rechts nowrap top">106-02-5</td>
+<td>&nbsp;</td>
+<td>15-hydroxypentadecanoic acid omega-lactone (=pentadecanolide)</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">174.&nbsp;</td>
+<td class="rechts nowrap top">730-46-1</td>
+<td>&nbsp;</td>
+<td>4-hydroxyhexadecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">175.&nbsp;</td>
+<td class="rechts nowrap top">7370-44-7</td>
+<td>&nbsp;</td>
+<td>5-hydroxyhexadecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">176.&nbsp;</td>
+<td class="rechts nowrap top">109-29-5</td>
+<td>&nbsp;</td>
+<td>16-hydroxyhexadecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">177.&nbsp;</td>
+<td class="rechts nowrap top">123-69-3</td>
+<td>&nbsp;</td>
+<td>Hexadec-7-en-1,16-lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">178.&nbsp;</td>
+<td class="rechts nowrap top">7779-50-2</td>
+<td>&nbsp;</td>
+<td>omega-6-Hexadecenlactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">179.&nbsp;</td>
+<td class="rechts nowrap top">28645-51-4</td>
+<td>&nbsp;</td>
+<td>Isoambrettolide</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">180.&nbsp;</td>
+<td class="rechts nowrap top">110071-72-2</td>
+<td>&nbsp;</td>
+<td>4-hydroxyheptadecanoic acid lactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">181.&nbsp;</td>
+<td class="rechts nowrap top">153953-65-2</td>
+<td>&nbsp;</td>
+<td>5-hydroxyheptadecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">182.&nbsp;</td>
+<td class="rechts nowrap top">502-26-1</td>
+<td>&nbsp;</td>
+<td>4-hydroxyoctadecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">183.&nbsp;</td>
+<td class="rechts nowrap top">1227-51-6</td>
+<td>&nbsp;</td>
+<td>5-hydroxyoctadecanoic acid lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">184.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>4-hydroxyeicosanoic acid lactone</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">185.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>5-hydroxyeicosanoic acid lactone</td>
+<td>
+&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">186.&nbsp;</td>
+<td class="rechts nowrap top">15356-74-8</td>
+<td>&nbsp;</td>
+<td>dihydroactinidiolide</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">187.&nbsp;</td>
+<td class="rechts nowrap top">65817-24-5</td>
+<td>&nbsp;</td>
+<td>furamintone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">188.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(3S,6)-dimethylbenzo-[b]-furan-2(3H)-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">189.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(3R,6)-dimethylbenzo-[b]-furan-2(3H)-one</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">190.&nbsp;</td>
+<td class="rechts nowrap top">57743-63-2</td>
+<td>&nbsp;</td>
+<td>wine lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">191.&nbsp;</td>
+<td class="rechts nowrap top">182699-77-0</td>
+<td>&nbsp;</td>
+<td>(3S,3aS,7aR)-wine lactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">192.&nbsp;</td>
+<td class="rechts nowrap top">182699-78-1</td>
+<td>&nbsp;</td>
+<td>(3R,3aR,7aS)-3a,4,5,7a-tetrahydro-3,6-dimethyl-2(3H)-benzofuranone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">193.&nbsp;</td>
+<td class="rechts nowrap top">182699-79-2</td>
+<td>&nbsp;</td>
+<td>(3R,3aS,7aR)-3a,4,5,7a-tetrahydro-3,6-dimethyl-2(3H)-benzofuranone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">194.&nbsp;</td>
+<td class="rechts nowrap top">182699-80-5</td>
+<td>&nbsp;</td>
+<td>(3S,3aR,7aS)-3a,4,5,7a-tetrahydro-3,6-dimethyl-2(3H)-benzofuranone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">195.&nbsp;</td>
+<td class="rechts nowrap top">182699-81-6</td>
+<td>&nbsp;</td>
+<td>(3S,3aS,7aS)-3a,4,5,7a-tetrahydro-3,6-dimethyl-2(3H)-benzofuranone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">196.&nbsp;</td>
+<td class="rechts nowrap top">182699-82-7</td>
+<td>&nbsp;</td>
+<td>(3R,3aR,7aR)-3a,4,5,7a-tetrahydro-3,6-dimethyl-2(3H)-benzofuranone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">197.&nbsp;</td>
+<td class="rechts nowrap top">182699-83-8</td>
+<td>&nbsp;</td>
+<td>(3R,3aS,7aS)-3a,4,5,7a-tetrahydro-3,6-dimethyl-2(3H)-benzofuranone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">198.&nbsp;</td>
+<td class="rechts nowrap top">182699-84-9</td>
+<td>&nbsp;</td>
+<td>(3S,3aR,7aR)-3a,4,5,7a-tetrahydro-3,6-dimethyl-2(3H)-benzofuranone</td>
+<td>
+&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">199.&nbsp;</td>
+<td class="rechts nowrap top">16642-41-4</td>
+<td>&nbsp;</td>
+<td>menthofurolactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">200.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>epi-menthofurolactone</td>
+<td>
+&nbsp;Q&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">201.&nbsp;</td>
+<td class="rechts nowrap top">13341-72-5</td>
+<td>&nbsp;</td>
+<td>mintlactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">202.&nbsp;</td>
+<td class="rechts nowrap top">38049-04-6</td>
+<td>&nbsp;</td>
+<td>(-)-mintlactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">203.&nbsp;</td>
+<td class="rechts nowrap top">75684-66-1</td>
+<td>&nbsp;</td>
+<td>isomintlactone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">204.&nbsp;</td>
+<td class="rechts nowrap top">213969-56-3</td>
+<td>&nbsp;</td>
+<td>hydroxymintlactone</td>
+<td>
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">205.&nbsp;</td>
+<td class="rechts nowrap top">80417-97-6</td>
+<td>&nbsp;</td>
+<td>5,6-Dihydro-3,6-dimethylbenzofuran-2(4H)-one</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">206.&nbsp;</td>
+<td class="rechts nowrap top">75640-26-5</td>
+<td>&nbsp;</td>
+<td>(6R)-Dehydromenthofurolactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">207.&nbsp;</td>
+<td class="rechts nowrap top">92015-65-1</td>
+<td>&nbsp;</td>
+<td>Dihydromintlactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">208.&nbsp;</td>
+<td class="rechts nowrap top">1126-51-8</td>
+<td>&nbsp;</td>
+<td>ethyl 2-hydroxypentanedioate lactone</td>
+<td>
+&nbsp;P&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">209.&nbsp;</td>
+<td class="rechts nowrap top">5579-79-3</td>
+<td>&nbsp;</td>
+<td>oxacycloundecan-2-one</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">210.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>(E)-9-cyclodecenolide</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">211.&nbsp;</td>
+<td class="rechts nowrap top">79894-05-6</td>
+<td>&nbsp;</td>
+<td>Yuzu lactone</td>
+<td>
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">212.&nbsp;</td>
+<td class="rechts nowrap top">120464-06-4</td>
+<td>&nbsp;</td>
+<td>1-oxacyclopentadec-6-en-2-one</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">213.&nbsp;</td>
+<td class="rechts nowrap top">63958-52-1</td>
+<td>&nbsp;</td>
+<td>(Z)-oxacyclopentadec-6-en-2-one</td>
+<td>
+&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">214.&nbsp;</td>
+<td class="rechts nowrap top">98263-92-4</td>
+<td>&nbsp;</td>
+<td>curcumalactone</td>
+<td>
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">215.&nbsp;</td>
+<td class="rechts nowrap top">1133-04-6</td>
+<td>&nbsp;</td>
+<td>dehydrololiolide</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">216.&nbsp;</td>
+<td class="rechts nowrap top">5989-02-6</td>
+<td>&nbsp;</td>
+<td>loliolide</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">217.&nbsp;</td>
+<td class="rechts nowrap top">490-10-8</td>
+<td>&nbsp;</td>
+<td>nepetalactone</td>
+<td>
+&nbsp;P&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">218.&nbsp;</td>
+<td class="rechts nowrap top">21651-62-7</td>
+<td>&nbsp;</td>
+<td>4a&alpha;,7&alpha;,7a&alpha;-nepetalactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">219.&nbsp;</td>
+<td class="rechts nowrap top"></td>
+<td>&nbsp;</td>
+<td>4a&alpha;,7&alpha;-7a&beta;-nepetalactone</td>
+<td>
+&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td class="rechts top">220.&nbsp;</td>
+<td class="rechts nowrap top">21651-53-6</td>
+<td>&nbsp;</td>
+<td>4a&alpha;,7&beta;,7a&alpha;-nepetalactone</td>
+<td>
+&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span11 offset1">
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<hr />
+</div>
+<div class="span1">
+<a href="#top" class="btn btn-info to-page-top btn-small" title="top of page"><i class="icon-white icon-chevron-up"></i></a>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+See the list of all <a href="/VcfCompounds.cfm?FEMAGRAS">FEMA (GRAS 30)</a> volatile compounds<br />
+See the list of all <a href="/VcfCompounds.cfm?Flavis">Flavis (EU-Flavis database)</a> volatile compounds<br />
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<hr />
+</div>
+<div class="span1">
+<a href="#top" class="btn btn-info to-page-top btn-small" title="top of page"><i class="icon-white icon-chevron-up"></i></a>
+</div>
+</div>
+<!-- end .container -->
+</div>
+<!-- Footer
+================================================== -->
+<footer class="footer">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="footer-content">
+&copy; 1992&mdash;2025&nbsp;BeWiDo BV
+</div>
+</div>
+</div>
+</footer>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/js/vcf.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-39233400-1', 'auto');
+ga('send', 'pageview');
+</script> 
+</body>
+</html>
