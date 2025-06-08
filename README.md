@@ -1,2 +1,2 @@
 # AIF
-School laboratory deployment project
+### 网址: [AIF](http://www.meatflavor.cn/)
